@@ -1,0 +1,380 @@
+# :: snt1   OpenAI 新 推出 的 Sora 程式 ， 利用 文字 生成 逼真 影片 ， 用家 打 几 句 字 就 能够 造出 影片 ， 实现 文字 转化 为 影像 ， 引发 创意 产业 担忧 和 对 真假 难辨 未来 的 恐惧 。
+# sentence level graph
+(s1a / and
+  :op1 (s1g / 生成-01
+    :ARG0 (s1p / 程式
+      :mod (s1n / name
+        :op1 "Sora")
+      :ARG1-of (s1l / 推出-01
+        :ARG0 (s1o / organization
+          :name "OpenAI")
+        :aspect performance
+        :modstr FullAff)
+      :aspect performance
+      :modstr FullAff)
+    :ARG1 (s1v / 影片
+      :mod (s1r / 逼真))
+    :instrument (s1t / 文字)
+    :aspect performance
+    :modstr FullAff)
+  :op2 (s1c / 造出-01
+    :ARG0 (s1u / 用家)
+    :ARG1 s1v
+    :instrument (s1w / 字
+      :quant "几句")
+    :modality (s1m / 能够)
+    :aspect performance
+    :modstr FullAff)
+  :op3 (s1i / 实现-01
+    :ARG1 (s1x / 转化-01
+      :ARG0 s1t
+      :ARG1 (s1y / 影像)
+      :aspect performance
+      :modstr FullAff)
+    :aspect performance
+    :modstr FullAff)
+  :op4 (s1f / 引发-01
+    :ARG1 (s1a2 / and
+      :op1 (s1d / 担忧-01
+        :ARG0 (s1i2 / 产业
+          :mod (s1c2 / 创意))
+        :aspect performance
+        :modstr FullAff)
+      :op2 (s1f2 / 恐惧-01
+        :ARG1 (s1f3 / 未来
+          :mod (s1q / 难辨
+            :mod (s1q2 / 真假)))
+        :aspect performance
+        :modstr FullAff))
+    :aspect performance
+    :modstr FullAff))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt2   OpenAI 于 周四 （ 15 日 ） 推出 名为 Sora 的 文字 转 影片 程式 ， 灵感 来自 于 日语 中 “ 天空 ” 的 发音 。
+# sentence level graph
+(s2x / 推出-01
+  :ARG0 (s2x2 / organization
+          :name (s2n / name
+                  :op1 "OpenAI"))
+  :ARG1 (s2x3 / 程式
+          :mod (s2x4 / 文字
+                 :ARG1-of (s2x5 / 转-01
+                            :ARG2 (s2x6 / 影片)))
+          :name (s2n2 / name
+                  :op1 "Sora"))
+  :time (s2d / date-entity
+          :weekday (s2w / 周四)
+          :day 15)
+  :purpose (s2x7 / 来自-01
+             :ARG1 (s2x8 / 发音
+                     :mod (s2x9 / 天空))
+             :source (s2x10 / 日语)
+             :aspect state
+             :modstr FullAff)
+  :aspect Performance
+  :modstr FullAff)
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt3   OpenAI 于 推出 Sora 影片 生成 模型 ， 用户 输入 文字 即可 创造 一分钟 短片 ， 目前 限 专业 人士 使用 。
+# sentence level graph
+(s3x / 推出-01
+  :ARG0 (s3x2 / organization
+          :name (s3n / name
+                  :op1 "OpenAI"))
+  :ARG1 (s3x3 / 模型
+          :mod (s3x4 / 生成)
+          :mod (s3x5 / 影片)
+          :name (s3n2 / name
+                  :op1 "Sora"))
+  :ARG2 (s3x6 / 短片
+          :mod (s3x7 / 一分钟)
+          :ARG1-of (s3x8 / 创造-01
+                     :ARG0 (s3x9 / 用户)
+                     :ARG1 (s3x10 / 文字)
+                     :condition (s3x11 / 即可)))
+  :temporal (s3x12 / 目前)
+  :ARG1-of (s3x13 / 使用-01
+             :ARG0 (s3x14 / 人士
+                     :mod (s3x15 / 专业))
+             :mod (s3x16 / 限))
+  :aspect performance
+  :modstr FullAff)
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt4 Sora 凭借 其 展示 影片 ， 包括 描绘 时尚 达人 在 东京 街头 漫步 、 重现 十九 世纪 淘金热 的 场景 ， 以及 仿造 35 毫米 胶片 效果 的 片段 ， 成功 在 影像 质素 上 压倒 其他 同类 产品 。
+# sentence level graph
+(s4x / 成功-01
+  :ARG0 (s4p / person
+          :name (s4n / name
+                  :op1 "Sora"))
+  :ARG1 (s4x2 / 压倒-01
+          :ARG1 (s4p2 / 产品
+                  :mod (s4a / other
+                         :degree (s4a2 / 同类)))
+          :ARG2 (s4q / quality
+                  :domain (s4i / image))
+          :aspect performance
+          :modstr FullAff)
+  :instrument (s4a3 / and
+                :op1 (s4f / film
+                       :mod (s4f2 / 展示)
+                       :content (s4a4 / and
+                                  :op1 (s4w / walk
+                                         :ARG0 (s4p3 / person
+                                                 :mod (s4f3 / 时尚)
+                                                 :mod (s4f4 / 达人))
+                                         :location (s4l / street
+                                                     :location (s4c / city
+                                                                 :name (s4n2 / name
+                                                                         :op1 "东京")))
+                                         :aspect activity
+                                         :modstr FullAff)
+                                  :op2 (s4r / recreate-01
+                                         :ARG1 (s4e / event
+                                                 :time (s4c2 / century
+                                                         :quant 19)
+                                                 :mod (s4g / gold-rush))
+                                         :aspect performance
+                                         :modstr FullAff)
+                                  :op3 (s4i2 / imitate-01
+                                         :ARG1 (s4f5 / film
+                                                 :mod (s4m / millimeter
+                                                       :quant 35)
+                                                 :mod (s4g2 / 胶片))
+                                         :ARG2 (s4e2 / effect
+                                                 :mod (s4g3 / 片段))
+                                         :aspect performance
+                                         :modstr FullAff))))
+  :aspect performance
+  :modstr FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt5   Sora 能 构建 复杂 多 人物 情节 与 特定 动作 ， 已 展示 跳舞 袋鼠 等 多样 片段 。
+# sentence level graph
+(s5a / and-91
+  :op1 (s5x / 构建-01
+         :ARG0 (s5n / name
+                 :op1 "Sora")
+         :ARG1 (s5a2 / and
+                 :op1 (s5x2 / 情节
+                        :mod (s5x3 / 复杂)
+                        :ARG1-of (s5x4 / 有-01
+                                   :ARG2 (s5x5 / 人物
+                                           :quant (s5x6 / 多))))
+                 :op2 (s5x7 / 动作
+                        :mod (s5x8 / 特定)))
+         :modstr FullAff
+         :aspect Performance)
+  :op2 (s5x9 / 展示-01
+         :ARG0 s5n
+         :ARG1 (s5x10 / 片段
+                 :mod (s5x11 / 多样)
+                 :example (s5x12 / 袋鼠
+                            :mod (s5x13 / 跳舞)))
+         :mod (s5x14 / 已)
+         :modstr FullAff
+         :aspect Performance))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt6   官方 表示 ， Sora 精准 诠释 文字 ， 理解 其 在 现实 的 表现 ， 现 正 检测 技术 漏洞 ， 未 开放 公众 使用 。
+# sentence level graph
+(s6x / 表示-01
+  :ARG0 (s6x2 / 官方)
+  :ARG1 (s6a / and
+          :op1 (s6x3 / 诠释-01
+                 :ARG0 (s6x4 / Sora)
+                 :ARG1 (s6x5 / 文字)
+                 :manner (s6x6 / 精准)
+                 :aspect Performance
+                 :modstr FullAff)
+          :op2 (s6x7 / 理解-01
+                 :ARG0 s6x4
+                 :ARG1 (s6x8 / 表现-01
+                         :ARG1 (s6x9 / 现实)
+                         :aspect Performance
+                         :modstr FullAff)
+                 :aspect Performance
+                 :modstr FullAff)
+          :op3 (s6x10 / 检测-01
+                 :ARG0 s6x4
+                 :ARG1 (s6x11 / 漏洞
+                         :mod (s6x12 / 技术))
+                 :temporal (s6x13 / 现)
+                 :aspect Performance
+                 :modstr FullAff)
+          :op4 (s6x14 / 开放-01
+                 :ARG1 (s6x15 / 使用-01
+                         :ARG0 (s6x16 / 公众))
+                 :polarity -
+                 :aspect Performance
+                 :modstr FullNeg)))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt7   Sora 的 出现 引起 创意 产业 从业者 对 AI 可能 威胁 到 他们 工作 的 担忧 ，
+# sentence level graph
+(s7x / 引起-01
+  :ARG0 (s7x2 / 出现-01
+          :ARG1 (s7p / person
+                  :name (s7n / name
+                          :op1 "Sora")))
+  :ARG1 (s7x3 / 担忧-01
+          :ARG0 (s7x4 / 从业者
+                  :ARG0-of (s7x5 / 从事-01
+                             :ARG1 (s7x6 / 产业
+                                     :mod (s7x7 / 创意))))
+          :ARG1 (s7x8 / 威胁-01
+                  :ARG0 (s7x9 / AI)
+                  :ARG1 (s7x10 / 工作
+                          :poss (s7p2 / person
+                                  :ref-person 3rd
+                                  :ref-number plural))
+                  :modality (s7x11 / 可能)))
+  :aspect Performance
+  :modstr FullAff)
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt8   同时 担心 ， 随着 一行 指令 就 能 创造 出 逼真 的 影片 ， 我们 可能 会 进入 一个 “ 有片 无 真相 ” 的 时代 ， 真实 与 虚假 的 界线 变得 模糊 。
+# sentence level graph
+(s8x / 担心-01
+  :time (s8x2 / 同时)
+  :ARG1 (s8a / and
+          :op1 (s8x3 / 创造-01
+                 :ARG1 (s8x4 / 影片
+                         :mod (s8x5 / 逼真))
+                 :instrument (s8x6 / 指令
+                               :quant 一行)
+                 :mod (s8x7 / 就)
+                 :mod (s8x8 / 能)
+                 :aspect performance
+                 :modstr FullAff)
+          :op2 (s8x9 / 进入-01
+                 :ARG1 (s8x10 / 时代
+                         :mod (s8x11 / “
+                               :op1 (s8x12 / 有片)
+                               :op2 (s8x13 / 无
+                                     :ARG1 (s8x14 / 真相))
+                               :op3 "”"))
+                 :ARG0 (s8x15 / 我们)
+                 :mod (s8x16 / 可能)
+                 :aspect performance
+                 :modstr FullAff))
+  :concession (s8x17 / 变得-01
+                :ARG1 (s8x18 / 界线
+                        :mod (s8x19 / 真实)
+                        :mod (s8x20 / 虚假))
+                :manner (s8x21 / 模糊)
+                :aspect state
+                :modstr FullAff))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt9   纽约 时报 揭示 ， 尽管 Sora 使用 了 公开 及 授权 内容 ， 具体 样本量 仍是 秘密 。
+# sentence level graph
+(s9x / 揭示-01
+  :ARG0 (s9x2 / 时报
+          :mod (s9x3 / 纽约))
+  :ARG1 (s9c / contrast-91
+          :op1 (s9x4 / 使用-01
+                 :ARG0 (s9x5 / Sora)
+                 :ARG1 (s9a / and
+                         :op1 (s9x6 / 内容
+                                :mod (s9x7 / 公开))
+                         :op2 (s9x8 / 内容
+                                :mod (s9x9 / 授权)))
+                 :aspect Performance
+                 :modstr FullAff)
+          :op2 (s9x10 / 秘密
+                 :topic (s9x11 / 样本量
+                          :mod (s9x12 / 具体))
+                 :mod (s9x13 / 仍)
+                 :aspect State
+                 :modstr FullAff))
+  :aspect Performance
+  :modstr FullAff)
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt10   《 纽约 时报 》 报道 ， OpenAI 未 透露 训练 Sora 所 用 的 样本 数量 ， 但 确认 包括 了 公开 影片 和 获得 授权 的 内容 。
+# sentence level graph
+(s10x / 报道-01
+  :ARG0 (s10n / newspaper
+          :name (s10n2 / name
+                  :op1 "《"
+                  :op2 "纽约"
+                  :op3 "时报"
+                  :op4 "》"))
+  :ARG1 (s10a / and
+          :op1 (s10x2 / 透露-01
+                 :ARG0 (s10o / organization
+                         :name (s10n3 / name
+                                 :op1 "OpenAI"))
+                 :ARG1 (s10x3 / 训练-01
+                         :ARG0 s10o
+                         :ARG1 (s10p / program
+                                 :name (s10n4 / name
+                                         :op1 "Sora"))
+                         :ARG2 (s10x4 / 样本
+                                 :quant (s10q / 数量))
+                         :aspect habitual
+                         :modstr FullAff)
+                 :polarity -
+                 :aspect habitual
+                 :modstr FullAff)
+          :op2 (s10x5 / 确认-01
+                 :ARG0 s10o
+                 :ARG1 (s10a2 / and
+                         :op1 (s10x6 / 包括-01
+                                :ARG1 (s10x7 / 影片
+                                        :mod (s10x8 / 公开))
+                                :aspect habitual
+                                :modstr FullAff)
+                         :op2 (s10x9 / 内容
+                                :mod (s10x10 / 授权
+                                      :ARG1-of (s10x11 / 获得-01
+                                                :aspect habitual
+                                                :modstr FullAff))
+                                :aspect habitual
+                                :modstr FullAff))
+                 :aspect habitual
+                 :modstr FullAff)))
+
+# alignment:
+
+# document level annotation:
+
+

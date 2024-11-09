@@ -1,0 +1,230 @@
+# :: snt1	 城市 的 西南部 由 平均 高于 河面 410 米 的 森林 山脉 所 围绕 。
+
+# sentence level graph:
+(s1x / 围绕-01
+  :ARG0 (s1x2 / 山脉
+          :mod (s1x3 / 森林)
+          :mod (s1d / distance-quantity
+                 :quant 410
+                 :unit (s1x6 / 米)
+                 :mod (s1x7 / 高于-01
+                        :ARG1 (s1x8 / 河面)
+                        :mod (s1x9 / 平均)
+                        :aspect state)))
+  :ARG1 (s1x4 / 西南部
+          :poss (s1x5 / 城市))     
+  :aspect state)
+
+# alignment:
+s1x : 1-1
+s1x2 : 1-1
+s1x3 : 1-1
+s1x4 : 3-3
+s1x5 : 1-1
+s1d : 0-0
+s1x6 : 9-9
+s1x7 : 6-6
+s1x8 : 7-7
+s1x: 14-14
+s1x2: 12-12
+s1x3: 11-11
+s1x6: 9-9
+s1x7: 6-6
+s1x8: 7-7
+s1x9: 5-5
+s1x4: 3-3
+s1x5: 1-1
+
+# document level annotation:
+(s1s0 / sentence 
+  :modal ((root :modal author)
+                    (author :full-affirmative s1x7)
+                    (author :full-affirmative s1x)))
+
+
+# :: snt2	 河流 南岸 有以 巨大 岩壁 着 称 的 Stolby 自然保护区 ， 城西 的 绵延 山脉 一直 延伸 到 Sobakina 河 。
+
+# sentence level graph:
+(s2a / and
+  :op1 (s2x / 有-01
+         :ARG0 (s2x2 / 南岸
+                 :poss (s2x3 / 河流)) 
+         :ARG1 (s2x4 / 自然保护区
+                 :name (s2s / stolby)
+                 :ARG0-of (s2h / have-mod-91
+                            :ARG2 (s2x5 / 著称-01
+                                    :ARG1 (s2x6 / 岩壁
+                                            :mod (s2x7 / 巨大)))))
+         :aspect state)
+  :op2 (s2x8 / 延伸-01
+         :ARG0 (s2x9 / 山脉
+                 :mod (s2x10 / 绵延)
+                 :poss (s2x11 / 城西))
+         :ARG2 (s2r / river
+                 :name (s2n / name
+                         :op1 "Sobakina河"))
+         :aspect state))
+
+# alignment:
+s2a : 0-0
+s2x : 3-3
+s2x2 : 2-2
+s2x3 : 1-1
+s2x4 : 10-10
+s2s : 9-9
+s2h : 0-0
+s2x5 : 6-7
+s2x6 : 5-5
+s2x7 : 4-4
+s2x8 : 17-17
+s2x9 : 15-15
+s2x10 : 14-14
+s2x11 : 12-12
+s2r : 19-20
+s2x2: 2-2
+s2x3: 1-1
+s2x4: 10-10
+s2x6: 5-5
+s2x7: 4-4
+s2x8: 17-17
+s2x9: 15-15
+s2x10: 14-14
+s2x11: 12-12
+
+# document level annotation:
+(s2s0 / sentence
+  :modal ((root :modal author)
+                    (author :full-affirmative s2x)
+                    (author :full-affirmative s2x8)))
+
+
+# :: snt3	 但 与此同时 ， 除了 Drokinskaya Sopka 山 ， 城北 却是 一片 开阔 平原 ， 平原 西部 是 森林 ， 东部 是 农业用地 。
+
+# sentence level graph:
+(s3a / and
+  :op1 (s3x5 / 是-01
+         :ARG0 (s3x6 / 城北
+                 :ARG1 (s3x7 / 平原
+                         :mod (s3x8 / 开阔-01)
+                         :unit (s3x9 / 片))
+                 :subtraction (s3x14 / 山
+                                :name (s3d2 / drokinskaya-sopka)))
+         :aspect state)
+  :op2 (s3x10 / 是-01
+         :ARG0 (s3x / 平原
+                 :mod (s3x2 / 西部))
+         :ARG1 (s3x3 / 森林)
+         :aspect state)
+  :op3 (s3x11 / 是-01
+         :ARG0 (s3d / dummy
+                 :mod (s3x12 / 东部))
+         :ARG1 (s3x13 / 农业用地)
+         :aspect state)
+  :temporal (s3x4 / 与此同时))
+
+# alignment:
+s3a : 0-0
+s3d : 0-0
+s3x : 15-15
+s3x10 : 17-17
+s3x11 : 21-21
+s3x12 : 20-0
+s3x13 : 22-22
+s3x2 : 16-16
+s3x3 : 18-18
+s3x4 : 2-2
+s3x5 : 10-10
+s3x6 : 9-9
+s3x7 : 13-13
+s3x8 : 12-12
+s3x9 : 11-11
+s3x14 : 7-7
+s3x5: 17-17
+s3x6: 9-9
+s3x7: 13-13
+s3x8: 12-12
+s3x14: 7-7
+s3x10: 17-17
+s3x: 13-13
+s3x2: 16-16
+s3x3: 18-18
+s3x11: 17-17
+s3x12: 20-20
+s3x13: 22-22
+s3x4: 2-2
+
+# document level annotation:
+(s3s0 / sentence
+  :modal ((root :modal author)
+                    (author :full-affirmative s3x5)
+                    (author :full-affirmative s3x10)
+                    (author :full-affirmative s3x11)))
+
+
+# :: snt4	 本市 分为 七 区 ： 基洛夫 区 、 列宁 区 、 十月 区 、 苏维埃 区 、 斯维尔德洛夫 区 、 铁路 区及 中心区 。
+
+# sentence level graph:
+(s4x / 分为-01
+  :ARG1 (s4x2 / 本市)
+  :ARG2 (s4x3 / 区
+          :quant (s4x4 / 七)
+          :ARG0-of (s4h / have-li-91
+                     :op1 (s4c / city-district
+                            :name (s4n / name
+                                    :op1 "基洛夫"
+                                    :op2 "区"))
+                     :op2 (s4c2 / city-district
+                            :name (s4n2 / name
+                                    :op1 "列宁"
+                                    :op2 "区"))
+                     :op3 (s4c3 / city-district
+                            :name (s4n3 / name
+                                    :op1 "十月"
+                                    :op2 "区"))
+                     :op4 (s4c4 / city-district
+                            :name (s4n4 / name
+                                    :op1 "苏维埃"
+                                    :op2 "区"))
+                     :op5 (s4c5 / city-district
+                            :name (s4n5 / name
+                                    :op1 "斯维尔德洛夫"
+                                    :op2 "区"))
+                     :op6 (s4c6 / city-district
+                            :name (s4n6 / name
+                                    :op1 "铁路"
+                                    :op2 "区"))
+                     :op7 (s4c7 / city-district
+                            :name (s4n7 / name
+                                    :op1 "中心区"))))
+  :aspect state)
+
+# alignment:
+s4c : 6-7
+s4c2 : 9-10
+s4c3 : 9-10
+s4c4 : 15-5
+s4c5 : 18-19
+s4c6 : 21-22
+s4c7 : 23-23
+s4h : 0-0
+s4n : -1--1
+s4n2 : -1--1
+s4n3 : -1--1
+s4n4 : -1--1
+s4n5 : -1--1
+s4n6 : -1--1
+s4n7 : -1--1
+s4x : 1-1
+s4x2 : 1-1
+s4x3 : 4-4
+s4x: 2-2
+s4x2: 1-1
+s4x3: 4-4
+s4x4: 3-3
+
+# document level annotation:
+(s4s0 / sentence
+  :modal ((root :modal author)
+                    (author :full-affirmative s4x)))
+
+

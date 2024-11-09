@@ -1,0 +1,501 @@
+# :: snt1	 十月革命 之后 ， 在 苏联 的 工业化 进程 中 ， 不计其数 的 重工业 ， 如 造纸厂 、 造船厂 、 大型 河港 、 水电站 （ 现在 克拉斯诺亚尔斯克 水电站 装机容量 为 世界 第五 ， 俄国 第二 ） 等 在 克拉斯诺亚尔斯克 建立 起来 。
+
+# sentence level graph:
+(s1x / 建立-01
+  :ARG1 (s1x2 / 重工业
+          :mod (s1x3 / 不计其数)
+          :example (s1a / and
+                     :op1 (s1x4 / 厂
+                            :mod (s1x18 / 造-01
+                                   :ARG1 (s1x19 / 纸)))
+                     :op2 (s1x5 / 厂
+                            :mod (s1x20 / 造-01
+                                   :ARG1 (s1x21 / 船)))
+                     :op3 (s1x6 / 河港
+                            :mod (s1x7 / 大型))
+                     :op4 (s1x8 / 水电站
+                            :ARG0-of (s1a2 / and
+                                       :op1 (s1h / have-role-91
+                                              :ARG0 (s1x10 / 水电站
+                                                      :poss s1c)
+                                              :ARG1 (s1x11 / 装机容量)
+                                              :ARG2 (s1x9 / 第五
+                                                      :mod (s1x12 / 世界)))
+                                       :op2 (s1h2 / have-role-91
+                                              :ARG0 s1x10
+                                              :ARG1 s1x11
+                                              :ARG2 (s1x15 / 第二
+                                                      :mod (s1c2 / country
+                                                             :name (s1n3 / name
+                                                                     :op1 "俄国"))))
+                                       :temporal (s1x13 / 现在)))))
+  :place (s1c / city
+           :name (s1n / name
+                   :op1 "克拉斯诺亚尔斯克"))
+  :temporal (s1x14 / 进程
+              :mod (s1x16 / 工业化)
+              :poss (s1c3 / country
+                      :name (s1n2 / name
+                              :op1 "苏联"))
+              :temporal (s1x17 / 之后
+                          :mod (s1e / event
+                                 :name (s1n4 / name
+                                         :op1 "十月革命"))))
+  :aspect performance)
+
+# alignment:
+s1a : 0-0
+s1c : 0-0
+s1c2 : 33-33
+s1c3 : 5-5
+s1e : 1-1
+s1h : 0-0
+s1h2 : 0-0
+s1n : -1--1
+s1n2 : -1--1
+s1n3 : -1--1
+s1n4 : -1--1
+s1x : 39-39
+s1x10 : 0-0
+s1x11 : 0-0
+s1x12 : 30-30
+s1x13 : 25-25
+s1x14 : 8-8
+s1x15 : 34-34
+s1x16 : 7-7
+s1x17 : 2-2
+s1x18 : 16-16
+s1x19 : 16-16
+s1x2 : 13-13
+s1x20 : 18-18
+s1x21 : 18-18
+s1x3 : 11-11
+s1x4 : 16-16
+s1x5 : 18-18
+s1x6 : 21-21
+s1x7 : 20-20
+s1x8 : 23-23
+s1x: 39-39
+s1x2: 13-13
+s1x3: 11-11
+s1x6: 21-21
+s1x7: 20-20
+s1x8: 23-23
+s1x10: 23-23
+s1x11: 28-28
+s1x9: 31-31
+s1x12: 30-30
+s1x15: 34-34
+s1x13: 25-25
+s1x14: 8-8
+s1x16: 7-7
+s1x17: 2-2
+
+# document level annotation:
+(s1s0 / sentence
+  :modal ((root :modal author)
+                    (author :full-affirmative s1x)))
+
+
+# :: snt2	 1934 年 ， 俄罗斯 第二 大 行政 单体 克拉斯诺亚尔斯克 边疆区 成立 ， 克拉斯诺亚尔斯克 成为 其 行政 中心 。
+
+# sentence level graph:
+(s2a / and
+  :op1 (s2x / 成立-01
+         :ARG1 (s2r / region
+                 :name (s2n / name
+                         :op1 "克拉斯诺亚尔斯克"
+                         :op2 "边疆区")
+                 :ARG0-of (s2h / have-role-91
+                            :ARG2 (s2x2 / 单体
+                                    :mod (s2x3 / 行政)
+                                    :mod (s2x4 / 大
+                                           :ord (s2x5 / 第二))
+                                    :poss (s2c / country
+                                            :name (s2n2 / name
+                                                    :op1 "俄罗斯")))))
+         :aspect performance)
+  :op2 (s2x6 / 成为-01
+         :ARG0 (s2c2 / city
+                 :name (s2n3 / name
+                         :op1 "克拉斯诺亚尔斯克"))
+         :ARG1 (s2x7 / 中心
+                 :mod (s2x8 / 行政)
+                 :poss s2r)
+         :aspect performance)
+  :year 1934)
+
+# alignment:
+s2a : 0-0
+s2x : 11-11
+s2r : 0-0
+s2n : -1--1
+s2h : 0-0
+s2x2 : 8-8
+s2x3 : 7-7
+s2x4 : 6-6
+s2x5 : 5-5
+s2c : 4-4
+s2n2 : -1--1
+s2x6 : 14-14
+s2c2 : 13-13
+s2n3 : -1--1
+s2x7 : 17-17
+s2x: 11-11
+s2x2: 8-8
+s2x3: 7-7
+s2x4: 6-6
+s2x5: 5-5
+s2x6: 14-14
+s2x7: 17-17
+s2x8: 7-7
+
+# document level annotation:
+(s2s0 / sentence
+  :modal ((root :modal author)
+                    (author :full-affirmative s2x)
+                    (author :full-affirmative s2x6))
+  :coref ((s2c2 :same-entity s1c)))
+
+
+# :: snt3	 在 斯大林 大清洗 时期 ， 克拉斯诺亚尔斯克 是 古拉格 （ 苏联 劳改 总局 ） 的 一个 主要 中心 。
+
+# sentence level graph:
+(s3h / have-role-91
+  :ARG0 (s3c / city
+          :name (s3n / name
+                  :op1 "克拉斯诺亚尔斯克"))
+  :ARG1 (s3i3 / identity-91
+          :ARG0 (s3f / facility
+                  :name (s3n2 / name
+                          :op1 "古拉格"))
+          :ARG1 (s3x / 总局
+                  :mod (s3x2 / 劳改)
+                  :mod (s3c2 / country
+                         :name (s3n4 / name
+                                 :op1 "苏联")))
+          :aspect state
+          :modal-strength full-affirmative)
+  :ARG2 (s3x4 / 中心
+          :mod (s3x5 / 主要))
+  :temporal (s3x6 / 时期
+              :mod (s3x7 / 大清洗
+                     :poss (s3i2 / individual-person
+                             :name (s3n3 / name
+                                     :op1 "斯大林"))))
+  :aspect state
+  :modal-strength full-affirmative)
+
+# alignment:
+s3c : 6-6
+s3c2 : 10-10
+s3h : 0-0
+s3i2 : 2-2
+s3n : -1--1
+s3n2 : -1--1
+s3n3 : -1--1
+s3x : 12-12
+s3x2 : 11-11
+s3x4 : 17-17
+s3x5 : 16-16
+s3x6 : 4-4
+s3x7 : 3-3
+s3i3 : 0-0
+s3f : 8-8
+s3x: 12-12
+s3x2: 11-11
+s3x4: 17-17
+s3x5: 16-16
+s3x6: 4-4
+s3x7: 3-3
+
+# document level annotation:
+(s3s0 / sentence
+  :temporal ((s3x6 :after s1x17))
+  :coref ((s3c :same-entity s2c2)
+                    (s3c :same-entity s1c)))
+
+
+# :: snt4	 这个 时期 作用 最 突出 的 劳改营 是 “ 克拉斯 拉格 ” 劳改营 （ 1938 年 － 1960 年 ） ， 该营 由于 关押 犯人 过多 ， 在 周边 城镇 也 设置 了 两个 分 营 。
+
+# sentence level graph:
+(s4a / and
+  :op1 (s4h / have-role-91
+         :ARG0 (s4f / facility
+                 :name (s4n / name
+                         :op1 "克拉斯拉格")
+                 :ARG0-of (s4h2 / have-role-91
+                            :ARG2 (s4x / 劳改营)))
+         :ARG2 (s4x4 / 劳改营
+                 :mod (s4h3 / have-degree-91
+                        :ARG1 (s4x6 / 作用)
+                        :ARG2 (s4x5 / 突出)
+                        :ARG5 (s4x7 / 最))))
+  :op2 (s4x8 / 设置-01
+         :ARG1 (s4x9 / 分营
+                 :quant (s4x12 / 两)
+                 :unit (s4x13 / 个))
+         :ARG2 (s4x10 / 城镇
+                 :mod (s4x11 / 周边))
+         :cause (s4x14 / 关押-01
+                  :ARG0 s4f
+                  :ARG1 (s4x15 / 犯人
+                          :mod (s4x16 / 过多))
+                  :aspect performance))
+  :temporal (s4x2 / 时期
+              :mod (s4x3 / 这个)
+              :temporal (s4d / date-interval
+                          :op1 (s4d2 / date-entity
+                                 :year 1938)
+                          :op2 (s4d3 / date-entity
+                                 :year 1960))
+              :aspect performance))
+
+# alignment:
+s4a : 0-0
+s4d : 0-0
+s4d2 : 0-0
+s4d3 : 0-0
+s4h : 0-0
+s4h2 : 0-0
+s4h3 : 0-0
+s4n : -1--1
+s4x : 0-0
+s4x10 : 30-30
+s4x11 : 29-29
+s4x12 : 34-34
+s4x13 : 34-34
+s4x14 : 24-24
+s4x15 : 25-25
+s4x16 : 26-26
+s4x2 : 2-2
+s4x3 : 1-1
+s4x4 : 7-7
+s4x5 : 5-5
+s4x6 : 3-3
+s4x7 : 4-4
+s4x8 : 32-32
+s4x: 7-7
+s4x4: 7-7
+s4x6: 3-3
+s4x5: 5-5
+s4x7: 4-4
+s4x8: 32-32
+s4x10: 30-30
+s4x11: 29-29
+s4x14: 24-24
+s4x15: 25-25
+s4x16: 26-26
+s4x2: 2-2
+s4x3: 1-1
+
+# document level annotation:
+(s4s0 / sentence
+  :temporal ((s4x2 :overlap s3x6))
+  :modal ((root :modal author)
+                    (author :full-affirmative s4x14)
+                    (author :full-affirmative s4x2)))
+
+
+# :: snt5	 在 克拉斯诺亚尔斯克 城 内部 ， “ 叶尼塞 拉格 ” 劳改营 在 二战 的 战火 中 仍 发挥 重要 作用 。
+
+# sentence level graph:
+(s5x / 发挥-01
+  :ARG0 (s5f / facility
+          :name (s5n / name
+                  :op1 "叶尼塞拉格")
+          :ARG0-of (s5h / have-role-91
+                     :ARG2 (s5x2 / 劳改营)))
+  :ARG1 (s5x6 / 作用
+          :mod (s5x7 / 重要))
+  :place (s5x3 / 内部
+           :mod (s5x4 / 城
+                  :name (s5x5 / 克拉斯诺亚尔斯克)))
+  :place (s5x8 / 战火
+           :mod (s5w / war
+                  :name (s5n2 / name
+                          :op1 "二战")))
+  :mod (s5x9 / 仍)
+  :aspect state)
+
+# alignment:
+s5h : 0-0
+s5n : -1--1
+s5n2 : -1--1
+s5w : 12-12
+s5x : 17-17
+s5x2 : 10-10
+s5x3 : 4-4
+s5x4 : 3-3
+s5x5 : 2-2
+s5x6 : 19-19
+s5x7 : 18-18
+s5x8 : 14-14
+s5x: 17-17
+s5x2: 10-10
+s5x6: 19-19
+s5x7: 18-18
+s5x3: 4-4
+s5x4: 3-3
+s5x5: 2-2
+s5x8: 14-14
+s5x9: 16-16
+
+# document level annotation:
+(s5s0 / sentence
+  :temporal ((s5x :after s4x2))
+  :modal ((root :modal author)
+                    (author :full-affirmative s5x))
+  :coref ((s5x4 :same-entity s3c)
+                    (s5x4 :same-entity s2c2)))
+
+
+# :: snt6	 二战 期间 ， 许多 工厂 为 避 战火 ， 从 乌克兰 和 俄罗斯 西部 迁 到 此地 ， 大大 促进 了 当地 工业 发展 。
+
+# sentence level graph:
+(s6a2 / and
+  :op1 (s6x6 / 迁-01
+         :ARG1 (s6x8 / 工厂
+                 :mod (s6x9 / 许多))
+         :ARG2 (s6x11 / 此地)
+         :cause (s6x12 / 避-01
+                  :ARG1 (s6x13 / 战火)
+                  :aspect performance)
+         :source (s6a3 / and
+                   :op1 (s6c3 / country
+                          :name (s6n4 / name
+                                  :op1 "乌克兰"))
+                   :op2 (s6x14 / 西部
+                          :mod (s6c4 / country
+                                 :name (s6n5 / name
+                                         :op1 "俄罗斯"))))
+         :aspect performance)
+  :op2 (s6x7 / 促进-01
+         :ARG1 (s6x2 / 发展-05
+                 :ARG1-of (s6x3 / 工业)
+                 :mod (s6x4 / 当地)
+                 :aspect endeavor)
+         :mod (s6x / 大大)
+         :aspect performance)
+  :temporal (s6x10 / 期间
+              :mod (s6w / war
+                     :name (s6n3 / name
+                             :op1 "二战"))))
+
+# alignment:
+s6a2 : 0-0
+s6a3 : 0-0
+s6c3 : 11-11
+s6c4 : 13-13
+s6n3 : -1--1
+s6n4 : -1--1
+s6n5 : -1--1
+s6w : 1-1
+s6x10 : 2-2
+s6x11 : 17-17
+s6x12 : 7-7
+s6x13 : 8-8
+s6x14 : 14-14
+s6x6 : 15-15
+s6x7 : 20-20
+s6x8 : 5-5
+s6x9 : 4-4
+s6x : 19-19
+s6x2 : 24-24
+s6x3 : 23-23
+s6x6: 15-15
+s6x8: 5-5
+s6x9: 4-4
+s6x11: 17-17
+s6x12: 7-7
+s6x13: 8-8
+s6x14: 14-14
+s6x7: 20-20
+s6x2: 24-24
+s6x3: 23-23
+s6x4: 22-22
+s6x: 19-19
+s6x10: 2-2
+
+# document level annotation:
+(s6s0 / sentence
+  :temporal ((s6a2 :overlap s5x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s6x12)
+                    (author :full-affirmative s6x6)
+                    (author :full-affirmative s6x2))
+  :coref ((s6x11 :same-entity s5x4)))
+
+
+# :: snt7	 战后 ， 许多 为 这些 工业 提供 原料 的 大 工厂 也 被 建立 起来 ： 炼 铝厂 、 冶金 厂 、 次要 金属 加工厂 等等 。
+
+# sentence level graph:
+(s7x / 建立-01
+  :ARG1 (s7x2 / 工厂
+          :mod (s7x3 / 大)
+          :mod (s7x4 / 提供-01
+                 :ARG1 (s7x5 / 原料)
+                 :ARG2 (s7x6 / 工业
+                         :mod (s7x8 / 这些))
+                 :aspect performance)
+          :mod (s7x7 / 许多)
+          :example (s7a / and
+                     :op1 (s7x9 / 厂
+                            :mod (s7x16 / 炼-01
+                                   :ARG1 (s7x17 / 铝)))
+                     :op2 (s7x10 / 厂
+                            :mod (s7x18 / 冶-00
+                                   :ARG1 (s7x19 / 金)))
+                     :op3 (s7x11 / 加工厂
+                            :mod (s7x12 / 金属
+                                   :mod (s7x13 / 次要)))
+                     :op4 (s7x14 / 等等)))
+  :temporal (s7x15 / 战后)
+  :aspect endeavor)
+
+# alignment:
+s7a : 0-0
+s7x : 14-14
+s7x10 : 20-0
+s7x11 : 25-25
+s7x12 : 24-24
+s7x13 : 23-3
+s7x14 : 26-26
+s7x15 : 1-1
+s7x2 : 11-11
+s7x3 : 10-10
+s7x4 : 7-7
+s7x5 : 8-8
+s7x6 : 6-6
+s7x7 : 3-3
+s7x8 : 5-5
+s7x9 : 17-18
+s7x16 : 17-17
+s7x17 : 18-18
+s7x18 : 20-20
+s7x: 14-14
+s7x2: 11-11
+s7x3: 10-10
+s7x4: 7-7
+s7x5: 8-8
+s7x6: 6-6
+s7x8: 5-5
+s7x7: 3-3
+s7x9: 21-21
+s7x16: 17-17
+s7x10: 21-21
+s7x11: 25-25
+s7x12: 24-24
+s7x13: 23-23
+s7x14: 26-26
+s7x15: 1-1
+
+# document level annotation:
+(s7s0 / sentence
+  :temporal ((s7x :after s6a2))
+  :modal ((root :modal author)
+                    (author :full-affirmative s7x4)
+                    (author :full-affirmative s7x))
+  :coref ((s7x6 :same-entity s6x3)))
+
+

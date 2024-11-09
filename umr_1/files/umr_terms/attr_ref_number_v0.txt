@@ -1,0 +1,9 @@
+Singular
+Non-singular
+Paucal
+Plural
+Dual
+Non-dual Paucal
+Greater Plural
+Trial
+Non-trial Paucal

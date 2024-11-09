@@ -1,0 +1,694 @@
+user name:
+user id:
+file language: chinese
+file format: plain_text
+Doc ID in database:
+export time:
+
+# :: snt1	Sentence: 黎巴嫩 全国 大量 传呼机 及 对讲机 连续 两日 爆炸 ， 造成 至少 37 死 ， 近 3 , 000 人 受伤
+
+# sentence level graph
+(s1c / consecutive-event
+  :op1 (s1a / and
+         :op1 (s1x / 爆炸-01
+                :ARG1 (s1x3 / 传呼机
+                        :place (s1c3 / city
+                                 :name (s1n / name
+                                         :op1 "黎巴嫩")
+                                 :mod (s1x4 / 全国))
+                        :quant (s1x5 / 大量))
+                :Aspect performance
+                :mod (s1x8 / 连续
+                       :op1 (s1t / temporal-quantity
+                              :quant 2
+                              :unit (s1x9 / 日)))
+                :cause-of (s1x7 / 死-01
+                            :ARG1 (s1x10 / 人
+                                    :quant 37)
+                            :mod (s1x11 / 至少)
+                            :Aspect performance))
+         :op2 (s1x2 / 爆炸-01
+                :ARG1 (s1x6 / 对讲机
+                        :quant (s1x12 / 大量)
+                        :ARG1-of (s1m / mod
+                                   :op1 s1x5))
+                :Aspect performance
+                :cause-of (s1x13 / 受伤-01
+                            :ARG1 (s1x14 / 人
+                                    :quant 3000
+                                    :mod (s1x15 / 近))
+                            :Aspect performance)))
+                            :quant 3000
+                                    :mod (s1x15 / 近))
+
+# alignment:
+s1a: 0-0
+s1c: 0-0
+s1c3: 0-0
+s1m: 0-0
+s1n: 0-0
+s1t: 0-0
+s1x: 0-0
+s1x10: 0-0
+s1x11: 0-0
+s1x12: 0-0
+s1x13: 0-0
+s1x14: 0-0
+s1x15: 0-0
+s1x2: 0-0
+s1x3: 0-0
+s1x4: 0-0
+s1x5: 0-0
+s1x6: 0-0
+s1x7: 0-0
+s1x8: 0-0
+s1x9: 0-0
+
+# document level annotation:
+
+# :: snt2	Sentence: 不少 国民 担心 手中 电话 实为 炸弹 ， 纷纷 弃置
+
+# sentence level graph
+(s2x / 弃置-00
+  :ARG0 (s2x6 / 国民
+          :quant (s2x7 / 不少))
+  :mod (s2x2 / 纷纷)
+  :cause (s2x3 / 担心-01
+           :ARG0 s2x6
+           :ARG1 (s2i2 / identity-91
+                   :ARG1 (s2x4 / 电话
+                           :mod (s2x5 / 手中))
+                   :ARG2 (s2x8 / 炸弹)
+                   :Aspect state)
+           :Aspect state)
+  :Aspect performance)
+
+# alignment:
+s2i2: 0-0
+s2x: 0-0
+s2x2: 0-0
+s2x3: 0-0
+s2x4: 0-0
+s2x5: 0-0
+s2x6: 0-0
+s2x7: 0-0
+s2x8: 0-0
+
+# document level annotation:
+
+# :: snt3	Sentence: 袭击 针对 亲 伊朗 武装组织 真主党 ， 矛头 直指 与 之 多次 交火 的 以色列
+
+# sentence level graph
+(s3a / and
+  :op1 (s3x / 针对-01
+         :ARG1 (s3x2 / 袭击)
+         :ARG2 (s3o / organization
+                 :name (s3n / name
+                         :op1 "真主党")
+                 :ARG1-of (s3i2 / identity-91
+                            :ARG2 (s3x3 / 组织
+                                    :mod (s3x4 / 武装)
+                                    :mod (s3x5 / 亲
+                                           :mod (s3x6 / 伊朗)))))
+         :Aspect performance)
+  :op2 (s3x7 / 指-01
+         :ARG0 (s3x8 / 矛头)
+         :ARG1 (s3c / country
+                 :name (s3n2 / name
+                         :op1 "以色列")
+                 :ARG0-of (s3x10 / 交火-00
+                            :ARG1 (s3a2 / and
+                                    :op1 (s3x11 / 真主党)
+                                    :op2 s3i2)
+                            :frequency (s3x12 / 多次)
+                            :Aspect performance))
+         :Aspect state))
+
+# alignment:
+s3a: 0-0
+s3a2: 0-0
+s3c: 0-0
+s3i2: 0-0
+s3n: 0-0
+s3n2: 0-0
+s3o: 0-0
+s3x: 0-0
+s3x10: 0-0
+s3x11: 0-0
+s3x12: 0-0
+s3x2: 0-0
+s3x3: 0-0
+s3x4: 0-0
+s3x5: 0-0
+s3x6: 0-0
+s3x7: 0-0
+s3x8: 0-0
+
+# document level annotation:
+
+# :: snt4	Sentence: 真主 党 领袖 纳斯鲁拉 （ Hassan Nasrallah ） 怒斥 ， 袭击 规模 空前绝后 ， 已经 超越 所有 红线 ， 不顾 一切 法律 及 道德 底线 ， 如同 宣战 及 犯下 战争 罪 行
+
+# sentence level graph
+(s4x / 怒斥-01
+  :ARG0 (s4i2 / individual-person
+          :name (s4n / name
+                  :op1 "纳斯鲁拉")
+          :ARG1-of (s4i3 / implicit-presentation
+                     :op1 (s4a3 / and
+                            :op1 (s4i5 / individual-person
+                                   :name (s4n3 / name
+                                           :op1 "Hassan"
+                                           :op2 "Nasrallah"))
+                            :op2 (s4x5 / 党
+                                   :mod (s4o / organization
+                                          :name (s4n4 / name
+                                                  :op1 "真主")))))
+          :ARG3-of (s4h / have-org-role-91
+                     :ARG2 s4x5
+                     :ARG1 (s4r / religious-organization
+                             :name (s4n2 / name
+                                     :op1 "真主"
+                                     :op2 "党"))))
+  :ARG1 (s4a / and
+          :op6 (s4x11 / 如同-91
+                 :ARG1 (s4a4 / and
+                         :op1 (s4x7 / 宣战-00
+                                :Aspect performance)
+                         :op2 (s4x8 / 犯下-00
+                                :ARG1 (s4x9 / 罪行
+                                        :manner (s4x10 / 战争))
+                                :Aspect performance))
+                 :Aspect state)
+          :op5 (s4x6 / 顾-01
+                 :ARG0 (s4a2 / and
+                         :op1 (s4x12 / 法律)
+                         :op2 (s4x13 / 底线
+                                :manner (s4x14 / 道德)))
+                 :Aspect state)
+          :op4 (s4x15 / 红线
+                 :mod (s4x16 / 所有)
+                 :ARG0-of (s4x17 / 超越-00
+                            :ARG1 (s4x3 / 规模
+                                    :mod (s4x4 / 袭击-00
+                                           :Aspect performance))
+                            :Aspect state))
+          :op3 (s4x2 / 空前绝后
+                 :ARG0 (s4x18 / 规模
+                         :mod (s4x19 / 袭击-00
+                                :Aspect performance))
+                 :Aspect state))
+  :Aspect performance)
+
+# alignment:
+s4a: 0-0
+s4a2: 0-0
+s4a3: 0-0
+s4a4: 0-0
+s4h: 0-0
+s4i2: 0-0
+s4i3: 0-0
+s4i5: 0-0
+s4n: 0-0
+s4n2: 0-0
+s4n3: 0-0
+s4n4: 0-0
+s4o: 0-0
+s4r: 0-0
+s4x: 0-0
+s4x10: 0-0
+s4x11: 0-0
+s4x12: 0-0
+s4x13: 0-0
+s4x14: 0-0
+s4x15: 0-0
+s4x16: 0-0
+s4x17: 0-0
+s4x18: 0-0
+s4x19: 0-0
+s4x2: 0-0
+s4x3: 0-0
+s4x4: 0-0
+s4x5: 0-0
+s4x6: 0-0
+s4x7: 0-0
+s4x8: 0-0
+s4x9: 0-0
+
+# document level annotation:
+
+# :: snt5	Sentence: 国内 广播 纳斯鲁拉 演讲 的 同时 ， 以色列 也 派出 战机 ， 飞越 黎巴嫩 首都 贝鲁特 并 空袭 黎巴嫩 南部
+
+# sentence level graph
+(s5a / and
+  :op1 (s5x / 派出-01
+         :ARG0 (s5c / country
+                 :name (s5n / name
+                         :op1 "以色列"))
+         :ARG1 (s5x2 / 战机
+                 :mod (s5x3 / 也))
+         :Aspect performance
+         :temporal (s5x16 / 同时
+                     :op1 (s5x4 / 广播-01
+                            :ARG0 (s5x5 / 国内)
+                            :ARG1 (s5i2 / implicit-argument)
+                            :Aspect habitual
+                            :quote s5i2)))
+  :op2 (s5x15 / 飞越-01
+         :ARG0 s5x2
+         :ARG1 (s5c2 / city
+                 :name (s5n2 / name
+                         :op1 "贝鲁特")
+                 :place (s5c3 / country
+                          :name (s5n3 / name
+                                  :op1 "黎巴嫩")
+                          :ARG1-of (s5i3 / implicit-argument
+                                     :ARG2 (s5x7 / 首都))))
+         :Aspect performance)
+  :op3 (s5x8 / 空袭-01
+         :ARG0 s5x2
+         :ARG1 (s5x9 / 南部
+                 :part (s5c4 / country
+                         :name (s5n4 / name
+                                 :op1 "黎巴嫩")))
+         :Aspect performance))
+
+# alignment:
+s5a: 0-0
+s5c: 0-0
+s5c2: 0-0
+s5c3: 0-0
+s5c4: 0-0
+s5i2: 0-0
+s5i3: 0-0
+s5n: 0-0
+s5n2: 0-0
+s5n3: 0-0
+s5n4: 0-0
+s5x: 0-0
+s5x15: 0-0
+s5x16: 0-0
+s5x2: 0-0
+s5x3: 0-0
+s5x4: 0-0
+s5x5: 0-0
+s5x7: 0-0
+s5x8: 0-0
+s5x9: 0-0
+
+# document level annotation:
+
+# :: snt6	Sentence: 以色列 政府 没有 直接 评论 是否 发动 连环爆炸 ， 但 国防 部长 事后 提到 加沙 战争 “ 展开 新 一 阶段 ” ， 又 扬言 会 继续 打击 真主 党
+
+# sentence level graph
+(s6b / but-91
+  :ARG2 (s6a / and
+          :op1 (s6x5 / 提到-01
+                 :ARG1 (s6i2 / identity-91
+                         :ARG2 (s6x7 / 阶段
+                                 :mod (s6x8 / 新)
+                                 :mod (s6x9 / 一)
+                                 :part-of (s6x10 / 展开-01
+                                            :Aspect habitual
+                                            :place (s6x6 / 战争
+                                                     :mod (s6x11 / 加沙))
+                                            :quote s6x5)
+                                 :ARG1-of (s6i3 / implicit-predicate)))
+                 :Aspect state
+                 :quote s6x5
+                 :temporal (s6x12 / 事后))
+          :op2 (s6x / 扬言-01
+                 :ARG0 (s6x13 / 部长
+                         :mod (s6x14 / 国防)
+                         :ARG1-of (s6h / have-org-role-91
+                                    :ARG2 (s6x15 / 政府
+                                            :mod (s6c / country
+                                                   :name (s6n / name
+                                                           :op1 "以色列")))))
+                 :ARG1 (s6x16 / 继续-01
+                         :ARG1 (s6x17 / 打击-01
+                                 :ARG1 (s6x18 / 真主党)
+                                 :Aspect habitual)
+                         :Aspect verb)
+                 :Aspect state
+                 :quote s6x5)))
+
+# alignment:
+s6a: 0-0
+s6b: 0-0
+s6c: 0-0
+s6h: 0-0
+s6i2: 0-0
+s6i3: 0-0
+s6n: 0-0
+s6x: 0-0
+s6x10: 0-0
+s6x11: 0-0
+s6x12: 0-0
+s6x13: 0-0
+s6x14: 0-0
+s6x15: 0-0
+s6x16: 0-0
+s6x17: 0-0
+s6x18: 0-0
+s6x5: 0-0
+s6x6: 0-0
+s6x7: 0-0
+s6x8: 0-0
+s6x9: 0-0
+
+# document level annotation:
+
+# :: snt7	Sentence: 多个 外电 消息 指 ， 爆炸 由 以色列 情报 组织 Mossad 策动
+
+# sentence level graph
+(s7x / 指-02
+  :ARG1 (s7x2 / 消息
+          :source (s7x6 / 外电)
+          :quant s7x7)
+  :ARG2 (s7x3 / 策动-01
+          :ARG1 (s7x5 / 爆炸)
+          :agent (s7o / organization
+                   :name (s7n / name
+                           :op1 "Mossad")
+                   :ARG1-of (s7i2 / identity-91
+                              :ARG2 (s7x4 / 组织
+                                      :mod (s7x8 / 情报)
+                                      :place (s7c / country
+                                               :name (s7n2 / name
+                                                       :op1 "以色列")))))
+          :Aspect performance)
+  :Aspect state)
+
+# alignment:
+s7c: 0-0
+s7i2: 0-0
+s7n: 0-0
+s7n2: 0-0
+s7o: 0-0
+s7x: 0-0
+s7x2: 0-0
+s7x3: 0-0
+s7x4: 0-0
+s7x5: 0-0
+s7x6: 0-0
+s7x8: 0-0
+
+# document level annotation:
+
+# :: snt8	Sentence: 《 纽约时报 》 报道 ， 以方 渗透 供应链 后 ， 在 通讯 设备 安装 炸药
+
+# sentence level graph
+(s8x / 报道-01
+  :ARG0 (s8n / newspaper
+          :name (s8n2 / name
+                  :op1 "《"
+                  :op2 "纽约时报"
+                  :op3 "》"))
+  :ARG1 (s8x2 / 安装-01
+          :ARG1 (s8x3 / 炸药)
+          :ARG2 (s8x4 / 设备
+                  :mod (s8x5 / 通讯))
+          :temporal (s8x6 / 后
+                      :op1 (s8x7 / 渗透-01
+                             :ARG0 (s8e / ethnic-group
+                                     :name (s8n3 / name
+                                             :op1 "以方"))
+                             :ARG1 (s8x8 / 供应链)
+                             :Aspect performance))
+          :Aspect performance)
+  :Aspect performance)
+
+# alignment:
+s8e: 0-0
+s8n: 0-0
+s8n2: 0-0
+s8n3: 0-0
+s8x: 0-0
+s8x2: 0-0
+s8x3: 0-0
+s8x4: 0-0
+s8x5: 0-0
+s8x6: 0-0
+s8x7: 0-0
+s8x8: 0-0
+
+# document level annotation:
+
+# :: snt9	Sentence: 被指 是 制造商 的 台湾 公司 金 阿波罗 ， 坚决 否认 生产 涉事 设备 ， 另 指 匈牙利 合作 伙伴 获准 使用 金 阿波罗 商标
+
+# sentence level graph
+(s9a / and
+  :op1 (s9x / 否认-01
+         :ARG0 (s9c3 / company
+                 :name (s9n3 / name
+                         :op1 "金"
+                         :op2 "阿波罗")
+                 :ARG1-of (s9x6 / 指-02
+                            :ARG2 (s9x7 / 公司
+                                    :mod (s9x8 / 台湾)
+                                    :ARG1-of (s9x9 / 指-01
+                                               :ARG2 (s9x10 / 制造商)
+                                               :Aspect state)
+                                    :mod (s9x11 / 被-02
+                                           :ARG0-of (s9x12 / 指-01
+                                                      :ARG1 (s9x13 / 涉事-01)
+                                                      :Aspect state)))
+                            :Aspect state))
+         :ARG1 (s9x2 / 生产-01
+                 :ARG0 s9c3
+                 :ARG1 (s9x3 / 设备
+                         :mod (s9x4 / 涉事-01))
+                 :Aspect performance
+                 :mod (s9x5 / 坚决))
+         :Aspect performance)
+  :op2 (s9x14 / 指-02
+         :ARG0 s9c3
+         :ARG1 (s9x15 / 伙伴
+                 :mod (s9x16 / 合作-01
+                        :ARG0 s9c3
+                        :ARG1 (s9c2 / company
+                                :name (s9n2 / name
+                                        :op1 "金"
+                                        :op2 "阿波罗")
+                                :ARG0-of (s9x17 / 准-02
+                                           :ARG1 (s9x18 / 使用-01
+                                                   :ARG0 s9x15
+                                                   :ARG1 (s9x20 / 商标
+                                                           :poss s9c2)
+                                                   :Aspect state)
+                                           :Aspect state))))  
+         :ARG2 (s9c4 / country
+                 :name (s9n4 / name
+                         :op1 "匈牙利")
+                 :mod s9x15)
+         :Aspect state))
+
+# alignment:
+s9a: 0-0
+s9c2: 0-0
+s9c3: 0-0
+s9c4: 0-0
+s9n2: 0-0
+s9n3: 0-0
+s9n4: 0-0
+s9x: 0-0
+s9x10: 0-0
+s9x11: 0-0
+s9x12: 0-0
+s9x13: 0-0
+s9x14: 0-0
+s9x15: 0-0
+s9x16: 0-0
+s9x17: 0-0
+s9x18: 0-0
+s9x2: 0-0
+s9x20: 0-0
+s9x3: 0-0
+s9x4: 0-0
+s9x5: 0-0
+s9x6: 0-0
+s9x7: 0-0
+s9x8: 0-0
+s9x9: 0-0
+
+# document level annotation:
+
+# :: snt10	Sentence: 匈牙利 政府 随即 撇清 关系 ， 否认 该 公司 设有 厂房
+
+# sentence level graph
+(s10a / and
+  :op1 (s10x / 撇清-01
+         :ARG0 (s10g / government
+                 :place (s10c / country
+                          :name (s10n / name
+                                  :op1 "匈牙利")))
+         :ARG1 (s10x2 / 关系)
+         :temporal (s10x3 / 随即)
+         :Aspect performance)
+  :op2 (s10x4 / 否认-01
+         :ARG0 s10g
+         :ARG1 (s10x5 / 设有-01
+                 :ARG0 (s10x6 / 公司
+                         :mod (s10x7 / 该))
+                 :ARG1 (s10x8 / 厂房)
+                 :Aspect state)
+         :Aspect performance))
+
+# alignment:
+s10a: 0-0
+s10c: 0-0
+s10g: 0-0
+s10n: 0-0
+s10x: 0-0
+s10x2: 0-0
+s10x3: 0-0
+s10x4: 0-0
+s10x5: 0-0
+s10x6: 0-0
+s10x7: 0-0
+s10x8: 0-0
+
+# document level annotation:
+
+# :: snt11	Sentence: 台湾 检控 官 已 展开 调查
+
+# sentence level graph
+(s11x / 展开-01
+  :ARG0 (s11x2 / 官
+          :mod (s11x3 / 检控
+                 :mod (s11l / local
+                        :place (s11c / country
+                                 :name (s11n / name
+                                         :op1 "台湾")))))
+  :ARG1 (s11x4 / 调查-01
+          :Aspect performance)
+  :Aspect performance)
+
+# alignment:
+s11c: 0-0
+s11l: 0-0
+s11n: 0-0
+s11x: 0-0
+s11x2: 0-0
+s11x3: 0-0
+s11x4: 0-0
+
+# document level annotation:
+
+# :: snt12	Sentence: 另外 ， 以色列 警方 拘捕 一名 商人 ， 指被 伊朗 招揽 成为 刺客 ， 讨论 过 行刺 总理 内塔尼亚胡
+
+# sentence level graph
+(s12c / consecutive
+  :op1 (s12x / 拘捕-01
+         :ARG0 (s12x3 / 警方
+                 :place (s12c2 / country
+                          :name (s12n / name
+                                  :op1 "以色列")))
+         :ARG1 (s12x4 / 商人
+                 :quant 1
+                 :unit (s12x5 / 名))
+         :mod (s12x2 / 另外)
+         :Aspect performance)
+  :op2 (s12x6 / 指-02
+         :ARG2 (s12x7 / 招揽-01
+                 :ARG0 (s12c3 / country
+                         :name (s12n2 / name
+                                 :op1 "伊朗"))
+                 :ARG1 s12x4
+                 :ARG2 (s12x8 / 刺客)
+                 :Aspect performance)
+         :ARG3 (s12x9 / 讨论-01
+                 :ARG0 s12x4
+                 :ARG1 (s12x10 / 行刺-01
+                         :ARG1 (s12i2 / individual-person
+                                 :name (s12n3 / name
+                                         :op1 "内塔尼亚胡")
+                                 :mod (s12x11 / 总理))
+                         :Aspect process)
+                 :Aspect performance)
+         :Aspect state))
+
+# alignment:
+s12c: 0-0
+s12c2: 0-0
+s12c3: 0-0
+s12i2: 0-0
+s12n: 0-0
+s12n2: 0-0
+s12n3: 0-0
+s12x: 0-0
+s12x10: 0-0
+s12x11: 0-0
+s12x2: 0-0
+s12x3: 0-0
+s12x4: 0-0
+s12x5: 0-0
+s12x6: 0-0
+s12x7: 0-0
+s12x8: 0-0
+s12x9: 0-0
+
+# document level annotation:
+
+# :: snt13	Sentence: 至于 联合国 大会 较早 前 就 通过 决议 ， 要求 以色列 一年 内 停止 非法 占领 约旦 河 西岸
+
+# sentence level graph
+(s13x / 要求-01
+  :ARG0 (s13s / s13s2
+          :name (s13n / name
+                  :op1 "联合国"
+                  :op2 "大会"))
+  :ARG1 (s13x2 / 停止-01
+          :ARG0 (s13c / country
+                  :name (s13n2 / name
+                          :op1 "以色列"))
+          :ARG1 (s13x3 / 占领-01
+                  :ARG1 (s13p / polity
+                          :name (s13n3 / name
+                                  :op1 "约旦"
+                                  :op2 "河"
+                                  :op3 "西岸"
+                                  :op4 "岸"))
+                  :Aspect process
+                  :mod (s13x9 / 非法))
+          :dur (s13t / temporal-quantity
+                  :quant 1
+                  :unit (s13x10 / 年))
+          :Aspect process)
+  :Aspect performance
+  :mod (s13x4 / 较早)
+  :mod (s13x5 / 前)
+  :Aspect performance)
+
+# alignment:
+s13c: 0-0
+s13n: 0-0
+s13n2: 0-0
+s13n3: 0-0
+s13p: 0-0
+s13s: 0-0
+s13t: 0-0
+s13x: 0-0
+s13x10: 0-0
+s13x2: 0-0
+s13x3: 0-0
+s13x4: 0-0
+s13x5: 0-0
+s13x9: 0-0
+
+# document level annotation:
+
+# Source File: 
+黎巴嫩 全国 大量 传呼机 及 对讲机 连续 两日 爆炸 ， 造成 至少 37 死 ， 近 3 , 000 人 受伤
+不少 国民 担心 手中 电话 实为 炸弹 ， 纷纷 弃置
+袭击 针对 亲 伊朗 武装组织 真主党 ， 矛头 直指 与 之 多次 交火 的 以色列
+真主 党 领袖 纳斯鲁拉 （ Hassan Nasrallah ） 怒斥 ， 袭击 规模 空前绝后 ， 已经 超越 所有 红线 ， 不顾 一切 法律 及 道德 底线 ， 如同 宣战 及 犯下 战争 罪 行
+国内 广播 纳斯鲁拉 演讲 的 同时 ， 以色列 也 派出 战机 ， 飞越 黎巴嫩 首都 贝鲁特 并 空袭 黎巴嫩 南部
+以色列 政府 没有 直接 评论 是否 发动 连环爆炸 ， 但 国防 部长 事后 提到 加沙 战争 “ 展开 新 一 阶段 ” ， 又 扬言 会 继续 打击 真主 党
+多个 外电 消息 指 ， 爆炸 由 以色列 情报 组织 Mossad 策动
+《 纽约时报 》 报道 ， 以方 渗透 供应链 后 ， 在 通讯 设备 安装 炸药
+被指 是 制造商 的 台湾 公司 金 阿波罗 ， 坚决 否认 生产 涉事 设备 ， 另 指 匈牙利 合作 伙伴 获准 使用 金 阿波罗 商标
+匈牙利 政府 随即 撇清 关系 ， 否认 该 公司 设有 厂房
+台湾 检控 官 已 展开 调查
+另外 ， 以色列 警方 拘捕 一名 商人 ， 指被 伊朗 招揽 成为 刺客 ， 讨论 过 行刺 总理 内塔尼亚胡
+至于 联合国 大会 较早 前 就 通过 决议 ， 要求 以色列 一年 内 停止 非法 占领 约旦 河 西岸

@@ -1,0 +1,3102 @@
+# :: snt1	la costumbre cultura
+# sentence level graph:
+(s1a / and
+  :op1 (s1c / costumbre)
+  :op2 (s1c2 / cultura))
+
+# alignment:s1a: 0-undefined
+s1c: 2-2
+s1c2: 3-3
+
+# document level annotation:
+(s1s0 / sentence)
+
+
+
+
+# :: snt2	anyetnemke' mokham
+# sentence level graph:
+(s2e / exist-91
+  :ARG0 (s2p / place)
+  :ARG1 (s2t / thing)
+  :mod (s2m / mokham)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:s2e: 0-0
+s2m: 2-2
+s2t: 0-0
+s2p: 0-0
+
+# document level annotation:
+(s2s0 / sentence
+
+  :temporal ((present-ref :overlap s2e))
+
+  :modal ((ROOT :MODAL AUTH)
+
+                    (AUTH :FullAff s2e))
+
+  :coref ((s2t :same-entity s1a)))
+
+
+
+
+# :: snt3	enyese'savonak
+# sentence level graph:
+(s3e / enyese'savonak
+  :op1 (s3p / person
+         :refer-person 1st
+         :refer-number Plural))
+
+# alignment:s3e: 1-1
+s3p: 0-0
+
+# document level annotation:
+(s3s0 / sentence
+
+  :coref ((s2p :same-entity s3e)))
+
+
+
+
+# :: snt4	na onyetkesek ennengko'o angkelvana
+# sentence level graph:
+(s4h / have-example-91
+  :ARG0 (s4a / angkelvana
+          :refer-number Singular)
+  :ARG1 (s4t / thing)
+  :causer (s4p / person
+            :refer-person 1st
+            :refer-number Plural)
+  :MODSTR FullAff
+  :Aspect Performance)
+
+# alignment:s4a: 4-4
+s4h: 0-0
+s4p: 0-0
+s4t: 0-0
+
+# document level annotation:
+(s4s0 / sentence
+
+  :temporal ((future-ref :overlap s4h))
+
+  :modal ((ROOT :MODAL AUTH)
+
+                    (AUTH :FullAff s4h))
+
+  :coref ((s3p :subset-of s4p)
+
+                    (s2t :subset-of s4t)))
+
+
+
+
+# :: snt5	angkelvana kehlvala akteyayam ayka
+# sentence level graph:
+(s5a / angkelvana
+  :Source-of (s5e / enteyayam-01
+               :actor (s5p / person
+                        :ARG0-of (s5h / have-rel-role-91
+                                   :ARG1 s5a
+                                   :ARG2 (s5a2 / ayka))
+                        :refer-number Singular)
+               :temporal (s5k / kehlvala)
+               :Aspect Performance
+               :MODSTR FullAff))
+
+# alignment:s5a: 0-0
+s5e: 3-3
+s5a2: 4-4
+s5p: 0-0
+s5h: 0-0
+s5k: 2-2
+
+# document level annotation:
+(s5s0 / sentence
+
+  :temporal ((past-ref :depends-on s5k)
+
+                    (s5k :Contained s5e))
+
+  :modal ((ROOT :MODAL AUTH)
+
+                    (AUTH :FullAff s5e))
+
+  :coref ((s4a :same-entity s5a)))
+
+
+
+
+# :: snt6	ayasemmahlkahlta angkotahlnengvomok yemmen
+# sentence level graph:
+(s6e / enyasemmahlka'-00
+  :undergoer (s6p / person
+               :refer-person 3rd
+               :refer-number Singular)
+  :theme (s6e2 / entahlnema-00
+           :actor s6p
+           :goal (s6o / or
+                   :op1 (s6y / yemmen)
+                   :op2 (s6t / thing))
+           :Aspect Performance
+           :Modstr s6e)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:s6e: 0-0
+s6e2: 2-2
+s6o: 0-0
+s6p: 0-0
+s6t: 0-0
+s6y: 3-3
+
+# document level annotation:
+(s6s0 / sentence
+
+  :temporal ((s6e :after s6e2)
+
+                    (s5e :after s6e))
+
+  :modal ((ROOT :MODAL AUTH)
+
+                    (AUTH :FullAff Null_Prohibiter)
+
+                    (Null_Prohibiter :FullAff s6e)
+
+                    (s6e :Unsp s6e2))
+
+  :coref ((s5a :same-entity s6p)))
+
+
+
+
+# :: snt7	o sanga
+# sentence level graph:
+(s7s / sanga)
+
+# alignment:s7s: 2-2
+
+# document level annotation:
+(s7s0 / sentence
+
+  :coref ((s6t :same-entity s7s)))
+
+
+
+
+# :: snt8	ese es la cultura de los pueblo sanapana
+# sentence level graph:
+(s8i2 / identity-91
+  :ARG0 (s8e / ese)
+  :ARG1 (s8c / cultura
+          :poss (s8e2 / ethnic-group
+                  :name (s8n / name
+                          :op1 "sanapana")
+                  :wiki "Sanapaná"))
+  :temporal (s8t / time)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:s8c: 4-4
+s8e: 1-1
+s8e2: 8-8
+s8i2: 0-0
+s8n: -1--1
+s8t: 0-0
+
+# document level annotation:
+(s8s0 / sentence
+
+  :temporal ((s8t :overlap s8i2))
+
+  :modal ((ROOT :MODAL AUTH)
+
+                    (AUTH :FullAff s8i2))
+
+  :coref ((s6e :same-event s8e)))
+
+
+
+
+# :: snt9	vaya'moho kehlvoyena
+# sentence level graph:
+(s9e / elvay'a-00
+  :goal (s9k / kehlvoyena))
+
+# alignment:s9e: 1-1
+s9k: 2-2
+
+# document level annotation:
+(s9s0 / sentence
+
+  :temporal ((DCT :depends-on s9k))
+
+  :coref ((s8t :same-entity s9e)))
+
+
+
+
+# :: snt10	se mantiene todavía
+# sentence level graph:
+(s10m / mantener
+  :undergoer (s10t / thing)
+  :mod (s10t2 / todavía)
+  :Aspect Activity
+  :MODSTR FullAff)
+
+# alignment:s10m: 2-2
+s10t: 0-0
+s10t2: 3-3
+
+# document level annotation:
+(s10s0 / sentence
+
+  :temporal ((present-ref :overlap s10m))
+
+  :modal ((ROOT :MODAL AUTH)
+
+                    (AUTH :FullAff s10m))
+
+  :coref ((s8c :same-event s10t)))
+
+
+
+
+# :: snt11	onyetkesek ennengko'o kehlvoye' a'teyayam ayka
+# sentence level graph:
+(s11h / have-example-91
+  :ARG0 (s11p2 / person
+          :Source-of (s11e / enteyayam-00
+                       :theme (s11p3 / person
+                                :ARG0-of (s11h2 / have-rel-role-91
+                                           :ARG1 s11p2
+                                           :ARG2 (s11a / ayka))
+                                :refer-number Singular)
+                       :Aspect Performance
+                       :MODSTR FullAff)
+          :refer-number Singular)
+  :ARG1 (s11t / thing)
+  :causer (s11p / person
+            :refer-person 1st
+            :refer-number Plural)
+  :temporal (s11k / kehlvoye')
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:s11h: 0-0
+s11p: 0-0
+s11p2: 0-0
+s11e: 4-4
+s11p3: 0-0
+s11h2: 0-0
+s11a: 5-5
+s11t: 0-0
+s11k: 3-3
+
+# document level annotation:
+(s11s0 / sentence
+
+  :temporal ((future-ref :depends-on s11k)
+
+                    (s11k :overlap s11h)
+
+                    (past-ref :Contained s11e))
+
+  :modal ((ROOT :MODAL AUTH)
+
+                    (AUTH :FullAff s11e)
+
+                    (AUTH :FullAff s11h))
+
+  :coref ((s4p :same-entity s11p)
+
+                    (s8c :subset-of s11t)))
+
+
+
+
+# :: snt12	ma'ala angkonyakha' nekha' yemmen o payhavehla'
+# sentence level graph:
+(s12e / event
+  :condition (s12m / may'a-00
+               :experiencer (s12p / person
+                              :refer-person 3rd
+                              :refer-number Singular)
+               :stimulus (s12e2 / enyekakha'-00
+                           :actor s12p
+                           :goal (s12o / or
+                                   :op1 (s12n / nekha'
+                                          :op1 (s12y / yemmen))
+                                   :op2 (s12p2 / payhavehla'))
+                           :Aspect Performance
+                           :MODSTR FullAff)
+               :Aspect State
+               :MODSTR FullAff))
+
+# alignment:s12e: 0-0
+s12m: 1-1
+s12p: 0-0
+s12e2: 2-2
+s12n: 3-3
+s12o: 0-0
+s12y: 4-4
+s12p2: 6-6
+
+# document level annotation:
+(s12s0 / sentence
+
+  :temporal ((s11e :after s12m)
+
+                    (s12m :after s12e2))
+
+  :modal ((ROOT :MODAL AUTH)
+
+                    (AUTH :NeutAff have-condition-91)
+
+                    (have-condition-91 :FullAff s12e)
+
+                    (have-condition-91 :FullAff s12p)
+
+                    (s12p :FullAff s12m)
+
+                    (s12m :Unsp s12e2))
+
+  :coref ((s11p2 :same-entity s12p)))
+
+
+
+
+# :: snt13	ayasemmahlka'
+# sentence level graph:
+(s13e / enyasemmahlka'-00
+  :undergoer (s13p / person
+               :refer-person 3rd
+               :refer-number Singular)
+  :theme (s13e2 / event
+           :Modstr s13e)
+  :condition (s13e3 / event)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:s13e: 0-0
+s13e2: 0-0
+s13e3: 0-0
+s13p: 0-0
+
+# document level annotation:
+(s13s0 / sentence
+
+  :temporal ((s12m :overlap s13e))
+
+  :modal ((ROOT :MODAL AUTH)
+
+                    (AUTH :NeutAff have-condition-91)
+
+                    (have-condition-91 :FullAff s13e3)
+
+                    (have-condition-91 :FullAff Null_Prohibiter)
+
+                    (Null_Prohibiter :FullAff s13e)
+
+                    (s13e :Unsp s13e2))
+
+  :coref ((s12e :same-event s13e)
+
+                    (s12p :same-entity s13p)
+
+                    (s12e2 :same-event s13e2)
+
+                    (s12m :same-event s13e3)))
+
+
+
+
+# :: snt14	no mangkavanke'
+# sentence level graph:
+(s14e / emmovana-00
+  :experiencer (s14p / person
+                 :refer-person 3rd
+                 :refer-number Singular)
+  :stimulus (s14e2 / event
+              :Modstr s14e)
+  :Aspect State
+  :MODSTR FullNeg)
+
+# alignment:s14e: 0-0
+s14p: 0-0
+s14e2: 0-0
+
+# document level annotation:
+(s14s0 / sentence
+
+  :temporal ((s12m :overlap s14e)
+
+                    (s14e :after s14e2))
+
+  :modal ((ROOT :MODAL AUTH)
+
+                    (s14p :FullAff s14e)
+
+                    (s14e :Unsp s14e2)
+
+                    (AUTH :FullNeg s14p))
+
+  :coref ((s13p :same-entity s14p)
+
+                    (s13e2 :same-event s14e2)))
+
+
+
+
+# :: snt15	mangkavankenhan angkotok yavhan
+# sentence level graph:
+(s15a / and
+  :op1 (s15e / event)
+  :op2 (s15e2 / emmovana-00
+         :experiencer (s15p / person
+                        :refer-person 3rd
+                        :refer-number Singular)
+         :stimulus (s15e3 / entoma-00
+                     :actor s15p
+                     :undergoer (s15y / yavhan)
+                     :Aspect Performance
+                     :Modstr s15e2)
+         :Aspect State
+         :MODSTR FullNeg
+         :temporal (s15t / time)))
+
+# alignment:s15a: 0-0
+s15e: 0-0
+s15e2: 0-0
+s15e3: 2-2
+s15p: 0-0
+s15y: 3-3
+s15t: 0-0
+
+# document level annotation:
+(s15s0 / sentence
+
+  :temporal ((s11e :after s15e2)
+
+                    (s15e2 :after s15e3)
+
+                    (s15t :overlap s15e2))
+
+  :modal ((ROOT :MODAL AUTH)
+
+                    (s15p :FullAff s15e2)
+
+                    (s15e2 :Unsp s15e3)
+
+                    (AUTH :FullNeg s15p))
+
+  :coref ((s14e :same-event s15e)
+
+                    (s14p :same-entity s15p)))
+
+
+
+
+# :: snt16	akvaya'moho kehlvoyena
+# sentence level graph:
+(s16e / elvay'a-00
+  :goal (s16k / kehlvoyena))
+
+# alignment:s16e: 1-1
+s16k: 2-2
+
+# document level annotation:
+(s16s0 / sentence
+
+  :coref ((s15t :same-entity s16e)))
+
+
+
+
+# :: snt17	tenyo
+# sentence level graph:
+(s17t / tenyo)
+
+# alignment:s17t: 1-1
+
+# document level annotation:
+(s17s0 / sentence)
+
+
+
+
+# :: snt18	taye' aktoho qué va a pasar si una persona no sigue esa regla
+# sentence level graph:
+(s18p / pasar
+  :actor (s18u / umr-unknown)
+  :condition (s18s / seguir
+               :actor (s18p2 / person
+                        :refer-number Singular)
+               :undergoer (s18r / regla
+                            :mod (s18e / esa))
+               :Aspect Activity
+               :MODSTR FullNeg)
+  :Aspect Performance
+  :MODSTR FullAff
+  :mode interrogative)
+
+# alignment:s18p: 6-6
+s18u: 0-0
+s18s: 11-11
+s18p2: 0-0
+s18r: 13-13
+s18e: 12-12
+
+# document level annotation:
+(s18s0 / sentence
+
+  :temporal ((future-ref :overlap s18p)
+
+                    (s18p :before s18s))
+
+  :modal ((ROOT :MODAL AUTH2)
+
+                    (AUTH2 :NeutAff have-condition-91)
+
+                    (have-condition-91 :FullAff s18p)
+
+                    (have-condition-91 :FullNeg s18s))
+
+  :coref ((s15e2 :same-event s18r)))
+
+
+
+
+# :: snt19	na
+# sentence level graph:
+(s19n / na)
+
+# alignment:s19n: 1-1
+
+# document level annotation:
+(s19s0 / sentence)
+
+
+
+
+# :: snt20	tola mangkomay'a le'lavkesek temakhana ennengko'o eleyvoma
+# sentence level graph:
+(s20e / event
+  :condition (s20m / may'a-00
+               :experiencer (s20p / person
+                              :refer-person 3rd
+                              :refer-number Singular)
+               :stimulus (s20e2 / elle'lavkeskama-00
+                           :actor s20p
+                           :undergoer (s20t / thing
+                                        :Manner-of (s20e3 / eleyvoma-00
+                                                     :actor (s20p2 / person
+                                                              :refer-person 1st
+                                                              :refer-number Plural)
+                                                     :Aspect Activity
+                                                     :MODSTR FullAff))
+                           :Aspect Activity
+                           :Modstr s20m)
+               :Aspect State
+               :MODSTR FullNeg))
+
+# alignment:s20e: 0-0
+s20e2: 3-3
+s20m: 0-0
+s20p: 0-0
+s20t: 0-0
+s20e3: 6-6
+s20p2: 0-0
+
+# document level annotation:
+(s20s0 / sentence
+
+  :temporal ((present-ref :overlap s20m)
+
+                    (s20m :after s20e2)
+
+                    (present-ref :overlap s20e3)
+
+                    (s20e2 :after s20e))
+
+  :modal ((ROOT :MODAL AUTH)
+
+                    (AUTH :NeutAff have-condition-91)
+
+                    (have-condition-91 :FullAff s20e)
+
+                    (have-condition-91 :FullNeg s20p)
+
+                    (s20p :FullAff s20m)
+
+                    (s20m :Unsp s20e2)
+
+                    (AUTH :FullAff s20e3))
+
+  :coref ((s3p :same-entity s20p2)
+
+                    (s10t :same-entity s20t)
+
+                    (s18u :same-event s20e)))
+
+
+
+
+# :: snt21	kopehlkaye' na
+# sentence level graph:
+(s21k / kopehlkaye')
+
+# alignment:s21k: 1-1
+
+# document level annotation:
+(s21s0 / sentence)
+
+
+
+
+# :: snt22	ompahlkangvomok mo'ona cultura
+# sentence level graph:
+(s22e / empahlkay'a-00
+  :actor (s22p / person
+           :refer-person 1st
+           :refer-number Plural)
+  :theme (s22c / cultura
+           :mod (s22m / mo'ona))
+  :goal (s22t / thing)
+  :condition (s22e2 / event)
+  :Aspect Performance
+  :MODSTR PrtAff)
+
+# alignment:s22c: 3-3
+s22e: 1-1
+s22e2: 0-0
+s22m: 2-2
+s22p: 0-0
+s22t: 0-0
+
+# document level annotation:
+(s22s0 / sentence
+
+  :modal ((ROOT :MODAL AUTH)
+
+                    (AUTH :NeutAff have-condition-91)
+
+                    (have-condition-91 :PrtAff s22e))
+
+  :coref ((s20e :same-event s22e)
+
+                    (s20p2 :same-entity s22p)
+
+                    (s20t :same-entity s22t)
+
+                    (s20m :same-event s22e2)))
+
+
+
+
+# :: snt23	na askehltennasohlkek na
+# sentence level graph:
+(s23t / thing
+  :Theme-of (s23e / ehltennaskama-00
+              :actor (s23p / person
+                       :refer-person 1st
+                       :refer-number Singular)
+              :recipient (s23p2 / person)
+              :Aspect Performance
+              :MODSTR FullAff)
+  :QUOT s23e)
+
+# alignment:s23e: 0-0
+s23p: 0-0
+s23p2: 0-0
+s23t: 0-0
+
+# document level annotation:
+(s23s0 / sentence
+
+  :temporal ((past-ref :Contained s23e))
+
+  :modal ((ROOT :MODAL AUTH)
+
+                    (AUTH :FullAff s23e)
+
+                    (AUTH :FullAff s23p)
+
+                    (s23p :FullAff s24p)
+
+                    (s24p :FullAff s23t))
+
+  :coref ((s11p :subset-of s23p)
+
+                    (s11p :subset-of s23p2)))
+
+
+
+
+# :: snt24	kaymahlke' onyenna'te'sek ennengko'o hengka
+# sentence level graph:
+(s24a / ayaymommahlka'-00
+  :experiencer (s24p / person
+                 :refer-person 1st
+                 :refer-number Plural)
+  :stimulus (s24e / enyenna'teskama-00
+              :causer s24p
+              :undergoer (s24h / hengka)
+              :Aspect Activity
+              :Modstr s24a)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:s24a: 0-0
+s24p: 0-0
+s24e: 2-2
+s24h: 4-4
+
+# document level annotation:
+(s24s0 / sentence
+
+  :temporal ((present-ref :overlap s24a)
+
+                    (s24a :after s24e))
+
+  :modal ((ROOT :MODAL AUTH)
+
+                    (s24p :FullAff s24a)
+
+                    (s24a :Unsp s24e))
+
+  :coref ((s23t :same-event s24a)
+
+                    (s22p :same-entity s24p)
+
+                    (s22t :same-entity s24h)))
+
+
+
+
+# :: snt25	lo pueblo sanapana hay que mantener
+# sentence level graph:
+(s25h / hay-que
+  :experiencer (s25e / ethnic-group
+                 :name (s25n / name
+                         :op1 "sanapana")
+                 :wiki "Sanapaná")
+  :stimulus (s25m / mantener
+              :actor s25e
+              :undergoer (s25t / thing)
+              :Aspect Activity
+              :Modpred s25h)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:s25h: 0-0
+s25e: 0-0
+s25n: -1--1
+s25m: 6-6
+s25t: 0-0
+
+# document level annotation:
+(s25s0 / sentence
+
+  :temporal ((present-ref :overlap s25h)
+
+                    (s25h :after s25m))
+
+  :modal ((ROOT :MODAL AUTH)
+
+                    (s25e :FullAff s25h)
+
+                    (s25h :Unsp s25m)
+
+                    (AUTH :FullAff s25e))
+
+  :coref ((s8e2 :same-entity s25e)
+
+                    (s24h :same-entity s25t)))
+
+
+
+
+# :: snt26	yenna'te'sek
+# sentence level graph:
+(s26e / enyenna'teskama-00
+  :causer (s26p / person)
+  :undergoer (s26t / thing)
+  :Aspect Activity)
+
+# alignment:s26e: 1-1
+s26p: 0-0
+s26t: 0-0
+
+# document level annotation:
+(s26s0 / sentence
+
+  :coref ((s24e :same-event s26e)
+
+                    (s25e :same-entity s26p)
+
+                    (s25t :same-entity s26t)))
+
+
+
+
+# :: snt27	anyetneye' mo'ok anya'a
+# sentence level graph:
+(s27e / exist-91
+  :ARG1 (s27a / anya'a
+          :mod (s27m / mo'ok))
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:s27e: 0-0
+s27a: 3-3
+s27m: 2-2
+
+# document level annotation:
+(s27s0 / sentence
+
+  :temporal ((present-ref :overlap s27e))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s27e)))
+
+
+
+
+# :: snt28	asneyay'ahlta kayvak
+# sentence level graph:
+(s28e / enneyay'a-00
+  :experiencer (s28p / person
+                 :refer-person 1st
+                 :refer-number Singular)
+  :stimulus (s28e2 / event
+              :Modpred s28e)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:s28e: 0-0
+s28p: 0-0
+
+# document level annotation:
+(s28s0 / sentence
+
+  :temporal ((past-ref :Contained s28e))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (s28p :FullAff s28e)
+
+                    (s28e :Unsp s28e2)
+
+                    (AUTH3 :FullAff s28p))
+
+  :coref ((s11p :subset-of s28p)))
+
+
+
+
+# :: snt29	kehlvoyena yamakehlvoye'
+# sentence level graph:
+(s29e / event
+  :temporal (s29o / or
+              :op1 (s29k / kehlvoyena)
+              :op2 (s29y / yamakehlvoye')))
+
+# alignment:s29e: 0-0
+s29o: 0-0
+s29k: 1-1
+s29y: 2-2
+
+# document level annotation:
+(s29s0 / sentence
+
+  :temporal ((s29o :Contained s29e)
+
+                    (past-ref :depends-on s29k)
+
+                    (past-ref :depends-on s29y))
+
+  :coref ((s28e2 :same-event s29e)))
+
+
+
+
+# :: snt30	ehltennasekamahlta tatahlta memehltanhan
+# sentence level graph:
+(s30e / ehltennaskama-00
+  :actor (s30a / and
+           :op1 (s30p / person
+                  :ARG0-of (s30h / have-rel-role-91
+                             :ARG1 (s30p2 / person
+                                     :refer-person 1st
+                                     :refer-number Singular)
+                             :ARG2 (s30t / tatahlta))
+                  :refer-number Singular)
+           :op2 (s30p3 / person
+                  :ARG0-of (s30h2 / have-rel-role-91
+                             :ARG1 s30p2
+                             :ARG2 (s30m / memehltanhan))
+                  :refer-number Singular))
+  :recipient s30p2
+  :theme (s30e2 / event
+           :QUOT s30e)
+  :Aspect Habitual
+  :MODSTR FullAff)
+
+# alignment:s30a: 0-0
+s30e: 0-0
+s30e2: 0-0
+s30h: 0-0
+s30h2: 0-0
+s30m: 3-3
+s30p: 0-0
+s30p2: 0-0
+s30p3: 0-0
+s30t: 2-2
+
+# document level annotation:
+(s30s0 / sentence
+
+  :temporal ((past-ref :Contained s30e)
+
+                    (s30e :before s30e2))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s30e)
+
+                    (AUTH3 :FullAff s30a)
+
+                    (s30a :FullAff s30e2))
+
+  :coref ((s28p :same-entity s30p2)
+
+                    (s29e :same-event s30e2)
+
+                    (s25e :subset-of s30p)
+
+                    (s25e :subset-of s30p3)))
+
+
+
+
+# :: snt31	kaha' aphlenonak
+# sentence level graph:
+(s31e / event
+  :Theme-of (s31e2 / enhleanma-00
+              :actor (s31p / person
+                       :refer-person 2nd
+                       :refer-number Singular)
+              :Aspect Performance
+              :MODSTR FullAff)
+  :place (s31k / kaha')
+  :QUOT s31e2)
+
+# alignment:s31e: 0-0
+s31e2: 0-0
+s31p: 0-0
+s31k: 1-1
+
+# document level annotation:
+(s31s0 / sentence
+
+  :temporal ((s31e :after s31e2)
+
+                    (past-ref :Contained s31e2))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s31e2)
+
+                    (AUTH3 :FullAff s31p)
+
+                    (s31p :FullAff s31e))
+
+  :coref ((s30e2 :same-event s31e)
+
+                    (s23p2 :same-entity s31p)))
+
+
+
+
+# :: snt32	aktemana angkelvanatkok
+# sentence level graph:
+(s32e / event
+  :topic (s32a / angkelvanatkok
+           :mod (s32t / tkok)
+           :refer-number Singular))
+
+# alignment:s32e: 0-0
+s32a: 2-2
+s32t: 2-2
+
+# document level annotation:
+(s32s0 / sentence
+
+  :coref ((s31e :same-event s32e)
+
+                    (s25e :subset-of s32a)))
+
+
+
+
+# :: snt33	angkelvanatkok mangkotoma
+# sentence level graph:
+(s33a / angkelvanatkok
+  :mod (s33t / tkok)
+  :refer-number Singular
+  :Actor-of (s33e / entoma-00
+              :Aspect Activity
+              :MODSTR FullNeg))
+
+# alignment:s33a: 1-1
+s33t: 1-1
+s33e: 2-2
+
+# document level annotation:
+(s33s0 / sentence
+
+  :temporal ((s32e :overlap s33e))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullNeg s33e))
+
+  :coref ((s32a :same-entity s33a)))
+
+
+
+
+# :: snt34	vos entendís eso
+# sentence level graph:
+(s34e / entender
+  :experiencer (s34p / person
+                 :refer-person 2nd
+                 :refer-number Singular)
+  :stimulus (s34e2 / eso)
+  :Aspect State
+  :mode interrogative
+  :polarity umr-unknown
+  :MODSTR NeutAff)
+
+# alignment:s34e: 2-2
+s34p: 0-0
+s34e2: 3-3
+
+# document level annotation:
+(s34s0 / sentence
+
+  :temporal ((present-ref :overlap s34e))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :NeutAff s34e))
+
+  :coref ((s31p :same-entity s34p)
+
+                    (s33a :same-entity s34e2)))
+
+
+
+
+# :: snt35	angkelvanatkok mangkotoma
+# sentence level graph:
+(s35a / angkelvanatkok
+  :mod (s35t / tkok)
+  :refer-number Singular
+  :Actor-of (s35e / entoma-00
+              :Aspect Activity
+              :MODSTR FullNeg))
+
+# alignment:s35a: 1-1
+s35t: 1-1
+s35e: 2-2
+
+# document level annotation:
+(s35s0 / sentence
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullNeg s35e))
+
+  :coref ((s34e2 :same-entity s35a)
+
+                    (s33e :same-event s35e)))
+
+
+
+
+# :: snt36	entendías eso he
+# sentence level graph:
+(s36e / entender
+  :experiencer (s36p / person
+                 :refer-person 2nd
+                 :refer-number Singular)
+  :stimulus (s36e2 / eso)
+  :Aspect State
+  :mode interrogative
+  :polarity umr-unknown
+  :MODSTR NeutAff)
+
+# alignment:s36e: 1-1
+s36p: 0-0
+s36e2: 2-2
+
+# document level annotation:
+(s36s0 / sentence
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :NeutAff s36e))
+
+  :coref ((s34e :same-event s36e)
+
+                    (s34p :same-entity s36p)
+
+                    (s35a :same-entity s36e2)))
+
+
+
+
+# :: snt37	este cuando
+# sentence level graph:
+(s37e / este
+  :temporal (s37t / time))
+
+# alignment:s37e: 1-1
+s37t: 0-0
+
+# document level annotation:
+(s37s0 / sentence
+
+  :temporal ((s37t :overlap s37e))
+
+  :coref ((s32e :same-event s37e)))
+
+
+
+
+# :: snt38	ese era
+# sentence level graph:
+(s38e / ese)
+
+# alignment:s38e: 1-1
+
+# document level annotation:
+(s38s0 / sentence
+
+  :coref ((s37e :same-event s38e)))
+
+
+
+
+# :: snt39	tienen reglamento la cultura
+# sentence level graph:
+(s39h / have-91
+  :ARG0 (s39c / cultura)
+  :ARG1 (s39r / reglamento)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:s39h: 0-0
+s39c: 4-4
+s39r: 2-2
+
+# document level annotation:
+(s39s0 / sentence
+
+  :temporal ((present-ref :overlap s39h))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s39h))
+
+  :coref ((s26t :same-entity s39c)))
+
+
+
+
+# :: snt40	cuando la
+# sentence level graph:
+(s40e / event
+  :temporal (s40t / time))
+
+# alignment:s40e: 0-0
+s40t: 0-0
+
+# document level annotation:
+(s40s0 / sentence
+
+  :coref ((s38e :same-event s40e)
+
+                    (s37t :same-entity s40t)))
+
+
+
+
+# :: snt41	allá dice que pasó algo
+# sentence level graph:
+(s41d / decir
+  :actor (s41p / person)
+  :theme (s41p2 / pasar
+           :actor (s41a / algo
+                   :QUOT s41d)
+           :Aspect Performance
+           :QUOT s41d
+           :MODSTR FullAff
+           :place (s41a2 / allá))
+  :MODSTR FullAff
+  :Aspect Habitual)
+
+# alignment:s41d: 0-0
+s41p: 0-0
+s41p2: 4-4
+s41a: 5-5
+s41a2: 1-1
+
+# document level annotation:
+(s41s0 / sentence
+
+  :temporal ((present-ref :overlap s41d))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s41d)
+
+                    (AUTH3 :FullAff Null_Sayer)
+
+                    (Null_Sayer :FullAff s41a)
+
+                    (Null_Sayer :FullAff s41p2))
+
+  :coref ((s40e :same-event s41a)
+
+                    (s31k :same-entity s41a2)))
+
+
+
+
+# :: snt42	esa parte donde vivían la gente
+# sentence level graph:
+(s42p / parte
+  :mod (s42e / esa)
+  :Place-of (s42v / vivir
+              :actor (s42g / gente
+                       :refer-number Plural)
+              :Aspect Activity
+              :MODSTR FullAff))
+
+# alignment:s42p: 2-2
+s42e: 1-1
+s42v: 4-4
+s42g: 6-6
+
+# document level annotation:
+(s42s0 / sentence
+
+  :temporal ((s41a :overlap s42v))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s42v))
+
+  :coref ((s41a2 :same-entity s42p)
+
+                    (s25e :subset-of s42g)))
+
+
+
+
+# :: snt43	y salieron en un lugar
+# sentence level graph:
+(s43s / salir
+  :actor (s43p / person
+           :refer-person 3rd
+           :refer-number Plural)
+  :goal (s43l / lugar)
+  :MODSTR FullAff
+  :QUOT (s43e / event))
+
+# alignment:s43s: 2-2
+s43p: 0-0
+s43l: 5-5
+s43e: 0-0
+
+# document level annotation:
+(s43s0 / sentence
+
+  :temporal ((s41a :Contained s43s))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s43e)
+
+                    (AUTH3 :FullAff s30a)
+
+                    (s30a :FullAff s43s))
+
+  :coref ((s42g :subset-of s43p)
+
+                    (s30e :same-event s43e)))
+
+
+
+
+# :: snt44	angkenmeyakheyehlta
+# sentence level graph:
+(s44e / enmeyekakha'-00
+  :actor (s44p / person
+           :refer-person 3rd
+           :refer-number Plural)
+  :Aspect Performance
+  :MODSTR FullAff
+  :QUOT (s44e2 / event))
+
+# alignment:s44e: 1-1
+s44p: 0-0
+s44e2: 0-0
+
+# document level annotation:
+(s44s0 / sentence
+
+  :temporal ((s43s :overlap s44e))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s44e2)
+
+                    (AUTH3 :FullAff s30a)
+
+                    (s30a :FullAff s44e))
+
+  :coref ((s43p :same-entity s44p)
+
+                    (s43e :same-event s44e2)))
+
+
+
+
+# :: snt45	may'a angkohltehek mayka'a mo'o nekha'
+# sentence level graph:
+(s45m / may'a-00
+  :experiencer (s45p / person
+                 :refer-person 3rd
+                 :refer-number Plural)
+  :stimulus (s45h / have-role-91
+              :ARG0 s45p
+              :ARG2 (s45m2 / mayka'a)
+              :place (s45n / nekha'
+                       :mod (s45m3 / mo'o))
+              :Aspect State
+              :Modpred s45m)
+  :Aspect State
+  :MODSTR FullAff
+  :QUOT (s45e / event))
+
+# alignment:s45m: 0-0
+s45p: 0-0
+s45h: 0-0
+s45m2: 3-3
+s45n: 5-5
+s45m3: 4-4
+s45e: 0-0
+
+# document level annotation:
+(s45s0 / sentence
+
+  :temporal ((s43s :overlap s45m)
+
+                    (s45m :after s45h))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s45e)
+
+                    (AUTH3 :FullAff s30a)
+
+                    (s30a :FullAff s45p)
+
+                    (s45p :FullAff s45m)
+
+                    (s45m :Unsp s45h))
+
+  :coref ((s44p :same-entity s45p)
+
+                    (s43l :same-entity s45n)
+
+                    (s44e2 :same-event s45e)))
+
+
+
+
+# :: snt46	apkeleyvomakhanhan hlema grupo
+# sentence level graph:
+(s46p / place
+  :Place-of (s46e / eleyvoma-00
+              :actor (s46g / grupo
+                       :quant 1)
+              :Aspect Activity
+              :MODSTR FullAff))
+
+# alignment:s46p: 0-0
+s46e: 1-1
+s46g: 3-3
+
+# document level annotation:
+(s46s0 / sentence
+
+  :temporal ((s43s :overlap s46e))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s46e))
+
+  :coref ((s45n :same-entity s46p)
+
+                    (s25e :subset-of s46g)))
+
+
+
+
+# :: snt47	angkehlta'akheyehlta
+# sentence level graph:
+(s47e / ehltay'a-00
+  :actor (s47p / person
+           :refer-person 3rd
+           :refer-number Plural)
+  :Aspect Performance
+  :MODSTR FullAff
+  :QUOT (s47e2 / event))
+
+# alignment:s47e: 1-1
+s47p: 0-0
+s47e2: 0-0
+
+# document level annotation:
+(s47s0 / sentence
+
+  :temporal ((s43s :overlap s47e))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s47e2)
+
+                    (AUTH3 :FullAff s30a)
+
+                    (s30a :FullAff s47e))
+
+  :coref ((s45p :same-entity s47p)
+
+                    (s45e :same-event s47e2)))
+
+
+
+
+# :: snt48	angkelvanatkohltanhan akyenyoma aktoma
+# sentence level graph:
+(s48e / exist-91
+  :ARG1 (s48a / angkelvanatkohltanhan
+          :mod (s48t / tko)
+          :refer-number Singular
+          :Actor-of (s48e2 / enyenyoma-00
+                      :undergoer (s48t2 / thing
+                                   :Undergoer-of (s48e3 / entoma-00
+                                                   :actor s48a))
+                      :Aspect Activity
+                      :MODSTR FullAff
+                      :QUOT s48e4))
+  :Aspect State
+  :MODSTR FullAff
+  :QUOT (s48e4 / event))
+
+# alignment:s48a: 0-0
+s48e: 0-0
+s48e2: 2-2
+s48t: 1-1
+s48t2: 0-0
+s48e3: 3-3
+s48e4: 0-0
+
+# document level annotation:
+(s48s0 / sentence
+
+  :temporal ((s43s :overlap s48e)
+
+                    (s43s :overlap s48e2))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s48e4)
+
+                    (AUTH3 :FullAff s30a)
+
+                    (s30a :FullAff s48e)
+
+                    (s30a :FullAff s48e2))
+
+  :coref ((s35a :same-entity s48a)
+
+                    (s47p :subset-of s48a)
+
+                    (s47e2 :same-event s48e4)))
+
+
+
+
+# :: snt49	angkehltama'ayehlta hlema naymen
+# sentence level graph:
+(s49e / ehltamay'a-01
+  :actor (s49p / person
+           :refer-person 3rd
+           :refer-number Plural)
+  :goal (s49n / naymen
+          :quant 1)
+  :Aspect Performance
+  :MODSTR FullAff
+  :QUOT (s49e2 / event))
+
+# alignment:s49e: 1-1
+s49p: 0-0
+s49n: 3-3
+s49h: 2-2
+s49e2: 0-0
+
+# document level annotation:
+(s49s0 / sentence
+
+  :temporal ((s43s :after s49e))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s49e2)
+
+                    (AUTH3 :FullAff s30a)
+
+                    (s30a :FullAff s49e))
+
+  :coref ((s47p :same-entity s49p)
+
+                    (s48e4 :same-event s49e2)))
+
+
+
+
+# :: snt50	sanga
+# sentence level graph:
+(s50s / sanga)
+
+# alignment:s50s: 1-1
+
+# document level annotation:
+(s50s0 / sentence
+
+  :coref ((s49n :same-entity s50s)))
+
+
+
+
+# :: snt51	yemmenahlta
+# sentence level graph:
+(s51y / yemmenahlta)
+
+# alignment:s51y: 1-1
+
+# document level annotation:
+(s51s0 / sentence
+
+  :coref ((s50s :same-entity s51y)))
+
+
+
+
+# :: snt52	antama'ayehltanhan angkelvanatkohlkek naymen
+# sentence level graph:
+(s52a / and
+  :op1 (s52e / event)
+  :op2 (s52e2 / ehltamay'a-01
+         :actor (s52a2 / angkelvanatkohlkek
+                  :mod (s52t / tko)
+                  :refer-number Singular)
+         :goal (s52n / naymen)
+         :Aspect Performance
+         :MODSTR FullAff
+         :QUOT (s52e3 / event)))
+
+# alignment:s52a: 0-0
+s52e: 0-0
+s52e2: 1-1
+s52a2: 2-2
+s52t: 2-2
+s52n: 3-3
+s52e3: 0-0
+
+# document level annotation:
+(s52s0 / sentence
+
+  :temporal ((s52e :Contained s52e2))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s52e3)
+
+                    (AUTH3 :FullAff s30a)
+
+                    (s30a :FullAff s52e2))
+
+  :coref ((s49e :same-event s52e)
+
+                    (s52e :subset-of s52e2)
+
+                    (s48a :same-entity s52a2)
+
+                    (s51y :same-entity s52n)
+
+                    (s49e2 :same-event s52e3)))
+
+
+
+
+# :: snt53	ayseksehlta ahltamay'a ham'e
+# sentence level graph:
+(s53h / have-location-91
+  :ARG0 (s53h2 / ham'e)
+  :ARG1 (s53a / ayseksehlta
+          :op1 (s53e / ehltamay'a-01
+                 :actor (s53p / person
+                          :refer-person 3rd
+                          :refer-number Plural)
+                 :Aspect Process
+                 :MODSTR FullAff
+                 :QUOT (s53e2 / event)))
+  :Aspect State
+  :MODSTR FullAff
+  :QUOT s53e2)
+
+# alignment:s53h: 0-0
+s53h2: 3-3
+s53a: 1-1
+s53e: 2-2
+s53p: 0-0
+s53e2: 0-0
+
+# document level annotation:
+(s53s0 / sentence
+
+  :temporal ((s53e :overlap s53h))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH :FullAff s53e2)
+
+                    (AUTH :FullAff s30a)
+
+                    (s30a :FullAff s53h)
+
+                    (s30a :FullAff s53e))
+
+  :coref ((s52e :same-event s53e)
+
+                    (s52a2 :same-entity s53h2)
+
+                    (s52e3 :same-event s53e2)))
+
+
+
+
+# :: snt54	netamen
+# sentence level graph:
+(s54e / event
+  :temporal (s54n / netamen
+              :op1 (s54e2 / event)))
+
+# alignment:s54e: 0-0
+s54n: 1-1
+s54e2: 0-0
+
+# document level annotation:
+(s54s0 / sentence
+
+  :temporal ((s54e2 :after s54e))
+
+  :coref ((s53h :same-event s54e2)))
+
+
+
+
+# :: snt55	anyetneyehlta akhlamakma asek ham'e konnenak naymen
+# sentence level graph:
+(s55e / exist-91
+  :ARG0 (s55a / and
+          :op1 (s55h / ham'e)
+          :op2 (s55k / konnenak
+                 :op1 (s55n / naymen)))
+  :ARG1 (s55a2 / asek
+          :quant (s55a3 / akhlamakma))
+  :Aspect State
+  :MODSTR FullAff
+  :QUOT (s55e2 / event))
+
+# alignment:s55e: 0-0
+s55a: 4-4
+s55h: 4-4
+s55k: 5-5
+s55n: 6-6
+s55a2: 3-3
+s55a3: 2-2
+s55e2: 0-0
+
+# document level annotation:
+(s55s0 / sentence
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s55e2)
+
+                    (AUTH3 :FullAff s30a)
+
+                    (s30a :FullAff s55e))
+
+  :coref ((s54e :same-event s55e)
+
+                    (s55h :same-entity s55k)
+
+                    (s52n :same-entity s55n)
+
+                    (s53e2 :same-event s55e2)))
+
+
+
+
+# :: snt56	sanga
+# sentence level graph:
+(s56s / sanga)
+
+# alignment:s56s: 1-1
+
+# document level annotation:
+(s56s0 / sentence
+
+  :coref ((s55n :same-entity s56s)))
+
+
+
+
+# :: snt57	yatapeyem
+# sentence level graph:
+(s57y / yatapeyem)
+
+# alignment:s57y: 1-1
+
+# document level annotation:
+(s57s0 / sentence
+
+  :coref ((s55a2 :subset-of s57y)))
+
+
+
+
+# :: snt58	mo'onhan asek
+# sentence level graph:
+(s58a / and
+  :op1 (s58t / thing)
+  :op2 (s58a2 / asek
+         :mod (s58m / mo'onhan)))
+
+# alignment:s58a: 0-0
+s58t: 0-0
+s58a2: 2-2
+s58m: 1-1
+
+# document level annotation:
+(s58s0 / sentence
+
+  :coref ((s57y :same-entity s58t)
+
+                    (s55a2 :subset-of s58a2)))
+
+
+
+
+# :: snt59	mo'o aktemakha'
+# sentence level graph:
+(s59t / thing
+  :mod (s59m / mo'o-aktemakha'))
+
+# alignment:s59t: 0-0
+s59m: 1-2
+
+# document level annotation:
+(s59s0 / sentence
+
+  :coref ((s58a2 :same-entity s59t)))
+
+
+
+
+# :: snt60	kelamen
+# sentence level graph:
+(s60k / kelamen)
+
+# alignment:s60k: 1-1
+
+# document level annotation:
+(s60s0 / sentence
+
+  :coref ((s59t :subset-of s60k)))
+
+
+
+
+# :: snt61	apyasangke'
+# sentence level graph:
+(s61e / enyasekamok-00
+  :experiencer (s61p / person
+                 :refer-person 2nd
+                 :refer-number Singular)
+  :stimulus (s61t / thing)
+  :Aspect State
+  :polarity umr-unknown
+  :mode interrogative
+  :MODSTR NeutAff)
+
+# alignment:s61e: 1-1
+s61p: 0-0
+s61t: 0-0
+
+# document level annotation:
+(s61s0 / sentence
+
+  :temporal ((present-ref :overlap s61e))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :NeutAff s61e))
+
+  :coref ((s36p :same-entity s61p)
+
+                    (s60k :same-entity s61t)))
+
+
+
+
+# :: snt62	hla' nemana ha'e
+# sentence level graph:
+(s62e / exist-91
+  :ARG0 (s62h / ha'e)
+  :ARG1 (s62t / thing)
+  :Aspect State
+  :MODSTR NeutAff)
+
+# alignment:s62e: 0-0
+s62h: 3-3
+s62t: 0-0
+
+# document level annotation:
+(s62s0 / sentence
+
+  :temporal ((s55e :overlap s62e))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :NeutAff s62e))
+
+  :coref ((s55e :subset-of s62e)
+
+                    (s56s :same-entity s62h)
+
+                    (s61t :same-entity s62t)))
+
+
+
+
+# :: snt63	kelamen
+# sentence level graph:
+(s63k / kelamen)
+
+# alignment:s63k: 1-1
+
+# document level annotation:
+(s63s0 / sentence
+
+  :coref ((s62t :same-entity s63k)))
+
+
+
+
+# :: snt64	angva'mehlta kam'a akhlay'ena'ak
+# sentence level graph:
+(s64e / elvay'a-00
+  :actor (s64p / person
+           :refer-person 3rd
+           :refer-number Singular)
+  :goal (s64a / and
+          :op1 (s64k / kam'a)
+          :op2 (s64a2 / akhlay'ena'ak
+                 :part (s64t / thing)))
+  :Aspect Performance
+  :MODSTR FullAff
+  :QUOT (s64e2 / event))
+
+# alignment:s64a: 0-0
+s64a2: 3-3
+s64e: 1-1
+s64e2: 0-0
+s64k: 2-2
+s64p: 0-0
+s64t: 0-0
+
+# document level annotation:
+(s64s0 / sentence
+
+  :temporal ((s53h :after s64e))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s64e2)
+
+                    (AUTH3 :FullAff s30a)
+
+                    (s30a :FullAff s64e))
+
+  :coref ((s53h2 :same-entity s64p)
+
+                    (s64k :same-entity s64a2)
+
+                    (s62h :same-entity s64t)
+
+                    (s55e2 :same-event s64e2)))
+
+
+
+
+# :: snt65	naha'e
+# sentence level graph:
+(s65n / naha'e)
+
+# alignment:s65n: 1-1
+
+# document level annotation:
+(s65s0 / sentence
+
+  :coref ((s64a2 :same-entity s65n)))
+
+
+
+
+# :: snt66	mo'o akhlay'e
+# sentence level graph:
+(s66a / akhlay'e
+  :mod (s66m / mo'o)
+  :part (s66t / thing))
+
+# alignment:s66a: 2-2
+s66m: 1-1
+s66t: 0-0
+
+# document level annotation:
+(s66s0 / sentence
+
+  :coref ((s65n :same-entity s66a)
+
+                    (s64t :same-entity s66t)))
+
+
+
+
+# :: snt67	akyavakhahlma'
+# sentence level graph:
+(s67a / akyavakhahlma')
+
+# alignment:s67a: 1-1
+
+# document level annotation:
+(s67s0 / sentence
+
+  :coref ((s67a :subset-of s66a)))
+
+
+
+
+# :: snt68	apkelentepkehlta yatapeyem hlamakmahlta yatapeyem
+# sentence level graph:
+(s68e / elenteyapma-00
+  :actor (s68y / yatapeyem
+           :quant (s68h / hlamakmahlta))
+  :source (s68p / place)
+  :Aspect Performance
+  :MODSTR FullAff
+  :QUOT (s68e2 / event))
+
+# alignment:s68e: 1-1
+s68y: 2-2
+s68h: 3-3
+s68p: 0-0
+s68e2: 0-0
+
+# document level annotation:
+(s68s0 / sentence
+
+  :temporal ((s64e :after s68e))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s68e2)
+
+                    (AUTH3 :FullAff s30a)
+
+                    (s30a :FullAff s68e))
+
+  :coref ((s57y :same-entity s68y)
+
+                    (s66t :same-entity s68p)
+
+                    (s64e2 :same-event s68e2)))
+
+
+
+
+# :: snt69	apkennayveskehlta
+# sentence level graph:
+(s69e / ennayveskama-00
+  :actor (s69t / thing
+           :refer-number Plural)
+  :Aspect Endeavor
+  :MODSTR FullAff
+  :QUOT (s69e2 / event))
+
+# alignment:s69e: 1-1
+s69t: 0-0
+s69e2: 0-0
+
+# document level annotation:
+(s69s0 / sentence
+
+  :temporal ((s68e :after s69e))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s69e)
+
+                    (AUTH3 :FullAff s30a)
+
+                    (s30a :FullAff s69e))
+
+  :coref ((s68y :same-entity s69t)
+
+                    (s68e2 :same-event s69e2)))
+
+
+
+
+# :: snt70	apkehlpayveyehlta yavokhohona asek annaykamona naymen
+# sentence level graph:
+(s70e / empayvoma-00
+  :actor (s70a / asek
+           :quant (s70y / yavokhohona)
+           :Actor-of (s70e2 / ennema-00
+                       :place (s70n / naymen)
+                       :Aspect State
+                       :MODSTR FullAff
+                       :QUOT (s70e3 / event)))
+  :Aspect Endeavor
+  :MODSTR FullAff
+  :QUOT s70e3)
+
+# alignment:s70a: 3-3
+s70e: 1-1
+s70y: 2-2
+s70e2: 4-4
+s70n: 5-5
+s70e3: 0-0
+
+# document level annotation:
+(s70s0 / sentence
+
+  :temporal ((s69e :overlap s70e)
+
+                    (s69e :overlap s70e2))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s70e3)
+    
+                    (AUTH3 :FullAff s30a)
+
+                    (s30a :FullAff s70e)
+
+                    (s30a :FullAff s70e2))
+
+  :coref ((s55a2 :same-entity s70a)
+
+                    (s68p :same-entity s70n)
+
+                    (s69e2 :same-event s70e3)))
+
+
+
+
+# :: snt71	ahlta asneyay'ahlta ham'e
+# sentence level graph:
+(s71e / enneyay'a-00
+  :experiencer (s71p / person
+                 :refer-person 1st
+                 :refer-number Singular)
+  :stimulus (s71h / ham'e
+              :Modpred s71e)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:s71e: 0-0
+s71p: 0-0
+s71h: 3-3
+
+# document level annotation:
+(s71s0 / sentence
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (s71p :FullAff s71e)
+
+                    (s71e :Unsp s71h)
+
+                    (AUTH3 :FullAff s71p))
+
+  :coref ((s28e :same-event s71e)
+
+                    (s30p2 :same-entity s71p)
+
+                    (s41a :same-event s71h)))
+
+
+
+
+# :: snt72	ehltennaskama
+# sentence level graph:
+(s72e / ehltennaskama-00
+  :actor (s72p / person
+           :refer-person 3rd
+           :refer-number Plural)
+  :theme (s72e2 / event
+           :QUOT s72e)
+  :recipient (s72p2 / person
+               :refer-person 1st
+               :refer-number Singular)
+  :MODSTR FullAff
+  :Aspect Performance)
+
+# alignment:s72e: 0-0
+s72p: 0-0
+s72e2: 0-0
+s72p2: 0-0
+
+# document level annotation:
+(s72s0 / sentence
+
+  :temporal ((s30e :Contained s72e))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s72e)
+
+                    (AUTH3 :FullAff s72p)
+
+                    (s72p :FullAff s72e2))
+
+  :coref ((s30e :subset-of s72e)
+
+                    (s30a :same-entity s72p)
+
+                    (s71p :same-entity s72p2)
+
+                    (s71h :same-event s72e2)))
+
+
+
+
+# :: snt73	mo'ok temakhahlta
+# sentence level graph:
+(s73h / have-mod-91
+  :ARG1 (s73t / thing)
+  :ARG2 (s73m / mo'ok-temakhahlta)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:s73h: 0-0
+s73m: 1-2
+s73t: 0-0
+
+# document level annotation:
+(s73s0 / sentence
+
+  :temporal ((s73t :overlap s73h))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s73h))
+
+  :coref ((s72e2 :same-event s73t)))
+
+
+
+
+# :: snt74	mahla cultura metkohltanne' permiso angkelvanatkona angkotama naymen
+# sentence level graph:
+(s74e / exist-91
+  :ARG1 (s74p / permiso
+          :experiencer (s74a / angkelvanatkona
+                         :refer-number Singular
+                         :mod (s74t / tko))
+          :stimulus (s74e2 / ehltamay'a-01
+                      :actor s74a
+                      :goal (s74n / naymen)
+                      :Aspect Performance
+                      :Modpred s74p)
+          :source (s74c / cultura
+                    :mod (s74m / mahla)))
+  :Aspect State
+  :MODSTR FullNeg)
+
+# alignment:s74a: 0-0
+s74e: 0-0
+s74p: 0-0
+s74t: 5-5
+s74e2: 6-6
+s74n: 7-7
+s74c: 2-2
+s74m: 1-1
+
+# document level annotation:
+(s74s0 / sentence
+
+  :temporal ((past-ref :overlap s74e)
+
+                    (s74e :after s74e2))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullNeg s74e)
+
+                    (AUTH3 :FullNeg Null_Permitter)
+
+                    (Null_Permitter :FullAff s74p)
+
+                    (s74p :Unsp s74e2))
+
+  :coref ((s39c :same-entity s74c)))
+
+
+
+
+# :: snt75	prohibido
+# sentence level graph:
+(s75p / prohibir
+  :undergoer (s75e / event
+               :Modpred s75p)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:s75p: 0-0
+s75e: 0-0
+
+# document level annotation:
+(s75s0 / sentence
+
+  :temporal ((past-ref :overlap s75p))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff Null_Prohibiter)
+
+                    (Null_Prohibiter :FullAff s75p)
+
+                    (s75p :Unsp s75e))
+
+  :coref ((s74e2 :same-event s75e)))
+
+
+
+
+# :: snt76	kopmehehlnahlta aktemana ham'e mahla
+# sentence level graph:
+(s76h / have-reason-91
+  :ARG1 (s76h2 / ham'e)
+  :ARG2 (s76t / thing)
+  :Aspect State
+  :MODSTR NeutAff)
+
+# alignment:s76h: 0-0
+s76h2: 3-3
+s76t: 0-0
+
+# document level annotation:
+(s76s0 / sentence
+
+  :temporal ((s76h2 :overlap s76h))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :NeutAff s76h))
+
+  :coref ((s73t :same-event s76h2)))
+
+
+
+
+# :: snt77	mahla ema angkok aymes
+# sentence level graph:
+(s77a / aymes
+  :source (s77e / ema
+            :part (s77p / person
+                    :refer-person 3rd
+                    :refer-number Singular)))
+
+# alignment:s77a: 4-4
+s77e: 2-2
+s77p: 0-0
+
+# document level annotation:
+(s77s0 / sentence
+
+  :coref ((s76t :same-entity s77a)
+
+                    (s64p :same-entity s77p)))
+
+
+
+
+# :: snt78	apkenneng'ayehlta ham'e yatapeyemanak
+# sentence level graph:
+(s78e / enneyay'a-00
+  :experiencer (s78y / yatapeyemanak
+                 :refer-number Plural)
+  :stimulus (s78h / ham'e)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:s78e: 1-1
+s78y: 3-3
+s78h: 2-2
+
+# document level annotation:
+(s78s0 / sentence
+
+  :temporal ((s68e :overlap s78e))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s78e))
+
+  :coref ((s69t :same-entity s78y)
+
+                    (s77a :same-entity s78h)))
+
+
+
+
+# :: snt79	annayveskehlta annayveskehlta
+# sentence level graph:
+(s79e / ennayveskama-00
+  :actor (s79t / thing
+           :refer-number Plural)
+  :Aspect Endeavor
+  :degree Intensifier
+  :MODSTR FullAff
+  :QUOT (s79e2 / event))
+
+# alignment:s79e: 1-1
+s79t: 0-0
+s79e2: 0-0
+
+# document level annotation:
+(s79s0 / sentence
+
+  :temporal ((s69e :overlap s79e))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s79e2)
+
+                    (AUTH3 :FullAff s72p)
+
+                    (s72p :FullAff s79e))
+
+  :coref ((s78y :same-entity s79t)
+
+                    (s72e :same-event s79e2)))
+
+
+
+
+# :: snt80	apkelakmaskama
+# sentence level graph:
+(s80e / enya'maskama-00
+  :actor (s80t / thing
+           :refer-number Plural)
+  :Aspect Endeavor
+  :MODSTR FullAff
+  :QUOT (s80e2 / event))
+
+# alignment:s80e: 1-1
+s80t: 0-0
+s80e2: 0-0
+
+# document level annotation:
+(s80s0 / sentence
+
+  :temporal ((s69e :overlap s80e))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s80e2)
+
+                    (AUTH3 :FullAff s72p)
+
+                    (s72p :FullAff s80e))
+
+  :coref ((s79t :same-entity s80t)
+
+                    (s79e2 :same-event s80e2)))
+
+
+
+
+# :: snt81	extraña extraña algo pasa acá
+# sentence level graph:
+(s81h / have-mod-91
+  :ARG1 (s81p / pasar
+          :actor (s81a / algo
+                  :QUOT s81e2)
+          :place (s81a2 / acá)
+          :MODSTR FullAff
+          :Aspect Performance
+          :QUOT (s81e2 / event))
+  :ARG2 (s81e / extraña
+          :degree Intensifier)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:s81a: 3-3
+s81a2: 5-5
+s81e: 1-1
+s81h: 0-0
+s81p: 4-4
+s81e2: 0-0
+
+# document level annotation:
+(s81s0 / sentence
+
+  :temporal ((s81a :overlap s81h))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s81e2)
+
+                    (AUTH3 :FullAff s72p)
+
+                    (s72p :FullAff s81p)
+
+                    (s72p :FullAff s81a))
+
+  :coref ((s41p2 :same-event s81p)
+
+                    (s76h2 :same-event s81a)
+
+                    (s80e2 :same-event s81e2)))
+
+
+
+
+# :: snt82	peligro
+# sentence level graph:
+(s82e / exist-91
+  :ARG1 (s82p / peligro)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:s82e: 0-0
+s82p: 1-1
+
+# document level annotation:
+(s82s0 / sentence
+
+  :temporal ((s81a :overlap s82e))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s82e)))
+
+
+
+
+# :: snt83	mahla señal
+# sentence level graph:
+(s83r / resemble-91
+  :ARG1 (s83t / thing)
+  :ARG2 (s83s / señal)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:s83r: 0-0
+s83t: 0-0
+s83s: 2-2
+
+# document level annotation:
+(s83s0 / sentence
+
+  :temporal ((s81a :overlap s83r))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s83r))
+
+  :coref ((s78h :same-entity s83t)))
+
+
+
+
+# :: snt84	netamen ata'lahlta angvaktak
+# sentence level graph:
+(s84e / elvay'a-00
+  :actor (s84t / thing)
+  :temporal (s84a / and
+              :op1 (s84n / netamen
+                     :op1 (s84e2 / event))
+              :op2 (s84a2 / ata'lahlta))
+  :Aspect Performance
+  :MODSTR FullAff
+  :QUOT (s84e3 / event))
+
+# alignment:s84e: 3-3
+s84t: 0-0
+s84a: 0-0
+s84n: 1-1
+s84e2: 0-0
+s84a2: 2-2
+s85e: 0-0
+
+# document level annotation:
+(s84s0 / sentence
+
+  :temporal ((s69e :after s84e))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s84e3)
+
+                    (AUTH3 :FullAff s72p)
+
+                    (s72p :FullAff s84e))
+
+  :coref ((s69e :same-event s84e2)
+
+                    (s81e2 :same-event s84e3)))
+
+
+
+
+# :: snt85	angvaktehlta yephopay'a akyavay'a
+# sentence level graph:
+(s85e / elvay'a-00
+  :actor (s85y / yephopay'a
+           :ARG1-of (s85h / have-mod-91
+                      :ARG2 (s85a / akyavay'a))
+           :refer-number Singular)
+  :Aspect Performance
+  :MODSTR FullAff
+  :QUOT (s85e2 / event))
+
+# alignment:s85e: 1-1
+s85y: 2-2
+s85h: 0-0
+s85a: 3-3
+s85e2: 0-0
+
+# document level annotation:
+(s85s0 / sentence
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s85e2)
+
+                    (AUTH3 :FullAff s72p)
+
+                    (s72p :FullAff s85e))
+
+  :coref ((s84e :same-event s85e)
+
+                    (s84t :same-entity s85y)
+
+                    (s84e3 :same-event s85e2)))
+
+
+
+
+# :: snt86	ahleayam
+# sentence level graph:
+(s86e / enhleama-00
+  :actor (s86t / thing)
+  :Aspect Performance
+  :MODSTR FullAff
+  :QUOT (s86e2 / event))
+
+# alignment:s86e: 1-1
+s86t: 0-0
+s86e2: 0-0
+
+# document level annotation:
+(s86s0 / sentence
+
+  :temporal ((s85e :overlap s86e))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s86e2)
+
+                    (AUTH3 :FullAff s72p)
+
+                    (s72p :FullAff s86e))
+
+  :coref ((s85y :same-entity s86t)
+
+                    (s85e2 :same-event s86e2)))
+
+
+
+
+# :: snt87	mahla tormenta
+# sentence level graph:
+(s87r / resemble-91
+  :ARG1 (s87t / thing)
+  :ARG2 (s87t2 / tormenta)
+  :Aspect State
+  :MODSTR FullAff
+  :QUOT (s87e / event))
+
+# alignment:s87r: -1--1
+s87t: 0-0
+s87t2: 2-2
+s87e: 0-0
+
+# document level annotation:
+(s87s0 / sentence
+
+  :temporal ((s85e :overlap s87r))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s87e)
+
+                    (AUTH3 :FullAff s72p)
+
+                    (s72p :FullAff s87r))
+
+  :coref ((s86t :same-entity s87t)
+
+                    (s86e2 :same-event s87e)))
+
+
+
+
+# :: snt88	tormenta akyavayakta ham'e
+# sentence level graph:
+(s88e / enyaveyam-00
+  :actor (s88t / tormenta
+           :refer-number Singular)
+  :goal (s88h / ham'e)
+  :Aspect Performance
+  :QUOT (s88e2 / event)
+  :MODSTR FullAff)
+
+# alignment:s88e: 2-2
+s88t: 1-1
+s88h: 3-3
+s88e2: 0-0
+
+# document level annotation:
+(s88s0 / sentence
+
+  :temporal ((s85e :overlap s88e))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s88e2)
+
+                    (AUTH3 :FullAff s72p)
+
+                    (s72p :FullAff s88e))
+
+  :coref ((s66a :same-entity s88h)
+
+                    (s87e :same-event s88e2)))
+
+
+
+
+# :: snt89	mahla aymes ema angkok
+# sentence level graph:
+(s89h / have-reason-91
+  :ARG1 (s89e / event)
+  :ARG2 (s89a / aymes
+          :source (s89e2 / ema
+                    :part (s89p / person
+                            :refer-person 3rd
+                            :refer-number Singular)))
+  :Aspect State
+  :MODSTR NeutAff)
+
+# alignment:s89h: 0-0
+s89e: 0-0
+s89a: 2-2
+s89e2: 3-3
+s89p: 0-0
+
+# document level annotation:
+(s89s0 / sentence
+
+  :temporal ((s89e :overlap s89h))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :NeutAff s89h))
+
+  :coref ((s88e :same-event s89e)
+
+                    (s83t :same-entity s89a)
+
+                    (s77e :same-entity s89e2)
+
+                    (s77p :same-entity s89p)))
+
+
+
+
+# :: snt90	antepkehlta ahlkayam akyenna'tema
+# sentence level graph:
+(s90e / elenteyapma-00
+  :actor (s90a / ahlkayam
+           :ARG1-of (s90h / have-mod-91
+                      :ARG2 (s90a2 / akyenna'tema))
+           :refer-number Singular)
+  :Aspect Performance
+  :MODSTR FullAff
+  :QUOT (s90e2 / event))
+
+# alignment:s90e: 1-1
+s90a: 2-2
+s90h: 0-0
+s90a2: 3-3
+s90e2: 0-0
+
+# document level annotation:
+(s90s0 / sentence
+
+  :temporal ((s85e :overlap s90e))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s90e2)
+
+                    (AUTH3 :FullAff s72p)
+
+                    (s72p :FullAff s90e))
+
+  :coref ((s88e2 :same-event s90e2)))
+
+
+
+
+# :: snt91	ahlkayam mahla yatapyayam
+# sentence level graph:
+(s91a / ahlkayam
+  :ARG1-of (s91r / resemble-91
+             :ARG2 (s91y / yatapyayam)))
+
+# alignment:s91a: 1-1
+s91r: 0-0
+s91y: 3-3
+
+# document level annotation:
+(s91s0 / sentence
+
+  :coref ((s90a :same-entity s91a)))
+
+
+
+
+# :: snt92	akyepetkay'a yemmen
+# sentence level graph:
+(s92e / enyepetkay'a-00
+  :actor (s92t / thing)
+  :theme (s92y / yemmen)
+  :Aspect State
+  :MODSTR FullAff
+  :QUOT (s92e2 / event))
+
+# alignment:s92e: 1-1
+s92t: 0-0
+s92y: 2-2
+s92e2: 0-0
+
+# document level annotation:
+(s92s0 / sentence
+
+  :temporal ((s85e :overlap s92e))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s92e2)
+
+                    (AUTH3 :FullAff s72p)
+
+                    (s72p :FullAff s92e))
+
+  :coref ((s91a :same-entity s92t)
+
+                    (s90e2 :same-event s92e2)))
+
+
+
+
+# :: snt93	tormenta
+# sentence level graph:
+(s93t / tormenta)
+
+# alignment:s93t: 1-1
+
+# document level annotation:
+(s93s0 / sentence
+
+  :coref ((s92t :same-entity s93t)))
+
+
+
+
+# :: snt94	tormenta puro
+# sentence level graph:
+(s94t / tormenta
+  :mod (s94p / puro))
+
+# alignment:s94t: 1-1
+s94p: 2-2
+
+# document level annotation:
+(s94s0 / sentence
+
+  :coref ((s93t :same-entity s94t)))
+
+
+
+
+# :: snt95	mahla motivo ham'e
+# sentence level graph:
+(s95h / have-reason-91
+  :ARG1 (s95e / event)
+  :ARG2 (s95h2 / ham'e)
+  :Aspect State
+  :MODSTR NeutAff)
+
+# alignment:s95h: 0-0
+s95e: 0-0
+s95h2: 3-3
+
+# document level annotation:
+(s95s0 / sentence
+
+  :temporal ((s95e :overlap s95h))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :NeutAff s95h))
+
+  :coref ((s90e :same-event s95e)
+
+                    (s89a :same-entity s95h2)))
+
+
+
+
+# :: snt96	nahlta asneyay'ahlta ha'
+# sentence level graph:
+(s96e / enneyay'a-00
+  :experiencer (s96p / person
+                 :refer-person 1st
+                 :refer-number Singular)
+  :stimulus (s96h / ha'
+              :Modstr s96e)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:s96e: 0-0
+s96p: 0-0
+s96h: 3-3
+
+# document level annotation:
+(s96s0 / sentence
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (s96p :FullAff s96e)
+
+                    (s96e :Unsp s96h)
+
+                    (AUTH3 :FullAff s96p))
+
+  :coref ((s71e :same-event s96e)
+
+                    (s72p2 :same-entity s96p)
+
+                    (s81a :same-event s96h)))
+
+
+
+
+# :: snt97	historia real
+# sentence level graph:
+(s97h / have-role-91
+  :ARG0 (s97e / event)
+  :ARG2 (s97h2 / historia
+         :mod (s97r / real))
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:s97h: 1-1
+s97r: 2-2
+s97i2: 0-0
+s97e: 0-0
+
+# document level annotation:
+(s97s0 / sentence
+
+  :temporal ((present-ref :overlap s97h))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s97h))
+
+  :coref ((s96h :same-event s97e)))
+
+
+
+
+# :: snt98	have' mokvankoho
+# sentence level graph:
+(s98h / have-role-91
+  :ARG0 (s98e / event)
+  :ARG2 (s98m / mokvankoho)
+  :Aspect State
+  :MODSTR FullNeg)
+
+# alignment:s98i2: 0-0
+s98t: 0-0
+s98m: 2-2
+
+# document level annotation:
+(s98s0 / sentence
+
+  :temporal ((present-ref :overlap s98h))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullNeg s98h))
+
+  :coref ((s97e :same-event s98e)))
+
+
+
+
+# :: snt99	na'hoyehlta na'hoyehlnahlta
+# sentence level graph:
+(s99e / event
+  :actor (s99p / person)
+  :theme (s99h / have-mod-91
+           :ARG1 (s99e2 / event
+                   :QUOT s99e)
+           :ARG2 (s99n / na'hoyehlta)
+           :Aspect State
+           :MODSTR FullAff
+           :QUOT s99e))
+
+# alignment:s99e: 0-0
+s99p: 0-0
+s99h: 0-0
+s99t: 0-0
+s99n: 1-1
+
+# document level annotation:
+(s99s0 / sentence
+
+  :temporal ((s99e :overlap s99h))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s99e)
+
+                    (AUTH3 :FullAff s99p)
+
+                    (s99p :FullAff s99h)
+
+                    (s99p :FullAff s99e2))
+
+  :coref ((s92e2 :same-event s99e)
+
+                    (s72p :same-entity s99p)
+
+                    (s98e :same-event s99e2)))
+
+
+
+
+# :: snt100	ta antahak ehltennaskama
+# sentence level graph:
+(s100i2 / identity-91
+  :ARG0 (s100t / thing)
+  :ARG1 (s100t2 / thing
+          :Theme-of (s100e / ehltennaskama-00
+                      :actor (s100p / person
+                               :refer-person 3rd
+                               :refer-number Plural)
+                      :recipient (s100p2 / person
+                                   :refer-person 1st
+                                   :refer-number Singular)
+                      :Aspect Performance
+                      :MODSTR FullAff)
+          :QUOT s100e)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:s100i2: 0-0
+s100t: 0-0
+s100t2: 0-0
+s100e: 0-0
+s100p: 0-0
+s100p2: 0-0
+
+# document level annotation:
+(s100s0 / sentence
+
+  :temporal ((present-ref :overlap s100i2))
+
+  :modal ((ROOT :MODAL AUTH3)
+
+                    (AUTH3 :FullAff s100e)
+
+                    (AUTH3 :FullAff s100p)
+
+                    (AUTH3 :FullAff s100i2)
+
+                    (s100p :FullAff s100t2))
+
+  :coref ((s99e2 :same-event s100t)
+
+                    (s99e :same-event s100e)
+
+                    (s99p :same-entity s100p)
+
+                    (s96p :same-entity s100p2)))
+
+
+
+

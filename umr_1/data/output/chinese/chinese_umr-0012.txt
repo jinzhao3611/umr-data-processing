@@ -1,0 +1,436 @@
+# :: snt1	 “ 提修斯 改革 ” 实际上 反映 了 雅典 国家 形成 的 历史背景 。
+
+# sentence level graph:
+(s1x4 / 反映-02
+  :ARG0 (s1e / event
+          :name (s1n / name
+                  :op1 "提修斯"
+                  :op2 "改革"))
+  :ARG1 (s1x5 / 背景
+          :mod (s1x6 / 历史)
+          :ARG0-of (s1x / 形成-01
+                     :ARG1 (s1x2 / 国家
+                             :mod (s1c / country-region
+                                    :name (s1n2 / name
+                                            :op1 "雅典")))))
+  :mod (s1x3 / 实际上)
+  :aspect state)
+
+# alignment:
+s1c : 8-8
+s1e : 2-3
+s1n : -1--1
+s1n2 : -1--1
+s1x : 10-10
+s1x2 : 9-9
+s1x3 : 5-5
+s1x4 : 1-1
+s1x5 : 1-1
+s1x4: 6-6
+s1x: 10-10
+s1x2: 9-9
+s1x3: 5-5
+
+# document level annotation:
+(s1s0 / sentence)
+
+
+# :: snt2	 分散的 氏族 部落 公社 的 管理机构 变为 统一 的 公共 权利 机关 ， 即 雅典 国家 ； 按 血缘关系 结成 氏族 部落 的 原则 ， 变为 按 地区 组织 与 划分 管辖 居民 的 原则 。
+
+# sentence level graph:
+(s2a2 / and
+  :op1 (s2x2 / 变为-01
+         :ARG1 (s2x4 / 机构
+                 :mod (s2x5 / 管理-01)
+                 :ARG0-of (s2x6 / 公社
+                            :mod (s2x7 / 部落)
+                            :mod (s2x8 / 氏族
+                                   :mod (s2x9 / 分散的))))
+         :ARG2 (s2x10 / 机关
+                 :mod (s2x11 / 权利)
+                 :mod (s2x12 / 公共)
+                 :mod (s2x13 / 统一-01)
+                 :ARG0-of (s2h / have-role-91
+                            :ARG2 (s2x14 / 国家
+                                    :mod (s2c / country-region
+                                           :name (s2n / name
+                                                   :op1 "雅典")))))
+         :aspect performance)
+  :op2 (s2x3 / 变为-01
+         :ARG0 (s2x / 原则
+                 :ARG0-of (s2i2 / identity-91
+                            :ARG1 (s2x15 / 结成-01
+                                    :ARG1 (s2x16 / 血缘关系)
+                                    :ARG2 (s2x17 / 部落
+                                            :mod (s2x18 / 氏族)))))
+         :ARG1 (s2x19 / 原则
+                 :ARG0-of (s2i3 / identity-91
+                            :ARG1 (s2x20 / 管辖-01
+                                    :ARG1 (s2a / and
+                                            :op1 (s2x21 / 组织-02)
+                                            :op2 (s2x22 / 划分-01)
+                                            :mod (s2x23 / 地区))
+                                    :ARG2 (s2x24 / 居民))))
+         :aspect performance))
+
+# alignment:
+s2a : 0-0
+s2a2 : 0-0
+s2c : 15-15
+s2h : 0-0
+s2i2 : 0-0
+s2i3 : 0-0
+s2n : -1--1
+s2x : 0-0
+s2x10 : 12-12
+s2x11 : 11-11
+s2x12 : 10-10
+s2x13 : 8-8
+s2x14 : 16-16
+s2x15 : 20-20
+s2x16 : 19-19
+s2x17 : 22-22
+s2x18 : 21-21
+s2x19 : 35-35
+s2x2 : 7-7
+s2x20 : 32-32
+s2x21 : 29-29
+s2x22 : 31-31
+s2x23 : 28-28
+s2x24 : 33-33
+s2x3 : 26-26
+s2x4 : 6-6
+s2x5 : 6-6
+s2x6 : 4-4
+s2x7 : 3-3
+s2x8 : 2-2
+s2x2: 7-7
+s2x6: 4-4
+s2x7: 3-3
+s2x8: 2-2
+s2x9: 1-1
+s2x10: 12-12
+s2x11: 11-11
+s2x12: 10-10
+s2x13: 8-8
+s2x14: 16-16
+s2x3: 7-7
+s2x: 24-24
+s2x15: 20-20
+s2x16: 19-19
+s2x17: 3-3
+s2x18: 2-2
+s2x19: 24-24
+s2x20: 32-32
+s2x21: 29-29
+s2x22: 31-31
+s2x23: 28-28
+s2x24: 33-33
+
+# document level annotation:
+(s2s0 / sentence)
+
+
+# :: snt3	 提修斯 由此 成为 传统上 认为的 雅典 国家的 创立者 。
+
+# sentence level graph:
+(s3x / 成为-01
+  :ARG0 (s3i2 / individual-person
+          :name (s3n / name
+                  :op1 "提修斯"))
+  :ARG1 (s3x2 / 者
+          :ARG0-of (s3x3 / 创立-01
+                     :ARG1 (s3x5 / 国家
+                             :mod (s3c / country
+                                    :name (s3n2 / name
+                                            :op1 "雅典")))
+                     :aspect performance))
+  :ARG1-of (s3x6 / 认为-01
+             :mod (s3x7 / 传统上)
+             :aspect state)
+  :cause (s3x4 / 由此)
+  :aspect state)
+
+# alignment:
+s3c : 6-6
+s3n : -1--1
+s3n2 : -1--1
+s3x : 3-3
+s3x2 : 8-8
+s3x3 : 8-8
+s3x4 : 2-2
+s3x5 : 7-7
+s3x6 : 5-5
+s3x: 3-3
+s3x7: 4-4
+s3x4: 2-2
+
+# document level annotation:
+(s3s0 / sentence
+  :temporal ((s3x4 :before s3x)
+                    (s2a2 :before s3x)))
+
+
+# :: snt4	 火神 赫斐斯塔斯 7 世孙 ， 埃里克特翁尼亚斯 6 世孙 ， 潘狄翁 5 世孙 ， 厄瑞克透斯 玄孙 ， 刻克洛普斯 曾孙 ， 潘狄翁 2 世孙 ， 雅典 国王 埃勾斯 在 雅典 西南 的 小城 特罗曾 （ Troezen ） 迎娶 了 国王 Pittheus 的 女儿 埃特拉 （ Aethra ） 。
+
+# sentence level graph:
+(s4x / 迎娶-01
+  :ARG0 (s4i8 / individual-person
+          :name (s4n / name
+                  :op1 "埃勾斯")
+          :ARG0-of (s4a2 / and
+                     :op1 (s4h4 / have-rel-role-91
+                            :ARG1 (s4i2 / individual-person
+                                    :name (s4n7 / name
+                                            :op1 "赫斐斯塔斯")
+                                    :ARG0-of (s4h5 / have-role-91
+                                               :ARG2 (s4x8 / 火神)))
+                            :ARG2 (s4x9 / 世孙
+                                    :ord 7))
+                     :op2 (s4h6 / have-rel-role-91
+                            :ARG1 (s4i3 / individual-person
+                                    :name (s4n8 / name
+                                            :op1 "埃里克特翁尼亚斯"))
+                            :ARG2 (s4x10 / 世孙
+                                    :ord 6))
+                     :op3 (s4h7 / have-rel-role-91
+                            :ARG1 (s4i4 / individual-person
+                                    :name (s4n9 / name
+                                            :op1 "潘狄翁"))
+                            :ARG2 (s4x11 / 世孙
+                                    :ord (s4x15 / 5)))
+                     :op4 (s4h8 / have-rel-role-91
+                            :ARG1 (s4i5 / individual-person
+                                    :name (s4n10 / name
+                                            :op1 "厄瑞克透斯"))
+                            :ARG2 (s4x12 / 玄孙))
+                     :op5 (s4h9 / have-rel-role-91
+                            :ARG1 (s4i6 / individual_person
+                                    :name (s4n11 / name
+                                            :op1 "刻克洛普斯"))
+                            :ARG2 (s4x13 / 曾孙))
+                     :op6 (s4h10 / have-rel-role-91
+                            :ARG1 (s4i7 / individual-person
+                                    :name (s4n12 / name
+                                            :op1 "潘狄翁"))
+                            :ARG2 (s4x14 / 世孙
+                                    :ord 2))
+                     :op7 (s4h3 / have-role-91
+                            :ARG2 (s4x7 / 国王
+                                    :mod (s4c3 / country-region
+                                           :name (s4n6 / name
+                                                   :op1 "雅典"))))))
+  :ARG1 (s4i10 / individual-person
+          :name (s4n2 / name
+                  :op1 "埃特拉")
+          :ARG0-of (s4h / have-rel-role-91
+                     :ARG1 (s4i11 / individual-person
+                             :name (s4n3 / name
+                                     :op1 "Pittheus")
+                             :ARG0-of (s4h2 / have-role-91
+                                        :ARG2 (s4x2 / 国王)))
+                     :ARG2 (s4x3 / 女儿))
+          :ARG0-of (s4h11 / have-role-91
+                     :ARG2 (s4i9 / individual-person
+                             :name (s4n13 / name
+                                     :op1 "Aethra"))))
+  :place (s4c / city
+           :name (s4n4 / name
+                   :op1 "特罗曾")
+           :mod (s4x4 / 城
+                  :mod (s4x5 / 小)
+                  :place (s4x6 / 西南
+                           :ARG0-of (s4c2 / country-region
+                                      :name (s4n5 / name
+                                              :op1 "雅典"))))
+           :ARG0-of (s4h12 / have-role-91
+                      :ARG2 (s4c4 / city
+                              :name (s4n14 / name
+                                      :op1 "Troezen"))))
+  :aspect performance)
+
+# alignment:
+s4a2 : 0-0
+s4c : 1-1
+s4c2 : 28-28
+s4c3 : 24-24
+s4h : 0-0
+s4h10 : 0-0
+s4h2 : 0-0
+s4h3 : 0-0
+s4h4 : 0-0
+s4h5 : 0-0
+s4h6 : 0-0
+s4h7 : 0-0
+s4h8 : 0-0
+s4h9 : 0-0
+s4n : -1--1
+s4n10 : -1--1
+s4n11 : -1--1
+s4n12 : -1--1
+s4n2 : -1--1
+s4n3 : -1--1
+s4n4 : -1--1
+s4n5 : -1--1
+s4n6 : -1--1
+s4n7 : -1--1
+s4n8 : -1--1
+s4n9 : -1--1
+s4x : 1-1
+s4x10 : 7-8
+s4x11 : 11-12
+s4x12 : 15-15
+s4x13 : 18-18
+s4x14 : 21-22
+s4x15 : 11-1
+s4x2 : 1-1
+s4x3 : 1-1
+s4x4 : 31-31
+s4x5 : 31-31
+s4x6 : 29-29
+s4x7 : 25-25
+s4x8 : 1-1
+s4x9 : 4-4
+s4h11 : 0-0
+s4i9 : 44-4
+s4i10 : 44-44
+s4n13 : -1--1
+s4h12 : 0-0
+s4c4 : 34-34
+s4x: 36-36
+s4x8: 1-1
+s4x9: 4-4
+s4x10: 4-4
+s4x11: 4-4
+s4x15: 11-11
+s4x12: 15-15
+s4x13: 18-18
+s4x14: 4-4
+s4x7: 25-25
+s4x2: 25-25
+s4x3: 41-41
+s4x6: 29-29
+
+# document level annotation:
+(s4s0 / sentence
+  :temporal ((s4x :before s3x)
+                    (s4x :before s2a2)))
+
+
+# :: snt5	 在 新婚之夜 ， 埃特拉 去 小岛 与 海神 波塞顿 同眠 。
+
+# sentence level graph:
+(s5x2 / 去-01
+  :ARG0 (s5i2 / individual-person
+          :name (s5n / name
+                  :op1 "埃特拉"))
+  :ARG1 (s5x3 / 同眠
+          :ARG0 s5i2
+          :ARG1 (s5p2 / person
+                  :name (s5n2 / name
+                          :op1 "波塞顿")
+                  :ARG0-of (s5h / have-role-91
+                             :ARG2 (s5x4 / 海神)))
+          :place (s5x5 / 小岛)
+          :aspect performance)
+  :time (s5x6 / 夜
+          :mod (s5x7 / 新婚))
+  :aspect performance)
+
+# alignment:
+s5h : 0-0
+s5n : -1--1
+s5n2 : -1--1
+s5p2 : 9-9
+s5x2 : 5-5
+s5x3 : 10-10
+s5x4 : 8-8
+s5x5 : 6-6
+s5x6 : 2-2
+s5x2: 5-5
+s5x3: 10-10
+s5x4: 8-8
+s5x5: 6-6
+
+# document level annotation:
+(s5s0 / sentence
+  :coref ((s5x3 :same-event s4x)
+                    (s5i2 :same-entity s4i9)))
+
+
+# :: snt6	 由此 ， 忒修斯 有 两个 父亲 ： 海神 波塞顿 与 凡人 埃勾斯 （ 这种 现象 在 希腊 英雄 中 是 很 普遍 的 ） 。
+
+# sentence level graph:
+(s6h / have-cause-91
+  :ARG1 (s6x / 有-01
+          :ARG0 (s6i2 / individual-person
+                  :name (s6n / name
+                          :op1 "忒修斯"))
+          :ARG1 (s6x2 / 父亲
+                  :quant (s6x3 / 两)
+                  :unit (s6x4 / 个)
+                  :ARG1-of (s6a / and
+                             :op1 (s6i3 / identity-91
+                                    :ARG0 (s6i4 / individual-person
+                                            :name (s6n2 / name
+                                                    :op1 "波塞顿")
+                                            :ARG0-of (s6h2 / have-role-91
+                                                       :ARG2 (s6x5 / 海神))))
+                             :op2 (s6i5 / identity-91
+                                    :ARG0 (s6i6 / individual-person
+                                            :name (s6n3 / name
+                                                    :op1 "埃勾斯"))
+                                    :ARG0-of (s6h3 / have-role-91
+                                               :ARG2 (s6x6 / 凡人)))))
+          :aspect state
+          :ARG0-of (s6h4 / have-role-91
+                     :ARG2 (s6x7 / 现象
+                             :ARG0 (s6x8 / 普遍-01
+                                     :aspect state)
+                             :place (s6x9 / 英雄
+                                      :mod (s6c / country-region
+                                             :name (s6n4 / name
+                                                     :op1 "希腊")))
+                             :mod (s6x10 / 这种)))))
+
+# alignment:
+s6h : 0-0
+s6x : 4-4
+s6i2 : 3-3
+s6n : -1--1
+s6x2 : 6-6
+s6x3 : 5-5
+s6x4 : 5-5
+s6a : 0-0
+s6i3 : 0-0
+s6i4 : 9-9
+s6n2 : -1--1
+s6i5 : 0-0
+s6x5 : 8-8
+s6i6 : 12-12
+s6n3 : -1--1
+s6h2 : 0-0
+s6h3 : 0-0
+s6x6 : 11-11
+s6h4 : 0-0
+s6x7 : 15-15
+s6x8 : 22-22
+s6x9 : 18-18
+s6c : 17-17
+s6n4 : -1--1
+s6x: 4-4
+s6x2: 6-6
+s6x5: 8-8
+s6x6: 11-11
+s6x7: 15-15
+s6x8: 22-22
+s6x9: 18-18
+s6x10: 14-14
+
+# document level annotation:
+(s6s0 / sentence
+  :coref ((s6i2 :same-entity s3i2)
+                    (s6i4 :same-entity s5p2)
+                    (s6i6 :same-entity s4i8)))
+
+

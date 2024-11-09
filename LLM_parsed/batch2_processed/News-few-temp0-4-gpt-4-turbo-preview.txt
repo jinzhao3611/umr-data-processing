@@ -1,0 +1,623 @@
+user name:
+user id:
+file language: chinese
+file format: plain_text
+Doc ID in database:
+export time:
+
+# :: snt1	Sentence: 香港 中学 文凭 考试 （ DSE ） 今日 （ 4 月 21 日 ） 开考 ， 维基 新闻 访问 了 一位 二度 参加 DSE 的 考生 兼 维基人 ， 他 直言 重考 DSE 对 其 压力 很 大 ， 但 其 考入 香港 中文 大学 的 目标 随着 时间 的 推移 只会 愈发 坚定 。
+
+# sentence level graph
+(s1a / and-91
+  :op1 (s1x / 开考-01
+          :time (s1d / date-entity
+                  :day 21
+                  :month 4
+                  :year (s1y / today))
+          :ARG1 (s1x2 / 考试
+                  :name (s1n / name
+                          :op1 "香港"
+                          :op2 "中学"
+                          :op3 "文凭"
+                          :op4 "考试"
+                          :op5 "（DSE）")))
+  :op2 (s1x3 / 访问-01
+          :ARG0 (s1x4 / 新闻
+                  :mod (s1x5 / 维基))
+          :ARG1 (s1x6 / 人
+                  :ARG0-of (s1x7 / 参加-01
+                            :ARG1 s1x2
+                            :quant 2
+                            :Aspect habitual
+                            :MODSTR FullAff)
+                  :ARG1-of (s1x8 / 重考-01
+                            :ARG1 s1x2
+                            :ARG2 (s1x9 / 压力
+                                    :degree (s1x10 / 大)
+                                    :mod (s1x11 / 很))
+                            :Aspect habitual
+                            :MODSTR FullAff)
+                  :mod (s1x12 / 维基人))
+          :Aspect performance
+          :MODSTR FullAff)
+  :op3 (s1x13 / 坚定-01
+          :ARG1 (s1x14 / 目标
+                  :ARG1-of (s1x15 / 考入-01
+                            :ARG1 (s1x16 / 大学
+                                    :mod (s1x17 / 中文)
+                                    :mod (s1x18 / 香港))
+                            :Aspect habitual
+                            :MODSTR FullAff)
+                  :degree (s1x19 / 愈发)
+                  :temporal (s1x20 / 推移-01
+                              :ARG1 (s1x21 / 时间)
+                              :Aspect process
+                              :MODSTR FullAff))
+          :Aspect state
+          :MODSTR FullAff))
+
+# alignment:
+s1a: 0-0
+s1d: 0-0
+s1n: 0-0
+s1x: 0-0
+s1x10: 0-0
+s1x11: 0-0
+s1x12: 0-0
+s1x13: 0-0
+s1x14: 0-0
+s1x15: 0-0
+s1x16: 0-0
+s1x17: 0-0
+s1x18: 0-0
+s1x19: 0-0
+s1x2: 0-0
+s1x20: 0-0
+s1x21: 0-0
+s1x3: 0-0
+s1x4: 0-0
+s1x5: 0-0
+s1x6: 0-0
+s1x7: 0-0
+s1x8: 0-0
+s1x9: 0-0
+s1y: 0-0
+
+# document level annotation:
+
+# :: snt3	Sentence: 阿耀 （ 化名 ） 对 维基 新闻 表示 ， 他 在 去年 的 DSE 中 有 一 科 发挥 失常 ， 无法 入读 他 希望 的 中大 ， 只能 入读 城大 一个 他 并 不 感兴趣 的 专业 ， 他 对此 感到 十分 痛苦 ， 最后 在 入学 一个 月 后 下定 决心 退学 重考 DSE 。
+
+# sentence level graph
+(s2x / 表示-01
+  :ARG0 (s2p / person
+          :name (s2n / name
+                  :op1 "阿耀")
+          :mod (s2a / 化名))
+  :ARG1 (s2a2 / and
+          :op1 (s2x2 / 发挥-01
+                 :ARG0 s2p
+                 :ARG1 (s2x3 / 科
+                         :quant 1)
+                 :location (s2x4 / DSE
+                             :mod (s2t / time-91
+                                   :mod (s2y / 去年)))
+                 :manner (s2x5 / 失常)
+                 :Aspect Performance
+                 :MODSTR PrtNeg)
+          :op2 (s2x6 / 入读-01
+                 :ARG0 s2p
+                 :ARG1 (s2x7 / 专业
+                         :mod (s2x8 / 城大)
+                         :mod (s2x9 / 一个)
+                         :mod (s2x10 / 感兴趣-01
+                               :polarity -
+                               :ARG0 s2p))
+                 :mod (s2x11 / 只能)
+                 :Aspect Performance
+                 :MODSTR PrtAff)
+          :op3 (s2x12 / 痛苦-01
+                 :ARG0 s2p
+                 :degree (s2x13 / 十分)
+                 :Aspect State
+                 :MODSTR FullAff)
+          :op4 (s2x14 / 退学-01
+                 :ARG0 s2p
+                 :temporal (s2x15 / 后
+                             :op1 (s2x16 / 入学-01
+                                   :ARG0 s2p
+                                   :temporal (s2x17 / 一个
+                                               :quant 1
+                                               :unit (s2x18 / 月)))
+                             :Aspect Performance
+                             :MODSTR FullAff)
+                 :purpose (s2x19 / 重考-01
+                            :ARG1 s2x4)
+                 :Aspect Performance
+                 :MODSTR FullAff))
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:
+s2a: 0-0
+s2a2: 0-0
+s2n: 0-0
+s2p: 0-0
+s2t: 0-0
+s2x: 0-0
+s2x10: 0-0
+s2x11: 0-0
+s2x12: 0-0
+s2x13: 0-0
+s2x14: 0-0
+s2x15: 0-0
+s2x16: 0-0
+s2x17: 0-0
+s2x18: 0-0
+s2x19: 0-0
+s2x2: 0-0
+s2x3: 0-0
+s2x4: 0-0
+s2x5: 0-0
+s2x6: 0-0
+s2x7: 0-0
+s2x8: 0-0
+s2x9: 0-0
+s2y: 0-0
+
+# document level annotation:
+
+# :: snt5	Sentence: 阿耀 直言 这 是 一个 痛苦 的 决定 ， 但 在 不 喜欢 的 学校 读 不 喜欢 的 专业 更 让 他 痛苦 ， 于是 ， 在 暑气 未 退 的 十月 ， 他 重新 加入 了 DSE 考生 的 队伍 。
+
+# sentence level graph
+(s3b / but-91
+  :ARG1 (s3s / 说-01
+          :ARG0 (s3p / person
+                  :name (s3n / name
+                          :op1 "阿耀"))
+          :ARG1 (s3d / 决定-01
+                  :ARG1 (s3t / 痛苦)
+                  :quant 1
+                  :mod (s3d2 / 这))
+          :Aspect performance
+          :MODSTR FullAff)
+  :ARG2 (s3j / 加入-01
+          :ARG0 s3p
+          :ARG1 (s3q / 队伍
+                  :mod (s3e / 考生
+                        :mod (s3e2 / DSE)))
+          :temporal (s3m / month
+                      :time (s3o / October)
+                      :mod (s3h / 暑气
+                            :mod (s3h2 / 未
+                                  :op1 (s3r / 退))))
+          :Aspect performance
+          :MODSTR FullAff)
+  :condition (s3r2 / 痛苦
+               :degree (s3m2 / 更)
+               :ARG0 s3p
+               :ARG1-of (s3r3 / 读-01
+                          :ARG1 (s3m3 / 专业
+                                  :mod (s3d3 / 不
+                                        :op1 (s3l / 喜欢)))
+                          :location (s3s2 / 学校
+                                      :mod (s3d4 / 不
+                                            :op1 s3l)))
+               :Aspect state
+               :MODSTR FullAff))
+
+# alignment:
+s3b: 0-0
+s3d: 0-0
+s3d2: 0-0
+s3d3: 0-0
+s3d4: 0-0
+s3e: 0-0
+s3e2: 0-0
+s3h: 0-0
+s3h2: 0-0
+s3j: 0-0
+s3l: 0-0
+s3m: 0-0
+s3m2: 0-0
+s3m3: 0-0
+s3n: 0-0
+s3o: 0-0
+s3p: 0-0
+s3q: 0-0
+s3r: 0-0
+s3r2: 0-0
+s3r3: 0-0
+s3s: 0-0
+s3s2: 0-0
+s3t: 0-0
+
+# document level annotation:
+
+# :: snt7	Sentence: 提到 坚持 的 原因 ， 阿耀 表示 许多 人 ， 无论 是 在 城大 时 的 同学 还是 在 中大 的 朋友 ， 都 给 了 他 莫大 的 鼓励 和 支持 ， 但 一些 中学 时代 的 老师 听闻 此事 时 感到 错愕 和 不解 ， 对此 阿耀 表示 ： “ 人生 这场 游戏 要 有 大起大落 才 好玩 。”
+
+# sentence level graph
+(s4x / 表示-01
+  :ARG0 (s4p / person
+          :name (s4n / name
+                  :op1 "阿耀"))
+  :ARG1 (s4a / and
+          :op1 (s4g / 鼓励-01
+                 :ARG0 (s4p2 / person
+                         :quant "许多"
+                         :mod (s4c / or
+                                :op1 (s4s / student
+                                      :location (s4u / university
+                                                 :name (s4n2 / name
+                                                         :op1 "城大"))
+                                      :time (s4t / 时))
+                                :op2 (s4f / friend
+                                      :location (s4u2 / university
+                                                 :name (s4n3 / name
+                                                         :op1 "中大")))))
+                 :ARG1 s4p
+                 :ARG2 (s4e / encouragement
+                         :mod (s4m / 大))
+                 :Aspect Performance
+                 :MODSTR FullAff)
+          :op2 (s4s2 / 支持-01
+                 :ARG0 s4p2
+                 :ARG1 s4p
+                 :ARG2 s4e
+                 :Aspect Performance
+                 :MODSTR FullAff))
+  :ARG2 (s4q / quote
+          :content (s4g2 / 游戏-01
+                     :ARG0 (s4l / life
+                             :poss s4p)
+                     :ARG1 (s4f2 / fun
+                             :degree (s4m2 / 大)
+                             :condition (s4r / rise-and-fall
+                                          :mod (s4d / 大)))
+                     :Aspect Performance
+                     :MODSTR FullAff))
+  :time (s4t2 / 提到-01
+          :ARG1 (s4r2 / reason
+                  :mod (s4j / 坚持)))
+  :contrast (s4f3 / 感到-01
+              :ARG0 (s4t3 / teacher
+                      :time (s4e2 / 时代
+                              :mod (s4s3 / school
+                                     :mod (s4m3 / 中)))
+                      :quant "一些")
+              :ARG1 (s4a2 / and
+                      :op1 (s4s4 / surprise)
+                      :op2 (s4c2 / confusion))
+              :time (s4h / 听闻-01
+                      :ARG1 (s4t4 / 事
+                              :mod (s4d2 / 此)))
+              :Aspect Performance
+              :MODSTR FullAff)
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s4a: 0-0
+s4a2: 0-0
+s4c: 0-0
+s4c2: 0-0
+s4d: 0-0
+s4d2: 0-0
+s4e: 0-0
+s4e2: 0-0
+s4f: 0-0
+s4f2: 0-0
+s4f3: 0-0
+s4g: 0-0
+s4g2: 0-0
+s4h: 0-0
+s4j: 0-0
+s4l: 0-0
+s4m: 0-0
+s4m2: 0-0
+s4m3: 0-0
+s4n: 0-0
+s4n2: 0-0
+s4n3: 0-0
+s4p: 0-0
+s4p2: 0-0
+s4q: 0-0
+s4r: 0-0
+s4r2: 0-0
+s4s: 0-0
+s4s2: 0-0
+s4s3: 0-0
+s4s4: 0-0
+s4t: 0-0
+s4t2: 0-0
+s4t3: 0-0
+s4t4: 0-0
+s4u: 0-0
+s4u2: 0-0
+s4x: 0-0
+
+# document level annotation:
+
+# :: snt9	Sentence: 在 COVID-19 疫情 反复 震荡 下 ， 阿耀 于 2022 年 年底 染疫 ， 不得不 于 竹篙湾 检疫 中心 渡过 圣诞 ， 在 只有 连花清瘟 胶囊 的 情况 下 仍然 坚持 温书 ， 并 于 元旦 前 康复 。
+
+# sentence level graph
+(s5a / and
+  :op1 (s5x / 染疫-01
+         :ARG0 (s5p / person
+                 :name (s5n / name
+                         :op1 "阿耀"))
+         :temporal (s5d / date-entity
+                     :year 2022
+                     :part-of-year (s5t / end-of-year))
+         :condition (s5x2 / 震荡-01
+                      :ARG0 (s5e / epidemic
+                              :name (s5n2 / name
+                                      :op1 "COVID-19"))
+                      :frequency (s5f / 反复))
+         :Aspect performance
+         :MODSTR FullAff)
+  :op2 (s5x3 / 渡过-01
+         :ARG0 s5p
+         :ARG1 (s5h / holiday
+                 :name (s5n3 / name
+                         :op1 "圣诞"))
+         :location (s5q / quarantine-center
+                     :name (s5n4 / name
+                             :op1 "竹篙湾"))
+         :condition (s5x4 / 有-01
+                      :ARG1 (s5m / medicine
+                              :name (s5n5 / name
+                                      :op1 "连花清瘟"
+                                      :op2 "胶囊"))
+                      :mod (s5x5 / 只))
+         :Aspect performance
+         :MODSTR FullAff)
+  :op3 (s5x6 / 坚持-01
+         :ARG0 s5p
+         :ARG1 (s5x7 / 温书-01)
+         :condition s5x4
+         :Aspect habitual
+         :MODSTR FullAff)
+  :op4 (s5x8 / 康复-01
+         :ARG0 s5p
+         :temporal (s5d2 / date-entity
+                     :day (s5d3 / day
+                           :day-of-month -1)
+                     :month (s5m2 / month
+                             :month-number 1))
+         :Aspect performance
+         :MODSTR FullAff))
+
+# alignment:
+s5a: 0-0
+s5d: 0-0
+s5d2: 0-0
+s5d3: 0-0
+s5e: 0-0
+s5f: 0-0
+s5h: 0-0
+s5m: 0-0
+s5m2: 0-0
+s5n: 0-0
+s5n2: 0-0
+s5n3: 0-0
+s5n4: 0-0
+s5n5: 0-0
+s5p: 0-0
+s5q: 0-0
+s5t: 0-0
+s5x: 0-0
+s5x2: 0-0
+s5x3: 0-0
+s5x4: 0-0
+s5x5: 0-0
+s5x6: 0-0
+s5x7: 0-0
+s5x8: 0-0
+
+# document level annotation:
+
+# :: snt11	Sentence: 同时 为了 缓解 压力 ， 作为 维基百科 编者 的 他 于 维基百科 的 工作 也 一点 没 落下 ， 成功 完成 了 他 在 美国 专题 的 目标 计划 。
+
+# sentence level graph
+(s6a / and
+  :op1 (s6x / 落下-01
+         :ARG0 (s6p / person
+                 :ARG0-of (s6e / 编者-01
+                           :ARG1 (s6w / 维基百科)))
+         :ARG1 (s6w2 / 工作
+                 :mod (s6w3 / 维基百科))
+         :mod (s6x2 / 一点)
+         :polarity -
+         :Aspect Performance
+         :MODSTR FullNeg)
+  :op2 (s6x3 / 完成-01
+         :ARG0 s6p
+         :ARG1 (s6g / 计划
+                 :mod (s6g2 / 目标)
+                 :topic (s6t / 专题
+                         :mod (s6c / country
+                               :name (s6n / name
+                                       :op1 "美国"))))
+         :manner (s6x4 / 成功)
+         :Aspect Performance
+         :MODSTR FullAff)
+  :time (s6t2 / 同时)
+  :purpose (s6x5 / 缓解-01
+             :ARG1 (s6y / 压力)
+             :Aspect Performance
+             :MODSTR FullAff))
+
+# alignment:
+s6a: 0-0
+s6c: 0-0
+s6e: 0-0
+s6g: 0-0
+s6g2: 0-0
+s6n: 0-0
+s6p: 0-0
+s6t: 0-0
+s6t2: 0-0
+s6w: 0-0
+s6w2: 0-0
+s6w3: 0-0
+s6x: 0-0
+s6x2: 0-0
+s6x3: 0-0
+s6x4: 0-0
+s6x5: 0-0
+s6y: 0-0
+
+# document level annotation:
+
+# :: snt13	Sentence: 到了 四月 初 ， 阿耀 已经 完成 了 1980 年 至 2022 年 的 所有 数学 DSE 分卷 、 1984 至 2022 年 的 所有 化学 DSE 分卷 、 2012 至 2022 年 的 所有 英文 DSE 分卷 ， 还 做 了 大量 的 模拟 试题 。
+
+# sentence level graph
+(s7a / and
+  :op1 (s7x / 完成-01
+          :ARG0 (s7p / person
+                  :name (s7n / name
+                          :op1 "阿耀"))
+          :ARG1 (s7a2 / and
+                  :op1 (s7x2 / 分卷
+                        :mod (s7x3 / 数学)
+                        :mod (s7x4 / DSE)
+                        :quant (s7q / 所有)
+                        :time (s7t / 从...到...
+                                :op1 (s7y / year
+                                      :quant 1980)
+                                :op2 (s7y2 / year
+                                      :quant 2022)))
+                  :op2 (s7x5 / 分卷
+                        :mod (s7x6 / 化学)
+                        :mod (s7x7 / DSE)
+                        :quant s7q
+                        :time (s7t2 / 从...到...
+                                :op1 (s7y3 / year
+                                      :quant 1984)
+                                :op2 (s7y4 / year
+                                      :quant 2022)))
+                  :op3 (s7x8 / 分卷
+                        :mod (s7x9 / 英文)
+                        :mod (s7x10 / DSE)
+                        :quant s7q
+                        :time (s7t3 / 从...到...
+                                :op1 (s7y5 / year
+                                      :quant 2012)
+                                :op2 (s7y6 / year
+                                      :quant 2022))))
+          :temporal (s7t4 / 时间点
+                      :time (s7m / month
+                              :quant 4)
+                      :part (s7d / day
+                              :quant 初))
+          :mod (s7x11 / 已经)
+          :Aspect performance)
+  :op2 (s7x12 / 做-01
+          :ARG0 s7p
+          :ARG1 (s7x13 / 试题
+                  :mod (s7x14 / 模拟)
+                  :quant (s7q2 / 大量))
+          :Aspect performance))
+
+# alignment:
+s7a: 0-0
+s7a2: 0-0
+s7d: 0-0
+s7m: 0-0
+s7n: 0-0
+s7p: 0-0
+s7q: 0-0
+s7q2: 0-0
+s7t: 0-0
+s7t2: 0-0
+s7t3: 0-0
+s7t4: 0-0
+s7x: 0-0
+s7x10: 0-0
+s7x11: 0-0
+s7x12: 0-0
+s7x13: 0-0
+s7x14: 0-0
+s7x2: 0-0
+s7x3: 0-0
+s7x4: 0-0
+s7x5: 0-0
+s7x6: 0-0
+s7x7: 0-0
+s7x8: 0-0
+s7x9: 0-0
+s7y: 0-0
+s7y2: 0-0
+s7y3: 0-0
+s7y4: 0-0
+s7y5: 0-0
+s7y6: 0-0
+
+# document level annotation:
+
+# :: snt15	Sentence: 阿耀 向 维基 新闻 表示 ： “ 有时 压力 并 不 是 一件 坏事 ， 因为 只有 压力 才 会 推动 一个 人 去 发挥 他 所有 的 力 和 爆发 他 的 小宇宙 。”
+
+# sentence level graph
+(s8x / 表示-01
+  :ARG0 (s8p / person
+          :name (s8n / name
+                  :op1 "阿耀"))
+  :ARG1 (s8c / contrast-01
+          :ARG1 (s8b / 坏事-01
+                  :ARG1 (s8p2 / 压力
+                          :mod (s8t / 有时))
+                  :MODSTR FullNeg
+                  :Aspect state)
+          :ARG2 (s8p3 / 推动-01
+                  :ARG0 s8p2
+                  :ARG1 (s8e / 发挥-01
+                          :ARG0 (s8p4 / person
+                                  :ARG1-of (s8h / have-03
+                                             :ARG2 (s8p5 / 力
+                                                     :mod (s8a / all))
+                                             :ARG2 (s8u / universe
+                                                     :mod (s8s / small))
+                                             :MODSTR FullAff)
+                                  :ref-person 3rd)
+                          :Aspect performance
+                          :MODSTR FullAff)
+                  :Aspect performance
+                  :MODSTR FullAff)
+          :Aspect state
+          :MODSTR FullAff)
+  :ARG2 (s8n2 / news
+          :mod (s8n3 / wiki))
+  :Aspect state
+  :MODSTR FullAff
+  :quotation true)
+
+# alignment:
+s8a: 0-0
+s8b: 0-0
+s8c: 0-0
+s8e: 0-0
+s8h: 0-0
+s8n: 0-0
+s8n2: 0-0
+s8n3: 0-0
+s8p: 0-0
+s8p2: 0-0
+s8p3: 0-0
+s8p4: 0-0
+s8p5: 0-0
+s8s: 0-0
+s8t: 0-0
+s8u: 0-0
+s8x: 0-0
+
+# document level annotation:
+
+# Source File: 
+香港 中学 文凭 考试 （ DSE ） 今日 （ 4 月 21 日 ） 开考 ， 维基 新闻 访问 了 一位 二度 参加 DSE 的 考生 兼 维基人 ， 他 直言 重考 DSE 对 其 压力 很 大 ， 但 其 考入 香港 中文 大学 的 目标 随着 时间 的 推移 只会 愈发 坚定 。
+阿耀 （ 化名 ） 对 维基 新闻 表示 ， 他 在 去年 的 DSE 中 有 一 科 发挥 失常 ， 无法 入读 他 希望 的 中大 ， 只能 入读 城大 一个 他 并 不 感兴趣 的 专业 ， 他 对此 感到 十分 痛苦 ， 最后 在 入学 一个 月 后 下定 决心 退学 重考 DSE 。
+阿耀 直言 这 是 一个 痛苦 的 决定 ， 但 在 不 喜欢 的 学校 读 不 喜欢 的 专业 更 让 他 痛苦 ， 于是 ， 在 暑气 未 退 的 十月 ， 他 重新 加入 了 DSE 考生 的 队伍 。
+提到 坚持 的 原因 ， 阿耀 表示 许多 人 ， 无论 是 在 城大 时 的 同学 还是 在 中大 的 朋友 ， 都 给 了 他 莫大 的 鼓励 和 支持 ， 但 一些 中学 时代 的 老师 听闻 此事 时 感到 错愕 和 不解 ， 对此 阿耀 表示 ： “ 人生 这场 游戏 要 有 大起大落 才 好玩 。”
+在 COVID-19 疫情 反复 震荡 下 ， 阿耀 于 2022 年 年底 染疫 ， 不得不 于 竹篙湾 检疫 中心 渡过 圣诞 ， 在 只有 连花清瘟 胶囊 的 情况 下 仍然 坚持 温书 ， 并 于 元旦 前 康复 。
+同时 为了 缓解 压力 ， 作为 维基百科 编者 的 他 于 维基百科 的 工作 也 一点 没 落下 ， 成功 完成 了 他 在 美国 专题 的 目标 计划 。
+到了 四月 初 ， 阿耀 已经 完成 了 1980 年 至 2022 年 的 所有 数学 DSE 分卷 、 1984 至 2022 年 的 所有 化学 DSE 分卷 、 2012 至 2022 年 的 所有 英文 DSE 分卷 ， 还 做 了 大量 的 模拟 试题 。
+阿耀 向 维基 新闻 表示 ： “ 有时 压力 并 不 是 一件 坏事 ， 因为 只有 压力 才 会 推动 一个 人 去 发挥 他 所有 的 力 和 爆发 他 的 小宇宙 。”

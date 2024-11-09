@@ -1,0 +1,46 @@
+# :: snt1
+Words                       ta    ɨmɨntsarara
+Morphemes                   ta  ɨmɨntsara -ra
+Morpheme Gloss(English)  1M.SF    story -Vbzr
+Morpheme Gloss(Spanish)  1M.SF   cuento -Vbdr
+English Sent Gloss: 
+Spanish Sent Glossvoy a contar
+
+# sentence level graph:
+(s1x / ɨmɨntsara
+  :actor (s1t / ta)
+  :actor (s2m / mɨta))
+
+# alignment:
+s1x :2-2
+s1t :1-1
+s2m :2-2
+# document level annotation:
+
+
+
+
+# :: snt2
+Words                         tatu     mɨta   aɨmanta         ɨmɨna
+Morphemes                     tatu     mɨta   aɨmanta         ɨmɨna
+Morpheme Gloss(English)  armadillo      lie     tiger      long.ago
+Morpheme Gloss(Spanish)  carachupa  engañar  otorongo  antiguamente
+English Sent Gloss: 
+Spanish Sent Gloss(cómo) antiguamente la carachupa engaña al tigre
+
+# sentence level graph:
+(s2m / mɨta
+  :actor (s2t / tatu)
+  :undergoer (s2a / aɨmanta)
+  :temporal (s2x / ɨmɨna))
+
+# alignment:
+s2m :2-2
+s2t :1-1
+s2a :3-3
+s2x :4-4
+# document level annotation:
+
+
+
+

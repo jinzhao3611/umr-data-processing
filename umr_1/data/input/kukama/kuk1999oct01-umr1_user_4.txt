@@ -1,0 +1,1902 @@
+# :: snt1
+Words                          tsɨmɨntsarara           amutsu    TA
+Morphemes                  ts- ɨmɨntsara -ra        amu -utsu  None
+Morpheme Gloss(English)   1F.CL- story -Vbzr  something -FUT1  None
+Morpheme Gloss(Spanish)  1F.CL- cuento -Vbdr      algo? -FUT1  None
+English Sent Gloss: I will tell something
+Spanish Sent Glossyo voy a contar algo
+
+# sentence level graph:
+(s1x / ɨmɨntsarara
+  :actor (s1p / person
+           :refer-person 1st
+           :refer-number Singular)
+  :theme (s1t / thing
+           :mod (s1a / amutsu))
+  :Aspect Performance)
+
+# alignment:
+1st :-1--1
+Singular :-1--1
+s1p :-1--1
+s1a :2-2
+s1t :0-0
+Performance :-1--1
+s1x :1-1
+# document level annotation:
+
+
+
+
+# :: snt2
+Words                           tsamɨmɨrakunia            karuaranu   muna    iyaratsuriay
+Morphemes                     tsa- mɨmɨrakunia          karuara -nu   muna  iyara -tsuriay
+Morpheme Gloss(English)  1F.SF- daugther.woman  aquatic.being -PL.F  steal    almost -PAS3
+Morpheme Gloss(Spanish)     1F.SF- hijademujer   ser.acuático -PL.F  robar      casi -PAS3
+English Sent Gloss: the karuaras wanted to steal my daugther
+Spanish Sent Glosslos yacurunas (quisieron) casi roban a mi hija
+
+# sentence level graph:
+(s2m / muna
+  :actor (s2k / karuaranu
+           :refer-number Plural)
+  :theme (s2p / person
+           :ARG0-of (s2k2 / kinship
+                      :ARG1 (s2p2 / person
+                              :refer-person 1st
+                              :refer-number Singular)
+                      :ARG2 (s2t / tsamɨmɨrakunia))
+           :refer-number Singular)
+  :extent (s2i2 / iyaratsuriay)
+  :Aspect Performance)
+
+# alignment:
+s2m :3-3
+s2k :2-2
+Plural :-1--1
+s2p :-1--1
+s2k2 :0-0
+s2p2 :-1--1
+1st :-1--1
+Singular :-1--1
+s2t :1-1
+s2i2 :4-4
+Performance :-1--1
+# document level annotation:
+
+
+
+
+# :: snt3
+Words                          peka,       petsui           yatuanu    tsapukiay              wɨwɨtakari                 yayutin       ukaka
+Morphemes                     pe -ka     pe -tsui       ya -tua -nu  tsapuki -ay          wɨwɨta -ka -ri             ya- yuti -n     uka -ka
+Morpheme Gloss(English)    port -LOC    port -ABL  3F.SF -AUM -PL.F    call -3OF         move -REI -PROG        3F.SF- stay -REL  house -LOC
+Morpheme Gloss(Spanish)  puerto -LOC  puerto -ABL  3F.FC -AUM -PL.F  llamar -3OF  mover.mecer -REI -PROG  3F.FC- permanecer -REL   casa -LOC
+English Sent Gloss: in the port, from the port these big ones call her (while) she is
+Spanish Sent Glossen el puerto, del puerto esos grandotes la llaman (mientras) se esta
+
+# sentence level graph:
+(s3t / tsapuki
+  :actor (s3p / person
+           :refer-person 3rd
+           :refer-number Plural
+           :degree Intensifier)
+  :recipient (s3p2 / person
+               :refer-person 3rd
+               :Actor-of (s3y / yuti
+                           :place (s3u / ukaka)
+                           :Aspect State))
+  :place (s3p3 / peka)
+  :source (s3p4 / petsui)
+  :Aspect Perfective
+  :temporal (s3w / wɨwɨta
+              :Aspect Activity))
+
+# alignment:
+s3t :4-4
+s3p :-1--1
+3rd :-1--1
+Plural :-1--1
+Intensifier :-1--1
+s3p2 :-1--1
+s3p3 :1-1
+s3p4 :2-2
+Perfective :-1--1
+s3y :6-6
+s3u :7-7
+s3w :5-5
+Activity :-1--1
+State :-1--1
+# document level annotation:
+
+
+
+
+# :: snt4
+Words                    tɨma  amutse  penukatsuriay,      amiyanan              None
+Morphemes                tɨma  amutse            penu  uka -tsuriay        amiya -nan
+Morpheme Gloss(English)   Neg     far        1PL.F.EX   house -PAS3       close -only
+Morpheme Gloss(Spanish)   Neg   lejos        1PL.F.EX    casa -PAS3  cerca -solamente
+English Sent Gloss: we did not go far from our house, just here
+Spanish Sent Glossno habíamos ido lejos de nuestra casa, ahí nomas
+
+# sentence level graph:
+(s4a / and
+  :op1 (s4h / have-location-91
+         :ARG0 (s4p / person
+                 :refer-person Excl.
+                 :refer-number Plural)
+         :ARG1 (s4a2 / amutse
+                 :op1 (s4u2 / uka--tsuriay))
+         :Aspect State
+         :polarity -)
+  :op2 (s4h2 / have-location-91
+         :ARG0 s4p
+         :ARG1 (s4a3 / amiyanan
+                 :op1 s4u2)
+         :Aspect State))
+
+# alignment:
+s4a :0-0
+s4h :0-0
+s4p :-1--1
+Excl. :-1--1
+Plural :-1--1
+s4a2 :2-2
+State :-1--1
+- :-1--1
+s4h2 :0-0
+s4a3 :4-4
+s4u2 :4-4
+# document level annotation:
+
+
+
+
+# :: snt5
+Words                    parana   tsɨmatsui,         peka           tuanu    tsapukita        yuti
+Morphemes                parana  tsɨma -tsui       pe -ka         tua -nu  tsapuki -ta        yuti
+Morpheme Gloss(English)   river   side? -ABL    port -LOC    spirit -PL.F    call -Cau     to.stay
+Morpheme Gloss(Spanish)     río   borde -ABL  puerto -LOC  espíritu -PL.F  llamar -Cau  permanecer
+English Sent Gloss: from the shore of the river, in the port the big ones keep calling
+Spanish Sent Glossdesde la orilla del río, en el puerto esos grandotes continuan
+
+# sentence level graph:
+(s5t / tsapuki
+  :actor (s5t2 / tuanu
+           :refer-number Plural)
+  :source (s5t3 / tsɨmatsui
+            :part-of (s5r / river
+                       :name (s5n / name
+                               :op1 "parana")))
+  :place (s5p / peka)
+  :Aspect Activity)
+
+# alignment:
+s5t :5-5
+s5t2 :4-4
+Plural :-1--1
+s5t3 :2-2
+s5r :1-1
+s5n :1-1
+parana :1-1
+s5p :3-3
+Activity :-1--1
+# document level annotation:
+
+
+
+
+# :: snt6
+Words                         yakuntuanu  tsapuki        yuti      puapu
+Morphemes                 yakun -tua -nu  tsapuki        yuti    pua -pu
+Morpheme Gloss(English)  that -AUM -PL.F     call     to.stay  hand -INS
+Morpheme Gloss(Spanish)   ese -AUM -PL.F   llamar  permanecer  mano -INS
+English Sent Gloss: these big ones keep calling with (their) hand
+Spanish Sent Glossestos grandotes continuan llamando con la mano
+
+# sentence level graph:
+(s6t / tsapuki
+  :actor (s6p / person
+           :mod (s6y / yakuntuanu)
+           :refer-number Plural
+           :degree Intensifier)
+  :instrument (s6p2 / puapu
+                :part-of s6p)
+  :Aspect Activity)
+
+# alignment:
+s6t :2-2
+s6p :-1--1
+s6y :1-1
+Plural :-1--1
+Intensifier :-1--1
+s6p2 :4-4
+Activity :-1--1
+# document level annotation:
+
+
+
+
+# :: snt7
+Words                      akarupe    mama    utsuy,         awatu  tsapuki        yuti
+Morphemes                aka -rupe    mama  utsu -uy       awa -tu  tsapuki        yuti
+Morpheme Gloss(English)  here -FIN  mother  go -PAS1   person -AUM     call     to.stay
+Morpheme Gloss(Spanish)   acá -FIN    mama  ir -PAS1  persona -AUM   llamar  permanecer
+English Sent Gloss: by this way the mother went, (and) the big person keep calling
+Spanish Sent Glosspor acá se fue la mamá, (y) esa personasa continua llamando
+
+# sentence level graph:
+(s7a / and
+  :op1 (s7u / utsu
+         :actor (s7p / person
+                  :ARG0-of (s7k / kinship
+                             :ARG2 (s7m / mama))
+                  :refer-number Singular)
+         :path (s7a2 / akarupe)
+         :Aspect Performance)
+  :op2 (s7t / tsapuki
+         :actor (s7p2 / person
+                  :degree Intensifier
+                  :refer-number Singular)
+         :Aspect Activity))
+
+# alignment:
+s7a :0-0
+s7u :3-3
+s7p :-1--1
+s7k :0-0
+s7m :2-2
+Singular :-1--1
+s7a2 :1-1
+Performance :-1--1
+s7t :5-5
+s7p2 :-1--1
+Intensifier :-1--1
+Activity :-1--1
+# document level annotation:
+
+
+
+
+# :: snt8
+Words                                tsamɨmɨrakuniapuranu               ɨtsɨkakanpuranu  tsapuki
+Morphemes                      tsa- mɨmɨrakunia -pura -nu       ɨtsɨ -kaka -n -pura -nu  tsapuki
+Morpheme Gloss(English)  1F.SF- daugther.woman -FOC -PL.F        ? -rec -NZR -FOC -PL.F     call
+Morpheme Gloss(Spanish)     1F.SF- hijademujer -FOC -PL.F  asustar -rec -NDR -FOC -PL.F   llamar
+English Sent Gloss: my daugthers call scared
+Spanish Sent Glossmis hijas llaman asustadas
+
+# sentence level graph:
+(s8t / tsapuki
+  :actor (s8p / person
+           :ARG0-of (s8k / kinship
+                      :ARG1 (s8p2 / person
+                              :refer-person 1st
+                              :refer-number Singular)
+                      :ARG2 (s8t2 / tsamɨmɨrakuniapuranu))
+           :refer-number Plural
+           :Experiencer-of (s8x / ɨtsɨ
+                             :Aspect Performance))
+  :Aspect Process)
+
+# alignment:
+s8t :3-3
+s8p :-1--1
+s8k :0-0
+s8p2 :-1--1
+1st :-1--1
+Singular :-1--1
+s8t2 :1-1
+Plural :-1--1
+s8x :2-2
+Performance :-1--1
+Process :-1--1
+# document level annotation:
+
+
+
+
+# :: snt9
+Words                    mamaaa,  mamaaa
+Morphemes                   mama    mama
+Morpheme Gloss(English)   mother  mother
+Morpheme Gloss(Spanish)     mamá    mamá
+English Sent Gloss: moooom, mooom
+Spanish Sent Glossmamaaa, mamaaa
+
+# sentence level graph:
+(s9e / event)
+
+# alignment:
+s9e :0-0
+# document level annotation:
+
+
+
+
+# :: snt11
+Words                      etsepura         nitsenuay
+Morphemes                etse -pura    ni - tsenu -ay
+Morpheme Gloss(English)  1F.LF -FOC  NEG - hear -3sOF
+Morpheme Gloss(Spanish)  1F.LF -FOC   NEG - oir -3sOF
+English Sent Gloss: I do not hear her
+Spanish Sent Glossno la oigo
+
+# sentence level graph:
+(s11t / tsenu
+  :experiencer (s11p / person
+                 :refer-person 1st
+                 :refer-number Singular)
+  :stimulus (s11p2 / person
+              :refer-person 3rd
+              :refer-number Singular)
+  :Aspect State
+  :MODSTR FullNeg)
+
+# alignment:
+s11p :-1--1
+s11p2 :-1--1
+s11t :2-2
+# document level annotation:
+
+
+
+
+# :: snt12
+Words                    kawayati      penu            kuyara
+Morphemes                kawayati      penu          ku -yara
+Morpheme Gloss(English)       far  1PL.F.EX         farm -own
+Morpheme Gloss(Spanish)     lejos  1PL.F.EX  chacra -propia.o
+English Sent Gloss: far is our farm
+Spanish Sent Glosslejitos está nuestra chacra
+
+# sentence level graph:
+(s12h / have-location-91
+  :ARG0 (s12k / kuyara
+          :poss (s12p / person
+                  :refer-person Excl.
+                  :refer-number Plural))
+  :ARG1 (s12k2 / kawayati
+          :refer-number Singular)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:
+s12h :0-0
+s12k :3-3
+s12k2 :1-1
+s12p :-1--1
+# document level annotation:
+
+
+
+
+# :: snt13
+Words                           yaepe      penu  utsu      panakɨra       tatara
+Morphemes                       yaepe      penu  utsu  panara -kɨra     ta -tara
+Morpheme Gloss(English)    then.there  1PL.F.EX    go   banana -DIM     get -Pur
+Morpheme Gloss(Spanish)  ahí.entonces  1PL.F.EX    ir  plátano -DIM  traer -Prop
+English Sent Gloss: there we go to get banana
+Spanish Sent Glossahí vamos para traer plátano
+
+# sentence level graph:
+(s13u / utsu
+  :actor (s13p / person
+           :refer-person Excl.
+           :refer-number Plural)
+  :purpose (s13t / ta
+             :actor s13p
+             :theme (s13p2 / panakɨra
+                      :mod (s13k / kɨra))
+             :Aspect Performance
+             :MODSTR FullAff)
+  :place (s13y2 / yaepe)
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s13k :4-4
+s13p :-1--1
+s13p2 :4-4
+s13t :5-5
+s13u :3-3
+s13y2 :1-1
+# document level annotation:
+
+
+
+
+# :: snt14
+Words                               tsamɨmɨrakunianu   tsapukiari.    karuarapura      unikuaratsui        yatu         tsapukiyuti,  kumitsa.
+Morphemes                       tsa- mɨmɨrakunia -nu  tsapuki -ari  karuara -pura  uni -kuara -tsui      ya -tu       tsapuki - yuti   kumitsa
+Morpheme Gloss(English)  1F.SF- daugther.woman -PL.F    call -PROG  aquatic being   -FOC water -INE  -ABL 3F.SF       call - to.stay     speak
+Morpheme Gloss(Spanish)     1F.SF- hijademujer -PL.F  llamar -PROG   ser acuático    -FOC agua -INE  -ABL 3F.FC  llamar - permanecer    hABLar
+English Sent Gloss: my daugthers are calling. yacurunas are calling from the water,
+Spanish Sent Glossmis hijas están llamando, los yacurunas están llamando desde
+
+# sentence level graph:
+(s14a / and
+  :op1 (s14t / tsapuki
+         :actor (s14p / person
+                  :ARG0-of (s14h / have-rel-role-91
+                             :ARG1 (s14p2 / person
+                                     :refer-person 1st
+                                     :refer-number Singular)
+                             :ARG2 (s14t2 / tsamɨmɨrakunianu))
+                  :refer-number Plural)
+         :Aspect Activity
+         :MODSTR FullAff)
+  :op3 (s14k3 / kumitsa
+         :actor s14p
+         :theme (s14t3 / tsapukiyuti
+                  :actor (s14k / karuarapura
+                           :refer-number Plural
+                           :mod (s14y / yatu))
+                  :source (s14u / unikuaratsui)
+                  :Aspect Activity
+                  :QUOT s14k3
+                  :MODSTR FullAff)
+         :Aspect Activity
+         :MODSTR FullAff))
+
+# alignment:
+s14a :0-0
+s14k :3-3
+s14k3 :0-0
+s14p :0-0
+s14p2 :-1--1
+s14t :2-2
+s14t2 :1-1
+s14t3 :6-6
+s14u :4-4
+s14y :5-undefined
+# document level annotation:
+
+
+
+
+# :: snt15
+Words                          yatu    tsapukiay      puapu
+Morphemes                    ya -tu  tsapuki -ay    pua -pu
+Morpheme Gloss(English)  3F.SF -AUM    call -3OF  hand -INS
+Morpheme Gloss(Spanish)  3F.FC -AUM  llamar -3OF  mano -INS
+English Sent Gloss: this call her with the hand
+Spanish Sent Glossesasos la llaman con la mano
+
+# sentence level graph:
+(s15t / tsapuki
+  :actor (s15p / person
+           :refer-person 3rd
+           :refer-number Singular
+           :mod (s15t2 / tu))
+  :recipient (s15p2 / person
+               :refer-person 3rd
+               :refer-number Singular)
+  :instrument (s15p3 / puapu
+                :part s15p
+                :refer-number Singular)
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s15p :-1--1
+s15p2 :-1--1
+s15p3 :3-3
+s15t :2-2
+s15t2 :1-1
+# document level annotation:
+
+
+
+
+# :: snt16
+Words                          yatu  tsapuki            kunyuti
+Morphemes                    ya -tu  tsapuki         kun - yuti
+Morpheme Gloss(English)  3F.SF -AUM     call     +Def - to.stay
+Morpheme Gloss(Spanish)  3F.FC -AUM   llamar  +Def - permanecer
+English Sent Gloss: this keep calling
+Spanish Sent Glossesaso sigue llamando (kun: insiste)
+
+# sentence level graph:
+(s16t / tsapuki
+  :actor (s16p / person
+           :refer-person 3rd
+           :refer-number Singular
+           :mod (s16t2 / tu))
+  :Aspect Activity
+  :MODSTR FullAff)
+
+# alignment:
+s16p :-1--1
+s16t :2-2
+s16t2 :1-1
+# document level annotation:
+
+
+
+
+# :: snt17
+Words                        ɨkɨratsenpuranu       ukaka                 yutinpuranu,        yatu  tsapuki
+Morphemes                ɨkɨratsen -pura -nu     uka -ka            yuti -n -pura -nu      ya -tu  tsapuki
+Morpheme Gloss(English)     child -FOC -PL.F  house -LOC     to.stay -NMZR -FOC -PL.F  3F.SF -AUM     call
+Morpheme Gloss(Spanish)      niÒo -FOC -PL.F   casa -LOC  permanecer -NMDR -FOC -PL.F  3F.FC -AUM   llamar
+English Sent Gloss: to the children who stay in the house, this calls
+Spanish Sent Glossa los niños que permanecen en la casa esaso les llama
+
+# sentence level graph:
+(s17t / tsapuki
+  :actor (s17p / person
+           :refer-person 3rd
+           :refer-number Singular
+           :mod (s17t2 / tu))
+  :recipient (s17x / ɨkɨratsenpuranu
+               :refer-number Plural
+               :Actor-of (s17y / yuti
+                           :place (s17u / ukaka)
+                           :Aspect State
+                           :MODSTR FullAff))
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s17p :-1--1
+s17t :5-5
+s17t2 :4-4
+s17u :2-2
+s17x :1-1
+s17y :3-3
+# document level annotation:
+
+
+
+
+# :: snt18
+Words                     tseta          munaminu
+Morphemes                 tseta      muna -mi -nu
+Morpheme Gloss(English)    want  steal -*** -PL.F
+Morpheme Gloss(Spanish)  querer  robar -*** -PL.F
+English Sent Gloss: this wants to take them away
+Spanish Sent Glosseste quiere robarles
+
+# sentence level graph:
+(s18t / tseta
+  :experiencer (s18p / person)
+  :stimulus (s18p2 / person
+              :Theme-of (s18m / munaminu
+                          :actor s18p
+                          :Modpred s18t)
+              :refer-number Plural)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:
+s18m :2-2
+s18p :0-0
+s18p2 :0-0
+s18t :0-0
+# document level annotation:
+
+
+
+
+# :: snt19
+Words                     era         tsamɨmɨrakunia  tsapuki
+Morphemes                 era       tsa- mɨmɨrakunia  tsapuki
+Morpheme Gloss(English)  well  1F.SF- daugther.woman     call
+Morpheme Gloss(Spanish)  bien     1F.SF- hijademujer   llamar
+English Sent Gloss: my daugther call hard
+Spanish Sent Glossmi hija llama fuerte
+
+# sentence level graph:
+(s19t / tsapuki
+  :actor (s19p / person
+           :ARG0-of (s19h / have-rel-role-91
+                      :ARG1 (s19p2 / person
+                              :refer-person 1st
+                              :refer-number Singular)
+                      :ARG2 (s19t2 / tsamɨmɨrakunia))
+           :refer-number Singular)
+  :Aspect Performance
+  :degree Intensifier
+  :MODSTR FullAff)
+
+# alignment:
+s19p :-1--1
+s19p2 :-1--1
+s19t :3-3
+s19t2 :2-2
+# document level annotation:
+
+
+
+
+# :: snt20
+Words                         tsaputsapuki          yapuranu  yapana
+Morphemes                tsapuki - tsapuki      ya -pura -nu  yapana
+Morpheme Gloss(English)        call - call  3F.SF -FOC -PL.F     run
+Morpheme Gloss(Spanish)    llamar - llamar  3F.FC -FOC -PL.F  correr
+English Sent Gloss: calling and calling they run
+Spanish Sent Glossllamando llamando ellos corren
+
+# sentence level graph:
+(s20y / yapana
+  :actor (s20p / person
+           :refer-number Plural
+           :refer-person 3rd)
+  :temporal (s20t / tsapuki
+              :actor s20p
+              :Aspect Activity
+              :MODSTR FullAff)
+  :Aspect Endeavor
+  :MODSTR FullAff)
+
+# alignment:
+s20p :-1--1
+s20t :1-1
+s20y :3-3
+# document level annotation:
+
+
+
+
+# :: snt21
+Words                    mamaaa,  mamaaa,          yapuranu  tsapuki
+Morphemes                   mama     mama      ya -pura -nu  tsapuki
+Morpheme Gloss(English)   mother   mother  3F.SF -FOC -PL.F     call
+Morpheme Gloss(Spanish)     mamá     mamá  3F.FC -FOC -PL.F   llamar
+English Sent Gloss: mooom, mooom, they call
+Spanish Sent Glossmamaaa, mamaaa, ellos llaman
+
+# sentence level graph:
+(s21t / tsapuki
+  :actor (s21p / person
+           :refer-person 3rd
+           :refer-number Plural)
+  :theme (s21m / mamaaa,-mamaaa)
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s21p :-1--1
+s21t :4-4
+# document level annotation:
+
+
+
+
+# :: snt22
+Words                            yapuranu  utsu       kawarupe
+Morphemes                    ya -pura -nu  utsu     kawa -rupe
+Morpheme Gloss(English)  3F.SF -FOC -PL.F    go    centre -FIN
+Morpheme Gloss(Spanish)  3F.FC -FOC -PL.F    ir  centro?? -FIN
+English Sent Gloss: they go toward the middle
+Spanish Sent Glossellos van hacia el centro
+
+# sentence level graph:
+(s22u / utsu
+  :actor (s22p / person
+           :refer-number Plural
+           :refer-person 3rd)
+  :direction (s22k / kawarupe)
+  :goal (s22p2 / place)
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s22k :3-3
+s22p :-1--1
+s22u :2-2
+s22p2 :0-0
+# document level annotation:
+
+
+
+
+# :: snt23
+Words                        penu  utsu    tuparupe
+Morphemes                    penu  utsu  tupa -rupe
+Morpheme Gloss(English)  1PL.F.EX    go  place -FIN
+Morpheme Gloss(Spanish)  1PL.F.EX    ir  lugar -FIN
+English Sent Gloss: towar we went
+Spanish Sent Glosshacia donde nos fuimos
+
+# sentence level graph:
+(s24u / utsu
+  :actor (s24p / person)
+  :goal (s23p / person
+          :refer-number Plural
+          :refer-person excl.)
+  :direction (s23e / event)
+  :Aspect Perfective
+  :MODSTR FullAff)
+
+# alignment:
+s23p :0-0
+s24p :-1--1
+s24u :2-2
+s23e :0-0
+# document level annotation:
+
+
+
+
+# :: snt24
+Words                            yapuranu  utsu
+Morphemes                    ya -pura -nu  utsu
+Morpheme Gloss(English)  3F.SF -FOC -PL.F    go
+Morpheme Gloss(Spanish)  3F.FC -FOC -PL.F    ir
+English Sent Gloss: they go
+Spanish Sent Glossellos se van
+
+# sentence level graph:
+(s24u2 / utsu
+  :actor (s24p2 / person
+           :refer-person 3rd
+           :refer-number Plural)
+  :goal (s24p3 / place)
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s24u2 :2-2
+s24p2 :0-0
+s24p3 :0-0
+# document level annotation:
+
+
+
+
+# :: snt25
+Words                        penu    tsawiti         yapuranu,  uuuu,  uuuu
+Morphemes                    penu    tsawiti      ya -pura -nu    ***   ***
+Morpheme Gloss(English)  1PL.F.EX     answer  3F.SF -FOC -PL.F    ***   ***
+Morpheme Gloss(Spanish)  1PL.F.EX  contestar  3F.FC -FOC -PL.F    ***   ***
+English Sent Gloss: we answer them, uuu, uuu
+Spanish Sent Glossnosotros les contestamos, uuu, uuu
+
+# sentence level graph:
+(s25t / tsawiti
+  :actor (s25p / person
+           :refer-person Excl.
+           :refer-number Plural)
+  :recipient (s25p2 / person
+               :refer-person 3rd
+               :refer-number Plural)
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s25p :-1--1
+s25p2 :-1--1
+s25t :2-2
+# document level annotation:
+
+
+
+
+# :: snt26
+Words                        penu    tsawiti
+Morphemes                    penu    tsawiti
+Morpheme Gloss(English)  1PL.F.EX     answer
+Morpheme Gloss(Spanish)  1PL.F.EX  contestar
+English Sent Gloss: we answer
+Spanish Sent Glossnosotros contestamos
+
+# sentence level graph:
+(s26t / tsawiti
+  :actor (s26p / person
+           :refer-person Excl.
+           :refer-number Plural)
+  :Aspect Performance
+  :theme (s26u / uuuu,-uuuu)
+  :MODSTR FullAff)
+
+# alignment:
+s26p :-1--1
+s26t :2-2
+# document level annotation:
+
+
+
+
+# :: snt27
+Words                        penu  utsu,   era        yapuranu    putseru
+Morphemes                    penu   utsu   era    ya -pura -nu    putseru
+Morpheme Gloss(English)  1PL.F.EX     go  well  3sF -FOC -PL.F  turn.pale
+Morpheme Gloss(Spanish)  1PL.F.EX     ir  bien  3sF -FOC -PL.F  palidecer
+English Sent Gloss: we go, they are so pale
+Spanish Sent Glossnosotros vamos, ellos están bien pálidos
+
+# sentence level graph:
+(s27a / and
+  :op1 (s27u / utsu
+         :actor (s27p / person
+                  :refer-number Plural
+                  :refer-person Excl.)
+         :Aspect Performance
+         :MODSTR FullAff)
+  :op2 (s27h / have-mod-91
+         :ARG1 (s27p2 / person
+                 :refer-person 3rd
+                 :refer-number Plural)
+         :ARG2 (s27p3 / putseru
+                 :degree Intensifier)
+         :Aspect State
+         :MODSTR FullAff))
+
+# alignment:
+s27a :0-0
+s27h :undefined
+s27p :-1--1
+s27p2 :-1--1
+s27p3 :5-5
+s27u :2-2
+# document level annotation:
+
+
+
+
+# :: snt29
+Words                             wakutakanan          yapuranu  utsu                 yiruapuranumuki
+Morphemes                     wakuta -ka -nan      ya -pura -nu  utsu         y- irua -pura -nu -muki
+Morpheme Gloss(English)      carry -REC -only  3F.SF -FOC -PL.F    go  3F.CL- brother -FOC -PL.F -COM
+Morpheme Gloss(Spanish)  take -REC -solamente  3F.FC -FOC -PL.F    ir  3F.CL- hermano -FOC -PL.F -COM
+English Sent Gloss: carrying (him), they go with his brothers
+Spanish Sent Glosscargándole, ellos se van con sus hermanos
+
+# sentence level graph:
+(s29u / utsu
+  :actor (s29p / person
+           :refer-person 3rd
+           :refer-number Plural)
+  :companion (s29p2 / person
+               :ARG0-of (s29h / have-rel-role-91
+                          :ARG1 s29p
+                          :ARG2 (s29y / yiruapuranumuki))
+               :refer-number Plural)
+  :temporal (s29w / wakuta
+              :actor (s29p3 / person
+                       :refer-person 3rd
+                       :refer-number Plural)
+              :undergoer s29p
+              :Aspect Activity
+              :MODSTR FullAff)
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s29p :0-0
+s29p2 :-1--1
+s29u :3-3
+s29w :1-1
+s29y :4-4
+s29p3 :0-0
+# document level annotation:
+
+
+
+
+# :: snt30
+Words                        maritipuy,        yaepenan      penu   piyata
+Morphemes                mari -tipa -uy      yaepe -nan      penu   piyata
+Morpheme Gloss(English)  thing -Q -PST1     there -only  1PL.F.EX  ask.for
+Morpheme Gloss(Spanish)   cosa -Q -PST1  ahí -solamente  1PL.F.EX    pedir
+English Sent Gloss: what happen, then we ask
+Spanish Sent Glossqué pasó, entonces preguntamos
+
+# sentence level graph:
+(s30p / piyata
+  :actor (s30p2 / person
+           :refer-person Excl.
+           :refer-number Plural)
+  :theme (s30e / event
+           :ARG0 (s30u / umr-unknown)
+           :mode interrogative
+           :QUOT s30p
+           :MODSTR FullAff)
+  :Aspect Performance
+  :temporal (s30y / yaepenan)
+  :MODSTR FullAff)
+
+# alignment:
+s30e :0-0
+s30p :0-0
+s30p2 :-1--1
+s30y :2-2
+# document level annotation:
+
+
+
+
+# :: snt31
+Words                               karuaratuanuy                       ipamarapa         peka
+Morphemes                     karuara -tu -nu -uy                   ipama -ra -pa       pe -ka
+Morpheme Gloss(English)  aquatic being -AUM -PL.F           stop -PUR -completely    port -LOC
+Morpheme Gloss(Spanish)   ser acuático -AUM -PL.F  detenerse -PROP -completamente  puerto -LOC
+English Sent Gloss: the big yacurunas stand in the port
+Spanish Sent Glosslos yacurunas grandotes están parados en el puerto
+
+# sentence level graph:
+(s31i2 / ipama
+  :actor (s31k / karuaratuanuy
+           :refer-number Plural
+           :mod (s31t / tu))
+  :place (s31p / peka)
+  :Aspect State
+  :degree Intensifier
+  :MODSTR FullAff)
+
+# alignment:
+s31i2 :2-2
+s31k :1-1
+s31p :3-3
+s31t :1-1
+# document level annotation:
+
+
+
+
+# :: snt32
+Words                      makatipa  karuara              warikakatuy  inipeka         utsu  penupura          upuka     None
+Morphemes                maka -tipa  karuara        warika -ka -t -uy      ini       pe -ka      utsu     penu -pura    upuka
+Morpheme Gloss(English)  where -INT  aquatic     being go.up -REI -EC   1PL.IN    port -LOC        go  1PL.F.EX -FOC   return
+Morpheme Gloss(Spanish)  donde -INT      ser  acuático subir -REI -CE   1PL.IN  puerto -LOC        ir  1PL.F.EX -FOC  volver?
+English Sent Gloss: where yacurunas went up to our port, lets go back
+Spanish Sent Glossdonde los yacurunas han subido a nuestro puerto, vamos a
+
+# sentence level graph:
+(s32a / and
+  :op1 (s32e / event
+         :actor (s32p / person)
+         :theme (s32w / warikakatuy
+                  :actor (s32k / karuara
+                           :refer-number Plural)
+                  :place (s32u / umr-unknown)
+                  :mode interrogative
+                  :Aspect Performance
+                  :MODSTR FullAff))
+  :op2 (s32e2 / event
+         :actor (s32p2 / person)
+         :theme (s32h / have-location-91
+                  :ARG0 s32k
+                  :ARG1 (s32p3 / peka
+                          :poss (s32p4 / person
+                                  :refer-person incl.
+                                  :refer-number Plural)
+                          :Place-of (s32u2 / utsu
+                                      :actor (s32p5 / person
+                                               :refer-person excl.
+                                               :refer-number Plural)
+                                      :direction (s32u3 / upuka)
+                                      :Aspect Habitual
+                                      :MODSTR FullAff))
+                  :Aspect State
+                  :MODSTR FullAff)))
+
+# alignment:
+s32a :0-0
+s32k :0-0
+s32p :0-0
+s32p2 :0-0
+s32p3 :4-4
+s32p4 :0-0
+s32u :0-0
+s32u2 :5-5
+s32w :3-3
+s32e :0-0
+s32e2 :0-0
+s32h :0-0
+s32p5 :0-0
+s32u3 :7-7
+# document level annotation:
+
+
+
+
+# :: snt33
+Words                        penu        upukauri
+Morphemes                    penu     upuka - uri
+Morpheme Gloss(English)  1PL.F.EX   return - come
+Morpheme Gloss(Spanish)  1PL.F.EX  volver - venir
+English Sent Gloss: we are going back
+Spanish Sent Glossnosotros estamos regresando
+
+# sentence level graph:
+(s33u / upukauri
+  :actor (s33p / person
+           :refer-person Excl.
+           :refer-number Plural)
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s33p :-1--1
+s33u :2-2
+# document level annotation:
+
+
+
+
+# :: snt34
+Words                        penu  umi      ipirawirapuranu    ipu         peka
+Morphemes                    penu  umi  ipirawira -pura -nu    ipu       pe -ka
+Morpheme Gloss(English)  1PL.F.EX   to     see dolphin -FOC  -PL.F    port -LOC
+Morpheme Gloss(Spanish)  1PL.F.EX  ver    delfín -FOC -PL.F  sonar  puerto -LOC
+English Sent Gloss: we see dolphins making noise in the port
+Spanish Sent Glossvemos bufeos sonando en el puerto
+
+# sentence level graph:
+(s34u / umi
+  :experiencer (s34p / person
+                 :refer-person Excl.
+                 :refer-number Plural)
+  :stimulus (s34i2 / ipu
+              :actor (s34i3 / ipirawirapuranu
+                       :refer-number Plural)
+              :place (s34p2 / peka)
+              :Aspect Activity
+              :Modpred s34u)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:
+s34i2 :4-4
+s34i3 :3-3
+s34p :-1--1
+s34p2 :5-5
+s34u :0-0
+# document level annotation:
+
+
+
+
+# :: snt35
+Words                    weee,  weee,    ipirawirapura   era     ipu         peka
+Morphemes                  ***    ***  ipirawira -pura   era     ipu       pe -ka
+Morpheme Gloss(English)    ***    ***     dolphin -FOC  well   sound    port -LOC
+Morpheme Gloss(Spanish)    ***    ***      delfín -FOC  bien  sonido  puerto -LOC
+English Sent Gloss: weee, weee, dolphin sound hard in the port
+Spanish Sent Glossweee, weee, el bufeo suena fuerte en el puerto
+
+# sentence level graph:
+(s35i2 / ipu
+  :actor (s35i3 / ipirawirapura
+           :refer-number Plural)
+  :theme (s35w / weee,-weee)
+  :place (s35p / peka)
+  :degree Intensifier
+  :Aspect Endeavor
+  :MODSTR FullAff)
+
+# alignment:
+s35i2 :5-5
+s35i3 :3-3
+# document level annotation:
+
+
+
+
+# :: snt36
+Words                         tsumi        piutsu
+Morphemes                   ts- umi      pe -utsu
+Morpheme Gloss(English)  1F.CL- see    port -FUT1
+Morpheme Gloss(Spanish)  1F.CL- ver  puerto -FUT1
+English Sent Gloss: I am going to see in the port
+Spanish Sent Glossme voy a ver en el puerto
+
+# sentence level graph:
+(s36u / umi
+  :experiencer (s36p / person
+                 :refer-person 1st
+                 :refer-number Singular)
+  :place (s36p2 / piutsu)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:
+s36p :-1--1
+s36p2 :2-2
+s36u :1-1
+# document level annotation:
+
+
+
+
+# :: snt37
+Words                       yaepe-ray       tsumi   karuaratu      pɨtachiru          None
+Morphemes                       yaepe         ray     ts- umi    karuara -tu  pɨta - chiru
+Morpheme Gloss(English)    then.there         PRT  1F.CL- see  aquatic being   foot - nest
+Morpheme Gloss(Spanish)  ahí.entonces  pues1F.CL-     ver ser  acuático -AUM    pie - nido
+English Sent Gloss: there I see yacuruna footprint
+Spanish Sent Glossahí veo la huella del yacuruna
+
+# sentence level graph:
+(s37u / umi
+  :experiencer (s37p / person
+                 :refer-person 1st
+                 :refer-number Singular)
+  :stimulus (s37p2 / pɨtachiru
+              :poss (s37k / karuaratu
+                      :mod (s37t / tu)
+                      :refer-number Singular)
+              :refer-number Singular)
+  :place (s37y2 / yaepe)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:
+s37k :3-3
+s37p :-1--1
+s37p2 :4-4
+s37t :4-4
+s37u :2-2
+s37y2 :1-1
+# document level annotation:
+
+
+
+
+# :: snt38
+Words                     entera     tapira     pɨtachiru
+Morphemes                 entera     tapira  pita - chiru
+Morpheme Gloss(English)  same.as     tapir?   foot - nest
+Morpheme Gloss(Spanish)  similar  sachavaca    pie - nido
+English Sent Gloss: same as sachavaca foot print
+Spanish Sent Glossidéntica a la huella de la sachavaca
+
+# sentence level graph:
+(s38t / thing
+  :ARG1-of (s38r / resemble-91
+             :ARG2 (s38p / pɨtachiru
+                     :mod (s38t2 / tapira)
+                     :refer-number Singular)))
+
+# alignment:
+s38p :3-3
+s38r :0-0
+s38t :0-0
+s38t2 :2-2
+# document level annotation:
+
+
+
+
+# :: snt39
+Words                          yatu     pɨtachiru         peka        chirinkuara
+Morphemes                    ya -tu  pɨta - chiru       pe -ka    chiri -n -kuara
+Morpheme Gloss(English)  3F.SF -AUM   foot - nest    port -LOC   be.mud -NZR -INE
+Morpheme Gloss(Spanish)  3F.FC -AUM    pie - nido  puerto -LOC  fangoso -NDR -INE
+English Sent Gloss: there is his footprint in the port in the mud
+Spanish Sent Glosssu huella está en el puerto dentro del lodo
+
+# sentence level graph:
+(s39h / have-location-91
+  :ARG0 (s39p / pɨtachiru
+          :poss (s39p2 / person
+                  :refer-person 3rd
+                  :refer-number Singular
+                  :mod (s39t / tu))
+          :refer-number Singular)
+  :ARG1 (s39c / chirinkuara
+          :part (s39p3 / peka))
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:
+s39c :4-4
+s39h :0-0
+s39p :2-2
+s39p2 :-1--1
+s39p3 :3-3
+s39t :1-1
+# document level annotation:
+
+
+
+
+# :: snt40
+Words                    karuara        pɨtachirutupa
+Morphemes                karuara   pɨta - chiru -tupa
+Morpheme Gloss(English)  aquatic    being foot - nest
+Morpheme Gloss(Spanish)      ser  acuático pie - nido
+English Sent Gloss: where (is) the footprint of the yacuruna
+Spanish Sent Glossdonde (esta) la huellasa del yacuruna
+
+# sentence level graph:
+(s40p / place
+  :ARG1-of (s40h / have-location-91
+             :ARG0 (s40p2 / pɨtachirutupa
+                     :poss (s40k / karuara
+                             :refer-number Singular)
+                     :refer-number Singular)))
+
+# alignment:
+s40p :0-0
+s40h :0-0
+s40p2 :2-2
+s40k :1-1
+Singular :-1--1
+# document level annotation:
+
+
+
+
+# :: snt41
+Words                       ajanka        yatu      ipama            yutiuy   mama,         na      yapura  kumitsa
+Morphemes                 ajan -ka      ya -tu      ipama          yuti -uy    mama         na    ya -pura  kumitsa
+Morpheme Gloss(English)  this -LOC  3F.SF -AUM       stop     to.stay -PAS1  mother  like.this  3F.SF -FOC    speak
+Morpheme Gloss(Spanish)  este -LOC  3F.FC -AUM  detenerse  permanecer -PAS1    mama        así  3F.FC -FOC   hABLar
+English Sent Gloss: here the big one was stand, mom,  she says
+Spanish Sent Glossaquí esote estuvo parado, mamá, dice
+
+# sentence level graph:
+(s41k / kumitsa
+  :actor (s41p / person
+           :refer-person 3rd
+           :refer-number Singular)
+  :theme (s41i2 / ipama
+           :actor (s41p2 / person
+                    :refer-person 3rd
+                    :refer-number Singular
+                    :mod (s41t / tu))
+           :place (s41a / ajanka)
+           :Aspect State
+           :QUOT s41k
+           :MODSTR FullAff)
+  :other-role (s41m / mama)
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s41a :1-1
+s41i2 :3-3
+s41k :0-0
+s41m :5-5
+s41p :-1--1
+s41p2 :-1--1
+s41t :2-2
+# document level annotation:
+
+
+
+
+# :: snt42
+Words                    amatsera        yatu       pɨtachirutu
+Morphemes                amatsera      ya -tu  pɨta - chiru -tu
+Morpheme Gloss(English)      here  3F.SF -AUM  foot - nest -AUM
+Morpheme Gloss(Spanish)      aquí  3F.FC -AUM   pie - nido -AUM
+English Sent Gloss: here is his footprint
+Spanish Sent Glossaquí está su pisadasa (huella)
+
+# sentence level graph:
+(s42e / event
+  :actor (s42p / person)
+  :recipient (s42p2 / person)
+  :theme (s42h / have-location-91
+           :ARG0 (s42p3 / pɨtachirutu
+                   :poss (s42p4 / person
+                           :refer-person 3rd
+                           :refer-number Singular
+                           :mod (s42t / tu))
+                   :mod (s42t2 / tu)
+                   :refer-number Singular)
+           :ARG1 (s42a / amatsera)
+           :Aspect State
+           :QUOT s42e
+           :MODSTR FullAff)
+  :MODSTR FullAff)
+
+# alignment:
+s42a :1-1
+s42h :0-0
+s42p :0-0
+s42p2 :0-0
+s42t :2-2
+s42t2 :3-3
+s42e :0-0
+s42p3 :3-3
+s42p4 :0-0
+# document level annotation:
+
+
+
+
+# :: snt43
+Words                           yuwariaranan      pɨtapuratu   entera  animaru     pɨtachiru
+Morphemes                   yuwaria -ra -nan  pɨta -pura -tu   entera  animaru  pɨta - chiru
+Morpheme Gloss(English)    horrible -? -only  foot -FOC -AUM  like.as   animal   foot - nest
+Morpheme Gloss(Spanish)  sucio -? -solamente   pie -FOC -AUM  similar   animal    pie - nido
+English Sent Gloss: this horrible big foot same as animal's footprint
+Spanish Sent Glossesta horrible pisadasa, igual que la huella de un animal
+
+# sentence level graph:
+(s43r / resemble-91
+  :ARG1 (s43p / pɨtapuratu
+          :mod (s43y / yuwariaranan)
+          :mod (s43t / tu)
+          :refer-number Singular)
+  :ARG2 (s43p2 / pɨtachiru
+          :mod (s43a / animaru))
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:
+s43a :4-4
+s43p :2-2
+s43p2 :5-5
+s43r :0-0
+s43t :2-2
+s43y :1-1
+# document level annotation:
+
+
+
+
+# :: snt44
+Words                    karuara          pɨtachirutu
+Morphemes                karuara     pɨta - chiru -tu
+Morpheme Gloss(English)  aquatic    being foot - nest
+Morpheme Gloss(Spanish)      ser  acuático pie - nido
+English Sent Gloss: yacuruna's footprint
+Spanish Sent Glosshuellasa de yacuruna
+
+# sentence level graph:
+(s44p / pɨtachirutu
+  :mod (s44t / tu)
+  :poss (s44k / karuara
+          :refer-number Singular)
+  :refer-number Singular)
+
+# alignment:
+s44p :2-2
+s44t :2-2
+s44k :1-1
+Singular :-1--1
+# document level annotation:
+
+
+
+
+# :: snt45
+Words                               ɨtsɨkakanpura,  senior
+Morphemes                      itsika -ka -n -pura  senior
+Morpheme Gloss(English)      scare -REI -NMZR -FOC    lord
+Morpheme Gloss(Spanish)  asustarse -REI -NMDR -FOC  senior
+English Sent Gloss: (I am) scared, my god
+Spanish Sent Gloss(estoy) asustada, ay seÒor!
+
+# sentence level graph:
+(s45h / have-mod-91
+  :ARG1 (s45t / thing)
+  :ARG2 (s45x / ɨtsɨkakanpura)
+  :other-role (s45s / senior
+                :mode expressive)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:
+s45h :-1--1
+s45s :2-2
+s45x :1-1
+# document level annotation:
+
+
+
+
+# :: snt46
+Words                     era    ipirawirapura       ipu         peka
+Morphemes                 era  ipirawira -pura       ipu       pe -ka
+Morpheme Gloss(English)  well     dolphin -FOC  to.sound    port -LOC
+Morpheme Gloss(Spanish)  bien      delfín -FOC     sonar  puerto -LOC
+English Sent Gloss: dolphin sounds hard in the port
+Spanish Sent Glossel bufeo suena fuerte en el puerto
+
+# sentence level graph:
+(s46i2 / ipu
+  :actor (s46i3 / ipirawirapura
+           :refer-number Plural)
+  :place (s46p / peka)
+  :degree Intensifier
+  :Aspect Endeavor
+  :MODSTR FullAff)
+
+# alignment:
+s46i2 :3-3
+s46i3 :2-2
+s46p :4-4
+# document level annotation:
+
+
+
+
+# :: snt47
+Words                         ay        tsamama    uri      penu     umitara
+Morphemes                     ay      tsa- mama    uri      penu   umi -tara
+Morpheme Gloss(English)  already  1F.SF- mother   come  1PL.F.EX   see -PUR1
+Morpheme Gloss(Spanish)       ya    1F.SF- mamá  venir  1PL.F.EX  ver -PROP1
+English Sent Gloss: then my mother come to see us
+Spanish Sent Glossentonces mi mama viene a vernos
+
+# sentence level graph:
+(s47u / uri
+  :actor (s47p / person
+           :ARG0-of (s47h / have-rel-role-91
+                      :ARG1 (s47p2 / person
+                              :refer-person 1st
+                              :refer-number Singular)
+                      :ARG2 (s47t / tsamama)))
+  :purpose (s47u2 / umi
+             :experiencer s47p
+             :stimulus (s47p3 / person
+                         :refer-person Excl.
+                         :refer-number Plural)
+             :Aspect State
+             :MODSTR FullAff)
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s47p :-1--1
+s47p2 :-1--1
+s47p3 :-1--1
+s47t :2-2
+s47u :3-3
+s47u2 :5-5
+# document level annotation:
+
+
+
+
+# :: snt48
+Words                             karuaratu   muna  maria  iyara,   maama
+Morphemes                       karuara -tu   muna  maria   iyara    mama
+Morpheme Gloss(English)  aquatic.being -AUM  steal  Maria  almost  mother
+Morpheme Gloss(Spanish)   ser.acuático -AUM  robar  María    casi    mama
+English Sent Gloss: yacuruna almost steal María, mother
+Spanish Sent Glossel yacuruna casi roba a María, mamá
+
+# sentence level graph:
+(s48e / event
+  :actor (s48p / person)
+  :theme (s48m / muna
+           :mod (s48i2 / iyara)
+           :actor (s48k / karuaratu
+                    :mod (s48t / tu)
+                    :refer-number Singular)
+           :theme (s48p3 / person
+                    :name (s48n / name
+                            :op1 "maria")
+                    :refer-number Singular)
+           :QUOT s48e
+           :MODSTR FullNeg)
+  :recipient (s48p2 / person)
+  :other-role (s48m2 / maama)
+  :MODSTR FullAff)
+
+# alignment:
+s48i2 :4-4
+s48k :1-1
+s48m :2-2
+s48m2 :5-5
+s48n :-1--1
+s48p :0-0
+s48t :1-1
+s48e :0-0
+s48p2 :0-0
+s48p3 :3-3
+# document level annotation:
+
+
+
+
+# :: snt49
+Words                           na           chikuata        tsamama
+Morphemes                       na       ts- ikua -ta      tsa- mama
+Morpheme Gloss(English)  like.this   1F.CL- know -CAU  1F.SF- mother
+Morpheme Gloss(Spanish)        así  1F.CL- saber -CAU    1F.SF- mamá
+English Sent Gloss:  I let my mother know
+Spanish Sent Glossasí le cuento a mi mamá
+
+# sentence level graph:
+(s49i2 / ikuata
+  :actor (s49p / person
+           :refer-person 1st
+           :refer-number Singular)
+  :theme (s49t / thing)
+  :recipient (s49p2 / person
+               :ARG0-of (s49h / have-rel-role-91
+                          :ARG1 s49p
+                          :ARG2 (s49t2 / tsamama)))
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s49i2 :2-2
+s49p :-1--1
+s49p2 :-1--1
+s49t :0-0
+s49t2 :3-3
+# document level annotation:
+
+
+
+
+# :: snt50
+Words                              tsamamumi  karuara       pɨtachiru
+Morphemes                    tsa- mama - umi  karuara    pɨta - chiru
+Morpheme Gloss(English)  1F.SF- mother - see  aquatic    being foot -
+Morpheme Gloss(Spanish)    1F.SF- mamá - ver      ser  acuático pie -
+English Sent Gloss: my mother see yacuruna's footprint
+Spanish Sent Glossmi mamá ve la huella del yacuruna
+
+# sentence level graph:
+(s50u / umi
+  :experiencer (s50p / person
+                 :ARG0-of (s50h / have-rel-role-91
+                            :ARG1 (s50p2 / person
+                                    :refer-person 1st
+                                    :refer-number Singular)
+                            :ARG2 (s50t / tsamamumi)))
+  :stimulus (s50p3 / pɨtachiru
+              :poss (s50k2 / karuara
+                      :refer-number Singular)
+              :refer-number Singular)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:
+s50k2 :2-2
+s50p :-1--1
+s50p2 :-1--1
+s50p3 :3-3
+s50t :1-1
+s50u :1-1
+# document level annotation:
+
+
+
+
+# :: snt51
+Words                        amatseranan         na       pɨtachirutua
+Morphemes                  amatsera -nan         na  pɨta - chiru -tua
+Morpheme Gloss(English)       here -only  like.this   foot - nest -AUM
+Morpheme Gloss(Spanish)  aquí -solamente        así    pie - nido -AUM
+English Sent Gloss: here is the footprint
+Spanish Sent Glossaquí está la huella
+
+# sentence level graph:
+(s51e / event
+  :actor (s51p / person)
+  :theme (s51h / have-location-91
+           :ARG0 (s51p2 / pɨtachirutua
+                   :mod (s51t / tua)
+                   :refer-number Singular)
+           :ARG1 (s51a / amatseranan)
+           :Aspect State
+           :MODSTR FullAff
+           :QUOT s51e)
+  :recipient (s51p3 / person)
+  :MODSTR FullAff)
+
+# alignment:
+s51a :1-1
+s51h :0-0
+s51p :0-0
+s51t :3-3
+s51e :0-0
+s51p2 :3-3
+s51p3 :0-0
+# document level annotation:
+
+
+
+
+# :: snt52
+Words                       ajanka        yatu           yutiuy,    mama
+Morphemes                 ajan -ka      ya -tu          yuti -uy    mama
+Morpheme Gloss(English)  this -LOC  3F.SF -AUM     to.stay -PAS1  mother
+Morpheme Gloss(Spanish)  este -LOC  3F.FC -AUM  permanecer -PAS1    mama
+English Sent Gloss: here this big one was, mamá
+Spanish Sent Glossaquí estuvo ese, mamá
+
+# sentence level graph:
+(s52e / event
+  :actor (s52p / person)
+  :theme (s52y / yutiuy
+           :actor (s52p2 / person
+                    :refer-person 3rd
+                    :refer-number Singular
+                    :mod (s52t / tu))
+           :place (s52a / ajanka)
+           :Aspect State
+           :QUOT s52e
+           :MODSTR FullAff)
+  :recipient (s52p3 / person)
+  :other-role (s52m / mama)
+  :MODSTR FullAff)
+
+# alignment:
+s52a :1-1
+s52m :4-4
+s52p :0-0
+s52t :2-2
+s52y :3-3
+s52e :0-0
+s52p2 :0-0
+s52p3 :0-0
+# document level annotation:
+
+
+
+
+# :: snt53
+Words                         ipamawa        yatu           yutiuy,    mama
+Morphemes                   ipama -wa      ya -tu          yuti -uy    mama
+Morpheme Gloss(English)    stand -GER  3F.SF -AUM     to.stay -PAS1  mother
+Morpheme Gloss(Spanish)  pararse -GER  3F.FC -AUM  permanecer -PAS1    mama
+English Sent Gloss: he was standing up, mom
+Spanish Sent Glossestuvo parado, mamá
+
+# sentence level graph:
+(s53e / event
+  :actor (s53p / person)
+  :theme (s53y / yutiuy
+           :actor (s53p2 / person
+                    :refer-person 3rd
+                    :refer-number Singular
+                    :mod (s53t / tu))
+           :manner (s53i2 / ipamawa)
+           :Aspect State
+           :QUOT s53e
+           :MODSTR FullAff)
+  :MODSTR FullAff
+  :recipient (s53p3 / person)
+  :other-role (s53m / mama))
+
+# alignment:
+s53i2 :1-1
+s53m :4-4
+s53p :0-0
+s53t :2-2
+s53e :0-0
+s53y :3-3
+s53p2 :0-0
+s53p3 :0-0
+# document level annotation:
+
+
+
+
+# :: snt54
+Words                        amiya        yatu     tsapukiuy
+Morphemes                    amiya      ya -tu   tsapuki -uy
+Morpheme Gloss(English)  like.this  3F.SF -AUM    call -PAS1
+Morpheme Gloss(Spanish)        así  3F.FC -AUM  llamar -PAS1
+English Sent Gloss: like this he called
+Spanish Sent Glossasí llamó
+
+# sentence level graph:
+(s54e / event
+  :actor (s54p / person)
+  :recipient (s54p2 / person)
+  :theme (s54t / tsapukiuy
+           :actor (s54p3 / person
+                    :refer-person 3rd
+                    :refer-number Singular
+                    :mod (s54t2 / tu))
+           :manner (s54a / amiya)
+           :Aspect Performance
+           :QUOT s54e
+           :MODSTR FullAff)
+  :MODSTR FullAff)
+
+# alignment:
+s54a :1-1
+s54p :0-0
+s54t :3-3
+s54e :0-0
+s54p2 :0-0
+s54p3 :0-0
+s54t2 :2-2
+# document level annotation:
+
+
+
+
+# :: snt55
+Words                           na      yapura  kumitsa
+Morphemes                       na    ya -pura  kumitsa
+Morpheme Gloss(English)  like.this  3F.SF -FOC    speak
+Morpheme Gloss(Spanish)        así  3F.FC -FOC   hABLar
+English Sent Gloss: that this she says
+Spanish Sent Glossasí ella dice
+
+# sentence level graph:
+(s55e / event
+  :actor (s55p / person)
+  :recipient (s55p2 / person)
+  :theme (s55k / kumitsa
+           :actor (s55p3 / person
+                    :refer-person 3rd
+                    :refer-number Singular)
+           :theme (s55e2 / event
+                    :QUOT s55k)
+           :Aspect Performance
+           :QUOT s55e
+           :MODSTR FullAff)
+  :MODSTR FullAff)
+
+# alignment:
+s55k :0-0
+s55p :0-0
+s55e :-1--1
+s55p2 :0-0
+s55p3 :0-0
+s55e2 :0-0
+# document level annotation:
+
+
+
+
+# :: snt56
+Words                             karuaratu   muna      penu        iyaruy
+Morphemes                       karuara -tu   muna      penu     iyara -uy
+Morpheme Gloss(English)  aquatic.being -AUM  steal  1PL.F.EX  almost -PAS1
+Morpheme Gloss(Spanish)   ser.acuático -AUM  robar  1PL.F.EX    casi -PAS1
+English Sent Gloss: yacurunas wanted to take us
+Spanish Sent Glosslos yacurunas quisieron robarnos
+
+# sentence level graph:
+(s56e / event
+  :actor (s56p / person)
+  :recipient (s56p2 / person)
+  :theme (s56e2 / event
+           :theme (s56m / muna
+                    :actor (s56k / karuaratu
+                             :refer-number Plural
+                             :mod (s56t / tu))
+                    :theme (s56p3 / person
+                             :refer-person excl.
+                             :refer-number Plural)
+                    :mod (s56i2 / iyaruy)
+                    :Aspect Performance
+                    :QUOT s56e2
+                    :MODSTR FullNeg)
+           :actor s56p3
+           :recipient s56p
+           :QUOT s56e
+           :MODSTR FullAff)
+  :MODSTR FullAff)
+
+# alignment:
+s56i2 :4-4
+s56k :1-1
+s56m :2-2
+s56p :0-0
+s56t :1-1
+s56e :0-0
+s56p2 :0-0
+s56e2 :0-0
+s56p3 :0-0
+# document level annotation:
+
+
+
+
+# :: snt57
+Words                     era    ipirawirapura  ipu-peka         None
+Morphemes                 era  ipirawira -pura       ipu       pe -ka
+Morpheme Gloss(English)  well     dolphin -FOC  to.sound    port -LOC
+Morpheme Gloss(Spanish)  bien      delfín -FOC     sonar  puerto -LOC
+English Sent Gloss: the dolphin sounds hard in the port
+Spanish Sent Glossel bufeo suena fuerte en el puerto
+
+# sentence level graph:
+(s57i2 / ipu
+  :actor (s57i3 / ipirawirapura
+           :refer-number Plural)
+  :place (s57p / peka)
+  :degree Intensifier
+  :Aspect Endeavor
+  :MODSTR FullAff)
+
+# alignment:
+s57i2 :3-3
+s57i3 :2-2
+s57p :3-3
+# document level annotation:
+
+
+
+
+# :: snt58
+Words                    ipirawira       ipu  weee,  weee
+Morphemes                ipirawira       ipu    ***   ***
+Morpheme Gloss(English)    dolphin  to.sound    ***   ***
+Morpheme Gloss(Spanish)     delfín     sonar    ***   ***
+English Sent Gloss: the dophin sounds weee, weee
+Spanish Sent Glossel bufeo suena weee, weee
+
+# sentence level graph:
+(s58i2 / ipu
+  :actor (s58i3 / ipirawira
+           :refer-number Plural)
+  :theme (s58w / weee,-weee)
+  :Aspect Endeavor
+  :MODSTR FullAff)
+
+# alignment:
+s58i2 :2-2
+s58i3 :1-1
+# document level annotation:
+
+
+
+
+# :: snt59
+Words                     era  ipirawira       ipu         peka
+Morphemes                 era  ipirawira       ipu       pe -ka
+Morpheme Gloss(English)  well    dolphin  to.sound    port -LOC
+Morpheme Gloss(Spanish)  bien     delfín     sonar  puerto -LOC
+English Sent Gloss: the dolphin sounds hard in the port
+Spanish Sent Glossel bufeo suena fuerte en el puerto
+
+# sentence level graph:
+(s59i2 / ipu
+  :actor (s59i3 / ipirawira
+           :refer-number Plural)
+  :place (s59p / peka)
+  :degree Intensifier
+  :Aspect Endeavor
+  :MODSTR FullAff)
+
+# alignment:
+s59i2 :3-3
+s59i3 :2-2
+s59p :4-4
+# document level annotation:
+
+
+
+
+# :: snt60
+Words                           kuntuanutaka    tseta            munanuy
+Morphemes                 kun -tua -nu -taka    tseta      muna - na -uy
+Morpheme Gloss(English)  DEF -AUM -PL.F -MOD  to.want  steal - 2SF -PST1
+Morpheme Gloss(Spanish)  DEF -AUM -PL.F -MOD   querer  robar - 2SF -PST1
+English Sent Gloss: maybe these big ones wanted to take you
+Spanish Sent Glossquizas esasos quiseron robarte
+
+# sentence level graph:
+(s60e / event
+  :actor (s60p / person)
+  :theme (s60t / tseta
+           :experiencer (s60p2 / person
+                          :refer-person 3rd
+                          :refer-number Plural
+                          :mod (s60t2 / tua))
+           :stimulus (s60m / munanuy
+                       :actor s60p2
+                       :theme (s60p3 / person
+                                :refer-person 2nd
+                                :refer-number Singular)
+                       :Aspect Performance
+                       :modpred s60t)
+           :QUOT s60e
+           :MODSTR FullAff)
+  :recipient s60p3)
+
+# alignment:
+s60m :3-3
+s60p :0-0
+s60p2 :0-0
+s60t :0-0
+s60e :0-0
+s60t2 :1-1
+s60p3 :0-0
+# document level annotation:
+
+
+
+

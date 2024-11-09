@@ -1,0 +1,461 @@
+# AMR (Abstract Meaning Representation) release v3.0
+# Le Petit Prince ("The Little Prince"), a 1943 novel by Antoine de Saint-Exupery (1562 sentences)
+# generated on Thu Jan 25, 2018 at 16:14:36
+
+# ::id lpp_1943.1 ::date 2012-06-07T17:06:07 ::annotator ISI-AMR-05 ::preferred
+# ::snt Chapter 1 .
+# ::save-date Thu Jun 7, 2012 ::file lpp_1943_1.txt
+(s1p / publication-91
+      :ARG1 (s1c / chapter
+            :ord (s1o / ordinal-entity :value 1))
+      :ARG3 (s1t / thing))
+
+# ::id lpp_1943.2 ::date 2012-06-07T17:06:20 ::annotator ISI-AMR-05 ::preferred
+# ::snt Once when I was six years old I saw a magnificent picture in a book , called True Stories from Nature , about the primeval forest .
+# ::save-date Mon May 13, 2013 ::file lpp_1943_2.txt
+(s2s / see-01 
+      :aspect state
+      :modal-strength full-affirmative
+      :ARG0 (s2p3 / person
+            :refer-person 1st
+            :refer-number singular)
+      :ARG1 (s2p / picture
+            :mod (s2m / magnificent)
+            :place (s2b2 / book
+                  :ARG1-of (s2c / call-01
+                        :aspect state
+                        :modal-strength full-affirmative
+                        :ARG2 (s2b / book :wiki -
+                              :name (s2n / name :op1 "True" :op2 "Stories" :op3 "from" :op4 "Nature")))
+                  :topic (s2f / forest
+                        :mod (s2p2 / primeval))))
+      :frequency 1
+      :temporal (s2h / have-age-91
+            :aspect state
+            :modal-strength full-affirmative
+            :ARG1 s2p3
+            :ARG2 (s2t / temporal-quantity :quant 6
+                  :unit (s2y / year))))
+
+# ::id lpp_1943.3 ::date 2012-06-07T17:06:23 ::annotator ISI-AMR-05 ::preferred
+# ::snt It was a picture of a boa constrictor in the act of swallowing an animal .
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_3.txt
+(s3i2 / identity-91
+      :aspect state
+      :modal-strength full-affirmative
+      :ARG1 (s3i / it)
+      :ARG2 (s3p / picture
+            :topic (s3b / boa
+                  :mod (s3c / constrictor)
+                  :ARG0-of (s3s / swallow-01
+                        :aspect activity
+                        :modal-strength full-affirmative
+                        :ARG1 (s3a / animal)))))
+
+# ::id lpp_1943.4 ::date 2012-06-07T17:06:28 ::annotator ISI-AMR-05 ::preferred
+# ::snt Here is a copy of the drawing .
+# ::save-date Thu Oct 29, 2015 ::file lpp_1943_4.txt
+(s4e / exist-91
+      :aspect state
+      :modal-strength full-affirmative
+      :ARG1 (s4 / here)
+      :ARG2 (s4t2 / thing
+            :ARG2-of (s4c / copy-01
+                  :ARG1 (s4t / thing
+                        :ARG1-of (s4d / draw-01)))))
+
+# ::id lpp_1943.5 ::date 2012-06-07T17:06:32 ::annotator ISI-AMR-05 ::preferred
+# ::snt In the book it said : " Boa constrictors swallow their prey whole , without chewing it .
+# ::save-date Fri Sep 6, 2013 ::file lpp_1943_5.txt
+(s5s2 / say-01
+      :aspect state
+      :modal-strength full-affirmative
+      :ARG0 (s5b2 / book)
+      :ARG1 (s5s / swallow-01
+            :aspect habitual
+            :modal-strength full-affirmative
+            :ARG0 (s5b / boa
+                  :mod (s5c / constrictor)
+                  :refer-number plural)
+            :ARG1 (s5a / animal
+                  :ARG1-of (s5h / have-rel-role-91
+                        :ARG2 s5b
+                        :ARG3 (s5p / prey)))
+            :manner (s5h2 / have-mod-91
+                  :aspect state
+                  :modal-strength full-affirmative
+                  :ARG1 s5a
+                  :ARG2 (s5w / whole))
+            :manner (s5c2 / chew-01
+                  :polarity -
+                  :aspect activity
+                  :modal-strength full-negative
+                  :ARG0 s5b
+                  :ARG1 s5a)
+            :quote s5s2))
+
+# ::id lpp_1943.6 ::date 2012-06-07T17:06:35 ::annotator ISI-AMR-05 ::preferred
+# ::snt After that they are not able to move , and they sleep through the six months that they need for digestion . "
+# ::save-date Fri Apr 19, 2013 ::file lpp_1943_6.txt
+(s6a / and
+      :op1 (s6m / move-01
+            :polarity -
+            :aspect habitual
+            :modal-strength neutral-negative
+            :ARG0 (s6a3 / animal
+                  :refer-person 3rd
+                  :refer-number plural)
+            :temporal (s6a2 / after
+                  :op1 (s6t3 / that)))
+      :op2 (s6s / sleep-01
+            :aspect habitual
+            :modal-strength full-affirmative
+            :ARG0 s6a3
+            :duration (s6t2 / temporal-quantity :quant 6
+                  :unit (s6m2 / month)
+                  :ARG1-of (s6n / need-01
+                        :aspect habitual
+                        :modal-strength full-affirmative
+                        :ARG0 s6a3
+                        :purpose (s6d / digest-01
+                              :aspect performance
+                              :modal-strength full-affirmative
+                              :ARG0 s6a3)))))
+
+# ::id lpp_1943.7 ::date 2012-06-07T17:06:38 ::annotator ISI-AMR-05 ::preferred
+# ::snt I pondered deeply , then , over the adventures of the jungle .
+# ::save-date Sun Jul 26, 2015 ::file lpp_1943_7.txt
+(s7p / ponder-01
+      :aspect activity
+      :modal-strength full-affirmative
+      :ARG0 (s7p2 / person
+            :refer-person 1st
+            :refer-number singular)
+      :ARG1 (s7a / adventure
+            :refer-number plural
+            :place (s7j / jungle))
+      :ARG1-of (s7d / deep-02)
+      :temporal (s7t / then))
+
+# ::id lpp_1943.8 ::date 2012-06-07T17:06:41 ::annotator ISI-AMR-05 ::preferred
+# ::snt And after some work with a colored pencil I succeeded in making my first drawing .
+# ::save-date Thu Oct 29, 2015 ::file lpp_1943_8.txt
+(s8a2 / and
+      :op2 (s8s / succeed-01
+            :aspect performance
+            :modal-strength full-affirmative
+            :ARG0 (s8p3 / person
+                  :refer-person 1st
+                  :refer-number singular)
+            :ARG1 (s8m / make-01
+                  :aspect performance
+                  :modal-strength full-affirmative
+                  :ARG0 s8p3
+                  :ARG1 (s8t / thing
+                        :ARG1-of (s8d / draw-01
+                              :ARG0 s8p3)
+                        :ord (s8o / ordinal-entity
+                              :value 1))
+                  :modal-predicate s8s)
+            :temporal (s8a / after
+                  :op1 (s8w / work-01
+                        :aspect activity
+                        :modal-strength full-affirmative
+                        :ARG0 s8p3
+                        :instrument (s8p / pencil
+                              :mod (s8c / color))
+                        :quant (s8s2 / some)))))
+
+# ::id lpp_1943.9 ::date 2012-06-07T17:06:44 ::annotator ISI-AMR-05 ::preferred
+# ::snt My Drawing Number One .
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_9.txt
+(s9w / work-of-art :wiki -
+      :name (s9n2 / name :op1 "Drawing" :op2 "Number" :op3 "One")
+      :possessor (s9p / person
+         :refer-person 1st
+         :refer-number singular))
+
+# ::id lpp_1943.10 ::date 2012-06-07T17:06:47 ::annotator ISI-AMR-05 ::preferred
+# ::snt It looked like this : I showed my masterpiece to the grown - ups , and asked them whether the drawing frightened them .
+# ::save-date Mon Sep 18, 2017 ::file lpp_1943_10.txt
+(s10a / and
+      :op1 (s10l / look-02
+            :aspect state
+            :modal-strength full-affirmative
+            :ARG0 (s10t3 / thing
+                  :refer-person 3rd
+                  :refer-number singular)
+            :ARG1 (s10t / this))
+      :op2 (s10s / show-01
+            :aspect performance
+            :modal-strength full-affirmative
+            :ARG0 (s10p / person
+                  :refer-person 1st
+                  :refer-number singular)
+            :ARG1 (s10m / masterpiece
+                    :possessor s10p)
+            :ARG2 (s10p2 / person
+                  :refer-number plural
+                  :age (s10g / grow-up-04)))
+      :op3 (s10a2 / ask-01
+            :aspect performance
+            :modal-strength full-affirmative
+            :ARG0 s10p
+            :ARG1 (s10t2 / truth-value
+                  :polarity-of (s10f / frighten-01
+                        :aspect performance
+                        :modal-strength affirmative
+                        :ARG0 (s10t4 / thing
+                              :ARG1-of (s10d / draw-01))
+                        :ARG1 s10p2)
+                  :quote s10a2)
+            :ARG2 s10p2))
+
+# ::id lpp_1943.11 ::date 2012-06-07T17:41:58 ::annotator ISI-AMR-05 ::preferred
+# ::snt But they answered : " Frighten ?
+# ::save-date Mon Sep 18, 2017 ::file lpp_1943_11.txt
+(s11c / contrast-01
+      :ARG2 (s11a / answer-01
+            :aspect performance
+            :modal-strength full-affirmative
+            :ARG0 (s11p / person
+                  :refer-person 3rd
+                  :refer-number plural)
+            :ARG2 (s11f / frighten-01
+                  :aspect performance
+                  :modal-strength full-affirmative
+                  :ARG1-of (s11r / request-confirmation-91)
+                  :quote s11a)))
+
+# ::id lpp_1943.12 ::date 2012-06-07T17:42:59 ::annotator ISI-AMR-05 ::preferred
+# ::snt Why should any one be frightened by a hat ? "
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_12.txt
+(s12s / say-01
+      :ARG0 (s12p2 / person)
+      :ARG1 (s12f / frighten-01
+            :ARG0 (s12h / hat)
+            :ARG1 (s12p / person
+                  :refer-person 3rd
+                  :refer-number singular
+                  :mod (s12a / any))
+            :reason (s12u / umr-unknown)
+            :quote s12s)
+      :ARG2 (s12p3 / person))
+
+# ::id lpp_1943.13 ::date 2012-06-07T17:45:40 ::annotator ISI-AMR-05 ::preferred
+# ::snt My drawing was not a picture of a hat .
+# ::save-date Thu Oct 29, 2015 ::file lpp_1943_13.txt
+(s13i / identity-91
+      :polarity -
+      :aspect state
+      :modal-strength full-negative
+      :ARG1 (s13t / thing
+            :ARG1-of (s13d / draw-01
+                  :ARG0 (s13p / person 
+                        :refer-person 1st
+                        :refer-number singular)))
+      :ARG2 (s13p2 / picture
+            :topic (s13h / hat)))
+
+# ::id lpp_1943.14 ::date 2012-06-07T17:46:19 ::annotator ISI-AMR-05 ::preferred
+# ::snt It was a picture of a boa constrictor digesting an elephant .
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_14.txt
+(s14i / identity-91
+      :aspect state
+      :modal-strength full-affirmative
+      :ARG1 (s14t / thing
+            :refer-person 3rd
+            :refer-number singular)
+      :ARG2 (s14p / picture
+            :topic (s14d / digest-01
+                  :aspect activity
+                  :modal-strength full-affirmative
+                  :ARG0 (s14b2 / boa
+                        :mod (s14c / constrictor))
+                  :ARG1 (s14e / elephant))))
+
+# ::id lpp_1943.15 ::date 2012-06-07T17:46:55 ::annotator ISI-AMR-05 ::preferred
+# ::snt But since the grown - ups were not able to understand it , I made another drawing : I drew the inside of the boa constrictor , so that the grown - ups could see it clearly .
+# ::save-date Tue Jan 23, 2018 ::file lpp_1943_15.txt
+(s15a / and
+      :op1 (s15d / draw-01
+            :aspect performance
+            :modal-strength full-affirmative
+            :ARG0 (s15p3 / person
+                  :refer-person 1st
+                  :refer-number singular)
+            :ARG1 (s15p2 / picture
+                  :mod (s15a2 / another))
+            :reason (s15u / understand-01
+                  :polarity -
+                  :aspect state
+                  :modal-strength neutral-negative
+                  :ARG0 (s15p / person
+                        :refer-number plural
+                        :age (s15g / grow-up-04))
+                  :ARG1 (s15t / thing
+                        :refer-person 3rd
+                        :refer-number singular)))
+      :op2 (s15d2 / draw-01
+            :aspect performance
+            :modal-strength full-affirmative
+            :ARG0 s15p3
+            :ARG1 (s15i / inside
+                  :part-of (s15b / boa
+                        :mod (s15c / constrictor)))
+            :purpose (s15s / see-01
+                  :aspect state
+                  :modal-strength neutral-affirmative
+                  :ARG0 s15p
+                  :ARG1 s15i
+                  :ARG1-of (s15c2 / clear-06))))
+
+# ::id lpp_1943.16 ::date 2012-06-08T13:12:10 ::annotator ISI-AMR-05 ::preferred
+# ::snt They always need to have things explained .
+# ::save-date Fri Apr 19, 2013 ::file lpp_1943_16.txt
+(s16n / need-01
+      :aspect habitual
+      :modal-strength full-affirmative
+      :ARG0 (s16p / person 
+            :refer-person 3rd
+            :refer-number plural)
+      :ARG1 (s16e / explain-01
+            :aspect performance
+            :modal-strength full-affirmative
+            :ARG1 (s16t / thing
+                  :refer-number plural)
+            :ARG2 s16p
+            :modal-predicate s16n)
+      :temporal (s16a / always))
+
+# ::id lpp_1943.17 ::date 2012-06-08T13:12:54 ::annotator ISI-AMR-05 ::preferred
+# ::snt My Drawing Number Two looked like this : The grown - ups ' response , this time , was to advise me to lay aside my drawings of boa constrictors , whether from the inside or the outside , and devote myself instead to geography , history , arithmetic and grammar .
+# ::save-date Thu Oct 29, 2015 ::file lpp_1943_17.txt
+(s17a6 / and
+      :op1 (s17l / look-02
+            :aspect state
+            :modal-strength full-affirmative
+            :ARG0 (s17w / work-of-art :wiki -
+                  :name (s17n / name :op1 "Drawing" :op2 "Number" :op3 "Two")
+                  :possessor (s17p / person 
+                        :refer-person 1st
+                        :refer-number singular))
+            :ARG1 (s17t2 / this))
+      :op2 (s17r / respond-01
+            :aspect performance
+            :modal-strength full-affirmative
+            :ARG0 (s17p2 / person 
+                  :refer-number plural
+                  :age (s17g / grow-up-04))
+            :ARG1 s17p
+            :ARG2 (s17a / advise-01
+                  :aspect performance
+                  :modal-strength full-affirmative
+                  :ARG0 s17p2
+                  :ARG1 s17p
+                  :ARG2 (s17a3 / and
+                        :op1 (s17l2 / lay-01
+                              :aspect performance
+                              :modal-strength full-affirmative
+                              :ARG0 s17p
+                              :ARG1 (s17t / thing
+                                    :refer-number plural
+                                    :ARG1-of (s17d2 / draw-01
+                                          :ARG0 s17p
+                                          :topic (s17b2 / boa
+                                                :mod (s17c2 / constrictor))
+                                          :source (s17o / or
+                                                :op1 (s17i2 / inside-01
+                                                      :ARG2 s17b2)
+                                                :op2 (s17o2 / out-06
+                                                      :ARG2 s17b2))))
+                              :ARG2 (s17a2 / aside))
+                        :op2 (s17d3 / devote-01
+                              :ARG0 s17p
+                              :ARG1 s17p
+                              :ARG2 (s17a4 / and
+                                    :op1 (s17g2 / geography)
+                                    :op2 (s17h / history)
+                                    :op3 (s17a5 / arithmetic)
+                                    :op4 (s17g3 / grammar))))
+                  :quote s17a)
+            :temporal (s17t4 / time
+                      :mod (s17t5 / this))))
+
+# ::id lpp_1943.18 ::date 2012-06-08T13:18:52 ::annotator ISI-AMR-05 ::preferred
+# ::snt That is why , at the age of six , I gave up what might have been a magnificent career as a painter .
+# ::save-date Tue Nov 4, 2014 ::file lpp_1943_18.txt
+(s18h / have-reason-91
+      :aspect state
+      :modal-strength full-affirmative
+      :ARG1 (s18g / give-up-07
+            :aspect performance
+            :modal-strength full-affirmative
+            :ARG0 (s18p3 / person 
+                  :refer-person 1st
+                  :refer-number singular)
+            :ARG1 (s18t3 / thing
+                  :ARG1-of (s18i / identity-91
+                        :aspect state
+                        :modal-strength neutral-affirmative
+                        :ARG2 (s18c / career
+                              :mod (s18m / magnificent)
+                              :ARG1-of (s18i2 / identity-91
+                                    :ARG2 (s18h3 / have-role-91
+                                          :ARG1 s19p3
+                                          :ARG2 (s18p / person
+                                                :ARG0-of (s18p2 / paint-02)))))))
+            :temporal (s18h2 / have-age-91
+                  :ARG1 s18p3
+                  :ARG2 (s18t / temporal-quantity :quant 6
+                        :unit (s18y / year))))
+      :ARG2 (s18t2 / that))
+
+# ::id lpp_1943.19 ::date 2012-06-09T11:31:56 ::annotator ISI-AMR-05 ::preferred
+# ::snt I had been disheartened by the failure of my Drawing Number One and my Drawing Number Two .
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_19.txt
+(s19d / dishearten-01
+      :aspect performance
+      :modal-strength full-affirmative
+      :ARG0 (s19f / fail-01
+            :aspect performance
+            :modal-strength full-affirmative
+            :ARG1 (s19a / and
+                  :op1 (s19w / work-of-art :wiki -
+                        :name (s19n / name :op1 "Drawing" :op2 "Number" :op3 "One"))
+                  :op2 (s19w2 / work-of-art :wiki -
+                        :name (s19n2 / name :op1 "Drawing" :op2 "Number" :op3 "Two"))
+                  :possessor (s19p / person
+                        :refer-person 1st
+                        :refer-number singular)))
+      :ARG1 s19p)
+
+# ::id lpp_1943.20 ::date 2012-07-17T12:15:00 ::annotator ISI-AMR-05 ::preferred
+# ::snt Grown - ups never understand anything by themselves , and it is tiresome for children to be always and forever explaining things to them .
+# ::save-date Fri Jan 19, 2018 ::file lpp_1943_20.txt
+(s20a / and
+      :op1 (s20u / understand-01
+            :polarity -
+            :aspect habitual
+            :modal-strength full-negative
+            :ARG0 (s20p / person
+                  :refer-number plural
+                  :age (s20g / grow-up-04))
+            :ARG1 (s20a3 / anything)
+            :temporal (s20e2 / ever)
+            :mod (s20b / by-oneself))
+      :op2 (s20t / tire-03
+            :aspect state
+            :modal-strength full-affirmative
+            :ARG0 (s20e / explain-01
+                  :aspect habitual
+                  :modal-strength full-affirmative
+                  :ARG0 (s20p2 / person
+                        :age (s20c / child)
+                        :refer-number plural)
+                  :ARG1 (s20t2 / thing
+                        :refer-number plural)
+                  :ARG2 s20p
+                  :temporal (s20a4 / always)
+                  :duration (s20f / forever))
+            :ARG1 s20c))

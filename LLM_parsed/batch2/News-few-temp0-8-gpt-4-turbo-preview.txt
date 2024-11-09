@@ -1,0 +1,497 @@
+# :: snt1   天主教 教宗 方济各 批准 神父 可以 祝福 同性 伴侣 结合 ， 认为 获得 上帝 恩典 及 慈爱 时 ， 不 应 受到 道德 考究 。
+# sentence level graph
+(s1a / 批准-01
+  :ARG0 (s1p / person
+          :name (s1n / name
+                  :op1 "方济各")
+          :title (s1t / title
+                   :op1 "天主教"
+                   :op2 "教宗"))
+  :ARG1 (s1b / 祝福-01
+          :ARG0 (s1p2 / 神父)
+          :ARG1 (s1c / 结合-01
+                  :ARG1 (s1p3 / 伴侣
+                          :mod (s1s / 同性)))
+          :aspect Performance
+          :modstr FullAff)
+  :aspect Performance
+  :modstr FullAff)
+(s1c2 / 认为-01
+  :ARG0 s1p
+  :ARG1 (s1g / 获得-01
+          :ARG1 (s1a2 / and
+                  :op1 (s1g2 / 恩典
+                        :possessor (s1g3 / 上帝))
+                  :op2 (s1l / 慈爱
+                        :possessor s1g3))
+          :time (s1t2 / 时)
+          :condition (s1n2 / 不
+                       :domain (s1s2 / 应-01
+                                 :ARG1 (s1e / 考究-01
+                                         :ARG1 (s1m / 道德)
+                                         :aspect Performance
+                                         :modstr FullAff)
+                                 :aspect Performance
+                                 :modstr FullNeg)))
+  :aspect Performance
+  :modstr FullAff)
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt2   不过 方济各 重申 ， 婚姻 只能 是 一 男 一 女 之间 ， 而 祝福 仪式 不 应 与 民事 结合 同时 进行 ， 亦 不可 出现 婚礼 的 服饰 及 手势 。
+# sentence level graph
+(s2b / but-91
+  :ARG1 (s2x / 重申-01
+          :ARG0 (s2p / person
+                  :name (s2n / name
+                          :op1 "方济各"))
+          :ARG1 (s2x2 / 是-01
+                  :ARG1 (s2m / 婚姻)
+                  :ARG2 (s2r / relation-91
+                          :ARG1 (s2p2 / person
+                                  :gender male
+                                  :quant 1)
+                          :ARG2 (s2p3 / person
+                                  :gender female
+                                  :quant 1)
+                          :modstr FullAff)
+                  :modstr FullAff)
+          :aspect habitual
+          :modstr FullAff)
+  :ARG2 (s2a / and-91
+          :op1 (s2x3 / 进行-01
+                 :ARG1 (s2x4 / 仪式
+                         :mod (s2x5 / 祝福))
+                 :time (s2x6 / 同时
+                         :ARG1-of (s2x7 / 结合-01
+                                    :ARG0 (s2x4)
+                                    :ARG1 (s2x8 / 结合-01
+                                            :ARG0 (s2x9 / 民事)))
+                         :aspect state
+                         :modstr FullAff)
+                 :polarity -
+                 :aspect habitual
+                 :modstr FullAff)
+          :op2 (s2x10 / 出现-01
+                 :ARG1 (s2a2 / and
+                         :op1 (s2x11 / 服饰
+                                :mod (s2x12 / 婚礼))
+                         :op2 (s2x13 / 手势
+                                :mod s2x12))
+                 :polarity -
+                 :aspect habitual
+                 :modstr FullAff)))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt3   教宗 方济各 宣布 ， 神父 将 被 允许 在 某些 情况 下 为 同性 伴侣 祝福 ， 这 对 罗马 天主教会 中 的 同性恋 社区 具有 重要 意义 。
+# sentence level graph
+(s3x / 宣布-01
+  :ARG0 (s3x2 / 教宗
+          :name (s3n / name
+                  :op1 "方济各"))
+  :ARG1 (s3x3 / 允许-01
+          :ARG1 (s3x4 / 祝福-01
+                  :ARG0 (s3x5 / 神父)
+                  :ARG1 (s3x6 / 伴侣
+                          :mod (s3x7 / 同性))
+                  :condition (s3x8 / 情况
+                               :mod (s3x9 / 某些))
+                  :aspect Performance
+                  :modstr FullAff)
+          :aspect Habitual
+          :modstr FullAff)
+  :ARG2 (s3x10 / 有-01
+          :ARG1 (s3x11 / 意义
+                  :mod (s3x12 / 重要))
+          :ARG2 (s3x13 / 社区
+                  :mod (s3x14 / 同性恋)
+                  :part (s3x15 / 教会
+                          :mod (s3x16 / 天主教会
+                                :mod (s3x17 / 罗马))))
+          :aspect State
+          :modstr FullAff)
+  :aspect Performance
+  :modstr FullAff)
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt4    梵蒂冈 表示 ， 神父 可以 被 允许 在 某些 情况 下 ， 为 同性 伴侣 和 “ 非 传统 ” 伴侣 祝福 ， 但 这 不 应 成为 正式 教堂 仪式 的 一部分 ， 也 不 应 与 民事 结合 或 婚礼 联系 起来 。
+
+# sentence level graph
+(s4x / 表示-01
+  :ARG0 (s4x2 / 梵蒂冈)
+  :ARG1 (s4a / and
+          :op1 (s4x3 / 允许-01
+                 :ARG1 (s4x4 / 祝福-01
+                         :ARG0 (s4x5 / 神父)
+                         :ARG1 (s4a2 / and
+                                  :op1 (s4x6 / 伴侣
+                                         :mod (s4x7 / 同性))
+                                  :op2 (s4x8 / 伴侣
+                                         :mod (s4x9 / 非
+                                                :mod (s4x10 / 传统))))
+                         :condition (s4x11 / 情况
+                                      :mod (s4x12 / 某些))
+                         :aspect habitual
+                         :modstr FullAff)
+                 :aspect habitual
+                 :modstr FullAff)
+          :op2 (s4b / but-91
+                 :ARG1 (s4x13 / 成为-01
+                         :ARG1 (s4x14 / 部分
+                                 :quant 1
+                                 :mod (s4x15 / 教堂
+                                        :mod (s4x16 / 正式)
+                                        :ARG1-of (s4x17 / 仪式-01)))
+                         :aspect habitual
+                         :modstr FullNeg)
+                 :ARG2 (s4c / contact-01
+                         :ARG1 (s4a3 / or
+                                  :op1 (s4x18 / 结合-01
+                                         :ARG1 (s4x19 / 民事)
+                                         :aspect habitual
+                                         :modstr FullAff)
+                                  :op2 (s4x20 / 婚礼))
+                         :aspect habitual
+                         :modstr FullNeg))))
+
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt5   教宗 方济各 于 12 月 18 日 批准 了 梵蒂冈 发布 的 一份 文件 ， 宣布 了 这 一 变化 ， “ 人们 不 应该 阻止 或 禁止 教会 接触 在 各种 情况 下 可能 通过 简单 的 祝福 寻求 上帝 帮助 的 人 。 ”
+# sentence level graph
+(s5x / 批准-01
+  :ARG0 (s5x2 / person
+          :name (s5n / name
+                  :op1 "教宗"
+                  :op2 "方济各"))
+  :ARG1 (s5x3 / 文件
+          :quant 1
+          :unit (s5x4 / 份)
+          :ARG1-of (s5x5 / 发布-01
+                     :ARG0 (s5x6 / organization
+                             :name (s5n2 / name
+                                     :op1 "梵蒂冈"))))
+  :temporal (s5d / date-entity
+              :month 12
+              :day 18)
+  :ARG2 (s5x7 / 宣布-01
+          :ARG1 (s5x8 / 变化
+                  :mod (s5x9 / 这
+                         :quant 1))
+          :content (s5x10 / 应该-01
+                     :polarity -
+                     :ARG1 (s5x11 / 阻止-01
+                             :ARG0 (s5x12 / 人
+                                     :quant (s5x13 / 多))
+                             :ARG1 (s5x14 / 接触-01
+                                     :ARG0 (s5x15 / 教会)
+                                     :ARG1 (s5x16 / 人
+                                             :ARG1-of (s5x17 / 寻求-01
+                                                        :ARG1 (s5x18 / 帮助-01
+                                                                :ARG0 (s5x19 / 上帝))
+                                                        :manner (s5x20 / 祝福
+                                                                  :mod (s5x21 / 简单)))
+                                             :mod (s5x22 / 各种
+                                                   :mod (s5x23 / 情况))
+                                             :mod (s5x24 / 可能))
+                                     :mod (s5x25 / 或)
+                                     :mod (s5x26 / 禁止)))))
+  :aspect performance)
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt6    梵蒂冈 表示 ， 这 应该 成为 上帝 欢迎 所有 人 及 天主 接纳 所有 人 的 标志 ， 但 该 文件 指出 ， 神父 必须 在 逐案 的 基础 上 做出 决定 。
+# sentence level graph
+(s6b / but-91
+  :ARG1 (s6x / 表示-01
+          :ARG0 (s6x2 / 梵蒂冈)
+          :ARG1 (s6x3 / 成为-01
+                  :ARG1 (s6x4 / 标志
+                          :mod (s6a / and
+                                 :op1 (s6x5 / 欢迎-01
+                                       :ARG0 (s6x6 / 上帝)
+                                       :ARG1 (s6x7 / 人
+                                               :quant (s6x8 / 所有)))
+                                 :op2 (s6x9 / 接纳-01
+                                       :ARG0 (s6x10 / 天主)
+                                       :ARG1 s6x7)))
+                  :aspect state
+                  :modstr FullAff)
+          :aspect state
+          :modstr FullAff)
+  :ARG2 (s6x11 / 指出-01
+          :ARG0 (s6x12 / 文件
+                  :mod (s6x13 / 该))
+          :ARG1 (s6x14 / 决定-01
+                  :ARG0 (s6x15 / 神父)
+                  :ARG1-of (s6x16 / 必须-01)
+                  :location (s6x17 / 基础
+                              :mod (s6x18 / 逐案))
+                  :aspect performance
+                  :modstr FullAff)
+          :aspect state
+          :modstr FullAff)
+  :aspect state
+  :modstr FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt7   梵蒂冈 表示 ， 仍然 视 婚姻 为 一 男 一 女 之间 。
+# sentence level graph
+(s7x / 表示-01
+  :ARG0 (s7x2 / 梵蒂冈)
+  :ARG1 (s7x3 / 视-01
+          :ARG1 (s7x4 / 婚姻)
+          :ARG2 (s7x5 / 之间
+                  :part (s7x6 / 人
+                          :quant 1
+                          :gender male)
+                  :part (s7x7 / 人
+                          :quant 1
+                          :gender female))
+          :mod (s7x8 / 仍然)
+          :aspect state
+          :modstr FullAff)
+  :aspect state
+  :modstr FullAff)
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt8   教义 部 部长 、 总 主教 费尔南德斯 （ Víctor Manuel Fernández ） 表示 ， 新 声明 在 教会 对 婚姻 的 传统 教义 方面 仍然 坚定 。
+# sentence level graph
+(s8x / 表示-01
+  :ARG0 (s8p / person
+          :name (s8n / name
+                  :op1 "费尔南德斯"
+                  :op2 "（"
+                  :op3 "Víctor"
+                  :op4 "Manuel"
+                  :op5 "Fernández"
+                  :op6 "）")
+          :ARG1-of (s8h / have-org-role-91
+                     :ARG2 (s8o / organization
+                             :mod (s8o2 / 教义))
+                     :ARG3 (s8r / 部长))
+          :ARG1-of (s8h2 / have-org-role-91
+                     :ARG2 (s8o3 / organization
+                             :mod (s8o4 / 总))
+                     :ARG3 (s8r2 / 主教)))
+  :ARG1 (s8a / 坚定-01
+          :ARG1 (s8d / 声明
+                  :mod (s8d2 / 新))
+          :location (s8o5 / organization
+                      :mod (s8o6 / 教会))
+          :topic (s8y / 教义
+                   :mod (s8y2 / 传统)
+                   :ARG1-of (s8r3 / regard-01
+                              :ARG2 (s8m / 婚姻)))
+          :modstr FullAff
+          :aspect state))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt9   根据 这份 声明 ， 那些 接受 祝福 的 人 不 应该 被 要求 事先 达到 道德 上 的 完美 及 彻底 道德 分析 。
+# sentence level graph
+(s9x / 要求-01
+  :ARG0 (s9x2 / 声明
+          :mod (s9x3 / 这份))
+  :ARG1 (s9x4 / 人
+          :ARG1-of (s9x5 / 接受-01
+                     :ARG2 (s9x6 / 祝福)
+                     :aspect Performance
+                     :modstr FullAff)
+          :mod (s9x7 / 那些))
+  :ARG2 (s9a / and
+          :op1 (s9x8 / 达到-01
+                 :ARG1 (s9x9 / 完美
+                         :mod (s9x10 / 道德))
+                 :aspect Performance
+                 :modstr FullAff)
+          :op2 (s9x11 / 分析-01
+                 :ARG1 (s9x12 / 道德)
+                 :mod (s9x13 / 彻底)
+                 :aspect Performance
+                 :modstr FullAff))
+  :mod (s9x14 / 事先)
+  :polarity -
+  :aspect Performance
+  :modstr NeutNeg)
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt10   梵蒂冈 在 2021 年 表示 ， 神父 不能 祝福 同性 婚姻 ， 因为 上帝 不能 “ 祝福 罪恶 ” 。
+# sentence level graph
+(s10x / 表示-01
+  :ARG0 (s10x2 / 梵蒂冈)
+  :temporal (s10d / date-entity
+              :year 2021)
+  :ARG1 (s10x3 / 祝福-01
+          :ARG0 (s10x4 / 神父)
+          :ARG1 (s10x5 / 婚姻
+                  :mod (s10x6 / 同性))
+          :polarity -
+          :modstr NeutNeg
+          :aspect Performance
+          :cause (s10x7 / 祝福-01
+                   :ARG0 (s10x8 / 上帝)
+                   :ARG1 (s10x9 / 罪恶)
+                   :polarity -
+                   :modstr NeutNeg
+                   :aspect Performance
+                   :quote (s10q / quote
+                            :content "祝福罪恶"))))
+
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt11   在 天主教堂 ， 祝福 是 一种 祈祷 或 祈求 的 礼拜 仪式 ， 通常 由 神父 执行 ， 请求 上帝 对 被 祝福 的 人 或 人民 表示 仁慈 。 虽然 天主教堂 没有 改变 其 基本 立场 ， 但 这 表明 天主教堂 在 这个 问题 上 的 立场 有 了 一定 的 缓和 。
+# sentence level graph
+(s11a / and
+  :op1 (s11x / 是-01
+          :ARG1 (s11x2 / 祝福
+                  :location (s11l / 教堂
+                              :mod (s11l2 / 天主)))
+          :ARG2 (s11x3 / 仪式
+                  :mod (s11x4 / 礼拜)
+                  :mod (s11x5 / 或
+                         :op1 (s11x6 / 祈祷)
+                         :op2 (s11x7 / 祈求))
+                  :ARG1-of (s11x8 / 执行-01
+                             :ARG0 (s11x9 / 神父)
+                             :mod (s11x10 / 通常))
+                  :ARG1-of (s11x11 / 请求-01
+                             :ARG0 s11x9
+                             :ARG1 (s11x12 / 仁慈
+                                     :ARG1-of (s11x13 / 表示-01
+                                                :ARG0 (s11x14 / 上帝))
+                                     :ARG2 (s11a2 / or
+                                             :op1 (s11p / person
+                                                   :ARG1-of (s11x15 / 祝福-01))
+                                             :op2 (s11p2 / 人民))))
+                  :quant 一种)
+          :aspect state
+          :modstr FullAff)
+  :op2 (s11c / change-01
+          :ARG0 (s11l3 / 教堂
+                  :mod (s11l4 / 天主))
+          :ARG1 (s11s / 立场
+                  :mod (s11s2 / 基本)
+                  :poss s11l3)
+          :polarity -
+          :aspect habitual
+          :modstr FullNeg
+          :cause (s11i / indicate-01
+                    :ARG1 (s11s3 / 立场
+                            :mod (s11s4 / 缓和
+                                   :quant 一定)
+                            :poss s11l3
+                            :topic (s11q / 问题
+                                     :mod (s11d / 这个)))
+                    :ARG0 s11l3
+                    :aspect state
+                    :modstr FullAff)))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt12   方济各 于 2013 年 当选 教宗 ， 他 一直 试图 通过 改变 某些 道德 教义 来 吸引 性 少数 群体 进入 教会 。
+# sentence level graph
+(s12a / and
+  :op1 (s12x / 当选-01
+          :ARG0 (s12p / person
+                  :name (s12n / name
+                          :op1 "方济各"))
+          :ARG1 (s12p2 / pope)
+          :time (s12d / date-entity
+                  :year 2013)
+          :aspect performance
+          :modstr FullAff)
+  :op2 (s12x2 / 试图-01
+          :ARG0 s12p
+          :ARG1 (s12x3 / 吸引-01
+                  :ARG0 s12p
+                  :ARG1 (s12g / group
+                          :mod (s12s / 性
+                                :mod (s12s2 / 少数))
+                          :ARG1-of (s12e / 进入-01
+                                     :ARG1 (s12c / church)
+                                     :aspect performance
+                                     :modstr FullAff))
+                  :manner (s12c2 / 改变-01
+                            :ARG1 (s12d2 / 教义
+                                    :mod (s12m / 道德)
+                                    :mod (s12q / 某些))
+                            :aspect habitual
+                            :modstr FullAff)
+                  :aspect habitual
+                  :modstr FullAff)
+          :temporal (s12t / 一直)
+          :aspect habitual
+          :modstr FullAff))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt13   例如 ， 教会 教导 同性恋 者 与 同性 吸引 “ 不 是 罪 ” ， 但 同性 性行为 却 是 。
+# sentence level graph
+(s13c / contrast-91
+  :ARG1 (s13x / 教导-01
+          :ARG0 (s13x2 / 教会)
+          :ARG1 (s13a / and
+                  :op1 (s13x3 / 同性恋者)
+                  :op2 (s13x4 / 吸引-01
+                         :ARG1 s13x3
+                         :ARG2 (s13x5 / 同性)))
+          :ARG2 (s13x6 / 罪
+                  :modstr NeutNeg
+                  :aspect State)
+          :mod (s13x7 / 例如)
+          :modstr FullNeg)
+  :ARG2 (s13x8 / 是-01
+          :ARG1 (s13x9 / 行为
+                  :mod (s13x10 / 同性性))
+          :modstr FullAff
+          :aspect State))
+
+# alignment:
+
+# document level annotation:
+
+

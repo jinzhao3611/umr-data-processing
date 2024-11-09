@@ -1,0 +1,850 @@
+# :: snt1   阿里巴巴 创始人 马云 已经 在 海外 客居 一年 多 ， 最近 已 返回 中国 ， 访问 杭州 一所 私立 学校 ， 讨论 AI 聊天 机器人 “ ChatGPT ” 在 教育 行业 的 影响 。 中国 政府 最近 表示 将 支持 民营 企业 ， 据报 马云 曾 婉拒 回国 邀请 。
+# sentence level graph
+(s1a / and
+  :op1 (s1v / 访问-01
+          :ARG0 (s1p / person
+                  :name (s1n / name
+                          :op1 "马云")
+                  :ARG0-of (s1f / 创立-01
+                             :ARG1 (s1c / company
+                                     :name (s1n2 / name
+                                             :op1 "阿里巴巴")))
+                  :location (s1l / live-01
+                              :location (s1l2 / abroad)
+                              :duration (s1d / duration
+                                          :quant "一年多")
+                              :aspect habitual
+                              :modstr FullAff)
+                  :return (s1r / return-01
+                            :destination (s1c2 / country
+                                           :name (s1n3 / name
+                                                   :op1 "中国"))
+                            :temporal (s1t / recent)
+                            :aspect performance
+                            :modstr FullAff))
+          :ARG1 (s1s / school
+                  :mod (s1p2 / private)
+                  :location (s1c3 / city
+                              :name (s1n4 / name
+                                      :op1 "杭州"))
+                  :quant 1)
+          :topic (s1d2 / discuss-01
+                  :ARG0 s1p
+                  :ARG1 (s1i / influence-01
+                          :ARG1 (s1r2 / robot
+                                  :mod (s1c4 / chat)
+                                  :mod (s1a2 / AI)
+                                  :name (s1n5 / name
+                                          :op1 "ChatGPT"))
+                          :ARG2 (s1i2 / industry
+                                  :mod (s1e / education))))
+          :temporal (s1t2 / recent))
+  :op2 (s1s2 / say-01
+          :ARG0 (s1g / government
+                  :location (s1c5 / country
+                              :name (s1n6 / name
+                                      :op1 "中国")))
+          :ARG1 (s1s3 / support-01
+                  :ARG0 s1g
+                  :ARG1 (s1e2 / enterprise
+                          :mod (s1p3 / private))
+                  :temporal (s1t3 / recent))
+          :temporal (s1t4 / recent))
+  :op3 (s1r3 / report-01
+          :ARG1 (s1r4 / refuse-01
+                  :ARG0 s1p
+                  :ARG1 (s1i3 / invite-01
+                          :ARG0 (s1c6 / country
+                                  :name (s1n7 / name
+                                          :op1 "中国")))
+                  :mod (s1m / manner
+                        :mod (s1t5 / tactful))
+                  :temporal (s1t6 / once)
+                  :aspect habitual
+                  :modstr FullAff)))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt2   马云 被 认为 离开 中国 已经 一年 多 ， 在 日本 和 欧洲 的 各个 地方 访问 。 这 是 第一 次 确认 到 马云 已经 返回 中国 。
+# sentence level graph
+(s2a / and
+  :op1 (s2v / 访问-01
+          :ARG0 (s2p / person
+                  :name (s2n / name
+                          :op1 "马云"))
+          :location (s2a2 / and
+                      :op1 (s2c / country
+                            :name (s2n2 / name
+                                    :op1 "日本"))
+                      :op2 (s2c2 / country
+                            :name (s2n3 / name
+                                    :op1 "欧洲")))
+          :time (s2t / time-entity
+                  :quant (s2q / more-than
+                           :op1 (s2y / year
+                                 :quant 1))
+                  :mod (s2m / 已经))
+          :aspect habitual
+          :modstr FullAff)
+  :op2 (s2c3 / confirm-01
+          :ARG1 (s2r / return-01
+                  :ARG0 s2p
+                  :destination (s2c4 / country
+                                 :name (s2n4 / name
+                                         :op1 "中国"))
+                  :mod (s2m2 / 已经)
+                  :aspect performance
+                  :modstr FullAff)
+          :time (s2t2 / time-entity
+                  :quant (s2o / ordinal-entity
+                           :value 1)
+                  :unit (s2t3 / time
+                          :quant 1))
+          :aspect performance
+          :modstr FullAff))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt3   但 不 清楚 其 是否 会 在 访问 结束 后 再次 离开 中国 。
+# sentence level graph
+(s3c / 清楚-01
+  :polarity -
+  :modstr NeutNeg
+  :aspect state
+  :ARG1 (s3x / 离开-01
+          :ARG0 (s3p / pronoun
+                  :ref-person 3rd)
+          :ARG1 (s3c2 / country
+                  :name (s3n / name
+                          :op1 "中国"))
+          :temporal (s3a / after-91
+                      :op1 (s3x2 / 结束-01
+                            :ARG1 (s3x3 / 访问
+                                    :ARG0 s3p)
+                            :aspect performance
+                            :modstr FullAff))
+          :frequency (s3x4 / 再次)
+          :modal (s3m / 可能
+                   :scope (s3x5 / 是否))
+          :aspect habitual
+          :modstr FullAff))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt4   中国 政府 最近 表示 将 支持 民营 企业 ， 据 报 马云 曾 婉拒 回国 邀请 。
+# sentence level graph
+(s4a / and-91
+  :op1 (s4x / 表示-01
+         :ARG0 (s4x2 / 政府
+                 :mod (s4x3 / 国
+                        :name (s4n / name
+                                :op1 "中国")))
+         :ARG1 (s4x4 / 支持-01
+                 :ARG1 (s4x5 / 企业
+                         :mod (s4x6 / 民营))
+                 :aspect habitual
+                 :modstr FullAff)
+         :temporal (s4x7 / 最近)
+         :aspect habitual
+         :modstr FullAff)
+  :op2 (s4x8 / 婉拒-01
+         :ARG0 (s4p / person
+                 :name (s4n2 / name
+                         :op1 "马云"))
+         :ARG1 (s4x9 / 邀请
+                 :ARG1 (s4x10 / 回国)
+                 :aspect performance
+                 :modstr FullAff)
+         :temporal (s4x11 / 曾)
+         :aspect performance
+         :modstr FullAff)
+  :according-to (s4x12 / 报道-01))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt5   这 被 视为 政府 安抚 投资者 的 举动 ， 但 马云 回国 是否 能 恢复 企业家 们 对 中国 经济 的 信心 还 需 观察 。
+# sentence level graph
+(s5b / but-91
+  :ARG1 (s5x / 视为-01
+          :ARG1 (s5x2 / 举动
+                  :ARG0-of (s5x3 / 安抚-01
+                            :ARG0 (s5x4 / 政府)
+                            :ARG1 (s5x5 / 投资者))
+                  :mod (s5d / 这))
+          :aspect state
+          :modstr FullAff)
+  :ARG2 (s5x6 / 观察-01
+          :ARG1 (s5x7 / 能-01
+                  :ARG1 (s5x8 / 恢复-01
+                          :ARG0 (s5x9 / 企业家
+                                  :mod (s5x10 / 们))
+                          :ARG1 (s5x11 / 信心
+                                  :ARG1-of (s5x12 / 对-01
+                                             :ARG2 (s5x13 / 经济
+                                                     :mod (s5x14 / 中国))))
+                          :mod (s5x15 / 是否)
+                          :mod (s5x16 / 回国
+                                  :ARG0 (s5p / person
+                                          :name (s5n / name
+                                                  :op1 "马云"))))
+                  :aspect state
+                  :modstr FullAff)
+          :temporal (s5x17 / 还
+                      :mod (s5x18 / 需))
+          :aspect state
+          :modstr NeutAff))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt6   中国 浙江省 杭州市 的 一所 私立 学校 “ 杭州 云谷 学校 ” 在 本日 （ 3 月 27 日 ） 于 社交 网络 上 透露 ， 马云 参观 了 该 校 ， 并 与 老师 们 讨论 了 人工 智能 聊天 机器人 “ ChatGPT ” 对 教育 行业 的 影响 。
+# sentence level graph
+(s6x / 透露-01
+  :ARG0 (s6s / 学校
+          :mod (s6c / city
+                  :name (s6n / name
+                          :op1 "杭州市")
+                  :part-of (s6p / province
+                             :name (s6n2 / name
+                                     :op1 "浙江省")
+                             :part-of (s6c2 / country
+                                        :name (s6n3 / name
+                                                :op1 "中国"))))
+          :mod (s6p2 / 私立)
+          :name (s6n4 / name
+                  :op1 "杭州"
+                  :op2 "云谷"
+                  :op3 "学校")
+          :quant 1
+          :unit (s6u / 所))
+  :ARG1 (s6a / and
+          :op1 (s6v / 参观-01
+                 :ARG0 (s6i / individual-person
+                         :name (s6n5 / name
+                                 :op1 "马云"))
+                 :ARG1 s6s
+                 :aspect performance
+                 :modstr FullAff)
+          :op2 (s6d / 讨论-01
+                 :ARG0 s6i
+                 :ARG1 (s6i2 / 影响-01
+                         :ARG1 (s6i3 / 聊天-01
+                                 :ARG1 (s6r / 机器人
+                                         :mod (s6a2 / 智能
+                                               :mod (s6a3 / 人工))
+                                         :name (s6n6 / name
+                                                 :op1 "ChatGPT")))
+                         :ARG2 (s6i4 / 行业
+                                 :mod (s6e / 教育))
+                         :aspect state
+                         :modstr FullAff)
+                 :ARG2 (s6t / 老师
+                         :quant 多)
+                 :aspect performance
+                 :modstr FullAff))
+  :time (s6d2 / date-entity
+          :day 27
+          :month 3
+          :mod (s6t2 / 本日))
+  :medium (s6m / 网络
+            :mod (s6m2 / 社交))
+  :aspect performance
+  :modstr FullAff)
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt7   他 说 ： “ 我们 需要 用 人工智能 来 解决 问题 ， 而 不 是 被 人工智能 控制 ” 。
+# sentence level graph
+(s7x / 说-01
+  :ARG0 (s7p / person
+          :ref-person 3rd
+          :ref-number Singular)
+  :ARG1 (s7c / contrast-01
+          :ARG1 (s7x2 / 解决-01
+                  :ARG0 (s7p2 / person
+                          :ref-person 1st
+                          :ref-number Plural)
+                  :ARG1 (s7x3 / 问题
+                          :mod (s7x4 / 人工智能)
+                          :mod (s7x5 / 来))
+                  :aspect Performance
+                  :modstr FullAff)
+          :ARG2 (s7x6 / 控制-01
+                  :ARG0 (s7x7 / 人工智能)
+                  :ARG1 s7p2
+                  :voice Passive
+                  :aspect Performance
+                  :modstr FullAff)
+          :mod (s7x8 / 不)
+          :aspect state
+          :modstr NeutNeg))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt8   中国 电子 商务 巨头 阿里巴巴 创始人 马云 的 职业 生涯 开始 于 一名 英语 教师 ， 他 也 曾经 表示 ， 将 在 2019 年 宣布 从 阿里巴巴 集团 控股 退休 后 重返 教学 岗位 。
+# sentence level graph
+(s8a / and
+  :op1 (s8x / 开始-01
+          :ARG0 (s8x2 / 生涯
+                  :mod (s8x3 / 职业)
+                  :poss (s8p / person
+                          :name (s8n / name
+                                  :op1 "马云")
+                          :ARG0-of (s8f / 创始-01
+                                     :ARG1 (s8c / company
+                                             :name (s8n2 / name
+                                                     :op1 "阿里巴巴")
+                                             :mod (s8c2 / 巨头
+                                                   :mod (s8c3 / 商务
+                                                         :mod (s8c4 / 电子)
+                                                         :mod (s8c5 / 国家
+                                                               :name (s8n3 / name
+                                                                       :op1 "中国"))))))))
+          :ARG1 (s8x4 / 教师
+                  :mod (s8x5 / 英语)
+                  :quant 1
+                  :unit (s8x6 / 名))
+          :aspect state
+          :modstr FullAff)
+  :op2 (s8x7 / 表示-01
+          :ARG0 s8p
+          :ARG1 (s8x8 / 退休-01
+                  :ARG0 s8p
+                  :time (s8d / date-entity
+                          :year 2019)
+                  :ARG1-of (s8a2 / 宣布-01
+                             :aspect performance
+                             :modstr FullAff)
+                  :purpose (s8x9 / 重返-01
+                             :ARG1 (s8x10 / 岗位
+                                     :mod (s8x11 / 教学))
+                             :aspect performance
+                             :modstr FullAff)
+                  :aspect performance
+                  :modstr FullAff)
+          :temporal (s8x12 / 曾经)
+          :mod (s8x13 / 也)
+          :aspect performance
+          :modstr FullAff))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt9   马云 曾 是 中国 最 直言不讳 的 商人 之一 。
+# sentence level graph
+(s9x / 是-01
+  :ARG0 (s9p / person
+          :name (s9n / name
+                  :op1 "马云"))
+  :ARG1 (s9b / 商人
+          :mod (s9c / country
+                 :name (s9n2 / name
+                         :op1 "中国"))
+          :mod (s9a / 直言不讳)
+          :quant 1
+          :quant-type approximate)
+  :temporal (s9t / 曾)
+  :aspect state
+  :modstr FullAff)
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt10   自 2020 年 10 月 以来 ， 和 他 的 企业 帝国 一直 承受 着 来自 政府 的 巨大 压力 ， 他 在 演讲 中 攻击 中国 的 金融 监管 机构 ， 并 批评 金融 体系 已经 过时 。
+# sentence level graph
+(s10a / and-91
+  :op1 (s10x / 承受-01
+         :ARG0 (s10x2 / 帝国
+                 :mod (s10x3 / 企业)
+                 :mod (s10p / person
+                        :ref-person 3rd))
+         :ARG1 (s10x4 / 压力
+                 :mod (s10x5 / 巨大)
+                 :source (s10x6 / 政府))
+         :temporal (s10d / date-interval
+                     :op1 (s10d2 / date-entity
+                            :year 2020
+                            :month 10)
+                     :op2 (s10d3 / now))
+         :aspect habitual
+         :modstr FullAff)
+  :op2 (s10a2 / and-91
+         :op1 (s10x7 / 攻击-01
+                :ARG0 s10p
+                :ARG1 (s10x8 / 机构
+                        :mod (s10x9 / 监管)
+                        :mod (s10x10 / 金融)
+                        :mod (s10c / country
+                               :name (s10n / name
+                                       :op1 "中国")))
+                :location (s10x11 / 中
+                            :op1 (s10x12 / 演讲))
+                :aspect performance
+                :modstr FullAff)
+         :op2 (s10x13 / 批评-01
+                :ARG0 s10p
+                :ARG1 (s10x14 / 体系
+                        :mod (s10x15 / 金融)
+                        :ARG1-of (s10x16 / 过时-01
+                                   :aspect state
+                                   :modstr FullAff))
+                :aspect performance
+                :modstr FullAff)))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt11   当时 的 打击 行动 导致 阿里巴巴 被 处以 超过 180 亿元 人民币 的 罚款 ， 并 暂停 关联 蚂蚁 集团 计划 中 的 首次 公开 募股 。
+# sentence level graph
+(s11a / and-91
+  :op1 (s11x / 导致-01
+         :ARG0 (s11x2 / 行动
+                 :mod (s11x3 / 打击)
+                 :temporal (s11x4 / 当时))
+         :ARG1 (s11x5 / 处以-01
+                 :ARG0 (s11x6 / 罚款
+                         :mod (s11x7 / 超过
+                                :quant (s11x8 / 180
+                                         :unit (s11x9 / 亿元
+                                                 :mod (s11x10 / 人民币)))))
+                 :ARG1 (s11x11 / company
+                         :name (s11n / name
+                                 :op1 "阿里巴巴")))
+         :aspect performance
+         :modstr FullAff)
+  :op2 (s11x12 / 暂停-01
+         :ARG1 (s11x13 / 募股-01
+                 :mod (s11x14 / 公开)
+                 :mod (s11x15 / 首次)
+                 :ARG1-of (s11x16 / 计划-01
+                            :ARG0 (s11x17 / 集团
+                                    :mod (s11x18 / 蚂蚁)
+                                    :mod (s11x19 / 关联)))
+                 :aspect habitual
+                 :modstr FullAff)
+         :aspect performance
+         :modstr FullAff))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt12   在 中国 政府 的 打压 后 ， 马云 基本上 从 大众 视野 中 消失 。 在 过去 的 一年 里 ， 他 曾 在 日本 待过 几个 月 ， 还 在 泰国 、 香港 和 澳大利亚 现踪 。
+# sentence level graph
+(s12a / and
+  :op1 (s12x / 消失-01
+          :ARG0 (s12p / person
+                  :name (s12n / name
+                          :op1 "马云"))
+          :location (s12l / 中
+                      :op1 (s12v / 视野
+                            :mod (s12p2 / 大众)))
+          :time (s12t / 后
+                  :op1 (s12x2 / 打压-01
+                        :ARG0 (s12g / government
+                                :location (s12c / country
+                                            :name (s12n2 / name
+                                                    :op1 "中国")))))
+          :mod (s12m / 基本上)
+          :aspect state
+          :modstr FullAff)
+  :op2 (s12a2 / and
+          :op1 (s12s / 待-01
+                 :ARG0 s12p
+                 :location (s12c2 / country
+                             :name (s12n3 / name
+                                     :op1 "日本"))
+                 :duration (s12d / 几个月)
+                 :temporal (s12t2 / 曾)
+                 :aspect habitual
+                 :modstr PrtAff)
+          :op2 (s12x3 / 现踪-01
+                 :ARG0 s12p
+                 :location (s12l2 / and
+                             :op1 (s12c3 / country
+                                   :name (s12n4 / name
+                                           :op1 "泰国"))
+                             :op2 (s12c4 / city
+                                   :name (s12n5 / name
+                                           :op1 "香港"))
+                             :op3 (s12c5 / country
+                                   :name (s12n6 / name
+                                           :op1 "澳大利亚")))
+                 :temporal (s12t3 / 在
+                             :op1 (s12y / 一年
+                                   :quant 1
+                                   :unit 年
+                                   :mod (s12p3 / 过去)))
+                 :aspect habitual
+                 :modstr PrtAff)))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt13   plaintext虽然 中国 当局 最近 几个 月 表示 他们 已经 结束 监管 打击 行动 ， 并 将 寻找 支持 私营 部门 的 方法 ， 但 中国 企业家 们 表示 ， 他们 看到 马云 仍 决定 留在 海外 ， 是 阻碍 企业界 恢复 信心 的 一个 因素 。
+
+# sentence level graph
+(s13c / contrast-91
+  :ARG1 (s13x / 表示-01
+          :ARG0 (s13a / 当局
+                  :mod (s13c2 / country
+                         :name (s13n / name
+                                 :op1 "中国")))
+          :ARG1 (s13a2 / and
+                  :op1 (s13x2 / 结束-01
+                         :ARG1 (s13x3 / 行动
+                                 :mod (s13x4 / 监管)
+                                 :mod (s13x5 / 打击))
+                         :temporal (s13t / 最近
+                                     :quant (s13q / 几个)
+                                     :unit (s13u / 月))
+                         :mod (s13m / 已经)
+                         :aspect performance
+                         :modstr FullAff)
+                  :op2 (s13x6 / 寻找-01
+                         :ARG1 (s13x7 / 方法
+                                 :mod (s13x8 / 支持
+                                        :ARG1 (s13x9 / 部门
+                                                :mod (s13x10 / 私营))))
+                         :aspect endeavor
+                         :modstr FullAff))
+          :aspect habitual
+          :modstr FullAff)
+  :ARG2 (s13x11 / 表示-01
+          :ARG0 (s13e / 企业家
+                  :mod (s13c3 / country
+                         :name (s13n2 / name
+                                 :op1 "中国"))
+                  :quant (s13q2 / 复数))
+          :ARG1 (s13x12 / 是-01
+                  :ARG1 (s13x13 / 因素
+                          :quant 1
+                          :unit (s13u2 / 个)
+                          :mod (s13x14 / 阻碍
+                                 :ARG1 (s13x15 / 恢复-01
+                                        :ARG1 (s13x16 / 信心
+                                                :mod (s13x17 / 企业界)))))
+                  :ARG2 (s13x18 / 留在-01
+                          :ARG0 (s13p / person
+                                  :name (s13n3 / name
+                                          :op1 "马云"))
+                          :ARG1 (s13l / location
+                                  :mod (s13o / 海外))
+                          :mod (s13m2 / 仍)
+                          :aspect state
+                          :modstr FullAff)
+                  :aspect state
+                  :modstr FullAff)
+          :aspect habitual
+          :modstr FullAff))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt14   而 马云 此次 回归 中国 ， 可能 有助 让 企业家 们 相信 中国 政府 对 民营 企业 的 支持 ， 但 仍 有待 观察 。
+# sentence level graph
+(s14b / but-91
+  :ARG1 (s14h / 有助-01
+          :ARG0 (s14r / 回归-01
+                  :ARG0 (s14p / person
+                          :name (s14n / name
+                                  :op1 "马云"))
+                  :ARG1 (s14c / country
+                          :name (s14n2 / name
+                                  :op1 "中国"))
+                  :temporal (s14t / 此次)
+                  :aspect performance
+                  :modstr FullAff)
+          :ARG1 (s14b2 / 相信-01
+                  :ARG0 (s14e / 企业家
+                          :quant (s14q / 复数))
+                  :ARG1 (s14s / 支持-01
+                          :ARG0 (s14g / government
+                                  :name (s14n3 / name
+                                          :op1 "中国"))
+                          :ARG1 (s14c2 / 企业
+                                  :mod (s14p2 / 民营)))
+                  :aspect habitual
+                  :modstr FullAff)
+          :mod (s14m / 可能)
+          :aspect habitual
+          :modstr FullAff)
+  :ARG2 (s14o / 观察-01
+          :mod (s14d / 有待)
+          :mod (s14a / 仍)
+          :aspect habitual
+          :modstr FullAff))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt15   这 被 视为 政府 安抚 投资者 的 举动 ， 但 马云 回国 是否 能 恢复 企业家 们 对 中国 经济 的 信心 还 需 观察 。
+# sentence level graph
+(s15b / but-91
+  :ARG1 (s15x / 视为-01
+          :ARG1 (s15x2 / 举动
+                  :ARG0-of (s15x3 / 安抚-01
+                             :ARG0 (s15x4 / 政府)
+                             :ARG1 (s15x5 / 投资者))
+                  :mod (s15d / 这))
+          :aspect state
+          :modstr FullAff)
+  :ARG2 (s15x6 / 观察-01
+          :ARG1 (s15x7 / 能-01
+                  :ARG1 (s15x8 / 恢复-01
+                          :ARG0 (s15x9 / 企业家
+                                  :mod (s15x10 / 们))
+                          :ARG1 (s15x11 / 信心
+                                  :ARG0-of (s15x12 / 对-01
+                                             :ARG1 (s15x13 / 经济
+                                                     :mod (s15x14 / 中国))))
+                          :condition (s15x15 / 是否)
+                          :mod (s15x16 / 回国
+                                 :ARG0 (s15x17 / person
+                                         :name (s15n / name
+                                                 :op1 "马云"))))
+                  :aspect state
+                  :modstr FullAff)
+          :temporal (s15x18 / 还
+                      :mod (s15x19 / 需))
+          :aspect state
+          :modstr NeutAff))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt16   马云 在 今年 1 月 放弃 了 对 蚂蚁 集团 的 控制权 ， 他 在 该 公司 的 有效 经营 投票权 从 53.46% 降至 6.2% ， 原因 是 北京 当局 要求 该 公司 与 阿里巴巴 集团 保持 距离 。
+# sentence level graph
+(s16a / and
+  :op1 (s16x / 放弃-01
+          :ARG0 (s16p / person
+                  :name (s16n / name
+                          :op1 "马云"))
+          :ARG1 (s16x2 / 控制权
+                  :poss (s16g / group-organization
+                          :name (s16n2 / name
+                                  :op1 "蚂蚁"
+                                  :op2 "集团")))
+          :time (s16t / time-entity
+                  :year (s16y / this-year)
+                  :month 1)
+          :aspect performance
+          :modstr FullAff)
+  :op2 (s16c / change-01
+          :ARG1 (s16x3 / 投票权
+                  :poss s16g
+                  :mod (s16x4 / 经营
+                        :mod (s16x5 / 有效)))
+          :ARG2 (s16p2 / percentage-entity
+                  :value 6.2)
+          :ARG3 (s16p3 / percentage-entity
+                  :value 53.46)
+          :time s16t
+          :aspect performance
+          :modstr FullAff)
+  :op3 (s16r / request-01
+          :ARG0 (s16a2 / authority
+                  :location (s16c2 / city
+                              :name (s16n3 / name
+                                      :op1 "北京")))
+          :ARG1 (s16m / maintain-01
+                  :ARG1 s16g
+                  :ARG2 (s16g2 / group-organization
+                          :name (s16n4 / name
+                                  :op1 "阿里巴巴"
+                                  :op2 "集团"))
+                  :manner (s16d / distance))
+          :reason (s16r2 / reason-91
+                    :ARG1 s16c)
+          :aspect performance
+          :modstr FullAff))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt17   在 中国 政府 下达 重组 令 后 ， 蚂蚁 集团 一直 进行 一 系列 全面 改革 。
+# sentence level graph
+(s17x / 进行-01
+  :ARG0 (s17x2 / 集团
+          :name (s17n / name
+                  :op1 "蚂蚁"))
+  :ARG1 (s17x3 / 改革-01
+          :mod (s17x4 / 全面)
+          :quant (s17x5 / 系列
+                   :quant 1)
+          :aspect habitual
+          :modstr FullAff)
+  :temporal (s17x6 / 下达-01
+              :ARG0 (s17x7 / 政府
+                      :location (s17c / country
+                                  :name (s17n2 / name
+                                          :op1 "中国")))
+              :ARG1 (s17x8 / 令
+                      :mod (s17x9 / 重组))
+              :aspect performance
+              :modstr FullAff)
+  :aspect habitual
+  :modstr FullAff)
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt18   当时 据 知情 人士 透露 ， 马云 婉拒 邀请 ， 选择 留在 海外 ， 并 称 他 已 从 公司 撤退 ， 未来 将 专注 于 研究 农业 技术 。
+# sentence level graph
+(s18x / 透露-01
+  :temporal (s18t / 当时)
+  :ARG0 (s18p / 人士
+          :mod (s18i / 知情))
+  :ARG1 (s18a / and
+          :op1 (s18x2 / 婉拒-01
+                 :ARG0 (s18p2 / person
+                         :name (s18n / name
+                                 :op1 "马云"))
+                 :ARG1 (s18x3 / 邀请-01)
+                 :aspect performance
+                 :modstr FullAff)
+          :op2 (s18x4 / 选择-01
+                 :ARG0 s18p2
+                 :ARG1 (s18x5 / 留-01
+                         :ARG1 s18p2
+                         :location (s18l / 海外)
+                         :aspect state
+                         :modstr FullAff)
+                 :aspect performance
+                 :modstr FullAff)
+          :op3 (s18x6 / 称-02
+                 :ARG0 s18p2
+                 :ARG1 (s18x7 / 撤退-01
+                         :ARG0 s18p2
+                         :ARG1 (s18c / 公司)
+                         :temporal (s18t2 / 已)
+                         :aspect performance
+                         :modstr FullAff)
+                 :aspect performance
+                 :modstr FullAff)
+          :op4 (s18x8 / 专注-01
+                 :ARG0 s18p2
+                 :ARG1 (s18x9 / 研究-01
+                         :ARG1 (s18x10 / 技术
+                                 :mod (s18x11 / 农业))
+                         :aspect habitual
+                         :modstr FullAff)
+                 :temporal (s18f / 未来)
+                 :aspect habitual
+                 :modstr FullAff))
+  :aspect performance
+  :modstr FullAff)
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt19   马云 告诉 蚂蚁 集团 和 阿里巴巴 高管 ， 不要 对 他 回国 一事 耿耿于怀 ， 并 强调 即使 距离 很 远 ， 他 也 会 致力于 他们 的 成功 。
+# sentence level graph
+(s19a / and-91
+  :op1 (s19x / 耿耿于怀-01
+          :polarity -
+          :modstr NeutNeg
+          :aspect state
+          :ARG1 (s19x2 / 事
+                  :ARG1-of (s19x3 / 回国-01
+                             :ARG0 (s19p / person
+                                     :name (s19n / name
+                                             :op1 "马云"))))
+          :ARG0 (s19g / group
+                  :mod (s19g2 / and
+                         :op1 (s19g3 / 集团
+                               :name (s19n2 / name
+                                       :op1 "蚂蚁"))
+                         :op2 (s19c / company
+                               :name (s19n3 / name
+                                       :op1 "阿里巴巴")))
+                  :ARG0-of (s19h / have-org-role-91
+                             :ARG3 (s19x4 / 高管))))
+  :op2 (s19x5 / 致力于-01
+          :ARG0 s19p
+          :ARG1 (s19x6 / 成功
+                  :ARG0-of (s19x7 / have-03
+                             :ARG1 (s19g4 / group
+                                     :mod s19g2)))
+          :mod (s19x8 / 也)
+          :mod (s19x9 / 即使
+                :ARG1 (s19x10 / 远
+                        :degree (s19x11 / 很)))
+          :aspect habitual
+          :modstr FullAff))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt20   但在 该 消息 曝光 后 不久 ， 马云 随后 现身 于 中国 浙江省 杭州市 。
+# sentence level graph
+(s20c / 但是-91
+  :ARG2 (s20x / 现身-01
+          :ARG0 (s20p / person
+                  :name (s20n / name
+                          :op1 "马云"))
+          :location (s20l / city
+                      :name (s20n2 / name
+                              :op1 "杭州市")
+                      :part-of (s20p2 / province
+                                 :name (s20n3 / name
+                                         :op1 "浙江省")
+                                 :part-of (s20c2 / country
+                                            :name (s20n4 / name
+                                                    :op1 "中国"))))
+          :temporal (s20t / 后
+                      :op1 (s20e / 曝光-01
+                            :ARG1 (s20m / 消息
+                                    :mod (s20d / 该))
+                            :temporal (s20s / 不久))))
+  :aspect performance
+  :modstr FullAff)
+
+# alignment:
+
+# document level annotation:
+
+

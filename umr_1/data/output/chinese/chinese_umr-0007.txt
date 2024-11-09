@@ -1,0 +1,418 @@
+# :: snt1	 本市 的 建立 始于 1628 年 7 月 ， 以 安德烈 · 杜奔斯基 （ А н д р е й Д у б е н с к и й ） 将军 为首 的 拓荒者 到达 了 叶尼塞河 和 卡 恰河 的 交汇处 ， 并 就 地 修建 防御工事 ， 作为 俄军 的 前哨 堡垒 ， 以 准备 下 一步 发起 对 叶尼塞 土着 的 军事行动 。
+
+# sentence level graph:
+(s1x / 建立-01
+  :ARG1 (s1x2 / 本市)
+  :ARG2 (s1x3 / 始于-01
+          :ARG1 (s1d / date-entity
+                  :year 1628
+                  :month 7)
+          :aspect state)
+  :temporal (s1a / and
+              :op1 (s1x4 / 到达-01
+                     :ARG0 (s1x6 / 拓荒者
+                             :mod (s1x7 / 为首-01
+                                    :ARG1 (s1i2 / identity-91
+                                            :ARG0 (s1i3 / individual-person
+                                                    :name (s1n / name
+                                                            :op1 "安德烈"
+                                                            :op2 "·"
+                                                            :op3 "杜奔斯基"))
+                                            :ARG1 (s1i4 / individual-person
+                                                    :name (s1n2 / name
+                                                            :op1 "Андрей"
+                                                            :op2 "Дубенский"))
+                                            :ARG0-of (s1h / have-role-91
+                                                       :ARG2 (s1x9 / 将军)))
+                                    :aspect performance))
+                     :ARG1 (s1x5 / 处
+                             :mod (s1x8 / 交汇-01
+                                    :ARG0 (s1a2 / and
+                                            :op1 (s1x22 / 河
+                                                   :name (s1x23 / 叶尼塞))
+                                            :op2 (s1x24 / 河
+                                                   :name (s1x25 / 卡恰)))
+                                    :aspect state))
+                     :aspect performance)
+              :op2 (s1x10 / 修建-01
+                     :ARG1 (s1x11 / 防御工事)
+                     :place (s1x12 / 就地)
+                     :purpose (s1x13 / 作为-01
+                                :ARG0 (s1d2 / dummy)
+                                :ARG2 (s1x14 / 堡垒
+                                        :mod (s1x15 / 前哨)
+                                        :poss (s1x16 / 俄军))
+                                :purpose (s1x17 / 准备-02
+                                           :ARG1 (s1x18 / 发起-01
+                                                   :ARG1 (s1x20 / 军事行动
+                                                           :recipient (s1x21 / 土著
+                                                                        :mod (s1r3 / region
+                                                                               :name (s1n5 / name
+                                                                                       :op1 "叶尼塞"))))
+                                                   :mod (s1x19 / 下一步)
+                                                   :aspect performance)
+                                           :aspect performance)
+                                :aspect state)
+                     :aspect performance))
+  :aspect state)
+
+# alignment:
+s1a : 0-0
+s1a2 : 0-0
+s1d : 0-0
+s1d2 : 0-0
+s1h : 0-0
+s1i2 : 0-0
+s1i3 : 11-13
+s1i4 : 15-29
+s1n : -1--1
+s1n2 : -1--1
+s1n5 : -1--1
+s1r3 : 62-62
+s1x : 3-3
+s1x10 : 47-47
+s1x11 : 48-48
+s1x12 : 45-46
+s1x13 : 50-50
+s1x14 : 54-54
+s1x15 : 53-53
+s1x16 : 51-51
+s1x17 : 57-57
+s1x18 : 60-60
+s1x19 : 58-59
+s1x2 : 1-1
+s1x20 : 65-65
+s1x21 : 63-63
+s1x22 : 37-37
+s1x23 : 37-37
+s1x24 : 40-40
+s1x25 : 39-40
+s1x3 : 4-4
+s1x4 : 35-35
+s1x5 : 42-42
+s1x6 : 34-34
+s1x7 : 32-32
+s1x8 : 42-42
+s1x: 3-3
+s1x2: 1-1
+s1x3: 4-4
+s1x4: 35-35
+s1x6: 34-34
+s1x7: 32-32
+s1x9: 31-31
+s1x23: 62-62
+s1x10: 47-47
+s1x11: 48-48
+s1x13: 50-50
+s1x14: 54-54
+s1x15: 53-53
+s1x16: 51-51
+s1x17: 57-57
+s1x18: 60-60
+s1x20: 65-65
+
+# document level annotation:
+(s1s0 / sentence
+  :temporal ((s1x4 :before s1x10)
+                    (s1x4 :before s1x13)
+                    (s1x4 :before s1x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s1x3)
+                    (author :full-affirmative s1x7)
+                    (author :full-affirmative s1x4)
+                    (author :full-affirmative s1x18)
+                    (author :full-affirmative s1x17)
+                    (author :full-affirmative s1x13)
+                    (author :full-affirmative s1x10)
+                    (author :full-affirmative s1x)))
+
+
+# :: snt2	 它 和 东边 不远 的 坎斯克城 一道 ， 代表 着 17 世纪 俄国 对 叶尼塞河 源头 探索 的 最南端 。
+
+# sentence level graph:
+(s2x / 代表-01
+  :ARG0 (s2a / and
+          :op1 (s2d / dummy)
+          :op2 (s2c / city
+                 :name (s2n / name
+                         :op1 "坎斯克城")
+                 :mod (s2x2 / 东边)
+                 :mod (s2x3 / 不远)))
+  :ARG1 (s2x4 / 南端
+          :ARG0-of (s2h / have-degree-91
+                     :ARG5 (s2x5 / 最))
+          :poss (s2x6 / 探索-02
+                  :ARG0 (s2c2 / country
+                          :name (s2n2 / name
+                                  :op1 "俄国"))
+                  :ARG1 (s2x7 / 源头
+                          :poss (s2r / river
+                                  :name (s2n3 / name
+                                          :op1 "叶尼塞河")))
+                  :temporal (s2d2 / date-entity
+                              :century 17)
+                  :aspect performance))
+  :aspect state)
+
+# alignment:
+s2a : 0-0
+s2c : 1-1
+s2c2 : 13-13
+s2d : 0-0
+s2d2 : 0-0
+s2h : 0-0
+s2n : -1--1
+s2n2 : -1--1
+s2x : 1-1
+s2x2 : 1-1
+s2x3 : 4-4
+s2x4 : 19-19
+s2x5 : 19-19
+s2x6 : 17-17
+s2x7 : 16-16
+s2r : 15-15
+s2x: 9-9
+s2x2: 3-3
+s2x3: 4-4
+s2x6: 17-17
+s2x7: 16-16
+
+# document level annotation:
+(s2s0 / sentence
+  :modal ((root :modal author)
+                    (author :full-affirmative s2x6)
+                    (author :full-affirmative s2x))
+  :coref ((s2d :same-entity s1x14)))
+
+
+# :: snt3	 在 一封 给 沙皇 的 信中 ， 驻守 当地 的 哥萨克人 写 到 ： " “ 在 这座 全是 木头 房子 的 小镇 ， 我们 艰难 地 建立 起 了 防线 。
+
+# sentence level graph:
+(s3x2 / 写到-01
+  :ARG0 (s3e / ethnic-group
+          :name (s3n / name
+                  :op1 "哥萨克人")
+          :mod (s3x / 驻守-01
+                 :ARG1 (s3x3 / 当地)
+                 :aspect performance))
+  :ARG1 (s3x4 / 建立-01
+          :ARG0 (s3p / person
+                  :refer-person 1st
+                  :refer-number plural)
+          :ARG1 (s3x9 / 防线)
+          :manner (s3x8 / 艰难地)
+          :place (s3x10 / 小镇
+                   :mod (s3x11 / 这座)
+                   :part (s3x12 / 房子
+                           :mod (s3x13 / 木头)
+                           :mod (s3x14 / 全是)))
+          :aspect performance)
+  :place (s3x5 / 信
+           :mod (s3x6 / 给-01
+                  :ARG2 (s3x7 / 沙皇)))
+  :aspect performance)
+
+# alignment:
+s3x : 8-8
+s3x2 : -1--1
+s3e : 11-11
+s3n : -1--1
+s3x3 : 9-9
+s3x4 : 28-28
+s3x5 : 6-6
+s3x6 : 3-3
+s3x7 : 4-4
+s3p : 0-0
+s3x8 : 26-27
+s3x9 : 31-31
+s3x10 : 23-23
+s3x11 : 18-18
+s3x12 : 21-21
+s3x13 : 20-20
+s3x: 8-8
+s3x3: 9-9
+s3x4: 28-28
+s3x9: 31-31
+s3x10: 23-23
+s3x11: 18-18
+s3x12: 21-21
+s3x13: 20-20
+s3x14: 19-19
+s3x6: 3-3
+s3x7: 4-4
+
+# document level annotation:
+(s3s0 / sentence
+  :modal ((root :modal author)
+                    (author :full-affirmative s3x)
+                    (author :full-affirmative s3x4)
+                    (author :full-affirmative s3x2)))
+
+
+# :: snt4	 作为 您 的 仆人 ， 我们 按 您 的 意思 设置 了 一套 工作 制度 ， 保证 探索 新 领地 的 同时 加强 据点 的 防御 … ” "
+
+# sentence level graph:
+(s4x / 设置-01
+  :ARG0 (s4p / person
+          :refer-person 1st
+          :refer-number plural
+          :ARG0-of (s4h / have-role-91
+                     :ARG2 (s4x2 / 仆人
+                             :poss (s4p2 / person
+                                     :refer-person 2nd
+                                     :refer-number singular))))
+  :ARG1 (s4x3 / 制度
+          :mod (s4x4 / 工作)
+          :unit (s4x5 / 套))
+  :mod (s4x6 / 按-00
+         :ARG1 (s4x7 / 意思
+                 :poss s4p2)
+         :aspect performance)
+  :purpose (s4a / and
+             :op1 (s4x8 / 保证-01
+                    :ARG1 (s4x9 / 探索-02
+                            :ARG1 (s4x10 / 领地
+                                    :mod (s4x11 / 新))
+                            :aspect endeavor)
+                    :aspect performance)
+             :op2 (s4x12 / 加强-01
+                    :ARG1 (s4x13 / 防御-01
+                            :ARG0 (s4x14 / 据点)
+                            :aspect endeavor)
+                    :aspect performance))
+  :aspect performance)
+
+# alignment:
+s4x : 11-11
+s4p : 0-0
+s4h : 0-0
+s4x2 : 4-4
+s4p2 : 0-0
+s4x3 : 15-15
+s4x4 : 14-14
+s4x5 : 13-13
+s4x6 : 7-7
+s4x7 : 10-10
+s4a : 0-0
+s4x8 : 17-17
+s4x9 : 18-18
+s4x10 : 20-20
+s4x11 : 19-19
+s4x12 : 23-23
+s4x13 : 26-26
+s4x: 11-11
+s4x2: 4-4
+s4x3: 15-15
+s4x4: 14-14
+s4x6: 7-7
+s4x7: 10-10
+s4x8: 17-17
+s4x9: 18-18
+s4x10: 20-20
+s4x11: 19-19
+s4x12: 23-23
+s4x13: 26-26
+s4x14: 24-24
+
+# document level annotation:
+(s4s0 / sentence
+  :modal ((root :modal author)
+                    (author :full-affirmative s4x6)
+                    (author :full-affirmative s4x9)
+                    (author :full-affirmative s4x8)
+                    (author :full-affirmative s4x13)
+                    (author :full-affirmative s4x12)
+                    (author :full-affirmative s4x)))
+
+
+# :: snt5	 根据 叶尼塞 语 ， 这座 堡垒 当时 被 命名 为 " К р а с н ы й Я р " 。
+
+# sentence level graph:
+(s5x / 命名-01
+  :ARG1 (s5x2 / 堡垒
+          :mod (s5x3 / 这座))
+  :ARG2 (s5b / building
+          :name (s5n / name
+                  :op1 "Красный"
+                  :op2 "Яр"))
+  :temporal (s5x4 / 当时)
+  :aspect performance
+  :ARG0-of (s5x5 / 根据-01
+             :ARG1 (s5x6 / 语
+                     :name (s5x7 / 叶尼塞))))
+
+# alignment:
+s5b : 12-20
+s5n : -1--1
+s5x : 1-1
+s5x2 : 6-6
+s5x3 : 5-5
+s5x4 : 7-7
+s5x5 : 1-1
+s5x6 : 3-3
+s5x: 9-9
+s5x2: 6-6
+s5x3: 5-5
+s5x4: 7-7
+s5x5: 1-1
+s5x6: 3-3
+s5x7: 2-2
+
+# document level annotation:
+(s5s0 / sentence
+  :modal ((root :modal author)
+                    (author :full-affirmative s5x))
+  :coref ((s5x2 :same-entity s5b)
+                    (s5x2 :same-entity s1x14)
+                    (s5x2 :same-entity s2d)))
+
+
+# :: snt6	 后来 该 堡垒 升 为 城镇 级别 后 更名 为 现名 克拉斯诺亚尔斯克 。
+
+# sentence level graph:
+(s6c / consecutive
+  :op1 (s6x / 升-03
+         :ARG0 (s6x4 / 堡垒
+                 :mod (s6x5 / 该))
+         :ARG1 (s6x6 / 级别
+                 :mod (s6x7 / 城镇))
+         :aspect performance)
+  :op2 (s6x2 / 更名-01
+         :ARG3 (s6b / building
+                 :name (s6n / name
+                         :op1 "克拉斯诺亚尔斯克")
+                 :ARG0-of (s6h / have-role-91
+                            :ARG2 (s6x8 / 现名)))
+         :aspect performance)
+  :temporal (s6x3 / 后来))
+
+# alignment:
+s6c : 0-0
+s6x : 4-4
+s6x2 : 9-9
+s6x3 : 1-1
+s6x4 : 3-3
+s6x5 : 2-2
+s6x6 : 7-7
+s6x7 : 6-6
+s6b : 12-12
+s6n : -1--1
+s6h : 0-0
+s6x: 4-4
+s6x4: 3-3
+s6x5: 2-2
+s6x6: 7-7
+s6x7: 6-6
+s6x2: 9-9
+s6x8: 11-11
+s6x3: 1-1
+
+# document level annotation:
+(s6s0 / sentence
+  :temporal ((s6x2 :after s6x)
+                    (s6x2 :after s5x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s6x)
+                    (author :full-affirmative s6x2)))
+
+

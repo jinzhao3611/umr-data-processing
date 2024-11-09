@@ -1,0 +1,2868 @@
+user name: dummy_user
+user id: 1
+file language: sanapana
+file format: 
+Doc ID in database: 499
+export time: 7/28/2023, 5:35:38 PM
+
+# :: snt1
+Words               hlemmea  a'nemangkoyehlnane    konnayvo  ha'e
+Morphemes              None                None        None  None
+Morpheme Gloss(en)     None                None        None  None
+Morpheme Gloss(es)     None                None        None  None
+Morpheme Cat           None                None        None  None
+Word Gloss            antes         todo el día  celebraban  allá
+English Sent Gloss: 
+Spanish Sent Gloss: Todo el día celebraban allá, antes
+
+# sentence level graph:
+(s1e / ennayvoma-00
+  :actor (s1p / person
+           :refer-person 3rd
+           :refer-number Plural)
+  :undergoer (s1h / ha'e)
+  :temporal (s1h2 / hlemmea)
+  :duration (s1a / a'nemangkoyehlnane)
+  :Aspect Habitual
+  :MODSTR FullAff)
+
+
+# alignment:
+s1e :3-3
+s1p :0-0
+s1h :4-4
+s1h2 :1-1
+s1a :2-2
+# document level annotation:
+
+
+
+
+
+# :: snt2
+Words                  tenno     akteyapmo  mision  hengka     metko
+Morphemes               None          None    None    None      None
+Morpheme Gloss(en)      None          None    None    None      None
+Morpheme Gloss(es)      None          None    None    None      None
+Morpheme Cat            None          None    None    None      None
+Word Gloss          entonces  cuando salía  misión    esta  no había
+English Sent Gloss: 
+Spanish Sent Gloss: Entonces cuando inició esta misión, no había más
+
+# sentence level graph:
+(s2e / exist-91
+  :ARG1 (s2t / thing)
+  :temporal (s2e2 / elenteyapma-00
+              :actor (s2r / religious-organization
+                       :name (s2n / name
+                               :op1 "mision"))
+              :Aspect Performance)
+  :temporal (s2t2 / tenno)
+  :Aspect State
+  :MODSTR FullNeg)
+
+
+# alignment:
+s2e :0-0
+s2t :0-0
+s2e2 :2-2
+s2r :3-3
+s2n :-1--1
+s2t2 :1-1
+# document level annotation:
+
+
+
+
+
+# :: snt3
+Words                 vanhla'    el  diecinueve    de  abril
+Morphemes                None  None        None  None   None
+Morpheme Gloss(en)       None  None        None  None   None
+Morpheme Gloss(es)       None  None        None  None   None
+Morpheme Cat             None  None        None  None   None
+Word Gloss          solamente    el  diecinueve    de  abril
+English Sent Gloss: 
+Spanish Sent Gloss: Solamente el diecinueve de abril
+
+# sentence level graph:
+(s3b / be-temporally-at-91
+  :ARG1 (s3t / thing)
+  :ARG2 (s3d / date-entity
+          :month (s3a / april)
+          :day 19)
+  :mod (s3v / vanhla')
+  :Aspect State
+  :MODSTR FullAff)
+
+
+# alignment:
+s3b :0-0
+s3t :0-0
+s3d :0-0
+s3a :0-0
+s3v :1-1
+# document level annotation:
+
+
+
+
+
+# :: snt4
+Words               apyasangke'
+Morphemes                  None
+Morpheme Gloss(en)         None
+Morpheme Gloss(es)         None
+Morpheme Cat               None
+Word Gloss                sabes
+English Sent Gloss: 
+Spanish Sent Gloss: Sabes?
+
+# sentence level graph:
+(s4e / enyasekamok-00
+  :experiencer (s4p / person
+                 :refer-person 2nd
+                 :refer-number Singular)
+  :stimulus (s4e2 / event
+              :Modpred s4e)
+  :Aspect State
+  :MODSTR NeutAff
+  :polarity umr-unknown
+  :mode interrogative)
+
+
+# alignment:
+s4e :0-0
+s4p :0-0
+s4e2 :0-0
+# document level annotation:
+
+
+
+
+
+# :: snt5
+Words               kaha'         eleyvomahlnane  ennengko'o        estancia  nemangkoye'    konnayvo
+Morphemes            None                   None        None            None         None        None
+Morpheme Gloss(en)   None                   None        None            None         None        None
+Morpheme Gloss(es)   None                   None        None            None         None        None
+Morpheme Cat         None                   None        None            None         None        None
+Word Gloss           allá  nosotros que vivíamos     nostros  en la estancia  todo el día  celebraban
+English Sent Gloss: 
+Spanish Sent Gloss: Allá, nosotros que vivíamos en la estancia, todo el día celebrábamos
+
+# sentence level graph:
+(s5e / ennayvoma-00
+  :actor (s5p / person
+           :refer-person 1st
+           :refer-number Plural
+           :Actor-of (s5e2 / eleyvoma-00
+                       :place (s5e3 / estancia)
+                       :Aspect Activity
+                       :MODSTR FullAff))
+  :duration (s5n / nemangkoye')
+  :place (s5k / kaha')
+  :Aspect Habitual
+  :MODSTR FullAff)
+
+
+# alignment:
+s5e :6-6
+s5p :0-0
+s5e2 :2-2
+s5k :1-1
+s5e3 :4-4
+s5n :5-5
+# document level annotation:
+
+
+
+
+
+# :: snt6
+Words                sábadona  koyayhahlka'     maleng
+Morphemes                None          None       None
+Morpheme Gloss(en)       None          None       None
+Morpheme Gloss(es)       None          None       None
+Morpheme Cat             None          None       None
+Word Gloss          el sábado    se bailaba  el maleng
+English Sent Gloss: 
+Spanish Sent Gloss: El sábado se bailaba el "maleng"
+
+# sentence level graph:
+(s6e / enyayhammahlka'-00
+  :undergoer (s6d / dance
+               :name (s6n / name
+                       :op1 "maleng"))
+  :temporal (s6d2 / date-entity
+              :weekday (s6s / sábadona))
+  :Aspect Habitual
+  :MODSTR FullAff)
+
+
+# alignment:
+s6e :2-2
+s6d :3-3
+s6n :-1--1
+s6d2 :0-0
+s6s :1-1
+# document level annotation:
+
+
+
+
+
+# :: snt7
+Words               kotyepok     nyamenana
+Morphemes               None          None
+Morpheme Gloss(en)      None          None
+Morpheme Gloss(es)      None          None
+Morpheme Cat            None          None
+Word Gloss             salía  el nyamenana
+English Sent Gloss: 
+Spanish Sent Gloss: Se hacía el "nyamenana"
+
+# sentence level graph:
+(s7e / elenteyapma-00
+  :actor (s7f / festival
+           :name (s7n / name
+                   :op1 "nyamenana"))
+  :Aspect Habitual
+  :MODSTR FullAff)
+
+
+# alignment:
+s7e :1-1
+s7f :2-2
+s7n :-1--1
+# document level annotation:
+
+
+
+
+
+# :: snt8
+Words               fiesta
+Morphemes             None
+Morpheme Gloss(en)    None
+Morpheme Gloss(es)    None
+Morpheme Cat          None
+Word Gloss          fiesta
+English Sent Gloss: 
+Spanish Sent Gloss: Una fiesta
+
+# sentence level graph:
+(s8f / fiesta)
+
+
+# alignment:
+s8f :1-1
+# document level annotation:
+
+
+
+
+
+# :: snt9
+Words               cada  sábado   aknayvoma
+Morphemes           None    None        None
+Morpheme Gloss(en)  None    None        None
+Morpheme Gloss(es)  None    None        None
+Morpheme Cat        None    None        None
+Word Gloss          cada  sábado  celebraban
+English Sent Gloss: 
+Spanish Sent Gloss: Cada sábado celebraban
+
+# sentence level graph:
+(s9h / have-frequency-91
+  :ARG1 (s9e / ennayvoma
+           :aspect Process
+           :MODSTR FullAff)
+  :ARG2 (s9r / rate-entity
+           :op1 (s9c / cada)
+           :weekday (s / sábado))
+  :aspect State
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt10
+Words               eleyvomonane  ennengko'o        estancia
+Morphemes                   None        None            None
+Morpheme Gloss(en)          None        None            None
+Morpheme Gloss(es)          None        None            None
+Morpheme Cat                None        None            None
+Word Gloss              vivíamos     nostros  en la estancia
+English Sent Gloss: 
+Spanish Sent Gloss: Vivíamos en la estancia
+
+# sentence level graph:
+(s10e / eleyvoma-00
+  :actor (s10p / person
+           :ref-person 1st
+           :ref-number Plural)
+  :place (s10e / estancia)
+  :aspect Activity
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt11
+Words               metkemohlnanehlka   cristiano
+Morphemes                        None        None
+Morpheme Gloss(en)               None        None
+Morpheme Gloss(es)               None        None
+Morpheme Cat                     None        None
+Word Gloss                   no había  cristianos
+English Sent Gloss: 
+Spanish Sent Gloss: No había cristianos
+
+# sentence level graph:
+(s11c / contrast-91
+  :ARG1 (s11e / event)
+  :ARG2 (s11e2 / exist-91
+           :ARG1 (s11p / person
+                   :mod (s11r / religious-group
+                           :name (s11n / name
+                                   :op1 “cristiano”)
+                           :wiki “Christianity”)
+                   :ref-number Plural)
+           :aspect State
+           :MODSTR FullNeg)
+  :aspect State)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt12
+Words               vanhlakha   m'a     maleng
+Morphemes                None  None       None
+Morpheme Gloss(en)       None  None       None
+Morpheme Gloss(es)       None  None       None
+Morpheme Cat             None  None       None
+Word Gloss          solamente   eso  el maleng
+English Sent Gloss: 
+Spanish Sent Gloss: Solamente eso, el maleng
+
+# sentence level graph:
+(s12e / exist-91
+  :ARG1 (s12d / dance
+           :name (n/ name
+                   :op1 “maleng”)
+           :mod (s12m / m’a))
+  :mod (s12v / vanhlakha)
+  :aspect State
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt13
+Words               metkemonhan  topavola     metko
+Morphemes                  None      None      None
+Morpheme Gloss(en)         None      None      None
+Morpheme Gloss(es)         None      None      None
+Morpheme Cat               None      None      None
+Word Gloss           y no había   iglesia  no había
+English Sent Gloss: 
+Spanish Sent Gloss: Y no había iglesia, no había
+
+# sentence level graph:
+(s13e / exist-91
+  :ARG1 (s13t / topavola)
+  :aspect State
+  :MODSTR FullNeg)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt14
+Words                metkonhan  pastor
+Morphemes                 None    None
+Morpheme Gloss(en)        None    None
+Morpheme Gloss(es)        None    None
+Morpheme Cat              None    None
+Word Gloss          y no había  pastor
+English Sent Gloss: 
+Spanish Sent Gloss: Y no había pastor
+
+# sentence level graph:
+(s14e / exist-91
+  :ARG1 (s14p / person
+           :ARG0-of (s14h / have-role-91
+                   :ARG2 (s14p2 / pastor)))
+  :aspect State
+  :MODSTR FullNeg)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt15
+Words               vanhlakha   m'a     maleng
+Morphemes                None  None       None
+Morpheme Gloss(en)       None  None       None
+Morpheme Gloss(es)       None  None       None
+Morpheme Cat             None  None       None
+Word Gloss          solamente   eso  el maleng
+English Sent Gloss: 
+Spanish Sent Gloss: Solamente eso, el maleng
+
+# sentence level graph:
+(s15e / exist-91
+  :ARG1 (s15d / dance
+           :name (n/ name
+                   :op1 “maleng”)
+           :mod (s15m / m’a))
+  :mod (s15v / vanhlakha)
+  :aspect State
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt16
+Words                  tenno   m'a  onmeyakha'    tansya   ma'akhala  konnayvo   ongvetangvakha'  nenhlet  akhlama'ma
+Morphemes               None  None        None      None        None      None              None     None        None
+Morpheme Gloss(en)      None  None        None      None        None      None              None     None        None
+Morpheme Gloss(es)      None  None        None      None        None      None              None     None        None
+Morpheme Cat            None  None        None      None        None      None              None     None        None
+Word Gloss          entonces  allá  nos fuimos  estancia  si querían  celebrar  nos fuimos a ver  persona       mucho
+English Sent Gloss: 
+Spanish Sent Gloss: Entonces viajabamos a una estancia si querían celebrar, y nos fuimos a ver mucha gente
+
+# sentence level graph:
+(s16a / and
+  :op1 (s16e / enmeyekakha’-00
+           :actor (s16p / person
+                   :ref-person 1st
+                   :ref-number Plural)
+           :goal (s16t / tansya)
+           :temporal (s16m / may’a-00
+                   :experiencer s16p
+                   :stimulus (s16e2 / ennayvoma-00
+                           :actor s16p
+                           :aspect Activity
+                           :modpred s16m)
+                   :aspect State
+                   :MODSTR FullAff)
+  :op2 (s16e3 / engvetangvakha’-00
+           :experiencer s16p
+           :stimulus (s16p2 / person
+                   :mod (s16e4 / ethnic-group
+                           :name (s16n / name
+                                   :op1 “nenhlet”)
+                           :wiki “Sanapaná”)
+                   :quant (s16a2 / akhlama’ma))
+           :place s16t
+           :aspect State
+           :MODSTR FullAff))
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt17
+Words               ma'ala    kotyepok      fiesta
+Morphemes             None        None        None
+Morpheme Gloss(en)    None        None        None
+Morpheme Gloss(es)    None        None        None
+Morpheme Cat          None        None        None
+Word Gloss          si iba  a occurrir  una fiesta
+English Sent Gloss: 
+Spanish Sent Gloss: Si iba a occurrir una fiesta
+
+# sentence level graph:
+(s17e / event
+  :condition (s17e2 / elenteyapma-00
+           :actor (s17f / fiesta)
+           :aspect Performance
+           :MODSTR FullAff))
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt18
+Words               elya'po  apkenmekakha'  nenhlet
+Morphemes              None           None     None
+Morpheme Gloss(en)     None           None     None
+Morpheme Gloss(es)     None           None     None
+Morpheme Cat           None           None     None
+Word Gloss           juntos        se iban  persona
+English Sent Gloss: 
+Spanish Sent Gloss: Junto se iba la gente
+
+# sentence level graph:
+(s18e / enmekakha’-00
+  :actor (s18p / person
+           :mod (s18e2 / ethnic-group
+                   :name (s18n / name
+                           :op1 “nenhlet”)
+                   :wiki “Sanapaná”)
+           :ref-number Plural)
+  :manner (s18e2 / elya’po)
+  :aspect Habitual
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt19
+Words               elyavakha'       fiesta     ma'a  angkotyepok
+Morphemes                 None         None     None         None
+Morpheme Gloss(en)        None         None     None         None
+Morpheme Gloss(es)        None         None     None         None
+Morpheme Cat              None         None     None         None
+Word Gloss             se iban  a la fiesta  que iba    a occurir
+English Sent Gloss: 
+Spanish Sent Gloss: Se iban a la fiesta que iba a occurir
+
+# sentence level graph:
+(s19e / enyavekakha’-00
+  :actor (s19p / person
+           :ref-person 1st
+           :ref-number Plural)
+  :goal (s19f / fiesta
+           :actor-of (s19e2 / elenteyapma-00
+                   :aspect Performance
+                   :MODSTR FullAff)
+           :ref-number Singular)
+  :aspect Habitual
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt20
+Words                                        anyamenana   a'nayvoma
+Morphemes                                          None        None
+Morpheme Gloss(en)                                 None        None
+Morpheme Gloss(es)                                 None        None
+Morpheme Cat                                       None        None
+Word Gloss          fiesta de iniciación de las mujeres  celebraban
+English Sent Gloss: 
+Spanish Sent Gloss: celebraban el "anyamenana"
+
+# sentence level graph:
+(s20e / ennayvoma-00
+  :name (s20n / name
+           :op1 “anyamenana”)
+  :aspect Process
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt21
+Words               nahlepopanhan
+Morphemes                    None
+Morpheme Gloss(en)           None
+Morpheme Gloss(es)           None
+Morpheme Cat                 None
+Word Gloss            y era a pie
+English Sent Gloss: 
+Spanish Sent Gloss: Y era a pie
+
+# sentence level graph:
+(s21e / event
+  :manner (s21n / nahlepop)
+  :aspect Habitual
+  :MODSTR FullAff))
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt22
+Words                metkonhan       eyalantemala'a
+Morphemes                 None                 None
+Morpheme Gloss(en)        None                 None
+Morpheme Gloss(es)        None                 None
+Morpheme Cat              None                 None
+Word Gloss          y no había  medio de transporte
+English Sent Gloss: 
+Spanish Sent Gloss: Y no había medio de transporte
+
+# sentence level graph:
+(s22e / exist-91
+  :ARG1 (s22t / thing
+         :Instrument-of (s22e2 / enyalantema-00
+                 :actor (s22p / person
+                         :ref-person 1st
+                         :ref-number Plural)))
+  :aspect State
+  :MODSTR FullNeg)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt23
+Words               vanhlakha  nahlepop
+Morphemes                None      None
+Morpheme Gloss(en)       None      None
+Morpheme Gloss(es)       None      None
+Morpheme Cat             None      None
+Word Gloss          solamente     a pie
+English Sent Gloss: 
+Spanish Sent Gloss: Solamente a pie
+
+# sentence level graph:
+(s23 / event
+  :manner (s23n / nahlepop)
+  :mod (s23v / vanhlakha)
+  :aspect Habitual
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt24
+Words               metkongkoye'           eyalantema  hlemmeananek
+Morphemes                   None                 None          None
+Morpheme Gloss(en)          None                 None          None
+Morpheme Gloss(es)          None                 None          None
+Morpheme Cat                None                 None          None
+Word Gloss                ningún  medio de transporte         antes
+English Sent Gloss: 
+Spanish Sent Gloss: No teníamos ningún medio de transporte antes
+
+# sentence level graph:
+(s24e / exist-91
+  :ARG1 (s24t / thing
+           :Instrument-of (s24e2 / enyalantema-00
+                  :actor (s24p / person
+                          :ref-person 1st
+                          :ref-number Plural)))
+  :temporal (s24h / hlemmeananek)
+  :degree Intensifier
+  :aspect State
+  :MODSTR FullNeg)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt25
+Words               onyahamakha'  nahlepop     onhlong
+Morphemes                   None      None        None
+Morpheme Gloss(en)          None      None        None
+Morpheme Gloss(es)          None      None        None
+Morpheme Cat                None      None        None
+Word Gloss             andábamos     a pie  viajabamos
+English Sent Gloss: 
+Spanish Sent Gloss: Andábamos a pie nomás, viajábamos
+
+# sentence level graph:
+(s25e / enhleama-00
+  :actor (s25p / person
+           :ref-person 1st
+           :ref-number Plural)
+  :manner (s25n / nahlepop)
+  :place (s25p2 / place
+           :Place-of (s25e2 / enyahekama-00
+                   :actor s25p))
+  :aspect Habitual
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt26
+Words                     emmenek  a'vese'anak
+Morphemes                    None         None
+Morpheme Gloss(en)           None         None
+Morpheme Gloss(es)           None         None
+Morpheme Cat                 None         None
+Word Gloss          nuestros pies     se llama
+English Sent Gloss: 
+Spanish Sent Gloss: Se llaman "emmenek"
+
+# sentence level graph:
+(s26h / have-name-91
+  :ARG1 (s26t / thing
+           :mod (s26n / nak)
+  :ARG2 (s26n2 / name
+           :op1 “emmenek”)
+  :aspect State
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt27
+Words                     emmenek  a'vesey'a  hengka'e      emmenenak
+Morphemes                    None       None      None           None
+Morpheme Gloss(en)           None       None      None           None
+Morpheme Gloss(es)           None       None      None           None
+Morpheme Cat                 None       None      None           None
+Word Gloss          nuestros pies   se llama  DEM.PROX  nuestros pies
+English Sent Gloss: 
+Spanish Sent Gloss: Estos se llaman "emmenek", nuestros pies
+
+# sentence level graph:
+(s27h / have-name-91
+  :ARG1 (s27h2 / hengka’e)
+  :ARG2 (s27n / name
+           :op1 “emmenek”)
+  :aspect State
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt28
+Words               apyasangke'
+Morphemes                  None
+Morpheme Gloss(en)         None
+Morpheme Gloss(es)         None
+Morpheme Cat               None
+Word Gloss                sabes
+English Sent Gloss: 
+Spanish Sent Gloss: Sabes?
+
+# sentence level graph:
+(s28e / enyasekamok-00
+  :experiencer (s28p / person
+                 :refer-person 2nd
+                 :refer-number Singular)
+  :stimulus (s28e2 / event
+              :Modpred s28e)
+  :Aspect State
+  :MODSTR NeutAff
+  :polarity umr-unknown
+  :mode interrogative)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt29
+Words                      onhloakha  nahlepop
+Morphemes                       None      None
+Morpheme Gloss(en)              None      None
+Morpheme Gloss(es)              None      None
+Morpheme Cat                    None      None
+Word Gloss          viajabamos nomás     a pie
+English Sent Gloss: 
+Spanish Sent Gloss: Viajábamos nomás a pie
+
+# sentence level graph:
+(s29e / enhleama-00
+  :actor (s29p / person
+           :ref-person 1st
+           :ref-number Plural)
+  :manner (s29n / nahlepop)
+  :mod (s29k / kha)
+  :aspect Habitual
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt30
+Words               ongvomhonhan       emmangkohlala
+Morphemes                   None                None
+Morpheme Gloss(en)          None                None
+Morpheme Gloss(es)          None                None
+Morpheme Cat                None                None
+Word Gloss            llegábamos  donde queríamos ir
+English Sent Gloss: 
+Spanish Sent Gloss: Llegábamos donde queríamos ir
+
+# sentence level graph:
+(s30e / engvay’a-00
+  :actor (s30p / person
+           :ref-person 1st
+           :ref-number Plural)
+  :goal (s30p2 / place
+           :Stimulus-of (s30e2 / enmangkok-00
+                   :experiencer s30p))
+  :aspect Habitual
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt31
+Words                                        anyamenana  angkelvanatkok
+Morphemes                                          None            None
+Morpheme Gloss(en)                                 None            None
+Morpheme Gloss(es)                                 None            None
+Morpheme Cat                                       None            None
+Word Gloss          fiesta de iniciación de las mujeres           chica
+English Sent Gloss: 
+Spanish Sent Gloss: El "anyamenana" era para una chica?
+
+# sentence level graph:
+(s31h / have-affectee-91
+  :ARG1 (s31f / festival
+           :name (s31n / name
+                   :op1 “anyamenana”))
+  :ARG2 (s31a / angkelvanatkok)
+  :aspect State
+  :polarity ump-unknown
+  :MODSTR NeutAff
+  :mode Interrogative)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt32
+Words               ehhe'  angkelvanatkok  mohetkesammahlka'
+Morphemes            None            None               None
+Morpheme Gloss(en)   None            None               None
+Morpheme Gloss(es)   None            None               None
+Morpheme Cat         None            None               None
+Word Gloss             sí           chica       se celebraba
+English Sent Gloss: 
+Spanish Sent Gloss: Sí, se le celebraba a una chica
+
+# sentence level graph:
+(s32e / enmohetkesammahlka’-00
+  :recipient (s32a / angkelvanatkok
+           :mod (s32t / tkok)
+           :ref-number Singular)
+  :aspect Habitual
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt33
+Words               usted  hizo
+Morphemes            None  None
+Morpheme Gloss(en)   None  None
+Morpheme Gloss(es)   None  None
+Morpheme Cat         None  None
+Word Gloss          usted  hizo
+English Sent Gloss: 
+Spanish Sent Gloss: Usted hizo?
+
+# sentence level graph:
+(s33h / hacer
+  :actor (s33p / person
+           :ref-person 2nd
+           :ref-number Singular)
+  :undergoer (s33t / thing)
+  :aspect Performance
+  :MODSTR NeutAff
+  :polarity ump-unknown
+  :mode Interrogative
+  :polite +)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt34
+Words                nannehlka  annanay'a     nyamenana  a'temonane      meme
+Morphemes                 None       None          None        None      None
+Morpheme Gloss(en)        None       None          None        None      None
+Morpheme Gloss(es)        None       None          None        None      None
+Morpheme Cat              None       None          None        None      None
+Word Gloss          pero antes    lo hizo  el nyamenana  la que era  mi madre
+English Sent Gloss: 
+Spanish Sent Gloss: Pero mi madre hizo antes el "nyamenana"
+
+# sentence level graph:
+(s34e / ennanay’a-00
+  :actor (s34p / person
+           :ARG0-of (s34h / have-rel-role-91
+                   :ARG1 (s34p2 / person
+                           :ref-person 1st
+                           :ref-number Singular)
+                   :ARG2 (s34m / meme)
+  :undergoer (s34f / festival
+           :name (s34n / name
+                   :op1 “nyamenana”))
+  :aspect Performance
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt35
+Words                     molyase  asvetay'annekhe  ko'o  askessoye'  astema  askessessoye'
+Morphemes                    None             None  None        None    None           None
+Morpheme Gloss(en)           None             None  None        None    None           None
+Morpheme Gloss(es)           None             None  None        None    None           None
+Morpheme Cat                 None             None  None        None    None           None
+Word Gloss          no sabemos...       vi un poco    yo     pequeña  estaba    muy pequeña
+English Sent Gloss: 
+Spanish Sent Gloss: No sé... yo vi un poco nomás cuando estaba pequeña, cuando estaba muy pequeña
+
+# sentence level graph:
+(s35e / event
+  :concession (s35e2 / engvetay’a-00
+           :experiencer (s35p / person
+                   :ref-person 1st
+                   :ref-number Singular)
+           :stimulus (s35e3 / event
+                   :modred s35e2)
+           :temporal (s35h / have-mod-91
+                   :ARG1 s35p
+                   :ARG2 (s35a / askessoye’
+                           :degree Intensifier)
+                   :aspect State
+                   :MODSTR FullAff)
+           :aspect State
+           :MODSTR FullAff))
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt36
+Words                       moyasekangkavonyahlko   meta'a
+Morphemes                                    None     None
+Morpheme Gloss(en)                           None     None
+Morpheme Gloss(es)                           None     None
+Morpheme Cat                                 None     None
+Word Gloss          pero desafortunadamente no sé  siempre
+English Sent Gloss: 
+Spanish Sent Gloss: Pero desafortunadamente no me acuerdo bien
+
+# sentence level graph:
+(s36c / contrast-91
+  :ARG1 (s36e / event)
+  :ARG2 (s36e2 / enyasekamok-00
+           :experiencer (s36p / person
+                   :ref-person 1st
+                   :ref-number Singular)
+           :stimulus (s36e3 / event
+                   :modpred s36e2)
+           :mod (s36n / nyahlko)
+           :concession (s36e4 / event)
+           :aspect State
+           :MODSTR FullNeg)
+  :aspect State)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt37
+Words                  a  veces      nde
+Morphemes           None   None     None
+Morpheme Gloss(en)  None   None     None
+Morpheme Gloss(es)  None   None     None
+Morpheme Cat        None   None     None
+Word Gloss             a  veces  siempre
+English Sent Gloss: 
+Spanish Sent Gloss: A veces siempre
+
+# sentence level graph:
+(s37e / event
+  :frequency (s37a / a-veces))
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt38
+Words                 movetay'avo  ko'o
+Morphemes                    None  None
+Morpheme Gloss(en)           None  None
+Morpheme Gloss(es)           None  None
+Morpheme Cat                 None  None
+Word Gloss          no lo vi bien    yo
+English Sent Gloss: 
+Spanish Sent Gloss: No lo vi bien
+
+# sentence level graph:
+(s38e / engvetay’a-00
+  :experiencer (s38p / person
+           :ref-person 1st
+           :ref-number Singular)
+  :stimulus (s38e / event
+           :Modpred s38)
+  :degree Intensifier
+  :aspect State
+  :MODSTR FullNeg)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt39
+Words               kessoyetkok  asvetay'a  ko'o   m'a  askehltennasonak                           anyamenana                a'mohetma
+Morphemes                  None       None  None  None              None                                 None                     None
+Morpheme Gloss(en)         None       None  None  None              None                                 None                     None
+Morpheme Gloss(es)         None       None  None  None              None                                 None                     None
+Morpheme Cat               None       None  None  None              None                                 None                     None
+Word Gloss              pequeño      lo vi    yo   eso      que te aviso  fiesta de iniciación de las mujeres  la música de campanilla
+English Sent Gloss: 
+Spanish Sent Gloss: Un poco yo vi lo que te cuento, el "anyamenana" y la música de campanilla
+
+# sentence level graph:
+(s39e / engvetay’a-00
+  :experiencer (s39p / person
+           :ref-person 1st
+           :ref-number Singular)
+  :stimulus (s39m / m’a
+           :Theme-of (s39e2 / ehltennaskama-00
+                   :actor s39p
+                   :recipient (s39p2 / person)
+                   :topic (s39f / festival
+                           :name (s39n / name
+                                   :op1 “anyamenana”)
+                           :Undergoer-of (s39e3 / enmohetma-00
+                                   :aspect Process
+                                   :MODSTR FullAff
+                                   :QUOT s39e2
+                                   :modpred s39e))
+                   :aspect Performance
+                   :MODSTR FullAff)
+  :extent (s39k / kessoye
+           :mod (s39t / tkok))
+  :aspect State
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt40
+Words                  tenno           anmohetma  alvaneyam'a
+Morphemes               None                None         None
+Morpheme Gloss(en)      None                None         None
+Morpheme Gloss(es)      None                None         None
+Morpheme Cat            None                None         None
+Word Gloss          entonces  tocaban campanilla       crecer
+English Sent Gloss: 
+Spanish Sent Gloss: Entonces las ancianas tocaban campanilla
+
+# sentence level graph:
+(s40e / enmohetma-00
+  :actor (s40p / person
+           :ARG1-of (s40h / have-mod-91
+                   :ARG2 (s40a / alvaneyam’a))
+           :ref-number Plural)
+  :aspect Habitual
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt41
+Words                kotnemok     ayseksek  angkelvanatkok     tenno        kolvaykamok   m'a  anmohetmahlkek
+Morphemes                None         None            None      None               None  None            None
+Morpheme Gloss(en)       None         None            None      None               None  None            None
+Morpheme Gloss(es)       None         None            None      None               None  None            None
+Morpheme Cat             None         None            None      None               None  None            None
+Word Gloss          se paraba  en el medio           chica  entonces  caminan alrededor   eso     las músicas
+English Sent Gloss: 
+Spanish Sent Gloss: Se paraba en el medio una chica, entonces las que tocaban la campanilla caminaban alrededor de ella
+
+# sentence level graph:
+(s41c / consecutive
+  :op1 (s41e / elatnemama-00
+           :actor (s41a / angkelvanatkok
+                   :mod (s41t / tkok)
+                   :ref-number Singular)
+           :place (s41a2 / ayseksek
+                   :op1 (s41p / person
+                           :ref-person 3rd
+                           :ref-number Plural
+                           :actor-of (s41e2 / enmohetma-00
+                                   :aspect Activity
+                                   :MODSTR FullAff)))
+           :aspect State
+           :MODSTR FullAff)
+  :op2 (s41e3 / elvaykamok-00
+           :actor s41p
+           :undergoer (s41m / m’a)
+           :aspect Endeavor
+           :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt42
+Words               kotyepohlta  ha'e     pesempo'ok
+Morphemes                  None  None           None
+Morpheme Gloss(en)         None  None           None
+Morpheme Gloss(es)         None  None           None
+Morpheme Cat               None  None           None
+Word Gloss              se hizo  allá  en Pesempo'ok
+English Sent Gloss: 
+Spanish Sent Gloss: Se hizo allá en Pesempo'ok
+
+# sentence level graph:
+(s42e / elenteyapma-00
+  :actor (s42e2 / event
+  :place (s42h / ha’e
+  :place (s42t / territory
+           :name (s42n / name
+                   :op1 “pesempo’ok”))
+  :aspect Performance
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt43
+Words               baile
+Morphemes            None
+Morpheme Gloss(en)   None
+Morpheme Gloss(es)   None
+Morpheme Cat         None
+Word Gloss          baile
+English Sent Gloss: 
+Spanish Sent Gloss: El baile
+
+# sentence level graph:
+(s43b / baile)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt44
+Words               kotyepohlta  diecinueve    de  abril
+Morphemes                  None        None  None   None
+Morpheme Gloss(en)         None        None  None   None
+Morpheme Gloss(es)         None        None  None   None
+Morpheme Cat               None        None  None   None
+Word Gloss              se hizo  diecinueve    de  abril
+English Sent Gloss: 
+Spanish Sent Gloss: Se hizo el diecinueve de abril
+
+# sentence level graph:
+(s44e / elenteyapma-00
+  :actor (s44e2 / event)
+  :temporal (s44d / date-entity
+           :day 19
+           :month April)
+  :actor Performance
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt45
+Words                    konmohetehlta  lenguana'ak
+Morphemes                         None         None
+Morpheme Gloss(en)                None         None
+Morpheme Gloss(es)                None         None
+Morpheme Cat                      None         None
+Word Gloss          tocaban campanilla   los lengua
+English Sent Gloss: 
+Spanish Sent Gloss: Los lengua tocaban la campanilla
+
+# sentence level graph:
+(s45e / enmohetma-00
+  :actor (s45p / person
+           :mod (s45e2 / ethnic-group
+                   :name (s45n / name
+                           :op1 “lenguana’ak”)
+                   :wiki “Enlhet_Sur”
+           :ref-number Plural)
+  :aspect Endeavor
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt46
+Words                 ta  asvetangvakhehlahlta  ko'o    el  diecinueve    de  abril
+Morphemes           None                  None  None  None        None  None   None
+Morpheme Gloss(en)  None                  None  None  None        None  None   None
+Morpheme Gloss(es)  None                  None  None  None        None  None   None
+Morpheme Cat        None                  None  None  None        None  None   None
+Word Gloss          PHOD    donde me fui a ver    yo    el  diecinueve    de  abril
+English Sent Gloss: 
+Spanish Sent Gloss: Allá me fui a verlo el diecinueve de abril
+
+# sentence level graph:
+(s46h / have-location-91
+  :ARG1 (s46e / engvetangvakha’-00
+           :experiencer (s46p / person
+                   :ref-person 1st
+                   :ref-number Singular)
+           :stimulus (s46e2 / event
+                   :modpred s46e)
+           :temporal (s46d / date-entity
+                   :month “April”
+                   :day 19)
+           :aspect State
+           :MODSTR FullAff)
+  :ARG2 (s46p2 / place)
+  :aspect State
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt47
+Words               metkemohlka       a'mohetmala  hengka
+Morphemes                  None              None    None
+Morpheme Gloss(en)         None              None    None
+Morpheme Gloss(es)         None              None    None
+Morpheme Cat               None              None    None
+Word Gloss              pero no  tocar campanilla     acá
+English Sent Gloss: 
+Spanish Sent Gloss: Pero acá nadie toca la campanilla
+
+# sentence level graph:
+(s47c / contrast-91
+  :ARG1 (s47e / event)
+  :ARG2 (s47e2 / exist-91
+           :ARG1 (s47p / person
+                   :Actor-of (s47e3 / enmohetma-00))
+           :place (s47h / hengka)
+           :aspect State
+           :MODSTR FullNeg))
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt48
+Words                    ma'a     maleng
+Morphemes                None       None
+Morpheme Gloss(en)       None       None
+Morpheme Gloss(es)       None       None
+Morpheme Cat             None       None
+Word Gloss          solamente  el maleng
+English Sent Gloss: 
+Spanish Sent Gloss: Solamente el maleng
+
+# sentence level graph:
+(s48e / exist-91
+  :ARG1 (s48f / festival
+             :name (s48n / name
+                     :op1 “maleng”))
+  :mod (s48m / ma’a)
+  :aspect State
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt49
+Words                   tennohlka  pesempo'opanak   angkotyepekha'  baile
+Morphemes                    None            None             None   None
+Morpheme Gloss(en)           None            None             None   None
+Morpheme Gloss(es)           None            None             None   None
+Morpheme Cat                 None            None             None   None
+Word Gloss          pero entonces   en Pesempo'ok  se hace todavía  baile
+English Sent Gloss: 
+Spanish Sent Gloss: Pero entonces en Pesempo'ok se hace todavía el baile
+
+# sentence level graph:
+(s49c / contrast-91
+  :ARG1 (s49e / event)
+  :ARG2 (s49e / elenteyapma-00
+           :actor (s49b / baile)
+           :place (s49t / territory
+                   :name (s49n / name
+                           :op1 “pesempo’opanak”))
+           :aspect Performance
+           :MODSTR FullAff)
+  :aspect State)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt50
+Words                              mmohetma
+Morphemes                              None
+Morpheme Gloss(en)                     None
+Morpheme Gloss(es)                     None
+Morpheme Cat                           None
+Word Gloss          la música de campanilla
+English Sent Gloss: 
+Spanish Sent Gloss: La música de campanilla
+
+# sentence level graph:
+(s50e / enmohetma-00
+  :aspect Process
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt51
+Words                  apehltahlemanhan  angkelvana  a'temana  colorete  hengka
+Morphemes                          None        None      None      None    None
+Morpheme Gloss(en)                 None        None      None      None    None
+Morpheme Gloss(es)                 None        None      None      None    None
+Morpheme Cat                       None        None      None      None    None
+Word Gloss          se pintaban tambien       mujer   la cosa  colorete     acá
+English Sent Gloss: 
+Spanish Sent Gloss: Y las mujeres se pintaban con colorete acá
+
+# sentence level graph:
+(s51e / entahlema-00
+  :actor (s51a / angkelvana
+           :ref-number Plural)
+  :theme (s51c / colorete)
+  :goal (s51h / hengka)
+  :aspect Habitual
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt52
+Words                 ahlempen'aona  apyasangke'
+Morphemes                      None         None
+Morpheme Gloss(en)             None         None
+Morpheme Gloss(es)             None         None
+Morpheme Cat                   None         None
+Word Gloss          en las mejillas        sabes
+English Sent Gloss: 
+Spanish Sent Gloss: En las mejillas, sabes?
+
+# sentence level graph:
+(s52e / enyasekamok-00
+  :experiencer (s52p / person
+           :ref-person 2nd
+           :ref-number Singular)
+  :stimulus (s52a / ahlempen’aona)
+  :aspect State
+  :MODSTR NeutAff
+  :mode Interrogative
+  :polarity ump-unknown)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt53
+Words               colorete
+Morphemes               None
+Morpheme Gloss(en)      None
+Morpheme Gloss(es)      None
+Morpheme Cat            None
+Word Gloss          colorete
+English Sent Gloss: 
+Spanish Sent Gloss: Con colorete
+
+# sentence level graph:
+(s53c / colorete)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt54
+Words               taye  aktemakha'  colorete
+Morphemes           None        None      None
+Morpheme Gloss(en)  None        None      None
+Morpheme Gloss(es)  None        None      None
+Morpheme Cat        None        None      None
+Word Gloss          qué?        tipo  colorete
+English Sent Gloss: 
+Spanish Sent Gloss: Qué tipo de colorete?
+
+# sentence level graph:
+(s54h / have-material-91
+  :ARG1 (s54c / colorete)
+  :ARG2 (s54u / umr-unknown)
+  :aspect State
+  :mode Interrogative
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt55
+Words                   entahle  entahleskama  a'vesvasyemala
+Morphemes                  None          None            None
+Morpheme Gloss(en)         None          None            None
+Morpheme Gloss(es)         None          None            None
+Morpheme Cat               None          None            None
+Word Gloss          se pinta...      se pinta            rojo
+English Sent Gloss: 
+Spanish Sent Gloss: Las pintamos con rojo
+
+# sentence level graph:
+(s55e / entahleskama-00
+  :actor (s55p / person
+           :ref-person 1st
+           :ref-number Plural)
+  :material (s55a / a’vesvasyemala)
+  :aspect Habitual
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt56
+Words               meyasekangko
+Morphemes                   None
+Morpheme Gloss(en)          None
+Morpheme Gloss(es)          None
+Morpheme Cat                None
+Word Gloss             no sabes?
+English Sent Gloss: 
+Spanish Sent Gloss: No conoces?
+
+# sentence level graph:
+(s56e / enyasekamok-00
+  :experiencer (s56p / person
+           :ref-person 2nd
+           :ref-number Singular)
+  :stimulus (s56e / event)
+  :aspect State
+  :MODSTR NeutNeg
+  :polarity umr-unknown
+  :mode Interrogative)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt57
+Words                 de  dónde  viene
+Morphemes           None   None   None
+Morpheme Gloss(en)  None   None   None
+Morpheme Gloss(es)  None   None   None
+Morpheme Cat        None   None   None
+Word Gloss            de  dónde  viene
+English Sent Gloss: 
+Spanish Sent Gloss: De dónde viene?
+
+# sentence level graph:
+(s57v / venir
+  :actor (s57t / thing)
+  :source (s57u / umr-unknown)
+  :aspect Performance
+  :MODSTR FullAff
+  :mode Interrogative)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt58
+Words                ehltenyay'a
+Morphemes                   None
+Morpheme Gloss(en)          None
+Morpheme Gloss(es)          None
+Morpheme Cat                None
+Word Gloss          lo compramos
+English Sent Gloss: 
+Spanish Sent Gloss: Lo compramos
+
+# sentence level graph:
+(s58e / ehltenyay’a-00
+  :actor (s58p / person
+           :ref-person 1st
+           :ref-number Plural)
+  :undergoer (s58t / thing)
+  :aspect Habitual
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt59
+Words                  ongveta'  marcantero
+Morphemes                  None        None
+Morpheme Gloss(en)         None        None
+Morpheme Gloss(es)         None        None
+Morpheme Cat               None        None
+Word Gloss          vamos a ver  marcantero
+English Sent Gloss: 
+Spanish Sent Gloss: Encontramos un marcantero
+
+# sentence level graph:
+(s59e / engvetay’a-00
+  :experiencer (s59p / person
+           :ref-person 1st
+           :ref-number Plural)
+  :stimulus (s59p2 / person
+           :ARG1-of (s59h / have-role-59
+                   :ARG2 (s59m / marcantero))
+           :ref-number Plural)
+  :aspect Habitual
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt60
+Words                  tenno  ontahle'sek  eyatoana  ontahle'senhan  hengka'e  enhlempen'aonak
+Morphemes               None         None      None            None      None             None
+Morpheme Gloss(en)      None         None      None            None      None             None
+Morpheme Gloss(es)      None         None      None            None      None             None
+Morpheme Cat            None         None      None            None      None             None
+Word Gloss          entonces     pintamos   la boca      y pintamos      éste     las mejillas
+English Sent Gloss: 
+Spanish Sent Gloss: Entonces pintamos la boca y pintamos acá, las mejillas
+
+# sentence level graph:
+((s60e / entahleskama-00
+           :actor (s60p / person
+                   :ref-person 1st
+                   :ref-number Plural)
+           :goal (s60a / and
+                   :op1 (s60e2 / eyatoana
+                           :part s60p
+                           :ref-number Singular)
+                   :op2 (s60e3 / enhlempen’aonak
+                           :mod (s60h / hengka’e)
+                           :part s60p
+                           :ref-number Plural)
+           :aspect Habitual
+           :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt61
+Words                    kohlkalayvoho'
+Morphemes                          None
+Morpheme Gloss(en)                 None
+Morpheme Gloss(es)                 None
+Morpheme Cat                       None
+Word Gloss          se vuelven colorado
+English Sent Gloss: 
+Spanish Sent Gloss: Se vuelven coloradas
+
+# sentence level graph:
+(s61e / ehlkalayvoho-00
+  :undergoer (s61t / thing
+           :ref-number Plural)
+  :aspect Habitual
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt62
+Words               tennonhan  ompengkenek  kangken'    ava'  hengka'e
+Morphemes                None         None      None    None      None
+Morpheme Gloss(en)       None         None      None    None      None
+Morpheme Gloss(es)       None         None      None    None      None
+Morpheme Cat             None         None      None    None      None
+Word Gloss           entonces      ponemos  flamenco  plumas       acá
+English Sent Gloss: 
+Spanish Sent Gloss: Y se ponían plumas de flamenco acá
+
+# sentence level graph:
+(s62e / empengkanma-00
+  :actor (s62p / person
+           :ref-person 1st
+           :ref-number Plural)
+  :theme (s62a / ava’
+           :part (s62k / kangken’)
+           :ref-number Plural)
+  :goal (s62h / hengka’e)
+  :temporal (s62o / or
+           :op1 (s62e2 / event)
+           :op2 (s62e2 / event))
+  :aspect Habitual
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt63
+Words                    tola           emmohetma
+Morphemes                None                None
+Morpheme Gloss(en)       None                None
+Morpheme Gloss(es)       None                None
+Morpheme Cat             None                None
+Word Gloss          si es que  tocamos campanilla
+English Sent Gloss: 
+Spanish Sent Gloss: Si es que tocábamos la campanilla
+
+# sentence level graph:
+(s63e / event
+  :temporal (s63e2 / enmohetma-00
+           :actor (s63p / person
+                   :ref-person 1st
+                   :ref-number Plural)
+           :aspect Habitual
+           :MODSTR FullAff))
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt64
+Words               apyasangke'
+Morphemes                  None
+Morpheme Gloss(en)         None
+Morpheme Gloss(es)         None
+Morpheme Cat               None
+Word Gloss                sabes
+English Sent Gloss: 
+Spanish Sent Gloss: Sabes?
+
+# sentence level graph:
+(s64e / enyasekamok-00
+  :experiencer (s64p / person
+                 :refer-person 2nd
+                 :refer-number Singular)
+  :stimulus (s64e2 / event
+              :Modpred s64e)
+  :Aspect State
+  :MODSTR NeutAff
+  :polarity umr-unknown
+  :mode interrogative)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt65
+Words                    tola  aya'maskama
+Morphemes                None         None
+Morpheme Gloss(en)       None         None
+Morpheme Gloss(es)       None         None
+Morpheme Cat             None         None
+Word Gloss          si es que       cantar
+English Sent Gloss: 
+Spanish Sent Gloss: Las que cantaban
+
+# sentence level graph:
+(s65e / event
+  :temporal (s65e2 / enya’maskama-00
+           :actor (s65p / person
+                   :ref-person 3rd
+                   :ref-number Singular)
+           :aspect Habitual
+           :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt66
+Words                    tola  aya'maskama   kopehlketek       apkatek  kangken'    ava'  kotahlnohonhan
+Morphemes                None         None          None          None      None    None            None
+Morpheme Gloss(en)       None         None          None          None      None    None            None
+Morpheme Gloss(es)       None         None          None          None      None    None            None
+Morpheme Cat             None         None          None          None      None    None            None
+Word Gloss          si es que       cantar  se enrollaba  en la cabeza  flamenco  plumas  vestirse lindo
+English Sent Gloss: 
+Spanish Sent Gloss: Las que cantában, enrollaban en la cabeza plumas de flamenco y se vestían linda
+
+# sentence level graph:
+(s66h / have-condition-91
+  :ARG1 (s66e / enya’maskama-00
+           :actor (s66p / person
+                   :ref-person 3rd
+                   :ref-number Singular)
+           :aspect Habitual
+           :MODSTR FullAff)
+  :ARG2 (s66a / and
+           :op1 (s66e2 / empehlketma-00
+                   :actor s66p
+                   :theme (s66a2 / ava’
+                           :part (s66k / kangken’)
+                           :ref-number Plural)
+                   :goal (s66a3 / apkatek
+                           :part s66p)
+                   :aspect Habitual
+                   :MODSTR FullAff)
+           :op2 (s66e3 / elentahlnema-00
+                   :actor s66p
+                   :degree Intensifier
+                   :aspect Habitual
+                   :MODSTR FullAff)))
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt67
+Words                    tola           akmohetma  angkelvana  a'vaneyam
+Morphemes                None                None        None       None
+Morpheme Gloss(en)       None                None        None       None
+Morpheme Gloss(es)       None                None        None       None
+Morpheme Cat             None                None        None       None
+Word Gloss          si es que  toca la campanilla       mujer     crecer
+English Sent Gloss: 
+Spanish Sent Gloss: Si es que canta una mujer vieja
+
+# sentence level graph:
+(s67e / event
+  :temporal (s67e2 / enmohetma-00
+           :actor (s67a / angkelvana
+                   :mod (s67a2 / a’vaneyam)
+                   :ref-number Singular)
+           :aspect Endeavor
+           :MODSTR FullAff))
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt68
+Words                 na  antemak   m'a
+Morphemes           None     None  None
+Morpheme Gloss(en)  None     None  None
+Morpheme Gloss(es)  None     None  None
+Morpheme Cat        None     None  None
+Word Gloss           emm      era   eso
+English Sent Gloss: 
+Spanish Sent Gloss: Así era eso
+
+# sentence level graph:
+(s68i / identity-91
+  :ARG1 (s68e / event)
+  :ARG1 (s68m / m’a)
+  :aspect State
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt69
+Words               hlama'ma  a'temakha'  ham'e
+Morphemes               None        None   None
+Morpheme Gloss(en)      None        None   None
+Morpheme Gloss(es)      None        None   None
+Morpheme Cat            None        None   None
+Word Gloss             mucho      manera    eso
+English Sent Gloss: 
+Spanish Sent Gloss: Había muchas partes [esa tradición]
+
+# sentence level graph:
+(s69h / have-quant-91
+  :ARG1 (s69t / thing
+           :Part-of (s69h2 / ham’e))
+  :ARG2 (s69h3 / hlama’ma)
+  :aspect State
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt70
+Words                  tenyo  ammaske'  ammaske'  kehlvoye'
+Morphemes               None      None      None       None
+Morpheme Gloss(en)      None      None      None       None
+Morpheme Gloss(es)      None      None      None       None
+Morpheme Cat            None      None      None       None
+Word Gloss          entonces   terminó   terminó      ahora
+English Sent Gloss: 
+Spanish Sent Gloss: Y terminó ahora?
+
+# sentence level graph:
+(s70e / emmaskema-00
+  :undergoer (s70e / event)
+  :temporal (s70k / kehlvoye’)
+  :aspect Performance
+  :modstr FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt71
+Words               ammaskemke'  kehlvoyena
+Morphemes                  None        None
+Morpheme Gloss(en)         None        None
+Morpheme Gloss(es)         None        None
+Morpheme Cat               None        None
+Word Gloss              terminó       ahora
+English Sent Gloss: 
+Spanish Sent Gloss: Terminó ahora
+
+# sentence level graph:
+(s70e / emmaskema-00
+  :undergoer (s70e / event)
+  :temporal (s70k / kehlvoyena)
+  :aspect Performance
+  :modstr FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt72
+Words               metkongkoye'  antemak  kehlvoyena
+Morphemes                   None     None        None
+Morpheme Gloss(en)          None     None        None
+Morpheme Gloss(es)          None     None        None
+Morpheme Cat                None     None        None
+Word Gloss                  nada      hay       ahora
+English Sent Gloss: 
+Spanish Sent Gloss: realmente no existe ahora
+
+# sentence level graph:
+(s72e / exist-91
+  :ARG1 (s72e2 / event)
+  :temporal (s72k / kehlvoyena)
+  :aspect State
+  :MODSTR FullNeg)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt73
+Words               nehlanyahlko        a'vay'ona       misionero
+Morphemes                   None             None            None
+Morpheme Gloss(en)          None             None            None
+Morpheme Gloss(es)          None             None            None
+Morpheme Cat                None             None            None
+Word Gloss          posiblemente  cuando llegaron  los misioneros
+English Sent Gloss: 
+Spanish Sent Gloss: Posiblemente por causa de la llegada de los misioneros, desafortunadamente
+
+# sentence level graph:
+(s73h / have-reason-91
+  :ARG1 (s73e / event)
+  :ARG2 (s73e / engvay’a-00
+           :actor (s73p / person
+                   :ARG0-of (s73h2 / have-role-91
+                           :ARG2 (s73m / misionero))
+                   :ref-number Singular)
+           :aspect Performance
+           :MODSTR FullAff)
+  :mod (s73n / nyahlko)
+  :aspect State
+  :MODSTR NeutAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt74
+Words               nemangkoyehlnanenne'  hlemmea'ehla'
+Morphemes                           None           None
+Morpheme Gloss(en)                  None           None
+Morpheme Gloss(es)                  None           None
+Morpheme Cat                        None           None
+Word Gloss                   todo el día          antes
+English Sent Gloss: 
+Spanish Sent Gloss: Se hacía todo el día antes
+
+# sentence level graph:
+(s74e / event
+  :duration (s74n / nemangkoyehlnanenne’)
+  :temporal (s74h / hlemmea’ehla’)
+  :aspect Endeavor
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt75
+Words               baile
+Morphemes            None
+Morpheme Gloss(en)   None
+Morpheme Gloss(es)   None
+Morpheme Cat         None
+Word Gloss          baile
+English Sent Gloss: 
+Spanish Sent Gloss: El baile
+
+# sentence level graph:
+(s75b / baile)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt76
+Words                            mohetma
+Morphemes                           None
+Morpheme Gloss(en)                  None
+Morpheme Gloss(es)                  None
+Morpheme Cat                        None
+Word Gloss          música de campanilla
+English Sent Gloss: 
+Spanish Sent Gloss: La música de campanilla
+
+# sentence level graph:
+(s76e / enmohetma
+  :aspect Process
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt77
+Words               kangken'    ava'
+Morphemes               None    None
+Morpheme Gloss(en)      None    None
+Morpheme Gloss(es)      None    None
+Morpheme Cat            None    None
+Word Gloss          flamenco  plumas
+English Sent Gloss: 
+Spanish Sent Gloss: Con plumas de flamenco
+
+# sentence level graph:
+(s77a / ava’
+  :part (s77k / kangken’)
+  :ref-number Plural)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt78
+Words               kangken'    ava'  kopehlketek   m'a  angkelvana           akmohetma
+Morphemes               None    None         None  None        None                None
+Morpheme Gloss(en)      None    None         None  None        None                None
+Morpheme Gloss(es)      None    None         None  None        None                None
+Morpheme Cat            None    None         None  None        None                None
+Word Gloss          flamenco  plumas       se ata   eso       mujer  toca la campanilla
+English Sent Gloss: 
+Spanish Sent Gloss: La mujer que tocaba la campanilla ponía plumas de flamenco
+
+# sentence level graph:
+(s78e / empehlketma-00
+  :actor (s78a / angkelvana-00
+           :Actor-of (s78e2 / enmohetma-00
+                   :aspect Activity
+                   :MODSTR FullAff)
+           :ref-number Singular)
+  :theme (s78a2 / ava’
+           :part (s78k / kangken’)
+           :ref-number Plural)
+  :aspect Habitual
+  :MODSTR FullAff)
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt79
+Words               kohlhlengkesek  amanye'  aykok  angkelvana
+Morphemes                     None     None   None        None
+Morpheme Gloss(en)            None     None   None        None
+Morpheme Gloss(es)            None     None   None        None
+Morpheme Cat                  None     None   None        None
+Word Gloss            hacen viajar  primero  chica       mujer
+English Sent Gloss: 
+Spanish Sent Gloss: Hicían caminar en frente la chica
+
+# sentence level graph:
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt80
+Words                tenyonhan  angkotyepok   m'a        sevalak
+Morphemes                 None         None  None           None
+Morpheme Gloss(en)        None         None  None           None
+Morpheme Gloss(es)        None         None  None           None
+Morpheme Cat              None         None  None           None
+Word Gloss          y entonces        salía   eso  tipo de araña
+English Sent Gloss: 
+Spanish Sent Gloss: Y entonces salía eso, el "sevalak"
+
+# sentence level graph:
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt81
+Words                   sevala  konnapahlka'   m'a  angkelvana  alvaneyam'a
+Morphemes                 None          None  None        None         None
+Morpheme Gloss(en)        None          None  None        None         None
+Morpheme Gloss(es)        None          None  None        None         None
+Morpheme Cat              None          None  None        None         None
+Word Gloss          el sevalak   se le pelea   eso       mujer       crecer
+English Sent Gloss: 
+Spanish Sent Gloss: El sevalak y las ancianas se peleaban
+
+# sentence level graph:
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt82
+Words                konyo'ok   m'a  angkelvanatkohlke              koma'a  ehlkayengvomok
+Morphemes                None  None               None                None            None
+Morpheme Gloss(en)       None  None               None                None            None
+Morpheme Gloss(es)       None  None               None                None            None
+Morpheme Cat             None  None               None                None            None
+Word Gloss          protegían   eso           la chica  para que no puedan          llevar
+English Sent Gloss: 
+Spanish Sent Gloss: Protegían a la chica para que [el sevalak] no puedan alzarla
+
+# sentence level graph:
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt83
+Words               hlemmeahlta
+Morphemes                  None
+Morpheme Gloss(en)         None
+Morpheme Gloss(es)         None
+Morpheme Cat               None
+Word Gloss                antes
+English Sent Gloss: 
+Spanish Sent Gloss: Antes
+
+# sentence level graph:
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt84
+Words               kotyepok    sevalanak              koma'a  ehlkayene'   m'a  apkenna'ana   m'a  angkelvana
+Morphemes               None         None                None        None  None         None  None        None
+Morpheme Gloss(en)      None         None                None        None  None         None  None        None
+Morpheme Gloss(es)      None         None                None        None  None         None  None        None
+Morpheme Cat            None         None                None        None  None         None  None        None
+Word Gloss            salían  los sevalak  para que no puedan      llevar   eso      hombres   eso       mujer
+English Sent Gloss: 
+Spanish Sent Gloss: Salía el sevalak, y no podía tocar a la chica
+
+# sentence level graph:
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt85
+Words               konmeyo'ok   m'a       to   anmohetkeskama
+Morphemes                 None  None     None             None
+Morpheme Gloss(en)        None  None     None             None
+Morpheme Gloss(es)        None  None     None             None
+Morpheme Cat              None  None     None             None
+Word Gloss           protegían   eso  las que  cantaban a ella
+English Sent Gloss: 
+Spanish Sent Gloss: Las que tocaban la campanilla a ella la protegían
+
+# sentence level graph:
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt86
+Words               kolya'nahlka'  hlepop
+Morphemes                    None    None
+Morpheme Gloss(en)           None    None
+Morpheme Gloss(es)           None    None
+Morpheme Cat                 None    None
+Word Gloss            se tiraban   tierra
+English Sent Gloss: 
+Spanish Sent Gloss: Se tiraban en el suelo unos a otros
+
+# sentence level graph:
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt87
+Words               hlemmeahltahla
+Morphemes                     None
+Morpheme Gloss(en)            None
+Morpheme Gloss(es)            None
+Morpheme Cat                  None
+Word Gloss                   antes
+English Sent Gloss: 
+Spanish Sent Gloss: Antes
+
+# sentence level graph:
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt88
+Words               asvetay'ave'  ko'o
+Morphemes                   None  None
+Morpheme Gloss(en)          None  None
+Morpheme Gloss(es)          None  None
+Morpheme Cat                None  None
+Word Gloss            lo vi bien    yo
+English Sent Gloss: 
+Spanish Sent Gloss: Lo vi bien yo
+
+# sentence level graph:
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt89
+Words                 ahlenonak
+Morphemes                  None
+Morpheme Gloss(en)         None
+Morpheme Gloss(es)         None
+Morpheme Cat               None
+Word Gloss          lo que dije
+English Sent Gloss: 
+Spanish Sent Gloss: Lo que dije
+
+# sentence level graph:
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt90
+Words               tennonhan   m'a  angkalantahlkanhan   m'a  allavahaykok
+Morphemes                None  None                None  None          None
+Morpheme Gloss(en)       None  None                None  None          None
+Morpheme Gloss(es)       None  None                None  None          None
+Morpheme Cat             None  None                None  None          None
+Word Gloss           entonces   eso          se montaba   eso         burro
+English Sent Gloss: 
+Spanish Sent Gloss: Entonces se montaba también burros
+
+# sentence level graph:
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt91
+Words               allavahaykok  mo'o  aktemakhahltahla  yetahleng
+Morphemes                   None  None              None       None
+Morpheme Gloss(en)          None  None              None       None
+Morpheme Gloss(es)          None  None              None       None
+Morpheme Cat                None  None              None       None
+Word Gloss                 burro  otro              tipo    caballo
+English Sent Gloss: 
+Spanish Sent Gloss: El burro era otra clase de caballo
+
+# sentence level graph:
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt92
+Words               akvetay'aye'  alyavay'ahlta      aykaok
+Morphemes                   None           None        None
+Morpheme Gloss(en)          None           None        None
+Morpheme Gloss(es)          None           None        None
+Morpheme Cat                None           None        None
+Word Gloss                 viste         grande  sus orejas
+English Sent Gloss: 
+Spanish Sent Gloss: Vista ya, con las orejas grandes?
+
+# sentence level graph:
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt93
+Words               ne'avo  yetahleng
+Morphemes             None       None
+Morpheme Gloss(en)    None       None
+Morpheme Gloss(es)    None       None
+Morpheme Cat          None       None
+Word Gloss          parece    caballo
+English Sent Gloss: 
+Spanish Sent Gloss: Parecido a un caballo?
+
+# sentence level graph:
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt94
+Words               ehhe'  ne'avo  yetahleng       payhamnek
+Morphemes            None    None       None            None
+Morpheme Gloss(en)   None    None       None            None
+Morpheme Gloss(es)   None    None       None            None
+Morpheme Cat         None    None       None            None
+Word Gloss             sí  parece    caballo  tamaño mediano
+English Sent Gloss: 
+Spanish Sent Gloss: Sí, como un caballo, de tamaño mediano
+
+# sentence level graph:
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt95
+Words               kalantahlka'
+Morphemes                   None
+Morpheme Gloss(en)          None
+Morpheme Gloss(es)          None
+Morpheme Cat                None
+Word Gloss                 subir
+English Sent Gloss: 
+Spanish Sent Gloss: Se montaba
+
+# sentence level graph:
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt96
+Words               a'vetammahlkohlnanek  kaha'     metko  antahak  kehlvoyena
+Morphemes                           None   None      None     None        None
+Morpheme Gloss(en)                  None   None      None     None        None
+Morpheme Gloss(es)                  None   None      None     None        None
+Morpheme Cat                        None   None      None     None        None
+Word Gloss                       se veía   allá  no había       es       ahora
+English Sent Gloss: 
+Spanish Sent Gloss: Se veía allá, no hay más ahora
+
+# sentence level graph:
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt97
+Words               vanhlakha   kohlkalantek  nenhletana
+Morphemes                None           None        None
+Morpheme Gloss(en)       None           None        None
+Morpheme Gloss(es)       None           None        None
+Morpheme Cat             None           None        None
+Word Gloss          solamente  se lo montaba    la gente
+English Sent Gloss: 
+Spanish Sent Gloss: Solamente eso, la gente montaba
+
+# sentence level graph:
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt98
+Words               anmangkola  mo'o  nekha'   kohlkalantek
+Morphemes                 None  None    None           None
+Morpheme Gloss(en)        None  None    None           None
+Morpheme Gloss(es)        None  None    None           None
+Morpheme Cat              None  None    None           None
+Word Gloss          si se iban  otro    lado  se lo montaba
+English Sent Gloss: 
+Spanish Sent Gloss: Si se iban en otro lugar, se lo montaba
+
+# sentence level graph:
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt99
+Words               kessetav'oye'   m'a  allavahaykok
+Morphemes                    None  None          None
+Morpheme Gloss(en)           None  None          None
+Morpheme Gloss(es)           None  None          None
+Morpheme Cat                 None  None          None
+Word Gloss                pequeño   eso         burro
+English Sent Gloss: 
+Spanish Sent Gloss: Es chico eso, un burro
+
+# sentence level graph:
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt100
+Words               vanhlakha  yenna'temanhan  kohlong
+Morphemes                None            None     None
+Morpheme Gloss(en)       None            None     None
+Morpheme Gloss(es)       None            None     None
+Morpheme Cat             None            None     None
+Word Gloss          solamente          fuerte    viaja
+English Sent Gloss: 
+Spanish Sent Gloss: Solamente eso podía viajar rápidamente
+
+# sentence level graph:
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt101
+Words               hlemmea'tahla        nenhlet
+Morphemes                    None           None
+Morpheme Gloss(en)           None           None
+Morpheme Gloss(es)           None           None
+Morpheme Cat                 None           None
+Word Gloss                  antes  los indígenas
+English Sent Gloss: 
+Spanish Sent Gloss: Los indígenas de antes
+
+# sentence level graph:
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt102
+Words               na'vanhla'  a'na'toskama   pahlka  yetahleng
+Morphemes                 None          None     None       None
+Morpheme Gloss(en)        None          None     None       None
+Morpheme Gloss(es)        None          None     None       None
+Morpheme Cat              None          None     None       None
+Word Gloss           solamente  sus animales  también    caballo
+English Sent Gloss: 
+Spanish Sent Gloss: Eran sus únicos animales, junto con caballos
+
+# sentence level graph:
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt103
+Words               apyasangke'  yetahleng
+Morphemes                  None       None
+Morpheme Gloss(en)         None       None
+Morpheme Gloss(es)         None       None
+Morpheme Cat               None       None
+Word Gloss                sabes    caballo
+English Sent Gloss: 
+Spanish Sent Gloss: Conoces el caballo?
+
+# sentence level graph:
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+
+# :: snt104
+Words                pahlka  yetahleng  allavahaykok  kohlehlkalanto
+Morphemes              None       None          None            None
+Morpheme Gloss(en)     None       None          None            None
+Morpheme Gloss(es)     None       None          None            None
+Morpheme Cat           None       None          None            None
+Word Gloss          también    caballo         burro           subir
+English Sent Gloss: 
+Spanish Sent Gloss: Tanto el caballo como el burro se montaban
+
+# sentence level graph:
+
+
+# alignment:
+
+# document level annotation:
+
+
+
+
+

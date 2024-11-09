@@ -1,0 +1,1067 @@
+user name:
+user id:
+file language: chinese
+file format: plain_text
+Doc ID in database:
+export time:
+
+# :: snt1	Sentence: 香港 及 深圳 受 暴雨 重创 ， 多地 出现 水浸 和 山泥 倾泻 。 香港 启动 为期 16 小时 的 “ 极端 情况 ” ， 当局 形容 雨势 “ 五百年 一 遇 ” 。
+
+# sentence level graph
+(s1a / and
+  :op1 (s1x / 重创-01
+         :ARG1 (s1a2 / and
+                 :op1 (s1l / location
+                        :name (s1n / name
+                                :op1 "香港"))
+                 :op2 (s1l2 / location
+                        :name (s1n2 / name
+                                :op2 "深圳")))
+         :ARG0 (s1w / 暴雨)
+         :Aspect performance
+         :MODSTR FullAff)
+  :op2 (s1x2 / 出现-01
+         :location (s1l3 / location
+                     :mod (s1q / 多))
+         :ARG1 (s1a3 / and
+                 :op1 (s1w2 / 水浸)
+                 :op2 (s1m / 山泥倾泻))
+         :Aspect performance
+         :MODSTR FullAff)
+  :op3 (s1x3 / 启动-01
+         :ARG0 s1l
+         :ARG1 (s1s / 情况
+                 :mod (s1e / 极端)
+                 :duration (s1t / time-quantity
+                             :quant 16
+                             :unit (s1h / 小时)))
+         :Aspect performance
+         :MODSTR FullAff)
+  :op4 (s1x4 / 形容-01
+         :ARG0 (s1a4 / 当局)
+         :ARG1 (s1r / 雨势)
+         :manner (s1f / 遇-01
+                   :frequency (s1t2 / time-quantity
+                                :quant 500
+                                :unit (s1y / 年))
+                   :Aspect habitual
+                   :MODSTR FullAff)
+         :Aspect performance
+         :MODSTR FullAff))
+
+# alignment:
+s1a: 0-0
+s1a2: 0-0
+s1a3: 0-0
+s1a4: 0-0
+s1e: 0-0
+s1f: 0-0
+s1h: 0-0
+s1l: 0-0
+s1l2: 0-0
+s1l3: 0-0
+s1m: 0-0
+s1n: 0-0
+s1n2: 0-0
+s1q: 0-0
+s1r: 0-0
+s1s: 0-0
+s1t: 0-0
+s1t2: 0-0
+s1w: 0-0
+s1w2: 0-0
+s1x: 0-0
+s1x2: 0-0
+s1x3: 0-0
+s1x4: 0-0
+s1y: 0-0
+
+# document level annotation:
+
+# :: snt3	Sentence: 受 风暴 海葵 残留 云带 影响 ， 香港 各区 7 日 起 普遍 降 暴雨 ， 洪水 涌入 港铁 黄大仙 站 的 大堂 和 月台 。
+
+# sentence level graph
+(s2a / and-91
+  :op1 (s2x / 降-01
+         :ARG1 (s2x2 / 暴雨)
+         :location (s2x3 / 各区
+                     :part-of (s2x4 / 香港))
+         :time (s2d / date-entity
+                  :day 7)
+         :manner (s2x5 / 普遍)
+         :cause (s2x6 / 影响-01
+                  :ARG1 (s2x7 / 云带
+                          :mod (s2x8 / 残留)
+                          :consist-of (s2x9 / 海葵
+                                        :mod (s2x10 / 风暴)))
+                  :Aspect habitual
+                  :MODSTR FullAff)
+         :Aspect habitual
+         :MODSTR FullAff)
+  :op2 (s2x11 / 涌入-01
+         :ARG1 (s2x12 / 洪水)
+         :ARG2 (s2a2 / and
+                 :op1 (s2x13 / 大堂
+                        :part-of (s2x14 / 站
+                                   :name (s2n / name
+                                           :op1 "港铁"
+                                           :op2 "黄大仙")))
+                 :op2 (s2x15 / 月台
+                        :part-of s2x14))
+         :Aspect performance
+         :MODSTR FullAff))
+
+# alignment:
+s2a: 0-0
+s2a2: 0-0
+s2d: 0-0
+s2n: 0-0
+s2x: 0-0
+s2x10: 0-0
+s2x11: 0-0
+s2x12: 0-0
+s2x13: 0-0
+s2x14: 0-0
+s2x15: 0-0
+s2x2: 0-0
+s2x3: 0-0
+s2x4: 0-0
+s2x5: 0-0
+s2x6: 0-0
+s2x7: 0-0
+s2x8: 0-0
+s2x9: 0-0
+
+# document level annotation:
+
+# :: snt5	Sentence: 邻近 地铁站 的 黄大仙 中心 是 另 一个 重灾区 ， 地下 底层 的 餐厅 8 日 被 淹没 ， 洪水 浸泡 著 扶手 电梯 ， 漂浮 着 桌椅 等 杂物 。
+
+# sentence level graph
+(s3a / and-91
+  :op1 (s3x / 是-01
+          :ARG1 (s3x2 / 中心
+                  :mod (s3x3 / 黄大仙)
+                  :location (s3x4 / 地铁站
+                              :mod (s3x5 / 邻近)))
+          :ARG2 (s3x6 / 重灾区
+                  :mod (s3x7 / 另)
+                  :quant 1
+                  :unit (s3x8 / 个))
+          :Aspect state
+          :MODSTR FullAff)
+  :op2 (s3x9 / 淹没-01
+          :ARG1 (s3x10 / 餐厅
+                  :location (s3x11 / 底层
+                              :mod (s3x12 / 地下))
+                  :time (s3d / date-entity
+                          :day 8))
+          :Aspect performance
+          :MODSTR FullAff)
+  :op3 (s3x13 / 浸泡-01
+          :ARG1 (s3x14 / 电梯
+                  :mod (s3x15 / 扶手))
+          :ARG2 (s3x16 / 洪水)
+          :Aspect performance
+          :MODSTR FullAff)
+  :op4 (s3x17 / 漂浮-01
+          :ARG1 (s3x18 / 杂物
+                  :mod (s3x19 / 等)
+                  :example (s3x20 / 桌椅))
+          :Aspect performance
+          :MODSTR FullAff))
+
+# alignment:
+s3a: 0-0
+s3d: 0-0
+s3x: 0-0
+s3x10: 0-0
+s3x11: 0-0
+s3x12: 0-0
+s3x13: 0-0
+s3x14: 0-0
+s3x15: 0-0
+s3x16: 0-0
+s3x17: 0-0
+s3x18: 0-0
+s3x19: 0-0
+s3x2: 0-0
+s3x20: 0-0
+s3x3: 0-0
+s3x4: 0-0
+s3x5: 0-0
+s3x6: 0-0
+s3x7: 0-0
+s3x8: 0-0
+s3x9: 0-0
+
+# document level annotation:
+
+# :: snt7	Sentence: 香港 几乎 所有 巴士 和 电车 服务 都 暂停 数 小时 ， 直至 下午 恢复 ， 港铁 多个 站点 需要 关闭 。
+
+# sentence level graph
+(s4a / and-91
+  :op1 (s4x / 暂停-01
+          :ARG1 (s4x2 / 服务-01
+                  :ARG0 (s4a2 / and
+                          :op1 (s4x3 / 巴士)
+                          :op2 (s4x4 / 电车))
+                  :location (s4l / location-91
+                              :name (s4n / name
+                                      :op1 "香港"))
+                  :quant (s4q / 所有
+                           :mod (s4q2 / 几乎)))
+          :duration (s4t / 时间-quantity
+                      :quant "数"
+                      :unit (s4u / 小时))
+          :mod (s4m / 都)
+          :Aspect habitual
+          :MODSTR FullAff)
+  :op2 (s4x5 / 恢复-01
+          :ARG1 s4x2
+          :temporal (s4x6 / 直至
+                      :op1 (s4t2 / 下午))
+          :Aspect performance
+          :MODSTR FullAff)
+  :op3 (s4x7 / 需要-01
+          :ARG1 (s4x8 / 关闭-01
+                  :ARG1 (s4x9 / 站点
+                          :quant "多个"
+                          :location (s4l2 / location-91
+                                      :name (s4n2 / name
+                                              :op1 "港铁"))))
+          :Aspect habitual
+          :MODSTR FullAff))
+
+# alignment:
+s4a: 0-0
+s4a2: 0-0
+s4l: 0-0
+s4l2: 0-0
+s4m: 0-0
+s4n: 0-0
+s4n2: 0-0
+s4q: 0-0
+s4q2: 0-0
+s4t: 0-0
+s4t2: 0-0
+s4u: 0-0
+s4x: 0-0
+s4x2: 0-0
+s4x3: 0-0
+s4x4: 0-0
+s4x5: 0-0
+s4x6: 0-0
+s4x7: 0-0
+s4x8: 0-0
+s4x9: 0-0
+
+# document level annotation:
+
+# :: snt9	Sentence: 气象 机构 天文台 两小时 内 相继 发出 黄色 、 红色 和 最 高 级别 的 黑色 暴雨 警告 信号 ， “ 黑雨 ” 一共 维持 超过 16 小时 。
+
+# sentence level graph
+(s5a / and
+  :op1 (s5x / 发出-01
+          :ARG0 (s5x2 / 机构
+                  :mod (s5x3 / 气象))
+          :ARG0 (s5x4 / 天文台)
+          :ARG1 (s5x5 / 信号
+                  :mod (s5x6 / 警告)
+                  :mod (s5x7 / 暴雨)
+                  :mod (s5a2 / and
+                         :op1 (s5x8 / 黄色)
+                         :op2 (s5x9 / 红色)
+                         :op3 (s5x10 / 黑色
+                                :mod (s5x11 / 最高级别))))
+          :temporal (s5x12 / 内
+                      :quant 2
+                      :unit (s5x13 / 小时))
+          :Aspect performance
+          :MODSTR FullAff)
+  :op2 (s5x14 / 维持-01
+          :ARG1 (s5x15 / 雨
+                  :mod (s5x16 / 黑)
+                  :mod (s5x17 / “)
+                  :mod (s5x18 / ”))
+          :duration (s5x19 / 超过-91
+                      :quant 16
+                      :unit (s5x20 / 小时))
+          :Aspect performance
+          :MODSTR FullAff))
+
+# alignment:
+s5a: 0-0
+s5a2: 0-0
+s5x: 0-0
+s5x10: 0-0
+s5x11: 0-0
+s5x12: 0-0
+s5x13: 0-0
+s5x14: 0-0
+s5x15: 0-0
+s5x16: 0-0
+s5x17: 0-0
+s5x18: 0-0
+s5x19: 0-0
+s5x2: 0-0
+s5x20: 0-0
+s5x3: 0-0
+s5x4: 0-0
+s5x5: 0-0
+s5x6: 0-0
+s5x7: 0-0
+s5x8: 0-0
+s5x9: 0-0
+
+# document level annotation:
+
+# :: snt11	Sentence: 政府 又 首次 启动 极端 情况 ， 全 港 学校 停课 ， 大部分 上班族 无需 上班 。 公立 医疗 机构 医管局 指 ， 星期五 下午 有 110 人 在 暴雨 中 受伤 送院 ， 四人 情况 严重 。
+
+# sentence level graph
+(s6a / and
+  :op1 (s6x / 启动-01
+          :ARG0 (s6g / 政府)
+          :ARG1 (s6s / 情况
+                  :mod (s6e / 极端))
+          :mod (s6f / 首次)
+          :mod (s6a2 / 又)
+          :Aspect performance
+          :MODSTR FullAff
+          :cause-of (s6a3 / and
+                      :op1 (s6x2 / 停课-01
+                             :ARG0 (s6s2 / 学校
+                                     :mod (s6a4 / 全
+                                           :op1 (s6c / 港)))
+                             :Aspect performance
+                             :MODSTR FullAff)
+                      :op2 (s6x3 / 上班-01
+                             :ARG0 (s6w / 上班族
+                                     :mod (s6m / 大部分))
+                             :polarity -
+                             :Aspect habitual
+                             :MODSTR FullNeg)))
+  :op2 (s6x4 / 指-01
+          :ARG0 (s6o / 机构
+                  :mod (s6h / 医疗)
+                  :mod (s6p / 公立)
+                  :name (s6n / name
+                          :op1 "医管局"))
+          :ARG1 (s6x5 / 送院-01
+                  :ARG0 (s6p2 / 人
+                          :quant 110)
+                  :ARG1 (s6i / 伤-01
+                          :ARG0 s6p2
+                          :ARG1 (s6r / 雨
+                                  :mod (s6s3 / 暴))
+                          :location (s6l / 中)
+                          :Aspect performance
+                          :MODSTR FullAff)
+                  :temporal (s6t / time
+                              :dayperiod (s6a5 / 下午)
+                              :weekday (s6d / day
+                                         :name (s6n2 / name
+                                                 :op1 "星期五")))
+                  :Aspect performance
+                  :MODSTR FullAff)
+          :ARG1 (s6s4 / 情况
+                  :ARG1-of (s6x6 / 严重-01
+                             :ARG0 (s6p3 / 人
+                                     :quant 4))
+                  :Aspect state
+                  :MODSTR FullAff)
+          :Aspect performance
+          :MODSTR FullAff))
+
+# alignment:
+s6a: 0-0
+s6a2: 0-0
+s6a3: 0-0
+s6a4: 0-0
+s6a5: 0-0
+s6c: 0-0
+s6d: 0-0
+s6e: 0-0
+s6f: 0-0
+s6g: 0-0
+s6h: 0-0
+s6i: 0-0
+s6l: 0-0
+s6m: 0-0
+s6n: 0-0
+s6n2: 0-0
+s6o: 0-0
+s6p: 0-0
+s6p2: 0-0
+s6p3: 0-0
+s6r: 0-0
+s6s: 0-0
+s6s2: 0-0
+s6s3: 0-0
+s6s4: 0-0
+s6t: 0-0
+s6w: 0-0
+s6x: 0-0
+s6x2: 0-0
+s6x3: 0-0
+s6x4: 0-0
+s6x5: 0-0
+s6x6: 0-0
+
+# document level annotation:
+
+# :: snt13	Sentence: 天文台 在 星期四 晚 十一 时 至 午夜 录得 158.1 毫米 的 每 小时 雨量 ， 创下 1884 年 有 纪录 以来 的 最高 。
+
+# sentence level graph
+(s7x / 录得-01
+  :ARG0 (s7x2 / 天文台)
+  :location (s7x3 / 在
+              :op1 (s7t / 时间-01
+                    :day (s7d / day
+                          :weekday (s7w / 星期四))
+                    :time (s7h / hour
+                           :op1 (s7h2 / 十一)
+                           :op2 (s7h3 / 至
+                                 :op1 (s7h4 / 午夜)))))
+  :ARG1 (s7x4 / 雨量
+          :quant (s7q / 158.1
+                   :unit (s7u / 毫米))
+          :frequency (s7f / 每小时))
+  :Aspect performance
+  :MODSTR FullAff
+  :ARG1-of (s7x5 / 创下-01
+              :ARG2 (s7x6 / 高
+                      :degree (s7x7 / 最)
+                      :time (s7t2 / 时间-01
+                              :start (s7y / year
+                                       :quant 1884)
+                              :duration (s7d2 / 有
+                                          :op1 (s7r / 纪录
+                                                :mod (s7s / 以来)))))))
+
+# alignment:
+s7d: 0-0
+s7d2: 0-0
+s7f: 0-0
+s7h: 0-0
+s7h2: 0-0
+s7h3: 0-0
+s7h4: 0-0
+s7q: 0-0
+s7r: 0-0
+s7s: 0-0
+s7t: 0-0
+s7t2: 0-0
+s7u: 0-0
+s7w: 0-0
+s7x: 0-0
+s7x2: 0-0
+s7x3: 0-0
+s7x4: 0-0
+s7x5: 0-0
+s7x6: 0-0
+s7x7: 0-0
+s7y: 0-0
+
+# document level annotation:
+
+# :: snt15	Sentence: 一 河 之 隔 的 深圳 同样 受到 暴雨 影响 ， 位于 罗湖 的 深圳 火车站 ， 出入口 同样 遭遇 水浸 ， 约 一百 人 被 困 于 站内 ， 由 深圳 开往 多 地 的 列车 要 停驶 。
+
+# sentence level graph
+(s8a / and
+  :op1 (s8x / 影响-01
+          :ARG1 (s8x2 / 深圳
+                  :location (s8x3 / 隔-01
+                              :ARG1 (s8x4 / 河
+                                      :quant 1)
+                              :Aspect state
+                              :MODSTR FullAff))
+          :ARG0 (s8x5 / 暴雨)
+          :mod (s8x6 / 同样)
+          :Aspect performance
+          :MODSTR FullAff)
+  :op2 (s8x7 / 遭遇-01
+          :ARG1 (s8x8 / 出入口
+                  :part (s8x9 / 火车站
+                          :location (s8x10 / 罗湖)
+                          :part-of s8x2))
+          :ARG2 (s8x11 / 水浸)
+          :mod (s8x12 / 同样)
+          :Aspect performance
+          :MODSTR FullAff)
+  :op3 (s8x13 / 困-01
+          :ARG1 (s8x14 / 人
+                  :quant 100
+                  :location (s8x15 / 站内
+                              :part-of s8x9))
+          :Aspect performance
+          :MODSTR FullAff)
+  :op4 (s8x16 / 停驶-01
+          :ARG1 (s8x17 / 列车
+                  :origin s8x2
+                  :destination (s8x18 / 地
+                                 :quant 多)
+                  :mod (s8x19 / 开往))
+          :mod (s8x20 / 要)
+          :Aspect habitual
+          :MODSTR FullAff))
+
+# alignment:
+s8a: 0-0
+s8x: 0-0
+s8x10: 0-0
+s8x11: 0-0
+s8x12: 0-0
+s8x13: 0-0
+s8x14: 0-0
+s8x15: 0-0
+s8x16: 0-0
+s8x17: 0-0
+s8x18: 0-0
+s8x19: 0-0
+s8x2: 0-0
+s8x20: 0-0
+s8x3: 0-0
+s8x4: 0-0
+s8x5: 0-0
+s8x6: 0-0
+s8x7: 0-0
+s8x8: 0-0
+s8x9: 0-0
+
+# document level annotation:
+
+# :: snt17	Sentence: 8 日 录得 465.5 毫米 的 12 小时 降雨量 ， 在 是 当地 同样 创下 有 纪录 以来 的 新高 。
+
+# sentence level graph
+(s9x / 录得-01
+  :ARG1 (s9x2 / 降雨量
+          :quant 465.5
+          :unit (s9x3 / 毫米)
+          :duration (s9x4 / 小时
+                      :quant 12))
+  :time (s9d / date-entity
+          :day 8)
+  :location (s9x5 / 创下-01
+              :ARG1 (s9x6 / 高-02
+                      :mod (s9x7 / 新)
+                      :degree (s9x8 / 纪录
+                                :mod (s9x9 / 有)
+                                :time (s9x10 / 以来)))
+              :location (s9x11 / 当地)
+              :manner (s9x12 / 同样)
+              :Aspect performance
+              :MODSTR FullAff)
+  :Aspect performance
+  :MODSTR FullAff)
+
+# alignment:
+s9d: 0-0
+s9x: 0-0
+s9x10: 0-0
+s9x11: 0-0
+s9x12: 0-0
+s9x2: 0-0
+s9x3: 0-0
+s9x4: 0-0
+s9x5: 0-0
+s9x6: 0-0
+s9x7: 0-0
+s9x8: 0-0
+s9x9: 0-0
+
+# document level annotation:
+
+# :: snt19	Sentence: 深圳 在 星期五 午夜 表示 会 在 0 时 15 分 开始 排洪 ， 并 在 三 小时 后 加大 排洪 流量 。
+
+# sentence level graph
+(s10x / 表示-01
+  :ARG0 (s10l / location
+          :name (s10n / name
+                  :op1 "深圳"))
+  :temporal (s10t / time
+              :weekday (s10w / 星期五)
+              :part-of-day (s10p / 午夜))
+  :ARG1 (s10a / and
+          :op1 (s10x2 / 排洪-01
+                 :temporal (s10t2 / time
+                             :clock (s10c / h0m15))
+                 :Aspect Performance
+                 :MODSTR FullAff)
+          :op2 (s10x3 / 加大-01
+                 :ARG1 (s10x4 / 排洪-01
+                         :ARG1-of (s10x5 / 流量-01)
+                         :Aspect Performance
+                         :MODSTR FullAff)
+                 :temporal (s10t3 / time
+                             :quant 3
+                             :unit (s10u / 小时)
+                             :direction (s10d / 后))
+                 :Aspect Performance
+                 :MODSTR FullAff))
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s10a: 0-0
+s10c: 0-0
+s10d: 0-0
+s10l: 0-0
+s10n: 0-0
+s10p: 0-0
+s10t: 0-0
+s10t2: 0-0
+s10t3: 0-0
+s10u: 0-0
+s10w: 0-0
+s10x: 0-0
+s10x2: 0-0
+s10x3: 0-0
+s10x4: 0-0
+s10x5: 0-0
+
+# document level annotation:
+
+# :: snt21	Sentence: 港府 在 7 日 23 时 44 分 预告 零时 排洪 ， 官员 指 是 提早 45 分钟 接获 深圳 通知 ， 并 联络 各 部门 作 准备 ， 又 表示 多区 水浸 似乎 和 排洪 没有 直接 关系 。
+
+# sentence level graph
+(s11a / and
+  :op1 (s11x / 预告-01
+          :ARG0 (s11g / government-organization
+                  :name (s11n / name
+                          :op1 "港府"))
+          :ARG1 (s11x2 / 排洪-01
+                  :time (s11t / time
+                          :day 7
+                          :hour 23
+                          :minute 44
+                          :mod (s11t2 / 零时)))
+          :time (s11d / date-entity
+                  :day 7
+                  :hour 23
+                  :minute 44)
+          :Aspect performance
+          :MODSTR FullAff)
+  :op2 (s11x3 / 指-01
+          :ARG0 s11g
+          :ARG1 (s11x4 / 接获-01
+                  :ARG0 s11g
+                  :ARG1 (s11x5 / 通知-01
+                          :ARG0 (s11c / city
+                                  :name (s11n2 / name
+                                          :op1 "深圳")))
+                  :time (s11t3 / time-quantity
+                          :quant 45
+                          :unit (s11u / minute))
+                  :manner (s11m / 提早)
+                  :Aspect performance
+                  :MODSTR FullAff)
+          :Aspect performance
+          :MODSTR FullAff)
+  :op3 (s11x6 / 联络-01
+          :ARG0 s11g
+          :ARG1 (s11d2 / department
+                  :mod (s11q / each))
+          :purpose (s11x7 / 准备-01
+                     :ARG0 s11d2)
+          :Aspect performance
+          :MODSTR FullAff)
+  :op4 (s11x8 / 表示-01
+          :ARG0 s11g
+          :ARG1 (s11x9 / 关系-01
+                  :ARG1 (s11x10 / 水浸-01
+                          :location (s11l / location
+                                      :mod (s11q2 / 多))
+                          :Aspect habitual
+                          :MODSTR FullAff)
+                  :ARG2 s11x2
+                  :mod (s11x11 / 直接)
+                  :polarity -
+                  :Aspect state
+                  :MODSTR FullAff)
+          :Aspect performance
+          :MODSTR FullAff))
+
+# alignment:
+s11a: 0-0
+s11c: 0-0
+s11d: 0-0
+s11d2: 0-0
+s11g: 0-0
+s11l: 0-0
+s11m: 0-0
+s11n: 0-0
+s11n2: 0-0
+s11q: 0-0
+s11q2: 0-0
+s11t: 0-0
+s11t2: 0-0
+s11t3: 0-0
+s11u: 0-0
+s11x: 0-0
+s11x10: 0-0
+s11x11: 0-0
+s11x2: 0-0
+s11x3: 0-0
+s11x4: 0-0
+s11x5: 0-0
+s11x6: 0-0
+s11x7: 0-0
+s11x8: 0-0
+s11x9: 0-0
+
+# document level annotation:
+
+# :: snt23	Sentence: 港府 形容 香港 的 雨势 是 “ 五百 年 一 遇 ” ， 即 按照 过往 的 记载 雨量 ， 每年 达到 如此 雨势 的 概率 在 千分之二 ， 难 以 大幅 提早 应对 。
+
+# sentence level graph
+(s12x / 形容-01
+  :ARG0 (s12g / government
+          :mod (s12l / location
+                 :name (s12n / name
+                         :op1 "香港")))
+  :ARG1 (s12r / 雨势
+          :mod (s12l2 / location
+                 :name (s12n2 / name
+                         :op1 "香港")))
+  :ARG2 (s12e / encounter-91
+          :frequency (s12y / year
+                       :quant 500)
+          :quant 1)
+  :Aspect state
+  :MODSTR FullAff
+  :concession (s12d / difficult-02
+                 :ARG1 (s12r2 / respond-01
+                         :manner (s12e2 / early
+                                   :degree (s12m / much))
+                         :Aspect endeavor
+                         :MODSTR FullAff)
+                 :degree (s12h / hard)
+                 :Aspect state
+                 :MODSTR FullAff)
+  :example (s12p / probability-91
+              :ARG1 s12r
+              :quant (s12f / fraction
+                       :numerator 2
+                       :denominator 1000)
+              :frequency (s12y2 / year
+                           :quant 1)
+              :condition (s12r3 / record-01
+                           :ARG1 (s12r4 / rain
+                                   :mod (s12p2 / past))
+                           :Aspect habitual
+                           :MODSTR FullAff)))
+
+# alignment:
+s12d: 0-0
+s12e: 0-0
+s12e2: 0-0
+s12f: 0-0
+s12g: 0-0
+s12h: 0-0
+s12l: 0-0
+s12l2: 0-0
+s12m: 0-0
+s12n: 0-0
+s12n2: 0-0
+s12p: 0-0
+s12p2: 0-0
+s12r: 0-0
+s12r2: 0-0
+s12r3: 0-0
+s12r4: 0-0
+s12x: 0-0
+s12y: 0-0
+s12y2: 0-0
+
+# document level annotation:
+
+# :: snt25	Sentence: 政务司 司长 陈国基 说 ， “ 对于 这场 大雨 ， 雨势 非常 非常 大 ， 正如 同事 提及 ， 它 是 五百 年 一 遇 ， 雨 又 大 又 突然 ， 可 预测 程度 很 低 ， 所以 我们 无法 如 应对 之前 的 台风 苏拉 般 大幅 提早 预告 。”
+
+# sentence level graph
+(s13x / 说-01
+  :ARG0 (s13x2 / 人
+          :name (s13n / name
+                  :op1 "陈国基")
+          :ARG1-of (s13h / have-org-role-91
+                     :ARG2 (s13o / organization
+                             :name (s13n2 / name
+                                     :op1 "政务司"))
+                     :ARG3 (s13r / 司长)))
+  :ARG1 (s13c / contrast-01
+          :ARG1 (s13x3 / 遇-02
+                  :ARG1 (s13x4 / 雨
+                          :mod (s13x5 / 大))
+                  :frequency (s13x6 / 年
+                               :quant 500)
+                  :manner (s13a / and
+                            :op1 (s13m / 大)
+                            :op2 (s13m2 / 突然))
+                  :modality (s13x7 / 可
+                              :ARG1 (s13x8 / 预测-01
+                                      :ARG1 s13x4
+                                      :degree (s13x9 / 低))))
+          :ARG2 (s13x10 / 预告-01
+                  :ARG1 (s13x11 / 台风
+                          :name (s13n3 / name
+                                  :op1 "苏拉"))
+                  :manner (s13x12 / 大幅)
+                  :time (s13x13 / 提早)
+                  :condition (s13x14 / 应对-01
+                               :ARG1 s13x11
+                               :time (s13x15 / 之前))
+                  :degree (s13x16 / 低))
+          :quote (s13q / quote
+            :op1 s13c)))
+
+# alignment:
+s13a: 0-0
+s13c: 0-0
+s13h: 0-0
+s13m: 0-0
+s13m2: 0-0
+s13n: 0-0
+s13n2: 0-0
+s13n3: 0-0
+s13o: 0-0
+s13q: 0-0
+s13r: 0-0
+s13x: 0-0
+s13x10: 0-0
+s13x11: 0-0
+s13x12: 0-0
+s13x13: 0-0
+s13x14: 0-0
+s13x15: 0-0
+s13x16: 0-0
+s13x2: 0-0
+s13x3: 0-0
+s13x4: 0-0
+s13x5: 0-0
+s13x6: 0-0
+s13x7: 0-0
+s13x8: 0-0
+s13x9: 0-0
+
+# document level annotation:
+
+# :: snt27	Sentence: 政府 清晨 五时半 宣布 启动 “极端 状况 ” ， 要求 所有 学校 停课 ， 但 只 “ 呼吁 ” 雇主 要 “ 参考 ” 台风 情况 作 弹性 工作 安排 ， 直至 早上 七时 许 才 另发 指引 指 不 应 要求 必要 人员 外 的 雇员 返回 工作 地点 。 当局 解释 指引 是 “ 补充 资料 ” ， 又 指 机制 行之有效 ， 没有 正面 回应 为何 不 在 启动 极端 情况 时 一并 作出 要求 。
+
+# sentence level graph
+(s14a / and
+  :op1 (s14x / 宣布-01
+          :ARG0 (s14g / 政府)
+          :ARG1 (s14x2 / 启动-01
+                  :ARG1 (s14x3 / 状况
+                          :mod (s14x4 / 极端)))
+          :time (s14t / time
+                  :quant 5.5
+                  :unit (s14u / 小时)
+                  :mod (s14m / 清晨)))
+  :op2 (s14x5 / 要求-01
+          :ARG0 s14g
+          :ARG1 (s14x6 / 停课-01
+                  :ARG0 (s14s / 学校
+                          :quant (s14q / 所有)))
+          :time (s14t))
+  :op3 (s14x7 / 呼吁-01
+          :ARG0 s14g
+          :ARG1 (s14x8 / 参考-01
+                  :ARG0 (s14e / 雇主)
+                  :ARG1 (s14x9 / 情况
+                          :mod (s14t2 / 台风))
+                  :ARG2 (s14x10 / 安排-01
+                          :ARG1 (s14w / 工作
+                                  :mod (s14f / 弹性))))
+          :time (s14t))
+  :op4 (s14x11 / 发-01
+          :ARG1 (s14x12 / 指引
+                  :mod (s14x13 / 另)
+                  :ARG1-of (s14x14 / 指-01
+                             :ARG1 (s14x15 / 要求-01
+                                     :ARG0 s14g
+                                     :ARG1 (s14x16 / 返回-01
+                                             :ARG0 (s14e2 / 雇员
+                                                     :mod (s14x17 / 外
+                                                             :ARG1-of (s14x18 / 需要-01
+                                                                         :ARG1 (s14p / 人员
+                                                                                 :mod (s14n / 必要)))))
+                                             :ARG2 (s14l / 地点
+                                                     :mod (s14w2 / 工作)))
+                                     :time (s14t3 / time
+                                             :quant 7
+                                             :unit (s14u2 / 小时)
+                                             :mod (s14m2 / 早上)))))
+          :time (s14t))
+  :op5 (s14x19 / 解释-01
+          :ARG0 (s14a2 / 当局)
+          :ARG1 (s14x12)
+          :ARG2 (s14x20 / 资料
+                  :mod (s14c / 补充)))
+  :op6 (s14x21 / 指-01
+          :ARG0 s14a2
+          :ARG1 (s14x22 / 有效-01
+                  :ARG0 (s14m3 / 机制
+                          :mod (s14x23 / 行之))))
+  :op7 (s14x24 / 回应-01
+          :ARG0 s14a2
+          :ARG1 (s14x25 / 要求-01
+                  :ARG0 s14g
+                  :ARG1 (s14x2)
+                  :time (s14t))
+          :polarity -
+          :mod (s14x26 / 正面)
+          :cause (s14x27 / 为何-01
+                   :ARG1 (s14x25))))
+
+# alignment:
+s14a: 0-0
+s14a2: 0-0
+s14c: 0-0
+s14e: 0-0
+s14e2: 0-0
+s14f: 0-0
+s14g: 0-0
+s14l: 0-0
+s14m: 0-0
+s14m2: 0-0
+s14m3: 0-0
+s14n: 0-0
+s14p: 0-0
+s14q: 0-0
+s14s: 0-0
+s14t: 0-0
+s14t2: 0-0
+s14t3: 0-0
+s14u: 0-0
+s14u2: 0-0
+s14w: 0-0
+s14w2: 0-0
+s14x: 0-0
+s14x10: 0-0
+s14x11: 0-0
+s14x12: 0-0
+s14x13: 0-0
+s14x14: 0-0
+s14x15: 0-0
+s14x16: 0-0
+s14x17: 0-0
+s14x18: 0-0
+s14x19: 0-0
+s14x2: 0-0
+s14x20: 0-0
+s14x21: 0-0
+s14x22: 0-0
+s14x23: 0-0
+s14x24: 0-0
+s14x25: 0-0
+s14x26: 0-0
+s14x27: 0-0
+s14x3: 0-0
+s14x4: 0-0
+s14x5: 0-0
+s14x6: 0-0
+s14x7: 0-0
+s14x8: 0-0
+s14x9: 0-0
+
+# document level annotation:
+
+# :: snt29	Sentence: 使用 一亿五千万 港元 搭建 的 紧急 短讯 系统 ， 在 暴雨 中 没有 被 使用 ， 政务司 副 司长 卓永兴 说 ， “ 我 认为 所有 清醒 的 公众 都 知道 下 暴雨 ， 所以 没有 必要 用 紧急 短讯 系统 发信 告知 市民 如此 明显 的 情况 。”
+
+# sentence level graph
+(s15s / 说-01
+  :ARG0 (s15i / individual-person
+          :name (s15n / name
+                  :op1 "卓永兴")
+          :ARG1-of (s15h / have-org-role-91
+                     :ARG2 (s15o / organization
+                             :name (s15n2 / name
+                                     :op1 "政务司"))
+                     :ARG3 (s15r / 副司长)))
+  :ARG1 (s15t / 认为-01
+          :ARG0 (s15p / person
+                  :quant "所有"
+                  :mod (s15c / 清醒))
+          :ARG1 (s15k / 知道-01
+                  :ARG0 s15p
+                  :ARG1 (s15r2 / 下-01
+                          :ARG1 (s15w / 暴雨))
+                  :mod (s15a / and
+                         :op1 (s15n3 / 不必要-01
+                                :ARG1 (s15u / 使用-01
+                                        :ARG0 s15p
+                                        :ARG1 (s15s2 / 系统
+                                                :mod (s15e / 紧急)
+                                                :mod (s15m / 短讯))
+                                        :ARG2 (s15m2 / 信
+                                                :ARG1-of (s15i2 / 告知-01
+                                                           :ARG2 (s15c2 / 市民)
+                                                           :ARG3 (s15s3 / 情况
+                                                                   :mod (s15o2 / 明显)
+                                                                   :mod (s15t2 / 如此))))
+                                        :mod (s15n4 / 没有))
+                                :mod (s15t3 / 所以)))))
+  :ARG2 (s15u2 / 使用-01
+          :ARG1 s15s2
+          :mod (s15n5 / 没有)
+          :location (s15w2 / 中
+                      :op1 s15w)
+          :ARG1-of (s15b / 搭建-01
+                      :ARG2 s15s2
+                      :instrument (s15m3 / money
+                                    :quant "一亿五千万"
+                                    :unit (s15c3 / 港元)))))
+
+# alignment:
+s15a: 0-0
+s15b: 0-0
+s15c: 0-0
+s15c2: 0-0
+s15c3: 0-0
+s15e: 0-0
+s15h: 0-0
+s15i: 0-0
+s15i2: 0-0
+s15k: 0-0
+s15m: 0-0
+s15m2: 0-0
+s15m3: 0-0
+s15n: 0-0
+s15n2: 0-0
+s15n3: 0-0
+s15n4: 0-0
+s15n5: 0-0
+s15o: 0-0
+s15o2: 0-0
+s15p: 0-0
+s15r: 0-0
+s15r2: 0-0
+s15s: 0-0
+s15s2: 0-0
+s15s3: 0-0
+s15t: 0-0
+s15t2: 0-0
+s15t3: 0-0
+s15u: 0-0
+s15u2: 0-0
+s15w: 0-0
+s15w2: 0-0
+
+# document level annotation:
+
+# Source File: 
+香港 及 深圳 受 暴雨 重创 ， 多地 出现 水浸 和 山泥 倾泻 。 香港 启动 为期 16 小时 的 “ 极端 情况 ” ， 当局 形容 雨势 “ 五百年 一 遇 ” 。
+受 风暴 海葵 残留 云带 影响 ， 香港 各区 7 日 起 普遍 降 暴雨 ， 洪水 涌入 港铁 黄大仙 站 的 大堂 和 月台 。
+邻近 地铁站 的 黄大仙 中心 是 另 一个 重灾区 ， 地下 底层 的 餐厅 8 日 被 淹没 ， 洪水 浸泡 著 扶手 电梯 ， 漂浮 着 桌椅 等 杂物 。
+香港 几乎 所有 巴士 和 电车 服务 都 暂停 数 小时 ， 直至 下午 恢复 ， 港铁 多个 站点 需要 关闭 。
+气象 机构 天文台 两小时 内 相继 发出 黄色 、 红色 和 最 高 级别 的 黑色 暴雨 警告 信号 ， “ 黑雨 ” 一共 维持 超过 16 小时 。
+政府 又 首次 启动 极端 情况 ， 全 港 学校 停课 ， 大部分 上班族 无需 上班 。 公立 医疗 机构 医管局 指 ， 星期五 下午 有 110 人 在 暴雨 中 受伤 送院 ， 四人 情况 严重 。
+天文台 在 星期四 晚 十一 时 至 午夜 录得 158.1 毫米 的 每 小时 雨量 ， 创下 1884 年 有 纪录 以来 的 最高 。
+一 河 之 隔 的 深圳 同样 受到 暴雨 影响 ， 位于 罗湖 的 深圳 火车站 ， 出入口 同样 遭遇 水浸 ， 约 一百 人 被 困 于 站内 ， 由 深圳 开往 多 地 的 列车 要 停驶 。
+8 日 录得 465.5 毫米 的 12 小时 降雨量 ， 在 是 当地 同样 创下 有 纪录 以来 的 新高 。
+深圳 在 星期五 午夜 表示 会 在 0 时 15 分 开始 排洪 ， 并 在 三 小时 后 加大 排洪 流量 。
+港府 在 7 日 23 时 44 分 预告 零时 排洪 ， 官员 指 是 提早 45 分钟 接获 深圳 通知 ， 并 联络 各 部门 作 准备 ， 又 表示 多区 水浸 似乎 和 排洪 没有 直接 关系 。
+港府 形容 香港 的 雨势 是 “ 五百 年 一 遇 ” ， 即 按照 过往 的 记载 雨量 ， 每年 达到 如此 雨势 的 概率 在 千分之二 ， 难 以 大幅 提早 应对 。
+政务司 司长 陈国基 说 ， “ 对于 这场 大雨 ， 雨势 非常 非常 大 ， 正如 同事 提及 ， 它 是 五百 年 一 遇 ， 雨 又 大 又 突然 ， 可 预测 程度 很 低 ， 所以 我们 无法 如 应对 之前 的 台风 苏拉 般 大幅 提早 预告 。”
+政府 清晨 五时半 宣布 启动 “极端 状况 ” ， 要求 所有 学校 停课 ， 但 只 “ 呼吁 ” 雇主 要 “ 参考 ” 台风 情况 作 弹性 工作 安排 ， 直至 早上 七时 许 才 另发 指引 指 不 应 要求 必要 人员 外 的 雇员 返回 工作 地点 。 当局 解释 指引 是 “ 补充 资料 ” ， 又 指 机制 行之有效 ， 没有 正面 回应 为何 不 在 启动 极端 情况 时 一并 作出 要求 。
+使用 一亿五千万 港元 搭建 的 紧急 短讯 系统 ， 在 暴雨 中 没有 被 使用 ， 政务司 副 司长 卓永兴 说 ， “ 我 认为 所有 清醒 的 公众 都 知道 下 暴雨 ， 所以 没有 必要 用 紧急 短讯 系统 发信 告知 市民 如此 明显 的 情况 。”

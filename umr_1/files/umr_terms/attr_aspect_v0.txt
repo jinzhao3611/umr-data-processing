@@ -1,0 +1,23 @@
+Habitual
+Imperfective
+Process
+Atelic Process
+Perfective
+State
+Activity
+Endeavor
+Performance
+Reversible State
+Irreversible State
+Inherent State
+Point State
+Undirected Activity
+Directed Activity
+Semelfactive
+Undirected Endeavor
+Directed Endeavor
+Incremental Accomplishment
+Nonincremental Accomplishment
+Directed Achievement
+Reversible Directed Achievement
+Irreversible Directed Achievement

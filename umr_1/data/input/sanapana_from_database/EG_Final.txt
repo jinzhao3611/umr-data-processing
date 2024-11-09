@@ -1,0 +1,3631 @@
+user name: Jens Van Gysel
+user id: 4
+file language: sanapana
+file format: 
+Doc ID in database: 180
+export time: 7/28/2023, 5:35:38 PM
+
+# :: snt1
+Words                             ahltama seyana'  avanhe'   sanga
+Morphemes                         ahltama seyana'  avanhe'   sanga
+Morpheme Gloss(en)                                                
+Morpheme Gloss(es)  anciano lugar de los sanapaná   grande  laguna
+Morpheme Cat                                  sus      adj     sus
+Word Gloss          anciano lugar de los sanapaná   grande  laguna
+English Sent Gloss: 
+Spanish Sent Gloss: En ahltama seyana' había una laguna grande
+
+# sentence level graph:
+(s1e / exist-91
+  :ARG0 (s1t / territory
+          :name (s1n / name
+                  :op1 "ahltama"
+                  :op2 "seyana'"))
+  :ARG1 (s1s / sanga
+          :mod (s1a / avanhe'))
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:
+s1a :2-2
+s1n :-1--1
+s1s :3-3
+s1t :1-1
+# document level annotation:
+(s1 / sentence
+  :temporal ((Ref :depends-on s1h))
+  :modal ((ROOT :MODAL AUTH)
+                    (AUTH :AFF s1h)))
+
+
+
+
+# :: snt2
+Words                 vanhla'     metko                             ayaymommahlka'                   entoma
+Morphemes             vanhla'     metko                     ay- aym -omm -ahlk -a'             en- t -om -a
+Morpheme Gloss(en)                                                                                         
+Morpheme Gloss(es)  solamente   NEG.EXT  2/3F.III dejar de sobra PST/HAB PAS.F INF  1PL.I comer PST/HAB INF
+Morpheme Cat              adv         v                    v:Any v v:Any v>v v:Any      v:Any v v:Any v:Any
+Word Gloss          solamente  no había                                      falta                   comida
+English Sent Gloss: 
+Spanish Sent Gloss: Solamente no nos faltaba comida
+
+# sentence level graph:
+(s2e / exist-91
+  :ARG1 (s2a / ayaymommahlka'
+          :stimulus (s2t / thing
+                      :Undergoer-of (s2e2 / entoma-00)))
+  :Aspect State
+  :mod (s2v / vanhla')
+  :MODSTR FullNeg)
+
+# alignment:
+s2a :3-3
+s2e :0-0
+s2e2 :4-4
+s2t :0-0
+s2v :1-1
+# document level annotation:
+(s2s0 / sentence
+  :temporal ((s1h :overlap s2e))
+  :modal ((ROOT :MODAL AUTH)
+                    (AUTH :NEG s2e)))
+
+
+
+
+# :: snt3
+Words                  metko                   entoma        valayona                    aptoma     metko
+Morphemes              metko             en- t -om -a      valayo =na              ap- t -om -a     metko
+Morpheme Gloss(en)                                                                                       
+Morpheme Gloss(es)   NEG.EXT  1PL.I comer PST/HAB INF  paraguayo =DEF  2/3M.I comer PST/HAB INF   NEG.EXT
+Morpheme Cat               v      v:Any v v:Any v:Any         sus prt       v:Any v v:Any v:Any         v
+Word Gloss          no había                   comida       paraguayo                     comen  no había
+English Sent Gloss: 
+Spanish Sent Gloss: No había la comida que comen los paraguayos, no había
+
+# sentence level graph:
+(s3e / exist-91
+  :ARG1 (s3t / thing
+          :Undergoer-of (s3e2 / entoma)
+          :Undergoer-of (s3e3 / entoma
+                          :actor (s3p / person
+                                   :mod (s3n / nationality
+                                          :name (s3n2 / name
+                                                  :op1 "valayona")
+                                          :wiki "Paraguay"))
+                          :Aspect Habitual
+                          :MODSTR FullAff))
+  :Aspect State
+  :MODSTR FullNeg)
+
+# alignment:
+s3e :0-0
+s3e2 :2-2
+s3e3 :4-4
+s3n :3-3
+s3n2 :-1--1
+s3p :-1--1
+s3t :0-0
+# document level annotation:
+(s3s0 / sentence
+  :temporal ((s2e :overlap s3e))
+  :modal ((ROOT :MODAL AUTH)
+                    (AUTH :AFF s3e3)
+                    (AUTH :NEG s3e)))
+
+
+
+
+# :: snt4
+Words                 vanhla'       yentehlkapa   ahla        ontekhleok
+Morphemes             vanhla'       yentehlkapa   ahla    on- tekhle -ok
+Morpheme Gloss(en)                                                      
+Morpheme Gloss(es)  solamente  época de cosecha  palma  1PL.II moler FUT
+Morpheme Cat              adv               sus    sus     v:Any v v:Any
+Word Gloss          solamente  época de cosecha  palma          molíamos
+English Sent Gloss: 
+Spanish Sent Gloss: Solamente en la época de cosecha molíamos frutas de palma
+
+# sentence level graph:
+(s4e / entekhleama-00
+  :actor (s4p / person
+           :refer-person 1st
+           :refer-number Plural)
+  :undergoer (s4a / ahla)
+  :temporal (s4y / yentehlkapa
+              :mod (s4v / vanhla'))
+  :Aspect Habitual
+  :MODSTR FullAff)
+
+# alignment:
+s4a :3-3
+s4e :4-4
+s4p :-1--1
+s4v :1-1
+s4y :2-2
+# document level annotation:
+(s4s0 / sentence
+  :temporal ((ref :depends-on s4e))
+  :modal ((ROOT :MODAL AUTH)
+                    (AUTH :AFF s4e)))
+
+
+
+
+# :: snt5
+Words                   yentehlkapanhan        ontekhleok
+Morphemes             yentehlkapa =nhan    on- tekhle -ok
+Morpheme Gloss(en)                                       
+Morpheme Gloss(es)  época de cosecha =y  1PL.II moler FUT
+Morpheme Cat                    sus prt     v:Any v v:Any
+Word Gloss             época de cosecha          molíamos
+English Sent Gloss: 
+Spanish Sent Gloss: Las molíamos en la época de cosecha
+
+# sentence level graph:
+(s5e / entekhleama-00
+  :actor (s5p / person
+           :refer-person 1st
+           :refer-number Plural)
+  :undergoer (s5t / thing)
+  :temporal (s5y / yentehlkapanhan)
+  :Aspect Habitual
+  :MODSTR FullAff)
+
+# alignment:
+s5e :0-0
+s5p :0-0
+s5y :1-1
+s5t :0-0
+# document level annotation:
+(s5 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :AFF (s5e2 / s5e2))  :coref (s4e / s4e :same-event (s5e / s5e))  :coref (s5e / s5e :same-event (s5e2 / s5e2))  :coref (s4p / s4p :same-entity (s5p / s5p))  :coref (s4y / s4y :same-entity (s5y / s5y)))
+
+
+
+# :: snt6
+Words                yehlem
+Morphemes            yehlem
+Morpheme Gloss(en)         
+Morpheme Gloss(es)  anguila
+Morpheme Cat            sus
+Word Gloss          anguila
+English Sent Gloss: 
+Spanish Sent Gloss: (Había) anguilas
+
+# sentence level graph:
+(s6y / yehlem)
+
+# alignment:
+s6y :1-1
+# document level annotation:
+
+
+
+
+# :: snt7
+Words                                        koya'hlahlka'                       annanemmahlka'                   entoma
+Morphemes                              ko- ya'hl -ahlk -a'               an- nan -emm -ahlk -a'             en- t -om -a
+Morpheme Gloss(en)                                                                                                      
+Morpheme Gloss(es)  2/3F.II cocinar a la parilla PAS.F FUT  2/3F.PL.III hacer PST/HAB PAS.F INF  1PL.I comer PST/HAB INF
+Morpheme Cat                             v:Any v v>v v:Any              v:Any v v:Any v>v v:Any      v:Any v v:Any v:Any
+Word Gloss                           se asaba a la parilla                             se hacía                   comida
+English Sent Gloss: 
+Spanish Sent Gloss: Se asaba a la parilla, se hacía comida
+
+# sentence level graph:
+(s7a / and
+  :op1 (s7e / enya'hlemmahlka'
+         :undergoer (s7t / thing)
+         :Aspect Habitual
+         :MODSTR FullAff)
+  :op2 (s7e2 / ennanemmahlka'
+         :undergoer (s7t3 / thing
+                      :Undergoer-of (s7e3 / entoma))
+         :Aspect Habitual
+         :instrument (s7t4 / thing)
+         :MODSTR FullAff
+         :material s7t))
+
+# alignment:
+s7a :0-0
+s7e :1-1
+s7e2 :2-2
+s7e3 :3-3
+s7t :0-0
+s7t3 :0-0
+s7t4 :0-0
+# document level annotation:
+(s7 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :AFF (s7e / s7e))  :modal (AUTH / AUTH :AFF (s7e2 / s7e2))  :coref (s6y / s6y :same-entity (s7t / s7t))  :temporal (Past-ref / Past-ref :depends-on (s7e / s7e))  :temporal (s7e / s7e :overlap (s7e2 / s7e2)))
+
+
+
+# :: snt8
+Words               tahla
+Morphemes           tahla
+Morpheme Gloss(en)       
+Morpheme Gloss(es)  fuego
+Morpheme Cat          sus
+Word Gloss          fuego
+English Sent Gloss: 
+Spanish Sent Gloss: En el fuego
+
+# sentence level graph:
+(s8t / tahla)
+
+# alignment:
+s8t :1-1
+# document level annotation:
+(s8 / sentence  :coref (s7t4 / s7t4 :same-entity (s8t / s8t)))
+
+
+
+# :: snt9
+Words                 kelamayet
+Morphemes             kelamayet
+Morpheme Gloss(en)             
+Morpheme Gloss(es)  tipo de pez
+Morpheme Cat                sus
+Word Gloss          tipo de pez
+English Sent Gloss: 
+Spanish Sent Gloss: Los pescados "kelamayet"
+
+# sentence level graph:
+(s9k / kelamayet)
+
+# alignment:
+s9k :1-1
+# document level annotation:
+(s9 / sentence)
+
+
+
+# :: snt10
+Words                                  kona'hlahlka'             akhaok
+Morphemes                        ko- na'hl -ahlk -a'           a- khaok
+Morpheme Gloss(en)                                                     
+Morpheme Gloss(es)  2/3F.II sacar (huesos) PAS.F FUT  2/3F.POS costilla
+Morpheme Cat                       v:Any v v>v v:Any        sus:Any sus
+Word Gloss                                se sacaba               hueso
+English Sent Gloss: 
+Spanish Sent Gloss: Se los sacaba sus huesos
+
+# sentence level graph:
+(s10e / enna'hlemmahlka'
+  :theme (s10a / akhaok)
+  :source (s10t / thing)
+  :Aspect Habitual
+  :MODSTR FullAff)
+
+# alignment:
+s10a :2-2
+s10e :1-1
+s10t :0-0
+# document level annotation:
+(s10 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :AFF (s10e / s10e))  :coref (s9k / s9k :same-entity (s10t / s10t))  :temporal (Past-ref / Past-ref :depends-on (s10e / s10e)))
+
+
+
+# :: snt11
+Words                       kopengkenahlka'                    entavaykakhala   mokham
+Morphemes             ko- pengken -ahlk -a'          en- tav -ayk -akh -a =la   mokham
+Morpheme Gloss(en)                                                                    
+Morpheme Gloss(es)  2/3F.II poner PAS.F FUT  1PL.I comer PST/HAB REP INF =HYP  todavía
+Morpheme Cat              v:Any v v>v v:Any     v:Any v v:Any v:Any v:Any prt      prt
+Word Gloss                   se lo guardaba               para comer otra vez  todavía
+English Sent Gloss: 
+Spanish Sent Gloss: Se guardaba para comer más, otra vez
+
+# sentence level graph:
+(s11e / empengkenammahlka'
+  :theme (s11t / thing)
+  :purpose (s11e2 / entoma-00
+             :actor (s11p / person
+                      :refer-person 1st
+                      :refer-number Plural)
+             :undergoer s11t
+             :mod (s11m / mokham)
+             :Aspect Habitual
+             :MODSTR FullAff
+             :condition (s11e3 / event))
+  :Aspect Habitual
+  :MODSTR FullAff)
+
+# alignment:
+s11e :0-0
+s11e2 :2-2
+s11e3 :0-0
+s11m :3-3
+s11p :-1--1
+s11t :0-0
+# document level annotation:
+(s11 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :AFF (s11e2 / s11e2))  :modal (AUTH / AUTH :AFF (s11e / s11e))  :temporal (s10e / s10e :overlap (s11e / s11e))  :temporal (s11e / s11e :after (s11e2 / s11e2))  :coref (s10t / s10t :same-entity (s11t / s11t))  :coref (s5p / s5p :same-entity (s11p / s11p)))
+
+
+
+# :: snt12
+Words                                        ayaymahlkola'a
+Morphemes                            ay- aym -ahlk -o =la'a
+Morpheme Gloss(en)                                         
+Morpheme Gloss(es)  2/3F.III dejar de sobra PAS.F SUBJ =HYP
+Morpheme Cat                          v:Any v v>v v:Any prt
+Word Gloss                             cuando hay necesidad
+English Sent Gloss: 
+Spanish Sent Gloss: Cuando había necesidad
+
+# sentence level graph:
+(s12e / event
+  :condition (s12a / ayaymommahlka'
+               :stimulus (s12e2 / event)
+               :Aspect Habitual))
+
+# alignment:
+s12a :1-1
+s12e :0-0
+# document level annotation:
+(s12 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :AFF (s12a / s12a))  :modal (AUTH / AUTH :AFF (s12e / s12e))  :temporal (s11e2 / s11e2 :overlap (s12a / s12a))  :coref (s11t / s11t :same-event (s12t / s12t)))
+
+
+
+# :: snt13
+Words                  tenyo      ahlannenhan
+Morphemes              tenyo  ahla =nne =nhan
+Morpheme Gloss(en)                           
+Morpheme Gloss(es)  entonces   palma =TERM =y
+Morpheme Cat             prt      sus prt prt
+Word Gloss          entonces            palma
+English Sent Gloss: 
+Spanish Sent Gloss: Y para la palma también
+
+# sentence level graph:
+(s13e / event
+  :affectee (s13a / ahlannenhan))
+
+# alignment:
+s13a :2-2
+s13e :0-0
+# document level annotation:
+(s13 / sentence  :coref (s11e / s11e :same-event (s13e / s13e)))
+
+
+
+# :: snt14
+Words                              konanasahlka'   ahlangkok
+Morphemes                  ko- nan -as -ahlk -a'   ahlangkok
+Morpheme Gloss(en)                                          
+Morpheme Gloss(es)  2/3F.II hacer APPL PAS.F FUT  contenedor
+Morpheme Cat               v:Any v v>v v>v v:Any         sus
+Word Gloss                       se la fabricaba  contenedor
+English Sent Gloss: 
+Spanish Sent Gloss: Se hacía un contenedor para eso
+
+# sentence level graph:
+(s14e / ennanesammahlka'
+  :undergoer (s14a / ahlangkok)
+  :affectee (s14t / thing)
+  :Aspect Habitual
+  :purpose (s14e2 / event)
+  :MODSTR FullAff)
+
+# alignment:
+s14a :2-2
+s14e :1-1
+s14e2 :0-0
+s14t :0-0
+# document level annotation:
+(s14 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :AFF (s14e / s14e))  :coref (s13e2 / s13e2 :same-event (s14e / s14e))  :coref (s13a2 / s13a2 :same-entity (s14t / s14t))  :temporal (s13e / s13e :overlap (s14e / s14e)))
+
+
+
+# :: snt15
+Words                            tenyay'ala                 entavekakha'   mokham
+Morphemes                  teny -ay' -a =la         en- tav -ek -akh -a'   mokham
+Morpheme Gloss(en)                                                               
+Morpheme Gloss(es)  buscar PST/HAB INF =HYP  1PL.I comer PST/HAB REP INF  todavía
+Morpheme Cat              v v:Any v:Any prt    v:Any v v:Any v:Any v:Any      prt
+Word Gloss                             para               comer otra vez  todavía
+English Sent Gloss: 
+Spanish Sent Gloss: Para comer más en otra ocasión
+
+# sentence level graph:
+(s15e / event
+  :purpose (s15e2 / entoma-00
+             :actor (s15p / person
+                      :refer-person 1st
+                      :refer-number Plural)
+             :undergoer (s15t / thing)
+             :mod (s15m / mokham)
+             :Aspect Habitual
+             :MODSTR FullAff
+             :temporal (s15e3 / event)))
+
+# alignment:
+s15e :0-0
+s15e2 :2-2
+s15m :3-3
+s15p :-1--1
+s15t :0-0
+s15e3 :0-0
+# document level annotation:
+(s15 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :AFF (s15e2 / s15e2))  :coref (s14e / s14e :same-event (s15e / s15e))  :coref (s14e2 / s14e2 :same-event (s15e2 / s15e2))  :coref (s11p / s11p :same-entity (s15p / s15p))  :coref (s14t / s14t :same-entity (s15t / s15t))  :temporal (s15e / s15e :after (s15e2 / s15e2)))
+
+
+
+# :: snt16
+Words                     songkola                    akmamay'a            tenyay'a
+Morphemes             songk -o =la              ak- mam -ay' -a        teny -ay' -a
+Morpheme Gloss(en)                                                                 
+Morpheme Gloss(es)  malo SUBJ =HYP  2/3F.III llover PST/HAB INF  buscar PST/HAB INF
+Morpheme Cat           v v:Any prt          v:Any v v:Any v:Any       v v:Any v:Any
+Word Gloss          cuando es malo                       lluvia                para
+English Sent Gloss: 
+Spanish Sent Gloss: Para cuando había mala lluvia
+
+# sentence level graph:
+(s16e / event
+  :temporal (s16a2 / akmamay'a
+              :mod (s16s2 / songkola)
+              :Aspect Process
+              :MODSTR FullAff))
+
+# alignment:
+s16a2 :2-2
+s16e :0-0
+s16s2 :1-1
+# document level annotation:
+(s16 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :AFF (s16a2 / s16a2))  :coref (s15e2 / s15e2 :same-event (s16e / s16e))  :temporal (s16e / s16e :overlap (s16a2 / s16a2)))
+
+
+
+# :: snt17
+Words                  tenyo       yavhananhan
+Morphemes              tenyo     yavhan =anhan
+Morpheme Gloss(en)                            
+Morpheme Gloss(es)  entonces  tipo de abeja =y
+Morpheme Cat             prt           sus prt
+Word Gloss          entonces      miel también
+English Sent Gloss: 
+Spanish Sent Gloss: Y miel también
+
+# sentence level graph:
+(s17e / event
+  :ARG0 (s17y2 / yavhananhan))
+
+# alignment:
+s17e :0-0
+s17y2 :2-2
+# document level annotation:
+(s17 / sentence  :coref (s14e / s14e :same-event (s17e / s17e))  :temporal (s17e / s17e :overlap (s17e2 / s17e2)))
+
+
+
+# :: snt18
+Words                 ahlangkonhan
+Morphemes           ahlangko =nhan
+Morpheme Gloss(en)                
+Morpheme Gloss(es)   contenedor =y
+Morpheme Cat               sus prt
+Word Gloss              contenedor
+English Sent Gloss: 
+Spanish Sent Gloss: Tiene su contenedor
+
+# sentence level graph:
+(s18h / have-91
+  :ARG0 (s18t / thing)
+  :ARG1 (s18a / ahlangkonhan)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:
+s18a :1-1
+s18h :-1--1
+s18t :0-0
+# document level annotation:
+(s18 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :AFF (s18h / s18h))  :coref (s17e2 / s17e2 :same-event (s18h / s18h))  :coref (s17y / s17y :same-entity (s18t / s18t)))
+
+
+
+# :: snt19
+Words                            metkemo                               ayaymommahlkala'a  hlemmea                   entoma
+Morphemes                    metk -em -o                     ay- aym -omm -ahlk -a =la'a  hlemmea             en- t -om -a
+Morpheme Gloss(en)                                                                                                        
+Morpheme Gloss(es)  NEG.EXT PST/HAB SUBJ  2/3F.III dejar de sobra PST/HAB PAS.F INF =HYP    antes  1PL.I comer PST/HAB INF
+Morpheme Cat               v v:Any v:Any                     v:Any v v:Any v>v v:Any prt      adv      v:Any v v:Any v:Any
+Word Gloss                      no había                                           falta    antes                   comida
+English Sent Gloss: 
+Spanish Sent Gloss: No faltaba comida anteriormente
+
+# sentence level graph:
+(s19e / exist-91
+  :ARG1 (s19a / ayaymommahlka'
+          :stimulus (s19t / thing
+                      :Undergoer-of (s19e2 / entoma-00))
+          :experiencer (s19p / person
+                         :refer-person 1st
+                         :refer-number Plural))
+  :Aspect State
+  :temporal (s19h / hlemmea)
+  :MODSTR FullNeg)
+
+# alignment:
+s19a :2-2
+s19e :0-0
+s19e2 :4-4
+s19h :3-3
+s19p :0-0
+s19t :0-0
+# document level annotation:
+(s19 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :NEG (s19e / s19e))  :temporal (past-ref / past-ref :depends-on (s19h / s19h))  :temporal (s19h / s19h :overlap (s19e / s19e))  :coref (s15p / s15p :same-entity (s19p / s19p)))
+
+
+
+# :: snt20
+Words                 tasopanhan                   entoma                          apkeleyvomanhan   nenhlet  hlemmea
+Morphemes           tasopa =nhan             en- t -om -a                apk- el- eyv -om -a =nhan   nenhlet  hlemmea
+Morpheme Gloss(en)                                                                                                   
+Morpheme Gloss(es)      bueno =y  1PL.I comer PST/HAB INF  2/3M.I DISTR vivir (pl.) PST/HAB INF =y   persona    antes
+Morpheme Cat             adj prt      v:Any v v:Any v:Any            v:Any v:Any v v:Any v:Any prt       sus      adv
+Word Gloss                 buena                   comida                                  su vida  indígena    antes
+English Sent Gloss: 
+Spanish Sent Gloss: Y la comida era buena... la vida de la gente era buena antes
+
+# sentence level graph:
+(s20a / and
+  :op1 (s20h / have-mod-91
+         :ARG0 (s20t / thing
+                 :Undergoer-of (s20e / entoma
+                                 :poss (s20p / person
+                                         :refer-person 1st
+                                         :refer-number Plural)))
+         :ARG1 (s20t3 / tasopanhan)
+         :temporal (s20h4 / hlemmea)
+         :MODSTR AFF)
+  :op2 (s20h2 / have-mod-91
+         :ARG0 (s20e2 / eleyvoma
+                 :actor (s20p2 / person
+                          :mod (s20e3 / ethnic-group
+                                 :name (s20n / name
+                                         :op1 "nenhlet")
+                                 :wiki "Sanapana")
+                          :refer-number Plural))
+         :ARG1 (s20t2 / tasopanhan)
+         :temporal (s20h3 / hlemmea)
+         :MODSTR AFF))
+
+# alignment:
+s20a :0-0
+s20h :-1--1
+s20t :0-0
+s20e :2-2
+s20p :-1--1
+1st :-1--1
+Plural :-1--1
+s20t3 :1-1
+s20h2 :-1--1
+s20e2 :3-3
+s20p2 :-1--1
+s20e3 :4-4
+s20n :4-4
+nenhlet :4-4
+Sanapana :0-0
+s20t2 :1-1
+s20h3 :5-5
+s20h4 :5-5
+AFF :0-0
+# document level annotation:
+(s20 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :AFF (s20h / s20h))  :modal (AUTH / AUTH :AFF (s20h2 / s20h2))  :coref (s19p / s19p :same-entity (s20p / s20p))  :temporal (Past-ref / Past-ref :depends-on (s20h4 / s20h4))  :temporal (s20h4 / s20h4 :overlap (s20h / s20h)))
+
+
+
+# :: snt21
+Words                             apkelvet'ola
+Morphemes                 apk- el- vet -'o =la
+Morpheme Gloss(en)                            
+Morpheme Gloss(es)  2/3M.I DISTR ver SUBJ =HYP
+Morpheme Cat           v:Any v:Any v v:Any prt
+Word Gloss                            si veían
+English Sent Gloss: 
+Spanish Sent Gloss: Si encontraban...
+
+# sentence level graph:
+(s21e / event
+  :condition (s21a / apkelvet'ola
+               :experiencer (s21p / person
+                              :refer-person 3rd
+                              :refer-number Plural)
+               :stimulus (s21t / thing)
+               :Aspect State
+               :MODSTR FullAff))
+
+# alignment:
+s21e :0-0
+s21p :0-0
+s21t :0-0
+s21a :1-1
+# document level annotation:
+(s21 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :AFF (s21e / s21e)))
+
+
+
+# :: snt22
+Words                             apkelvet'ola       kessoye'   sanga                        ehlpa'nemok  kelasma
+Morphemes                 apk- el- vet -'o =la     kess -oye'   sanga                  e- hl- pa'nem -ok  kelasma
+Morpheme Gloss(en)                                                                                               
+Morpheme Gloss(es)  2/3M.I DISTR ver SUBJ =HYP  pequeño INTNS  laguna  2/3M.II DISTR pescar de ronda FUT      pez
+Morpheme Cat           v:Any v:Any v v:Any prt    adj sus:Any     sus                v:Any v:Any v v:Any      sus
+Word Gloss                            si veían        pequeña  laguna                  pescaban de ronda  pescado
+English Sent Gloss: 
+Spanish Sent Gloss: Si encontraban una pequeña laguna, pescaban en la ronda
+
+# sentence level graph:
+(s22e / ehlpa'nemama
+  :actor (s22p / person
+           :refer-person 3rd
+           :refer-number Plural)
+  :undergoer (s22k / kelasma)
+  :Aspect Habitual
+  :MODSTR AFF
+  :condition (s22e2 / elvetay'a
+               :experiencer s22p
+               :stimulus (s22s / sanga
+                           :mod (s22k2 / kessoye'))
+               :Aspect State
+               :MODSTR AFF))
+
+# alignment:
+s22e :4-4
+s22p :-1--1
+3rd :-1--1
+Plural :-1--1
+s22k :5-5
+Habitual :-1--1
+AFF :0-0
+s22e2 :1-1
+s22s :3-3
+s22k2 :2-2
+State :-1--1
+# document level annotation:
+(s22 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :AFF (s22e / s22e))  :modal (AUTH / AUTH :AFF (s22e2 / s22e2))  :coref (s21e / s21e :same-event (s22e2 / s22e2))  :coref (s21p / s21p :same-entity (s22p / s22p))  :coref (s21t / s21t :same-entity (s22s / s22s))  :coref (s21e2 / s21e2 :same-event (s22e / s22e))  :temporal (s22e2 / s22e2 :overlap (s22e / s22e))  :temporal (Past-ref / Past-ref :depends-on (s22e2 / s22e2)))
+
+
+
+# :: snt23
+Words                                     empa'nemama  kelasma
+Morphemes                           em- pa'nem -am -a  kelasma
+Morpheme Gloss(en)                                            
+Morpheme Gloss(es)  1PL.I pescar de ronda PST/HAB INF      pez
+Morpheme Cat                      v:Any v v:Any v:Any      sus
+Word Gloss                          pescaban de ronda  pescado
+English Sent Gloss: 
+Spanish Sent Gloss: Pescaban en la ronda
+
+# sentence level graph:
+(s23e / empa'nemama
+  :actor (s23p / person
+           :refer-person 1st
+           :refer-number Plural)
+  :undergoer (s23k / kelasma)
+  :Aspect Habitual
+  :MODSTR FullAff)
+
+# alignment:
+s23e :1-1
+s23k :2-2
+s23p :-1--1
+# document level annotation:
+(s23 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :AFF (s23e / s23e))  :coref (s22e / s22e :same-event (s23e / s23e))  :coref (s20p / s20p :same-entity (s23p / s23p)))
+
+
+
+# :: snt24
+Words                na                     antemak                           apkeleyvoma    nenhlet  hlemmea
+Morphemes            na               an- t -em -ak                   apk- el- eyv -om -a    nenhlet  hlemmea
+Morpheme Gloss(en)                                                                                           
+Morpheme Gloss(es)  DEF  2/3F.I ser PST/HAB V2.NFUT  2/3M.I DISTR vivir (pl.) PST/HAB INF    persona    antes
+Morpheme Cat        prt         v:Any v v:Any v:Any             v:Any v:Any v v:Any v:Any        sus      adv
+Word Gloss          así                         era                             sus vidas  indígenas    antes
+English Sent Gloss: 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s24i2 / identity-91
+  :ARG0 (s24e / event)
+  :ARG1 (s24e2 / eleyvoma-00
+          :actor (s24p / person
+                   :mod (s24e3 / ethnic-group
+                          :name (s24n / name
+                                  :op1 "nenhlet")
+                          :wiki "Sanapaná")
+                   :refer-number Plural)
+          :Aspect Process)
+  :temporal (s24h / hlemmea)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:
+s24e :0-0
+s24e2 :3-3
+s24e3 :4-4
+s24h :5-5
+s24i2 :0-0
+s24n :-1--1
+s24p :-1--1
+# document level annotation:
+(s24 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :AFF (s24i2 / s24i2))  :coref (s24e / s24e :ARG1-of (include-91 / include-91 :ARG2 (s2e / s2e)))  :coref (s24e / s24e :ARG1-of (include-91 / include-91 :ARG2 (s3e / s3e)))  :coref (s24e / s24e :ARG1-of (include-91 / include-91 :ARG2 (s7e / s7e)))  :coref (s24e / s24e :same-event (s7e2 / s7e2))  :coref (s24e / s24e :ARG1-of (include-91 / include-91 :ARG2 (s10e / s10e)))  :coref (s24e / s24e :same-event (s11e / s11e))  :coref (s24e / s24e :ARG1-of (include-91 / include-91 :ARG2 (s11e2 / s11e2)))  :coref (s24e / s24e :ARG1-of (include-91 / include-91 :ARG2 (s14e / s14e)))  :coref (s24e / s24e :ARG1-of (include-91 / include-91 :ARG2 (s15e2 / s15e2)))  :coref (s24e / s24e :ARG1-of (include-91 / include-91 :ARG2 (s19e / s19e)))  :coref (s24e / s24e :ARG1-of (include-91 / include-91 :ARG2 (s20h / s20h)))  :coref (s24e / s24e :ARG1-of (include-91 / include-91 :ARG2 (s20h2 / s20h2)))  :coref (s24e / s24e :ARG1-of (include-91 / include-91 :ARG2 (s22e / s22e)))  :coref (s20p2 / s20p2 :same-entity (s24p / s24p))  :temporal (past-ref / past-ref :depends-on (s24h / s24h))  :temporal (s24h / s24h :overlap (s24i2 / s24i2)))
+
+
+
+# :: snt25
+Words                  tenyo    mo'o  aknem                         ehlpa'vomangkok
+Morphemes              tenyo    mo'o  aknem             e- hl- pa' -v -om -angk -ok
+Morpheme Gloss(en)                                                                 
+Morpheme Gloss(es)  entonces  otro.f    día  2/3M.II DISTR cazar LOC APPRX CPLX FUT
+Morpheme Cat             prt     pro    sus   v:Any v:Any v v:Any v:Any v:Any v:Any
+Word Gloss          entonces    otro    día                        cazaban en grupo
+English Sent Gloss: 
+Spanish Sent Gloss: Entonces otro día se iban todos de marisca
+
+# sentence level graph:
+(s25e / ehlpa'vayam
+  :actor (s25p / person
+           :refer-person 3rd
+           :refer-number Plural)
+  :temporal (s25a / aknem
+              :mod (s25m / mo'o))
+  :Aspect Habitual
+  :goal (s25t2 / thing)
+  :MODSTR FullAff)
+
+# alignment:
+s25a :3-3
+s25e :4-4
+s25m :2-2
+s25p :-1--1
+s25t2 :0-0
+# document level annotation:
+(s25 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :AFF (s25e / s25e))  :coref (s24p / s24p :same-entity (s25p / s25p))  :temporal (Past-ref / Past-ref :depends-on (s25a / s25a))  :temporal (s25a / s25a :overlap (s25e / s25e)))
+
+
+
+# :: snt26
+Words                            tenyay'ala  anta'a
+Morphemes                  teny -ay' -a =la  anta'a
+Morpheme Gloss(en)                                 
+Morpheme Gloss(es)  buscar PST/HAB INF =HYP  animal
+Morpheme Cat              v v:Any v:Any prt     sus
+Word Gloss                      para buscar  animal
+English Sent Gloss: 
+Spanish Sent Gloss: Para buscar animales
+
+# sentence level graph:
+(s26e / event
+  :goal (s26a / anta'a))
+
+# alignment:
+s26e :0-0
+s26a :2-2
+# document level annotation:
+(s26 / sentence  :coref (s25e / s25e :same-event (s26e / s26e)))
+
+
+
+# :: snt27
+Words                 tenyonhan    mo'o  aknem             yavhan                 ehltenya'
+Morphemes           tenyo =nhan    mo'o  aknem             yavhan           e- hl- teny -a'
+Morpheme Gloss(en)                                                                         
+Morpheme Gloss(es)  entonces =y  otro.f    día  miel del "yavhan"  2/3M.II DISTR buscar FUT
+Morpheme Cat            prt prt     pro    sus                sus       v:Any v:Any v v:Any
+Word Gloss           y entonces    otro    día               miel                  buscaban
+English Sent Gloss: 
+Spanish Sent Gloss: Y entonces otro día buscaban miel
+
+# sentence level graph:
+(s27e / ehltenyay'a
+  :actor (s27p / person
+           :refer-person 3rd
+           :refer-number Plural)
+  :undergoer (s27y / yavhan)
+  :temporal (s27a / aknem
+              :mod (s27m / mo'o))
+  :Aspect Habitual
+  :MODSTR FullAff)
+
+# alignment:
+s27a :3-3
+s27e :5-5
+s27m :2-2
+s27p :-1--1
+s27y :4-4
+# document level annotation:
+(s27 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :AFF (s27e / s27e))  :coref (s25p / s25p :same-entity (s27p / s27p))  :temporal (Past-ref / Past-ref :depends-on (s27a / s27a))  :temporal (s27a / s27a :overlap (s27e / s27e)))
+
+
+
+# :: snt28
+Words                 mo'o  aknem
+Morphemes             mo'o  aknem
+Morpheme Gloss(en)               
+Morpheme Gloss(es)  otro.f    día
+Morpheme Cat           pro    sus
+Word Gloss            otro    día
+English Sent Gloss: 
+Spanish Sent Gloss: Otro día
+
+# sentence level graph:
+(s28e / event
+  :temporal (s28a / aknem
+              :mod (s28m / mo'o)))
+
+# alignment:
+s28e :0-0
+s28a :2-2
+s28m :1-1
+# document level annotation:
+(s28 / sentence  :coref (s27e / s27e :same-event (s28e / s28e))  :temporal (Past-ref / Past-ref :depends-on (s28a / s28a))  :temporal (s28a / s28a :overlap (s28e / s28e)))
+
+
+
+# :: snt29
+Words                              ehltenya'
+Morphemes                    e- hl- teny -a'
+Morpheme Gloss(en)                          
+Morpheme Gloss(es)  2/3M.II DISTR buscar FUT
+Morpheme Cat             v:Any v:Any v v:Any
+Word Gloss                          buscaban
+English Sent Gloss: 
+Spanish Sent Gloss: Buscaban eso
+
+# sentence level graph:
+(s29e / ehltenyay'a
+  :actor (s29p / person
+           :refer-person 3rd
+           :refer-number Plural)
+  :undergoer (s29t / thing)
+  :Aspect Habitual
+  :temporal (s29t2 / thing)
+  :purpose (s29e2 / event)
+  :MODSTR FullAff)
+
+# alignment:
+s29e :1-1
+s29e2 :0-0
+s29p :-1--1
+s29t :0-0
+# document level annotation:
+(s29 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :AFF (s29e / s29e))  :coref (s28e / s28e :same-event (s29e / s29e))  :coref (s27p / s27p :same-entity (s29p / s29p))  :coref (s27y / s27y :same-entity (s29t / s29t))  :temporal (s28a / s28a :overlap (s29e / s29e)))
+
+
+
+# :: snt30
+Words                               apkehlpengkanmala'a                      apkehltoma    mo'o  aknem            tenyay'a
+Morphemes                 apk- ehl- pengkan -m -a =la'a              apk- ehl- t -om -a    mo'o  aknem        teny -ay' -a
+Morpheme Gloss(en)                                                                                                        
+Morpheme Gloss(es)  2/3M.I DISTR poner PST/HAB INF =HYP  2/3M.I DISTR comer PST/HAB INF  otro.f    día  buscar PST/HAB INF
+Morpheme Cat              v:Any v:Any v v:Any v:Any prt       v:Any v:Any v v:Any v:Any     pro    sus       v v:Any v:Any
+Word Gloss                                 para guardar                          comida    otro    día                para
+English Sent Gloss: 
+Spanish Sent Gloss: Para guardar su comida para otro día
+
+# sentence level graph:
+(s30e / event
+  :purpose (s30e2 / empengkanma-00
+             :actor (s30p / person
+                      :refer-number Plural
+                      :refer-person 3rd)
+             :theme (s30t2 / thing
+                      :Undergoer-of (s30e3 / entoma-00))
+             :purpose (s30a / aknem
+                        :mod (s30m / mo'o))
+             :Aspect Habitual
+             :MODSTR FullAff))
+
+# alignment:
+s30a :4-4
+s30e :0-0
+s30e2 :0-0
+s30e3 :2-2
+s30m :3-3
+s30p :0-0
+s30t2 :0-0
+# document level annotation:
+(s30 / sentence  :temporal (s29e / s29e :after (s30e2 / s30e2))  :modal (ROOT / ROOT :MODAL (AUTH / AUTH)) :AFF /  :coref (s29e / s29e :same-event (s30e / s30e))  :coref (s29e2 / s29e2 :same-event (s30e2 / s30e2))  :coref (s29p / s29p :same-entity (s30p / s30p))  :modal (AUTH / AUTH :AFF (s30e2 / s30e2)))
+
+
+
+# :: snt31
+Words                  tenyo
+Morphemes              tenyo
+Morpheme Gloss(en)          
+Morpheme Gloss(es)  entonces
+Morpheme Cat             prt
+Word Gloss          entonces
+English Sent Gloss: 
+Spanish Sent Gloss: Entonces
+
+# sentence level graph:
+(s31t / tenyo)
+
+# alignment:
+s31t :1-1
+# document level annotation:
+(s31 / sentence)
+
+
+
+# :: snt32
+Words                                angva'te'   anya'a    mo'o      nekhana                           apkeleyvoma
+Morphemes                      ang- v -a't -e'   anya'a    mo'o    nekha =na                   apk- el- eyv -om -a
+Morpheme Gloss(en)                                                                                                
+Morpheme Gloss(es)  2/3F.I llegar VENT V1.NFUT  noticia  otro.f    lado =LOC  2/3M.I DISTR vivir (pl.) PST/HAB INF
+Morpheme Cat               v:Any v v:Any v:Any      sus     pro  sus sus:Any             v:Any v:Any v v:Any v:Any
+Word Gloss                               llegó  noticia    otro         lado                        los que vivían
+English Sent Gloss: 
+Spanish Sent Gloss: Llegó una noticia de los que vivían en otro lugar
+
+# sentence level graph:
+(s32e / elvay'a
+  :actor (s32a / anya'a
+           :topic (s32e3 / event))
+  :source (s32p / person
+            :Actor-of (s32e2 / eleyvoma-00
+                        :place (s32n / nekhana
+                                 :mod (s32m / mo'o)))
+            :refer-number Plural)
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s32a :2-2
+s32e :1-1
+s32e2 :5-5
+s32e3 :0-0
+s32m :3-3
+s32n :4-4
+s32p :-1--1
+# document level annotation:
+(s32 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :AFF (s32e / s32e))  :temporal (past-ref / past-ref :depends-on (s32e / s32e)))
+
+
+
+# :: snt33
+Words                                apka'naykakha'                       nayvomatkok            tenyay'a
+Morphemes                    apk- a'n -ayk -akh -a'                 nayv -om -a =tkok        teny -ay' -a
+Morpheme Gloss(en)                                                                                       
+Morpheme Gloss(es)  2/3M.I reunirse PST/HAB REP INF  jugar PST/HAB INF =pequeño, -ito  buscar PST/HAB INF
+Morpheme Cat              v:Any v v:Any v:Any v:Any                 v v:Any v:Any prt       v v:Any v:Any
+Word Gloss                     se estaban reuniendo                          fiestita                para
+English Sent Gloss: 
+Spanish Sent Gloss: Que se estaban reuniendo para una fiestita
+
+# sentence level graph:
+(s33t / thing
+  :topic (s33e2 / enya'nekakha'
+           :actor (s33p2 / person
+                    :refer-person 3rd
+                    :refer-number Plural)
+           :purpose (s33n2 / nayvomatkok
+                      :mod (s33a2 / atkok))
+           :Aspect Performance
+           :QUOT s33t
+           :MODSTR FullAff))
+
+# alignment:
+s33a2 :2-2
+s33e2 :1-1
+s33n2 :2-2
+s33p2 :-1--1
+s33t :0-0
+# document level annotation:
+ 
+
+
+
+# :: snt34
+Words                                    nayvomatkok
+Morphemes                          nayv -om -a =tkok
+Morpheme Gloss(en)                                  
+Morpheme Gloss(es)  jugar PST/HAB INF =pequeño, -ito
+Morpheme Cat                       v v:Any v:Any prt
+Word Gloss                                  fiestita
+English Sent Gloss: 
+Spanish Sent Gloss: Una fiestita
+
+# sentence level graph:
+(s34n / nayvomatkok
+  :mod (s34a / atkok))
+
+# alignment:
+s34n :1-1
+s34a :1-1
+# document level annotation:
+(s34 / sentence  :coref (s33n2 / s33n2 :same-entity (s34n / s34n)))
+
+
+
+# :: snt35
+Words                                ele'hlem'
+Morphemes                      e- le'- hlem -'
+Morpheme Gloss(en)                            
+Morpheme Gloss(es)  2/3M.II DISTR viajar IMPER
+Morpheme Cat               v:Any v:Any v v:Any
+Word Gloss                                vení
+English Sent Gloss: 
+Spanish Sent Gloss: "Veni!" (dijo la noticia)
+
+# sentence level graph:
+(s35e / event
+  :actor (s35p / person)
+  :theme (s35e2 / enhleama-00
+           :actor (s35p2 / person
+                    :refer-person 3rd
+                    :refer-number Plural)
+           :Aspect Performance
+           :mode imperative
+           :QUOT s35e
+           :MODSTR PrtAff)
+  :recipient s35p2)
+
+# alignment:
+s35e :0-0
+s35e2 :1-1
+s35p :-1--1
+s35p2 :-1--1
+# document level annotation:
+(s35 / sentence  :coref (s33p2 / s33p2 :same-entity (s35p / s35p))  :coref (s23p / s23p :same-entity (s35p2 / s35p2))  :temporal (s32e / s32e :overlap (s35e / s35e))  :temporal (s35e / s35e :after (s35e2 / s35e2)))
+
+
+
+# :: snt36
+Words               angvayka
+Morphemes           angvayka
+Morpheme Gloss(en)          
+Morpheme Gloss(es)      olla
+Morpheme Cat             sus
+Word Gloss              olla
+English Sent Gloss: 
+Spanish Sent Gloss: La olla
+
+# sentence level graph:
+(s36a / angvayka)
+
+# alignment:
+s36a :1-1
+# document level annotation:
+(s36 / sentence)
+
+
+
+# :: snt37
+Words               tampor    angvaykala'a               ehltekpong            enyatav'a
+Morphemes           tampor  angvayka =la'a         e- hl- tekpo -ng        en- yata -v'a
+Morpheme Gloss(en)                                                                      
+Morpheme Gloss(es)  tambor       olla =HYP  2/3M.II DISTR pegar FUT    1PL.POS abuelo PL
+Morpheme Cat           sus         sus prt      v:Any v:Any v v:Any  sus:Any sus sus:Any
+Word Gloss          tambor            olla                  pegaban     nuestros abuelos
+English Sent Gloss: 
+Spanish Sent Gloss: Nuestros abuelos pegaban ollas como tambores
+
+# sentence level graph:
+(s37e / ehltekpoama-00
+  :actor (s37p / person
+           :ARG0-of (s37h / have-rel-role-91
+                      :ARG1 (s37p2 / person
+                              :refer-person 1st
+                              :refer-number Plural)
+                      :ARG2 (s37e2 / enyatav'a))
+           :refer-number Plural)
+  :Aspect Habitual
+  :undergoer (s37a2 / angvaykala'a
+               :ARG1-of (s37r / resemble-91
+                          :ARG2 (s37t / tampor)))
+  :MODSTR FullAff)
+
+# alignment:
+s37e :3-3
+s37e2 :4-4
+s37p :-1--1
+s37p2 :-1--1
+s37t :1-1
+s37a2 :2-2
+s37r :0-0
+# document level annotation:
+(s37 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :AFF (s37e / s37e))  :temporal (s34n / s34n :overlap (s37e / s37e))  :coref (s30p / s30p :same-entity (s37p / s37p))  :coref (s35p2 / s35p2 :same-entity (s37p2 / s37p2))  :coref (s36a / s36a :same-entity (s37a / s37a)))
+
+
+
+# :: snt38
+Words                                apka'naykakha'
+Morphemes                    apk- a'n -ayk -akh -a'
+Morpheme Gloss(en)                                 
+Morpheme Gloss(es)  2/3M.I reunirse PST/HAB REP INF
+Morpheme Cat              v:Any v v:Any v:Any v:Any
+Word Gloss                               se reunían
+English Sent Gloss: 
+Spanish Sent Gloss: Se reunían
+
+# sentence level graph:
+(s38e / enya'nekakha'
+  :actor (s38p / person
+           :refer-person 3rd)
+  :Aspect Process
+  :MODSTR FullAff)
+
+# alignment:
+s38e :1-1
+s38p :-1--1
+# document level annotation:
+(s38 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :AFF (s38e / s38e))  :temporal (s37e / s37e :overlap (s38e / s38e))  :coref (s33e2 / s33e2 :same-event (s38e / s38e))  :coref (s35p / s35p :same-entity (s38p / s38p)))
+
+
+
+# :: snt39
+Words                na                     antemak                           apkeleyvoma        nenhlet
+Morphemes            na               an- t -em -ak                   apk- el- eyv -om -a        nenhlet
+Morpheme Gloss(en)                                                                                      
+Morpheme Gloss(es)  DEF  2/3F.I ser PST/HAB V2.NFUT  2/3M.I DISTR vivir (pl.) PST/HAB INF        persona
+Morpheme Cat        prt         v:Any v v:Any v:Any             v:Any v:Any v v:Any v:Any            sus
+Word Gloss          así                         era                             sus vidas  los indígenas
+English Sent Gloss: 
+Spanish Sent Gloss: Así es que vivían los sanapaná
+
+# sentence level graph:
+(s39i2 / identity-91
+  :ARG0 (s39e / event)
+  :ARG1 (s39e2 / eleyvoma-00
+          :actor (s39p / person
+                   :mod (s39e3 / ethnic-group
+                          :name (s39n / name
+                                  :op1 "nenhlet")
+                          :wiki "Sanapaná")
+                   :refer-number Plural)
+          :Aspect Process
+          :MODSTR FullAff)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:
+s39e :0-0
+s39e2 :3-3
+s39e3 :4-4
+s39i2 :0-0
+s39n :-1--1
+s39p :-1--1
+# document level annotation:
+(s39 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :AFF (s39i2 / s39i2))  :coref (s39e / s39e :ARG1-of (include-91 / include-91 :ARG2 (s25e / s25e)))  :coref (s39e / s39e :ARG1-of (include-91 / include-91 :ARG2 (s27e / s27e)))  :coref (s39e / s39e :ARG1-of (include-91 / include-91 :ARG2 (s30e / s30e)))  :coref (s39e / s39e :ARG1-of (include-91 / include-91 :ARG2 (s33e2 / s33e2)))  :coref (s39e / s39e :ARG1-of (include-91 / include-91 :ARG2 (s35e / s35e)))  :coref (s39e / s39e :ARG1-of (include-91 / include-91 :ARG2 (s37e / s37e)))  :coref (s39e / s39e :ARG1-of (include-91 / include-91 :ARG2 (s38e / s38e)))  :coref (s24e2 / s24e2 :same-event (s39e2 / s39e2))  :coref (s30p / s30p :same-entity (s39p / s39p))  :temporal (past-ref / past-ref :depends-on (s39i2 / s39i2)))
+
+
+
+# :: snt40
+Words                  metko                       akmasoma
+Morphemes              metko                 ak- mas -om -a
+Morpheme Gloss(en)                                         
+Morpheme Gloss(es)   NEG.EXT  2/3F.III ser malo PST/HAB INF
+Morpheme Cat               v            v:Any v v:Any v:Any
+Word Gloss          no había                       problema
+English Sent Gloss: 
+Spanish Sent Gloss: No había problemas
+
+# sentence level graph:
+(s40e / exist-91
+  :ARG1 (s40t / thing
+          :ARG1-of (s40h / have-mod-91
+                     :ARG2 (s40a / akmasoma)))
+  :Aspect State
+  :MODSTR FullNeg)
+
+# alignment:
+s40a :2-2
+s40e :0-0
+s40t :0-0
+s40h :0-0
+# document level annotation:
+(s40 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :NEG (s40e / s40e))  :temporal (s39i2 / s39i2 :overlap (s40e / s40e)))
+
+
+
+# :: snt41
+Words                 metkonhan                                 apkelyamala                        a'yavay'a    anmen
+Morphemes           metko =nhan                       apk- el- y -am -a =la                  a'- yav -ay' -a    anmen
+Morpheme Gloss(en)                                                                                                   
+Morpheme Gloss(es)   NEG.EXT =y  2/3M.I DISTR beber, tomar PST/HAB INF =HYP  2/3F.III ser grande PST/HAB INF  alcohol
+Morpheme Cat              v prt               v:Any v:Any v v:Any v:Any prt              v:Any v v:Any v:Any      sus
+Word Gloss           y no había                          persona que tomaba                           grande  alcohol
+English Sent Gloss: 
+Spanish Sent Gloss: Y no había nadie que tomaba mucho alcohol
+
+# sentence level graph:
+(s41e / exist-91
+  :ARG1 (s41p / person
+          :Actor-of (s41e2 / elyama-00
+                      :undergoer (s41a / anmen
+                                   :quant (s41a2 / a'yavay'a))))
+  :Aspect State
+  :MODSTR FullNeg)
+
+# alignment:
+s41a :4-4
+s41a2 :3-3
+s41e :0-0
+s41e2 :2-2
+s41p :-1--1
+# document level annotation:
+(s41 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :NEG (s41e / s41e))  :temporal (s40e / s40e :overlap (s41e / s41e))  :coref (s39p / s39p :ARG1-of (include-91 / include-91 :ARG2 (s41p / s41p))))
+
+
+
+# :: snt42
+Words                          yavhan    anmen                            melyenek
+Morphemes                      yavhan    anmen                    m- e- l- yen -ek
+Morpheme Gloss(en)                                                                
+Morpheme Gloss(es)  miel del "yavhan"  alcohol  NEG 2/3M.II DISTR beber, tomar FUT
+Morpheme Cat                      sus      sus           v:Any v:Any v:Any v v:Any
+Word Gloss                       miel  alcohol                          no tomaban
+English Sent Gloss: 
+Spanish Sent Gloss: Alcohol de miel de miel del yavhan, no tomaban eso
+
+# sentence level graph:
+(s42e / elyama-00
+  :actor (s42p / person
+           :refer-person 3rd
+           :refer-number Plural)
+  :undergoer (s42a / anmen
+               :material (s42y / yavhan))
+  :Aspect Habitual
+  :MODSTR FullNeg)
+
+# alignment:
+s42a :2-2
+s42e :3-3
+s42p :-1--1
+s42y :1-1
+# document level annotation:
+(s42 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :NEG (s42e / s42e))  :temporal (s41e / s41e :overlap (s42e / s42e))  :coref (s39p / s39p :same-entity (s42p / s42p))  :coref (s41a / s41a :same-entity (s42a / s42a)))
+
+
+
+# :: snt43
+Words                    kessoye'                         elyenek
+Morphemes              kess -oye'                   e- l- yen -ek
+Morpheme Gloss(en)                                               
+Morpheme Gloss(es)  pequeño INTNS  2/3M.II DISTR beber, tomar FUT
+Morpheme Cat          adj sus:Any             v:Any v:Any v v:Any
+Word Gloss                pequeño                         tomaban
+English Sent Gloss: 
+Spanish Sent Gloss: Muy poco tomaban
+
+# sentence level graph:
+(s43e / elyama-00
+  :actor (s43p / person
+           :refer-person 3rd
+           :refer-number Plural)
+  :undergoer (s43t / thing
+               :quant (s43k / kessoye'))
+  :Aspect Habitual
+  :MODSTR FullAff)
+
+# alignment:
+s43e :2-2
+s43k :1-1
+s43p :-1--1
+s43t :0-0
+# document level annotation:
+(s43 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :AFF (s43e / s43e))  :temporal (past-ref / past-ref :depends-on (s43e / s43e))  :coref (s42p / s42p :same-entity (s43p / s43p))  :coref (s42a / s42a :same-entity (s43t / s43t)))
+
+
+
+# :: snt44
+Words               hlemmea                  monneyay'onhan   anya'a
+Morphemes           hlemmea        m- on- ney -ay' -o =nhan   anya'a
+Morpheme Gloss(en)                                                  
+Morpheme Gloss(es)    antes  NEG 1PL.II oír PST/HAB SUBJ =y  noticia
+Morpheme Cat            adv   v:Any v:Any v v:Any v:Any prt      sus
+Word Gloss            antes           no habíamos escuchado  noticia
+English Sent Gloss: 
+Spanish Sent Gloss: Y antes tampoco habíamos escuchado la noticia
+
+# sentence level graph:
+(s44e / enneyay'a
+  :experiencer (s44p / person
+                 :refer-person 1st
+                 :refer-number Plural)
+  :stimulus (s44a / anya'a)
+  :temporal (s44h / hlemmea)
+  :Aspect State
+  :MODSTR FullNeg)
+
+# alignment:
+s44a :3-3
+s44e :2-2
+s44h :1-1
+s44p :-1--1
+# document level annotation:
+(s44 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :NEG (s44e / s44e))  :temporal (past-ref / past-ref :depends-on (s44h / s44h))  :temporal (s44h / s44h :depends-on (s44e / s44e))  :coref (s37p2 / s37p2 :same-entity (s44p / s44p)))
+
+
+
+# :: snt45
+Words                                apayvoma       enyapong  neteng
+Morphemes                      a- payv -om -a     en- yapong  neteng
+Morpheme Gloss(en)                                                  
+Morpheme Gloss(es)  2/3M.I hablar PST/HAB INF  1PL.POS padre   cielo
+Morpheme Cat              v:Any v v:Any v:Any    sus:Any sus     sus
+Word Gloss                            palabra          padre  encima
+English Sent Gloss: 
+Spanish Sent Gloss: La palabra de Dios
+
+# sentence level graph:
+(s45t / thing
+  :Theme-of (s45e / empayvoma-00
+              :actor (s45p / person
+                       :ARG0-of (s45h / have-rel-role-91
+                                  :ARG1 (s45p2 / person
+                                          :refer-person 1st
+                                          :refer-number Plural)
+                                  :ARG2 (s45e2 / enyapong))
+                       :place (s45n / neteng))))
+
+# alignment:
+s45e :1-1
+s45e2 :2-2
+s45n :3-3
+s45p :-1--1
+s45p2 :-1--1
+s45t :0-0
+# document level annotation:
+(s45 / sentence  :coref (s44a / s44a :same-entity (s45t / s45t))  :coref (s44p / s44p :same-entity (s45p2 / s45p2)))
+
+
+
+# :: snt46
+Words                  metko
+Morphemes              metko
+Morpheme Gloss(en)          
+Morpheme Gloss(es)   NEG.EXT
+Morpheme Cat               v
+Word Gloss          no había
+English Sent Gloss: 
+Spanish Sent Gloss: No había
+
+# sentence level graph:
+(s46e / exist-91
+  :ARG1 (s46t / thing)
+  :Aspect State
+  :MODSTR FullNeg)
+
+# alignment:
+s46e :0-0
+s46t :0-0
+# document level annotation:
+(s46 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :NEG (s46e / s46e))  :coref (s45t / s45t :same-entity (s46t / s46t))  :temporal (s44e / s44e :overlap (s46e / s46e)))
+
+
+
+# :: snt47
+Words                                                   apkeleyvomke'ha   nenhlet
+Morphemes                                     apk- el- eyv -om -ke ='ha   nenhlet
+Morpheme Gloss(en)                                                               
+Morpheme Gloss(es)  2/3M.I DISTR vivir (pl.) PST/HAB V1.NFUT =así nomás   persona
+Morpheme Cat                              v:Any v:Any v v:Any v:Any prt       sus
+Word Gloss                                                 vivían nomás  indígena
+English Sent Gloss: 
+Spanish Sent Gloss: La gente vivía así nomás
+
+# sentence level graph:
+(s47e / eleyvoma-00
+  :actor (s47p / person
+           :mod (s47e2 / ethnic-group
+                  :name (s47n / name
+                          :op1 "nenhlet")
+                  :wiki "Sanapaná")
+           :refer-number Plural)
+  :mod "MISSING-VALUE"
+  :MODSTR FullAff
+  :Aspect Activity)
+
+# alignment:
+s47e :1-1
+s47e2 :2-2
+s47n :-1--1
+s47p :-1--1
+# document level annotation:
+(s47 / sentence  :temporal (past-ref / past-ref :depends-on (s47e / s47e))  :coref (s43p / s43p :same-entity (s47p / s47p)))
+
+
+
+# :: snt48
+Words                                                   apkeleyvomke'ha
+Morphemes                                     apk- el- eyv -om -ke ='ha
+Morpheme Gloss(en)                                                     
+Morpheme Gloss(es)  2/3M.I DISTR vivir (pl.) PST/HAB V1.NFUT =así nomás
+Morpheme Cat                              v:Any v:Any v v:Any v:Any prt
+Word Gloss                                                 vivían nomás
+English Sent Gloss: 
+Spanish Sent Gloss: Vivían así nomás
+
+# sentence level graph:
+(s48e / eleyvoma-00
+  :actor (s48p / person
+           :refer-person 3rd
+           :refer-number Plural)
+  :mod "MISSING-VALUE"
+  :Aspect Activity
+  :MODSTR FullAff)
+
+# alignment:
+s48e :1-1
+s48p :-1--1
+# document level annotation:
+(s48 / sentence  :coref (s47e / s47e :same-event (s48e / s48e))  :coref (s47p / s47p :same-entity (s48p / s48p)))
+
+
+
+# :: snt49
+Words                                   apkehlta'mehlkesamma'ap  yavokhoho
+Morphemes                     apk- ehl- ta'mehl -kes -amm -a'ap  yavokhoho
+Morpheme Gloss(en)                                                        
+Morpheme Gloss(es)  2/3M.I DISTR ser lindo CAUS PST/HAB PAS.INF       todo
+Morpheme Cat                        v:Any v:Any v v>v v:Any v>v        pro
+Word Gloss                             se cuidaban unos a otros      todos
+English Sent Gloss: 
+Spanish Sent Gloss: Todos se cuidaban bien uno a otro
+
+# sentence level graph:
+(s49a / apkehlta'mehlkesamma'ap
+  :actor (s49p2 / person
+           :quant (s49y2 / yavokhoho)
+           :refer-person 3rd)
+  :undergoer s49p2
+  :Aspect Habitual
+  :MODSTR FullAff)
+
+# alignment:
+s49a :1-1
+s49p2 :0-0
+s49y2 :2-2
+# document level annotation:
+(s49 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :AFF (s49e / s49e))  :temporal (s48e / s48e :overlap (s49e / s49e))  :coref (s48p / s48p :same-entity (s49p / s49p)))
+
+
+
+# :: snt50
+Words                                        apkeleyvoma
+Morphemes                            apk- el- eyv -om -a
+Morpheme Gloss(en)                                      
+Morpheme Gloss(es)  2/3M.I DISTR vivir (pl.) PST/HAB INF
+Morpheme Cat                   v:Any v:Any v v:Any v:Any
+Word Gloss                                los que vivían
+English Sent Gloss: 
+Spanish Sent Gloss: Los que vivían
+
+# sentence level graph:
+(s50p / person
+  :Actor-of (s50e / eleyvoma-00)
+  :refer-number Plural)
+
+# alignment:
+s50e :1-1
+s50p :-1--1
+# document level annotation:
+(s50 / sentence  :coref (s49p / s49p :same-entity (s50p / s50p)))
+
+
+
+# :: snt51
+Words                  have'                        apkelyamenamma'ap
+Morphemes              have'                apk- el- yamen -amm -a'ap
+Morpheme Gloss(en)                                                   
+Morpheme Gloss(es)  NEG.PRED  2/3M.I DISTR hablar mal PST/HAB PAS.INF
+Morpheme Cat             prt                  v:Any v:Any v v:Any v>v
+Word Gloss                no               hablaban mal unos de otros
+English Sent Gloss: 
+Spanish Sent Gloss: No es que hablaban mal unos de otros
+
+# sentence level graph:
+(s51a / apkelyamenamma'ap
+  :actor (s51p2 / person
+           :refer-person 3rd
+           :refer-number Plural)
+  :undergoer (s51p3 / person
+               :refer-number Plural
+               :refer-person 3rd)
+  :actor s51p3
+  :undergoer s51p2
+  :Aspect Habitual
+  :MODSTR FullNeg)
+
+# alignment:
+s51a :2-2
+s51p2 :0-0
+s51p3 :0-0
+# document level annotation:
+(s51 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :NEG (s51a / s51a))  :temporal (s49e / s49e :overlap (s51a / s51a))  :coref (s50p / s50p :ARG1-of (include-91 / include-91 :ARG2 (s51p / s51p)))  :coref (s50p / s50p :ARG1-of (include-91 / include-91 :ARG2 (s51p2 / s51p2))))
+
+
+
+# :: snt52
+Words                                 apkehltema                           apkeleyvoma  sanapana
+Morphemes                     apk- ehl- t -em -a                   apk- el- eyv -om -a  sanapana
+Morpheme Gloss(en)                                                                              
+Morpheme Gloss(es)  2/3M.I DISTR ser PST/HAB INF  2/3M.I DISTR vivir (pl.) PST/HAB INF  sanapaná
+Morpheme Cat           v:Any v:Any v v:Any v:Any             v:Any v:Any v v:Any v:Any       sus
+Word Gloss                             la manera                             sus vidas  sanapaná
+English Sent Gloss: 
+Spanish Sent Gloss: Es la manera de vivir de los sanapaná
+
+# sentence level graph:
+(s52i2 / identity-91
+  :ARG0 (s52e3 / event)
+  :ARG1 (s52e / eleyvoma-00
+          :actor (s52p / person
+                   :mod (s52e2 / ethnic-group
+                          :name (s52n / name
+                                  :op1 "sanapana")
+                          :wiki "Sanapaná")
+                   :refer-number Plural)
+          :Aspect Process
+          :MODSTR FullAff)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:
+s52e :2-2
+s52e2 :3-3
+s52i2 :0-0
+s52n :-1--1
+s52p :0-0
+# document level annotation:
+(s52 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :AFF (s52a / s52a))  :modal (AUTH / AUTH :AFF (s52i2 / s52i2))  :coref (s52t / s52t :ARG1-of (include-91 / include-91 :ARG2 (s42e / s42e)))  :coref (s52e / s52e :ARG1-of (include-91 / include-91 :ARG2 (s43e / s43e)))  :coref (s52e / s52e :ARG1-of (include-91 / include-91 :ARG2 (s46e / s46e)))  :coref (s52e / s52e :ARG1-of (include-91 / include-91 :ARG2 (s47e / s47e)))  :coref (s52e / s52e :ARG1-of (include-91 / include-91 :ARG2 (s48e / s48e)))  :coref (s52e / s52e :ARG1-of (include-91 / include-91 :ARG2 (s49e / s49e)))  :coref (s52e / s52e :ARG1-of (include-91 / include-91 :ARG2 (s51a / s51a)))  :coref (s39e2 / s39e2 :same-event (s52a / s52a))  :coref (s50p / s50p :same-entity (s52p / s52p))  :temporal (past-ref / past-ref :depends-on (s52i2 / s52i2)))
+
+
+
+# :: snt53
+Words                            asvetay'aye'     ko'o             temakha'    ansetko'ok
+Morphemes                  as- vet -ay' -aye'     ko'o         t -em -akha'  an- setko'ok
+Morpheme Gloss(en)                                                                       
+Morpheme Gloss(es)  1SG.I ver PST/HAB V1.NFUT  1SG:PRO  ser PST/HAB NOM.LOC   2/3F.I niño
+Morpheme Cat              v:Any v v:Any v:Any      pro        v v:Any v:Any     v:Any sus
+Word Gloss                                 vi       yo        cuando estaba         chico
+English Sent Gloss: 
+Spanish Sent Gloss: Lo vi cuando estaba chico
+
+# sentence level graph:
+(s53a / asvetay'aye'
+  :experiencer (s53p / person
+                 :refer-person 1st
+                 :refer-number Singular)
+  :stimulus (s53e / event
+              :Modpred s53a)
+  :temporal (s53h / have-role-91
+              :ARG0 s53p
+              :ARG2 (s53a2 / ansetko'ok))
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:
+s53a :0-0
+s53a2 :4-4
+s53h :0-0
+s53p :-1--1
+# document level annotation:
+(s53 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :AFF (s53h / s53h))  :modal (AUTH / AUTH :AFF (s53a / s53a))  :temporal (past-ref / past-ref :depends-on (s53h / s53h))  :temporal (s53h / s53h :overlap (s53a / s53a))  :coref (s52i2 / s52i2 :same-event (s53t / s53t)))
+
+
+
+# :: snt54
+Words                              astemakha'     asketkok
+Morphemes                    as- t -em -akha'   as- ketkok
+Morpheme Gloss(en)                                        
+Morpheme Gloss(es)  1SG.I ser PST/HAB NOM.LOC    1SG joven
+Morpheme Cat              v:Any v v:Any v:Any  sus:Any sus
+Word Gloss                      cuando estaba        joven
+English Sent Gloss: 
+Spanish Sent Gloss: Cuando estaba joven
+
+# sentence level graph:
+(s54e / event
+  :temporal (s54h / have-role-91
+              :ARG0 (s54p / person
+                      :refer-person 1st
+                      :refer-number Singular)
+              :ARG2 (s54a / asketkok)))
+
+# alignment:
+s54a :2-2
+s54e :0-0
+s54h :0-0
+s54p :-1--1
+# document level annotation:
+(s54 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :AFF (s54h / s54h))  :coref (s53h / s53h :same-event (s54h / s54h))  :coref (s53a / s53a :same-event (s54e / s54e))  :coref (s53p / s53p :same-entity (s54p / s54p)))
+
+
+
+# :: snt55
+Words                na                     antemak                           apkeleyvoma  hlemmea   nenhlet
+Morphemes            na               an- t -em -ak                   apk- el- eyv -om -a  hlemmea   nenhlet
+Morpheme Gloss(en)                                                                                          
+Morpheme Gloss(es)  DEF  2/3F.I ser PST/HAB V2.NFUT  2/3M.I DISTR vivir (pl.) PST/HAB INF    antes   persona
+Morpheme Cat        prt         v:Any v v:Any v:Any             v:Any v:Any v v:Any v:Any      adv       sus
+Word Gloss          así                         era                             sus vidas    antes  indígena
+English Sent Gloss: 
+Spanish Sent Gloss: Así es que vivían antes los sanapaná
+
+# sentence level graph:
+(s55i2 / identity-91
+  :ARG0 (s55t / thing)
+  :ARG1 (s55a / apkeleyvoma-00
+          :actor (s55p / person
+                   :refer-number Plural
+                   :mod (s55e / ethnic-group
+                          :name (s55n / name
+                                  :op1 "nenhlet")
+                          :wiki "Sanapana"))
+          :Aspect Process
+          :MODSTR FullAff)
+  :temporal (s55h / hlemmea)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:
+s55a :3-3
+s55e :5-5
+s55h :4-4
+s55i2 :0-0
+s55n :-1--1
+s55p :-1--1
+s55t :0-0
+# document level annotation:
+(s55 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :AFF (s55i2 / s55i2))  :coref (s52t / s52t :same-event (s55t / s55t))  :coref (s52i2 / s52i2 :same-event (s55i2 / s55i2))  :coref (s52t2 / s52t2 :same-event (s55a / s55a))  :coref (s52p / s52p :same-entity (s55p / s55p))  :temporal (past-ref / past-ref :depends-on (s55h / s55h))  :temporal (s55h / s55h :overlap (s55i2 / s55i2)))
+
+
+
+# :: snt56
+Words                  tenyo
+Morphemes              tenyo
+Morpheme Gloss(en)          
+Morpheme Gloss(es)  entonces
+Morpheme Cat             prt
+Word Gloss          entonces
+English Sent Gloss: 
+Spanish Sent Gloss: Entonces
+
+# sentence level graph:
+(s56t / tenyo)
+
+# alignment:
+s56t :1-1
+# document level annotation:
+(s56 / sentence  :temporal (past-ref / past-ref :depends-on (s56t / s56t)))
+
+
+
+# :: snt57
+Words                                angva'te'    mokham   anya'a
+Morphemes                      ang- v -a't -e'    mokham   anya'a
+Morpheme Gloss(en)                                               
+Morpheme Gloss(es)  2/3F.I llegar VENT V1.NFUT   todavía  noticia
+Morpheme Cat               v:Any v v:Any v:Any       prt      sus
+Word Gloss                               llegó  otra vez  noticia
+English Sent Gloss: 
+Spanish Sent Gloss: Llegó otra vez una noticia
+
+# sentence level graph:
+(s57a / angva'te'
+  :actor (s57a2 / anya'a
+           :refer-number Singular)
+  :other (s57m / mokham)
+  :Aspect Performance
+  :topic (s57e / event)
+  :MODSTR FullAff)
+
+# alignment:
+s57a :1-1
+s57a2 :3-3
+s57m :2-2
+s57e :0-0
+# document level annotation:
+(s57 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :AFF (s57a / s57a))  :temporal (s32e / s32e :after (s57a / s57a))  :coref (s56t / s56t :same-entity (s57t / s57t))  :temporal (s57t / s57t :depends-on (s57a / s57a)))
+
+
+
+# :: snt58
+Words                 mo'o    nekhanhan                                  apte'yoma  nenhlet
+Morphemes             mo'o  nekha =nhan                            ap- te'y -om -a  nenhlet
+Morpheme Gloss(en)                                                                         
+Morpheme Gloss(es)  otro.f      lado =y  2/3M.I morir por fuerza (pl.) PST/HAB INF  persona
+Morpheme Cat           pro      sus prt                        v:Any v v:Any v:Any      sus
+Word Gloss            otro         lado                             fueron matados  persona
+English Sent Gloss: 
+Spanish Sent Gloss: Que en otro lado habían matado a alguna gente
+
+# sentence level graph:
+(s58e / event
+  :actor (s58t / thing)
+  :theme (s58e2 / ente'yoma
+           :undergoer (s58p / person
+                        :mod (s58e3 / ethnic-group
+                               :name (s58n / name
+                                       :op1 "nenhlet")
+                               :wiki "Sanapana"))
+           :QUOT s58e
+           :place (s58n2 / nekhanhan
+                    :mod (s58m / mo'o))
+           :Aspect Performance
+           :actor (s58p2 / person)))
+
+# alignment:
+s58e :0-0
+s58e2 :3-3
+s58e3 :4-4
+s58m :1-1
+s58n :-1--1
+s58n2 :2-2
+s58p :-1--1
+s58t :0-0
+s58p2 :0-0
+# document level annotation:
+ 
+
+
+
+# :: snt59
+Words                  havenhan     militar
+Morphemes            have =nhan     militar
+Morpheme Gloss(en)                         
+Morpheme Gloss(es)  NEG.PRED =y  militar.SP
+Morpheme Cat            prt prt          cs
+Word Gloss              no eran     militar
+English Sent Gloss: 
+Spanish Sent Gloss: Y no eran los militares (que lo mataron)
+
+# sentence level graph:
+(s59h / have-role-91
+  :ARG0 (s59p / person)
+  :ARG2 (s59m / militar)
+  :Aspect State
+  :MODSTR FullNeg)
+
+# alignment:
+s59h :0-0
+s59m :2-2
+s59p :-1--1
+# document level annotation:
+(s59 / sentence  :modal (ROOT / ROOT :MODAL (AUTH / AUTH))  :modal (AUTH / AUTH :NEG (s59h / s59h))  :temporal (past-ref / past-ref :depends-on (s59h / s59h)))
+
+
+
+# :: snt60
+Words                                   akvesay'a      tahachi
+Morphemes                         ak- ves -ay' -a      tahachi
+Morpheme Gloss(en)                                            
+Morpheme Gloss(es)  2/3F.III llamarse PST/HAB INF  policia.GUA
+Morpheme Cat                  v:Any v v:Any v:Any          sus
+Word Gloss                               se llama      policia
+English Sent Gloss: 
+Spanish Sent Gloss: Se llamaban "tahachi" (la gendarmería)
+
+# sentence level graph:
+(s60h / have-name-91
+  :ARG1 (s60p / person)
+  :ARG2 (s60t / tahachi)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:
+s60h :-1--1
+s60p :-1--1
+s60t :2-2
+# document level annotation:
+
+
+
+
+# :: snt61
+Words                              apkenyemay'a     río
+Morphemes                    apk- enyem -ay' -a     río
+Morpheme Gloss(en)                                     
+Morpheme Gloss(es)  2/3M.I venir de PST/HAB INF  río.SP
+Morpheme Cat                v:Any v v:Any v:Any      cs
+Word Gloss                          vinieron de     río
+English Sent Gloss: 
+Spanish Sent Gloss: Habían venido del Río Paraguay
+
+# sentence level graph:
+(s61a / apkenyemay'a
+  :actor (s61p / person
+           :refer-person 3rd)
+  :source (s61r / river
+            :name (s61n / name
+                    :op1 "río")
+            :wiki "Paraguay_River")
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s61a :1-1
+s61n :-1--1
+s61p :-1--1
+s61r :2-2
+# document level annotation:
+
+
+
+
+# :: snt62
+Words                       particulanhan     valayo
+Morphemes                 particula =nhan     valayo
+Morpheme Gloss(en)                                  
+Morpheme Gloss(es)       particular.SP =y  paraguayo
+Morpheme Cat                       cs prt        sus
+Word Gloss          particular, ciudadano  paraguayo
+English Sent Gloss: 
+Spanish Sent Gloss: Y ciudadanos paraguayos también
+
+# sentence level graph:
+(s62a / and
+  :op1 (s62p / person)
+  :op2 (s62p2 / particulanhan
+         :mod (s62n / nationality
+                :name (s62n2 / name
+                        :op1 "valayo")
+                :wiki "Paraguay")))
+
+# alignment:
+s62a :0-0
+s62p :-1--1
+s62p2 :1-1
+s62n :2-2
+s62n2 :2-2
+valayo :2-2
+Paraguay :0-0
+# document level annotation:
+
+
+
+
+# :: snt63
+Words                           particula  nepokha'                     akpahlkay'a                    ha'e
+Morphemes                       particula  nepokha'               ak- pahlk -ay' -a                    ha'e
+Morpheme Gloss(en)                                                                                         
+Morpheme Gloss(es)          particular.SP   prójimo  2/3F.III mezclarse PST/HAB INF  allá lejos de nosotros
+Morpheme Cat                           cs       sus             v:Any v v:Any v:Any                     adv
+Word Gloss          particular, ciudadano   prójimo                  eran mezclados                    allá
+English Sent Gloss: 
+Spanish Sent Gloss: Había ciudadanos paraguayos mezclado entre ellos también
+
+# sentence level graph:
+(s63a / akpahlkay'a
+  :actor (s63n / nepokha'-
+           :mod (s63p / particula))
+  :companion (s63h / ha'e)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:
+s63a :3-3
+s63h :4-4
+s63n :2-undefined
+s63p :1-1
+# document level annotation:
+
+
+
+
+# :: snt64
+Words                                             apkehlte'yevkeske'   nenhlet
+Morphemes                                 apk- ehl- te'yev -kes -ke'   nenhlet
+Morpheme Gloss(en)                                                            
+Morpheme Gloss(es)  2/3M.I DISTR morir por fuerza (pl.) CAUS V1.NFUT   persona
+Morpheme Cat                                 v:Any v:Any v v>v v:Any       sus
+Word Gloss                                                   mataron  indígena
+English Sent Gloss: 
+Spanish Sent Gloss: Mataron a los sanapaná
+
+# sentence level graph:
+(s64a / apkehlte'yevkeske'
+  :actor (s64p / person
+           :refer-person 3rd
+           :refer-number Plural)
+  :undergoer (s64p2 / person
+               :mod (s64e / ethnic-group
+                      :name (s64n / name
+                              :op1 "nenhlet")
+                      :wiki "Sanapana")
+               :refer-number Plural)
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s64a :1-1
+s64e :2-2
+s64n :-1--1
+s64p :-1--1
+s64p2 :-1--1
+# document level annotation:
+
+
+
+
+# :: snt65
+Words                                   apkenmo'tay'a
+Morphemes                       apk- en- mo't -ay' -a
+Morpheme Gloss(en)                                   
+Morpheme Gloss(es)  2/3M.I DISTR disparar PST/HAB INF
+Morpheme Cat                v:Any v:Any v v:Any v:Any
+Word Gloss                                 dispararon
+English Sent Gloss: 
+Spanish Sent Gloss: Los dispararon
+
+# sentence level graph:
+(s65a / apkenmo'tay'a
+  :actor (s65p / person
+           :refer-person 3rd
+           :refer-number Plural)
+  :undergoer (s65p2 / person)
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s65a :1-1
+s65p :-1--1
+s65p2 :-1--1
+# document level annotation:
+
+
+
+
+# :: snt66
+Words                       cuatronehla                         anmama                           anmoama      a'tek  pesasep
+Morphemes                 cuatro =nehla                   an- m -am -a                     an- mo -am -a      a'tek  pesasep
+Morpheme Gloss(en)                                                                                                          
+Morpheme Gloss(es)       cuatro.SP =DUB  2/3F.PL.III tomar PST/HAB INF  2/3F.PL.III explotar PST/HAB INF  proyectil    noche
+Morpheme Cat                     cs prt            v:Any v v:Any v:Any               v:Any v v:Any v:Any        sus      sus
+Word Gloss          posiblemente cuatro                        tomaron                     arma de fuego  proyectil    noche
+English Sent Gloss: 
+Spanish Sent Gloss: Puede ser que cuatro personas fueron disparadas en la noche
+
+# sentence level graph:
+(s66e / enmama-00
+  :recipient (s66p / person
+               :quant 4)
+  :theme (s66a2 / a'tek
+           :source (s66t / thing
+                     :Undergoer-of (s66e2 / enmoama-00)))
+  :temporal (s66p2 / pesasep)
+  :Aspect Performance
+  :MODSTR NeutAff)
+
+# alignment:
+s66a2 :4-4
+s66p :-1--1
+s66p2 :5-5
+s66e2 :3-3
+# document level annotation:
+
+
+
+
+# :: snt67
+Words                  linterna                      apkelyapopkeskama     valayo   konne'                         kay'apaga
+Morphemes              linterna            apk- el- yapop -kes -kam -a     valayo   konne'                    k -ay' -a paga
+Morpheme Gloss(en)                                                                                                          
+Morpheme Gloss(es)  linterna.SP  2/3M.I DISTR brillar CAUS PST/HAB INF  paraguayo  adentro  tener miedo PST/HAB INF mosquito
+Morpheme Cat                 cs          v:Any v:Any v v>v v:Any v:Any        sus    adpos                 v v:Any v:Any sus
+Word Gloss             linterna                             alumbraron  paraguayo  adentro                        mosquitera
+English Sent Gloss: 
+Spanish Sent Gloss: Con sus linternas los paraguayos alumbraron adentro de las mosquiteras
+
+# sentence level graph:
+(s67e / elyapopkeskama-00
+  :actor (s67p / person
+           :refer-number Plural
+           :mod (s67n / nationality
+                  :name (s67n2 / name
+                          :op1 "valayo")
+                  :wiki "Paraguay"))
+  :instrument (s67l / linterna)
+  :place (s67k / konne'
+           :op1 (s67k2 / kay'apaga))
+  :Aspect Activity
+  :MODSTR FullAff)
+
+# alignment:
+s67k :4-4
+s67k2 :5-5
+s67l :1-1
+s67n :3-3
+s67n2 :-1--1
+s67p :-1--1
+# document level annotation:
+
+
+
+
+# :: snt68
+Words               hlema  allavsoye'
+Morphemes           hlema  allavsoye'
+Morpheme Gloss(en)                   
+Morpheme Gloss(es)    uno  embarazada
+Morpheme Cat          num         adj
+Word Gloss            una  embarazada
+English Sent Gloss: 
+Spanish Sent Gloss: Una mujer embarazada
+
+# sentence level graph:
+(s68p2 / person
+  :ARG1-of (s68h2 / have-mod-91
+             :ARG2 (s68a2 / allavsoye'))
+  :quant 1)
+
+# alignment:
+s68p2 :0-0
+s68h2 :0-0
+s68a2 :2-2
+# document level annotation:
+
+
+
+
+# :: snt69
+Words                 angkelvana
+Morphemes           ang- kelvana
+Morpheme Gloss(en)              
+Morpheme Gloss(es)       F mujer
+Morpheme Cat         sus:Any sus
+Word Gloss                 mujer
+English Sent Gloss: 
+Spanish Sent Gloss: Una mujer
+
+# sentence level graph:
+(s69a / angkelvana)
+
+# alignment:
+s69a :1-1
+# document level annotation:
+
+
+
+
+# :: snt70
+Words                 kennavonhan  hlema
+Morphemes           kennavo =nhan  hlema
+Morpheme Gloss(en)                      
+Morpheme Gloss(es)      hombre =y    uno
+Morpheme Cat              sus prt    num
+Word Gloss                 hombre     un
+English Sent Gloss: 
+Spanish Sent Gloss: Y un hombre también
+
+# sentence level graph:
+(s70a / and
+  :op1 (s70p2 / person)
+  :op2 (s70k2 / kennavonhan
+         :quant 1))
+
+# alignment:
+s70a :0-0
+s70p2 :0-0
+s70k2 :1-1
+# document level annotation:
+
+
+
+
+# :: snt71
+Words               ennengko'o                       eleyvoma                ahltama seyana'
+Morphemes           ennengko'o                 el- eyv -om -a                ahltama seyana'
+Morpheme Gloss(en)                                                                          
+Morpheme Gloss(es)     1PL:PRO  1PL.I vivir (pl.) PST/HAB INF  anciano lugar de los sanapaná
+Morpheme Cat               pro            v:Any v v:Any v:Any                            sus
+Word Gloss            nosotros                       vivíamos  anciano lugar de los sanapaná
+English Sent Gloss: 
+Spanish Sent Gloss: Nosotros vivíamos en ahltama seyana'
+
+# sentence level graph:
+(s71e / eleyvoma-00
+  :actor (s71p / person
+           :refer-person 1st
+           :refer-number Plural)
+  :place (s71t / territory
+           :name (s71n / name
+                   :op1 "ahltama"
+                   :op2 "seyana'"))
+  :Aspect Activity
+  :MODSTR FullAff)
+
+# alignment:
+s71e :2-2
+s71n :-1--1
+s71p :-1--1
+s71t :3-3
+# document level annotation:
+
+
+
+
+# :: snt72
+Words                                    angvaktenne'   anya'a
+Morphemes                        ang- v -akt -e =nne'   anya'a
+Morpheme Gloss(en)                                            
+Morpheme Gloss(es)  2/3F.I llegar VENT V1.NFUT =FRUST  noticia
+Morpheme Cat                  v:Any v v:Any v:Any prt      sus
+Word Gloss                                      llegó  noticia
+English Sent Gloss: 
+Spanish Sent Gloss: Llegó de balde la noticia
+
+# sentence level graph:
+(s72e / elvay'a
+  :actor (s72a / anya'a
+           :refer-number Singular)
+  :purpose (s72e2 / event
+             :MODSTR FullNeg)
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s72a :2-2
+s72e :1-1
+s72e2 :0-0
+# document level annotation:
+
+
+
+
+# :: snt73
+Words                                   tay'avonne'               ontanya'
+Morphemes                         t -ay' -avo =nne'           on- tany -a'
+Morpheme Gloss(en)                                                        
+Morpheme Gloss(es)  desear PST/HAB INTNS.SBJ =FRUST  1PL.II econtrarse FUT
+Morpheme Cat                      v v:Any v:Any prt          v:Any v v:Any
+Word Gloss                                 deseaban          encontráramos
+English Sent Gloss: 
+Spanish Sent Gloss: Querían que encontráramos a ellos
+
+# sentence level graph:
+(s73e / entay'a
+  :experiencer (s73p / person)
+  :stimulus (s73e2 / entaneyam
+              :actor (s73p2 / person
+                       :refer-person 1st
+                       :refer-number Plural)
+              :goal (s73p3 / place)
+              :Modpred s73e)
+  :MODSTR AFF)
+
+# alignment:
+s73e :1-1
+s73e2 :2-2
+s73p :-1--1
+s73p2 :-1--1
+s73p3 :0-0
+# document level annotation:
+
+
+
+
+# :: snt74
+Words                 mo'o  nekha'
+Morphemes             mo'o  nekha'
+Morpheme Gloss(en)                
+Morpheme Gloss(es)  otro.f    lado
+Morpheme Cat           pro     sus
+Word Gloss            otro    lado
+English Sent Gloss: 
+Spanish Sent Gloss: En otro lado
+
+# sentence level graph:
+(s74n / nekha'
+  :mod (s74m / mo'o))
+
+# alignment:
+s74m :1-1
+s74n :2-2
+# document level annotation:
+
+
+
+
+# :: snt75
+Words                             apka'nakheye'  nenhlet
+Morphemes                   apk- a'n -akh -eye'  nenhlet
+Morpheme Gloss(en)                                      
+Morpheme Gloss(es)  2/3M.I reunirse REP V1.NFUT  persona
+Morpheme Cat                v:Any v v:Any v:Any      sus
+Word Gloss                   se reunió otra vez  persona
+English Sent Gloss: 
+Spanish Sent Gloss: La gente volvió a reunirse
+
+# sentence level graph:
+(s75e / enya'nema
+  :actor (s75p / person
+           :mod (s75e2 / ethnic-group
+                  :name (s75n / name
+                          :op1 "nenhlet")
+                  :wiki "Sanapana")
+           :refer-number Plural)
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s75e :1-1
+s75e2 :2-2
+s75n :2-2
+s75p :-1--1
+# document level annotation:
+
+
+
+
+# :: snt76
+Words                 anteyepe'                     ompo'temok             aptohohla  hlema  nenhlet                     ompo'temok
+Morphemes           an- teyepe'               om- po't -em -ok       ap- t -oho =hla  hlema  nenhlet               om- po't -em -ok
+Morpheme Gloss(en)                                                                                                                 
+Morpheme Gloss(es)      F lejos  1PL.II llegar tarde APPRX FUT  2/3M.I ser SUBJ =DUB    uno  persona  1PL.II llegar tarde APPRX FUT
+Morpheme Cat        sus:Any adj            v:Any v v:Any v:Any     v:Any v v:Any prt    num      sus            v:Any v v:Any v:Any
+Word Gloss                lejos           vamos a llegar tarde                  dijo    una  persona           vamos a llegar tarde
+English Sent Gloss: 
+Spanish Sent Gloss: "Es lejos, vamos a llegar tarde", dijo un hombre, "vamos a llegar tarde"
+
+# sentence level graph:
+(s76e / entema
+  :actor (s76p / person
+           :mod (s76e2 / ethnic-group
+                  :name (s76n / name
+                          :op1 "nenhlet")
+                  :wiki "Sanapana")
+           :refer-number Singular)
+  :recipient (s76p2 / person)
+  :theme (s76a / and
+           :op1 (s76a2 / and
+                  :op1 (s76h / have-location-91
+                         :ARG0 (s76p3 / place)
+                         :ARG1 (s76a3 / anteyepe')
+                         :Aspect State
+                         :QUOT s76e
+                         :MODSTR FullAff)
+                  :op2 (s76e3 / empo'tema
+                         :actor (s76p4 / person
+                                  :refer-person 1st
+                                  :refer-number Plural)
+                         :Aspect Performance
+                         :MODSTR FullAff
+                         :QUOT s76e))
+           :op2 (s76e4 / empo'tema
+                  :actor s76p4
+                  :Aspect Performance
+                  :QUOT s76e
+                  :MODSTR FullAff))
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s76a :0-0
+s76a2 :0-0
+s76a3 :1-1
+s76e :-1--1
+s76e2 :5-5
+s76e3 :2-2
+s76e4 :6-6
+s76h :0-0
+s76n :5-5
+s76p :-1--1
+s76p2 :-1--1
+s76p3 :0-0
+s76p4 :-1--1
+# document level annotation:
+(s76s0 / sentence
+  :modal ((ROOT :MODAL AUTH)
+                    (s76p3 :AFF s76h)
+                    (s76p3 :AFF s76e3)
+                    (AUTH :AFF s76e4)
+                    (AUTH :AFF s76p3)
+                    (AUTH :NEUT s76e)
+                    (AUTH :NEUT s76p3)))
+
+
+
+
+# :: snt77
+Words                              mongvetangva'me'    teyepenhan
+Morphemes                m- ong- vet -angv -a'm -e'  teyepe =nhan
+Morpheme Gloss(en)                                               
+Morpheme Gloss(es)     NEG 1PL.II ver LOC APPRX FUT      lejos =y
+Morpheme Cat        v:Any v:Any v v:Any v:Any v:Any       adj prt
+Word Gloss                  no vamos a llegar a ver         lejos
+English Sent Gloss: 
+Spanish Sent Gloss: "No vamos a llegar a ver, y es lejos"
+
+# sentence level graph:
+(s77e / event
+  :actor (s77p / person)
+  :recipient (s77p2 / person)
+  :theme (s77a / and
+           :op1 (s77e2 / elvetay'a
+                  :experiencer (s77p3 / person
+                                 :refer-person 1st
+                                 :refer-number Plural)
+                  :stimulus (s77t / thing)
+                  :QUOT s77e
+                  :Aspect State
+                  :MODSTR FullNeg)
+           :op2 (s77h / have-location-91
+                  :ARG0 (s77p4 / place)
+                  :ARG1 (s77t2 / teyepenhan)
+                  :Aspect State
+                  :QUOT s77e
+                  :MODSTR FullAff)))
+
+# alignment:
+s77a :0-0
+s77e :0-0
+s77e2 :1-1
+s77h :0-0
+s77p :-1--1
+s77p2 :-1--1
+s77p3 :-1--1
+s77p4 :0-0
+s77t :0-0
+s77t2 :2-2
+# document level annotation:
+(s77s0 / sentence
+  :modal ((ROOT :MODAL AUTH)
+                    (s77p3 :NEG s77e2)
+                    (s77p3 :AFF s77h)))
+
+
+
+
+# :: snt78
+Words               teyepe'
+Morphemes           teyepe'
+Morpheme Gloss(en)         
+Morpheme Gloss(es)    lejos
+Morpheme Cat            adj
+Word Gloss            lejos
+English Sent Gloss: 
+Spanish Sent Gloss: "Es lejos"
+
+# sentence level graph:
+(s78e / event
+  :actor (s78p / person)
+  :recipient (s78p2 / person)
+  :theme (s78h / have-location-91
+           :ARG0 (s78p3 / place)
+           :ARG1 (s78t / teyepe')
+           :Aspect State
+           :QUOT s78e
+           :MODSTR FullAff))
+
+# alignment:
+s78e :0-0
+s78h :0-0
+s78p :-1--1
+s78p2 :-1--1
+s78p3 :0-0
+s78t :1-1
+# document level annotation:
+
+
+
+
+# :: snt79
+Words                   na    metkonhan        valayola  hlemmea
+Morphemes               na  metko =nhan      valayo =la  hlemmea
+Morpheme Gloss(en)                                              
+Morpheme Gloss(es)     emm   NEG.EXT =y  paraguayo =HYP    antes
+Morpheme Cat        interj        v prt         sus prt      adv
+Word Gloss             emm   y no había       paraguayo    antes
+English Sent Gloss: 
+Spanish Sent Gloss: Y no había paraguayos antes
+
+# sentence level graph:
+(s79e / exist-91
+  :ARG1 (s79p / person
+          :mod (s79n / nationality
+                 :name (s79n2 / name
+                         :op1 "valayola")
+                 :wiki "Paraguay")
+          :refer-number Plural)
+  :temporal (s79h / hlemmea)
+  :MODSTR FullNeg
+  :Aspect State)
+
+# alignment:
+s79e :0-0
+s79h :4-4
+s79n :3-3
+s79n2 :-1--1
+s79p :-1--1
+# document level annotation:
+
+
+
+
+# :: snt80
+Words                  metko
+Morphemes              metko
+Morpheme Gloss(en)          
+Morpheme Gloss(es)   NEG.EXT
+Morpheme Cat               v
+Word Gloss          no había
+English Sent Gloss: 
+Spanish Sent Gloss: No había
+
+# sentence level graph:
+(s80e / exist-91
+  :ARG1 (s80p / person)
+  :Aspect State
+  :MODSTR FullNeg)
+
+# alignment:
+s80e :0-0
+s80p :-1--1
+# document level annotation:
+
+
+
+
+# :: snt81
+Words                                          ante'yevke   nenhlet
+Morphemes                                  an- te'yev -ke   nenhlet
+Morpheme Gloss(en)                                                 
+Morpheme Gloss(es)  2/3F.I morir por fuerza (pl.) V1.NFUT   persona
+Morpheme Cat                                v:Any v v:Any       sus
+Word Gloss                                  fueron matado  indígena
+English Sent Gloss: 
+Spanish Sent Gloss: Los indígenas fueron matados
+
+# sentence level graph:
+(s81e / ente'yoma
+  :undergoer (s81p / person
+               :mod (s81e2 / ethnic-group
+                      :name (s81n / name
+                              :op1 "nenhlet")
+                      :wiki "Sanapana"))
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s81e :1-1
+s81e2 :2-2
+s81n :2-2
+s81p :-1--1
+# document level annotation:
+
+
+
+
+# :: snt82
+Words                             apkessakheye'     valayo             lemon
+Morphemes                   apk- es- sakh -eye'     valayo             lemon
+Morpheme Gloss(en)                                                          
+Morpheme Gloss(es)  2/3M.I DISTR llevar V1.NFUT  paraguayo  tocado de plumas
+Morpheme Cat                v:Any v:Any v v:Any        sus               sus
+Word Gloss                             llevaron  paraguayo  tocado de plumas
+English Sent Gloss: 
+Spanish Sent Gloss: Los paraguayos llevaron los vestidos de cabeza
+
+# sentence level graph:
+(s82e / ensekakha'
+  :actor (s82p / person
+           :mod (s82n / nationality
+                  :name (s82n2 / name
+                          :op1 "valayo")
+                  :wiki "Paraguay")
+           :refer-number Plural)
+  :theme (s82l / lemon
+           :refer-number Plural)
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s82e :1-1
+s82l :3-3
+s82n :2-2
+s82n2 :-1--1
+s82p :-1--1
+# document level annotation:
+
+
+
+
+# :: snt83
+Words                           empengkanma             lemon
+Morphemes                 em- pengkan -m -a             lemon
+Morpheme Gloss(en)                                           
+Morpheme Gloss(es)  1PL.I poner PST/HAB INF  tocado de plumas
+Morpheme Cat            v:Any v v:Any v:Any               sus
+Word Gloss                   lo que se pone  tocado de plumas
+English Sent Gloss: 
+Spanish Sent Gloss: El vestido de cabeza, que se pone
+
+# sentence level graph:
+(s83l / lemon
+  :Theme-of (s83e / empengkanma-00
+              :actor (s83p / person
+                       :refer-person 1st
+                       :refer-number Plural)
+              :Aspect Habitual
+              :MODSTR FullAff)
+  :refer-number Plural)
+
+# alignment:
+s83e :1-1
+s83l :2-2
+s83p :-1--1
+# document level annotation:
+
+
+
+
+# :: snt84
+Words                           empengkanma               akvesvasyama
+Morphemes                 em- pengkan -m -a         ak- vesvasy -am -a
+Morpheme Gloss(en)                                                    
+Morpheme Gloss(es)  1PL.I poner PST/HAB INF  2/3F.III rojo PST/HAB INF
+Morpheme Cat            v:Any v v:Any v:Any        v:Any v v:Any v:Any
+Word Gloss                   lo que se pone             lo que es rojo
+English Sent Gloss: 
+Spanish Sent Gloss: Lo que se pone, que era rojo
+
+# sentence level graph:
+(s84t / thing
+  :Theme-of (s84e / empengkanma-00
+              :actor (s84p / person
+                       :refer-person 1st
+                       :refer-number Plural)
+              :Aspect Habitual
+              :MODSTR FullAff)
+  :ARG1-of (s84h / have-mod-91
+             :ARG2 (s84a / akvesvasyama)
+             :Aspect State))
+
+# alignment:
+s84a :2-2
+s84e :1-1
+s84h :-1--1
+s84p :-1--1
+s84t :0-0
+# document level annotation:
+
+
+
+
+# :: snt85
+Words                                         payhema                                empayhema    hengka
+Morphemes                                 payh -em -a                          em- payh -em -a    hengka
+Morpheme Gloss(en)                                                                                      
+Morpheme Gloss(es)  ser ancho, extenderse PST/HAB INF  1PL.I ser ancho, extenderse PST/HAB INF  DEM.PROX
+Morpheme Cat                            v v:Any v:Any                      v:Any v v:Any v:Any       adv
+Word Gloss                         lo que se extiende                       lo que se entiende       acá
+English Sent Gloss: 
+Spanish Sent Gloss: Lo que se extiende, que se extiende acá
+
+# sentence level graph:
+(s85t / thing
+  :Theme-of (s85e / empayhema-00
+              :place (s85h / hengka)
+              :Aspect State))
+
+# alignment:
+s85e :2-2
+s85h :3-3
+s85t :0-0
+# document level annotation:
+
+
+
+
+# :: snt86
+Words                                nata'            ava'
+Morphemes                            nata'          a- va'
+Morpheme Gloss(en)                                        
+Morpheme Gloss(es)  ave (grande/de laguna)  2/3F.POS pluma
+Morpheme Cat                           sus     sus:Any sus
+Word Gloss          ave (grande/de laguna)           pluma
+English Sent Gloss: 
+Spanish Sent Gloss: De plumas de aves
+
+# sentence level graph:
+(s86t / thing
+  :material (s86a / ava'
+              :part (s86n / nata')
+              :refer-number Plural))
+
+# alignment:
+s86a :2-2
+s86n :1-1
+s86t :0-0
+# document level annotation:
+
+
+
+
+# :: snt87
+Words                               alvesvasyema  kangken'            ava'  akvesay'a
+Morphemes                     al- vesvasy -em -a  kangken'          a- va'  akvesay'a
+Morpheme Gloss(en)                                                                   
+Morpheme Gloss(es)  2/3F.PL.III rojo PST/HAB INF  flamenco  2/3F.POS pluma       pues
+Morpheme Cat                 v:Any v v:Any v:Any       sus     sus:Any sus        prt
+Word Gloss                              era rojo  flamenco           pluma       pues
+English Sent Gloss: 
+Spanish Sent Gloss: Eran rojo, pues eran de plumas de flamenco
+
+# sentence level graph:
+(s87h2 / have-mod-91
+  :ARG1 (s87t / thing
+          :refer-number Plural)
+  :ARG2 (s87a2 / alvesvasyema)
+  :cause (s87h3 / have-material-91
+           :ARG1 s87t
+           :ARG2 (s87a3 / ava'
+                   :part (s87k2 / kangken')
+                   :refer-number Plural)
+           :Aspect State
+           :MODSTR FullAff)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:
+s87h2 :0-0
+s87t :0-0
+s87a2 :1-1
+s87h3 :0-0
+s87a3 :3-3
+s87k2 :2-2
+# document level annotation:
+
+
+
+
+# :: snt88
+Words               kangken'                   nata'            ava'
+Morphemes           kangken'                   nata'          a- va'
+Morpheme Gloss(en)                                                  
+Morpheme Gloss(es)  flamenco  ave (grande/de laguna)  2/3F.POS pluma
+Morpheme Cat             sus                     sus     sus:Any sus
+Word Gloss          flamenco  ave (grande/de laguna)           pluma
+English Sent Gloss: 
+Spanish Sent Gloss: Del flamenco, de plumas de aves
+
+# sentence level graph:
+(s88a / ava'
+  :part-of (s88a2 / and
+             :op1 (s88k / kangken')
+             :op2 (s88n / nata'))
+  :refer-number Plural)
+
+# alignment:
+s88a :3-3
+s88a2 :0-0
+s88k :1-1
+s88n :2-2
+Plural :-1--1
+# document level annotation:
+
+
+
+
+# :: snt89
+Words                             apkessakheye'  yangka
+Morphemes                   apk- es- sakh -eye'  yangka
+Morpheme Gloss(en)                                     
+Morpheme Gloss(es)  2/3M.I DISTR llevar V1.NFUT    arco
+Morpheme Cat                v:Any v:Any v v:Any     sus
+Word Gloss                             llevaron    arco
+English Sent Gloss: 
+Spanish Sent Gloss: Llevaron los arcos
+
+# sentence level graph:
+(s89e / ensekakha'
+  :actor (s89p / person
+           :refer-person 3rd
+           :refer-number Plural)
+  :theme (s89y / yangka
+           :refer-number Plural)
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s89e :1-1
+s89p :-1--1
+s89y :2-2
+# document level annotation:
+
+
+
+
+# :: snt90
+Words                                      apakhaye'  yata'ay  nepkesek
+Morphemes                              a- pakh -aye'  yata'ay  nepkesek
+Morpheme Gloss(en)                                                     
+Morpheme Gloss(es)  2/3M.I llevar (animales) V1.NFUT    cabra     oveja
+Morpheme Cat                           v:Any v v:Any      sus       sus
+Word Gloss                                  llevaron    cabra     oveja
+English Sent Gloss: 
+Spanish Sent Gloss: Llevaron las cabras, las ovejas
+
+# sentence level graph:
+(s90e / empakhay'a
+  :actor (s90p / person
+           :refer-person 3rd)
+  :theme (s90a / and
+           :op1 (s90y / yata'ay
+                  :refer-number Plural)
+           :op2 (s90n / nepkesek
+                  :refer-number Plural))
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s90a :0-0
+s90e :1-1
+s90n :3-3
+s90p :-1--1
+s90y :2-2
+# document level annotation:
+
+
+
+
+# :: snt91
+Words                                      apakhaye'  yetahleng     valayo
+Morphemes                              a- pakh -aye'  yetahleng     valayo
+Morpheme Gloss(en)                                                        
+Morpheme Gloss(es)  2/3M.I llevar (animales) V1.NFUT    caballo  paraguayo
+Morpheme Cat                           v:Any v v:Any        sus        sus
+Word Gloss                                  llevaron    caballo  paraguayo
+English Sent Gloss: 
+Spanish Sent Gloss: Llevaron los caballos, los paraguayos
+
+# sentence level graph:
+(s91e / empakhay'a
+  :actor (s91p / person
+           :mod (s91n / nationality
+                  :name (s91n2 / name
+                          :op1 "valayo")
+                  :wiki "Paraguay")
+           :refer-number Plural)
+  :theme (s91y / yetahleng
+           :refer-number Plural)
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s91e :1-1
+s91n :3-3
+s91n2 :3-3
+s91p :-1--1
+s91y :2-2
+# document level annotation:
+
+
+
+
+# :: snt92
+Words                  metko                           anmasma  nenhlet                           apte'yevo
+Morphemes              metko                     an- mas -m -a  nenhlet                       ap- te'yev -o
+Morpheme Gloss(en)                                                                                         
+Morpheme Gloss(es)   NEG.EXT  2/3F.PL.III proteger PST/HAB INF  persona  2/3M.I morir por fuerza (pl.) SUBJ
+Morpheme Cat               v               v:Any v v:Any v:Any      sus                       v:Any v v:Any
+Word Gloss          no había                   que les protege  persona                  que fueron matados
+English Sent Gloss: 
+Spanish Sent Gloss: No había gente que les protegía a los que fueron matados
+
+# sentence level graph:
+(s92e / exist-91
+  :ARG1 (s92p / person
+          :Actor-of (s92e2 / enmasma-00
+                      :undergoer (s92p2 / person
+                                   :mod (s92e3 / ethnic-group
+                                          :name (s92n2 / name
+                                                  :op1 "nenhlet")
+                                          :wiki "Sanapana")
+                                   :refer-number Plural
+                                   :Undergoer-of (s92e4 / ente'yoma
+                                                   :Aspect Performance
+                                                   :MODSTR FullAff))))
+  :Aspect State
+  :MODSTR FullNeg)
+
+# alignment:
+s92e :0-0
+s92e2 :2-2
+s92e3 :3-3
+s92e4 :4-4
+s92n2 :-1--1
+s92p :-1--1
+# document level annotation:
+
+
+
+
+# :: snt93
+Words                  metko                        akmasma
+Morphemes              metko                  ak- mas -m -a
+Morpheme Gloss(en)                                         
+Morpheme Gloss(es)   NEG.EXT  2/3F.III proteger PST/HAB INF
+Morpheme Cat               v            v:Any v v:Any v:Any
+Word Gloss          no había                que les protege
+English Sent Gloss: 
+Spanish Sent Gloss: Nadie les protegía
+
+# sentence level graph:
+(s93e / exist-91
+  :ARG1 (s93p / person
+          :Actor-of (s93e2 / enmasma-00
+                      :undergoer (s93p2 / person)))
+  :Aspect State
+  :MODSTR FullNeg)
+
+# alignment:
+s93e :0-0
+s93e2 :2-2
+s93p :-1--1
+s93p2 :-1--1
+# document level annotation:
+
+
+
+
+# :: snt94
+Words                na                     antemak                           apkeleyvoma   nenhlet  hlemmea
+Morphemes            na               an- t -em -ak                   apk- el- eyv -om -a   nenhlet  hlemmea
+Morpheme Gloss(en)                                                                                          
+Morpheme Gloss(es)  DEF  2/3F.I ser PST/HAB V2.NFUT  2/3M.I DISTR vivir (pl.) PST/HAB INF   persona    antes
+Morpheme Cat        prt         v:Any v v:Any v:Any             v:Any v:Any v v:Any v:Any       sus      adv
+Word Gloss          así                         era                             sus vidas  indígena    antes
+English Sent Gloss: 
+Spanish Sent Gloss: Así es que vivían los sanapaná antes
+
+# sentence level graph:
+(s94i2 / identity-91
+  :ARG0 (s94t / thing)
+  :ARG1 (s94e / eleyvoma-00
+          :actor (s94p / person
+                   :mod (s94e2 / ethnic-group
+                          :name (s94n / name
+                                  :op1 "nenhlet")
+                          :wiki "Sanapana")
+                   :refer-number Plural)
+          :Aspect Process
+          :MODSTR FullAff
+          :temporal (s94h / hlemmea))
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:
+s94e :3-3
+s94e2 :4-4
+s94i2 :0-0
+s94n :4-4
+s94p :-1--1
+s94t :0-0
+s94h :5-5
+# document level annotation:
+
+
+
+
+# :: snt95
+Words                  have'  ennengko'o
+Morphemes              have'  ennengko'o
+Morpheme Gloss(en)                      
+Morpheme Gloss(es)  NEG.PRED     1PL:PRO
+Morpheme Cat             prt         pro
+Word Gloss            no era     nostros
+English Sent Gloss: 
+Spanish Sent Gloss: No nos pasó a nosotros
+
+# sentence level graph:
+(s95i2 / identity-91
+  :ARG0 (s95p / person)
+  :ARG1 (s95p2 / person
+          :refer-person 1st
+          :refer-number Plural)
+  :Aspect State
+  :MODSTR FullNeg)
+
+# alignment:
+s95i2 :0-0
+s95p :-1--1
+s95p2 :-1--1
+# document level annotation:
+
+
+
+
+# :: snt96
+Words                                           apkeleyvomana                ahltama seyana'     have'  ennengko'o
+Morphemes                             apk- el- eyv -om -a =na                ahltama seyana'     have'  ennengko'o
+Morpheme Gloss(en)                                                                                                
+Morpheme Gloss(es)  2/3M.I DISTR vivir (pl.) PST/HAB INF =DEF  anciano lugar de los sanapaná  NEG.PRED     1PL:PRO
+Morpheme Cat                    v:Any v:Any v v:Any v:Any prt                            sus       prt         pro
+Word Gloss                                     los que vivían  anciano lugar de los sanapaná    no era     nostros
+English Sent Gloss: 
+Spanish Sent Gloss: Los que vivíamos en ahltama seyana', no nos pasó a nosotros
+
+# sentence level graph:
+(s96i2 / identity-91
+  :ARG0 (s96p / person)
+  :ARG1 (s96p2 / person
+          :refer-person 1st
+          :refer-number Plural
+          :Actor-of (s96e / eleyvoma-00
+                      :place (s96t / territory
+                               :name (s96n / name
+                                       :op1 "ahltama"
+                                       :op2 "seyana'"))
+                      :Aspect Activity
+                      :MODSTR FullAff))
+  :Aspect State
+  :MODSTR FullNeg)
+
+# alignment:
+s96e :1-1
+s96i2 :0-0
+s96n :-1--1
+s96p :-1--1
+s96p2 :-1--1
+s96t :2-2
+# document level annotation:
+
+
+
+
+# :: snt97
+Words                 mo'o  nekha'    mo'o  nepokha'  sanapana
+Morphemes             mo'o  nekha'    mo'o  nepokha'  sanapana
+Morpheme Gloss(en)                                            
+Morpheme Gloss(es)  otro.f    lado  otro.f   prójimo  sanapaná
+Morpheme Cat           pro     sus     pro       sus       sus
+Word Gloss            otro    lado    otro     grupo  sanapaná
+English Sent Gloss: 
+Spanish Sent Gloss: Fue en otro lugar, otro grupo de los sanapaná
+
+# sentence level graph:
+(s97i2 / identity-91
+  :ARG0 (s97p / person)
+  :ARG1 (s97n / nepokha'
+          :mod (s97m / mo'o)
+          :group (s97p2 / person
+                   :mod (s97e / ethnic-group
+                          :name (s97n2 / name
+                                  :op1 "sanapana")
+                          :wiki "Sanapana")))
+  :place (s97n3 / nekha'
+           :mod (s97m2 / mo'o))
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:
+s97e :5-5
+s97i2 :0-0
+s97m :3-3
+s97m2 :1-1
+s97n :4-4
+s97n2 :5-5
+s97n3 :2-2
+s97p :-1--1
+s97p2 :-1--1
+# document level annotation:
+
+
+
+
+# :: snt98
+Words                                          te'yoma
+Morphemes                                  te'y -om -a
+Morpheme Gloss(en)                                    
+Morpheme Gloss(es)  morir por fuerza (pl.) PST/HAB INF
+Morpheme Cat                             v v:Any v:Any
+Word Gloss                                 se los mató
+English Sent Gloss: 
+Spanish Sent Gloss: Se los mató
+
+# sentence level graph:
+(s98p / person
+  :Undergoer-of (s98e / ente'yoma))
+
+# alignment:
+s98p :-1--1
+s98e :1-1
+# document level annotation:
+
+
+
+
+# :: snt99
+Words                 nehla             angkayva  nahlma'        anekha'             aptetke'   tama  yetahleng     valayo
+Morphemes            =nehla           ang- kayva  nahlma'      a- nekha'         ap- tet -ke'   tama  yetahleng     valayo
+Morpheme Gloss(en)                                                                                                        
+Morpheme Gloss(es)     =DUB  2/3F.I como muestro    monte  2/3F.POS lado  2/3M.I atar V1.NFUT  piola    caballo  paraguayo
+Morpheme Cat            prt     v:Any <Not Sure>      sus    sus:Any sus        v:Any v v:Any    sus        sus        sus
+Word Gloss          tal vez         como muestro    monte        al lado                  ató  piola    caballo  paraguayo
+English Sent Gloss: 
+Spanish Sent Gloss: Puede ser que así como muestro, al lado del monte, el paraguayo ató a su caballo con una piola
+
+# sentence level graph:
+(s99e / entetma-00
+  :actor (s99p / person
+           :mod (s99n / nationality
+                  :name (s99n2 / name
+                          :op1 "valayo")
+                  :wiki "Paraguay")
+           :refer-number Singular)
+  :undergoer (s99y / yetahleng)
+  :instrument (s99t / tama)
+  :manner (s99a / angkayva)
+  :place (s99a2 / anekha'
+           :op1 (s99n3 / nahlma'))
+  :Aspect Performance
+  :MODSTR NeutAff)
+
+# alignment:
+s99a :2-2
+s99a2 :4-4
+s99e :5-5
+s99n :8-8
+s99n2 :8-8
+s99n3 :3-3
+s99p :-1--1
+s99t :6-6
+s99y :7-7
+# document level annotation:
+
+
+
+
+# :: snt100
+Words                          aphlengke'     nahlepop                    apyava'mo  temma
+Morphemes                  ap- hleng -ke'   na- hlepop              ap- yav -a'm -o  temma
+Morpheme Gloss(en)                                                                        
+Morpheme Gloss(es)  2/3M.I viajar V1.NFUT   LOC tierra  2/3M.I acercarse APPRX SUBJ   casa
+Morpheme Cat                v:Any v v:Any  sus:Any sus          v:Any v v:Any v:Any    sus
+Word Gloss                          viajó        a pie                  acercándose   casa
+English Sent Gloss: 
+Spanish Sent Gloss: Viajó a pie, acercándose a las casas
+
+# sentence level graph:
+(s100e / enhleama-00
+  :actor (s100p / person
+           :refer-number Singular)
+  :manner (s100n / nahlepop)
+  :temporal (s100e2 / enyavayam-00
+              :actor s100p
+              :goal (s100t / temma)
+              :Aspect Activity
+              :MODSTR FullAff)
+  :Aspect Endeavor
+  :MODSTR FullAff)
+
+# alignment:
+s100e :1-1
+s100e2 :3-3
+s100n :2-2
+s100p :-1--1
+s100t :4-4
+# document level annotation:
+
+
+
+
+# :: snt101
+Words                      yetneyenhan  mahla   sanga
+Morphemes              yetn -eye =nhan  mahla   sanga
+Morpheme Gloss(en)                                   
+Morpheme Gloss(es)  existir V1.NFUT =y   como  laguna
+Morpheme Cat               v v:Any prt    prt     sus
+Word Gloss                     y había   como  laguna
+English Sent Gloss: 
+Spanish Sent Gloss: Había también un tipo de laguna
+
+# sentence level graph:
+(s101e / exist-91
+  :ARG0 (s101p / place)
+  :ARG1 (s101s / sanga
+          :mod (s101m / mahla)
+          :refer-number Singular)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:
+s101e :0-0
+s101m :2-2
+s101p :0-0
+s101s :3-3
+# document level annotation:
+
+
+
+
+# :: snt102
+Words                      av'ahlvok
+Morphemes                a- v'ahlvok
+Morpheme Gloss(en)                  
+Morpheme Gloss(es)  2/3F.POS vientre
+Morpheme Cat             sus:Any sus
+Word Gloss                   cañadón
+English Sent Gloss: 
+Spanish Sent Gloss: Un cañadón
+
+# sentence level graph:
+(s102a / av'ahlvok)
+
+# alignment:
+s102a :1-1
+# document level annotation:
+
+
+
+
+# :: snt103
+Words                sanga
+Morphemes            sanga
+Morpheme Gloss(en)        
+Morpheme Gloss(es)  laguna
+Morpheme Cat           sus
+Word Gloss          laguna
+English Sent Gloss: 
+Spanish Sent Gloss: Una laguna
+
+# sentence level graph:
+(s103s / sanga)
+
+# alignment:
+s103s :1-1
+# document level annotation:
+
+
+
+
+# :: snt104
+Words                              apkelenyeye'                     apkenmaykamok   nenhlet
+Morphemes                    apk- el- eny -eye'           apk- en- m -ayk -am -ok   nenhlet
+Morpheme Gloss(en)                                                                         
+Morpheme Gloss(es)  2/3M.I DISTR correr V1.NFUT  2/3M.I DISTR ir PST/HAB CPLX INF   persona
+Morpheme Cat                v:Any v:Any v v:Any   v:Any v:Any v v:Any v:Any v:Any       sus
+Word Gloss                            corrieron                             yendo  indígena
+English Sent Gloss: 
+Spanish Sent Gloss: La gente huyó corriendo
+
+# sentence level graph:
+(s104e / elenyema-00
+  :actor (s104p / person
+           :mod (s104e2 / ethnic-group
+                  :name (s104n / name
+                          :op1 "nenhlet")
+                  :wiki "Sanapana")
+           :refer-number Plural)
+  :temporal (s104e3 / enmaykamok-00
+              :actor s104p
+              :Aspect Activity
+              :MODSTR FullAff)
+  :Aspect Endeavor
+  :goal (s104p2 / place)
+  :MODSTR FullAff)
+
+# alignment:
+s104e :1-1
+s104e2 :3-3
+s104e3 :2-2
+s104n :-1--1
+s104p :-1--1
+s104p2 :0-0
+# document level annotation:
+
+
+
+
+# :: snt105
+Words                sanga
+Morphemes            sanga
+Morpheme Gloss(en)        
+Morpheme Gloss(es)  laguna
+Morpheme Cat           sus
+Word Gloss          laguna
+English Sent Gloss: 
+Spanish Sent Gloss: En la laguna
+
+# sentence level graph:
+(s105s / sanga)
+
+# alignment:
+s105s :1-1
+# document level annotation:
+
+
+
+
+# :: snt106
+Words                              payhay'avo                           anmoama      a'tek   mo'ok
+Morphemes                      payh -ay' -avo                     an- mo -am -a      a'tek   mo'ok
+Morpheme Gloss(en)                                                                                
+Morpheme Gloss(es)  acertar PST/HAB INTNS.SBJ  2/3F.PL.III explotar PST/HAB INF  proyectil  otro.f
+Morpheme Cat                    v v:Any v:Any               v:Any v v:Any v:Any        sus     pro
+Word Gloss                             acertó                     arma de fuego  proyectil    otro
+English Sent Gloss: 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s106e / empayhay'a
+  :actor (s106a / a'tek
+           :source (s106t / thing
+                     :Undergoer-of (s106e2 / enmoama))
+           :refer-number Singular)
+  :undergoer (s106p / person
+               :mod (s106m / mo'ok)
+               :refer-number Singular)
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s106a :3-3
+s106e :1-1
+s106e2 :2-2
+s106m :4-4
+s106p :-1--1
+s106t :0-0
+# document level annotation:
+
+
+
+
+# :: snt107
+Words                           enneyay'a   anya'a  netamen
+Morphemes                 en- ney -ay' -a   anya'a  netamen
+Morpheme Gloss(en)                                         
+Morpheme Gloss(es)  1PL.I oír PST/HAB INF  noticia  después
+Morpheme Cat          v:Any v v:Any v:Any      sus      sus
+Word Gloss                     escuchamos  noticia  después
+English Sent Gloss: 
+Spanish Sent Gloss: Escuchamos más tarde la noticia
+
+# sentence level graph:
+(s107e / enneyay'a
+  :experiencer (s107p / person
+                 :refer-person 1st
+                 :refer-number Plural)
+  :stimulus (s107a / anya'a
+              :Modpred s107e
+              :MODSTR FullAff)
+  :temporal (s107n / netamen)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:
+s107a :2-2
+s107e :0-0
+s107n :3-3
+s107p :-1--1
+# document level annotation:
+
+
+
+
+# :: snt108
+Words                  hlanye'                       nessaykama                       apkessaykakha'     valayo
+Morphemes              hlanye'               nes- s -ayk -am -a             apk- es- s -ayk -akh -a'     valayo
+Morpheme Gloss(en)                                                                                             
+Morpheme Gloss(es)  ser muchos  1PL.POS llevar PST/HAB AMBL INF  2/3M.I DISTR llevar PST/HAB REP INF  paraguayo
+Morpheme Cat                 v      sus:Any v v:Any v:Any v:Any      v:Any v:Any v v:Any v:Any v:Any        sus
+Word Gloss          son muchos                            cosas                         que llevaron  paraguayo
+English Sent Gloss: 
+Spanish Sent Gloss: Muchas cosas nuestras llevaron, los paraguayos
+
+# sentence level graph:
+(s108e / ensekakha'
+  :actor (s108p / person
+           :mod (s108n / nationality
+                  :name (s108n2 / name
+                          :op1 "valayo")
+                  :wiki "Paraguay")
+           :refer-number Plural)
+  :theme (s108t / thing
+           :Theme-of (s108e2 / ensekama-00
+                       :actor (s108p2 / person
+                                :refer-person 1st
+                                :refer-number Plural))
+           :quant (s108h / hlanye'))
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s108e :3-3
+s108e2 :2-2
+s108h :1-1
+s108n :4-4
+s108n2 :-1--1
+s108p :-1--1
+s108p2 :-1--1
+s108t :0-0
+# document level annotation:
+
+
+
+
+# :: snt109
+Words               yangka
+Morphemes           yangka
+Morpheme Gloss(en)        
+Morpheme Gloss(es)    arco
+Morpheme Cat           sus
+Word Gloss            arco
+English Sent Gloss: 
+Spanish Sent Gloss: Los arcos
+
+# sentence level graph:
+(s109y / yangka)
+
+# alignment:
+s109y :1-1
+# document level annotation:
+
+
+
+
+# :: snt110
+Words                                    apkenma'pe'
+Morphemes                        apk- en- m -a'p -e'
+Morpheme Gloss(en)                                  
+Morpheme Gloss(es)  2/3M.I DISTR tomar PAS.M V1.NFUT
+Morpheme Cat                 v:Any v:Any v v>v v:Any
+Word Gloss                          fueron detenidos
+English Sent Gloss: 
+Spanish Sent Gloss: (Los paraguayos) fueron detenidos
+
+# sentence level graph:
+(s110e / enmama-00
+  :Aspect Performance
+  :theme (s110p / person
+           :refer-number Plural)
+  :MODSTR FullAff)
+
+# alignment:
+s110e :1-1
+s110p :-1--1
+# document level annotation:
+
+
+
+
+# :: snt111
+Words                                    apkenma'pe'     valayo  vatsom
+Morphemes                        apk- en- m -a'p -e'     valayo  vatsom
+Morpheme Gloss(en)                                                     
+Morpheme Gloss(es)  2/3M.I DISTR tomar PAS.M V1.NFUT  paraguayo     río
+Morpheme Cat                 v:Any v:Any v v>v v:Any        sus     sus
+Word Gloss                          fueron detenidos  paraguayo     río
+English Sent Gloss: 
+Spanish Sent Gloss: Los paraguayos fueron detenidos cerca del Río Paraguay
+
+# sentence level graph:
+(s111e / enmama-00
+  :theme (s111p / person
+           :mod (s111n / nationality
+                  :name (s111n2 / name
+                          :op1 "valayo")
+                  :wiki "Paraguay")
+           :refer-number Plural)
+  :place (s111r / river
+           :name (s111n3 / name
+                   :op1 "vatsom")
+           :wiki "Paraguay_River")
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s111e :1-1
+s111n :2-2
+s111n2 :2-2
+s111n3 :3-3
+s111p :-1--1
+s111r :3-3
+# document level annotation:
+
+
+
+
+# :: snt112
+Words                                    apkenmama           pa'i
+Morphemes                        apk- en- m -am -a           pa'i
+Morpheme Gloss(en)                                               
+Morpheme Gloss(es)  2/3M.I DISTR tomar PST/HAB INF  sacerdote.GUA
+Morpheme Cat             v:Any v:Any v v:Any v:Any             cs
+Word Gloss                                 tomaron      sacerdote
+English Sent Gloss: 
+Spanish Sent Gloss: Los pa'i los agarraron
+
+# sentence level graph:
+(s112e / enmama-00
+  :actor (s112p / pa'i)
+  :theme (s112p2 / person
+           :refer-number Plural)
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s112e :1-1
+s112p :2-2
+s112p2 :-1--1
+# document level annotation:
+
+
+
+
+# :: snt113
+Words                                           apkehlte'yevke'
+Morphemes                                 apk- ehl- te'yev -ke'
+Morpheme Gloss(en)                                             
+Morpheme Gloss(es)  2/3M.I DISTR morir por fuerza (pl.) V1.NFUT
+Morpheme Cat                                v:Any v:Any v v:Any
+Word Gloss                                       fueron matados
+English Sent Gloss: 
+Spanish Sent Gloss: Fueron matados
+
+# sentence level graph:
+(s113e / ente'yoma
+  :undergoer (s113p / person
+               :refer-person 3rd
+               :refer-number Plural)
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s113e :1-1
+s113p :-1--1
+# document level annotation:
+
+
+
+
+# :: snt114
+Words                                           apkehlte'yevke'    valayohlkeyek
+Morphemes                                 apk- ehl- te'yev -ke'  valayo =hlkeyek
+Morpheme Gloss(en)                                                              
+Morpheme Gloss(es)  2/3M.I DISTR morir por fuerza (pl.) V1.NFUT   paraguayo =HOD
+Morpheme Cat                                v:Any v:Any v v:Any          sus prt
+Word Gloss                                       fueron matados  esos paraguayos
+English Sent Gloss: 
+Spanish Sent Gloss: Esos paraguayos fueron matados
+
+# sentence level graph:
+(s114e / ente'yoma
+  :undergoer (s114p / person
+               :mod (s114n / nationality
+                      :name (s114n2 / name
+                              :op1 "valayohlkeyek")
+                      :wiki "Paraguay")
+               :refer-number Plural)
+  :Aspect Performance
+  :MODSTR FullAff)
+
+# alignment:
+s114e :1-1
+s114n :2-2
+s114n2 :2-2
+s114p :-1--1
+# document level annotation:
+
+
+
+
+# :: snt115
+Words                  have'     valayo      tahachi                      akvesay'a
+Morphemes              have'     valayo      tahachi                ak- ves -ay' -a
+Morpheme Gloss(en)                                                                 
+Morpheme Gloss(es)  NEG.PRED  paraguayo  policia.GUA  2/3F.III llamarse PST/HAB INF
+Morpheme Cat             prt        sus          sus            v:Any v v:Any v:Any
+Word Gloss            no era  paraguayo      policia                       se llama
+English Sent Gloss: 
+Spanish Sent Gloss: No eran (ciudadanos) paraguayos, se llamaban "tahachi"
+
+# sentence level graph:
+(s115c / contrast-91
+  :ARG1 (s115h / have-role-91
+          :ARG0 (s115p / person)
+          :ARG1 (s115p2 / person
+                  :mod (s115n / nationality
+                         :name (s115n2 / name
+                                 :op1 "valayo")
+                         :wiki "Paraguay"))
+          :Aspect State
+          :MODSTR FullNeg)
+  :ARG2 (s115h2 / have-name-91
+          :ARG0 s115p
+          :ARG1 (s115t / tahachi)
+          :Aspect State
+          :MODSTR FullAff))
+
+# alignment:
+s115c :0-0
+s115h :0-0
+s115h2 :0-0
+s115n :2-2
+s115n2 :-1--1
+s115p :-1--1
+s115p2 :-1--1
+s115t :3-3
+# document level annotation:
+
+
+
+
+# :: snt116
+Words                   tahachi
+Morphemes               tahachi
+Morpheme Gloss(en)             
+Morpheme Gloss(es)  policia.GUA
+Morpheme Cat                sus
+Word Gloss              policia
+English Sent Gloss: 
+Spanish Sent Gloss: La gendarmería
+
+# sentence level graph:
+(s116t / tahachi)
+
+# alignment:
+s116t :1-1
+# document level annotation:
+
+
+
+
+# :: snt117
+Words                  mahlanne'     militar
+Morphemes            mahla =nne'     militar
+Morpheme Gloss(en)                          
+Morpheme Gloss(es)  como =CTRFCT  militar.SP
+Morpheme Cat             prt prt          cs
+Word Gloss              parecido     militar
+English Sent Gloss: 
+Spanish Sent Gloss: Parecido a militares
+
+# sentence level graph:
+(s117r / resemble-91
+  :ARG1 (s117p / person)
+  :ARG2 (s117m / militar)
+  :Aspect State
+  :MODSTR FullAff)
+
+# alignment:
+s117m :2-2
+s117p :-1--1
+s117r :0-0
+# document level annotation:
+
+
+
+
+# :: snt118
+Words                      nane                     antemak                             angkeleyvomak
+Morphemes                 =nane               an- t -em -ak                     angk- el- eyv -om -ak
+Morpheme Gloss(en)                                                                                   
+Morpheme Gloss(es)       =P.REM  2/3F.I ser PST/HAB V2.NFUT  2/3F.I DISTR vivir (pl.) PST/HAB V2.NFUT
+Morpheme Cat                prt         v:Any v v:Any v:Any                 v:Any v:Any v v:Any v:Any
+Word Gloss          hace tiempo                         era                                    vivían
+English Sent Gloss: 
+Spanish Sent Gloss: Así vivían hace mucho tiempo
+
+# sentence level graph:
+(s118e / eleyvoma
+  :actor (s118p / person
+           :refer-person 3rd
+           :refer-number Plural)
+  :manner (s118t / thing)
+  :temporal (s118n / nane)
+  :Aspect Activity
+  :MODSTR FullAff)
+
+# alignment:
+s118e :3-3
+s118n :1-1
+s118p :-1--1
+s118t :0-0
+# document level annotation:
+(s118s0 / sentence
+  :modal ((ROOT :MODAL AUTH)
+                    (AUTH :FullAff s118e)))
+
+
+
+

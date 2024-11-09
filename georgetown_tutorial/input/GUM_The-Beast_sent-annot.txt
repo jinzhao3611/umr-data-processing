@@ -1,0 +1,1490 @@
+# workset GUM-Beast (generated on Wed Jan 3, 2024 at 21:30:51 for user jbonn)
+
+# ::id col_1840.1 ::date 2023-12-14T12:40:39
+# ::snt The	Beast
+# ::save-date Thu Dec 14, 2023 ::user jbonn ::file col_1840_1.txt
+(p / publication-91
+      :ARG1 (p2 / publication 
+            :name (n / name :op1 "The" :op2 "Beast")))
+
+# ::id col_1840.2 ::date 2023-12-14T12:41:51
+# ::snt I	was	thirteen	.
+# ::save-date Thu Dec 14, 2023 ::user jbonn ::file col_1840_2.txt
+(h / have-age-91
+      :ARG1 (p / person 
+            :refer-person 1st 
+            :refer-number singular)
+      :ARG2 13)
+
+# ::id col_1840.3 ::date 2023-12-14T12:42:57
+# ::snt It	was	spring	,	the	barren	time	in	March	when	you	can	not	be	sure	if	it	is	really	warmer	,	but	you	are	so	desperate	for	change	that	you	tell	yourself	the	mud	at	the	edge	of	the	sidewalk	is	different	from	winter	mud	and	you	are	sure	that	the	smell	of	wet	soil	has	suddenly	a	bit	of	the	scent	of	summer	rains	,	of	grass	and	drowned	earthworms	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_3.txt
+(h / have-temporal-91 
+      :aspect state 
+      :modal-strength full-affirmative
+      :ARG2 (d / date-entity
+            :season (s / spring)
+            :temporal-of (t / time
+                  :temporal (d2 / date-entity :month 3)
+                  :mod (b / barren)
+                  :temporal-of (a / and
+                        :op1 (h4 / have-concession-91
+                              :ARG1 (d3 / desperate-02 
+                                    :aspect state 
+                                    :modal-strength full-affirmative
+                                    :ARG0 p
+                                    :ARG1 (c / change-01 
+                                          :aspect process
+                                          :modal-strength full-affirmative )
+                                    :ARG2-of (h3 / have-degree-91
+                                          :ARG1 p
+                                          :ARG3 (s3 / so)
+                                          :ARG6 (t3 / tell-01 
+                                                :aspect performance 
+                                                :modal-strength full-affirmative
+                                                :ARG0 p
+                                                :ARG1 (d4 / differ-01 
+                                                      :aspect state 
+                                                      :modal-strength full-affirmative
+                                                      :ARG1 (m2 / mud
+                                                            :place (e / edge
+                                                                  :part-of (s4 / sidewalk)))
+                                                      :ARG2 (m3 / mud
+                                                            :temporal (d5 / date-entity
+                                                                  :season (w2 / winter)))
+                                                      :quote t3)
+                                                :ARG2 p)))
+                              :ARG2 (s2 / sure-02 
+                                    :polarity - 
+                                    :aspect state
+                                    :modal-strength neutral-negative 
+                                    :ARG0 (p / person 
+                                          :refer-person 2nd 
+                                          :refer-number singular)
+                                    :ARG1 (t2 / truth-value
+                                          :polarity-of (w / warm-07 
+                                                :aspect state
+                                                :modal-strength full-affirmative 
+                                                :ARG2-of (h2 / have-degree-91
+                                                      :ARG3 (m / more)))
+                                          :modal-predicate s2)))
+                        :op2 (s5 / sure-02 
+                              :aspect state 
+                              :modal-strength full-affirmative
+                              :ARG0 p
+                              :ARG1 (s6 / smell-02 
+                                    :aspect state 
+                                    :modal-strength full-affirmative
+                                    :ARG1 (s7 / soil
+                                          :ARG1-of (w3 / wet-02))
+                                    :ARG2 (a2 / and
+                                          :op1 (r / rain-01 
+                                                :refer-number plural
+                                                :temporal (d7 / date-entity
+                                                      :season (s8 / summer)))
+                                          :op2 (g / grass)
+                                          :op3 (e2 / earthworm 
+                                                :refer-number plural))
+                                    :degree downtoner
+                                    :mod (s9 / sudden)
+                                    :modal-predicate s5))))))
+
+# ::id col_1840.4 ::date 2024-01-03T17:09:33
+# ::snt And	it	has	,	because	it	is	spring	and	inside	the	ground	something	is	stirring	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_4.txt
+(a / and
+      :op2 (h / have-mod-91 
+            :aspect state 
+            :modal-strength full-affirmative
+            :reason (a2 / and
+                  :op1 (h2 / have-temporal-91
+                        :ARG2 (d / date-entity
+                              :season (s / spring)))
+                  :op2 (s2 / stir-03
+                        :aspect activity
+                        :modal-strength full-affirmative
+                        :ARG1 (s3 / something)
+                        :place (i2 / inside-01
+                              :ARG2 (g / ground))))))
+
+# ::id col_1840.5 ::date 2024-01-03T17:13:10
+# ::snt I	was	wearing	a	yellow	linen	dress	which	my	mother	had	picked	out	and	which	I	therefore	disliked	although	I	knew	it	flattered	me	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_5.txt
+(w / wear-01 :aspect state :modal-strength full-affirmative
+      :ARG0 (p / person 
+            :refer-person 1st 
+            :refer-number singular)
+      :ARG1 (d / dress
+            :material (l / linen)
+            :mod (y / yellow)
+            :ARG1-of (p2 / pick-out-03 
+                  :aspect performance 
+                  :modal-strength full-affirmative
+                  :ARG0 (p3 / person
+                        :ARG1-of (h / have-rel-role-91
+                              :ARG2 p
+                              :ARG3 (m / mother))))
+            :ARG1-of (l2 / like-01 
+                  :polarity -
+                  :aspect state 
+                  :modal-strength full-negative 
+                  :ARG0 p
+                  :reason p2
+                  :concession (k / know-01 
+                        :aspect state 
+                        :modal-strength full-affirmative
+                        :ARG0 p
+                        :ARG1 (f / flatter-01 
+                              :aspect state 
+                              :modal-strength full-affirmative
+                              :ARG0 d
+                              :ARG1 p
+                              :modal-predicate k)))))
+
+# ::id col_1840.6 ::date 2024-01-03T17:19:28
+# ::snt My	shoes	were	white	and	I	was	concentrating	on	keeping	them	out	of	the	mud	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_6.txt
+(c / concentrate-01 
+      :aspect activity 
+      :modal-strength full-affirmative
+      :ARG0 (p / person 
+            :refer-person 1st 
+            :refer-number singular)
+      :ARG1 (k / keep-02 
+            :aspect activity 
+            :modal-strength full-affirmative
+            :ARG0 p
+            :ARG1 (o / out-06 
+                  :aspect state 
+                  :modal-strength full-affirmative
+                  :ARG1 s
+                  :ARG2 (m / mud)
+                  :modal-predicate k)
+            :reason (h / have-mod-91 
+                  :aspect state 
+                  :modal-strength full-affirmative
+                  :ARG1 (s / shoe 
+                        :refer-number plural
+                        :possessor p)
+                  :ARG2 (w / white))))
+
+# ::id col_1840.7 ::date 2024-01-03T17:25:30
+# ::snt My	father	and	I	were	going	to	mass	—	my	mother	did	not	go	;	she	was	Protestant	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_7.txt
+(a2 / and
+      :op1 (g / go-02 
+            :aspect activity 
+            :modal-strength full-affirmative
+            :ARG0 (a / and
+                  :op1 (p / person
+                        :ARG1-of (h / have-rel-role-91
+                              :ARG2 p2
+                              :ARG3 (f / father)))
+                  :op2 (p2 / person 
+                        :refer-person 1st 
+                        :refer-number singular))
+            :ARG4 (m / mass))
+      :op2 (g2 / go-02 
+            :polarity - 
+            :aspect performance 
+            :modal-strength full-negative
+            :ARG0 (p3 / person
+                  :ARG1-of (h2 / have-rel-role-91
+                        :ARG2 p2
+                        :ARG3 (m2 / mother)))
+            :ARG4 m
+            :reason (h3 / have-role-91 
+                  :aspect state 
+                  :modal-strength full-affirmative
+                  :ARG1 p3
+                  :ARG2 (p4 / protestant))))
+
+# ::id col_1840.8 ::date 2024-01-03T17:30:41
+# ::snt My	father	put	his	hand	on	top	of	my	hair	,	his	palm	on	my	head	,	and	I	could	feel	the	bone	of	my	skull	and	my	skin	and	his	hot	palm	,	so	dry	and	strong	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_8.txt
+(p / pure-addition
+      :op1 (p2 / put-01 
+            :aspect performance 
+            :modal-strength full-affirmative
+            :ARG0 (p3 / person
+                  :ARG1-of (h / have-rel-role-91
+                        :ARG2 (p4 / person 
+                              :refer-person 1st 
+                              :refer-number singular)
+                        :ARG3 (f / father)))
+            :ARG1 (h2 / hand
+                  :part-of p3)
+            :ARG2 (p5 / place
+                  :ARG1-of (o / on-top-03
+                        :ARG2 (h3 / hair
+                              :part-of p4)))
+            :manner (o2 / on-top-03 
+                  :aspect state 
+                  :modal-strength full-affirmative
+                  :ARG1 p6
+                  :ARG2 (h4 / head
+                        :part-of p4)))
+      :op2 (f2 / feel-01 
+            :aspect state 
+            :modal-strength full-affirmative
+            :ARG0 p4
+            :ARG1 (a / and
+                  :op1 (b / bone
+                        :material-of (s / skull
+                              :part-of p4))
+                  :op2 (s2 / skin
+                        :part-of p4)
+                  :op3 (p6 / palm
+                        :part-of p3
+                        :ARG1-of (h5 / hot-05)
+                        :ARG1-of (d / dry-08 
+                              :degree intensifier)
+                        :ARG1-of (s3 / strong-02 
+                              :degree intensifier)))))
+
+# ::id col_1840.9 ::date 2024-01-03T17:41:08
+# ::snt When	I	was	a	little	girl	,	he	did	that	often	,	and	called	me	Muscles	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_9.txt
+(a / and
+      :op1 (d / do-02 
+            :aspect habitual 
+            :modal-strength full-affirmative
+            :ARG0 (p / person 
+                  :refer-person 3rd 
+                  :refer-number singular)
+            :ARG1 (t / that)
+            :frequency (o / often))
+      :op2 (c / call-01 
+            :aspect habitual 
+            :modal-strength full-affirmative
+            :ARG0 p
+            :ARG1 (p2 / person 
+                  :refer-number singular 
+                  :refer-person 1st)
+            :ARG2 (n / name :name (n2 / name :op1 "Muscles")))
+      :temporal (h / have-age-91
+            :aspect state
+            :modal-strength full-affirmative
+            :ARG1 p2
+            :ARG2 (g / girl
+                  :mod (l / little))))
+
+# ::id col_1840.10 ::date 2024-01-03T17:45:01
+# ::snt He	had	not	called	me	Muscles	or	put	his	hand	on	my	head	for	a	long	time	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_10.txt
+(o / or
+      :op1 (c / call-01 
+            :polarity -
+            :aspect state 
+            :modal-strength full-negative 
+            :ARG0 (p / person 
+                  :refer-person 3rd 
+                  :refer-number singular)
+            :ARG1 (p2 / person 
+                  :refer-person 1st 
+                  :refer-number singular)
+            :ARG2 (n / name :name (n2 / name :op1 "Muscles")))
+      :op2 (p3 / put-01 
+            :polarity -
+            :aspect state 
+            :modal-strength full-negative 
+            :ARG0 p
+            :ARG1 (h / hand
+                  :part-of p)
+            :ARG2 (p4 / place
+                  :ARG1-of (o2 / on-top-03
+                        :ARG2 (h2 / head
+                              :part-of p2))))
+      :duration (t / time
+            :ARG1-of (l / long-03)))
+
+# ::id col_1840.11 ::date 2024-01-03T17:53:16
+# ::snt I	could	not	help	arching	my	back	a	little	,	I	wanted	to	push	against	his	hand	like	a	cat	but	the	instinct	that	comes	with	being	thirteen	,	the	half	-	understood	caution	that	makes	a	girl	timid	,	or	wild	,	the	shyness	told	me	to	just	walk	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_11.txt
+(a / and
+      :op1 (h / help-02 
+            :polarity - 
+            :aspect state 
+            :modal-strength partial-negative
+            :ARG0 (p / person 
+                  :refer-person 1st 
+                  :refer-number singular)
+            :ARG1 (a2 / arch-01 
+                  :aspect performance 
+                  :modal-strength full-affirmative
+                  :ARG0 p
+                  :ARG1 (b / back
+                        :part-of p)
+                  :extent (l / little)
+                  :modal-predicate h))
+      :op2 (w / want-01 
+            :aspect state 
+            :modal-strength full-affirmative
+            :ARG0 p
+            :ARG1 (p2 / push-01 
+                  :aspect activity 
+                  :modal-strength full-affirmative
+                  :ARG0 p
+                  :ARG2 (a3 / against-01
+                        :ARG2 (h2 / hand
+                              :part-of (p3 / person 
+                                    :refer-person 3rd 
+                                    :refer-number singular)))
+                  :modal-predicate w
+                  :manner (r / resemble-91
+                        :ARG1 p
+                        :ARG2 (c / cat)))
+            :concession (t / tell-01 
+                  :aspect performance 
+                  :modal-strength full-affirmative
+                  :ARG0 (i2 / instinct
+                        :ARG1-of (c2 / come-03
+                              :ARG2 (h3 / have-age-91 
+                                    :state state 
+                                    :modal-strength full-affirmative
+                                    :ARG2 13))
+                        :ARG1-of (i3 / identity-91
+                              :ARG2 (c3 / cautious-02
+                                    :ARG1 g
+                                    :ARG1-of (u / understand-01 
+                                          :aspect state 
+                                          :modal-strength full-affirmative
+                                          :ARG0 (g / girl)
+                                          :extent (h4 / half))
+                                    :ARG0-of (m / make-02 
+                                          :aspect habitual 
+                                          :modal-strength full-affirmative
+                                          :ARG1 g
+                                          :ARG2 (h5 / have-mod-91
+                                                :ARG1 g
+                                                :ARG2 (o / or
+                                                      :op1 (t2 / timid)
+                                                      :op2 (w2 / wild))))))
+                        :ARG1-of (i4 / identity-91
+                              :ARG2 (s / shy-04
+                                    :ARG1 p)))
+                  :ARG1 (w3 / walk-01 
+                        :aspect activity 
+                        :modal-strength full-affirmative
+                        :mod (j / just)
+                        :quote t)
+                  :ARG2 p)))
+
+# ::id col_1840.12 ::date 2024-01-03T18:08:16
+# ::snt I	wanted	to	feel	the	rough	edge	of	the	pocket	of	his	coat	against	my	cheek	,	but	I	was	too	tall	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_12.txt
+(w / want-01 
+      :aspect state 
+      :modal-strength full-affirmative
+      :ARG0 (p / person 
+            :refer-person 1st 
+            :refer-number singular)
+      :ARG1 (f / feel-01 
+            :aspect state 
+            :modal-strength full-affirmative
+            :ARG0 p
+            :ARG1 (a / against-01 
+                  :aspect state
+                  :modal-strength full-affirmative 
+                  :ARG1 (e / edge
+                        :part-of (p2 / pocket
+                              :part-of (c / coat
+                                    :possessor (p3 / person 
+                                          :refer-person 3rd 
+                                          :refer-number singular)))
+                        :ARG1-of (r / rough-04))
+                  :ARG2 (c2 / cheeck
+                        :part-of p))
+            :modal-predicate w)
+      :concession (h2 / have-degree-91
+            :ARG2 (h / have-mod-91 
+                  :aspect state 
+                  :modal-strength full-affirmative
+                  :ARG1 p
+                  :ARG2 (t / tall))
+            :ARG3 (t2 / too)
+            :ARG6 f))
+
+# ::id col_1840.13 ::date 2024-01-03T18:13:15
+# ::snt I	wanted	to	be	seven	again	,	and	safe	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_13.txt
+(w / want-01 
+      :aspect state 
+      :modal-strength full-affirmative
+      :ARG0 (p / person 
+            :refer-person 1st 
+                  :refer-number singular)
+      :ARG1 (a / and
+            :op1 (h / have-age-91 
+                  :aspect state 
+                  :modal-strength full-affirmative
+                  :ARG1 p
+                  :ARG2 7
+                  :mod (a2 / again))
+            :op2 (s / safe-01 
+                  :aspect state 
+                  :modal-strength full-affirmative
+                  :ARG1 p)
+            :modal-predicate w))
+
+# ::id col_1840.14 ::date 2024-01-03T18:15:00
+# ::snt But	I	still	wanted	to	push	against	his	hand	and	put	my	hand	in	his	pocket	and	steal	the	leather	palmed	glove	,	that	secret	animal	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_14.txt
+(h / have-concession-91
+      :ARG2 (w / want-01 
+            :aspect state 
+            :modal-strength full-affirmative
+            :ARG0 (p / person 
+                  :refer-person 1st 
+                  :refer-number singular)
+            :ARG1 (a / and
+                  :op1 (p2 / push-01 
+                        :aspect activity 
+                        :modal-strength full-affirmative
+                        :ARG0 p
+                        :ARG2 (a2 / against-01
+                              :ARG2 (h2 / hand
+                                    :part-of (p3 / person 
+                                          :refer-person 3rd 
+                                          :refer-number singular))))
+                  :op2 (c / consecutive
+                        :op1 (p4 / put-01
+                              :ARG0 p
+                              :ARG1 (h3 / hand
+                                    :part-of p)
+                              :ARG1-of (i2 / inside-01
+                                    :ARG2 (p5 / pocket
+                                          :possessor p3)))
+                        :op2 (s / steal-01 
+                              :aspect performance 
+                              :modal-strength full-affirmative
+                              :ARG0 p
+                              :ARG1 (g / glove
+                                    :part (p6 / palm
+                                          :material (l / leather))
+                                    :ARG1-of (i3 / identity-91
+                                          :ARG2 (a3 / animal
+                                                :mod (s2 / secret)
+                                                :mod (t / that))))))
+                  :modal-predicate w)))
+
+# ::id col_1840.15 ::date 2024-01-03T18:19:36
+# ::snt Instead	I	went	into	the	church	,	took	a	Bulletin	,	dipped	my	finger	in	Holy	Water	and	genuflected	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_15.txt
+(h / have-substitute-91
+      :ARG2 (c / consecutive
+            :op1 (g / go-02 
+                  :aspect performance 
+                  :modal-strength full-affirmative
+                  :ARG0 (p / person 
+                        :refer-person 1st 
+                        :refer-number singular)
+                  :ARG4 (p2 / place
+                        :ARG1-of (i2 / inside-01
+                              :ARG2 (c2 / church))))
+            :op2 (t / take-01 
+                  :aspect performance 
+                  :modal-strength full-affirmative
+                  :ARG0 p
+                  :ARG1 (b / bulletin))
+            :op3 (d / dip-01 
+                  :aspect performance 
+                  :modal-strength full-affirmative
+                  :ARG0 p
+                  :ARG1 (f / finger
+                        :part-of p)
+                  :ARG2 (t2 / thing :name (n / name :op1 "Holy" :op2 "Water")))
+            :op4 (g2 / genuflect-01 
+                  :aspect performance 
+                  :modal-strength full-affirmative
+                  :ARG0 p)))
+
+# ::id col_1840.16 ::date 2024-01-03T18:28:48
+# ::snt The	inside	of	the	church	smelled	like	damp	wood	and	furniture	polish	,	not	alive	at	all	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_16.txt
+(s / smell-02 
+      :aspect state 
+      :modal-strength full-affirmative
+      :ARG0 (i2 / inside
+            :part-of (c / church))
+      :ARG1 (a / and
+            :op1 (w / wood
+                  :ARG1-of (d / damp-03))
+            :op2 (p / polish
+                  :mod (f / furniture))
+            :ARG1-of (i3 / identity-91
+                  :ARG2 (l / live-01 
+                        :polarity -
+                        :aspect state 
+                        :modal-strength full-negative 
+                        :degree intensifier))))
+
+# ::id col_1840.17 ::date 2024-01-03T18:31:43
+# ::snt My	father	took	off	his	coat	and	draped	it	over	the	edge	of	the	pew	and	when	I	came	back	from	communion	I	stole	his	glove	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_17.txt
+(c / consecutive
+      :op1 (t / take-off-07 
+            :aspect performance 
+            :modal-strength full-affirmative
+            :ARG0 (p / person 
+                  :refer-person 3rd 
+                  :refer-number singular
+                  :ARG1-of (h / have-rel-role-91
+                        :ARG2 (p2 / person 
+                              :refer-person 1st 
+                              :refer-number singular)
+                        :ARG3 (f / father)))
+            :ARG1 (c2 / coat
+                  :possessor p))
+      :op2 (d / drape-01 
+            :aspect performance 
+            :modal-strength full-affirmative
+            :ARG0 p
+            :ARG1 c2
+            :ARG2 (e / edge
+                  :part-of (p3 / pew)))
+      :op3 (s / steal-01 
+            :aspect performance 
+            :modal-strength full-affirmative
+            :ARG0 p2
+            :ARG1 (g / glove
+                  :possessor p)
+            :temporal (c3 / come-01 
+                  :aspect performance 
+                  :modal-strength full-affirmative
+                  :ARG1 p2
+                  :ARG3 (c4 / communion)
+                  :mod (b / back-17
+                        :ARG1 p2))))
+
+# ::id col_1840.18 ::date 2024-01-03T18:40:40
+# ::snt The	paper	taste	of	the	wafer	was	still	in	my	mouth	and	I	took	a	deep	breath	of	the	leather	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_18.txt
+(a / and
+      :op1 (h / have-place-91 
+            :aspect state 
+            :modal-strength full-affirmative
+            :ARG1 (t / taste-02
+                  :ARG1 (w / wafer)
+                  :ARG2 (p / paper))
+            :ARG2 (m / mouth
+                  :part-of (p2 / person 
+                        :refer-person 1st 
+                        :refer-number singular)))
+      :op2 (b / breathe-01 
+            :aspect performance 
+            :modal-strength full-affirmative
+            :ARG0 p2
+            :ARG1 (l / leather)
+            :extent (d / deep-01)))
+
+# ::id col_1840.19 ::date 2024-01-03T18:46:12
+# ::snt It	smelled	like	March	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_19.txt
+(s / smell-02 
+      :aspect state 
+      :modal-strength full-affirmative
+      :ARG1 (t / thing 
+            :refer-person 3rd 
+            :refer-number singular)
+      :ARG2 (d / date-entity :month 3))
+
+# ::id col_1840.20 ::date 2024-01-03T18:47:05
+# ::snt We	walked	back	through	the	school	because	it	was	drizzling	,	my	father	tall	in	his	navy	suit	and	my	shoes	going	click	on	the	linoleum	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_20.txt
+(w / walk-01 
+      :aspect activity 
+      :modal-strength full-affirmative
+      :ARG0 (p / person 
+            :refer-person 1st 
+            :refer-number plural)
+      :direction (b / back)
+      :path (t / through
+            :op1 (s / school))
+      :reason (w2 / weather-91 
+            :aspect activity 
+            :modal-strength full-affirmative
+            :ARG2 (d / drizzle))
+      :manner (a / and
+            :op1 (w3 / wear-01 
+                  :aspect state 
+                  :modal-strength full-affirmative
+                  :ARG0 (p2 / person 
+                        :refer-person 3rd 
+                        :refer-number singular
+                        :ARG1-of (h / have-rel-role-91
+                              :ARG2 (p3 / person 
+                                    :refer-person 1st 
+                                    :refer-number singular)))
+                  :ARG1 (s2 / suit
+                        :mod (n / navy)))
+            :op2 (g / go-23 
+                  :aspect iterative 
+                  :modal-strength full-affirmative
+                  :ARG0 (s3 / shoe 
+                        :refer-number plural
+                        :possessor p3)
+                  :ARG1 (c / click-01
+                        :quote g)
+                  :place (l / linoleum))))
+
+# ::id col_1840.21 ::date 2024-01-03T18:54:43
+# ::snt There	were	two	classes	of	each	grade	,	starting	at	the	sixth	and	going	down	to	the	first	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_21.txt
+(r / rate-entity-91 
+      :aspect state 
+      :modal-strength full-affirmative
+      :ARG1 (c / class :quant 2)
+      :ARG2 (g / grade
+            :mod (e / each)
+            :ARG1-of (i2 / identity-91
+                  :ARG2 (r2 / range-91))
+            :ARG2-of (i3 / include-91
+                  :ARG1 (r3 / range-91
+                        :ARG1 (g2 / grade
+                              :ord (o / ordinal-entity :value 6))
+                        :ARG2 (g3 / grade
+                              :ord (o2 / ordinal-entity :value 1))))))
+
+# ::id col_1840.22 ::date 2024-01-03T19:00:24
+# ::snt The	hall	ended	in	a	T	and	we	went	left	through	the	gym	,	walked	underneath	the	bleachers	and	stood	next	to	the	side	door	,	waiting	for	the	rain	to	stop	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_22.txt
+(c / consecutive
+      :op1 (e / end-01 
+            :aspect state 
+            :modal-strength full-affirmative
+            :ARG1 (h / hall)
+            :ARG2 (t / thing 
+                  :configuration "T"))
+      :op2 (g / go-02 
+            :aspect performance 
+            :modal-strength full-affirmative
+            :ARG0 (p / person 
+                  :refer-person 1st 
+                  :refer-number plural)
+            :direction (l / left-20)
+            :path (t2 / through
+                  :op1 (g2 / gym)))
+      :op3 (w / walk-01 
+            :aspect performance 
+            :modal-strength full-affirmative
+            :ARG0 p
+            :path (u / under-01
+                  :ARG2 (b / bleachers)))
+      :op4 (s / stand-01 
+            :aspect state 
+            :modal-strength full-affirmative
+            :ARG0 p
+            :ARG2 (p2 / place
+                  :ARG1-of (n / next-to-02
+                        :ARG2 (d / door
+                              :place (s2 / side))))
+            :reason (w2 / wait-01 
+                  :aspect state 
+                  :modal-strength full-affirmative
+                  :ARG0 p
+                  :ARG1 (s3 / stop-01 
+                        :aspect performance 
+                        :modal-strength full-affirmative
+                        :ARG1 (r / rain-01 
+                              :aspect process 
+                              :modal-strength full-affirmative
+                              :modal-predicate s3)
+                        :modal-predicate w2))))
+
+# ::id col_1840.23 ::date 2024-01-03T19:10:47
+# ::snt It	was	dark	under	the	bleachers	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_23.txt
+(d / dark-02 
+      :aspect state 
+      :modal-strength full-affirmative
+      :ARG1 (p / place
+            :ARG1-of (u / under-01
+                  :ARG2 (b / bleachers))))
+
+# ::id col_1840.24 ::date 2024-01-03T19:11:49
+# ::snt My	father	was	a	young	man	,	thirty	-	five	,	younger	because	he	liked	to	be	outside	,	to	play	softball	on	Saturday	and	to	take	my	mother	and	me	camping	on	vacation	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_24.txt
+(h / have-age-91 
+      :aspect state 
+      :modal-strength full-affirmative
+      :ARG1 (p / person 
+            :refer-person 3rd 
+            :refer-number singular
+            :ARG1-of (h2 / have-rel-role-91
+                  :ARG2 (p2 / person 
+                        :refer-person 1st 
+                        :refer-number singular)
+                  :ARG3 (f / father)))
+      :ARG2 (m / man
+            :age (y / young)
+            :ARG1-of (i3 / identity-91
+                  :ARG2 35)
+            :ARG1-of (s / seem-01
+                  :ARG2 (h3 / have-degree-91
+                        :ARG2 (y2 / young)
+                        :ARG3 (m2 / more))
+                  :reason (l / like-01 
+                        :aspect state 
+                        :modal-strength full-affirmative
+                        :ARG0 p
+                        :ARG1 (a / and
+                              :op1 (h4 / have-place-91 
+                                    :aspect habitual 
+                                    :modal-strength full-affirmative
+                                    :ARG1 p
+                                    :ARG2 (o / outside))
+                              :op2 (p3 / play-01 
+                                    :aspect habitual 
+                                    :modal-strength full-affirmative
+                                    :ARG0 p
+                                    :ARG1 (g / game :name (n / name :op1 "softball"))
+                                    :frequency (r / rate-entity-91
+                                          :ARG4 (d / date-entity
+                                                :weekday (s2 / saturday))))
+                              :op3 (t / take-01 
+                                    :aspect habitual 
+                                    :modal-strength full-affirmative
+                                    :ARG0 p
+                                    :ARG1 (a2 / and
+                                          :op1 (p4 / person
+                                                :ARG1-of (h5 / have-rel-role-91
+                                                      :ARG2 p2
+                                                      :ARG3 (m3 / mother)))
+                                          :op2 p2)
+                                    :ARG4 (c / camp-01 
+                                          :aspect activity 
+                                          :modal-strength full-affirmative)
+                                    :purpose (v / vacation-01))
+                              :modal-predicate l)))))
+
+# ::id col_1840.25 ::date 2024-01-03T19:24:02
+# ::snt He	stood	rocked	back	on	his	heels	with	his	coat	thrown	over	his	shoulders	and	his	hands	in	his	pockets	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_25.txt
+(s / stand-01 
+      :aspect state 
+      :modal-strength full-affirmative
+      :ARG0 (p / person 
+            :refer-person 3rd 
+            :refer-number singular)
+      :manner (r / rock-01 
+            :aspect state 
+            :modal-strength full-affirmative
+            :ARG1 p
+            :direction (b / back))
+      :manner (o / on-04 
+            :aspect state 
+            :modal-strength full-affirmative
+            :ARG1 p
+            :ARG2 (h / heel 
+                  :refer-number plural
+                  :part-of p))
+      :manner (t / throw-01 
+            :aspect state 
+            :modal-strength full-affirmative
+            :ARG1 (c / coat
+                  :possessor p)
+            :manner (o2 / over-05
+                  :ARG2 (s2 / shoulder 
+                        :refer-number plural
+                        :part-of p)))
+      :manner (i2 / inside-01 
+            :aspect state 
+            :modal-strength full-affirmative
+            :ARG1 (h2 / hand 
+                  :refer-number plural
+                  :part-of p)
+            :ARG2 (p2 / pocket 
+                  :refer-number plural
+                  :possessor p)))
+
+# ::id col_1840.26 ::date 2024-01-03T19:32:35
+# ::snt I	thought	of	bacon	and	eggs	,	toast	with	peach	jam	out	of	the	jar	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_26.txt
+(t / think-01 
+      :aspect activity 
+      :modal-strength full-affirmative
+      :ARG0 (p / person 
+            :refer-person 1st 
+            :refer-number singular)
+      :ARG1 (a / and
+            :op1 (a2 / and
+                  :op1 (b / bacon)
+                  :op2 (e / egg 
+                        :refer-number plural))
+            :op2 (a3 / and
+                  :op1 (t2 / toast)
+                  :op2 (j / jam
+                        :material (p2 / peach)
+                        :start (j2 / jar)))))
+
+# ::id col_1840.27 ::date 2024-01-03T20:01:54
+# ::snt I	was	so	hungry	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_27.txt
+(h / hunger-01  
+      :aspect state 
+      :modal-strength full-affirmative
+      :degree intensifier
+      :ARG0 (p / person 
+            :refer-person 1st 
+            :refer-number singular))
+
+# ::id col_1840.28 ::date 2024-01-03T20:02:47
+# ::snt The	space	under	the	bleachers	was	secret	and	dark	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_28.txt
+(a / and
+      :op1 (h / have-mod-91 
+            :aspect state 
+            :modal-strength full-affirmative
+            :ARG1 (s2 / space
+                  :ARG1-of (u / under-01
+                        :ARG2 (b / bleachers)))
+            :ARG2 (s / secret))
+      :op2 (d / dark-02 
+            :aspect state 
+            :modal-strength full-affirmative
+            :ARG1 s2))
+
+# ::id col_1840.29 ::date 2024-01-03T20:04:18
+# ::snt There	were	things	in	the	shadows	;	a	metal	pail	,	a	mop	,	rags	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_29.txt
+(e / exist-91 
+      :aspect state 
+      :modal-strength full-affirmative
+      :ARG1 (s / shadow 
+            :refer-number plural)
+      :ARG2 (t / thing 
+            :refer-number plural
+            :ARG1-of (i2 / include-91
+                  :ARG2 (a / and
+                        :op1 (p / pail
+                              :material (m / metal))
+                        :op2 (m2 / mop)
+                        :op3 (r / rag 
+                              :refer-number plural)))))
+
+# ::id col_1840.30 ::date 2024-01-03T20:05:45
+# ::snt Next	to	the	door	was	a	tall	wrought	-	iron	candle	holder	—	the	kind	that	stood	at	either	end	of	the	altar	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_30.txt
+(e / exist-91 
+      :aspect state 
+      :modal-strength full-affirmative
+      :ARG1 (p / place
+            :ARG1-of (n / next-to-02
+                  :ARG2 (d / door)))
+      :ARG2 (t / thing
+            :instrument-of (h / hold-01
+                  :ARG1 (c / candle))
+            :material (i2 / iron
+                  :ARG1-of (w / work-07))
+            :mod (t2 / tall)
+            :mod (k / kind
+                  :ARG1-of (s / stand-01 
+                        :aspect habitual 
+                        :modal-strength full-affirmative
+                        :ARG2 (e2 / end
+                              :mod (e3 / either)
+                              :part-of (a / alter))))))
+
+# ::id col_1840.31 ::date 2024-01-03T20:10:56
+# ::snt There	was	no	holder	and	the	end	was	jagged	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_31.txt
+(a / and
+      :op1 (h / have-part-91 
+            :polarity - 
+            :aspect state 
+            :modal-strength full-negative
+            :ARG2 (t / thing
+                  :instrument-of (h2 / hold-01)))
+      :op2 (h3 / have-mod-91 
+            :aspect state 
+            :modal-strength full-affirmative
+            :ARG1 (e / end
+                  :part-of (t2 / thing))
+            :ARG2 (j / jagged)))
+
+# ::id col_1840.32 ::date 2024-01-03T20:12:50
+# ::snt On	the	floor	was	a	wrapper	from	a	French	Chew	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_32.txt
+(e / exist-91 
+      :aspect state 
+      :modal-strength full-affirmative
+      :ARG1 (f / floor)
+      :ARG2 (w / wrapper
+            :source (f2 / food-dish :name (n / name :op1 "French" :op2 "Chew"))))
+
+# ::id col_1840.33 ::date 2024-01-03T20:13:41
+# ::snt They	were	sold	at	eighth	-	grade	basketball	games	on	Friday	nights	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_33.txt
+(s / sell-01 
+      :aspect habitual 
+      :modal-strength full-affirmative
+      :ARG1 (t / thing 
+            :refer-person 3rd 
+            :refer-number plural)
+      :place (g / game 
+            :refer-number plural
+            :mod (g2 / game :name (n / name :op1 "basketball")))
+      :temporal (d / date-entity 
+            :refer-number plural
+            :weekday (f / friday)
+            :dayperiod (n2 / night)))
+
+# ::id col_1840.34 ::date 2024-01-03T20:16:09
+# ::snt The	light	from	the	door	made	the	shadows	under	the	bleachers	darker	,	the	long	space	stretched	far	away	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_34.txt
+(m / make-02 
+      :aspect state 
+      :modal-strength full-affirmative
+      :ARG0 (l / light
+            :start (d / door))
+      :ARG1 (s / shadow 
+            :refer-number plural
+            :place (u / under-01
+                  :ARG2 (b / bleachers)))
+      :ARG2 (a / and
+            :op1 (h / have-degree-91 
+                  :aspect state 
+                  :modal-strength full-affirmative
+                  :ARG1 s
+                  :ARG2 (d2 / dark-02
+                        :ARG1 s)
+                  :ARG3 (m2 / more))
+            :op2 (s2 / stretch-01 
+                  :aspect state 
+                  :modal-strength full-affirmative
+                  :ARG1 (s3 / space
+                        :ARG1-of (l2 / long-03))
+                  :ARG4 (p / place
+                        :ARG1-of (a2 / away-01
+                              :extent (f / far-01))))))
+
+# ::id col_1840.35 ::date 2024-01-03T20:20:09
+# ::snt I	heard	the	rain	and	the	faint	rustle	of	paper	and	smelled	damp	concrete	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_35.txt
+(a / and
+      :op1 (h / hear-01 
+            :aspect state 
+            :modal-strength full-affirmative
+            :ARG0 (p / person 
+                  :refer-person 1st 
+                  :refer-number singular)
+            :ARG1 (a2 / and
+                  :op1 (r / rain-01 
+                        :aspect process 
+                        :modal-strength full-affirmative)
+                  :op2 (r2 / rustle-01 
+                        :aspect process 
+                        :modal-strength full-affirmative
+                        :ARG1 (p2 / paper))))
+      :op2 (s / smell-01 
+            :aspect state 
+            :modal-strength full-affirmative
+            :ARG0 p
+            :ARG1 (c / concrete
+                  :ARG1-of (d / damp-03))))
+
+# ::id col_1840.36 ::date 2024-01-03T20:22:28
+# ::snt I	did	not	go	near	my	father	but	kept	my	hand	in	my	pocket	,	feeling	the	soft	leather	glove	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_36.txt
+(c / contrast-91
+      :ARG1 (g / go-02 
+            :polarity - 
+            :aspect state 
+            :modal-strength full-negative
+            :ARG0 (p / person 
+                  :refer-person 1st 
+                  :refer-number singular)
+            :ARG4 (p2 / place
+                  :ARG1-of (n / near-02
+                        :ARG2 (p3 / person
+                              :ARG1-of (h / have-rel-role-91
+                                    :ARG2 p
+                                    :ARG3 (f / father))))))
+      :ARG2 (k / keep-02 
+            :aspect state 
+            :modal-strength full-affirmative
+            :ARG0 p
+            :ARG1 (i2 / inside-01 
+                  :aspect state 
+                  :modal-strength full-affirmative
+                  :ARG1 (h2 / hand
+                        :part-of p)
+                  :ARG2 (p4 / pocket
+                        :possessor p)
+                  :modal-predicate k)
+            :manner (f2 / feel-01 
+                  :aspect activity 
+                  :modal-strength full-affirmative
+                  :ARG0 p
+                  :ARG1 (g2 / glove
+                        :material (l / leather)
+                        :ARG1-of (s / soft-02)))))
+
+# ::id col_1840.37 ::date 2024-01-03T20:26:17
+# ::snt There	was	a	rustling	on	the	concrete	and	the	drizzle	of	soft	rain	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_37.txt
+(a / and
+      :op1 (r / rustle-01 
+            :aspect process 
+            :modal-strength full-affirmative
+            :place (c / concrete))
+      :op2 (d / drizzle-01 
+            :aspect process 
+            :modal-strength full-affirmative
+            :ARG1 (r2 / rain-01 
+                  :aspect process 
+                  :modal-strength full-affirmative
+                  :ARG1-of (s / soft-02))))
+
+# ::id col_1840.38 ::date 2024-01-03T20:28:38
+# ::snt I	wondered	if	anyone	ever	went	back	under	the	bleachers	,	if	there	were	crickets	or	mice	there	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_38.txt
+(w / wonder-01 
+      :aspect state 
+      :modal-strength full-affirmative
+      :ARG0 (p / person 
+            :refer-person 1st 
+            :refer-number singular)
+      :ARG1 (a / and
+            :op1 (t / truth-value
+                  :polarity-of (g / go-02 
+                        :aspect habitual
+                        :ARG0 (p2 / person 
+                              :refer-person 3rd 
+                              :refer-number singular
+                              :mod (a2 / any))
+                        :ARG4 (p3 / place
+                              :ARG1-of (b / back-12)
+                              :ARG1-of (u / under-01
+                                    :ARG2 (b2 / bleachers)))
+                        :temporal (e / ever)))
+            :op2 (t2 / truth-value
+                  :polarity-of (e2 / exist-91 
+                        :aspect state
+                        :ARG1 p3
+                        :ARG2 (o / or
+                              :op1 (c / cricket 
+                                    :refer-number plural)
+                              :op2 (m / mouse 
+                                    :refer-number plural))))
+            :modal-predicate w))
+
+# ::id col_1840.39 ::date 2024-01-03T20:32:52
+# ::snt The	rustling	might	have	been	mice	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_39.txt
+(t / thing
+      :causer-of (r / rustle-01 
+            :aspect process 
+            :modal-strength full-affirmative)
+      :ARG1-of (i / identity-91
+            :aspect state 
+            :modal-strength partial-affirmative
+            :ARG2 (m / mouse 
+                  :refer-number plural)))
+
+# ::id col_1840.40 ::date 2024-01-03T20:34:36
+# ::snt I	wished	the	rain	would	stop	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_40.txt
+(w / wish-01 
+      :aspect state 
+      :modal-strength full-affirmative
+      :ARG0 (p / person 
+            :refer-person 1st 
+            :refer-number singular)
+      :ARG1 (s / stop-01 
+            :aspect performance 
+            :modal-strength full-affirmative
+            :ARG1 (r / rain-01 
+                  :aspect process 
+                  :modal-strength full-affirmative
+                  :modal-predicate s)
+            :modal-predicate w))
+
+# ::id col_1840.41 ::date 2024-01-03T20:37:41
+# ::snt I	wanted	to	go	home	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_41.txt
+(w / want-01 
+      :aspect state 
+      :modal-strength full-affirmative
+      :ARG0 (p / person 
+            :refer-person 1st 
+            :refer-number singular)
+      :ARG1 (g / go-02 
+            :aspect performance 
+            :modal-strength full-affirmative
+            :ARG0 p
+            :ARG4 (h / home)
+            :modal-predicate w))
+
+# ::id col_1840.42 ::date 2024-01-03T20:38:46
+# ::snt I	made	noises	with	my	heels	but	they	were	too	loud	so	I	stopped	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_42.txt
+(m / make-02 
+      :aspect activity 
+      :modal-strength full-affirmative
+      :ARG0 (p / person 
+            :refer-person 1st 
+            :refer-number singular)
+      :ARG1 (n / noise 
+            :refer-number plural)
+      :instrument (h / heel 
+            :refer-number plural
+            :part-of p)
+      :concession (s / stop-01 
+            :aspect performance 
+            :modal-strength full-affirmative
+            :ARG0 p
+            :ARG1 m
+            :reason (h2 / have-degree-91 
+                  :aspect state 
+                  :modal-strength full-affirmative
+                  :ARG1 n
+                  :ARG2 (l / loud)
+                  :ARG3 (t / too))))
+
+# ::id col_1840.43 ::date 2024-01-03T20:41:37
+# ::snt Something	else	clicked	and	I	tried	to	see	what	it	was	but	could	n’t	see	anything	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_43.txt
+(c / consecutive
+      :op1 (c2 / click-01 
+            :aspect semelfactive 
+            :modal-strength full-affirmative
+            :ARG0 (s / something
+                  :mod (e / else)))
+      :op2 (t / try-01 
+            :aspect activity 
+            :modal-strength full-affirmative
+            :ARG0 (p / person 
+                  :refer-person 1st 
+                  :refer-number singular)
+            :ARG1 (s2 / see-01 
+                  :aspect performance 
+                  :modal-strength full-affirmative
+                  :ARG0 p
+                  :ARG1 (t2 / thing
+                        :ARG1-of (i2 / identity-91 
+                              :aspect state 
+                              :modal-strength full-affirmative
+                              :ARG2 s)))
+            :ARG1-of (c3 / contrast-91
+                  :ARG2 (s3 / see-01 
+                        :polarity - 
+                        :aspect state 
+                        :modal-strength full-negative
+                        :ARG0 p
+                        :ARG1 (a / anything)))))
+
+# ::id col_1840.44 ::date 2024-01-03T20:45:51
+# ::snt It	was	n’t	as	loud	as	my	heels	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_44.txt
+(h / have-degree-91 
+      :polarity - 
+      :aspect state 
+      :modal-strength full-negative
+      :ARG1 (t / thing 
+            :refer-person 3rd 
+            :refer-number singular)
+      :ARG2 (l / loud)
+      :ARG3 (e / equal)
+      :ARG4 (h2 / heel 
+            :refer-number plural
+            :part-of (p / person 
+                  :refer-person 1st 
+                  :refer-number singular)))
+
+# ::id col_1840.45 ::date 2024-01-03T20:47:42
+# ::snt My	father	cleared	his	throat	,	looking	out	the	door	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_45.txt
+(c / clear-01 
+      :aspect performance 
+      :modal-strength full-affirmative
+      :ARG0 (p / person 
+            :refer-person 3rd 
+            :refer-number singular
+            :ARG1-of (h / have-rel-role-91
+                  :ARG2 (p2 / person 
+                        :refer-person 1st 
+                        :refer-number singular)
+                  :ARG3 (f / father)))
+      :ARG1 (t / throat
+            :part-of p)
+      :temporal (l / look-01 
+            :aspect state 
+            :modal-strength full-affirmative
+            :ARG0 p
+            :direction (o / out-08
+                  :ARG4 (d / door))))
+
+# ::id col_1840.46 ::date 2024-01-03T20:52:13
+# ::snt I	imagined	a	man	down	there	in	the	dark	,	an	escaped	convict	or	a	madman	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_46.txt
+(i2 / imagine-01 
+      :aspect activity 
+      :modal-strength full-affirmative
+      :ARG0 (p / person 
+            :refer-person 1st 
+            :refer-number singular)
+      :ARG1 (m / man
+            :place (t / there
+                  :ARG1-of (d / down-03)
+                  :ARG1-of (d2 / dark-02))
+            :ARG1-of (h / have-role-91
+                  :ARG2 (o / or
+                        :op1 (p2 / person
+                              :ARG1-of (c / convict-01)
+                              :ARG0-of (e / escape-01 
+                                    :aspect state 
+                                    :modal-strength full-affirmative))
+                        :op2 (m2 / madman)))))
+
+# ::id col_1840.47 ::date 2024-01-03T20:55:03
+# ::snt It	had	nearly	stopped	raining	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_47.txt
+(s / stop-01 
+      :modal-strength partial-affirmative 
+      :aspect performance
+      :ARG1 (r / rain-01 
+            :aspect process 
+            :modal-strength full-affirmative)
+      :degree (n / nearly))
+
+# ::id col_1840.48 ::date 2024-01-03T20:56:06
+# ::snt In	fifteen	minutes	we	would	be	home	and	my	mother	would	fry	eggs	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_48.txt
+(c / consecutive
+      :op1 (h / have-place-91 
+            :aspect state 
+            :modal-strength full-affirmative
+            :ARG1 (p / person 
+                  :refer-person 1st 
+                  :refer-number plural)
+            :ARG2 (h2 / home)
+            :temporal (m / minute :quant 15
+                  :temporal (a / after
+                        :op1 (n / now))))
+      :op2 (f / fry-01 
+            :aspect performance 
+            :modal-strength full-affirmative
+            :ARG0 (p2 / person
+                  :ARG1-of (h3 / have-rel-role-91
+                        :ARG1 (p3 / person 
+                              :refer-person 1st 
+                              :refer-number singular)
+                        :ARG2 (m2 / mother)))
+            :ARG1 (e / egg 
+                  :refer-number plural)))
+
+# ::id col_1840.49 ::date 2024-01-03T20:59:58
+# ::snt I	heard	a	noise	like	paper	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_49.txt
+(h / hear-01 
+      :aspect state 
+      :modal-strength full-affirmative
+      :ARG0 (p / person 
+            :refer-person 1st 
+            :refer-number singular)
+      :ARG1 (n / noise
+            :ARG1-of (r / resemble-91
+                  :ARG2 (p2 / paper))))
+
+# ::id col_1840.50 ::date 2024-01-03T21:00:40
+# ::snt My	father	heard	it	,	too	,	but	he	pretended	not	to	,	at	least	he	did	n’t	turn	his	head	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_50.txt
+(h / hear-01 :aspect state :modal-strength full-affirmative
+      :ARG0 (p / person 
+            :refer-person 3rd 
+            :refer-number singular
+            :ARG1-of (h2 / have-rel-role-91
+                  :ARG2 (p2 / person 
+                        :refer-person 1st 
+                        :refer-number singular)
+                  :ARG3 (f / father)))
+      :ARG1 (t2 / thing 
+            :refer-person 3rd 
+            :refer-number singular)
+      :mod (t / too)
+      :concession (p3 / pretend-01 
+            :aspect activity 
+            :modal-strength full-affirmative
+            :ARG0 p
+            :ARG1 (h3 / have-polarity-91
+                  :ARG1 h
+                  :ARG2 -)
+            :concession (t3 / turn-01 
+                  :polarity -
+                  :aspect performance 
+                  :modal-strength full-negative 
+                  :ARG0 p
+                  :ARG1 (h4 / head
+                        :part-of p)
+                  :mod (a / at-least))))
+
+# ::id col_1840.51 ::date 2024-01-03T21:03:56
+# ::snt And	there	was	a	heavier	sound	,	a	rasp	,	like	a	box	pulled	over	concrete	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_51.txt
+(e / emit-sound-91 
+      :aspect process 
+      :modal-strength full-affirmative
+      :ARG2 (s / sound
+            :ARG1-of (h / have-degree-91
+                  :ARG2 (h2 / heavy)
+                  :ARG3 (m / more))
+            :ARG1-of (r / resemble-91
+                  :ARG2 (p / pull-01 
+                        :aspect process 
+                        :modal-strength full-affirmative
+                        :ARG1 (b / box)
+                        :path (o / over-05
+                              :ARG2 (c / concrete))))))
+
+# ::id col_1840.52 ::date 2024-01-03T21:06:08
+# ::snt I	looked	at	my	father	but	he	did	n’t	turn	his	head	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_52.txt
+(l / look-01 
+      :aspect state 
+      :modal-strength full-affirmative
+      :ARG0 (p / person 
+            :refer-person 1st 
+            :refer-number singular)
+      :ARG1 (p2 / person 
+            :refer-person 3rd 
+            :refer-number singular
+            :ARG1-of (h / have-rel-role-91
+                  :ARG2 p
+                  :ARG3 (f / father)))
+      :concession (t / turn-01 
+            :polarity - 
+            :aspect state 
+            :modal-strength full-negative
+            :ARG0 p2
+            :ARG1 (h2 / head
+                  :part-of p2)))
+
+# ::id col_1840.53 ::date 2024-01-03T21:08:08
+# ::snt I	wished	he	would	turn	his	head	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_53.txt
+(w / wish-01 
+      :aspect state 
+      :modal-strength full-affirmative
+      :ARG0 (p / person 
+            :refer-person 1st 
+            :refer-number singular)
+      :ARG1 (t / turn-01 
+            :aspect performance 
+            :modal-strength full-affirmative
+            :ARG0 (p2 / person 
+                  :refer-person 3rd 
+                  :refer-number singular)
+            :ARG1 (h / head
+                  :part-of p2)
+            :modal-predicate w))
+
+# ::id col_1840.54 ::date 2024-01-03T21:09:37
+# ::snt There	was	a	click	again	and	the	rustle	,	and	I	could	not	think	of	what	it	could	be	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_54.txt
+(a / and
+      :op1 (c2 / consecutive
+            :op1 (c / click-01 
+                  :aspect semelfactive 
+                  :modal-strength full-affirmative)
+            :op2 (r / rustle-01 
+                  :aspect process 
+                  :modal-strength full-affirmative))
+      :op2 (t / think-01 
+            :aspect state 
+            :modal-strength neutral-negative
+            :ARG0 (p / person 
+                  :refer-person 1st 
+                  :refer-number singular)
+            :ARG1 (t2 / thing
+                  :ARG2-of (i2 / identity-91 
+                        :aspect state 
+                        :modal-strength neutral-affirmative
+                        :ARG1 (t3 / thing
+                              :ARG0-of c
+                              :ARG1-of r))
+                  :modal-predicate t)))
+
+# ::id col_1840.55 ::date 2024-01-03T21:15:36
+# ::snt I	had	no	explanation	for	the	particular	combination	of	sounds	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_55.txt
+(e / explain-01 
+      :polarity -
+      :aspect state 
+      :modal-strength neutral-negative 
+      :ARG0 (p / person 
+            :refer-person 1st 
+            :refer-number singular)
+      :ARG1 (t / thing
+            :ARG3-of (c / combine-01
+                  :ARG1 (s / sound 
+                        :refer-number plural))
+            :mod (p2 / particular)))
+
+# ::id col_1840.56 ::date 2024-01-03T21:18:24
+# ::snt No	doubt	there	was	,	some	two	things	that	happened	to	be	making	noises	at	the	same	time	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_56.txt
+(m / make-02 
+      :aspect process
+      :modal-strength full-affirmative 
+      :ARG0 (s / something :quant 2)
+      :ARG1 (n / noise 
+            :refer-number plural)
+      :temporal (t / time
+            :ARG1-of (s2 / same-01))
+      :ARG1-of (d / doubt-01 
+            :polarity - 
+            :aspect state 
+            :modal-strength full-negative)
+      :modal-predicate d)
+
+# ::id col_1840.57 ::date 2024-01-03T21:23:41
+# ::snt Once	in	a	fever	I	heard	thousands	of	birds	outside	my	window	and	I	was	terrified	that	they	would	fling	themselves	through	the	glass	and	attack	me	,	but	it	was	only	the	rain	on	the	eaves	.
+# ::save-date Wed Jan 3, 2024 ::user jbonn ::file col_1840_57.txt
+(h / have-concession-91
+      :ARG1 (a / and
+            :op1 (h2 / hear-01 
+                  :aspect state 
+                  :modal-strength full-affirmative
+                  :ARG0 (p / person 
+                        :refer-person 1st 
+                        :refer-number singular)
+                  :ARG1 (b / bird
+                        :quant (m / multiple :op1 1000))
+                  :temporal (f / febrile-01 
+                        :aspect state 
+                        :modal-strength full-affirmative
+                        :ARG1 p)
+                  :place (o / out-06
+                        :ARG2 (w / window
+                              :possessor p))
+                  :frequency 1 )
+            :op2 (t / terrify-01 
+                  :aspect state 
+                  :modal-strength full-affirmative
+                  :ARG0 (a2 / and
+                        :op1 (f2 / fling-01 
+                              :aspect performance 
+                              :modal-strength neutral-affirmative
+                              :ARG0 b
+                              :ARG1 b
+                              :path (t2 / through
+                                    :op1 (g / glass
+                                          :material-of w)))
+                        :op2 (a3 / attack-01 
+                              :aspect performance 
+                              :modal-strength neutral-affirmative
+                              :ARG0 b
+                              :ARG1 p))
+                  :ARG1 p))
+      :ARG2 (i2 / identity-91 
+            :aspect state 
+            :modal-strength full-affirmative
+            :ARG1 b
+            :ARG2 (r / rain-01 
+                  :aspect process 
+                  :modal-strength full-affirmative
+                  :goal (e / eave 
+                        :refer-number plural))
+            :mod (o2 / only)))

@@ -1,0 +1,6 @@
+:Aspect
+:polarity
+:mode
+:refer-person
+:refer-number
+:degree

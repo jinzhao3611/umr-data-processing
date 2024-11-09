@@ -1,0 +1,382 @@
+# :: snt1	 两人 曾 发誓 都 要 娶 到 宙斯 的 女儿 为妻 。
+
+# sentence level graph:
+(s1x / 发誓-01
+  :ARG0 (s1x2 / 人
+          :quant (s1x3 / 两))
+  :ARG1 (s1x4 / 娶-01
+          :ARG1 (s1p / person
+                  :ARG0-of (s1h / have-rel-role-91
+                             :ARG1 (s1i2 / individual-person
+                                     :name (s1n / name
+                                             :op1 "宙斯"))
+                             :ARG2 (s1x5 / 女儿))
+                  :ARG0-of (s1h2 / have-rel-role-91
+                             :ARG2 (s1x6 / 妻))))
+  :aspect performance)
+
+# alignment:
+s1h : 0-0
+s1h2 : 0-0
+s1i2 : 8-8
+s1n : -1--1
+s1p : 0-0
+s1x : 3-3
+s1x2 : 1-1
+s1x3 : 1-1
+s1x4 : 6-6
+s1x5 : 10-10
+s1x: 3-3
+s1x4: 6-6
+s1x5: 10-10
+
+# document level annotation:
+(s1s0 / sentence)
+
+
+# :: snt2	 忒修斯 选择 了 海伦 ， 两人 成功 的 绑架 了 她 ， 只 等 她 成人 即可 成婚 ； 皮里托奥斯 选择 了 珀耳塞福涅 ， 于是 两人 又 出发 去 冥府 （ 珀耳塞福涅 是 冥王 哈底斯 的 妻子 ） 。
+
+# sentence level graph:
+(s2a / and
+  :op1 (s2a2 / and
+         :op1 (s2x / 选择-01
+                :ARG0 (s2i2 / individual-person
+                        :name (s2n / name
+                                :op1 "忒修斯"))
+                :ARG1 (s2i3 / individual-person
+                        :name (s2n2 / name
+                                :op1 "海伦"))
+                :aspect performance)
+         :op2 (s2x2 / 绑架-01
+                :ARG0 (s2x3 / 人
+                        :quant (s2x4 / 两))
+                :ARG1 s2i3
+                :mod (s2x5 / 成功-01)
+                :aspect performance)
+         :op3 (s2x6 / 成婚-00
+                :temporal (s2x7 / 成人-00
+                            :ARG0 (s2s / s2i3))
+                :aspect performance))
+  :op2 (s2a3 / and
+         :op1 (s2x8 / 选择-01
+                :ARG0 (s2i4 / individual-person
+                        :name (s2n3 / name
+                                :op1 "皮里托奥斯"))
+                :ARG1 (s2i5 / individual-person
+                        :name (s2n4 / name
+                                :op1 "珀耳塞福涅"))
+                :aspect performance)
+         :op2 (s2x9 / 出发-01
+                :ARG0 s2x3
+                :purpose (s2x10 / 去-01
+                           :ARG1 (s2x11 / 冥府)
+                           :aspect performance)
+                :reason (s2h / have-rel-role-91
+                          :ARG0 (s2i6 / individual-person
+                                  :name (s2n5 / name
+                                          :op1 "珀耳塞福涅"))
+                          :ARG1 (s2i7 / individual-person
+                                  :name (s2n6 / name
+                                          :op1 "哈底斯")
+                                  :ARG0-of (s2h2 / have-role-91
+                                             :ARG2 (s2x12 / 冥王)))
+                          :ARG2 (s2x13 / 妻子))
+                :aspect performance)))
+
+# alignment:
+s2a : 0-0
+s2a2 : 0-0
+s2a3 : 0-0
+s2h : 0-0
+s2i2 : 1-1
+s2i3 : 0-0
+s2i4 : 20-20
+s2i5 : 0-0
+s2i6 : 32-32
+s2i7 : -1--1
+s2n : -1--1
+s2n2 : -1--1
+s2n3 : -1--1
+s2n4 : -1--1
+s2n5 : -1--1
+s2n6 : -1--1
+s2s : 0-0
+s2x : 2-2
+s2x10 : 29-29
+s2x11 : 30-30
+s2x2 : 9-9
+s2x3 : 0-0
+s2x4 : 6-6
+s2x5 : 7-7
+s2x6 : 18-18
+s2x7 : 16-16
+s2x8 : 21-21
+s2x9 : 28-28
+s2h2 : 0-0
+s2x12 : 34-34
+s2x: 2-2
+s2x2: 9-9
+s2x5: 7-7
+s2x6: 18-18
+s2x7: 16-16
+s2x8: 2-2
+s2x9: 28-28
+s2x10: 29-29
+s2x11: 30-30
+s2x12: 34-34
+s2x13: 37-37
+
+# document level annotation:
+(s2s0 / sentence
+  :temporal ((s2x2 :after s2x)
+                    (s2x :after s1x)
+                    (s2x6 :after s2x2)
+                    (s2x9 :after s2x8))
+  :coref ((s2x3 :same-entity s1x2)))
+
+
+# :: snt3	 哈底斯 假意 设宴 欢迎 他们 ， 等 他们 一 坐下 就 派出 毒蛇 紧紧 缠住 了 两人 的 脚 （ 一说 他们 的 腿 被 地面 长出 的 石头 固定 住 了 ） 。
+
+# sentence level graph:
+(s3a / and
+  :op1 (s3x2 / 设宴-01
+         :ARG0 (s3i2 / individual-person
+                 :name (s3n / name
+                         :op1 "哈底斯"))
+         :purpose (s3x3 / 欢迎-01
+                    :ARG1 (s3p2 / person
+                            :refer-person 3rd
+                            :refer-number plural)
+                    :aspect performance)
+         :mod (s3x4 / 假意)
+         :aspect performance)
+  :op2 (s3o / or
+         :op1 (s3x5 / 派出-01
+                :ARG1 (s3x6 / 毒蛇)
+                :ARG2 (s3x7 / 缠住-01
+                        :ARG1 (s3x9 / 脚
+                                :poss (s3p / person))
+                        :mod (s3x8 / 紧紧-01))
+                :temporal (s3x10 / 坐下-01
+                            :ARG0 s3p)
+                :aspect performance)
+         :op2 (s3x11 / 固定-01
+                :ARG0 (s3x12 / 石头
+                        :ARG0-of (s3h / have-mod-91
+                                   :ARG2 (s3x / 长出-01
+                                           :place (s3x14 / 地面))))
+                :ARG1 (s3x13 / 腿
+                        :poss s3p)
+                :aspect state)))
+
+# alignment:
+s3a : 0-0
+s3h : 0-0
+s3i2 : 1-1
+s3n : -1--1
+s3o : 0-0
+s3p : 0-0
+s3p2 : 0-0
+s3x : 27-27
+s3x10 : 10-10
+s3x11 : 30-30
+s3x12 : 29-29
+s3x13 : 24-24
+s3x14 : 26-26
+s3x2 : 3-3
+s3x3 : 4-4
+s3x4 : 2-2
+s3x5 : 12-12
+s3x6 : 13-13
+s3x7 : 15-15
+s3x8 : 14-14
+s3x2: 3-3
+s3x3: 4-4
+s3x4: 2-2
+s3x5: 12-12
+s3x6: 13-13
+s3x7: 15-15
+s3x9: 19-19
+s3x8: 14-14
+s3x10: 10-10
+s3x11: 30-30
+s3x12: 29-29
+s3x: 27-27
+s3x14: 26-26
+s3x13: 24-24
+
+# document level annotation:
+(s3s0 / sentence
+  :temporal ((s3x5 :after s3x2))
+  :coref ((s3p2 :same-entity s1x2)))
+
+
+# :: snt4	 直到 后来 ， 另 一位 英雄 海格力斯 做 第十二 项 任务 来到 冥府 ， 才 解救 了 被困 的 忒修斯 ， 但是 当 他 试图 释放 皮里托奥斯时 ， 大地 却 震动 起来 。
+
+# sentence level graph:
+(s4c / consecutive
+  :op1 (s4x3 / 解救-01
+         :ARG1 (s4i2 / individual-person
+                 :name (s4n / name
+                         :op1 "忒修斯")
+                 :mod (s4x4 / 被困))
+         :aspect performance)
+  :op2 (s4b / but-91
+         :ARG1 (s4x5 / 释放-01
+                 :ARG0 (s4d / dummy)
+                 :ARG1 (s4i3 / individual-person
+                         :name (s4n2 / name
+                                 :op1 "皮里托奥斯"))
+                 :mod (s4x7 / 试图-01)
+                 :aspect endeavor)
+         :ARG2 (s4x6 / 震动-01
+                 :ARG0 (s4x8 / 大地)
+                 :aspect performance))
+  :temporal (s4x / 直到
+              :temporal (s4x2 / 后来))
+  :cause (s4x9 / 来到-01
+           :ARG1 (s4x10 / 冥府)
+           :cause (s4x11 / 做-01
+                    :ARG0 (s4i4 / identity-91
+                            :ARG0 (s4i5 / individual-person
+                                    :name (s4n3 / name
+                                            :op1 "海格力斯"))
+                            :ARG1 (s4x12 / 英雄
+                                    :mod (s4x13 / 另一位)))
+                    :ARG2 (s4x14 / 任务
+                            :ord (s4x15 / 第十二)
+                            :unit (s4x16 / 项))
+                    :aspect performance)
+           :aspect performance))
+
+# alignment:
+s4b : 0-0
+s4d : 0-0
+s4i2 : 20-20
+s4i3 : 27-27
+s4i4 : 0-0
+s4i5 : 7-7
+s4n : -1--1
+s4n2 : -1--1
+s4n3 : -1--1
+s4x : 1-1
+s4x10 : 13-13
+s4x11 : 8-8
+s4x12 : 6-6
+s4x13 : 4-5
+s4x14 : 11-11
+s4x15 : 9-9
+s4x16 : 10-10
+s4x2 : 2-2
+s4x3 : 16-16
+s4x4 : 18-18
+s4x5 : 26-26
+s4x6 : 31-31
+s4x7 : 25-25
+s4x8 : 29-29
+s4x3: 16-16
+s4x4: 18-18
+s4x5: 26-26
+s4x7: 25-25
+s4x6: 31-31
+s4x8: 29-29
+s4x: 1-1
+s4x2: 2-2
+s4x9: 12-12
+s4x10: 13-13
+s4x11: 8-8
+s4x12: 6-6
+s4x14: 11-11
+s4x15: 9-9
+s4x16: 10-10
+
+# document level annotation:
+(s4s0 / sentence
+  :temporal ((s4c :after s3a)
+                    (s4x3 :before s4b)
+                    (s4x3 :after s4x9)
+                    (s4b :after s4x9)))
+
+
+# :: snt5	 于是 皮里托奥斯 被 永远 留在 在 了 冥府 。
+
+# sentence level graph:
+(s5x / 留在-01
+  :ARG1 (s5i2 / individual-person
+          :name (s5n / name
+                  :op1 "皮里托奥斯"))
+  :ARG2 (s5x2 / 冥府)
+  :extent (s5x3 / 永远)
+  :aspect state)
+
+# alignment:
+s5i2 : 1-1
+s5n : -1--1
+s5x : 1-1
+s5x2 : 8-8
+s5x: 5-5
+s5x2: 8-8
+s5x3: 4-4
+
+# document level annotation:
+(s5s0 / sentence
+  :temporal ((s5x :after s4c)))
+
+
+# :: snt6	 据说 雅典 人 的 大腿 较细 ， 就是 因为 忒修斯 被 解救 时 腿 被 夹住 扯 下 了 一些 皮肉 。
+
+# sentence level graph:
+(s6x / 据说-01
+  :ARG0 (s6x2 / 大腿
+          :poss (s6x3 / 人
+                  :mod (s6c / country-region
+                         :name (s6n / name
+                                 :op1 "雅典")))
+          :mod (s6x4 / 较细))
+  :reason (s6a / and
+            :op1 (s6x6 / 夹住-00
+                   :ARG1 (s6x7 / 腿
+                           :poss s6i2)
+                   :aspect performance)
+            :op2 (s6x8 / 扯-02
+                   :ARG1 (s6x9 / 皮肉
+                           :mod (s6x10 / 一些))
+                   :aspect performance)
+            :temporal (s6x5 / 解救-01
+                        :ARG1-of (s6i2 / individual-person
+                                   :name (s6n2 / name
+                                           :op1 "忒修斯"))
+                        :aspect performance))
+  :aspect performance)
+
+# alignment:
+s6a : 0-0
+s6c : 2-2
+s6i2 : 0-0
+s6n : -1--1
+s6n2 : -1--1
+s6x : 1-1
+s6x10 : 20-20
+s6x2 : 5-5
+s6x3 : 3-3
+s6x4 : 6-6
+s6x5 : 12-12
+s6x6 : 16-16
+s6x7 : 14-14
+s6x8 : 17-17
+s6x: 1-1
+s6x2: 5-5
+s6x3: 3-3
+s6x4: 6-6
+s6x6: 16-16
+s6x7: 14-14
+s6x8: 17-17
+s6x9: 21-21
+s6x10: 20-20
+s6x5: 12-12
+
+# document level annotation:
+(s6s0 / sentence
+  :temporal ((s6x :after s6a)))
+
+

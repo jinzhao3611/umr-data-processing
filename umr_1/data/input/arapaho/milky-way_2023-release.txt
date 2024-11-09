@@ -1,0 +1,389 @@
+
+# :: snt1	
+tx   Biih'iyou'u	    nenei'ooku'oononi	    hihcebe'	hono'   ,	nooxeihi'	niinoti'onoohootow	            tookooxuunookooxeise'               .
+mb   biih'iyou -'u	    nenei'ooku'oo -noni	    hihcebe'	hono'	,   nooxeihi'	nii- noti'on- noohoot -ow	    tookooxuu- nookooxeise -'           .
+ge   dark -0.ITER	    IC.look_at -2S.ITER	    above	    sky	    ,   maybe	    IMPERF- search_for- see -2S	    IC.across- white_track_lies -0S     .
+ps   vii+pl -infl	    vai -infl	            part	    ni	    ,   part	    prefix- prefix- vti -infl	    prefix- vii.incorp -infl            .
+tr   On a clear dark night when you look up at the sky, you can see a white streak that stretches all the way across the sky.
+
+# sentence level graph:
+(s1n / noti'onoohoot-00
+    :actor (s1p / person
+        :refer-person 2nd
+        :refer-number Singular)
+    :theme (s1t / tookooxuunookooxeise-00
+        :path s1h2
+        :Aspect State
+        :MODSTR FullAff)   
+    :condition (s1n2 / nei'ooku'oo-00
+        :experiencer s1p
+        :stimulus (s1h / hono')
+        :direction (s1h2 / hihcebe')
+        :temporal (s1b / biih'iyou-00
+            :Aspect State
+            :MODSTR FullAff)
+        :Aspect Habitual
+        :MODSTR FullAff)
+    :Aspect Habitual
+    :MODSTR PrtAff)
+
+# alignment:
+s1n: 7-7
+s1p: 7-7
+s1t: 8-8
+s1n2: 2-2
+s1h: 4-4
+s1h2: 3-3
+s1b: 1-1
+
+# document level graph:
+(s1s0 / sentence
+    :temporal ((PRESENT_REF :overlap s1n)
+            (PRESENT_REF :overlap s1n2)
+            (PRESENT_REF :overlap s1b)
+            (PRESENT_REF :overlap s1t))
+    :modal ((AUTH :NeutAff s1n)
+            (AUTH :FullAff s1n2)
+            (AUTH :FullAff s1b)
+            (AUTH :FullAff s1t)))
+
+
+# :: snt2	
+tx   Hee3eeneentou'            ,   nehe'	heneecee	    noh	    woxhoox .
+mb   hee3eeni- entou -'        ,   nehe'	heneecee	    noh	    woxhoox .
+ge   why- located -0S          ,   this	buffalo.bull	and	    horse   .   
+ps   prefix.rel- vii -infl     ,   det	    na	            part	na      .
+tr   The reason that it is there is because of the buffalo and the horse.
+
+# sentence level graph:
+(s2e / exist-91
+    :ARG1 (s2p / place)
+    :ARG2 (s2t / thing
+        :refer-person 3rd
+        :refer-number Singular)
+    :cause (s2a / and
+        :op1 (s2h2 / heneecee)
+        :op2 (s2w / woxhoox)
+        :mod (s2n2 / nehe'))
+    :Aspect State
+    :MODSTR FullAff)
+
+# alignment:
+s2e: 1-1
+s2p: 0-0
+s2t: 1-1
+s2a: 5-5
+s2h2: 4-4
+s2w: 6-6
+s2n2: 3-3
+
+# document level graph:
+(s2s0 / sentence
+    :temporal ((DCT :overlap s2e))
+    :modal ((AUTH :FullAff s2e))
+    :coref ((s1h2 :same-entity s2p)
+            (s1t :same-entity s2t)
+            (s1t :same-event s2e)))
+
+
+# :: snt3	
+tx   He'ih'eti3eihino'	        nehe'	woxhoox	    noh	    heneecee        .
+mb   he'ih- 'eti3eihi -no'	    nehe'	woxhoox	    noh	    heneecee        .
+ge   NARRPAST- called -pers.PL	this	horse	    and	    buffalo.bull    .
+ps   prefix- vai.pass -infl    det	    na	        part	na              .
+tr   The buffalo and horse were called together/ summoned.
+
+# sentence level graph:
+(s3h / heti3eihi-00
+    :actor (s3p / person)
+    :theme (s3a / and
+        :op1 (s3w / woxhoox)
+        :op2 (s3h2 / heneecee)
+        :mod (s3n / nehe'))
+    :Aspect Performance
+    :MODSTR FullAff)
+
+# alignment:
+s3h: 1-1
+s3a: 4-4
+s3w: 3-3
+s3h2: 5-5
+s3n: 2-2
+
+# document level graph:
+(s3s0 / sentence
+    :temporal ((DCT :before s3h))
+    :modal ((AUTH :FullAff s3h))
+    :coref ((s2w :same-entity s3w)
+            (s2h2 :same-entity s3h2)))
+
+
+# :: snt4	
+tx   " Heetnonouhtinee         ,   "	    hee3eihohkoni'  .
+mb   " heet- nonouhti -nee     ,   "       hee3eihohkoni'  .
+ge   " FUT- race- 2PL          ,   "       said_to_s.o.    .
+ps   " prefix- vai.recip -infl ,   "       vta.4/3PL       .
+tr   "Race each other" he told them.
+
+# sentence level graph:
+(s4h / hee3-00
+    :actor (s4p2 / person
+        :refer-person 4th)
+    :theme (s4n / nonouhti-00
+        :mode imperative
+        :actor s4p
+        :Aspect Performance
+        :MODSTR PrtAff
+        :QUOT s4h)
+    :recipient (s4p / person        
+        :refer-person 3rd
+        :refer-number Plural)
+    :Aspect Performance
+    :MODSTR FullAff)
+
+# alignment:
+s4h: 5-5
+s4p2: 5-5
+s4n: 2-2
+s4p: 2-2
+
+# document level graph:
+(s4s0 / sentence
+    :temporal ((s3h :after s4h)
+            (s4h :after s4n))
+    :modal ((AUTH :FullAff s4h)
+            (AUTH :Aff s4p2)
+            (s4p2 :PrtAff s4n))
+    :coref ((s3p :same-entity s4p2)
+            (s4p :subset-of s3w)
+            (s4p :subset-of s3h2)))
+
+
+# :: snt5	
+tx   Ne'nee'eestoo3i'	        heesinihii3eihi3i'                  ;
+mb   ne- nee'eestoo -3i'	    heesi- nihii3eihi -3i'              ;
+ge   then- do_thus/that -3PL   what/how- s.t._said_to_s.o. -3PL    ;
+ps   prefix- vai.back -infl    prefix.rel- vai.PASS -infl          ;
+tr   They did as they were told,
+
+# sentence level graph:
+(s5n / nee'eestoo-00
+    :actor (s5p / person
+        :refer-person 3rd
+        :refer-number Plural)
+    :theme (s5t / thing
+        :Theme-of (s5n2 / nihii3eihi-00
+            :recipient s5p
+            :Aspect Performance
+            :MODSTR FullAff))
+    :Aspect Activity
+    :MODSTR FullAff)
+
+# alignment:
+s5n: 1-1
+s5p: 1-1
+s5t: 2-2
+s5n2: 2-2
+
+# document level graph:
+(s5s0 / sentence
+    :temporal ((s4h :after s5n))
+    :modal ((AUTH :FullAff s5n))
+    :coref ((s4h :same-event s5n2)
+            (s4n :same-event s5t)
+            (s4p :same-entity s5p)))
+
+
+# :: snt6	
+tx   noh   bebene	neehii3ei'	    nee'ei'koohu3i'                         ;
+mb   noh   bebene	neehii3ei'	    nee'ei'koohu -3i'                       ;
+ge   and   approx.	in.the.middle   that.is.the.point.to.which.X.ran -3PL   ;
+ps   part	part	part	        vai.back -infl                          ;
+tr   and about to the the middle of the sky, that’s how far they both ran.
+
+# sentence level graph:
+(s6n / neehii3ei'
+    :mod (s6b / benene)
+    :Goal-of (s6n2 / nee'ei'koohu-00
+        :actor (s6p / person
+            :refer-person 3rd
+            :refer-number Plural)
+        :Aspect Performance
+        :MODSTR FullAff))
+
+
+
+# alignment:
+s6n: 4-4
+s6p: 4-4
+s6n2: 3-3
+s6b: 2-2
+
+# document level graph:
+(s6s0 / sentence
+    :modal ((AUTH :FullAff s6n))
+    :coref ((s5p :same-entity s6p)
+            (s5t :same-event s6n)))
+
+
+# :: snt7	
+tx   nehe'	heneecee	    he'ihnon3o'oo                       .
+mb   nehe'	heneecee	    he'ih- non3o'oo                     .
+ge   this	buffalo.bull	NARRPAST- get_lost/go_off_course    .
+ps   det	na	            prefix- vai                         .
+tr   and this buffalo got lost.
+
+# sentence level graph:
+(s7n / non3o'oo-00
+    :actor (s7h / heneecee
+        :mod (s7n2 / nehe'))
+    :Aspect Performance
+    :MODSTR FullAff)
+
+# alignment:
+s7n: 3-3
+s7h: 2-2
+s7n2: 1-1
+
+# document level graph:
+(s7s0 / sentence
+    :temporal ((s6n :after s7n))
+    :modal ((AUTH :FullAff s7n))
+    :coref ((s3h2 :same-entity s7h)))
+
+
+# :: snt8	
+tx   Woxhoox	    he'ih'oyei 
+mb   woxhoox	    he'ih- 'oyei
+ge   horse	        NARRPAST- win
+ps   na	        prefix- vai
+tr   The horse won the race
+       
+# sentence level graph:                                   
+(s8h2 / hoyei-00
+    :actor (s8w / woxhoox)
+    :Aspect Performance
+    :MODSTR FullAff)
+
+# alignment:
+s8h2: 2-2
+s8w: 1-1
+
+# document level graph:
+(s8s0 / sentence
+    :temporal ((s7n :after s8h2))
+    :modal ((AUTH :FullAff s8h2))
+    :coref ((s3w :same-entity s8w)))
+
+
+# :: snt9	
+tx   noh   woxhooxebii     ne'nihii'iiniikoheino'                          ,   hoowuuhu'	        heneeceeno'             .
+mb   noh   woxhooxebii	    ne'- nih- ii'- iiniikohei -no'                  ,   hoow- uuhu' 	    heneecee -no'           .
+ge   and   horses	        that- PAST- when- ride.a.horse.around -12       ,   3.NEG- ADV	        buffalo.bull -NA.PL     .
+ps   part  na.pl	        proclitic- prefix- prefix- vai/vta.INV -infl	,   infl+prefix- deriv	na -infl                .
+tr   and that is why we rode horses around instead of buffalos.  
+                                              
+# sentence level graph:
+(s9h / have-reason-91
+    :ARG1 (s9h2 / hiiniikohei-00
+        :actor (s9p / person
+            :refer-person 1st
+            :refer-number Plural)
+        :theme (s9w / woxhoox
+            :refer-number Plural
+            :ARG1-of (s9i / instead-of-91
+                :ARG2 (s9h3 / heneecee
+                    :refer-number Plural))) 
+        :Aspect Habitual
+        :MODSTR FullAff)
+    :ARG2 (s9t / thing)
+    :Aspect State
+    :MODSTR FullAff)
+
+# alignment:
+s9h: 3-3
+s9h2: 3-3
+s9w: 3-3
+s9i: 5-5
+s9h3: 6-6
+s9t: 3-3
+
+# document level graph:
+(s9s0 / sentence
+    :temporal ((PAST_REF :overlap s9h2)
+            (PRESENT_REF :overlap s9h))
+    :modal ((AUTH :FullAff s9h)
+            (AUTH :FullAff s9h2))
+    :coref ((s8w :subset-of s9w)
+            (s7h :subset-of s9h3)))
+
+
+# :: snt10	
+tx   he'ihkoo'ouu3koohuno'                         .
+mb   he'ih- koo'ouu3koohu - no'                    .
+ge   NARRPAST- run_leaving_dust_behind -pers.PL    .
+ps   prefix- vai -infl                             .
+tr   They ran leaving dust behind.
+
+# sentence level graph:
+(s10k / koo'ouu3koohu-00
+    :actor (s10p / person
+        :refer-person 3rd
+        :refer-number Plural)
+    :Aspect Performance
+    :MODSTR FullAff)
+
+# alignment:
+s10k: 1-1
+s10p: 1-1
+
+# document level graph:
+(s10s0 / sentence
+    :modal ((AUTH :FullAff s10k))
+    :coref ((s5t :same-event s10k)
+            (s6p :same-entity s10p)))
+
+
+# :: snt11	
+tx   Noh   bebiisnei'oohobeihihek      ,	heetnoohobeihiinoo'	        nih'iitohceibkoohut                 heneecee        .
+mb   noh   bebiis- nei'oohobeihi -hek  ,   heet- noohobeihiinoo -'	    nih'iitoh- ceibkoohu -t	            heneecee        .
+ge   and   properly- looked_at -SUBJ   ,   FUT- seen/visible -0S	    PAST.where- pull/turn.off.road -3.S buffalo.bull    .
+ps   part	prefix- vai.PASS -infl      ,   prefix- vii.PASS -infl	    prefix+prefix.rel- vai -infl        na              .
+tr   If the milky way is looked at carefully, it can be seen where the buffalo ran off to the side.
+
+# sentence level graph:
+(s11n / noohobeihiinoo-00
+    :stimulus (s11p / place
+        :Place-of (s11c / ceibkoohu-00
+            :actor (s11h / heneecee)
+            :Aspect Performance
+            :MODSTR FullAff))
+    :condition (s11b / bebiisnei'oohobeihi-00
+        :stimulus (s11t / thing)
+        :Aspect Activity
+        :MODSTR FullAff)
+    :Aspect State
+    :MODSTR PrtAff)
+
+# alignment:
+s11n: 4-4
+s11p: 5-5
+s11c: 5-5
+s11h: 6-6
+s11b: 2-2
+s11t: 2-2
+
+# document level graph:
+(s11s0 / sentence
+    :temporal ((PRESENT_REF :overlap s11b)
+            (s11b :overlap s11n)
+            (s11b :before s11c))
+    :modal ((AUTH :PrtAff s11n)
+            (AUTH :FullAff s11b)
+            (AUTH :FullAff s11c))
+    :coref ((s6n :same-entity s11p)
+            (s7n :same-event s11c)
+            (s7h :same-entity s11h)
+            (s1t :same-entity s11t)))
+
+

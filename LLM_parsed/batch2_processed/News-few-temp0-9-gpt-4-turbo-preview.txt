@@ -1,0 +1,680 @@
+user name:
+user id:
+file language: chinese
+file format: plain_text
+Doc ID in database:
+export time:
+
+# :: snt1	Sentence: 西班牙 国会 2 月 16 日 投票 通过 一项 关于 更改 性别 的 法案 ， 允许 所有 年满 16 岁者 变更 身份证 上 登记 的 性别 。
+
+# sentence level graph
+(s1x / 通过-01
+  :ARG0 (s1x2 / 国会
+          :location (s1c / country
+                      :name (s1n / name
+                              :op1 "西班牙")))
+  :ARG1 (s1x3 / 法案
+          :topic (s1x4 / 更改-01
+                   :ARG1 (s1x5 / 性别
+                           :ARG1-of (s1x6 / 登记-01
+                                      :location (s1x7 / 身份证))
+                           :Aspect state
+                           :MODSTR FullAff))
+          :quant 1
+          :unit (s1x8 / 项))
+  :time (s1d / date-entity
+          :month 2
+          :day 16)
+  :ARG1-of (s1x9 / 允许-01
+             :ARG1 (s1x10 / 变更-01
+                     :ARG1 s1x5
+                     :ARG1-of s1x6
+                     :Aspect habitual
+                     :MODSTR FullAff)
+             :ARG0 (s1x11 / 人
+                     :quant (s1x12 / 所有)
+                     :age (s1a / age
+                           :value 16))
+             :Aspect habitual
+             :MODSTR FullAff)
+  :Aspect performance
+  :MODSTR FullAff)
+
+# alignment:
+s1a: 0-0
+s1c: 0-0
+s1d: 0-0
+s1n: 0-0
+s1x: 0-0
+s1x10: 0-0
+s1x11: 0-0
+s1x12: 0-0
+s1x2: 0-0
+s1x3: 0-0
+s1x4: 0-0
+s1x5: 0-0
+s1x6: 0-0
+s1x7: 0-0
+s1x8: 0-0
+s1x9: 0-0
+
+# document level annotation:
+
+# :: snt3	Sentence: 西班牙 国会 以 191 票 赞成 、 60 票 反对 及 91 票 弃权 通过 该 法案 ， 成为 少数 允许 民众 只 需 通过 声明 ， 就 能 变更 自己 身份证 上 的 性别 的 国家 之一 。
+
+# sentence level graph
+(s2x / 通过-01
+  :ARG1 (s2x2 / 法案
+          :mod (s2x3 / 该))
+  :ARG0 (s2x4 / 国会
+          :location (s2x5 / 国家
+                      :name (s2n / name
+                              :op1 "西班牙")))
+  :manner (s2x6 / manner-91
+            :op1 (s2x7 / 赞成-01
+                  :ARG1 s2x4
+                  :quant 191
+                  :unit (s2x8 / 票))
+            :op2 (s2x9 / 反对-01
+                  :ARG1 s2x4
+                  :quant 60
+                  :unit s2x8)
+            :op3 (s2x10 / 弃权-01
+                  :ARG1 s2x4
+                  :quant 91
+                  :unit s2x8))
+  :result (s2x11 / 成为-01
+            :ARG1 (s2x12 / 国家
+                    :quant 1
+                    :part-of (s2x13 / 少数
+                              :ARG1-of (s2x14 / 允许-01
+                                         :ARG0 s2x12
+                                         :ARG1 (s2x15 / 民众
+                                                 :ARG1-of (s2x16 / 变更-01
+                                                            :ARG0 s2x15
+                                                            :ARG1 (s2x17 / 性别
+                                                                    :location (s2x18 / 身份证
+                                                                                :poss s2x15))
+                                                            :manner (s2x19 / 声明
+                                                                      :ARG1-of (s2x20 / 需要-01
+                                                                                 :ARG0 s2x15
+                                                                                 :ARG1 s2x16)))))
+                              :Aspect habitual
+                              :MODSTR FullAff)
+                    :Aspect state
+                    :MODSTR FullAff))
+  :Aspect performance
+  :MODSTR FullAff)
+
+# alignment:
+s2n: 0-0
+s2x: 0-0
+s2x10: 0-0
+s2x11: 0-0
+s2x12: 0-0
+s2x13: 0-0
+s2x14: 0-0
+s2x15: 0-0
+s2x16: 0-0
+s2x17: 0-0
+s2x18: 0-0
+s2x19: 0-0
+s2x2: 0-0
+s2x20: 0-0
+s2x3: 0-0
+s2x4: 0-0
+s2x5: 0-0
+s2x6: 0-0
+s2x7: 0-0
+s2x8: 0-0
+s2x9: 0-0
+
+# document level annotation:
+
+# :: snt5	Sentence: 在 此 之前 ， 在 西班牙 只有 成年人 才 被 允许 改变 身份证 上 的 性别 ， 且 必须 出具 医学 报告 证明 自己 有 性别 焦虑 （ Gender dysphori ）， 还 需 提交 为期 2 年 荷尔蒙 治疗 的 证明 ， 未成年人 更改 性别 则 必须 经过 法官 同意 。
+
+# sentence level graph
+(s3a / and
+  :op1 (s3x / 允许-01
+          :ARG1 (s3x2 / 改变-01
+                  :ARG0 (s3x3 / 人
+                          :mod (s3x4 / 成年)
+                          :location (s3c / country
+                                      :name (s3n / name
+                                              :op1 "西班牙")))
+                  :ARG1 (s3x5 / 性别
+                          :location (s3x6 / 身份证))
+                  :MODSTR FullAff
+                  :Aspect Performance)
+          :condition (s3x7 / 出具-01
+                       :ARG1 (s3x8 / 报告
+                               :mod (s3x9 / 医学)
+                               :purpose (s3x10 / 证明-01
+                                         :ARG1 (s3x11 / 焦虑
+                                                 :mod (s3x12 / 性别)
+                                                 :mod (s3x13 / 自己))
+                                         :Aspect Performance
+                                         :MODSTR FullAff))
+                       :condition (s3x14 / 提交-01
+                                    :ARG1 (s3x15 / 证明
+                                            :purpose (s3x16 / 治疗-01
+                                                      :ARG1 (s3x17 / 荷尔蒙)
+                                                      :duration (s3x18 / 年
+                                                                  :quant 2))
+                                            :Aspect Performance
+                                            :MODSTR FullAff)
+                                    :Aspect Performance
+                                    :MODSTR FullAff)
+                       :Aspect Performance
+                       :MODSTR FullAff)
+          :temporal (s3x19 / 之前
+                      :op1 (s3x20 / 此))
+          :Aspect Performance
+          :MODSTR FullAff)
+  :op2 (s3x21 / 必须-01
+         :ARG1 (s3x22 / 同意-01
+                 :ARG0 (s3x23 / 法官)
+                 :ARG1 (s3x24 / 改变-01
+                         :ARG0 (s3x25 / 人
+                                 :mod (s3x26 / 未成年))
+                         :ARG1 s3x5)
+                 :Aspect Performance
+                 :MODSTR FullAff)
+         :Aspect Performance
+         :MODSTR FullAff))
+
+# alignment:
+s3a: 0-0
+s3c: 0-0
+s3n: 0-0
+s3x: 0-0
+s3x10: 0-0
+s3x11: 0-0
+s3x12: 0-0
+s3x13: 0-0
+s3x14: 0-0
+s3x15: 0-0
+s3x16: 0-0
+s3x17: 0-0
+s3x18: 0-0
+s3x19: 0-0
+s3x2: 0-0
+s3x20: 0-0
+s3x21: 0-0
+s3x22: 0-0
+s3x23: 0-0
+s3x24: 0-0
+s3x25: 0-0
+s3x26: 0-0
+s3x3: 0-0
+s3x4: 0-0
+s3x5: 0-0
+s3x6: 0-0
+s3x7: 0-0
+s3x8: 0-0
+s3x9: 0-0
+
+# document level annotation:
+
+# :: snt7	Sentence: 目前 新 法规 定 14 至 15 岁 的 未成年人 在 双亲 或 法律 监护人 同意 下 ， 也 可 申请 更改 身份证 上 的 性别 ， 但 12 至 13 岁 者 则 必须 取得 法官 同意 。
+
+# sentence level graph
+(s4c / contrast-91
+  :ARG1 (s4a / 申请-01
+          :ARG0 (s4p / person
+                  :age (s4r / range
+                         :op1 (s4n / number-quantity
+                                :quant 14)
+                         :op2 (s4n2 / number-quantity
+                                :quant 15))
+                  :mod (s4m / 未成年人))
+          :ARG1 (s4c2 / 更改-01
+                  :ARG1 (s4i / identity-91
+                          :ARG1 (s4g / 性别)
+                          :location (s4id / 身份证)))
+          :condition (s4o / or
+                       :op1 (s4p2 / parent
+                              :mod (s4d / 双))
+                       :op2 (s4g2 / guardian
+                              :mod (s4l / law)))
+          :mod (s4t / 也)
+          :temporal (s4t2 / 目前)
+          :Aspect habitual
+          :MODSTR FullAff)
+  :ARG2 (s4m2 / 必须-01
+          :ARG0 (s4p3 / person
+                  :age (s4r2 / range
+                         :op1 (s4n3 / number-quantity
+                                :quant 12)
+                         :op2 (s4n4 / number-quantity
+                                :quant 13)))
+          :ARG1 (s4g3 / 取得-01
+                  :ARG1 (s4a2 / 申请-01
+                          :ARG1 s4c2)
+                  :ARG2 (s4j / judge))
+          :Aspect habitual
+          :MODSTR FullAff)
+  :temporal s4t)
+
+# alignment:
+s4a: 0-0
+s4a2: 0-0
+s4c: 0-0
+s4c2: 0-0
+s4d: 0-0
+s4g: 0-0
+s4g2: 0-0
+s4g3: 0-0
+s4i: 0-0
+s4id: 0-0
+s4j: 0-0
+s4l: 0-0
+s4m: 0-0
+s4m2: 0-0
+s4n: 0-0
+s4n2: 0-0
+s4n3: 0-0
+s4n4: 0-0
+s4o: 0-0
+s4p: 0-0
+s4p2: 0-0
+s4p3: 0-0
+s4r: 0-0
+s4r2: 0-0
+s4t: 0-0
+s4t2: 0-0
+
+# document level annotation:
+
+# :: snt9	Sentence: 但 一些 在 跨性别 立法 上 较为 开放 的 欧洲 国家 ， 近 几年 却 开始 表现 出 更加 谨慎 的 态度 。
+
+# sentence level graph
+(s5c / but-91
+  :ARG1 (s5x / 开始-01
+          :ARG1 (s5x2 / 表现-01
+                  :ARG1 (s5x3 / 态度
+                          :mod (s5x4 / 谨慎)
+                          :degree (s5x5 / 更加))
+                  :Aspect performance
+                  :MODSTR FullAff)
+          :temporal (s5x6 / 近
+                      :quant (s5x7 / 几
+                               :unit (s5x8 / 年)))
+          :mod (s5x9 / 却)
+          :Aspect performance
+          :MODSTR FullAff)
+  :ARG2 (s5x10 / 国家
+          :mod (s5x11 / 欧洲)
+          :mod (s5x12 / 开放
+                 :degree (s5x13 / 较为)
+                 :domain (s5x14 / 立法
+                           :topic (s5x15 / 跨性别)))
+          :quant (s5x16 / 一些)
+          :Aspect state
+          :MODSTR FullAff))
+
+# alignment:
+s5c: 0-0
+s5x: 0-0
+s5x10: 0-0
+s5x11: 0-0
+s5x12: 0-0
+s5x13: 0-0
+s5x14: 0-0
+s5x15: 0-0
+s5x16: 0-0
+s5x2: 0-0
+s5x3: 0-0
+s5x4: 0-0
+s5x5: 0-0
+s5x6: 0-0
+s5x7: 0-0
+s5x8: 0-0
+s5x9: 0-0
+
+# document level annotation:
+
+# :: snt11	Sentence: 法国 医学院 在 变性 问题 上 已经 发出 呼吁 ， 要求 在 医学 上 对 年轻 病人 要 非常 谨慎 ， 对 荷尔蒙 干预 疗法 要 采取 尽可能 保留 的 态度 。
+
+# sentence level graph
+(s6a / 呼吁-01
+  :ARG0 (s6i / 机构
+          :name (s6n / name
+                  :op1 "法国"
+                  :op2 "医学院"))
+  :topic (s6i2 / 问题
+          :mod (s6i3 / 变性))
+  :mod (s6t / 已经)
+  :Aspect Performance
+  :MODSTR FullAff
+  :ARG1 (s6r / 要求-01
+          :ARG1 (s6a2 / and
+                  :op1 (s6c / 谨慎-01
+                         :degree (s6d / 非常)
+                         :ARG0 (s6p / 病人
+                                 :mod (s6y / 年轻))
+                         :Aspect Habitual
+                         :MODSTR FullAff)
+                  :op2 (s6t2 / 采取-01
+                         :ARG1 (s6a3 / 态度
+                                 :mod (s6p2 / 保留)
+                                 :mod (s6m / 尽可能))
+                         :ARG0 (s6t3 / 疗法
+                                 :mod (s6h / 荷尔蒙)
+                                 :mod (s6i4 / 干预))
+                         :Aspect Habitual
+                         :MODSTR FullAff))
+          :Aspect Performance
+          :MODSTR FullAff))
+
+# alignment:
+s6a: 0-0
+s6a2: 0-0
+s6a3: 0-0
+s6c: 0-0
+s6d: 0-0
+s6h: 0-0
+s6i: 0-0
+s6i2: 0-0
+s6i3: 0-0
+s6i4: 0-0
+s6m: 0-0
+s6n: 0-0
+s6p: 0-0
+s6p2: 0-0
+s6r: 0-0
+s6t: 0-0
+s6t2: 0-0
+s6t3: 0-0
+s6y: 0-0
+
+# document level annotation:
+
+# :: snt13	Sentence: 被 称为 LGBTQ+ 权利 先驱 的 瑞典 ， 一年 前 开始 限制 对 未成年人 进行 性别 确认 的 激素 治疗 ， 激素 治疗 只 被 允许 在 极少数 情况 下 进行 。
+
+# sentence level graph
+(s7a / 称为-01
+  :ARG2 (s7c / country
+          :name (s7n / name
+                  :op1 "瑞典"))
+  :ARG1 (s7p / 先驱
+          :mod (s7r / 权利
+                 :mod (s7l / LGBTQ+)))
+  :Aspect state
+  :MODSTR FullAff
+  :ARG1-of (s7x / 限制-01
+              :temporal (s7t / 前
+                          :quant 1
+                          :unit (s7y / 年))
+              :ARG1 (s7x2 / 进行-01
+                      :ARG1 (s7t2 / 治疗-01
+                              :mod (s7h / 激素)
+                              :ARG1-of (s7c2 / 确认-01
+                                         :ARG1 (s7g / 性别)
+                                         :ARG0 (s7p2 / 人
+                                                 :mod (s7u / 未成年)))
+                              :Aspect habitual
+                              :MODSTR FullAff)
+                      :Aspect habitual
+                      :MODSTR FullAff)
+              :Aspect habitual
+              :MODSTR FullAff)
+  :ARG1-of (s7a2 / 允许-01
+              :ARG1 s7t2
+              :mod (s7o / 只)
+              :location (s7s / 下
+                          :op1 (s7c3 / 情况
+                                 :mod (s7n2 / 数
+                                         :mod (s7l2 / 极少))))
+              :Aspect habitual
+              :MODSTR FullAff))
+
+# alignment:
+s7a: 0-0
+s7a2: 0-0
+s7c: 0-0
+s7c2: 0-0
+s7c3: 0-0
+s7g: 0-0
+s7h: 0-0
+s7l: 0-0
+s7l2: 0-0
+s7n: 0-0
+s7n2: 0-0
+s7o: 0-0
+s7p: 0-0
+s7p2: 0-0
+s7r: 0-0
+s7s: 0-0
+s7t: 0-0
+s7t2: 0-0
+s7u: 0-0
+s7x: 0-0
+s7x2: 0-0
+s7y: 0-0
+
+# document level annotation:
+
+# :: snt15	Sentence: 去年 12 月 ， 瑞典 还 以 “ 谨慎 ” 为 由 ， 对 要 跨性别 的 的 青少年 女性 的 乳房 切除术 实行 限制 。
+
+# sentence level graph
+(s8x / 限制-01
+  :ARG0 (s8c / country
+          :name (s8n / name
+                  :op1 "瑞典"))
+  :ARG1 (s8x2 / 切除术-01
+          :ARG1 (s8x3 / 乳房
+                  :part-of (s8p / person
+                             :ARG0-of (s8x4 / 跨性别-01
+                                        :Aspect habitual
+                                        :MODSTR FullAff)
+                             :age (s8a / age-group
+                                    :mod (s8a2 / 青少年))
+                             :gender (s8g / gender
+                                       :mod (s8g2 / 女性))))
+          :Aspect habitual
+          :MODSTR FullAff)
+  :time (s8t / time-entity
+          :month 12
+          :year (s8y / year
+                  :value 1
+                  :mod (s8y2 / 去年)))
+  :mod (s8m / manner
+         :mod (s8m2 / 谨慎))
+  :Aspect habitual
+  :MODSTR FullAff)
+
+# alignment:
+s8a: 0-0
+s8a2: 0-0
+s8c: 0-0
+s8g: 0-0
+s8g2: 0-0
+s8m: 0-0
+s8m2: 0-0
+s8n: 0-0
+s8p: 0-0
+s8t: 0-0
+s8x: 0-0
+s8x2: 0-0
+s8x3: 0-0
+s8x4: 0-0
+s8y: 0-0
+s8y2: 0-0
+
+# document level annotation:
+
+# :: snt17	Sentence: 芬兰 从 2020 年 开始 也 对 未成年人 的 关于 跨性别 的 激素 干预 作出 了 和 瑞典 相似 的 刹车 决定 。
+
+# sentence level graph
+(s9x / 作出-01
+  :ARG0 (s9c / country
+          :name (s9n / name
+                  :op1 "芬兰"))
+  :ARG1 (s9x2 / 决定
+          :mod (s9x3 / 刹车)
+          :mod (s9x4 / 相似
+                :ARG1 (s9c2 / country
+                        :name (s9n2 / name
+                                :op1 "瑞典"))))
+  :ARG2 (s9x5 / 干预-01
+          :ARG0 (s9x6 / 激素)
+          :ARG1 (s9p / person
+                  :age (s9a / 未成年))
+          :topic (s9x7 / 跨性别)
+          :Aspect habitual
+          :MODSTR FullAff)
+  :temporal (s9d / date-entity
+              :year 2020)
+  :Aspect performance
+  :MODSTR FullAff
+  :mod (s9x8 / 也))
+
+# alignment:
+s9a: 0-0
+s9c: 0-0
+s9c2: 0-0
+s9d: 0-0
+s9n: 0-0
+s9n2: 0-0
+s9p: 0-0
+s9x: 0-0
+s9x2: 0-0
+s9x3: 0-0
+s9x4: 0-0
+s9x5: 0-0
+s9x6: 0-0
+s9x7: 0-0
+s9x8: 0-0
+
+# document level annotation:
+
+# :: snt19	Sentence: 苏格兰 独立派 领导人 施雅晴 （ Nicola Sturgeon ） 在 昨日 宣布 辞职 ， Sturgeon 最近 因 一项 有 争议 的 但 已 获得 苏格兰 议会 通过 的 跨性别 法案 而 政治 受挫 。
+
+# sentence level graph
+(s10a / and
+  :op1 (s10x / 宣布-01
+          :ARG0 (s10p / person
+                  :name (s10n / name
+                          :op1 "施雅晴"
+                          :op2 "（"
+                          :op3 "Nicola"
+                          :op4 "Sturgeon"
+                          :op5 "）")
+                  :mod (s10g / 领导人
+                        :mod (s10i / 独立派)
+                        :mod (s10c / country
+                              :name (s10n2 / name
+                                      :op1 "苏格兰"))))
+          :ARG1 (s10x2 / 辞职-01)
+          :time (s10d / date-entity
+                  :mod (s10t / 昨日))
+          :Aspect performance
+          :MODSTR FullAff)
+  :op2 (s10x3 / 受挫-01
+          :ARG0 s10p
+          :reason (s10x4 / 通过-01
+                    :ARG1 (s10x5 / 法案
+                            :mod (s10x6 / 跨性别)
+                            :mod (s10x7 / 争议)
+                            :quant 1)
+                    :ARG0 (s10g2 / 议会
+                            :mod (s10c2 / country
+                                  :name (s10n3 / name
+                                          :op1 "苏格兰")))
+                    :mod (s10x8 / 已)
+                    :Aspect performance
+                    :MODSTR FullAff)
+          :time (s10t2 / 最近)
+          :Aspect state
+          :MODSTR FullAff))
+
+# alignment:
+s10a: 0-0
+s10c: 0-0
+s10c2: 0-0
+s10d: 0-0
+s10g: 0-0
+s10g2: 0-0
+s10i: 0-0
+s10n: 0-0
+s10n2: 0-0
+s10n3: 0-0
+s10p: 0-0
+s10t: 0-0
+s10t2: 0-0
+s10x: 0-0
+s10x2: 0-0
+s10x3: 0-0
+s10x4: 0-0
+s10x5: 0-0
+s10x6: 0-0
+s10x7: 0-0
+s10x8: 0-0
+
+# document level annotation:
+
+# :: snt21	Sentence: 该 苏格兰 法案 允许 公民 从 16 岁 开始 在 没有 医疗 建议 的 情况 下 改变 性别 ， 伦敦 表现 出 了 反对 该 法 的 态度 。
+
+# sentence level graph
+(s11a / and-91
+  :op1 (s11x / 允许-01
+          :ARG0 (s11x2 / 法案
+                  :mod (s11x3 / 苏格兰)
+                  :mod (s11x4 / 该))
+          :ARG1 (s11x5 / 改变-01
+                  :ARG0 (s11x6 / 公民)
+                  :ARG1 (s11x7 / 性别)
+                  :time (s11x8 / 从-01
+                          :ARG1 (s11x9 / 岁
+                                  :quant 16))
+                  :condition (s11x10 / 情况
+                               :mod (s11x11 / 没有
+                                      :ARG1 (s11x12 / 建议
+                                              :ARG0 (s11x13 / 医疗))))
+                  :Aspect Performance
+                  :MODSTR FullAff)
+          :Aspect Performance
+          :MODSTR FullAff)
+  :op2 (s11x14 / 表现-01
+          :ARG0 (s11x15 / 伦敦)
+          :ARG1 (s11x16 / 态度
+                  :mod (s11x17 / 反对
+                         :ARG1 s11x2))
+          :Aspect Performance
+          :MODSTR FullAff))
+
+# alignment:
+s11a: 0-0
+s11x: 0-0
+s11x10: 0-0
+s11x11: 0-0
+s11x12: 0-0
+s11x13: 0-0
+s11x14: 0-0
+s11x15: 0-0
+s11x16: 0-0
+s11x17: 0-0
+s11x2: 0-0
+s11x3: 0-0
+s11x4: 0-0
+s11x5: 0-0
+s11x6: 0-0
+s11x7: 0-0
+s11x8: 0-0
+s11x9: 0-0
+
+# document level annotation:
+
+# Source File: 
+西班牙 国会 2 月 16 日 投票 通过 一项 关于 更改 性别 的 法案 ， 允许 所有 年满 16 岁者 变更 身份证 上 登记 的 性别 。
+西班牙 国会 以 191 票 赞成 、 60 票 反对 及 91 票 弃权 通过 该 法案 ， 成为 少数 允许 民众 只 需 通过 声明 ， 就 能 变更 自己 身份证 上 的 性别 的 国家 之一 。
+在 此 之前 ， 在 西班牙 只有 成年人 才 被 允许 改变 身份证 上 的 性别 ， 且 必须 出具 医学 报告 证明 自己 有 性别 焦虑 （ Gender dysphori ）， 还 需 提交 为期 2 年 荷尔蒙 治疗 的 证明 ， 未成年人 更改 性别 则 必须 经过 法官 同意 。
+目前 新 法规 定 14 至 15 岁 的 未成年人 在 双亲 或 法律 监护人 同意 下 ， 也 可 申请 更改 身份证 上 的 性别 ， 但 12 至 13 岁 者 则 必须 取得 法官 同意 。
+但 一些 在 跨性别 立法 上 较为 开放 的 欧洲 国家 ， 近 几年 却 开始 表现 出 更加 谨慎 的 态度 。
+法国 医学院 在 变性 问题 上 已经 发出 呼吁 ， 要求 在 医学 上 对 年轻 病人 要 非常 谨慎 ， 对 荷尔蒙 干预 疗法 要 采取 尽可能 保留 的 态度 。
+被 称为 LGBTQ+ 权利 先驱 的 瑞典 ， 一年 前 开始 限制 对 未成年人 进行 性别 确认 的 激素 治疗 ， 激素 治疗 只 被 允许 在 极少数 情况 下 进行 。
+去年 12 月 ， 瑞典 还 以 “ 谨慎 ” 为 由 ， 对 要 跨性别 的 的 青少年 女性 的 乳房 切除术 实行 限制 。
+芬兰 从 2020 年 开始 也 对 未成年人 的 关于 跨性别 的 激素 干预 作出 了 和 瑞典 相似 的 刹车 决定 。
+苏格兰 独立派 领导人 施雅晴 （ Nicola Sturgeon ） 在 昨日 宣布 辞职 ， Sturgeon 最近 因 一项 有 争议 的 但 已 获得 苏格兰 议会 通过 的 跨性别 法案 而 政治 受挫 。
+该 苏格兰 法案 允许 公民 从 16 岁 开始 在 没有 医疗 建议 的 情况 下 改变 性别 ， 伦敦 表现 出 了 反对 该 法 的 态度 。

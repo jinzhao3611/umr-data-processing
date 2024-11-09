@@ -1,0 +1,5962 @@
+# :: snt1	 普珥 节 （ ， P û r î m ， ， 又名 普林节 ， 意 为 抽签 ） ， 为 纪念 和 庆祝 古代 流落 波斯 帝国 的 犹太人 从 灭种 的 毁灭 中 幸存 的 节日 。
+
+# sentence level graph:
+(s1h / have-role-91
+  :ARG0 (s1f / festival
+          :name (s1n / name
+                  :op1 "普珥"
+                  :op2 "节")
+          :ARG0-of (s1i2 / identity-91
+                     :ARG1 (s1f2 / festival
+                             :name (s1n2 / name
+                                     :op1 "Pûrim")))
+          :ARG0-of (s1i3 / identity-91
+                     :ARG1 (s1f3 / festival
+                             :name (s1n3 / name
+                                     :op1 "普林节")))
+          :ARG0-of (s1x / 为-01
+                     :ARG0 (s1x2 / 意)
+                     :ARG1 (s1x3 / 抽签-01)
+                     :aspect state))
+  :ARG2 (s1x4 / 节日
+          :purpose (s1a / and
+                     :op1 (s1x5 / 纪念-01
+                            :ARG1 (s1x6 / 幸存-01
+                                    :ARG0 (s1e / ethnic-group
+                                            :name (s1n4 / name
+                                                    :op1 "犹太人"
+                                                    :ARG1-of (s1h2 / have-mod-91
+                                                               :ARG2 (s1x10 / 流落-00
+                                                                       :place (s1c / country
+                                                                                :name (s1n5 / name
+                                                                                        :op1 "波斯"
+                                                                                        :op2 "帝国"))
+                                                                       :temporal (s1x11 / 古代)
+                                                                       :aspect performance))))
+                                    :ARG1 (s1x8 / 毁灭-01
+                                            :mod (s1x9 / 灭种的)
+                                            :aspect performance)
+                                    :aspect performance)
+                            :aspect performance)
+                     :op2 (s1x7 / 庆祝-01
+                            :ARG1 s1x6
+                            :aspect performance)))
+  :aspect state)
+
+# alignment:
+s1a : 0-0
+s1c : 26-27
+s1e : 29-29
+s1f : 1-2
+s1f2 : 5-9
+s1f3 : 13-13
+s1h : -1--1
+s1h2 : 0-0
+s1i2 : 0-0
+s1i3 : 0-0
+s1n : -1--1
+s1n2 : -1--1
+s1n3 : -1--1
+s1n4 : -1--1
+s1n5 : -1--1
+s1x : 16-16
+s1x10 : 25-25
+s1x11 : 24-24
+s1x2 : 15-15
+s1x3 : 17-17
+s1x4 : 37-37
+s1x5 : 21-21
+s1x6 : 0-0
+s1x7 : 23-23
+s1x8 : 33-33
+s1x: 16-16
+s1x2: 15-15
+s1x3: 17-17
+s1x4: 37-37
+s1x5: 21-21
+s1x6: 35-35
+s1x10: 25-25
+s1x11: 24-24
+s1x8: 33-33
+s1x7: 23-23
+
+# document level annotation:
+(s1s0 / sentence
+  :temporal ((document-creation-time :before s1h))
+  :modal ((root :modal author)
+                    (author :full-affirmative s1x)
+                    (author :full-affirmative s1x10)
+                    (author :full-affirmative s1x8)
+                    (author :full-affirmative s1x6)
+                    (author :full-affirmative s1x5)
+                    (author :full-affirmative s1x7)
+                    (author :full-affirmative s1h))
+  :coref ((s1f :same-entity s1f3)
+                    (s1f :same-entity s1f2)))
+
+
+# :: snt2	 根据 《 圣经 · 旧约 · 以斯帖 记 》 记载 ， 古代 波斯 帝国 亚哈 随鲁王 的 大臣 哈曼 打算 杀死 国内 所有 的 犹太人 ， 他 通过 抽签 定 在 阿 达尔 月 行动 。
+
+# sentence level graph:
+(s2a / and
+  :op1 (s2x / 打算-01
+         :ARG0 (s2i2 / individual-person
+                 :name (s2n2 / name
+                         :op1 "哈曼")
+                 :ARG0-of (s2h / have-rel-role-91
+                            :ARG1 (s2i3 / individual-person
+                                    :name (s2n3 / name
+                                            :op1 "亚哈随鲁")
+                                    :ARG0-of (s2i4 / identity-91
+                                               :ARG1 (s2x5 / 王
+                                                       :mod (s2c / country
+                                                              :name (s2n4 / name
+                                                                      :op1 "波斯"
+                                                                      :op2 "帝国")
+                                                              :mod (s2x6 / 古代)))))
+                            :ARG2 (s2x4 / 大臣)))
+         :ARG1 (s2x8 / 杀死-01
+                 :ARG1 (s2e / ethnic-group
+                         :name (s2n5 / name
+                                 :op1 "犹太人")
+                         :mod (s2x9 / 国内)
+                         :mod (s2x10 / 所有))
+                 :aspect performance)
+         :aspect performance)
+  :op2 (s2x2 / 定-01
+         :ARG1 (s2x13 / 行动
+                 :temporal (s2d / date-entity
+                             :month (s2x14 / 6)
+                             :ARG0-of (s2i5 / identity-91
+                                        :ARG1 (s2d2 / date-entity
+                                                :month 12
+                                                :calendar (s2e3 / ethnic-group
+                                                            :name (s2j2 / jews))))
+                             :calendar (s2e2 / ethnic-group
+                                         :name (s2j / Jews)
+                                         :mod (s2c2 / civil))))
+         :manner (s2x11 / 通过-04
+                   :ARG1 (s2x12 / 抽签-01
+                           :aspect performance)
+                   :aspect performance)
+         :aspect performance)
+  :ARG1-of (s2x3 / 记载-01
+             :ARG2 (s2b / book
+                     :name (s2n / name
+                             :op1 "《"
+                             :op2 "圣经"
+                             :op3 "·"
+                             :op4 "旧约"
+                             :op5 "·"
+                             :op6 "以斯帖"
+                             :op7 "记"
+                             :op8 "》")
+                     :ARG1-of (s2x7 / 根据-01
+                                :aspect performance))
+             :aspect performance))
+
+# alignment:
+s2a : 0-0
+s2b : 2-9
+s2c : 13-14
+s2c2 : 0-0
+s2d : 0-0
+s2d2 : 0-0
+s2e : 25-25
+s2e2 : 0-0
+s2e3 : 0-0
+s2h : 0-0
+s2i2 : 19-19
+s2i3 : 15-16
+s2i4 : 0-0
+s2i5 : 0-0
+s2j2 : 0-0
+s2n : -1--1
+s2n2 : -1--1
+s2n3 : -1--1
+s2n4 : -1--1
+s2n5 : -1--1
+s2x : 20-20
+s2x10 : 23-23
+s2x11 : 28-28
+s2x12 : 29-29
+s2x13 : 35-35
+s2x14 : 32-34
+s2x2 : 30-30
+s2x3 : 10-10
+s2x4 : 18-18
+s2x5 : 16-16
+s2x6 : 12-12
+s2x7 : 1-1
+s2x8 : 21-21
+s2x: 20-20
+s2x6: 12-12
+s2x4: 18-18
+s2x8: 21-21
+s2x9: 22-22
+s2x10: 23-23
+s2x2: 30-30
+s2x13: 35-35
+s2x11: 28-28
+s2x12: 29-29
+s2x3: 10-10
+s2x7: 1-1
+
+# document level annotation:
+(s2s0 / sentence
+  :temporal ((document-creation-time :before s2a))
+  :modal ((root :modal author)
+                    (author :full-affirmative s2x8)
+                    (author :full-affirmative s2x)
+                    (author :full-affirmative s2x12)
+                    (author :full-affirmative s2x11)
+                    (author :full-affirmative s2x2)
+                    (author :full-affirmative s2x7)
+                    (author :full-affirmative s2x3)))
+
+
+# :: snt3	 犹太人 末底 改 和 他 的 养女 皇后 以斯帖 阻止 了 他 的 计划 ， 说服 国王 处死 了 哈曼 和 他 的 家人 。
+
+# sentence level graph:
+(s3a / and
+  :op1 (s3x / 阻止-01
+         :ARG0 (s3a2 / and
+                 :op1 (s3i2 / individual-person
+                        :name (s3n / name
+                                :op1 "末底改")
+                        :ARG0-of (s3h / have-role-91
+                                   :ARG2 (s3e / ethnic-group
+                                           :name (s3n2 / name
+                                                   :op1 "犹太人"))))
+                 :op2 (s3i3 / individual-person
+                        :name (s3n3 / name
+                                :op1 "以斯帖")
+                        :ARG0-of (s3h2 / have-rel-role-91
+                                   :ARG1 s3i2
+                                   :ARG2 (s3x3 / 养女))
+                        :ARG0-of (s3h3 / have-role-91
+                                   :ARG2 (s3x4 / 皇后))))
+         :ARG1 (s3x5 / 计划
+                 :poss (s3p / person
+                         :refer-person 3rd
+                         :refer-number singular))
+         :aspect performance)
+  :op2 (s3x2 / 说服-01
+         :ARG0 s3a2
+         :ARG1 (s3x6 / 国王)
+         :ARG2 (s3x7 / 处死-01
+                 :ARG1 (s3a3 / and
+                         :op1 (s3i4 / individual-person
+                                :name (s3n4 / name
+                                        :op1 "哈曼"))
+                         :op2 (s3x8 / 家人
+                                :poss s3i4))
+                 :aspect performance)
+         :aspect performance))
+
+# alignment:
+s3a : 0-0
+s3a2 : 0-0
+s3i2 : 0-0
+s3n : -1--1
+s3x : 10-10
+s3x2 : 16-16
+s3h : 0-0
+s3e : 1-1
+s3n2 : -1--1
+s3i3 : 9-9
+s3n3 : -1--1
+s3h2 : 0-0
+s3x3 : 7-7
+s3h3 : 0-0
+s3x4 : 8-8
+s3x5 : 14-14
+s3p : 0-0
+s3x6 : 17-17
+s3x7 : 18-18
+s3a3 : 0-0
+s3i4 : 0-0
+s3n4 : -1--1
+s3x: 10-10
+s3x3: 7-7
+s3x4: 8-8
+s3x5: 14-14
+s3x2: 16-16
+s3x6: 17-17
+s3x7: 18-18
+s3x8: 24-24
+
+# document level annotation:
+(s3s0 / sentence
+  :temporal ((s3a :after s2x8))
+  :modal ((root :modal author)
+                    (author :full-affirmative s3x)
+                    (author :full-affirmative s3x7)
+                    (author :full-affirmative s3x2))
+  :coref ((s3i4 :same-entity s2i2)
+                    (s3x6 :same-entity s2i3)))
+
+
+# :: snt4	 人们 为了 歌颂 以斯帖 皇后 的 英勇 ， 庆祝 这一 胜利 ， 创立 了 普珥 节 。
+
+# sentence level graph:
+(s4x / 创立-01
+  :ARG0 (s4x9 / 人们)
+  :ARG1 (s4f / festival
+          :name (s4n / name
+                  :op1 "普珥"
+                  :op2 "节"))
+  :purpose (s4a / and
+             :op1 (s4x2 / 歌颂-01
+                    :ARG1 (s4x3 / 英勇
+                            :poss (s4i2 / individual-person
+                                    :name (s4n2 / name
+                                            :op1 "以斯帖")
+                                    :ARG0-of (s4h / have-role-91
+                                               :ARG2 (s4x4 / 皇后))))
+                    :aspect performance)
+             :op2 (s4x5 / 庆祝-01
+                    :ARG1 (s4x6 / 胜利
+                            :mod (s4x7 / 这)
+                            :quant (s4x8 / 一))
+                    :aspect performance))
+  :aspect performance)
+
+# alignment:
+s4a : 0-0
+s4f : 15-16
+s4h : 0-0
+s4i2 : 4-4
+s4n : -1--1
+s4n2 : -1--1
+s4x : 13-13
+s4x2 : 3-3
+s4x3 : 7-7
+s4x4 : 5-5
+s4x5 : 9-9
+s4x6 : 11-11
+s4x7 : 10-10
+s4x8 : 10-10
+s4x: 13-13
+s4x9: 1-1
+s4x2: 3-3
+s4x3: 7-7
+s4x4: 5-5
+s4x5: 9-9
+s4x6: 11-11
+
+# document level annotation:
+(s4s0 / sentence
+  :temporal ((document-creation-time :before s4x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s4x2)
+                    (author :full-affirmative s4x5)
+                    (author :full-affirmative s4x))
+  :coref ((s4i2 :same-entity s3i3)
+                    (s4f :same-entity s1f)))
+
+
+# :: snt5	 普珥 节 庆祝 于 犹太 历亚 阿 达尔 月 的 第十四 日 、 十五日 。
+
+# sentence level graph:
+(s5x / 庆祝-01
+  :ARG1 (s5f / festival
+          :name (s5n / name
+                  :op1 "普珥"
+                  :op2 "节"))
+  :temporal (s5d / date-entity
+              :month (s5x2 / 阿达尔月)
+              :day (s5a / and
+                     :op1 (s5x3 / 14)
+                     :op2 (s5x4 / 15))
+              :calendar (s5x5 / 犹太历))
+  :aspect performance)
+
+# alignment:
+s5a : 0-0
+s5d : 0-0
+s5f : 1-2
+s5n : -1--1
+s5x : 3-3
+s5x2 : 7-9
+s5x3 : 11-12
+s5x4 : 14-14
+s5x: 3-3
+
+# document level annotation:
+(s5s0 / sentence
+  :temporal ((document-creation-time :before s5x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s5x))
+  :coref ((s5f :same-entity s4f)
+                    (s5x2 :same-entity s2d2)))
+
+
+# :: snt6	 在 古代 约书亚 时期 有 城墙 保护 下 被 隔离 起来 的 以色列 城市 ， 比如 书珊城 和 耶路撒冷 ， 犹太人 们 在 第十五 日 庆祝 这个 节日 ， 其他 犹太人 则 是 在 十四日 庆祝 普珥 节 。
+
+# sentence level graph:
+(s6a / and
+  :op1 (s6x / 庆祝-01
+         :ARG0 (s6e / ethnic-group
+                 :name (s6n / name
+                         :op1 "犹太人")
+                 :refer-number plural)
+         :ARG1 (s6x2 / 节日
+                 :mod (s6x3 / 这个))
+         :temporal (s6d / date-entity
+                     :day (s6x4 / 第十五日))
+         :place (s6x5 / 城市
+                  :mod (s6c / country-region
+                         :name (s6n2 / name
+                                 :op1 "以色列"))
+                  :ARG1-of (s6h / have-mod-91
+                             :ARG2 (s6a2 / and
+                                     :op1 (s6x6 / 有-01
+                                            :ARG1 (s6x7 / 城墙
+                                                    :ARG0-of (s6x8 / 保护-01))
+                                            :aspect state)
+                                     :op2 (s6x9 / 隔离-01
+                                            :aspect performance)
+                                     :temporal (s6d3 / date-entity
+                                                 :era (s6x13 / 约书亚-时期
+                                                        :mod (s6x14 / 古代)))))
+                  :example (s6a3 / and
+                             :op1 (s6c2 / city
+                                    :name (s6n3 / name
+                                            :op1 "书珊城"))
+                             :op2 (s6c3 / city
+                                    :name (s6n4 / name
+                                            :op1 "耶路撒冷"))))
+         :aspect performance)
+  :op2 (s6x10 / 庆祝-01
+         :ARG0 (s6e2 / ethnic-group
+                 :name (s6n6 / name
+                         :op1 "犹太人")
+                 :mod (s6x12 / 其他))
+         :ARG1 (s6f / festival
+                 :name (s6n5 / name
+                         :op1 "普珥"
+                         :op2 "节"))
+         :temporal (s6d2 / date-entity
+                     :day (s6x11 / 十四日))
+         :aspect performance))
+
+# alignment:
+s6a : 0-0
+s6a2 : 0-0
+s6a3 : 0-0
+s6c : 13-13
+s6c2 : 17-17
+s6c3 : 19-19
+s6d : 0-0
+s6d2 : 0-0
+s6d3 : 0-0
+s6e : 21-22
+s6e2 : 31-31
+s6f : 37-38
+s6h : 0-0
+s6n : -1--1
+s6n2 : -1--1
+s6n3 : -1--1
+s6n4 : -1--1
+s6n5 : -1--1
+s6n6 : -1--1
+s6x : 26-26
+s6x10 : 36-36
+s6x11 : 35-35
+s6x12 : 30-30
+s6x13 : 3-4
+s6x14 : 2-2
+s6x2 : 28-28
+s6x3 : 27-27
+s6x4 : 24-25
+s6x5 : 14-14
+s6x6 : 5-5
+s6x7 : 6-6
+s6x8 : 7-7
+s6x: 26-26
+s6x2: 28-28
+s6x3: 27-27
+s6x5: 14-14
+s6x6: 5-5
+s6x7: 6-6
+s6x8: 7-7
+s6x9: 10-10
+s6x13: 3-3
+s6x14: 2-2
+s6x10: 26-26
+s6x12: 30-30
+s6x11: 35-35
+
+# document level annotation:
+(s6s0 / sentence
+  :temporal ((document-creation-time :before s6a))
+  :modal ((root :modal author)
+                    (author :full-affirmative s6x6)
+                    (author :full-affirmative s6x9)
+                    (author :full-affirmative s6x)
+                    (author :full-affirmative s6x10))
+  :coref ((s6c2 :subset-of s6x5)
+                    (s6c3 :subset-of s6x5)
+                    (s6e2 :same-entity s2e)
+                    (s6e2 :same-entity s6f)
+                    (s6f :same-entity s4f)
+                    (s6x10 :same-event s5x)))
+
+
+# :: snt7	 和 所有 的 犹太 节日 一样 ， 普珥 节 是 在 前 一个 世俗 日 （ 即非 教派 日 ） 的 黄昏 开始 庆祝 的 。
+
+# sentence level graph:
+(s7x / 开始-02
+  :ARG0 (s7x2 / 庆祝-01
+          :ARG1 (s7f / festival
+                  :name (s7n / name
+                          :op1 "普珥"
+                          :op2 "节")
+                  :ARG0-of (s7x11 / 一样-02
+                             :ARG1 (s7x12 / 节日
+                                     :mod (s7e / ethnic-group
+                                            :name (s7n2 / name
+                                                    :op1 "犹太"))
+                                     :mod (s7x13 / 所有))
+                             :aspect state))
+          :temporal (s7x3 / 黄昏
+                      :poss (s7x4 / 日
+                              :mod (s7x5 / 世俗)
+                              :unit (s7x6 / 个)
+                              :ord (s7x7 / 一
+                                     :mod (s7x8 / 前))
+                              :ARG0-of (s7i2 / identity-91
+                                         :ARG1 (s7x9 / 日
+                                                 :mod (s7x10 / 教派)
+                                                 :polarity -))))
+          :aspect performance)
+  :aspect endeavor)
+
+# alignment:
+s7f : 8-9
+s7i2 : 0-0
+s7n : -1--1
+s7x : 23-23
+s7x10 : 18-18
+s7x2 : 24-24
+s7x3 : 22-2
+s7x4 : 15-5
+s7x5 : 14-14
+s7x6 : 13-13
+s7x7 : 13-13
+s7x8 : 12-12
+s7x9 : 19-19
+s7x11 : 6-6
+s7x12 : 5-5
+s7e : 4-4
+s7n2 : -1--1
+s7x: 23-23
+s7x2: 24-24
+s7x11: 6-6
+s7x12: 5-5
+s7x13: 2-2
+s7x3: 22-22
+s7x4: 15-15
+s7x5: 14-14
+s7x8: 12-12
+s7x9: 15-15
+s7x10: 18-18
+
+# document level annotation:
+(s7s0 / sentence
+  :temporal ((document-creation-time :before s7x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s7x11)
+                    (author :full-affirmative s7x2)
+                    (author :full-affirmative s7x))
+  :coref ((s7f :same-entity s6f)
+                    (s7x2 :same-event s6x10)))
+
+
+# :: snt8	 关于 普珥 节 的 由 来 ， 最 主要 的 记录 是 在 《 旧约全书 》 的 《 以斯帖 记 》 中 。
+
+# sentence level graph:
+(s8x / 记录
+  :ARG1-of (s8h / have-degree-91
+             :ARG2 (s8x3 / 主要)
+             :ARG5 (s8x2 / 最))
+  :place (s8b / book
+           :name (s8n / name
+                   :op1 "《"
+                   :op2 "以斯帖"
+                   :op3 "记"
+                   :op4 "》")
+           :poss (s8b2 / book
+                   :name (s8n2 / name
+                           :op1 "《"
+                           :op2 "旧约全书"
+                           :op3 "》")))
+  :mod (s8x4 / 由来
+         :mod (s8f / festival
+                :name (s8n3 / name
+                        :op1 "普珥"
+                        :op2 "节")))
+  :aspect performance)
+
+# alignment:
+s8b : 18-21
+s8b2 : 14-16
+s8f : 2-3
+s8h : 0-0
+s8n : -1--1
+s8n2 : -1--1
+s8n3 : -1--1
+s8x : 11-11
+s8x2 : 8-8
+s8x3 : 9-9
+s8x: 11-11
+s8x3: 9-9
+s8x2: 8-8
+
+# document level annotation:
+(s8s0 / sentence
+  :temporal ((document-creation-time :before s8x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s8x))
+  :coref ((s8f :same-entity s7f)
+                    (s8b :same-entity s2b)
+                    (s8n :subset-of s8b2)))
+
+
+# :: snt9	 亚哈 随鲁在 书珊城 登基 为 王 ， 统管 印度 到 古实 共 一百二十七 省 。
+
+# sentence level graph:
+(s9a / and
+  :op1 (s9x / 登基-01
+         :ARG0 (s9i2 / individual-person
+                 :name (s9n / name
+                         :op1 "亚哈"
+                         :op2 "随鲁"))
+         :place (s9c / city
+                  :name (s9n2 / name
+                          :op1 "书珊城"))
+         :cause-of (s9x2 / 为-02
+                     :ARG1 (s9x3 / 王)
+                     :aspect performance)
+         :aspect performance)
+  :op2 (s9x4 / 统管-00
+         :ARG1 (s9t / thing
+                 :mod (s9c2 / country-region
+                        :name (s9n3 / name
+                                :op1 "印度"))
+                 :mod (s9x5 / 到-03
+                        :ARG1 (s9c3 / country-region
+                                :name (s9n4 / name
+                                        :op1 "古实")))
+                 :mod (s9x7 / 共
+                        :quant (s9x6 / 一百二十七)
+                        :unit (s9x8 / 省)))
+         :aspect performance))
+
+# alignment:
+s9a : 0-0
+s9c : 3-3
+s9c2 : 9-9
+s9c3 : 11-11
+s9i2 : 1-2
+s9n : -1--1
+s9n2 : -1--1
+s9n3 : -1--1
+s9n4 : -1--1
+s9t : 0-0
+s9x : 4-4
+s9x2 : 5-5
+s9x3 : 6-6
+s9x4 : 8-8
+s9x5 : 10-10
+s9x7 : 12-12
+s9x6 : 13-13
+s9x: 4-4
+s9x2: 5-5
+s9x3: 6-6
+s9x4: 8-8
+s9x5: 10-10
+s9x7: 12-12
+s9x6: 13-13
+s9x8: 14-14
+
+# document level annotation:
+(s9s0 / sentence
+  :temporal ((document-creation-time :before s9a))
+  :modal ((root :modal author)
+                    (author :full-affirmative s9x2)
+                    (author :full-affirmative s9x)
+                    (author :full-affirmative s9x4))
+  :coref ((s9n :same-entity s3x6)
+                    (s9c :same-entity s6c2)
+                    (s9c :same-entity s6c2)))
+
+
+# :: snt10	 故事 开始 于 亚哈 随鲁王 为 他 的 臣子 百姓 摆设 筵席 。
+
+# sentence level graph:
+(s10x / 开始
+  :poss (s10x2 / 故事)
+  :place (s10x3 / 摆设-01
+           :ARG0 (s10i2 / individual-person
+                   :name (s10n / name
+                           :op1 "亚哈随鲁")
+                   :ARG0-of (s10i3 / identity-91
+                              :ARG1 (s10x5 / 王)))
+           :ARG1 (s10x4 / 筵席)
+           :recipient (s10a / and
+                        :op1 (s10x6 / 臣子)
+                        :op2 (s10x7 / 百姓)
+                        :poss s10i2)
+           :aspect performance))
+
+# alignment:
+s10x : 2-2
+s10x2 : 1-1
+s10x3 : 11-11
+s10x4 : 12-12
+s10i2 : 0-0
+s10n : -1--1
+s10i3 : 0-0
+s10x5 : 5-5
+s10a : 0-0
+s10x6 : 9-9
+s10x: 2-2
+s10x2: 1-1
+s10x3: 11-11
+s10x4: 12-12
+s10x6: 9-9
+s10x7: 10-10
+
+# document level annotation:
+(s10s0 / sentence
+  :temporal ((document-creation-time :before s10x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s10x3))
+  :coref ((s10i2 :same-entity s9i2)))
+
+
+# :: snt11	 王 命令 他 的 妻子 瓦实 提前 来 酒席 展示 她 的 美丽 ， 可是 瓦实 提 拒绝 前往 ， 于是 王 废除 了 她 的 皇后 之位 。
+
+# sentence level graph:
+(s11b / but-91
+  :ARG1 (s11x / 命令-01
+          :ARG0 (s11x2 / 王)
+          :ARG1 (s11i2 / individual-person
+                  :name (s11n / name
+                          :op1 "瓦实提")
+                  :ARG0-of (s11h / have-rel-role-91
+                             :ARG1 s11x2
+                             :ARG2 (s11x3 / 妻子)))
+          :ARG2 (s11x5 / 前来-01
+                  :ARG1 (s11x4 / 展示-01
+                          :ARG1 (s11x6 / 美丽-01
+                                  :ARG0 s11i2
+                                  :aspect state)
+                          :aspect performance)
+                  :place (s11x7 / 酒席)
+                  :aspect performance)
+          :aspect performance)
+  :ARG2 (s11x8 / 拒绝-01
+          :ARG0 s11i2
+          :ARG1 (s11x9 / 前往)
+          :cause-of (s11x10 / 废除-01
+                      :ARG0 s11x2
+                      :ARG1 (s11x11 / 位
+                              :mod (s11x12 / 皇后)
+                              :poss s11i2)
+                      :aspect performance)
+          :aspect performance))
+
+# alignment:
+s11b : 0-0
+s11h : 0-0
+s11i2 : 0-0
+s11n : -1--1
+s11x : 2-2
+s11x10 : 23-23
+s11x11 : 28-28
+s11x12 : 27-27
+s11x2 : 0-0
+s11x3 : 5-5
+s11x4 : 10-10
+s11x5 : 0-0
+s11x6 : 13-13
+s11x7 : 9-9
+s11x8 : 18-18
+s11x: 2-2
+s11x2: 1-1
+s11x3: 5-5
+s11x4: 10-10
+s11x6: 13-13
+s11x7: 9-9
+s11x8: 18-18
+s11x9: 19-19
+s11x10: 23-23
+s11x12: 27-27
+
+# document level annotation:
+(s11s0 / sentence
+  :temporal ((s11x10 :after s11x8)
+                    (document-creation-time :before s11b))
+  :modal ((root :modal author)
+                    (author :full-affirmative s11x6)
+                    (author :full-affirmative s11x4)
+                    (author :full-affirmative s11x5)
+                    (author :full-affirmative s11x)
+                    (author :full-affirmative s11x10)
+                    (author :full-affirmative s11x8))
+  :coref ((s11x2 :same-entity s10i2)
+                    (s11x7 :same-entity s10x4)))
+
+
+# :: snt12	 在 新 皇后 的 选拔 中 ， 亚哈 随鲁 看中 了 犹太人 末底 改 的 养女 以斯帖 ， 将 其立 为 为 皇后 。
+
+# sentence level graph:
+(s12x / 看中-01
+  :ARG0 (s12i2 / individual-person
+          :name (s12n / name
+                  :op1 "亚哈随鲁"))
+  :ARG1 (s12i3 / individual-person
+          :name (s12n2 / name
+                  :op1 "以斯帖")
+          :ARG0-of (s12h / have-rel-role-91
+                     :ARG1 (s12i4 / individual-person
+                             :name (s12n3 / name
+                                     :op1 "末底改")
+                             :ARG0-of (s12h2 / have-role-91
+                                        :ARG2 (s12e / ethnic-group
+                                                :name (s12n4 / name
+                                                        :op1 "犹太人"))))
+                     :ARG2 (s12x3 / 养女)))
+  :temporal (s12x2 / 选拔-01
+              :mod (s12x4 / 皇后
+                     :mod (s12x5 / 新))
+              :aspect performance)
+  :cause-of (s12x6 / 立-01
+              :ARG1 (s12x7 / 为-02
+                      :ARG0 (s12x8 / 其)
+                      :ARG1 (s12x9 / 皇后)
+                      :aspect performance)
+              :aspect performance)
+  :aspect performance)
+
+# alignment:
+s12e : 12-12
+s12h : 0-0
+s12h2 : 0-0
+s12i2 : 8-9
+s12i3 : 17-17
+s12i4 : 13-14
+s12n : -1--1
+s12n2 : -1--1
+s12n3 : -1--1
+s12n4 : -1--1
+s12x : 10-10
+s12x2 : 5-5
+s12x3 : 16-16
+s12x4 : 3-3
+s12x5 : 2-2
+s12x6 : 20-20
+s12x7 : 22-22
+s12x8 : 20-20
+s12x: 10-10
+s12x3: 16-16
+s12x2: 5-5
+s12x4: 3-3
+s12x5: 2-2
+s12x7: 21-21
+s12x9: 3-3
+
+# document level annotation:
+(s12s0 / sentence
+  :temporal ((s12x6 :after s12x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s12x2)
+                    (author :full-affirmative s12x7)
+                    (author :full-affirmative s12x6)
+                    (author :full-affirmative s12x))
+  :coref ((s12i2 :same-entity s11x2)
+                    (s12n3 :same-entity s3i2)
+                    (s12n3 :same-entity s3i3)))
+
+
+# :: snt13	 以斯帖 遵照 末底 改 嘱咐 ， 并未 将 自己 的 犹太人 身份 告诉 他人 。
+
+# sentence level graph:
+(s13a / and
+  :op1 (s13x / 遵照-01
+         :ARG0 (s13i2 / individual-person
+                 :name (s13n / name
+                         :op1 "以斯帖"))
+         :ARG1 (s13x2 / 嘱咐-01
+                 :ARG0 (s13i3 / individual-person
+                         :name (s13n2 / name
+                                 :op1 "末底改"))
+                 :aspect performance)
+         :aspect performance)
+  :op2 (s13x3 / 告诉-01
+         :ARG1 (s13x4 / 身份
+                 :mod (s13e / ethnic-group
+                        :name (s13n3 / name
+                                :op1 "犹太人"))
+                 :poss s13i2)
+         :ARG2 (s13x5 / 他人)
+         :polarity -
+         :aspect performance))
+
+# alignment:
+s13a : 0-0
+s13e : 11-11
+s13i2 : 0-0
+s13i3 : 3-4
+s13n : -1--1
+s13n2 : -1--1
+s13n3 : -1--1
+s13x : 2-2
+s13x2 : 5-5
+s13x3 : 13-13
+s13x4 : 12-12
+s13x: 2-2
+s13x2: 5-5
+s13x3: 13-13
+s13x4: 12-12
+s13x5: 14-14
+
+# document level annotation:
+(s13s0 / sentence
+  :temporal ((document-creation-time :before s13a))
+  :modal ((root :modal author)
+                    (author :full-affirmative s13x2)
+                    (author :full-affirmative s13x)
+                    (author :full-negative s13x3))
+  :coref ((s13i2 :same-entity s12i3)
+                    (s13i3 :same-entity s12i4)
+                    (s13i3 :same-entity s12e)))
+
+
+# :: snt14	 后来 大臣 哈曼 被 王 提升 ， 末底 改因 不 向 哈曼 跪拜 而 得罪 了 他 。
+
+# sentence level graph:
+(s14a / and
+  :op1 (s14x / 提升-01
+         :ARG0 (s14x2 / 王)
+         :ARG1 (s14i2 / individual-person
+                 :name (s14n / name
+                         :op1 "哈曼")
+                 :ARG0-of (s14h / have-org-role-91
+                            :ARG2 (s14x3 / 大臣)))
+         :temporal (s14x4 / 后来)
+         :aspect performance)
+  :op2 (s14x5 / 得罪-01
+         :ARG0 (s14i3 / individual-person
+                 :name (s14n2 / name
+                         :op1 "末底改"))
+         :ARG1 s14i2
+         :cause (s14x6 / 跪拜-01
+                  :ARG0 s14i3
+                  :ARG1 s14i2
+                  :polarity -
+                  :aspect performance)
+         :aspect performance))
+
+# alignment:
+s14a : 0-0
+s14h : 0-0
+s14i2 : 0-0
+s14i3 : 0-0
+s14n : -1--1
+s14n2 : -1--1
+s14x : 6-6
+s14x2 : 5-5
+s14x3 : 2-2
+s14x4 : 1-1
+s14x5 : 15-15
+s14x: 6-6
+s14x2: 5-5
+s14x3: 2-2
+s14x4: 1-1
+s14x5: 15-15
+s14x6: 13-13
+
+# document level annotation:
+(s14s0 / sentence
+  :temporal ((s14a :after s12x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s14x)
+                    (author :full-negative s14x6)
+                    (author :full-affirmative s14x5))
+  :coref ((s14a :same-entity s3i4)
+                    (s14i3 :same-entity s13i3)))
+
+
+# :: snt15	 哈曼 妄图 借机 杀死 王 国内 所有 的 犹太人 。
+
+# sentence level graph:
+(s15x / 妄图-00
+  :ARG0 (s15i2 / individual-person
+          :name (s15n / name
+                  :op1 "哈曼"))
+  :ARG1 (s15x2 / 杀死-01
+          :ARG1 (s15e / ethnic-group
+                  :name (s15n2 / name
+                          :op1 "犹太人")
+                  :mod (s15x4 / 所有
+                         :mod (s15x5 / 国内)))
+          :mod (s15x3 / 借机)
+          :aspect performance)
+  :aspect performance)
+
+# alignment:
+s15i2 : 1-1
+s15n : -1--1
+s15x : 2-2
+s15x2 : 4-4
+s15x3 : 3-3
+s15e : 9-9
+s15n2 : -1--1
+s15x4 : 7-7
+s15x: 2-2
+s15x2: 4-4
+s15x4: 7-7
+s15x5: 6-6
+s15x3: 3-3
+
+# document level annotation:
+(s15s0 / sentence
+  :temporal ((document-creation-time :before s15x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s15x2)
+                    (author :full-affirmative s15x))
+  :coref ((s15i2 :same-entity s14i2)
+                    (s13e :same-entity s14i2)))
+
+
+# :: snt16	 哈曼 取得 亚哈 随鲁王 的 旨意 ， 通过 掣 普珥 （ 抽签 ） 选定 了 十二月 ， 即 阿尔达 月 ， 进行 屠杀 。
+
+# sentence level graph:
+(s16a / and
+  :op1 (s16x / 取得-01
+         :ARG0 (s16i2 / individual-person
+                 :name (s16n / name
+                         :op1 "哈曼"))
+         :ARG1 (s16x2 / 旨意
+                 :poss (s16i3 / individual-person
+                         :name (s16n2 / name
+                                 :op1 "亚哈随鲁")
+                         :ARG0-of (s16i4 / identity-91
+                                    :ARG1 (s16x3 / 王))))
+         :aspect performance)
+  :op2 (s16x4 / 选定-01
+         :ARG1 (s16i5 / identity-91
+                 :ARG0 (s16d / date-entity
+                         :month (s16x5 / 十二月))
+                 :ARG1 (s16i6 / identity-91
+                         :month (s16x6 / 阿尔达月)))
+         :ARG2 (s16x7 / 进行-01
+                 :ARG1 (s16x8 / 屠杀)
+                 :aspect performance)
+         :manner (s16x9 / 通过
+                   :op1 (s16x10 / 掣-00
+                          :ARG1 (s16x11 / 普珥)
+                          :ARG0-of (s16i7 / identity-91
+                                     :ARG1 (s16x12 / 抽签-01))
+                          :aspect performance))
+         :aspect performance))
+
+# alignment:
+s16a : 0-0
+s16d : 0-0
+s16i2 : 1-1
+s16i3 : 3-4
+s16i4 : 0-0
+s16i5 : 0-0
+s16i6 : 0-0
+s16i7 : 0-0
+s16n : -1--1
+s16n2 : -1--1
+s16x : 2-2
+s16x10 : 9-9
+s16x11 : 10-10
+s16x12 : 12-12
+s16x2 : 6-6
+s16x3 : 4-4
+s16x4 : 14-14
+s16x5 : 16-16
+s16x6 : 19-20
+s16x7 : 22-22
+s16x8 : 23-23
+s16x: 2-2
+s16x2: 6-6
+s16x4: 14-14
+s16x5: 16-16
+s16x7: 22-22
+s16x8: 23-23
+s16x9: 8-8
+s16x10: 9-9
+s16x11: 10-10
+s16x12: 12-12
+
+# document level annotation:
+(s16s0 / sentence
+  :temporal ((document-creation-time :before s16a))
+  :modal ((root :modal author)
+                    (author :full-affirmative s16x)
+                    (author :full-affirmative s16x7)
+                    (author :full-affirmative s16x10)
+                    (author :full-affirmative s16x4))
+  :coref ((s16i3 :same-entity s12i2)
+                    (s16i2 :same-entity s15i2)
+                    (s16x5 :same-entity s5x2)))
+
+
+# :: snt17	 末底 改向 以斯帖 求助 解救 本 族人 。
+
+# sentence level graph:
+(s17x2 / 求助-01
+  :ARG0 (s17i2 / individual-person
+          :name (s17n / name
+                  :op1 "末底改"))
+  :ARG1 (s17i3 / individual-person
+          :name (s17n2 / name
+                  :op1 "以斯帖"))
+  :purpose (s17x3 / 解救-01
+             :ARG1 (s17x4 / 人
+                     :mod (s17x5 / 本族))
+             :aspect performance)
+  :aspect performance)
+
+# alignment:
+s17i2 : 1-2
+s17i3 : 3-3
+s17n : -1--1
+s17n2 : -1--1
+s17x2 : 4-4
+s17x3 : 5-5
+s17x4 : 7-7
+s17x2: 4-4
+s17x3: 5-5
+
+# document level annotation:
+(s17s0 / sentence
+  :temporal ((s17x2 :after s16a))
+  :modal ((root :modal author)
+                    (author :full-affirmative s17x3)
+                    (author :full-affirmative s17x2))
+  :coref ((s17i2 :same-entity s14i3)
+                    (s17i3 :same-entity s13i2)
+                    (s17x4 :same-entity s15e)))
+
+
+# :: snt18	 以斯帖 宴请 王 和 哈曼 参加 她 举办 的 酒席 ， 并 在 酒席 上 向 王 告发 了 哈曼 灭绝 犹太人 的 企图 。
+
+# sentence level graph:
+(s18a / and
+  :op1 (s18a2 / and
+         :op1 (s18x / 宴请-01
+                :ARG0 (s18i2 / individual-person
+                        :name (s18n / name
+                                :op1 "以斯帖"))
+                :ARG1 (s18a3 / and
+                        :op1 (s18x3 / 王)
+                        :op2 (s18i3 / individual-person
+                               :name (s18n2 / name
+                                       :op1 "哈曼")))
+                :aspect performance)
+         :op2 (s18x2 / 参加-01
+                :ARG1 (s18x4 / 酒席
+                        :ARG1-of (s18x5 / 举办-01
+                                   :ARG0 s18i2
+                                   :aspect performance))
+                :aspect performance))
+  :op2 (s18x6 / 告发-01
+         :ARG1 (s18x7 / 企图
+                 :mod (s18x8 / 灭绝-01
+                        :ARG0 s18i3
+                        :ARG1 (s18e / ethnic-group
+                                :name (s18n3 / name
+                                        :op1 "犹太人"))
+                        :aspect performance))
+         :ARG2 s18x3
+         :place (s18x9 / 酒席)
+         :aspect performance))
+
+# alignment:
+s18a : 0-0
+s18a2 : 0-0
+s18x : 2-2
+s18x2 : 6-6
+s18i2 : 0-0
+s18n : -1--1
+s18a3 : 0-0
+s18x3 : 0-0
+s18i3 : 0-0
+s18n2 : -1--1
+s18x4 : 10-10
+s18x5 : 8-8
+s18x6 : 18-18
+s18x7 : 24-24
+s18x8 : 21-21
+s18e : 22-22
+s18n3 : -1--1
+s18x: 2-2
+s18x3: 3-3
+s18x2: 6-6
+s18x4: 10-10
+s18x5: 8-8
+s18x6: 18-18
+s18x7: 24-24
+s18x8: 21-21
+s18x9: 10-10
+
+# document level annotation:
+(s18s0 / sentence
+  :temporal ((s18a :after s17x2))
+  :modal ((root :modal author)
+                    (author :full-affirmative s18x)
+                    (author :full-affirmative s18x5)
+                    (author :full-affirmative s18x2)
+                    (author :full-affirmative s18x8)
+                    (author :full-affirmative s18x6))
+  :coref ((s18i2 :same-entity s17i3)
+                    (s18x3 :same-entity s16i3)
+                    (s18i3 :same-entity s15i2)
+                    (s18e :same-entity s17x4)))
+
+
+# :: snt19	 王命 人 把 哈曼 挂 在 五丈 高 的 木架 上 绞死 ， 并 废除 了 哈曼 所传 的 旨意 。
+
+# sentence level graph:
+(s19a / and
+  :op1 (s19x / 命-01
+         :ARG0 (s19x2 / 王)
+         :ARG1 (s19x3 / 人)
+         :ARG2 (s19x4 / 挂-01
+                 :ARG1 (s19i2 / individual-person
+                         :name (s19n / name
+                                 :op1 "哈曼"))
+                 :place (s19x5 / 木架
+                          :ARG0-of (s19x12 / 高-02
+                                     :ARG1 (s19d / distance-quantity
+                                             :unit (s19x6 / 丈)
+                                             :quant (s19x7 / 五))
+                                     :aspect state))
+                 :purpose (s19x8 / 绞死-00
+                            :aspect performance)
+                 :aspect performance)
+         :aspect performance)
+  :op2 (s19x9 / 废除-01
+         :ARG1 (s19x10 / 旨意
+                 :mod (s19x11 / 传-02
+                        :ARG0 s19i2
+                        :aspect performance))
+         :aspect performance))
+
+# alignment:
+s19a : 0-0
+s19d : 0-0
+s19i2 : 0-0
+s19n : -1--1
+s19x : 1-1
+s19x10 : 20-20
+s19x11 : 18-18
+s19x12 : 8-8
+s19x2 : 1-1
+s19x3 : 2-2
+s19x4 : 5-5
+s19x5 : 10-10
+s19x6 : 7-7
+s19x7 : 7-7
+s19x8 : 12-12
+s19x3: 2-2
+s19x4: 5-5
+s19x5: 10-10
+s19x12: 8-8
+s19x8: 12-12
+s19x9: 15-15
+s19x10: 20-20
+
+# document level annotation:
+(s19s0 / sentence
+  :temporal ((s19a :after s18a))
+  :modal ((root :modal author)
+                    (author :full-affirmative s19x12)
+                    (author :full-affirmative s19x8)
+                    (author :full-affirmative s19x4)
+                    (author :full-affirmative s19x)
+                    (author :full-affirmative s19x11)
+                    (author :full-affirmative s19x9))
+  :coref ((s19x2 :same-entity s18x3)
+                    (s19i2 :same-entity s18i3)))
+
+
+# :: snt20	 三月 ， 末底 改奉 亚哈 随鲁王 之名 写 谕旨 ， 准许 犹太人 在 阿 达尔 月 十三日 聚集 保护 自己 的 性命 ， 杀死 并 摧毁 任何 想要 攻击 犹太人 的 敌人 和 他们 的 妻子儿女 。
+
+# sentence level graph:
+(s20x / 写-01
+  :ARG0 (s20i2 / individual-person
+          :name (s20n / name
+                  :op1 "末底改")
+          :ARG0-of (s20x2 / 奉-00
+                     :ARG1 (s20x3 / 名
+                             :poss (s20i3 / individual-person
+                                     :name (s20n2 / name
+                                             :op1 "亚哈随鲁")
+                                     :ARG0-of (s20i4 / identity-91
+                                                :ARG1 (s20x4 / 王))))
+                     :aspect performance))
+  :ARG1 (s20x5 / 谕旨
+          :ARG0-of (s20i5 / identity-91
+                     :ARG1 (s20x6 / 准许-01
+                             :ARG2 (s20a / and
+                                     :op1 (s20x7 / 聚集-01
+                                            :ARG0 (s20e / ethnic-group
+                                                    :name (s20n3 / name
+                                                            :op1 "犹太人"))
+                                            :temporal (s20d / date-quantity
+                                                        :month (s20x8 / 阿达尔)
+                                                        :day (s20x9 / 十三))
+                                            :purpose (s20x10 / 保护-01
+                                                       :ARG1 (s20x11 / 性命
+                                                               :poss s20e)
+                                                       :aspect performance)
+                                            :aspect performance)
+                                     :op2 (s20a2 / and
+                                            :op1 (s20x12 / 杀死-01
+                                                   :ARG1 (s20a3 / and
+                                                           :op1 (s20x13 / 敌人
+                                                                  :mod (s20x16 / 任何)
+                                                                  :ARG0-of (s20x17 / 想要-01
+                                                                             :ARG1 (s20x18 / 攻击-01
+                                                                                     :ARG1 (s20e2 / ethnic-group
+                                                                                             :name (s20n4 / name
+                                                                                                     :op1 "犹太人"))
+                                                                                     :aspect performance)
+                                                                             :aspect performance))
+                                                           :op2 (s20a4 / and
+                                                                  :op1 (s20x14 / 妻子)
+                                                                  :op2 (s20x15 / 儿女)))
+                                                   :aspect performance)
+                                            :op2 (s20x19 / 摧毁-01
+                                                   :ARG1 s20a3
+                                                   :aspect performance)))
+                             :aspect performance)))
+  :month (s20x20 / 三)
+  :aspect performance)
+
+# alignment:
+s20a : 0-0
+s20a2 : 0-0
+s20a3 : 0-0
+s20a4 : 0-0
+s20e : 0-0
+s20e2 : 30-30
+s20i2 : 3-4
+s20i3 : 5-6
+s20i4 : 6-6
+s20i5 : 0-0
+s20n : -1--1
+s20n2 : -1--1
+s20n3 : -1--1
+s20n4 : -1--1
+s20x : 8-8
+s20x10 : 19-19
+s20x11 : 22-22
+s20x12 : 24-24
+s20x13 : 32-32
+s20x14 : 36-36
+s20x15 : 36-36
+s20x16 : 27-27
+s20x17 : 28-28
+s20x18 : 29-29
+s20x19 : 26-26
+s20x2 : 4-4
+s20x20 : 1-1
+s20x3 : 7-7
+s20x4 : 6-6
+s20x5 : 9-9
+s20x6 : 11-11
+s20x7 : 18-18
+s20x8 : 14-15
+s20x: 8-8
+s20x5: 9-9
+s20x6: 11-11
+s20x7: 18-18
+s20x10: 19-19
+s20x11: 22-22
+s20x12: 24-24
+s20x13: 32-32
+s20x16: 27-27
+s20x17: 28-28
+s20x18: 29-29
+s20x19: 26-26
+
+# document level annotation:
+(s20s0 / sentence
+  :temporal ((s20x :after s19a))
+  :modal ((root :modal author)
+                    (author :full-affirmative s20x2)
+                    (author :full-affirmative s20x10)
+                    (author :full-affirmative s20x7)
+                    (author :full-affirmative s20x18)
+                    (author :full-affirmative s20x17)
+                    (author :full-affirmative s20x12)
+                    (author :full-affirmative s20x19)
+                    (author :full-affirmative s20x6)
+                    (author :full-affirmative s20x))
+  :coref ((s20i2 :same-entity s17i2)
+                    (s20i3 :same-entity s19x2)
+                    (s20e :same-entity s18e)
+                    (s20x8 :same-entity s16x6)))
+
+
+# :: snt21	 十二月 三日 那日 ， 犹太人 在 亚哈 随鲁王 各省 聚集 ， 攻击 他们 的 仇敌 。
+
+# sentence level graph:
+(s21a / and
+  :op1 (s21x / 聚集-01
+         :ARG0 (s21e / ethnic-group
+                 :name (s21n / name
+                         :op1 "犹太人"))
+         :ARG1 (s21x2 / 省
+                 :mod (s21x3 / 各)
+                 :poss (s21i2 / individual-person
+                         :name (s21n2 / name
+                                 :op1 "亚哈随鲁")
+                         :ARG0-of (s21i3 / identity-91
+                                    :ARG1 (s21x4 / 王))))
+         :aspect performance)
+  :op2 (s21x5 / 攻击-01
+         :ARG1 (s21x6 / 仇敌
+                 :poss (s21s / s21e))
+         :aspect performance)
+  :temporal (s21d / date-entity
+              :month (s21x7 / 十二)
+              :day (s21x8 / 三)))
+
+# alignment:
+s21a : 0-0
+s21e : 5-5
+s21i2 : 7-8
+s21i3 : 0-0
+s21n : -1--1
+s21n2 : -1--1
+s21x : 10-10
+s21x2 : 9-9
+s21x3 : 9-9
+s21x4 : 8-8
+s21x5 : 12-12
+s21x6 : 15-15
+s21s : 0-0
+s21d : 0-0
+s21x7 : 1-1
+s21x: 10-10
+s21x5: 12-12
+s21x6: 15-15
+
+# document level annotation:
+(s21s0 / sentence
+  :temporal ((document-creation-time :before s21a))
+  :modal ((root :modal author)
+                    (author :full-affirmative s21x)
+                    (author :full-affirmative s21x5))
+  :coref ((s21e :same-entity s20e)
+                    (s21i2 :same-entity s20i3)))
+
+
+# :: snt22	 书珊城 的 犹太人 十三 、 十四日 杀敌 ， 十五日 安息 ， 举办 筵席 欢庆 胜利 ；
+
+# sentence level graph:
+(s22a / and
+  :op1 (s22x / 杀敌-01
+         :ARG0 (s22e / ethnic-group
+                 :name (s22n / name
+                         :op1 "犹太人")
+                 :place (s22c / city
+                          :name (s22n2 / name
+                                  :op1 "书珊城")))
+         :temporal (s22a2 / and
+                     :op1 (s22d / date-entity
+                            :day (s22x2 / 十三))
+                     :op2 (s22d2 / date-entity
+                            :day (s22x3 / 十四)))
+         :aspect performance)
+  :op2 (s22a3 / and
+         :op1 (s22x4 / 安息-01
+                :ARG0 s22e
+                :aspect performance
+                :temporal (s22d3 / date-entity
+                            :day (s22x9 / 十五)))
+         :op2 (s22x5 / 举办-01
+                :ARG0 s22e
+                :ARG1 (s22x6 / 筵席)
+                :purpose (s22x7 / 欢庆-01
+                           :ARG1 (s22x8 / 胜利)
+                           :aspect performance)
+                :aspect performance)))
+
+# alignment:
+s22a : 0-0
+s22a2 : 0-0
+s22c : 1-1
+s22d : 0-0
+s22d2 : 0-0
+s22e : 0-0
+s22n : -1--1
+s22n2 : -1--1
+s22x : 7-7
+s22x2 : 4-4
+s22x3 : 6-6
+s22a3 : 0-0
+s22x4 : 10-10
+s22x5 : 12-12
+s22x6 : 13-13
+s22x7 : 14-14
+s22x8 : 15-15
+s22d3 : 0-0
+s22x: 7-7
+s22x2: 4-4
+s22x4: 10-10
+s22x5: 12-12
+s22x6: 13-13
+s22x7: 14-14
+s22x8: 15-15
+
+# document level annotation:
+(s22s0 / sentence
+  :temporal ((document-creation-time :before s22a))
+  :modal ((root :modal author)
+                    (author :full-affirmative s22x)
+                    (author :full-affirmative s22x4)
+                    (author :full-affirmative s22x7)
+                    (author :full-affirmative s22x5))
+  :coref ((s22e :same-entity s21e)))
+
+
+# :: snt23	 其余 各省 的 犹太人 十三日 杀敌 ， 十四日 举办 筵席 。
+
+# sentence level graph:
+(s23a / and
+  :op1 (s23x / 杀敌-01
+         :ARG0 (s23e / ethnic-group
+                 :name (s23n / name
+                         :op1 "犹太人")
+                 :mod (s23x2 / 各省
+                        :mod (s23x3 / 其余)))
+         :temporal (s23d / date-entity
+                     :day (s23x4 / 十三))
+         :aspect performance)
+  :op2 (s23x5 / 举办-01
+         :ARG0 s23e
+         :ARG1 (s23x6 / 筵席)
+         :temporal (s23d2 / date-entity
+                     :day (s23x7 / 十四))
+         :aspect performance))
+
+# alignment:
+s23a : 0-0
+s23x : 6-6
+s23e : 0-0
+s23n : -1--1
+s23x2 : 2-2
+s23x3 : 1-1
+s23d : 0-0
+s23x4 : 5-5
+s23x5 : 9-9
+s23x6 : 10-10
+s23d2 : 0-0
+s23x: 6-6
+s23x2: 2-2
+s23x3: 1-1
+s23x5: 9-9
+s23x6: 10-10
+
+# document level annotation:
+(s23s0 / sentence
+  :temporal ((document-creation-time :before s23a))
+  :modal ((root :modal author)
+                    (author :full-affirmative s23x)
+                    (author :full-affirmative s23x5))
+  :coref ((s23x :same-event s22x)
+                    (s23e :same-entity s22e)))
+
+
+# :: snt24	 末底 改 记录 道 ， 每年 阿 达尔 月 十四 、 十五日 为 犹太人 脱离 仇敌 、 转忧为喜 的 日子 ， 犹太人 在 这 两天 举办 酒席 欢庆 胜利 。
+
+# sentence level graph:
+(s24a / and
+  :op1 (s24x2 / 记录-01
+         :ARG0 (s24i2 / individual-person
+                 :name (s24n / name
+                         :op1 "末底改"))
+         :ARG1 (s24a2 / and
+                 :op1 (s24x / 为-02
+                        :ARG0 (s24d / date-entity
+                                :frequency (s24r / rate-entity-91
+                                             :ARG4 (s24d2 / date-entity
+                                                     :month (s24x4 / 阿达尔)
+                                                     :day (s24a3 / and
+                                                            :op1 (s24x5 / 十四)
+                                                            :op2 (s24x6 / 十五)))))
+                        :ARG1 (s24x7 / 日子
+                                :mod (s24a4 / and
+                                       :op1 (s24x8 / 脱离-01
+                                              :ARG0 (s24e / ethnic-group
+                                                      :name (s24n2 / name
+                                                              :op1 "犹太人"))
+                                              :ARG1 (s24x9 / 仇敌)
+                                              :aspect performance)
+                                       :op2 (s24x10 / 转忧为喜)))
+                        :aspect state)
+                 :op2 (s24x11 / 举办-01
+                        :ARG0 (s24e2 / ethnic-group
+                                :name (s24n3 / name
+                                        :op1 "犹太人"))
+                        :ARG1 (s24x12 / 酒席)
+                        :purpose (s24x13 / 欢庆-01
+                                   :ARG1 (s24x14 / 胜利)
+                                   :aspect performance)
+                        :temporal (s24x15 / 两天
+                                    :mod (s24x16 / 这))
+                        :aspect performance))
+         :aspect performance)
+  :op2 (s24x3 / 道-01
+         :ARG0 s24i2
+         :ARG1 s24a2
+         :aspect performance))
+
+# alignment:
+s24a : 0-0
+s24a2 : 0-0
+s24d : 0-0
+s24i2 : 0-0
+s24n : -1--1
+s24r : 0-0
+s24x : 13-13
+s24x2 : 3-3
+s24x3 : 4-4
+s24d2 : 0-0
+s24x4 : 7-8
+s24a3 : 0-0
+s24x5 : 10-10
+s24x6 : 12-12
+s24x7 : 20-20
+s24a4 : 0-0
+s24x8 : 15-15
+s24e : 14-14
+s24n2 : -1--1
+s24x9 : 16-6
+s24x10 : 18-18
+s24x11 : 26-26
+s24e2 : 22-22
+s24n3 : -1--1
+s24x12 : 27-27
+s24x13 : 28-28
+s24x14 : 29-29
+s24x15 : 25-25
+s24x2: 3-3
+s24x: 13-13
+s24x5: 10-10
+s24x7: 20-20
+s24x8: 15-15
+s24x9: 16-16
+s24x10: 18-18
+s24x11: 26-26
+s24x12: 27-27
+s24x13: 28-28
+s24x14: 29-29
+s24x15: 25-25
+s24x16: 24-24
+s24x3: 4-4
+
+# document level annotation:
+(s24s0 / sentence
+  :temporal ((document-creation-time :before s24a))
+  :modal ((root :modal author)
+                    (author :full-affirmative s24x8)
+                    (author :full-affirmative s24x)
+                    (author :full-affirmative s24x13)
+                    (author :full-affirmative s24x11)
+                    (author :full-affirmative s24x2)
+                    (author :full-affirmative s24x3))
+  :coref ((s24i2 :same-entity s20i2)
+                    (s24x4 :same-entity s20x8)
+                    (s24x11 :same-event s23x5)
+                    (s24x13 :same-event s22x7)
+                    (s24e :same-entity s23e)))
+
+
+# :: snt25	 根据 掣 签 的 名字 “ 普珥 ” ， 犹太人 称 这 两日 为 普珥 日 。
+
+# sentence level graph:
+(s25x2 / 称-01
+  :ARG0 (s25e / ethnic-group
+          :name (s25n / name
+                  :op1 "犹太人"))
+  :ARG1 (s25t / temporal-quantity
+          :day (s25x3 / 两
+                 :mod (s25x4 / 这)))
+  :ARG2 (s25f / festival
+          :name (s25n2 / name
+                  :op1 "普珥日"))
+  :reason (s25x / 根据-01
+            :ARG1 (s25i2 / identity-91
+                    :ARG1 (s25x5 / 名字
+                            :poss (s25x6 / 掣-00
+                                    :ARG1 (s25x7 / 签)
+                                    :aspect performance))
+                    :ARG2 (s25e2 / event
+                            :name (s25n3 / name
+                                    :op1 "普珥")))
+            :aspect performance)
+  :aspect performance)
+
+# alignment:
+s25e : 10-10
+s25f : 15-16
+s25n : -1--1
+s25n2 : -1--1
+s25t : 0-0
+s25x2 : 11-11
+s25x3 : 13-13
+s25x4 : 12-12
+s25x : 1-1
+s25i2 : 0-0
+s25x5 : 5-5
+s25x6 : 2-2
+s25x7 : 3-3
+s25x2: 11-11
+s25x4: 12-12
+s25x: 1-1
+s25x5: 5-5
+s25x6: 2-2
+s25x7: 3-3
+
+# document level annotation:
+(s25s0 / sentence
+  :temporal ((document-creation-time :before s25x2))
+  :modal ((root :modal author)
+                    (author :full-affirmative s25x6)
+                    (author :full-affirmative s25x)
+                    (author :full-affirmative s25x2))
+  :coref ((s25e :same-entity s24e)
+                    (s25f :same-entity s8f)))
+
+
+# :: snt26	 朗诵 《 以斯帖 记 》 是 普珥 节 第一项 宗教仪式 ， 其由来 可追溯 至 《 塔木德 经 》 中 的 圣人 集会 ， 末底 改正 是 其中 一员 。
+
+# sentence level graph:
+(s26a / and
+  :op1 (s26i2 / identity-91
+         :ARG0 (s26x / 朗诵-00
+                 :ARG1 (s26b / book
+                         :name (s26n / name
+                                 :op1 "以斯帖"
+                                 :op2 "记"))
+                 :aspect performance)
+         :ARG1 (s26x2 / 仪式
+                 :mod (s26x3 / 宗教)
+                 :ord (s26x4 / 一)
+                 :unit (s26x5 / 项)
+                 :poss (s26f / festival
+                         :name (s26n2 / name
+                                 :op1 "普珥节"))))
+  :op2 (s26x6 / 追溯-04
+         :ARG0 (s26x7 / 由来
+                 :poss s26i2)
+         :ARG1 (s26x8 / 集会
+                 :mod (s26x9 / 圣人)
+                 :place (s26b2 / book
+                          :name (s26n3 / name
+                                  :op1 "塔木德经"))
+                 :part-of (s26i3 / individual-person
+                            :name (s26n4 / name
+                                    :op1 "末底改")))
+         :aspect performance))
+
+# alignment:
+s26a : 0-0
+s26b : 3-4
+s26b2 : 16-17
+s26f : 7-8
+s26i2 : 0-0
+s26i3 : 24-25
+s26n : -1--1
+s26n2 : -1--1
+s26n3 : -1--1
+s26n4 : -1--1
+s26x : 1-1
+s26x2 : 10-10
+s26x3 : 10-10
+s26x4 : 9-9
+s26x5 : 9-9
+s26x6 : 13-13
+s26x7 : 12-12
+s26x8 : 22-22
+s26x: 1-1
+s26x8: 22-22
+s26x9: 21-21
+
+# document level annotation:
+(s26s0 / sentence
+  :temporal ((document-creation-time :before s26a))
+  :modal ((root :modal author)
+                    (author :full-affirmative s26x)
+                    (author :full-affirmative s26x6))
+  :coref ((s26b :same-entity s8b)
+                    (s26i3 :same-entity s24i2)))
+
+
+# :: snt27	 这项 仪式 本来 仅 安排 在 普珥 节 当天 早晨 ， 即 阿 达尔 月 （ 犹太教 历 12 月 ） 的 14 日 ， 但是 ， 公元 三 世纪 时 ， 名为 约书亚 （ Joshua ben Levi ） 的 拉比 规定 ： 普珥 节前 夜 也 须 进行 这项 仪式 ；
+
+# sentence level graph:
+(s27b / but-91
+  :ARG1 (s27x / 安排-01
+          :ARG1 (s27x3 / 仪式
+                  :mod (s27x4 / 这)
+                  :unit (s27x5 / 项))
+          :mod (s27x6 / 本来)
+          :mod (s27x7 / 仅)
+          :temporal (s27i2 / identity-91
+                      :ARG0 (s27x8 / 早晨
+                              :mod (s27f / festival
+                                     :name (s27n / name
+                                             :op1 "普珥节")))
+                      :ARG1 (s27d / date-entity
+                              :month (s27x9 / 阿达尔
+                                       :ARG0-of (s27i3 / identity-91
+                                                  :ARG1 (s27d2 / date-entity
+                                                          :calendar (s27x10 / 犹太教历)
+                                                          :month 12)))
+                              :day 14))
+          :aspect performance)
+  :ARG2 (s27x2 / 规定-01
+          :ARG0 (s27i4 / identity-91
+                  :ARG0 (s27i5 / individual-person
+                          :name (s27n2 / name
+                                  :op1 "约书亚"))
+                  :ARG1 (s27i6 / individual-person
+                          :name (s27n3 / name
+                                  :op1 "Joshua"
+                                  :op2 "ben"
+                                  :op3 "Levi"))
+                  :mod (s27x13 / 拉比))
+          :ARG1 (s27x14 / 进行-01
+                  :ARG1 s27x3
+                  :temporal (s27x15 / 夜
+                              :mod (s27x16 / 前)
+                              :poss s27f)
+                  :mod (s27x17 / 须)
+                  :aspect performance)
+          :temporal (s27d3 / date-entity
+                      :era (s27x11 / 公元)
+                      :century (s27x12 / 三))
+          :aspect performance))
+
+# alignment:
+s27b : 0-0
+s27d : 0-0
+s27d2 : 0-0
+s27d3 : 0-0
+s27f : 0-0
+s27i2 : 0-0
+s27i3 : 0-0
+s27i4 : 0-0
+s27i5 : 34-34
+s27i6 : 36-38
+s27n : -1--1
+s27n2 : -1--1
+s27n3 : -1--1
+s27x : 5-5
+s27x10 : 17-18
+s27x11 : 28-28
+s27x12 : 29-29
+s27x13 : 41-41
+s27x14 : 49-49
+s27x15 : 46-46
+s27x16 : 45-45
+s27x17 : 48-48
+s27x2 : 42-42
+s27x3 : 51-51
+s27x4 : 1-1
+s27x5 : 1-1
+s27x6 : 3-3
+s27x7 : 4-4
+s27x8 : 10-10
+s27x: 5-5
+s27x3: 2-2
+s27x6: 3-3
+s27x7: 4-4
+s27x8: 10-10
+s27x2: 42-42
+s27x13: 41-41
+s27x14: 49-49
+s27x15: 46-46
+s27x17: 48-48
+s27x11: 28-28
+s27x12: 29-29
+
+# document level annotation:
+(s27s0 / sentence
+  :temporal ((document-creation-time :before s27b))
+  :modal ((root :modal author)
+                    (author :full-affirmative s27x)
+                    (author :full-affirmative s27x14)
+                    (author :full-affirmative s27x2))
+  :coref ((s27x9 :same-entity s20x8)
+                    (s27x3 :same-entity s26x)
+                    (s27f :same-entity s25f)))
+
+
+# :: snt28	 另外 ， 他 提出 女性 也 应 参与 到 诵读 中 ， 因为 正是 以斯帖 皇后 创造 了 这场 犹太人 的 奇迹 。
+
+# sentence level graph:
+(s28a / and
+  :op1 (s28d / dummy)
+  :op2 (s28x / 提出-01
+         :ARG0 (s28p / person
+                 :refer-person 3rd
+                 :refer-number singular)
+         :ARG1 (s28x2 / 参与-01
+                 :ARG0 (s28x4 / 女性)
+                 :ARG1 (s28x3 / 诵读)
+                 :mod (s28x5 / 应)
+                 :aspect performance)
+         :cause (s28x6 / 创造-01
+                  :ARG0 (s28i2 / identity-91
+                          :ARG0 (s28x10 / 皇后)
+                          :ARG1 (s28i3 / individual-person
+                                  :name (s28n2 / name
+                                          :op1 "以斯帖")))
+                  :ARG1 (s28x7 / 奇迹
+                          :mod (s28e / ethnic-group
+                                 :name (s28n / name
+                                         :op1 "犹太人"))
+                          :unit (s28x8 / 场)
+                          :mod (s28x9 / 这))
+                  :aspect performance)
+         :aspect performance))
+
+# alignment:
+s28a : 0-0
+s28d : 0-0
+s28x : 4-4
+s28p : 0-0
+s28x2 : 8-8
+s28x3 : 10-10
+s28x4 : 5-5
+s28x5 : 7-7
+s28x6 : 17-17
+s28x7 : 22-22
+s28e : 20-20
+s28n : -1--1
+s28x8 : 19-19
+s28x9 : 19-19
+s28i2 : 0-0
+s28i3 : 15-15
+s28n2 : -1--1
+s28x: 4-4
+s28x2: 8-8
+s28x4: 5-5
+s28x3: 10-10
+s28x5: 7-7
+s28x6: 17-17
+s28x10: 16-16
+s28x7: 22-22
+
+# document level annotation:
+(s28s0 / sentence
+  :temporal ((document-creation-time :before s28a))
+  :modal ((root :modal author)
+                    (author :full-affirmative s28x2)
+                    (author :full-affirmative s28x6)
+                    (author :full-affirmative s28x))
+  :coref ((s28i3 :same-entity s18i2)
+                    (s28e :same-entity s25e)
+                    (s28x3 :same-event s26x)))
+
+
+# :: snt29	 在 《 密西 拿 》 中 ， 朗诵 《 以斯帖 记 》 时加诵 赐福 祷言 还 没有 成为 被 广泛 接受 的 规定 。
+
+# sentence level graph:
+(s29x / 成为-01
+  :ARG0 (s29x2 / 加-01
+          :ARG1 (s29x3 / 诵-00
+                  :ARG1 (s29x4 / 祷言
+                          :mod (s29x5 / 赐福))
+                  :aspect performance)
+          :temporal (s29x6 / 朗诵-00
+                      :ARG1 (s29b2 / book
+                              :name (s29n2 / name
+                                      :op1 "以斯帖记"))
+                      :aspect performance)
+          :aspect performance)
+  :ARG1 (s29x8 / 规定
+          :mod (s29x9 / 接受
+                 :mod (s29x10 / 广泛)))
+  :place (s29b / book
+           :name (s29n / name
+                   :op1 "密西拿"))
+  :mod (s29x7 / 还
+         :polarity -)
+  :aspect performance)
+
+# alignment:
+s29b : 3-4
+s29n : -1--1
+s29x : 18-18
+s29x2 : 13-13
+s29x3 : 13-13
+s29x4 : 15-15
+s29x5 : 14-14
+s29x6 : 8-8
+s29x7 : 16-16
+s29b2 : 10-11
+s29n2 : -1--1
+s29x8 : 23-23
+s29x9 : 21-21
+s29x: 18-18
+s29x4: 15-15
+s29x5: 14-14
+s29x6: 8-8
+s29x8: 23-23
+s29x9: 21-21
+s29x10: 20-20
+s29x7: 16-16
+
+# document level annotation:
+(s29s0 / sentence
+  :temporal ((document-creation-time :before s29x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s29x3)
+                    (author :full-affirmative s29x6)
+                    (author :full-affirmative s29x2)
+                    (author :full-negative s29x))
+  :coref ((s29b2 :same-entity s26b)
+                    (document-creation-time :same-entity s29x)
+                    (s29x6 :same-event s28x3)))
+
+
+# :: snt30	 其 后续 着 作 《 塔木德 经 》 中则 规定 在 朗诵 前 加入 三段 赐福 祷言 ， 结束 后 再 加诵 一段 。
+
+# sentence level graph:
+(s30x / 规定-01
+  :ARG0 (s30b / book
+          :name (s30n / name
+                  :op1 "塔木德经")
+          :ARG0-of (s30i2 / identity-91
+                     :ARG1 (s30x2 / 著作
+                             :mod (s30x3 / 后续)
+                             :poss (s30x4 / 其))))
+  :ARG1 (s30a / and
+          :op1 (s30x5 / 加入-02
+                 :ARG1 (s30x6 / 祷言
+                         :mod (s30x7 / 赐福)
+                         :quant (s30x8 / 三)
+                         :unit (s30x9 / 段))
+                 :aspect performance)
+          :op2 (s30x10 / 加-01
+                 :ARG1 (s30x11 / 诵-00
+                         :ARG1 (s30x12 / 祷言
+                                 :mod (s30x13 / 赐福)
+                                 :quant (s30x14 / 一)
+                                 :unit (s30x15 / 段))
+                         :aspect performance)
+                 :aspect performance)
+          :temporal (s30x16 / 前
+                      :op1 (s30x17 / 朗诵-00
+                             :aspect performance)))
+  :aspect performance)
+
+# alignment:
+s30a : 0-0
+s30b : 6-7
+s30i2 : 3-4
+s30n : -1--1
+s30x : 10-10
+s30x10 : 22-22
+s30x11 : 22-22
+s30x12 : 17-17
+s30x13 : 16-16
+s30x14 : 23-23
+s30x15 : 23-23
+s30x2 : 3-4
+s30x3 : 2-2
+s30x4 : 1-1
+s30x5 : 14-14
+s30x6 : 0-0
+s30x7 : 16-16
+s30x8 : 15-15
+s30x9 : 15-15
+s30x16 : 13-13
+s30x: 10-10
+s30x3: 2-2
+s30x4: 1-1
+s30x5: 14-14
+s30x6: 17-17
+s30x7: 16-16
+s30x12: 17-17
+s30x13: 16-16
+s30x16: 13-13
+s30x17: 12-12
+
+# document level annotation:
+(s30s0 / sentence
+  :temporal ((document-creation-time :before s30x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s30x5)
+                    (author :full-affirmative s30x11)
+                    (author :full-affirmative s30x10)
+                    (author :full-affirmative s30x)
+                    (author :full-affirmative s30x17))
+  :coref ((s30b :same-entity s26b2)
+                    (s30x17 :same-event s29x6)))
+
+
+# :: snt31	 除此以外 ， 《 塔木德 经 》 增加 的 其它 规定 还 包括 ： 朗诵者 应 一口气 背 出 哈曼 的 十个 儿子 的 名字 ， 表示 他们 是 同时 死亡 的 ；
+
+# sentence level graph:
+(s31x / 包括-01
+  :ARG0 (s31x2 / 规定
+          :mod (s31x4 / 其它)
+          :ARG1-of (s31x3 / 增加-01
+                     :place (s31b / book
+                              :name (s31n / name
+                                      :op1 "塔木德经"))
+                     :aspect performance))
+  :ARG1 (s31a / and
+          :op1 (s31x5 / 背-02
+                 :ARG0 (s31x6 / 朗诵者)
+                 :ARG1 (s31x7 / 名字
+                         :poss (s31x8 / 儿子
+                                 :poss (s31i2 / individual-person
+                                         :name (s31n2 / name
+                                                 :op1 "哈曼"))
+                                 :quant (s31x9 / 十)
+                                 :unit (s31x10 / 个)))
+                 :mod (s31x11 / 一口气)
+                 :reason (s31x12 / 表示-01
+                           :ARG1 (s31x13 / 死亡-01
+                                   :refer-number plural
+                                   :refer-person 3rd
+                                   :mod (s31x14 / 同时))
+                           :aspect performance)
+                 :aspect performance)))
+
+# alignment:
+s31a : 0-0
+s31b : 4-5
+s31i2 : 19-19
+s31n : -1--1
+s31n2 : -1--1
+s31x : 1-1
+s31x10 : 21-21
+s31x11 : 16-16
+s31x12 : 26-26
+s31x13 : 30-30
+s31x14 : 29-29
+s31x2 : 10-10
+s31x3 : 7-7
+s31x4 : 9-9
+s31x5 : 17-17
+s31x6 : 14-14
+s31x7 : 24-24
+s31x8 : 22-22
+s31x: 12-12
+s31x2: 10-10
+s31x4: 9-9
+s31x3: 7-7
+s31x5: 17-17
+s31x6: 14-14
+s31x7: 24-24
+s31x8: 22-22
+s31x11: 16-16
+s31x12: 26-26
+s31x13: 30-30
+s31x14: 29-29
+
+# document level annotation:
+(s31s0 / sentence
+  :temporal ((document-creation-time :before s31x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s31x3)
+                    (author :full-affirmative s31x12)
+                    (author :full-affirmative s31x5))
+  :coref ((s31b :same-entity s30b)
+                    (s31i2 :same-entity s19i2)))
+
+
+# :: snt32	 在 朗诵 有关 末底 改 及其 成功 的 起源 的 诗歌 （ 《 以斯帖 记 》 2 : 5 , 8 : 15 - 16 , 10 : 3 ） 时 ， 所有人 应 一起 朗诵 。
+
+# sentence level graph:
+(s32a / and
+  :op1 (s32d / dummy)
+  :op2 (s32x / 朗诵-00
+         :ARG0 (s32x3 / 所有人)
+         :mod (s32x2 / 应)
+         :mod (s32x4 / 一起)
+         :temporal (s32x5 / 朗诵-00
+                     :ARG1 (s32x6 / 诗歌
+                             :ARG0-of (s32x7 / 有关-01
+                                        :ARG1 (s32a2 / and
+                                                :op1 (s32p / person
+                                                       :name (s32n / name
+                                                               :op1 "末底改"))
+                                                :op2 (s32x8 / 起源
+                                                       :mod (s32x9 / 成功-01
+                                                              :ARG0 s32p)))
+                                        :aspect performance)
+                             :ARG1-of (s32i2 / identity-91
+                                        :ARG0 (s32b / book
+                                                :name (s32n2 / name
+                                                        :op1 "以斯帖"
+                                                        :op2 "记"))
+                                        :part (s32a3 / and
+                                                :op1 (s32d2 / dummy
+                                                       :ord (s32o / ordinal-entity
+                                                              :value 2)
+                                                       :part (s32d3 / dummy
+                                                               :ord (s32o2 / ordinal-entity
+                                                                      :value 5)))
+                                                :op2 (s32d4 / dummy
+                                                       :ord (s32o3 / ordinal-entity
+                                                              :value 8)
+                                                       :part (s32d5 / dummy
+                                                               :ord (s32o4 / ordinal-entity
+                                                                      :value (s32x10 / 15---16))))
+                                                :op3 (s32d6 / dummy
+                                                       :ord (s32o5 / ordinal-entity
+                                                              :value 10)
+                                                       :part (s32d7 / dummy
+                                                               :ord (s32o6 / ordinal-entity
+                                                                      :value 3))))))
+                     :aspect performance)
+         :aspect performance))
+
+# alignment:
+s32a : 0-0
+s32a2 : 0-0
+s32a3 : 0-0
+s32b : 14-15
+s32d : 0-0
+s32d2 : 0-0
+s32d3 : 0-0
+s32d4 : 21-21
+s32i2 : 0-0
+s32n : -1--1
+s32n2 : -1--1
+s32o : 0-0
+s32o2 : 0-0
+s32p : 0-0
+s32x : 1-1
+s32x2 : 34-34
+s32x3 : 33-33
+s32x4 : 35-35
+s32x5 : 2-2
+s32x6 : 11-11
+s32x7 : 3-3
+s32x8 : 9-9
+s32x9 : 7-7
+s32o3 : 0-0
+s32d5 : 0-0
+s32o4 : 0-0
+s32x10 : 23-25
+s32d6 : 0-0
+s32o5 : 0-0
+s32d7 : 0-0
+s32x: 2-2
+s32x3: 33-33
+s32x2: 34-34
+s32x4: 35-35
+s32x5: 2-2
+s32x6: 11-11
+s32x7: 3-3
+s32x8: 9-9
+s32x9: 7-7
+s32x10: 23-23
+
+# document level annotation:
+(s32s0 / sentence
+  :temporal ((document-creation-time :before s32a))
+  :modal ((root :modal author)
+                    (author :full-affirmative s32x7)
+                    (author :full-affirmative s32x5)
+                    (author :full-affirmative s32x))
+  :coref ((s32b :same-entity s29b2)
+                    (s32x :same-event s30x17)
+                    (s32p :same-entity s26i3)
+                    (s32x5 :same-event s32x)))
+
+
+# :: snt33	 朗诵 《 以斯帖 记 》 应该 用 一种 传统 的 吟唱 方式 ， 而 不是 通常 朗诵 《 摩西 五经 》 时 的 方式 。
+
+# sentence level graph:
+(s33b / but-91
+  :ARG1 (s33x / 用-01
+          :ARG1 (s33x2 / 方式
+                  :mod (s33x5 / 吟唱)
+                  :unit (s33x6 / 种)
+                  :quant (s33x7 / 一)
+                  :mod (s33x8 / 传统的))
+          :ARG2 (s33x3 / 朗诵-00
+                  :ARG1 (s33b2 / book
+                          :name (s33n / name
+                                  :op1 "以斯帖记"))
+                  :aspect performance)
+          :mod (s33x4 / 应该)
+          :aspect performance)
+  :ARG2 (s33d / dummy
+          :ARG1 (s33x9 / 方式
+                  :mod (s33x10 / 通常)
+                  :mod (s33x11 / 朗诵-00
+                         :ARG1 (s33b3 / book
+                                 :name (s33n2 / name
+                                         :op1 "摩西五经"))
+                         :aspect performance))
+          :polarity -))
+
+# alignment:
+s33b : 0-0
+s33b2 : 3-4
+s33b3 : 19-20
+s33d : 0-0
+s33n : -1--1
+s33n2 : -1--1
+s33x : 7-7
+s33x10 : 16-16
+s33x11 : 17-17
+s33x2 : 12-12
+s33x3 : 1-1
+s33x4 : 6-6
+s33x5 : 11-11
+s33x6 : 8-8
+s33x7 : 8-8
+s33x8 : 9-10
+s33x: 7-7
+s33x2: 12-12
+s33x5: 11-11
+s33x3: 1-1
+s33x4: 6-6
+s33x9: 12-12
+s33x10: 16-16
+s33x11: 1-1
+
+# document level annotation:
+(s33s0 / sentence
+  :temporal ((document-creation-time :before s33b))
+  :modal ((root :modal author)
+                    (author :full-affirmative s33x3)
+                    (author :full-affirmative s33x)
+                    (author :full-negative s33x11))
+  :coref ((s33b2 :same-entity s32b)
+                    (s33b2 :same-event s32x)))
+
+
+# :: snt34	 此外 ， 一些 诗歌 和 段落 应用 朗诵 《 耶利米 哀歌 》 的 方式 ， 因为 他们 充满 悲伤 的 情绪 ， 有些 还 反映 了 犹太人 遭 流放 的 场景 。
+
+# sentence level graph:
+(s34x / 用-01
+  :ARG1 (s34a2 / and
+          :op1 (s34x3 / 诗歌)
+          :op2 (s34x4 / 段落)
+          :mod (s34x2 / 一些))
+  :ARG2 (s34x6 / 方式
+          :mod (s34x7 / 朗诵-00
+                 :ARG1 (s34b / book
+                         :name (s34n / name
+                                 :op1 "耶利米"
+                                 :op2 "哀歌"))
+                 :aspect performance))
+  :mod (s34x5 / 应)
+  :cause (s34a / and
+           :op1 (s34x8 / 充满-01
+                  :ARG0 (s34x9 / 他们)
+                  :ARG1 (s34x10 / 情绪
+                          :mod (s34x11 / 悲伤))
+                  :aspect state)
+           :op2 (s34x12 / 反映-02
+                  :ARG0 (s34d / dummy
+                          :mod (s34x13 / 有些))
+                  :ARG1 (s34x14 / 场景
+                          :mod (s34x15 / 流放-00
+                                 :ARG1 (s34e / ethnic-group
+                                         :name (s34n2 / name
+                                                 :op1 "犹太人"))
+                                 :aspect performance))
+                  :aspect state))
+  :aspect performance)
+
+# alignment:
+s34a2 : 0-0
+s34b : 10-11
+s34n : -1--1
+s34x : 7-7
+s34x2 : 3-3
+s34x3 : 4-4
+s34x4 : 6-6
+s34x5 : 7-7
+s34x6 : 14-14
+s34x7 : 8-8
+s34a : 0-0
+s34x8 : 18-18
+s34x9 : 17-17
+s34x10 : 21-21
+s34x11 : 19-19
+s34x12 : 25-25
+s34d : 0-0
+s34x13 : 23-23
+s34x14 : 31-31
+s34x15 : 29-29
+s34e : 27-27
+s34x3: 4-4
+s34x4: 6-6
+s34x2: 3-3
+s34x6: 14-14
+s34x7: 8-8
+s34x8: 18-18
+s34x9: 17-17
+s34x10: 21-21
+s34x11: 19-19
+s34x12: 25-25
+s34x13: 23-23
+s34x14: 31-31
+s34x15: 29-29
+
+# document level annotation:
+(s34s0 / sentence
+  :temporal ((document-creation-time :before s34x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s34x7)
+                    (author :full-affirmative s34x8)
+                    (author :full-affirmative s34x15)
+                    (author :full-affirmative s34x12)
+                    (author :full-affirmative s34x))
+  :coref ((s34e :same-entity s28e)
+                    (s34x3 :subset-of s33b2)
+                    (s34x4 :subset-of s33b2)))
+
+
+# :: snt35	 在 有些 地方 ， 《 以斯帖 记 》 不是 通过 吟唱 的 方式 ， 而是 以 书信 的 形式 朗诵 的 ， 因为 《 以斯帖 记 》 采用 的 正是 书信体 （ iggeret ） 的 写作 方式 。
+
+# sentence level graph:
+(s35b2 / but-91
+  :ARG1 (s35x / 通过-04
+          :ARG0 (s35b3 / book
+                  :name (s35n / name
+                          :op1 "以斯帖"
+                          :op2 "记"))
+          :ARG1 (s35x2 / 方式
+                  :mod (s35x3 / 吟唱))
+          :polarity -
+          :aspect performance)
+  :ARG2 (s35x4 / 朗诵-00
+          :ARG1 s35b3
+          :manner (s35x5 / 形式
+                    :mod (s35x6 / 书信))
+          :aspect performance)
+  :place (s35x7 / 地方
+           :mod (s35x8 / 有些))
+  :cause (s35x9 / 采用-01
+           :ARG0 s35b3
+           :ARG1 (s35x10 / 方式
+                   :mod (s35x11 / 写作)
+                   :mod (s35x12 / 书信体
+                          :ARG0-of (s35i2 / identity-91
+                                     :ARG1 (s35i3 / iggeret))))
+           :aspect performance))
+
+# alignment:
+s35b2 : 0-0
+s35x : 10-10
+s35b3 : 0-0
+s35n : -1--1
+s35x2 : 13-13
+s35x3 : 11-11
+s35x4 : 20-20
+s35x5 : 19-19
+s35x6 : 17-17
+s35x7 : 3-3
+s35x8 : 2-2
+s35x9 : 28-28
+s35x10 : 37-37
+s35x11 : 36-36
+s35x12 : 31-31
+s35i2 : 0-0
+s35x: 10-10
+s35x2: 13-13
+s35x3: 11-11
+s35x4: 20-20
+s35x5: 19-19
+s35x6: 17-17
+s35x7: 3-3
+s35x8: 2-2
+s35x9: 28-28
+s35x10: 13-13
+s35x11: 36-36
+s35x12: 31-31
+s35i3: 33-33
+
+# document level annotation:
+(s35s0 / sentence
+  :temporal ((document-creation-time :before s35b2))
+  :modal ((root :modal author)
+                    (author :full-negative s35x)
+                    (author :full-affirmative s35x4)
+                    (author :full-affirmative s35x9))
+  :coref ((s35b3 :same-entity s33b2)))
+
+
+# :: snt36	 中世纪 以后 ， 为了 表明 其 书信 的 特征 ， 朗读 之前 先 展开 整卷 的 《 以斯帖 记 》 也 成为 了 一种 习俗 。
+
+# sentence level graph:
+(s36x / 成为-01
+  :ARG0 (s36x2 / 展开-01
+          :ARG1 (s36b / book
+                  :name (s36n / name
+                          :op1 "以斯帖"
+                          :op2 "记")
+                  :mod (s36x4 / 整卷))
+          :temporal (s36x5 / 前
+                      :op1 (s36x6 / 朗读-01
+                             :aspect performance))
+          :aspect performance)
+  :ARG1 (s36x3 / 习俗
+          :unit (s36x7 / 种)
+          :quant (s36x8 / 一))
+  :temporal (s36x9 / 以后
+              :op1 (s36d / date-entity
+                     :era (s36x10 / 中世纪)))
+  :purpose (s36x11 / 表明-01
+             :ARG1 (s36x12 / 特征
+                     :mod (s36x13 / 书信)
+                     :poss s36b)
+             :aspect performance)
+  :temporal (s36x14 / 后
+              :op1 (s36d2 / date-entity
+                     :era (s36x15 / 中世纪)))
+  :aspect performance)
+
+# alignment:
+s36b : 0-0
+s36d : 0-0
+s36n : -1--1
+s36x : 22-22
+s36x10 : 1-1
+s36x11 : 5-5
+s36x12 : 9-9
+s36x13 : 7-7
+s36x2 : 14-14
+s36x3 : 25-25
+s36x4 : 15-15
+s36x5 : 12-12
+s36x6 : 11-11
+s36x7 : 24-24
+s36x8 : 24-24
+s36x9 : 2-2
+s36x14 : 2-2
+s36d2 : 0-0
+s36x: 22-22
+s36x2: 14-14
+s36x4: 15-15
+s36x6: 11-11
+s36x3: 25-25
+s36x9: 2-2
+s36x10: 1-1
+s36x11: 5-5
+s36x12: 9-9
+s36x13: 7-7
+s36x15: 1-1
+
+# document level annotation:
+(s36s0 / sentence
+  :temporal ((document-creation-time :before s36x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s36x6)
+                    (author :full-affirmative s36x2)
+                    (author :full-affirmative s36x11)
+                    (author :full-affirmative s36x))
+  :coref ((s36x13 :same-entity s35x6)
+                    (s36x6 :same-entity s35x4)
+                    (s36b :same-entity s35b3)))
+
+
+# :: snt37	 根据 《 哈拉 卡 》 ， 《 以斯帖 记 》 可以 用 任何 能够 被 听众 理解 的 语言 朗诵 。
+
+# sentence level graph:
+(s37x / 根据-01
+  :ARG0 (s37x2 / 朗诵-00
+          :ARG1 (s37b2 / book
+                  :name (s37n2 / name
+                          :op1 "以斯帖"
+                          :op2 "记"))
+          :aspect performance
+          :manner (s37x3 / 用-01
+                    :ARG1 (s37x4 / 语言
+                            :ARG1-of (s37x6 / 理解-01
+                                       :ARG0 (s37x7 / 听众)))
+                    :mod (s37x5 / 可以)
+                    :aspect performance))
+  :ARG1 (s37b / book
+          :name (s37n / name
+                  :op1 "哈拉卡"))
+  :aspect state)
+
+# alignment:
+s37b2 : 8-9
+s37n2 : -1--1
+s37x2 : 20-20
+s37x3 : 12-12
+s37x : 1-1
+s37b : 3-4
+s37n : -1--1
+s37x4 : 19-19
+s37x5 : 11-11
+s37x6 : 17-17
+s37x: 1-1
+s37x2: 20-20
+s37x3: 12-12
+s37x4: 19-19
+s37x6: 17-17
+s37x7: 16-16
+s37x5: 11-11
+
+# document level annotation:
+(s37s0 / sentence
+  :temporal ((document-creation-time :before s37x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s37x2)
+                    (author :partial-affirmative s37x3)
+                    (author :full-affirmative s37x))
+  :coref ((s37b2 :same-entity s36b)
+                    (s37x2 :same-event s36x6)))
+
+
+# :: snt38	 《 密西 拿 》 中 规定 ， 讲述 亚玛力 人 进攻 犹太人 的 《 出埃及记 》 17 : 8 ， 还有 关于 哈曼 祖先 的 记载 也 应该 被 朗诵 。
+
+# sentence level graph:
+(s38x / 规定-01
+  :ARG1 (s38x2 / 朗诵-00
+          :ARG1 (s38a / and
+                  :op1 (s38c / cite-91
+                         :ARG2 (s38i3 / implicit-argument
+                                 :ord (s38o / ordinal-entity
+                                        :value 8)
+                                 :part-of (s38i4 / implicit-argument
+                                            :ord (s38o2 / ordinal-entity
+                                                   :value 17)
+                                            :part-of (s38b2 / book
+                                                       :name (s38n5 / name
+                                                               :op1 "出埃及记"))))
+                         :ARG0-of (s38i5 / identity-91
+                                    :ARG1 (s38x7 / 讲述-01
+                                            :ARG1 (s38x8 / 进攻-01
+                                                    :ARG0 (s38e / ethnic-group
+                                                            :name (s38n3 / name
+                                                                    :op1 "亚玛力"
+                                                                    :op2 "人"))
+                                                    :ARG1 (s38e2 / ethnic-group
+                                                            :name (s38n4 / name
+                                                                    :op1 "犹太人"))
+                                                    :aspect performance)
+                                            :aspect performance)
+                                    :aspect state)
+                         :aspect state)
+                  :op2 (s38x3 / 记载-01
+                         :mod (s38x4 / 关于
+                                :mod (s38x5 / 祖先
+                                       :mod (s38i2 / individual-person
+                                              :name (s38n / name
+                                                      :op1 "哈曼"))))
+                         :aspect performance))
+          :mod (s38x6 / 应该)
+          :aspect performance)
+  :place (s38b / book
+           :name (s38n2 / name
+                   :op1 "密西拿"))
+  :aspect performance)
+
+# alignment:
+s38a : 0-0
+s38b : 2-3
+s38b2 : 15-15
+s38c : 0-0
+s38e : 9-10
+s38e2 : 12-12
+s38i2 : 23-23
+s38i3 : 0-0
+s38i4 : 0-0
+s38i5 : 0-0
+s38n : -1--1
+s38n2 : -1--1
+s38n3 : -1--1
+s38n4 : -1--1
+s38n5 : -1--1
+s38o : 0-0
+s38o2 : 0-0
+s38x : 6-6
+s38x2 : 30-0
+s38x3 : 26-26
+s38x4 : 22-22
+s38x5 : 24-24
+s38x6 : 28-28
+s38x7 : 8-8
+s38x: 6-6
+s38x2: 30-30
+s38x7: 8-8
+s38x8: 11-11
+s38x3: 26-26
+s38x4: 22-22
+s38x5: 24-24
+s38x6: 28-28
+
+# document level annotation:
+(s38s0 / sentence
+  :temporal ((document-creation-time :before s38x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s38x8)
+                    (author :full-affirmative s38x7)
+                    (author :full-affirmative s38i5)
+                    (author :full-affirmative s38c)
+                    (author :full-affirmative s38x3)
+                    (author :full-affirmative s38x2)
+                    (author :full-affirmative s38x))
+  :coref ((s38b :same-entity s29b)
+                    (s38e2 :same-entity s34e)
+                    (s38i2 :same-entity s31i2)))
+
+
+# :: snt39	 《 以斯帖 记 》 中 规定 “ 相互 赠送 食物 和 送给 穷人 礼物 ” 是 普珥 节 的 一项 习俗 。
+
+# sentence level graph:
+(s39x / 规定-01
+  :ARG1 (s39h / have-role-91
+          :ARG1 (s39a / and
+                  :op1 (s39x2 / 赠送-01
+                         :ARG1 (s39x4 / 食物)
+                         :ARG2 (s39x5 / 相互)
+                         :aspect performance)
+                  :op2 (s39x3 / 送给-01
+                         :ARG1 (s39x6 / 穷人)
+                         :ARG2 (s39x7 / 礼物)
+                         :aspect performance))
+          :ARG2 (s39f / festival
+                  :name (s39n2 / name
+                          :op1 "普珥"
+                          :op2 "节"))
+          :ARG3 (s39x8 / 习俗
+                  :unit (s39x9 / 项)
+                  :quant (s39x10 / 一))
+          :aspect state)
+  :place (s39b / book
+           :name (s39n / name
+                   :op1 "以斯帖"
+                   :op2 "记"))
+  :aspect performance)
+
+# alignment:
+s39a : 0-0
+s39b : 2-3
+s39f : 17-18
+s39h : 0-0
+s39n : -1--1
+s39n2 : -1--1
+s39x : 6-6
+s39x10 : 20-19
+s39x2 : 9-9
+s39x3 : 12-12
+s39x4 : 10-10
+s39x5 : 8-8
+s39x6 : 13-13
+s39x7 : 14-14
+s39x8 : 21-21
+s39x: 6-6
+s39x2: 9-9
+s39x4: 10-10
+s39x5: 8-8
+s39x3: 12-12
+s39x6: 13-13
+s39x7: 14-14
+s39x8: 21-21
+
+# document level annotation:
+(s39s0 / sentence
+  :temporal ((document-creation-time :before s39x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s39x2)
+                    (author :full-affirmative s39x3)
+                    (author :full-affirmative s39h)
+                    (author :full-affirmative s39x))
+  :coref ((s39b :same-entity s37b2)))
+
+
+# :: snt40	 根据 《 哈拉 卡 》 的 规定 ， 每个 成年人 应该 赠送给 另 一个 人 两种 不同 的 食物 ， 还要 给 两个 贫困 的 人 慈善 捐款 。
+
+# sentence level graph:
+(s40x / 根据-01
+  :ARG0 (s40a / and
+          :op1 (s40a2 / and
+                 :op1 (s40x3 / 赠送-01
+                        :ARG0 (s40x5 / 成年人
+                                :mod (s40x6 / 每个))
+                        :ARG1 (s40x8 / 食物
+                                :mod (s40x9 / 不同)
+                                :quant (s40x10 / 两)
+                                :unit (s40x11 / 种))
+                        :ARG2 (s40x12 / 人
+                                :mod (s40x13 / 另)
+                                :unit (s40x14 / 个)
+                                :quant (s40x15 / 一))
+                        :mod (s40x7 / 应该)
+                        :aspect performance))
+          :op2 (s40x16 / 给-01
+                 :ARG1 (s40x17 / 捐款-01
+                         :mod (s40x18 / 慈善)
+                         :aspect performance)
+                 :ARG2 (s40x19 / 人
+                         :mod (s40x4 / 贫困)
+                         :quant (s40x21 / 两)
+                         :unit (s40x22 / 个))
+                 :aspect performance))
+  :ARG1 (s40x2 / 规定
+          :poss (s40b / book
+                  :name (s40n / name
+                          :op1 "哈拉卡")))
+  :aspect state)
+
+# alignment:
+s40a : 0-0
+s40a2 : 0-0
+s40b : 3-3
+s40n : -1--1
+s40x : 1-1
+s40x10 : 16-16
+s40x11 : 16-16
+s40x12 : 0-0
+s40x13 : 13-13
+s40x14 : 14-14
+s40x15 : 14-14
+s40x16 : 22-22
+s40x17 : 28-28
+s40x18 : 27-27
+s40x19 : 26-6
+s40x2 : 7-7
+s40x21 : 23-23
+s40x22 : 23-23
+s40x3 : 12-12
+s40x5 : 0-0
+s40x6 : 9-9
+s40x7 : 0-0
+s40x8 : 0-0
+s40x: 1-1
+s40x5: 10-10
+s40x6: 9-9
+s40x8: 19-19
+s40x9: 17-17
+s40x12: 15-15
+s40x13: 13-13
+s40x7: 11-11
+s40x16: 22-22
+s40x17: 28-28
+s40x18: 27-27
+s40x19: 15-15
+s40x4: 24-24
+s40x2: 7-7
+
+# document level annotation:
+(s40s0 / sentence
+  :temporal ((document-creation-time :before s40x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s40x3)
+                    (author :full-affirmative s40x17)
+                    (author :full-affirmative s40x16)
+                    (author :full-affirmative s40x))
+  :coref ((s40b :same-entity s37b)
+                    (s40a :same-entity s39x8)))
+
+
+# :: snt41	 在 有些 地区 ， 这个 习俗 发展 成为 一项 重大 的 互赠 礼物 活动 。
+
+# sentence level graph:
+(s41x / 发展-03
+  :ARG1 (s41x4 / 习俗
+          :mod (s41x5 / 这个))
+  :ARG3 (s41x2 / 成为-01
+          :ARG1 (s41x3 / 活动
+                  :mod (s41x6 / 赠-01
+                         :ARG1 (s41x7 / 礼物)
+                         :ARG2 (s41x8 / 互)
+                         :aspect performance)
+                  :mod (s41x9 / 重大)
+                  :quant (s41x10 / 一)
+                  :unit (s41x11 / 项))
+          :aspect performance)
+  :place (s41x12 / 地区
+           :mod (s41x13 / 有些))
+  :aspect performance)
+
+# alignment:
+s41x : 7-7
+s41x10 : 9-9
+s41x11 : 9-9
+s41x12 : 3-3
+s41x13 : 2-2
+s41x2 : 8-8
+s41x3 : 14-14
+s41x4 : 6-6
+s41x5 : 5-5
+s41x6 : 12-12
+s41x7 : 13-13
+s41x8 : 12-12
+s41x: 7-7
+s41x4: 6-6
+s41x5: 5-5
+s41x2: 8-8
+s41x3: 14-14
+s41x7: 13-13
+s41x9: 10-10
+s41x12: 3-3
+s41x13: 2-2
+
+# document level annotation:
+(s41s0 / sentence
+  :temporal ((document-creation-time :before s41x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s41x6)
+                    (author :full-affirmative s41x2)
+                    (author :full-affirmative s41x))
+  :coref ((s41x4 :same-event s40a)))
+
+
+# :: snt42	 戒律 中 规定 ， 给予 穷人 的 慈善 捐款 可以 是 食物 ， 也 可以 是 足够 支付 一顿 普通 餐饭 的 现款 ， 接济 穷人 的 花费 最 好比 互送 食物 的 花费 多一些 。
+
+# sentence level graph:
+(s42x / 规定-01
+  :ARG1 (s42a / and
+          :op1 (s42o / or
+                 :op1 (s42i2 / identity-91
+                        :ARG0 (s42x3 / 捐款
+                                :mod (s42x4 / 慈善)
+                                :ARG1-of (s42x5 / 给予-01
+                                           :ARG2 (s42x6 / 穷人)
+                                           :aspect performance))
+                        :ARG1 (s42x7 / 食物)
+                        :mod (s42x8 / 可以)
+                        :aspect state)
+                 :op2 (s42i3 / identity-91
+                        :ARG0 s42x3
+                        :ARG1 (s42x9 / 现款
+                                :mod (s42x10 / 支付-01
+                                       :ARG1 (s42x11 / 餐饭
+                                               :mod (s42x12 / 普通)
+                                               :quant (s42x13 / 一)
+                                               :unit (s42x14 / 顿))
+                                       :mod (s42x15 / 足够)
+                                       :aspect performance))
+                        :aspect state))
+          :op2 (s42h / have-degree-91
+                 :ARG1 (s42x16 / 花费
+                         :mod (s42x17 / 接济-00
+                                :ARG1 (s42x18 / 穷人)
+                                :aspect performance))
+                 :ARG2 (s42x19 / 多
+                         :mod (s42x25 / 最好))
+                 :ARG3 (s42x20 / 一些)
+                 :ARG4 (s42x21 / 花费
+                         :mod (s42x22 / 送-01
+                                :ARG1 (s42x23 / 食物)
+                                :ARG2 (s42x24 / 互)
+                                :aspect performance))))
+  :place (s42x2 / 戒律)
+  :aspect performance)
+
+# alignment:
+s42a : 0-0
+s42h : 0-0
+s42i2 : 0-0
+s42i3 : 0-0
+s42o : 0-0
+s42x : 3-3
+s42x10 : 18-18
+s42x11 : 21-21
+s42x12 : 20-20
+s42x13 : 19-19
+s42x14 : 19-19
+s42x15 : 17-17
+s42x16 : 28-28
+s42x17 : 25-25
+s42x18 : 26-26
+s42x19 : 35-35
+s42x2 : 1-1
+s42x20 : 35-35
+s42x21 : 34-34
+s42x22 : 31-31
+s42x23 : 32-32
+s42x24 : 31-31
+s42x25 : 29-30
+s42x3 : 0-0
+s42x4 : 8-8
+s42x5 : 5-5
+s42x6 : 6-6
+s42x7 : 12-12
+s42x8 : 10-10
+s42x: 3-3
+s42x3: 9-9
+s42x4: 8-8
+s42x5: 5-5
+s42x6: 6-6
+s42x7: 12-12
+s42x8: 10-10
+s42x9: 23-23
+s42x10: 18-18
+s42x11: 21-21
+s42x12: 20-20
+s42x15: 17-17
+s42x16: 28-28
+s42x17: 25-25
+s42x18: 6-6
+s42x21: 28-28
+s42x23: 12-12
+s42x2: 1-1
+
+# document level annotation:
+(s42s0 / sentence
+  :temporal ((document-creation-time :before s42x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s42x5)
+                    (author :full-affirmative s42i2)
+                    (author :full-affirmative s42x10)
+                    (author :full-affirmative s42i3)
+                    (author :full-affirmative s42x17)
+                    (author :full-affirmative s42x22)
+                    (author :full-affirmative s42x))
+  :coref ((s42x3 :same-event s40x17)))
+
+
+# :: snt43	 在 犹太教 会堂 ， 募集 慈善 捐款 是 普珥 节 的 一个 惯例 ， 募集 到 的 善款 会 分配 给 贫穷 的 人 。
+
+# sentence level graph:
+(s43a / and
+  :op1 (s43h / have-role-91
+         :ARG0 (s43x2 / 募集-01
+                 :ARG1 (s43x3 / 捐款
+                         :mod (s43x4 / 慈善))
+                 :aspect performance)
+         :ARG1 (s43f / festival
+                 :name (s43n2 / name
+                         :op1 "普珥"
+                         :op2 "节"))
+         :ARG2 (s43x5 / 惯例
+                 :quant (s43x6 / 一)
+                 :unit (s43x7 / 个)))
+  :op2 (s43x8 / 分配-01
+         :ARG1 (s43x9 / 善款
+                 :mod (s43x10 / 募集))
+         :ARG2 (s43x11 / 人
+                 :mod (s43x12 / 贫穷))
+         :aspect performance)
+  :place (s43x / 会堂
+           :mod (s43r / religious-group
+                  :name (s43n / name
+                          :op1 "犹太教"))))
+
+# alignment:
+s43a : 0-0
+s43f : 9-10
+s43h : 0-0
+s43n : -1--1
+s43n2 : -1--1
+s43r : 2-2
+s43x : 3-3
+s43x10 : 15-15
+s43x11 : 24-24
+s43x12 : 22-22
+s43x2 : 5-5
+s43x3 : 7-7
+s43x4 : 6-6
+s43x5 : 13-13
+s43x6 : 12-12
+s43x7 : 12-12
+s43x8 : 20-20
+s43x2: 5-5
+s43x3: 7-7
+s43x4: 6-6
+s43x5: 13-13
+s43x8: 20-20
+s43x9: 18-18
+s43x10: 5-5
+s43x11: 24-24
+s43x12: 22-22
+s43x: 3-3
+
+# document level annotation:
+(s43s0 / sentence
+  :temporal ((document-creation-time :before s43a))
+  :modal ((root :modal author)
+                    (author :full-affirmative s43x2)
+                    (author :full-affirmative s43x8))
+  :coref ((s43f :same-entity s39f)))
+
+
+# :: snt44	 何谓 贫穷 并 没有 特定 标准 ， 只要 愿意 接受 救济 就 可以 领取 。
+
+# sentence level graph:
+(s44a / and
+  :op1 (s44i2 / identity-91
+         :op1 (s44x6 / 贫穷
+                :polarity amr-unknown)
+         :op2 (s44x7 / 标准
+                :mod (s44x8 / 特定))
+         :polarity -
+         :aspect state)
+  :op2 (s44x / 愿意-01
+         :ARG1 (s44x2 / 接受-01
+                 :ARG1 (s44x3 / 救济)
+                 :aspect performance)
+         :cause-of (s44x4 / 领取-01
+                     :mod (s44x5 / 可以)
+                     :aspect performance)
+         :aspect performance))
+
+# alignment:
+s44a : 0-0
+s44i2 : 0-0
+s44x : 9-9
+s44x2 : 10-10
+s44x3 : 11-11
+s44x4 : 14-14
+s44x5 : 13-13
+s44x6 : 2-2
+s44x7 : 6-6
+s44x6: 2-2
+s44x7: 6-6
+s44x8: 5-5
+s44x: 9-9
+s44x2: 10-10
+s44x3: 11-11
+s44x4: 14-14
+s44x5: 13-13
+
+# document level annotation:
+(s44s0 / sentence
+  :temporal ((document-creation-time :before s44a))
+  :modal ((root :modal author)
+                    (author :full-negative s44i2)
+                    (author :full-affirmative s44x2)
+                    (author :full-affirmative s44x4)
+                    (author :full-affirmative s44x)))
+
+
+# :: snt45	 最 贫穷 的 犹太人 也 有 义务 去 施舍 ， 即使 他 自己 都 需要 靠 救济 度日 。
+
+# sentence level graph:
+(s45h / have-concession-91
+  :ARG1 (s45h2 / have-91
+          :ARG1 (s45h3 / have-degree-91
+                  :ARG1 (s45e / ethnic-group
+                          :name (s45n / name
+                                  :op1 "犹太人"))
+                  :ARG2 (s45x2 / 贫穷)
+                  :ARG5 (s45x3 / 最)
+                  :aspect state)
+          :ARG2 (s45x4 / 义务
+                  :ARG1-of (s45i2 / identity-91
+                             :ARG2 (s45x5 / 去-01
+                                     :ARG1 (s45x6 / 施舍)
+                                     :aspect performance)
+                             :aspect state))
+          :aspect state)
+  :ARG2 (s45x / 度日-01
+          :ARG0 (s45p / person
+                  :refer-person 3rd
+                  :refer-number singular)
+          :mod (s45x7 / 需要)
+          :manner (s45x8 / 靠-01
+                    :ARG1 (s45x9 / 救济)
+                    :aspect performance)
+          :aspect performance)
+  :aspect state)
+
+# alignment:
+s45h : 0-0
+s45h2 : 0-0
+s45x : 18-18
+s45h3 : 0-0
+s45e : 4-4
+s45n : -1--1
+s45x2 : 2-2
+s45x3 : 1-1
+s45x4 : 7-7
+s45i2 : 0-0
+s45x5 : 8-8
+s45x6 : 9-9
+s45p : 0-0
+s45x7 : 15-15
+s45x8 : 16-16
+s45x2: 2-2
+s45x3: 1-1
+s45x4: 7-7
+s45x5: 8-8
+s45x6: 9-9
+s45x: 18-18
+s45x7: 15-15
+s45x8: 16-16
+s45x9: 17-17
+
+# document level annotation:
+(s45s0 / sentence
+  :temporal ((document-creation-time :before s45h))
+  :modal ((root :modal author)
+                    (author :full-affirmative s45h3)
+                    (author :full-affirmative s45x5)
+                    (author :full-affirmative s45i2)
+                    (author :full-affirmative s45h2)
+                    (author :full-affirmative s45x8)
+                    (author :full-affirmative s45x)
+                    (author :full-affirmative s45h))
+  :coref ((s45e :same-entity s38e2)))
+
+
+# :: snt46	 普珥 节 当天 会 举办 宴会 （ Se ’ udat Purim ） ， 人们 还会 喝 葡萄酒 来 助兴 。
+
+# sentence level graph:
+(s46a / and
+  :op1 (s46x / 举办-01
+         :ARG1 (s46i2 / identity-91
+                 :ARG0 (s46x2 / 宴会)
+                 :ARG1 (s46s / se-’-udat-purim))
+         :temporal (s46f / festival
+                     :name (s46n / name
+                             :op1 "普珥"
+                             :op2 "节"))
+         :aspect performance)
+  :op2 (s46x3 / 喝-01
+         :ARG0 (s46x4 / 人们)
+         :ARG1 (s46x5 / 酒
+                 :mod (s46x7 / 葡萄))
+         :reason (s46x6 / 助兴-00
+                   :aspect performance)
+         :aspect performance))
+
+# alignment:
+s46a : 0-0
+s46f : 1-2
+s46i2 : 0-0
+s46n : -1--1
+s46s : 8-11
+s46x : 5-5
+s46x2 : 6-6
+s46x3 : 16-16
+s46x4 : 14-14
+s46x5 : 17-17
+s46x6 : 19-19
+s46x: 5-5
+s46x2: 6-6
+s46x3: 16-16
+s46x4: 14-14
+s46x6: 19-19
+
+# document level annotation:
+(s46s0 / sentence
+  :temporal ((document-creation-time :before s46a))
+  :modal ((root :modal author)
+                    (author :full-affirmative s46x)
+                    (author :full-affirmative s46x6)
+                    (author :full-affirmative s46x3))
+  :coref ((s46f :same-entity s43f)
+                    (s46x2 :same-entity s24x12)))
+
+
+# :: snt47	 这 是因为 根据 记载 ， 对 犹太人 的 拯救 是 通过 葡萄酒 实现 的 ， 《 塔木德 经 》 的 要求 是 一个 人 必须 喝醉 到 分不清 “ 哈曼 遭 诅咒 ” （ arur Haman ） 和 “ 赞美 末底 改 ” （ baruch Mordechai ） 为止 。
+
+# sentence level graph:
+(s47x / 根据-01
+  :ARG1 (s47x2 / 记载
+          :ARG0-of (s47i2 / identity-91
+                     :ARG0 (s47x12 / 实现-01
+                             :ARG1 (s47x13 / 拯救-01
+                                     :ARG1 (s47i5 / individual-person
+                                             :name (s47n6 / name
+                                                     :op1 "犹太人"))
+                                     :instrument (s47x14 / 酒
+                                                   :mod (s47x15 / 葡萄))
+                                     :aspect performance)
+                             :aspect performance)
+                     :ARG1 (s47x3 / 是-01
+                             :ARG0 (s47x4 / 要求
+                                     :mod (s47b / book
+                                            :name (s47n / name
+                                                    :op1 "塔木德"
+                                                    :op2 "经")))
+                             :ARG1 (s47x5 / 喝醉-00
+                                     :ARG0 (s47x6 / 人
+                                             :quant (s47x7 / 一)
+                                             :unit (s47x8 / 个))
+                                     :mod (s47x9 / 必须)
+                                     :temporal (s47x10 / 到-为止
+                                                 :op1 (s47x11 / 分清-01
+                                                        :ARG1 (s47a / and
+                                                                :op1 (s47e / event
+                                                                       :name (s47n2 / name
+                                                                               :op1 "哈曼"
+                                                                               :op2 "遭"
+                                                                               :op3 "诅咒")
+                                                                       :ARG0-of (s47i3 / identity-91
+                                                                                  :ARG1 (s47e2 / event
+                                                                                          :name (s47n3 / name
+                                                                                                  :op1 "arur"
+                                                                                                  :op2 "Haman"))))
+                                                                :op2 (s47e3 / event
+                                                                       :name (s47n4 / name
+                                                                               :op1 "赞美"
+                                                                               :op2 "末底"
+                                                                               :op3 "改")
+                                                                       :ARG0-of (s47i4 / identity-91
+                                                                                  :ARG1 (s47e4 / event
+                                                                                          :name (s47n5 / name
+                                                                                                  :op1 "baruch"
+                                                                                                  :op2 "Mordechai")))))
+                                                        :polarity -
+                                                        :aspect performance))
+                                     :aspect performance)
+                             :aspect state
+                             :aspect performance)))
+  :aspect state)
+
+# alignment:
+s47a : 0-0
+s47b : 17-18
+s47e : 30-32
+s47e2 : 35-36
+s47e3 : 40-42
+s47e4 : 45-46
+s47i2 : 0-0
+s47i3 : 0-0
+s47i4 : 0-0
+s47i5 : 7-7
+s47n : -1--1
+s47n2 : -1--1
+s47n3 : -1--1
+s47n4 : -1--1
+s47n5 : -1--1
+s47n6 : -1--1
+s47x : 3-3
+s47x10 : 27-27
+s47x11 : 0-0
+s47x12 : 13-13
+s47x13 : 9-9
+s47x14 : 12-12
+s47x15 : 12-12
+s47x2 : 4-4
+s47x3 : 22-22
+s47x4 : 21-21
+s47x5 : 26-26
+s47x6 : 24-24
+s47x7 : 23-23
+s47x8 : 23-23
+s47x: 3-3
+s47x2: 4-4
+s47x12: 13-13
+s47x13: 9-9
+s47x3: 10-10
+s47x4: 21-21
+s47x5: 26-26
+s47x6: 24-24
+s47x9: 25-25
+s47x10: 27-27
+
+# document level annotation:
+(s47s0 / sentence
+  :temporal ((document-creation-time :before s47x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s47x13)
+                    (author :full-affirmative s47x12)
+                    (author :full-negative s47x11)
+                    (author :full-affirmative s47x5)
+                    (author :full-affirmative s47x3)
+                    (author :full-affirmative s47x3)
+                    (author :full-affirmative s47x))
+  :coref ((s47i5 :same-entity s34e)
+                    (s47x14 :same-entity s46x5)
+                    (s47b :same-entity s31b)))
+
+
+# :: snt48	 饮酒 随后 被 编纂 进 了 早期 的 官方 规定 。
+
+# sentence level graph:
+(s48x / 编纂-01
+  :ARG1 (s48x3 / 规定
+          :mod (s48x4 / 官方)
+          :mod (s48x5 / 早期))
+  :cause-of (s48x2 / 进-05
+              :ARG0 (s48x6 / 饮酒-01
+                      :aspect performance)
+              :ARG1 s48x3
+              :temporal (s48x7 / 随后)
+              :aspect performance)
+  :aspect performance)
+
+# alignment:
+s48x : 4-4
+s48x2 : 5-5
+s48x3 : 0-0
+s48x4 : 9-9
+s48x5 : 7-7
+s48x6 : 1-1
+s48x: 4-4
+s48x3: 10-10
+s48x4: 9-9
+s48x5: 7-7
+s48x2: 5-5
+s48x6: 1-1
+s48x7: 2-2
+
+# document level annotation:
+(s48s0 / sentence
+  :temporal ((document-creation-time :before s48x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s48x6)
+                    (author :full-affirmative s48x2)
+                    (author :full-affirmative s48x)))
+
+
+# :: snt49	 尽管 有人 些 人 认为 应该 喝 到 酩酊大醉 ， 从古到今 很多 拉比 都 认为 只是 应该 比 平时 稍微 多 喝 一点 ， 喝完 了 就 去 睡觉 ， 这样 就 能 满足 《 塔木德 经 》 的 要求 了 。
+
+# sentence level graph:
+(s49h / have-concession-91
+  :ARG1 (s49c / consecutive
+          :op1 (s49x7 / 认为-01
+                 :ARG0 (s49x9 / 拉比
+                         :mod (s49x10 / 很多))
+                 :ARG1 (s49h2 / have-degree-91
+                         :ARG1 (s49x15 / 喝-01
+                                 :aspect performance)
+                         :ARG2 (s49x11 / 多
+                                 :mod (s49x12 / 稍微))
+                         :ARG3 (s49x14 / 一点)
+                         :ARG4 (s49x16 / 平时))
+                 :temporal (s49x8 / 从古到今)
+                 :mod (s49x13 / 都)
+                 :aspect performance)
+          :op2 (s49x17 / 睡觉-01
+                 :aspect performance)
+          :op3 (s49x18 / 满足-01
+                 :ARG2 (s49x19 / 要求
+                         :poss (s49b / book
+                                 :name (s49n / name
+                                         :op1 "塔木德"
+                                         :op2 "经")))
+                 :aspect performance))
+  :ARG2 (s49x / 认为-01
+          :ARG0 (s49x2 / 人
+                  :mod (s49x3 / 有些))
+          :ARG1 (s49x4 / 喝-01
+                  :temporal (s49x5 / 到-02
+                              :op1 (s49x6 / 酩酊大醉)))
+          :aspect performance))
+
+# alignment:
+s49b : 36-37
+s49h : 0-0
+s49h2 : 0-0
+s49n : -1--1
+s49x : 5-5
+s49x10 : 12-12
+s49x11 : 21-21
+s49x12 : 20-20
+s49x13 : 14-14
+s49x14 : 23-23
+s49x15 : 22-22
+s49x16 : 19-19
+s49x17 : 29-29
+s49x18 : 34-34
+s49x19 : 40-40
+s49x2 : 4-4
+s49x3 : 0-0
+s49x4 : 7-7
+s49x5 : 8-8
+s49x6 : 9-9
+s49x7 : 15-15
+s49x8 : 11-11
+s49x7: 5-5
+s49x9: 13-13
+s49x10: 12-12
+s49x15: 7-7
+s49x11: 21-21
+s49x12: 20-20
+s49x14: 23-23
+s49x16: 19-19
+s49x8: 11-11
+s49x13: 14-14
+s49x17: 29-29
+s49x18: 34-34
+s49x19: 40-40
+s49x: 5-5
+s49x2: 4-4
+s49x4: 7-7
+s49x5: 8-8
+s49x6: 9-9
+
+# document level annotation:
+(s49s0 / sentence
+  :temporal ((document-creation-time :before s49h))
+  :modal ((root :modal author)
+                    (author :full-affirmative s49x15)
+                    (author :full-affirmative s49x7)
+                    (author :full-affirmative s49x17)
+                    (author :full-affirmative s49x18)
+                    (author :full-affirmative s49x))
+  :coref ((s49b :same-entity s47b)))
+
+
+# :: snt50	 其他 一些 权威 ， 包括 梅根 · 亚伯拉罕 都 认为 应该 喝醉 到 算不清 那 两个 短语 的 希伯来 字母 代码 。
+
+# sentence level graph:
+(s50x / 认为-01
+  :ARG0 (s50x2 / 权威
+          :mod (s50x3 / 其他)
+          :mod (s50x4 / 一些)
+          :ARG0-of (s50x5 / 包括-01
+                     :ARG1 (s50i2 / individual-person
+                             :name (s50n / name
+                                     :op1 "梅根"
+                                     :op2 "·"
+                                     :op3 "亚伯拉罕"))
+                     :aspect state))
+  :ARG1 (s50x6 / 喝醉-00
+          :temporal (s50x7 / 到-02
+                      :op1 (s50x8 / 算清-00
+                             :ARG1 (s50x9 / 代码
+                                     :mod (s50x10 / 字母)
+                                     :mod (s50l / language
+                                            :name (s50n2 / name
+                                                    :op1 "希伯来"))
+                                     :mod (s50h / have-quant-91
+                                            :ARG1 (s50x11 / 短语)
+                                            :ARG2 (s50x12 / 两)))
+                             :polarity -
+                             :aspect performance)
+                      :aspect performance)
+          :aspect performance)
+  :aspect performance)
+
+# alignment:
+s50h : 0-0
+s50i2 : 6-8
+s50n : -1--1
+s50n2 : -1--1
+s50x : 10-10
+s50x10 : 19-20
+s50x11 : 17-17
+s50x12 : 16-16
+s50x2 : 3-3
+s50x3 : 1-1
+s50x4 : 2-2
+s50x5 : 5-5
+s50x6 : 12-12
+s50x7 : 13-13
+s50x8 : 0-0
+s50x: 10-10
+s50x2: 3-3
+s50x3: 1-1
+s50x4: 2-2
+s50x5: 5-5
+s50x6: 12-12
+s50x7: 13-13
+s50x9: 21-21
+s50x10: 20-20
+s50x11: 17-17
+
+# document level annotation:
+(s50s0 / sentence
+  :temporal ((document-creation-time :before s50x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s50x5)
+                    (author :full-negative s50x8)
+                    (author :full-affirmative s50x7)
+                    (author :full-affirmative s50x6)
+                    (author :full-affirmative s50x))
+  :coref ((s50x9 :subset-of s47e)
+                    (s50x9 :subset-of s47e3)))
+
+
+# :: snt51	 普珥 节 在 每年 的 希伯来 历阿 达尔 月 14 号 ， 也 就是 在 犹太人 战胜 他们 的 敌人 后 的 那天 举行 。
+
+# sentence level graph:
+(s51x / 举行-01
+  :ARG1 (s51f / festival
+          :name (s51n / name
+                  :op1 "普珥"
+                  :op2 "节"))
+  :temporal (s51i2 / identity-91
+              :ARG0 (s51d / date-entity
+                      :calendar (s51x2 / 希伯来)
+                      :month (s51x3 / 阿达尔)
+                      :day (s51x4 / 14)
+                      :frequency (s51x10 / 每年))
+              :ARG1 (s51x5 / 天
+                      :mod (s51x6 / 那)
+                      :temporal (s51x7 / 后
+                                  :op1 (s51x8 / 战胜-01
+                                         :ARG0 (s51e / ethnic-group
+                                                 :name (s51n2 / name
+                                                         :op1 "犹太人"))
+                                         :ARG1 (s51x9 / 敌人
+                                                 :poss (s51s / s51e))
+                                         :aspect performance))))
+  :aspect performance)
+
+# alignment:
+s51d : 0-0
+s51e : 16-16
+s51f : 1-2
+s51i2 : 0-0
+s51n : -1--1
+s51n2 : -1--1
+s51s : 0-0
+s51x : 24-24
+s51x2 : 6-7
+s51x3 : 7-8
+s51x4 : 10-0
+s51x5 : 23-23
+s51x6 : 23-22
+s51x7 : 21-21
+s51x8 : 17-17
+s51x9 : 20-20
+s51x: 24-24
+s51x2: 6-6
+s51x4: 10-10
+s51x10: 4-4
+s51x7: 21-21
+s51x8: 17-17
+s51x9: 20-20
+
+# document level annotation:
+(s51s0 / sentence
+  :temporal ((document-creation-time :before s51x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s51x8)
+                    (author :full-affirmative s51x))
+  :coref ((s51f :same-entity s39f)
+                    (s51d :same-entity s27d)
+                    (s51e :same-entity s47i5)
+                    (s51x5 :same-entity s20d)))
+
+
+# :: snt52	 在 约书亚 时期 ， 普珥 节为 城市 的 城墙 所阻 ， 而且 在 书 珊 城中 的 战斗 在 14 号 仍 在 持续 ， 因此 城中 的 犹太人 在 在 15 号 举行 庆典 ， 这 就是 我们 所知 的 书珊城 普珥 节 。
+
+# sentence level graph:
+(s52i2 / identity-91
+  :ARG0 (s52x4 / 举行-01
+          :ARG0 (s52e2 / ethnic-group
+                  :name (s52n2 / name
+                          :op1 "犹太人"))
+          :ARG1 (s52x5 / 庆典)
+          :temporal (s52d2 / date-entity
+                      :day 15)
+          :reason (s52a2 / and
+                    :op1 (s52x / 阻-00
+                           :ARG0 (s52x2 / 城墙
+                                   :mod (s52x3 / 城市))
+                           :ARG1 (s52f2 / festival
+                                   :name (s52n / name
+                                           :op1 "普珥"
+                                           :op2 "节"))
+                           :aspect performance)
+                    :op2 (s52x7 / 持续-01
+                           :ARG0 (s52x8 / 战斗
+                                   :place (s52x9 / 中
+                                            :op1 (s52c / city
+                                                   :name (s52n4 / name
+                                                           :op1 "书"
+                                                           :op2 "珊"
+                                                           :op3 "城"))))
+                           :temporal (s52d3 / date-entity
+                                       :day 14)
+                           :aspect state)
+                    :temporal (s52d4 / date-entity
+                                :era (s52x10 / 约书亚)
+                                :aspect performance))
+          :aspect performance)
+  :ARG1 (s52f / festival
+          :name (s52n3 / name
+                  :op1 "书珊城"
+                  :op2 "普珥"
+                  :op3 "节")
+          :ARG1-of (s52x6 / 知-01
+                     :ARG0 (s52p / person
+                             :refer-person 1st
+                             :refer-number plural)
+                     :aspect performance)))
+
+# alignment:
+s52a2 : 0-0
+s52c : 14-16
+s52d2 : 0-0
+s52d3 : 0-0
+s52d4 : 0-0
+s52e2 : 29-29
+s52f : 42-44
+s52i2 : 0-0
+s52n2 : -1--1
+s52n3 : -1--1
+s52n4 : -1--1
+s52x10 : 2-2
+s52x4 : 34-34
+s52x5 : 35-35
+s52x6 : 40-40
+s52x7 : 24-24
+s52x8 : 18-18
+s52x9 : 16-16
+s52x : 10-10
+s52x2 : 9-9
+s52x3 : 7-7
+s52f2 : 5-6
+s52x4: 34-34
+s52x5: 35-35
+s52x2: 9-9
+s52x3: 7-7
+s52x7: 24-24
+s52x8: 18-18
+s52x10: 2-2
+
+# document level annotation:
+(s52s0 / sentence
+  :temporal ((document-creation-time :before s52i2))
+  :modal ((root :modal author)
+                    (author :full-affirmative s52x)
+                    (author :full-affirmative s52x7)
+                    (author :full-affirmative s52d4)
+                    (author :full-affirmative s52x4)
+                    (author :full-affirmative s52x6))
+  :coref ((s52f2 :same-entity s51f)
+                    (s52x2 :same-entity s6x7)
+                    (s52d4 :same-entity s6d3)
+                    (s52c :same-entity s9c)))
+
+
+# :: snt53	 现在 只有 耶路撒冷 在 15 号 庆祝 普珥 节 。
+
+# sentence level graph:
+(s53x / 庆祝-01
+  :ARG0 (s53c / city
+          :name (s53n / name
+                  :op1 "耶路撒冷")
+          :mod (s53x3 / 只有))
+  :ARG1 (s53f / festival
+          :name (s53n2 / name
+                  :op1 "普珥"
+                  :op2 "节"))
+  :temporal (s53d / date-entity
+              :day 15)
+  :aspect performance
+  :temporal (s53x2 / 现在))
+
+# alignment:
+s53c : 3-3
+s53d : 0-0
+s53f : 8-9
+s53n : -1--1
+s53n2 : -1--1
+s53x : 7-7
+s53x2 : 1-1
+s53x: 7-7
+s53x3: 2-2
+s53x2: 1-1
+
+# document level annotation:
+(s53s0 / sentence
+  :temporal ((document-creation-time :before s53x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s53x))
+  :coref ((s53c :same-entity s6c3)
+                    (s53f :same-entity s52f2)))
+
+
+# :: snt54	 在 普珥 节中 运用 较为 普遍 的 问候语 是 ( 希伯来语 ) chag Purim Sameach , Freilichin Purim 或者 是 Purim Allegre " ( 拉 地诺语 ) 。
+
+# sentence level graph:
+(s54x / 是-01
+  :ARG0 (s54x2 / 问候语
+          :ARG1-of (s54x3 / 运用-01
+                     :mod (s54x4 / 普遍
+                            :mod (s54x5 / 较为))
+                     :aspect performance)
+          :place (s54f / festival
+                   :name (s54n / name
+                           :op1 "普珥"
+                           :op2 "节")))
+  :ARG1 (s54o / or
+          :op1 (s54a / and
+                 :op1 (s54c / chag-purim-sameac)
+                 :op2 (s54f2 / freilichin-purim)
+                 :mod (s54l / language
+                        :name (s54n2 / name
+                                :op1 "希伯来语")))
+          :op2 (s54p / purim-allegre
+                 :mod (s54l2 / language
+                        :name (s54n3 / name
+                                :op1 "拉"
+                                :op2 "地诺语"))))
+  :aspect state)
+
+# alignment:
+s54a : 0-0
+s54c : 13-15
+s54f : 2-3
+s54f2 : 17-18
+s54l : 11-11
+s54l2 : 25-26
+s54n : -1--1
+s54n2 : -1--1
+s54n3 : -1--1
+s54o : 0-0
+s54p : 21-22
+s54x : 9-9
+s54x2 : 8-8
+s54x3 : 4-4
+s54x4 : 6-6
+s54x: 9-9
+s54x2: 8-8
+s54x3: 4-4
+s54x4: 6-6
+s54x5: 5-5
+s54c: 13-13
+
+# document level annotation:
+(s54s0 / sentence
+  :temporal ((document-creation-time :before s54x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s54x3)
+                    (author :full-affirmative s54x))
+  :coref ((s54f :same-entity s53f)))
+
+
+# :: snt55	 通过 面具 和 服装 来 化装 的 习俗 起源于 15 世纪 初 的 意大利 犹太人 。
+
+# sentence level graph:
+(s55x / 起源-01
+  :ARG0 (s55x2 / 习俗
+          :mod (s55x4 / 化装-01
+                 :manner (s55a / and
+                           :op1 (s55x5 / 面具)
+                           :op2 (s55x6 / 服装))
+                 :aspect performance))
+  :ARG1 (s55e / ethnic-group
+          :name (s55n / name
+                  :op1 "犹太人")
+          :mod (s55c / country
+                 :name (s55n2 / name
+                         :op1 "意大利"))
+          :mod (s55d / date-entity
+                 :century 15
+                 :mod (s55x3 / 初)))
+  :aspect performance)
+
+# alignment:
+s55a : 0-0
+s55c : 14-14
+s55d : 0-0
+s55e : 15-15
+s55n : -1--1
+s55n2 : -1--1
+s55x : 9-9
+s55x2 : 8-8
+s55x3 : 12-12
+s55x4 : 6-6
+s55x5 : 2-2
+s55x2: 8-8
+s55x4: 6-6
+s55x5: 2-2
+s55x6: 4-4
+s55x3: 12-12
+
+# document level annotation:
+(s55s0 / sentence
+  :temporal ((document-creation-time :before s55x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s55x4)
+                    (author :full-affirmative s55x))
+  :coref ((s55n :same-entity s52e2)))
+
+
+# :: snt56	 这个 习俗 很 可能 是 受到 罗马 狂欢节 以及 它 在 欧洲 传播 的 影响 。
+
+# sentence level graph:
+(s56x / 受到-02
+  :ARG0 (s56x2 / 习俗
+          :mod (s56x3 / 这)
+          :unit (s56x4 / 个))
+  :ARG1 (s56x7 / 影响-01
+          :ARG0 (s56a / and
+                  :op1 (s56f / festival
+                         :name (s56n / name
+                                 :op1 "罗马"
+                                 :op2 "狂欢节"))
+                  :op2 (s56x8 / 传播-01
+                         :ARG1 s56f
+                         :place (s56c / continent
+                                  :name (s56n2 / name
+                                          :op1 "欧洲"))
+                         :aspect performance))
+          :aspect performance)
+  :mod (s56x5 / 可能
+         :mod (s56x6 / 很))
+  :aspect performance)
+
+# alignment:
+s56a : 0-0
+s56c : 12-12
+s56f : 0-0
+s56n : -1--1
+s56n2 : -1--1
+s56x : 6-6
+s56x2 : 2-2
+s56x3 : 1-0
+s56x4 : 1-1
+s56x5 : 4-4
+s56x6 : 3-3
+s56x7 : 15-15
+s56x: 6-6
+s56x2: 2-2
+s56x7: 15-15
+s56x8: 13-13
+s56x5: 4-4
+s56x6: 3-3
+
+# document level annotation:
+(s56s0 / sentence
+  :temporal ((document-creation-time :before s56x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s56x8)
+                    (author :full-affirmative s56x7)
+                    (author :partial-affirmative s56x))
+  :coref ((s56x2 :same-entity s55x2)))
+
+
+# :: snt57	 这种 活动 到 19 世纪 后期 才 传入 中东欧 。
+
+# sentence level graph:
+(s57x / 传入-01
+  :ARG0 (s57x2 / 活动
+          :mod (s57x4 / 这)
+          :unit (s57x5 / 种))
+  :ARG1 (s57c / continent
+          :name (s57n / name
+                  :op1 "欧")
+          :mod (s57x3 / 中东))
+  :temporal (s57d / date-entity
+              :century 19
+              :mod (s57x6 / 后期))
+  :aspect performance)
+
+# alignment:
+s57d : 0-0
+s57x : 8-8
+s57x2 : 2-2
+s57x4 : 1-0
+s57x5 : 1-1
+s57x6 : 6-6
+s57c : 9-9
+s57n : -1--1
+s57x: 8-8
+s57x2: 2-2
+s57x6: 6-6
+
+# document level annotation:
+(s57s0 / sentence
+  :temporal ((document-creation-time :before s57x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s57x))
+  :coref ((s57x2 :same-entity s55x4)))
+
+
+# :: snt58	 第一次 在 犹太 法典 提及 这个 习俗 的 是 Mahari Minz ( 1508 年 在 威利斯 ) 。
+
+# sentence level graph:
+(s58x / 是-01
+  :ARG0 (s58i2 / implicit-argument
+          :mod (s58x2 / 提及-01
+                 :ARG1 (s58x3 / 习俗
+                         :unit (s58x5 / 个)
+                         :mod (s58x6 / 这))
+                 :ARG2 (s58x4 / 法典
+                         :mod (s58e / ethnic-group
+                                :name (s58n / name
+                                        :op1 "犹太")))
+                 :mod (s58x7 / 次
+                        :ord (s58x8 / 第一))
+                 :temporal (s58d / date-entity
+                             :year 1508)
+                 :place (s58c / city
+                          :name (s58n3 / name
+                                  :op1 "威利斯"))
+                 :aspect performance))
+  :ARG1 (s58i3 / individual-person
+          :name (s58n2 / name
+                  :op1 "Mahari"
+                  :op2 "Minz"))
+  :aspect state)
+
+# alignment:
+s58c : 16-16
+s58d : 0-0
+s58e : 3-3
+s58i2 : 0-0
+s58i3 : 10-11
+s58n : -1--1
+s58n2 : -1--1
+s58n3 : -1--1
+s58x : 9-9
+s58x2 : 5-5
+s58x3 : 7-7
+s58x4 : 4-4
+s58x5 : 6-6
+s58x6 : 6-5
+s58x7 : 1-1
+s58x: 9-9
+s58x2: 5-5
+s58x3: 7-7
+s58x4: 4-4
+
+# document level annotation:
+(s58s0 / sentence
+  :temporal ((document-creation-time :before s58x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s58x2)
+                    (author :full-affirmative s58x))
+  :coref ((s58x3 :same-entity s56x2)))
+
+
+# :: snt59	 虽然 一些 权威 认为 男人 穿 上 女性 的 衣服 可能 是 违反 圣经 之 法 ， 但是 这种 化装 习俗 被 犹太人 广泛 接受 ， 因为 这 被 看作 是 一种 狂欢 。
+
+# sentence level graph:
+(s59b / but-91
+  :ARG1 (s59x / 认为-01
+          :ARG0 (s59x2 / 权威
+                  :mod (s59x4 / 一些))
+          :ARG1 (s59x3 / 违反-01
+                  :ARG0 (s59x5 / 穿-01
+                          :ARG0 (s59x8 / 男人)
+                          :ARG1 (s59x9 / 衣服
+                                  :mod (s59x10 / 女性)))
+                  :ARG1 (s59x6 / 法
+                          :poss (s59x7 / 圣经))
+                  :aspect performance)
+          :aspect performance)
+  :ARG2 (s59x11 / 接受-01
+          :ARG0 (s59e / ethnic-group
+                  :name (s59n / name
+                          :op1 "犹太人"))
+          :ARG1 (s59x12 / 习俗
+                  :mod (s59x13 / 化装)
+                  :mod (s59x14 / 这种))
+          :mod (s59x15 / 广泛)
+          :aspect performance)
+  :cause-of (s59x16 / 看作-01
+              :ARG1 s59x12
+              :ARG2 (s59x17 / 狂欢
+                      :unit (s59x18 / 种)
+                      :quant (s59x19 / 一))
+              :aspect performance)
+  :aspect state)
+
+# alignment:
+s59b : 0-0
+s59e : 23-23
+s59n : -1--1
+s59x : 4-4
+s59x10 : 8-8
+s59x11 : 25-25
+s59x12 : 0-0
+s59x13 : 20-20
+s59x2 : 3-3
+s59x3 : 13-13
+s59x4 : 2-2
+s59x5 : 6-6
+s59x6 : 16-16
+s59x7 : 14-14
+s59x8 : 5-5
+s59x9 : 10-10
+s59x14 : 19-19
+s59x15 : 24-24
+s59x16 : 30-30
+s59x17 : 33-33
+s59x18 : 32-32
+s59x: 4-4
+s59x2: 3-3
+s59x4: 2-2
+s59x3: 13-13
+s59x5: 6-6
+s59x8: 5-5
+s59x9: 10-10
+s59x10: 8-8
+s59x6: 16-16
+s59x7: 14-14
+s59x11: 25-25
+s59x12: 21-21
+s59x13: 20-20
+s59x14: 19-19
+s59x15: 24-24
+s59x16: 30-30
+s59x17: 33-33
+
+# document level annotation:
+(s59s0 / sentence
+  :temporal ((document-creation-time :before s59b))
+  :modal ((root :modal author)
+                    (author :full-affirmative s59x3)
+                    (author :full-affirmative s59x)
+                    (author :full-affirmative s59x11)
+                    (author :full-affirmative s59x16)
+                    (author :full-affirmative s59b))
+  :coref ((s59x12 :same-entity s56x2)
+                    (s59e :same-entity s52e2)))
+
+
+# :: snt60	 可是 一些 犹太教 律 法学家 至今 仍 不 承认 亚麻 和 羊毛 混纺 （ shatnez ） 的 穿着 。
+
+# sentence level graph:
+(s60x / 承认-01
+  :ARG0 (s60x2 / 律法学家
+          :mod (s60r / religious-group
+                 :name (s60n / name
+                         :op1 "犹太教"))
+          :mod (s60x3 / 一些))
+  :ARG1 (s60x4 / 穿着
+          :mod (s60x5 / 混纺
+                 :mod (s60a / and
+                        :op1 (s60x6 / 亚麻)
+                        :op2 (s60x7 / 羊毛))
+                 :ARG0-of (s60i2 / identity-91
+                            :ARG1 (s60s / shatnez))))
+  :polarity -
+  :temporal (s60x8 / 至今)
+  :aspect performance)
+
+# alignment:
+s60a : 0-0
+s60i2 : 0-0
+s60n : -1--1
+s60r : 3-3
+s60s : 15-15
+s60x : 9-9
+s60x2 : 4-5
+s60x3 : 2-2
+s60x4 : 18-18
+s60x5 : 13-13
+s60x6 : 10-10
+s60x7 : 12-12
+s60x: 9-9
+s60x3: 2-2
+s60x4: 18-18
+s60x5: 13-13
+s60x6: 10-10
+s60x7: 12-12
+s60s: 15-15
+s60x8: 6-6
+
+# document level annotation:
+(s60s0 / sentence
+  :temporal ((document-creation-time :before s60x))
+  :modal ((root :modal author)
+                    (author :full-negative s60x))
+  :coref ((s60r :same-entity s43r)))
+
+
+# :: snt61	 这个 习俗 出现 的 另 一个 原因 是 ： 在 第一 神庙 被 摧毁 之后 ， 上帝 从 犹太人 的 故事 里 躲起来 了 （ 即使 存在 过 ） ， 而 这个 习俗 被 认为 是 一种 模仿 上帝 躲藏在 普珥 节 的 故事 里 描述 的 自然 事件 的 背后 的 方式 。
+
+# sentence level graph:
+(s61a2 / and
+  :op1 (s61i3 / identity-91
+         :ARG0 (s61x13 / 原因
+                 :mod (s61x15 / 出现-01
+                        :ARG1 (s61x16 / 习俗
+                                :mod (s61x17 / 这个))
+                        :aspect performance)
+                 :mod (s61x18 / 另)
+                 :quant (s61x19 / 一)
+                 :unit (s61x20 / 个))
+         :ARG1 (s61x14 / 躲-01
+                 :ARG0 (s61i4 / individual-person
+                         :name (s61n2 / name
+                                 :op1 "上帝"))
+                 :ARG1 (s61x21 / 故事
+                         :poss (s61e2 / ethnic-group
+                                 :name (s61n3 / name
+                                         :op1 "犹太人")))
+                 :concession (s61x22 / 存在-01
+                               :aspect performance)
+                 :temporal (s61x23 / 后
+                             :op1 (s61x24 / 摧毁-01
+                                    :ARG1 (s61x25 / 神庙
+                                            :mod (s61x26 / 第一))
+                                    :aspect performance))
+                 :aspect performance))
+  :op2 (s61x27 / 认为-02
+         :ARG1 (s61x28 / 习俗
+                 :mod (s61x29 / 这个))
+         :ARG2 (s61x30 / 方式
+                 :quant (s61x32 / 一)
+                 :unit (s61x33 / 种)
+                 :mod (s61x / 描述-01
+                        :ARG0 (s61i2 / individual-person
+                                :name (s61n / name
+                                        :op1 "上帝")
+                                :ARG0-of (s61x5 / 躲藏-01
+                                           :place (s61x6 / 故事
+                                                    :mod (s61f / festival
+                                                           :name (s61n4 / name
+                                                                   :op1 "普珥"
+                                                                   :op2 "节")))))
+                        :ARG1 (s61x2 / 背后
+                                :poss (s61x3 / 事件
+                                        :mod (s61x4 / 自然)))
+                        :aspect performance))
+         :aspect performance))
+
+# alignment:
+s61a2 : 0-0
+s61e2 : 19-19
+s61i3 : 0-0
+s61i4 : 17-17
+s61n2 : -1--1
+s61n3 : -1--1
+s61x : 46-46
+s61x13 : 7-7
+s61x14 : 23-23
+s61x15 : 3-3
+s61x16 : 2-2
+s61x17 : 1-1
+s61x18 : 5-5
+s61x19 : 6-6
+s61x2 : 51-51
+s61x20 : 6-6
+s61x21 : 21-21
+s61x22 : 27-27
+s61x23 : 15-15
+s61x24 : 14-14
+s61x25 : 12-12
+s61x26 : 11-11
+s61x27 : 35-35
+s61x28 : 33-33
+s61x29 : 32-32
+s61x3 : 49-49
+s61x30 : 53-53
+s61x32 : 37-37
+s61x33 : 37-37
+s61x4 : 48-48
+s61i2 : 39-39
+s61n : -1--1
+s61x5 : 40-40
+s61x6 : 44-44
+s61f : 41-42
+s61x13: 7-7
+s61x15: 3-3
+s61x16: 2-2
+s61x17: 1-1
+s61x18: 5-5
+s61x21: 21-21
+s61x22: 27-27
+s61x24: 14-14
+s61x25: 12-12
+s61x26: 11-11
+s61x27: 35-35
+s61x28: 2-2
+s61x29: 1-1
+s61x30: 53-53
+s61x: 46-46
+s61x6: 21-21
+s61x2: 51-51
+s61x3: 49-49
+s61x4: 48-48
+
+# document level annotation:
+(s61s0 / sentence
+  :temporal ((document-creation-time :before s61a2))
+  :modal ((root :modal author)
+                    (author :full-affirmative s61x15)
+                    (author :full-affirmative s61x22)
+                    (author :full-affirmative s61x24)
+                    (author :full-affirmative s61x14)
+                    (author :full-affirmative s61x6)
+                    (author :full-affirmative s61x)
+                    (author :full-affirmative s61x27))
+  :coref ((s61x28 :same-entity s59x12)
+                    (s61e2 :same-entity s59e)
+                    (s61i4 :same-entity s61i2)
+                    (s61f :same-entity s54f)))
+
+
+# :: snt62	 行善 是 普珥 节 的 一个 核心 特点 ， 在 这个 过程 中 ， 施舍 者 和 接受者 都 是 以 匿名 来 掩饰 自己 的 身份 ， 以此 来 保护 接受者 的 尊严 。
+
+# sentence level graph:
+(s62a / and
+  :op1 (s62i2 / identity-91
+         :ARG0 (s62x / 行善-01
+                 :aspect performance)
+         :ARG1 (s62x2 / 特点
+                 :mod (s62x3 / 核心)
+                 :quant (s62x4 / 一)
+                 :unit (s62x5 / 个)
+                 :poss (s62f / festival
+                         :name (s62n / name
+                                 :op1 "普珥"
+                                 :op2 "节"))))
+  :op2 (s62x6 / 掩饰-01
+         :ARG0 (s62a2 / and
+                 :op1 (s62x7 / 施舍者)
+                 :op2 (s62x8 / 接受者))
+         :ARG1 (s62x9 / 身份
+                 :mod (s62x10 / 自己))
+         :temporal (s62x11 / 中
+                     :op1 (s62x12 / 过程
+                            :mod (s62x13 / 这个)))
+         :manner (s62x14 / 匿名)
+         :cause-of (s62x15 / 保护-01
+                     :ARG1 (s62x16 / 尊严
+                             :mod (s62x17 / 接受者))
+                     :aspect performance)
+         :aspect performance))
+
+# alignment:
+s62a : 0-0
+s62i2 : 0-0
+s62x : 1-1
+s62x2 : 8-8
+s62x3 : 7-7
+s62x4 : 6-6
+s62x5 : 6-6
+s62f : 3-4
+s62n : -1--1
+s62x6 : 24-24
+s62a2 : 0-0
+s62x7 : 15-16
+s62x8 : 18-18
+s62x9 : 27-27
+s62x10 : 25-25
+s62x11 : 13-13
+s62x12 : 12-12
+s62x13 : 11-11
+s62x14 : 22-22
+s62x15 : 31-31
+s62x16 : 34-34
+s62x: 1-1
+s62x2: 8-8
+s62x3: 7-7
+s62x6: 24-24
+s62x8: 18-18
+s62x9: 27-27
+s62x10: 25-25
+s62x11: 13-13
+s62x12: 12-12
+s62x13: 11-11
+s62x14: 22-22
+s62x15: 31-31
+s62x16: 34-34
+s62x17: 18-18
+
+# document level annotation:
+(s62s0 / sentence
+  :temporal ((document-creation-time :before s62a))
+  :modal ((root :modal author)
+                    (author :full-affirmative s62x)
+                    (author :full-affirmative s62x15)
+                    (author :full-affirmative s62x6))
+  :coref ((s62f :same-entity s61f)))
+
+
+# :: snt63	 波斯 流亡 贯穿 了 所有 的 普珥 节 的 故事 ， 因为 自然 事件 所 隐藏 的 方面 被 暗指 为 普珥 节 的 奇迹 。
+
+# sentence level graph:
+(s63x / 贯穿-01
+  :ARG0 (s63x4 / 流亡-01
+          :ARG1 (s63c / country-region
+                  :name (s63n2 / name
+                          :op1 "波斯"))
+          :aspect performance)
+  :ARG1 (s63x2 / 故事
+          :mod (s63f / festival
+                 :name (s63n / name
+                         :op1 "普珥"
+                         :op2 "节"))
+          :mod (s63x3 / 所有))
+  :reason (s63x5 / 暗指-00
+            :ARG0 (s63x7 / 方面
+                    :mod (s63x8 / 隐藏-01
+                           :ARG0 (s63x9 / 事件
+                                   :mod (s63x10 / 自然))
+                           :aspect performance))
+            :ARG1 (s63x6 / 奇迹
+                    :mod (s63f2 / festival
+                           :name (s63n3 / name
+                                   :op1 "普珥"
+                                   :op2 "节")))
+            :aspect performance)
+  :aspect performance)
+
+# alignment:
+s63x : 3-3
+s63x2 : 10-10
+s63f : 7-8
+s63n : -1--1
+s63x3 : 5-5
+s63x4 : 2-2
+s63c : 1-1
+s63n2 : -1--1
+s63x5 : 20-20
+s63x6 : 25-25
+s63f2 : 22-2
+s63n3 : -1--1
+s63x7 : 18-18
+s63x8 : 16-16
+s63x9 : 14-14
+s63x: 3-3
+s63x4: 2-2
+s63x2: 10-10
+s63x3: 5-5
+s63x5: 20-20
+s63x7: 18-18
+s63x8: 16-16
+s63x9: 14-14
+s63x10: 13-13
+s63x6: 25-25
+
+# document level annotation:
+(s63s0 / sentence
+  :temporal ((document-creation-time :before s63x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s63x4)
+                    (author :full-affirmative s63x8)
+                    (author :full-affirmative s63x5)
+                    (author :full-affirmative s63x))
+  :coref ((s63f :same-entity s62f)
+                    (s63x2 :same-entity s61x6)
+                    (s63f2 :same-entity s63f)))
+
+
+# :: snt64	 普珥 节 戏剧 是 一种 历史性 的 漫画 戏剧 ， 它 试图 来 传达 普珥 节 的 传奇 故事 。
+
+# sentence level graph:
+(s64a / and
+  :op1 (s64i2 / identity-91
+         :ARG0 (s64x / 戏剧
+                 :mod (s64f / festival
+                        :name (s64n / name
+                                :op1 "普珥"
+                                :op2 "节")))
+         :ARG1 (s64x2 / 戏剧
+                 :mod (s64x3 / 漫画)
+                 :mod (s64x4 / 历史性)
+                 :unit (s64x5 / 种)
+                 :quant (s64x6 / 一)))
+  :op2 (s64x7 / 试图-01
+         :ARG0 s64x
+         :ARG1 (s64x8 / 传达-01
+                 :ARG1 (s64x9 / 故事
+                         :mod (s64x10 / 传奇)
+                         :mod (s64f2 / festival
+                                :name (s64n2 / name
+                                        :op1 "普珥"
+                                        :op2 "节")))
+                 :aspect performance)
+         :aspect performance))
+
+# alignment:
+s64a : 0-0
+s64i2 : 0-0
+s64x : 0-0
+s64f : 1-2
+s64n : -1--1
+s64x2 : 9-9
+s64x3 : 8-8
+s64x4 : 6-6
+s64x5 : 5-5
+s64x6 : 5-5
+s64x7 : 12-12
+s64x8 : 14-14
+s64x9 : 19-19
+s64x10 : 18-18
+s64f2 : 15-16
+s64x: 3-3
+s64x2: 3-3
+s64x3: 8-8
+s64x4: 6-6
+s64x7: 12-12
+s64x8: 14-14
+s64x9: 19-19
+s64x10: 18-18
+
+# document level annotation:
+(s64s0 / sentence
+  :temporal ((document-creation-time :before s64a))
+  :modal ((root :modal author)
+                    (author :full-affirmative s64x8)
+                    (author :full-affirmative s64x7))
+  :coref ((s64x9 :same-entity s63x2)
+                    (s64f :same-entity s63f)))
+
+
+# :: snt65	 到 18 世纪 ， 在 东欧 的 部分 地方 ， 普珥 节 戏剧 已经 广泛 地 演变成 讽刺作品 ， 而 以斯帖 记所 记载 的 故事 是 这种 夹杂着 音乐 和 舞蹈 的 作品 的 讲述 。
+
+# sentence level graph:
+(s65a / and-but
+  :op1 (s65x / 演变-02
+         :ARG0 (s65x4 / 戏剧
+                 :mod (s65f / festival
+                        :name (s65n / name
+                                :op1 "普珥"
+                                :op2 "节")))
+         :ARG1 (s65x2 / 作品
+                 :mod (s65x3 / 讽刺))
+         :mod (s65x5 / 广泛)
+         :place (s65x6 / 地方
+                  :mod (s65x7 / 部分)
+                  :poss (s65c / continent
+                          :name (s65n2 / name
+                                  :op1 "欧")
+                          :mod (s65x8 / 东)))
+         :temporal (s65d / date-entity
+                     :century 18)
+         :aspect performance)
+  :op2 (s65i2 / identity-91
+         :ARG0 (s65x9 / 故事
+                 :ARG1-of (s65x10 / 记载-01
+                            :place (s65b / book
+                                     :name (s65n3 / name
+                                             :op1 "以斯帖"
+                                             :op2 "记"))
+                            :aspect performance))
+         :ARG1 (s65x11 / 讲述
+                 :mod (s65x12 / 作品
+                        :mod (s65x13 / 夹杂-01
+                               :ARG0 (s65a2 / and
+                                       :op1 (s65x14 / 音乐)
+                                       :op2 (s65x15 / 舞蹈))
+                               :aspect performance))
+                 :mod (s65x16 / 这种))))
+
+# alignment:
+s65a : 0-0
+s65a2 : 0-0
+s65b : 21-22
+s65c : 6-6
+s65f : 11-12
+s65i2 : 0-0
+s65n : -1--1
+s65n2 : -1--1
+s65n3 : -1--1
+s65x : 17-17
+s65x10 : 23-23
+s65x11 : 35-35
+s65x12 : 33-33
+s65x13 : 28-28
+s65x14 : 29-29
+s65x15 : 31-31
+s65x16 : 27-27
+s65x2 : 18-18
+s65x3 : 18-18
+s65x4 : 13-13
+s65x5 : 15-15
+s65x6 : 9-9
+s65x7 : 8-8
+s65x8 : 6-6
+s65x4: 13-13
+s65x2: 33-33
+s65x5: 15-15
+s65x6: 9-9
+s65x7: 8-8
+s65x9: 25-25
+s65x10: 23-23
+s65x11: 35-35
+s65x12: 33-33
+s65x14: 29-29
+s65x15: 31-31
+s65x16: 27-27
+
+# document level annotation:
+(s65s0 / sentence
+  :temporal ((document-creation-time :before s65a))
+  :modal ((root :modal author)
+                    (author :full-affirmative s65x)
+                    (author :full-affirmative s65x10)
+                    (author :full-affirmative s65x13))
+  :coref ((s65x4 :same-entity s64x)
+                    (s65f :same-entity s64f2)
+                    (s65b :same-entity s39b)))
+
+
+# :: snt66	 事实上 ， 直到 19 世纪 中叶 ， 其中 有些 故事 仍 是 基于 圣经上 的 故事 创作 的 。
+
+# sentence level graph:
+(s66x / 创作-01
+  :ARG1 (s66x2 / 故事
+          :mod (s66x3 / 有些)
+          :mod (s66x4 / 其中))
+  :ARG0-of (s66x5 / 基于-01
+             :ARG1 (s66x6 / 故事
+                     :place (s66b / book
+                              :name (s66n / name
+                                      :op1 "圣经")))
+             :aspect performance)
+  :mod (s66x7 / 事实上)
+  :temporal (s66x8 / 直到
+              :op1 (s66d / date-entity
+                     :century 19
+                     :mod (s66x9 / 中叶)))
+  :aspect performance)
+
+# alignment:
+s66b : 14-14
+s66n : -1--1
+s66x : 17-17
+s66x2 : 10-10
+s66x3 : 9-9
+s66x4 : 8-8
+s66x5 : 13-13
+s66x6 : 16-16
+s66x7 : 1-1
+s66x8 : 3-3
+s66x: 17-17
+s66x2: 10-10
+s66x3: 9-9
+s66x4: 8-8
+s66x5: 13-13
+s66x6: 10-10
+s66x7: 1-1
+s66x8: 3-3
+s66x9: 6-6
+
+# document level annotation:
+(s66s0 / sentence
+  :temporal ((document-creation-time :before s66x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s66x5)
+                    (author :full-affirmative s66x))
+  :coref ((s66x6 :same-entity s65x9)
+                    (s66b :same-entity s59x7)))
+
+
+# :: snt67	 现在 ， 普珥 节 戏剧 能够 以 任何 与 犹太人 和 犹太教 有关 的 故事 为 中心 ， 这样 的 故事 往往 能够 给 观众 带来 愉悦 和 放松 感 。
+
+# sentence level graph:
+(s67a / and
+  :op1 (s67x2 / 为-02
+         :ARG0 (s67x10 / 戏剧
+                 :mod (s67f / festival
+                        :name (s67n / name
+                                :op1 "普珥"
+                                :op2 "节")))
+         :ARG1 (s67x3 / 中心)
+         :ARG2 (s67x11 / 故事
+                 :mod (s67x12 / 有关-01
+                        :ARG0 (s67a3 / and
+                                :op1 (s67e / ethnic-group
+                                       :name (s67n2 / name
+                                               :op1 "犹太人"))
+                                :op2 (s67r / religious-group
+                                       :name (s67n3 / name
+                                               :op1 "犹太教")))
+                        :aspect state)
+                 :mod (s67x13 / 任何))
+         :aspect performance)
+  :op2 (s67x4 / 带来-01
+         :ARG0 (s67x8 / 故事
+                 :mod (s67x9 / 这样))
+         :ARG1 (s67a2 / and
+                 :op1 (s67x5 / 愉悦)
+                 :op2 (s67x6 / 放松感))
+         :ARG2 (s67x7 / 观众)
+         :aspect performance)
+  :temporal (s67x / 现在))
+
+# alignment:
+s67a : 0-0
+s67x : 1-1
+s67x2 : 16-16
+s67x3 : 17-17
+s67x4 : 26-26
+s67a2 : 0-0
+s67x5 : 27-27
+s67x6 : 29-30
+s67x7 : 25-5
+s67x8 : 21-21
+s67x9 : 19-19
+s67x10 : 5-5
+s67f : 3-4
+s67n : -1--1
+s67x11 : 15-15
+s67x12 : 13-13
+s67a3 : 0-0
+s67e : 10-10
+s67n2 : -1--1
+s67r : 12-12
+s67n3 : -1--1
+s67x2: 16-16
+s67x10: 5-5
+s67x3: 17-17
+s67x11: 15-15
+s67x12: 13-13
+s67x13: 8-8
+s67x4: 26-26
+s67x8: 15-15
+s67x9: 19-19
+s67x5: 27-27
+s67x7: 25-25
+s67x: 1-1
+
+# document level annotation:
+(s67s0 / sentence
+  :temporal ((document-creation-time :depends-on s67a))
+  :modal ((root :modal author)
+                    (author :full-affirmative s67x12)
+                    (author :partial-affirmative s67x2)
+                    (author :full-affirmative s67x4))
+  :coref ((s67f :same-entity s65x4)
+                    (s67f :same-entity s65f)
+                    (s67e :same-entity s61e2)
+                    (s67r :same-entity s60r)))
+
+
+# :: snt68	 在 5 世纪 ， 就 有 一个 在 普珥 节烧 哈曼 的 雕像 的 习俗 。
+
+# sentence level graph:
+(s68h / have-91
+  :ARG2 (s68x / 习俗
+          :mod (s68x2 / 烧-01
+                 :ARG1 (s68x3 / 雕像
+                         :mod (s68i2 / individual-person
+                                :name (s68n / name
+                                        :op1 "哈曼")))
+                 :temporal (s68f / festival
+                             :name (s68n2 / name
+                                     :op1 "普珥"
+                                     :op2 "节"))
+                 :aspect performance)
+          :unit (s68x4 / 个)
+          :quant (s68x5 / 一))
+  :temporal (s68t / temporal-quantity
+              :century (s68x6 / 5)))
+
+# alignment:
+s68h : 0-0
+s68x : 15-15
+s68x2 : 10-10
+s68x3 : 13-13
+s68i2 : 11-11
+s68n : -1--1
+s68f : 9-10
+s68n2 : -1--1
+s68x4 : 7-7
+s68x5 : 7-6
+s68t : 0-0
+s68x: 15-15
+s68x3: 13-13
+s68x6: 2-2
+
+# document level annotation:
+(s68s0 / sentence
+  :temporal ((document-creation-time :before s68h))
+  :modal ((root :modal author)
+                    (author :full-affirmative s68x2))
+  :coref ((s68f :same-entity s67f)
+                    (s68i2 :same-entity s38i2)))
+
+
+# :: snt69	 但是 这种 现象 激起 了 早期 基督徒 的 愤怒 ， 这些 基督徒 认为 嘲笑 和 杀死 哈曼 的 雕像 是 在 掩饰 耶稣 之死 的 事实 以及 对 基督徒 信仰 的 嘲弄 。
+
+# sentence level graph:
+(s69b / but-91
+  :ARG1 (s69i2 / implicit-predicate)
+  :ARG2 (s69x2 / 激起-01
+          :ARG0 (s69x3 / 现象
+                  :mod (s69x4 / 这种))
+          :ARG1 (s69x5 / 愤怒
+                  :poss (s69r / religious-group
+                          :name (s69n / name
+                                  :op1 "基督徒")
+                          :mod (s69x6 / 早期)))
+          :reason (s69x7 / 认为-02
+                    :ARG0 (s69r2 / religious-group
+                            :name (s69n2 / name
+                                    :op1 "基督徒")
+                            :mod (s69x8 / 这些))
+                    :ARG1 (s69a / and
+                            :op1 (s69x9 / 嘲笑-01
+                                   :ARG1 (s69x / 雕像
+                                           :poss (s69i3 / individual-person
+                                                   :name (s69n3 / name
+                                                           :op1 "哈曼"))))
+                            :op2 (s69x10 / 杀死-01
+                                   :ARG1 (s69s / s69x)
+                                   :aspect performance))
+                    :ARG2 (s69a2 / and
+                            :op1 (s69x11 / 掩饰-01
+                                   :ARG1 (s69x13 / 事实
+                                           :mod (s69x14 / 死-01
+                                                  :ARG0 (s69i4 / individual-person
+                                                          :name (s69n4 / name
+                                                                  :op1 "耶稣"))
+                                                  :aspect performance))
+                                   :aspect performance)
+                            :op2 (s69x12 / 嘲弄
+                                   :mod (s69x15 / 对-06
+                                          :ARG1 (s69x16 / 信仰
+                                                  :poss (s69r3 / religious-group
+                                                          :name (s69n5 / name
+                                                                  :op1 "基督徒")))
+                                          :aspect performance)))
+                    :aspect performance)
+          :aspect performance))
+
+# alignment:
+s69a : 0-0
+s69b : 0-0
+s69i2 : 0-0
+s69n : -1--1
+s69n2 : -1--1
+s69r : 7-7
+s69r2 : 12-12
+s69x10 : 16-16
+s69x2 : 4-4
+s69x3 : 3-3
+s69x4 : 2-2
+s69x5 : 9-9
+s69x6 : 6-6
+s69x7 : 13-13
+s69x8 : 11-11
+s69x9 : 14-14
+s69x : 19-19
+s69i3 : 17-17
+s69n3 : -1--1
+s69s : 0-0
+s69a2 : 0-0
+s69x11 : 22-22
+s69x12 : 32-32
+s69x13 : 26-26
+s69x14 : 24-24
+s69i4 : 23-23
+s69n4 : -1--1
+s69x15 : 28-28
+s69x16 : 30-30
+s69r3 : 29-29
+s69x2: 4-4
+s69x3: 3-3
+s69x4: 2-2
+s69x5: 9-9
+s69x6: 6-6
+s69x7: 13-13
+s69x8: 11-11
+s69x9: 14-14
+s69x: 19-19
+s69x10: 16-16
+s69x11: 22-22
+s69x13: 26-26
+s69x12: 32-32
+s69x15: 28-28
+s69x16: 30-30
+
+# document level annotation:
+(s69s0 / sentence
+  :temporal ((document-creation-time :before s69b))
+  :modal ((root :modal author)
+                    (author :full-affirmative s69x10)
+                    (author :full-affirmative s69x14)
+                    (author :full-affirmative s69x11)
+                    (author :full-affirmative s69x15)
+                    (author :full-affirmative s69x7)
+                    (author :full-affirmative s69x2))
+  :coref ((s69r :same-entity s69r2)
+                    (s69a :same-event s68x2)
+                    (s69i3 :same-entity s68i2)))
+
+
+# :: snt70	 这项 活动 在 弗拉 菲乌 奥古斯都 ( 395 - 423 ) 和 狄奥多 西 二世 ( 408 - 450 ) 在位 时期 被 禁止 过 。
+
+# sentence level graph:
+(s70x / 禁止-01
+  :ARG1 (s70x2 / 活动
+          :mod (s70x3 / 这项))
+  :temporal (s70x4 / 时期
+              :op1 (s70x5 / 在位-01
+                     :ARG0 (s70a / and
+                             :op1 (s70i2 / individual-person
+                                    :name (s70n / name
+                                            :op1 "弗拉"
+                                            :op2 "菲乌"
+                                            :op3 "奥古斯都")
+                                    :ARG0-of (s70i4 / identity-91
+                                               :ARG1 (s70d / date-interval
+                                                       :op1 (s70d2 / date-entity
+                                                              :year 395)
+                                                       :op2 (s70d3 / date-entity
+                                                              :year 423))))
+                             :op2 (s70i3 / individual-person
+                                    :name (s70n2 / name
+                                            :op1 "狄奥多"
+                                            :op2 "西"
+                                            :op3 "二世")
+                                    :ARG0 (s70i5 / identity-91
+                                            :ARG1 (s70d4 / date-interval
+                                                    :op1 (s70d5 / date-entity
+                                                           :year 408)
+                                                    :op2 (s70d6 / date-entity
+                                                           :year 450)))))
+                     :aspect performance))
+  :aspect performance)
+
+# alignment:
+s70a : 0-0
+s70i2 : 4-6
+s70i3 : 13-15
+s70n : -1--1
+s70n2 : -1--1
+s70x : 24-24
+s70x2 : 2-2
+s70x3 : 1-1
+s70x4 : 22-22
+s70x5 : 21-21
+s70i4 : 0-0
+s70d : 0-0
+s70d2 : 0-0
+s70d3 : 0-0
+s70i5 : 0-0
+s70d4 : 0-0
+s70d5 : 0-0
+s70x: 24-24
+s70x2: 2-2
+s70x3: 1-1
+s70x4: 22-22
+s70x5: 21-21
+
+# document level annotation:
+(s70s0 / sentence
+  :temporal ((document-creation-time :before s70x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s70x5)
+                    (author :full-affirmative s70x))
+  :coref ((s70x2 :same-event s69a)))
+
+
+# :: snt71	 可是 这个 习俗 在 Geonic 时期 很 流行 （ 9 和 10 世纪 ） ， 一个 14 世纪 的 学者 描述 过 人们 是 如何 拿 着 点火 的 树枝 ， 走过 普罗旺斯 大街 ， 在 被 吊 着 的 哈曼 的 木偶 的 周围 吹 着 喇叭 然后 烧掉 木偶 的 场景 。
+
+# sentence level graph:
+(s71a / and
+  :op1 (s71x / 流行-01
+         :ARG0 (s71x3 / 习俗
+                 :mod (s71x4 / 这个))
+         :temporal (s71d / date-entity
+                     :era (s71g / geonic)
+                     :ARG1-of (s71i2 / identity-91
+                                :ARG0 (s71a2 / and
+                                        :op1 (s71d2 / date-entity
+                                               :century 9)
+                                        :op2 (s71d3 / date-entity
+                                               :century 10))))
+         :aspect performance)
+  :op2 (s71x2 / 描述-01
+         :ARG0 (s71x5 / 学者
+                 :unit (s71x6 / 个)
+                 :quant (s71x7 / 一)
+                 :temporal (s71d4 / date-entity
+                             :century 14))
+         :ARG1 (s71x8 / 场景
+                 :mod (s71a3 / and
+                        :op1 (s71x9 / 拿-03
+                               :ARG0 (s71x12 / 人们)
+                               :ARG1 (s71x10 / 树枝
+                                       :mod (s71x11 / 点火))
+                               :aspect performance)
+                        :op2 (s71x13 / 走过-01
+                               :ARG1 (s71x14 / 大街
+                                       :mod (s71r / region
+                                              :name (s71n / name
+                                                      :op1 "普罗旺斯")))
+                               :aspect performance)
+                        :op3 (s71c / consecutive
+                               :op1 (s71x15 / 吹-01
+                                      :ARG1 (s71x16 / 喇叭)
+                                      :place (s71x19 / 周围
+                                               :poss (s71x20 / 木偶
+                                                       :mod (s71i3 / individual-person
+                                                              :name (s71n2 / name
+                                                                      :op1 "哈曼"))
+                                                       :ARG1-of (s71x21 / 吊-01
+                                                                  :aspect performance)))
+                                      :aspect performance)
+                               :op2 (s71x17 / 烧掉-01
+                                      :ARG1 (s71x18 / 木偶)
+                                      :aspect performance))))
+         :aspect performance))
+
+# alignment:
+s71a : 0-0
+s71a2 : 0-0
+s71a3 : 0-0
+s71c : 0-0
+s71d : 0-0
+s71d2 : 0-0
+s71d3 : 0-0
+s71d4 : 0-0
+s71g : 5-5
+s71i2 : 0-0
+s71i3 : 41-41
+s71n : -1--1
+s71n2 : -1--1
+s71r : 33-33
+s71x : 8-8
+s71x10 : 30-30
+s71x11 : 28-28
+s71x12 : 23-23
+s71x13 : 32-32
+s71x14 : 34-34
+s71x15 : 46-46
+s71x16 : 48-48
+s71x17 : 50-50
+s71x18 : 51-51
+s71x19 : 45-45
+s71x2 : 21-21
+s71x20 : 43-43
+s71x21 : 38-38
+s71x3 : 3-3
+s71x4 : 2-2
+s71x5 : 20-20
+s71x6 : 16-16
+s71x7 : 16-16
+s71x8 : 53-53
+s71x: 8-8
+s71x3: 3-3
+s71x4: 2-2
+s71x2: 21-21
+s71x5: 20-20
+s71x8: 53-53
+s71x9: 26-26
+s71x12: 23-23
+s71x10: 30-30
+s71x11: 28-28
+s71x13: 32-32
+s71x14: 34-34
+s71x15: 46-46
+s71x16: 48-48
+s71x19: 45-45
+s71x20: 43-43
+s71x21: 38-38
+s71x17: 50-50
+s71x18: 43-43
+
+# document level annotation:
+(s71s0 / sentence
+  :temporal ((document-creation-time :before s71a))
+  :modal ((root :modal author)
+                    (author :full-affirmative s71x)
+                    (author :full-affirmative s71x9)
+                    (author :full-affirmative s71x13)
+                    (author :full-affirmative s71x21)
+                    (author :full-affirmative s71x15)
+                    (author :full-affirmative s71x17)
+                    (author :full-affirmative s71x2))
+  :coref ((s71x3 :same-event s70x2)
+                    (s71i3 :same-entity s69i3)
+                    (s71x17 :same-event s68x2)))
+
+
+# :: snt72	 这个 习俗 一直 延续 到 了 20 世纪 ， 小孩子 们 都 将 哈曼 当成 “ 盖伊 · 福克斯 ” 一类 的 人 。
+
+# sentence level graph:
+(s72a / and
+  :op1 (s72x / 延续-01
+         :ARG1 (s72x3 / 习俗
+                 :mod (s72x4 / 这个))
+         :temporal (s72d / date-entity
+                     :century 20)
+         :mod (s72x5 / 一直)
+         :aspect performance)
+  :op2 (s72x2 / 当成-01
+         :ARG0 (s72x6 / 小孩子
+                 :refer-number plural)
+         :ARG1 (s72i2 / individual-person
+                 :name (s72n / name
+                         :op1 "哈曼"))
+         :ARG2 (s72x7 / 人
+                 :mod (s72x8 / 一类)
+                 :example (s72i3 / individual-person
+                            :name (s72n2 / name
+                                    :op1 "盖伊"
+                                    :op2 "·"
+                                    :op3 "福克斯")))
+         :aspect performance))
+
+# alignment:
+s72a : 0-0
+s72d : 0-0
+s72i2 : 14-14
+s72i3 : 17-19
+s72n : -1--1
+s72n2 : -1--1
+s72x : 4-4
+s72x2 : 15-15
+s72x3 : 2-2
+s72x4 : 1-1
+s72x5 : 3-3
+s72x6 : 10-11
+s72x7 : 23-23
+s72x: 4-4
+s72x3: 2-2
+s72x4: 1-1
+s72x5: 3-3
+s72x2: 15-15
+s72x6: 10-10
+s72x7: 23-23
+s72x8: 21-21
+
+# document level annotation:
+(s72s0 / sentence
+  :temporal ((document-creation-time :before s72a))
+  :modal ((root :modal author)
+                    (author :full-affirmative s72x)
+                    (author :full-affirmative s72x2))
+  :coref ((s72x3 :same-event s71x3)
+                    (s72i2 :same-entity s71i3)))
+
+
+# :: snt73	 在 19 世纪 50 年代 早期 ， 这个 习俗 仍然 在 伊朗 以及 偏远 的 库尔德斯坦 的 一些 社群 中 存在 。
+
+# sentence level graph:
+(s73x / 存在-01
+  :ARG0 (s73x2 / 社群
+          :mod (s73x3 / 一些)
+          :place (s73a / and
+                   :op1 (s73c / country
+                          :name (s73n / name
+                                  :op1 "伊朗"))
+                   :op2 (s73r / region
+                          :name (s73n2 / name
+                                  :op1 "库尔德斯坦")
+                          :mod (s73x4 / 偏远))))
+  :ARG1 (s73x5 / 习俗
+          :mod (s73x6 / 这个))
+  :mod (s73x7 / 仍然)
+  :temporal (s73d / date-entity
+              :century 19
+              :decade 50
+              :mod (s73x8 / 早期))
+  :aspect performance)
+
+# alignment:
+s73x : 21-21
+s73x2 : 19-19
+s73x3 : 18-18
+s73a : 0-0
+s73c : 12-12
+s73n : -1--1
+s73r : 16-16
+s73n2 : -1--1
+s73x4 : 14-14
+s73x5 : 9-9
+s73x6 : 8-8
+s73x7 : 10-10
+s73d : 0-0
+s73x: 21-21
+s73x2: 19-19
+s73x3: 18-18
+s73x4: 14-14
+s73x5: 9-9
+s73x6: 8-8
+s73x7: 10-10
+s73x8: 6-6
+
+# document level annotation:
+(s73s0 / sentence
+  :temporal ((document-creation-time :before s73x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s73x))
+  :coref ((s73x5 :same-event s72x3)))
+
+
+# :: snt74	 在 这些 地方 ， 有时候 会 一些 穆斯林 也 会 参加 。
+
+# sentence level graph:
+(s74x / 参加-01
+  :ARG0 (s74r / religious-group
+          :name (s74n / name
+                  :op1 "穆斯林")
+          :mod (s74x4 / 一些))
+  :place (s74x2 / 地方
+           :mod (s74x3 / 这些))
+  :temporal (s74x5 / 有时候)
+  :aspect performance)
+
+# alignment:
+s74x : 11-11
+s74r : 8-8
+s74n : -1--1
+s74x2 : 3-3
+s74x3 : 2-2
+s74x4 : 7-7
+s74x: 11-11
+s74x4: 7-7
+s74x2: 3-3
+s74x3: 2-2
+s74x5: 5-5
+
+# document level annotation:
+(s74s0 / sentence
+  :temporal ((document-creation-time :before s74x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s74x)))
+
+
+# :: snt75	 犹太人 也 有 在 普珥 节 吃 坚果 和 种子 的 习惯 。
+
+# sentence level graph:
+(s75h / have-91
+  :ARG1 (s75e / ethnic-group
+          :name (s75n / name
+                  :op1 "犹太人"))
+  :ARG2 (s75x / 习惯
+          :mod (s75x2 / 吃-01
+                 :ARG1 (s75a / and
+                         :op1 (s75x3 / 坚果)
+                         :op2 (s75x4 / 种子))
+                 :aspect performance)
+          :temporal (s75f / festival
+                      :name (s75n2 / name
+                              :op1 "普珥"
+                              :op2 "节"))))
+
+# alignment:
+s75a : 0-0
+s75e : 1-1
+s75f : 5-6
+s75h : 0-0
+s75n : -1--1
+s75n2 : -1--1
+s75x : 12-12
+s75x2 : 7-7
+s75x3 : 8-8
+s75x: 12-12
+s75x2: 7-7
+s75x3: 8-8
+s75x4: 10-10
+
+# document level annotation:
+(s75s0 / sentence
+  :temporal ((document-creation-time :before s75h))
+  :modal ((root :modal author)
+                    (author :full-affirmative s75x2))
+  :coref ((s75e :same-entity s67e)
+                    (s75f :same-entity s67f)))
+
+
+# :: snt76	 据 塔木德 所说 以斯帖 王后 在 亚哈 随鲁 宫中 只能 吃 到 这些 食品 ， 因为 她 没有 吃 犹太人 食品 的 机会 。
+
+# sentence level graph:
+(s76x / 据-02
+  :ARG0 (s76x2 / 吃-01
+          :ARG0 (s76i2 / individual-person
+                  :name (s76n2 / name
+                          :op1 "以斯帖")
+                  :ARG0-of (s76h / have-role-91
+                             :ARG2 (s76x3 / 王后)))
+          :ARG1 (s76x6 / 食品
+                  :mod (s76x7 / 这些))
+          :place (s76x4 / 宫
+                   :poss (s76i3 / individual-person
+                           :name (s76n3 / name
+                                   :op1 "亚哈"
+                                   :op2 "随鲁")))
+          :mod (s76x5 / 只能)
+          :reason (s76h2 / have-91
+                    :ARG1 s76i2
+                    :ARG2 (s76x8 / 机会
+                            :mod (s76x9 / 吃-01
+                                   :ARG1 (s76x10 / 食品
+                                           :mod (s76e / ethnic-group
+                                                  :name (s76n4 / name
+                                                          :op1 "犹太人")))
+                                   :aspect performance)))
+          :aspect performance)
+  :ARG1 (s76b / book
+          :name (s76n / name
+                  :op1 "塔木德"))
+  :aspect performance)
+
+# alignment:
+s76b : 2-2
+s76e : 20-20
+s76h : 5-5
+s76h2 : 0-0
+s76i2 : 0-0
+s76i3 : 7-8
+s76n : -1--1
+s76n2 : -1--1
+s76n3 : -1--1
+s76n4 : -1--1
+s76x : 1-1
+s76x10 : 21-21
+s76x2 : 11-11
+s76x3 : 5-5
+s76x4 : 9-9
+s76x5 : 10-10
+s76x6 : 14-14
+s76x7 : 13-3
+s76x8 : 23-23
+s76x: 1-1
+s76x2: 11-11
+s76x3: 5-5
+s76x6: 14-14
+s76x7: 13-13
+s76x5: 10-10
+s76x8: 23-23
+s76x9: 11-11
+s76x10: 14-14
+
+# document level annotation:
+(s76s0 / sentence
+  :temporal ((document-creation-time :before s76x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s76x9)
+                    (author :full-affirmative s76x2)
+                    (author :full-affirmative s76x))
+  :coref ((s76i2 :same-entity s28i3)
+                    (s76i3 :same-entity s21i2)
+                    (s76b :same-entity s49b)
+                    (s76e :same-entity s75e)))
+
+
+# :: snt77	 三角 馄饨 是 一种 以 熟肉 , 鸡肉 或 肝 和 汤 为 馅 的 饺子 ， 这是 德系 犹太人 在 普珥 节 吃 的 传统 食物 。
+
+# sentence level graph:
+(s77a / and
+  :op1 (s77i2 / identity-91
+         :ARG0 (s77x / 馄饨
+                 :mod (s77x2 / 三角))
+         :ARG1 (s77x3 / 饺子
+                 :mod (s77x4 / 为-02
+                        :ARG0 (s77a2 / and
+                                :op1 (s77o / or
+                                       :op1 (s77x6 / 熟肉)
+                                       :op2 (s77x7 / 鸡肉)
+                                       :op3 (s77x8 / 肝))
+                                :op2 (s77x5 / 汤))
+                        :ARG1 (s77x9 / 馅)
+                        :aspect performance)
+                 :unit (s77x10 / 种)
+                 :quant (s77x11 / 一)))
+  :op2 (s77i3 / identity-91
+         :ARG0 (s77x12 / 这)
+         :ARG1 (s77x13 / 食物
+                 :mod (s77x14 / 传统)
+                 :ARG1-of (s77x15 / 吃-01
+                            :ARG0 (s77e / ethnic-group
+                                    :name (s77n / name
+                                            :op1 "犹太人")
+                                    :mod (s77e2 / ethnic-group
+                                           :name (s77n2 / name
+                                                   :op1 "德系")))
+                            :temporal (s77f / festival
+                                        :name (s77n3 / name
+                                                :op1 "普珥"
+                                                :op2 "节"))
+                            :aspect performance))))
+
+# alignment:
+s77a : 0-0
+s77a2 : 0-0
+s77e : 20-0
+s77i2 : 0-0
+s77i3 : 0-0
+s77n : -1--1
+s77o : 0-0
+s77x : 2-2
+s77x10 : 4-4
+s77x11 : 4-4
+s77x12 : 18-17
+s77x13 : 27-27
+s77x14 : 26-26
+s77x15 : 24-24
+s77x2 : 1-1
+s77x3 : 16-16
+s77x4 : 13-13
+s77x5 : 12-12
+s77x6 : 6-6
+s77x7 : 8-8
+s77x8 : 10-10
+s77x9 : 14-14
+s77e2 : 19-19
+s77n2 : -1--1
+s77f : 22-2
+s77x: 2-2
+s77x2: 1-1
+s77x3: 16-16
+s77x4: 13-13
+s77x6: 6-6
+s77x7: 8-8
+s77x8: 10-10
+s77x5: 12-12
+s77x9: 14-14
+s77x13: 27-27
+s77x14: 26-26
+s77x15: 24-24
+
+# document level annotation:
+(s77s0 / sentence
+  :temporal ((document-creation-time :before s77a))
+  :modal ((root :modal author)
+                    (author :full-affirmative s77x4)
+                    (author :full-affirmative s77x15))
+  :coref ((s77n :same-entity s76e)
+                    (s77e :subset-of s76e)
+                    (s77f :same-entity s75f)))
+
+
+# :: snt78	 把 肉藏于 饺子 里 习俗 与 以斯帖 记 的 另 一个 典故 相关 — — 希伯来语 圣经 不 包括 上帝 的 指示 ， 上帝 似乎 躲 在 了 幕后 。
+
+# sentence level graph:
+(s78a / and
+  :op1 (s78x / 相关-01
+         :ARG0 (s78a2 / and
+                 :op1 (s78x2 / 习俗
+                        :mod (s78x4 / 藏-01
+                               :ARG1 (s78x5 / 肉)
+                               :place (s78x6 / 饺子)))
+                 :op2 (s78x3 / 典故
+                        :mod (s78x7 / 另)
+                        :quant (s78x8 / 一)
+                        :unit (s78x9 / 个)
+                        :poss (s78b / book
+                                :name (s78n / name
+                                        :op1 "以斯帖"
+                                        :op2 "记"))))
+         :aspect performance)
+  :op2 (s78a3 / and
+         :op1 (s78x10 / 包括-01
+                :ARG0 (s78b2 / book
+                        :name (s78n2 / name
+                                :op1 "圣经")
+                        :mod (s78l / language
+                               :name (s78n3 / name
+                                       :op1 "希伯来语")))
+                :ARG1 (s78x11 / 指示
+                        :poss (s78i2 / individual-person
+                                :name (s78n4 / name
+                                        :op1 "上帝")))
+                :polarity -
+                :aspect performance)
+         :op2 (s78x12 / 躲-01
+                :ARG0 (s78i3 / individual-person
+                        :name (s78n5 / name
+                                :op1 "上帝"))
+                :ARG2 (s78x13 / 幕后)
+                :mod (s78x14 / 似乎)
+                :aspect performance)))
+
+# alignment:
+s78a : 0-0
+s78x : 13-13
+s78a2 : 0-0
+s78x2 : 5-5
+s78x3 : 12-2
+s78x4 : 2-2
+s78x5 : 2-2
+s78x6 : 3-3
+s78x7 : 10-10
+s78x8 : 11-11
+s78x9 : 11-11
+s78b : 7-8
+s78n : -1--1
+s78a3 : 0-0
+s78x10 : 19-19
+s78b2 : 17-17
+s78n2 : -1--1
+s78l : 16-16
+s78n3 : -1--1
+s78x11 : 22-2
+s78i2 : 20-20
+s78n4 : -1--1
+s78x12 : 26-26
+s78i3 : 24-24
+s78n5 : -1--1
+s78x13 : 29-29
+s78x: 13-13
+s78x2: 5-5
+s78x6: 3-3
+s78x3: 12-12
+s78x7: 10-10
+s78x10: 19-19
+s78x11: 22-22
+s78x12: 26-26
+s78x13: 29-29
+s78x14: 25-25
+
+# document level annotation:
+(s78s0 / sentence
+  :temporal ((document-creation-time :before s78a))
+  :modal ((root :modal author)
+                    (author :full-affirmative s78x)
+                    (author :full-affirmative s78x10)
+                    (author :full-affirmative s78x12))
+  :coref ((s78b :same-entity s65b)
+                    (s78i2 :same-entity s78i3)))
+
+
+# :: snt79	 Aranygaluska 是 一种 由 油炸 面团 和 香草 奶油 组成 的 甜点 。
+
+# sentence level graph:
+(s79i2 / identity-91
+  :ARG0 (s79f / food-dish
+          :name (s79n / name
+                  :op1 "Aranygaluska"))
+  :ARG1 (s79x / 甜点
+          :ARG0-of (s79x2 / 组成-01
+                     :ARG1 (s79a / and
+                             :op1 (s79x3 / 面团
+                                    :mod (s79x4 / 油炸))
+                             :op2 (s79x5 / 奶油
+                                    :mod (s79x6 / 香草)))
+                     :aspect performance)
+          :unit (s79x7 / 种)
+          :quant (s79x8 / 一))
+  :aspect state)
+
+# alignment:
+s79i2 : 0-0
+s79f : 1-1
+s79n : -1--1
+s79x : 12-12
+s79x2 : 10-10
+s79a : 0-0
+s79x3 : 6-6
+s79x4 : 5-5
+s79x5 : 9-9
+s79x6 : 8-8
+s79x7 : 3-3
+s79x: 12-12
+s79x2: 10-10
+s79x3: 6-6
+s79x4: 5-5
+s79x5: 9-9
+s79x6: 8-8
+
+# document level annotation:
+(s79s0 / sentence
+  :temporal ((document-creation-time :before s79i2))
+  :modal ((root :modal author)
+                    (author :full-affirmative s79x2)
+                    (author :full-affirmative s79i2))
+  :coref ((s79f :subset-of s79x)))
+
+
+# :: snt80	 它 是 有 犹太人 血统 的 匈牙利 和 罗马尼亚 人 的 传统 食物 。
+
+# sentence level graph:
+(s80i2 / identity-91
+  :ARG0 (s80t / thing
+          :refer-number singular
+          :refer-person 3rd)
+  :ARG1 (s80x / 食物
+          :mod (s80x2 / 传统)
+          :poss (s80a / and
+                  :op1 (s80x4 / 人
+                         :mod (s80c / country
+                                :name (s80n2 / name
+                                        :op1 "匈牙利")))
+                  :op2 (s80x5 / 人
+                         :mod (s80c2 / country
+                                :name (s80n3 / name
+                                        :op1 "罗马尼亚")))
+                  :mod (s80h / have-91
+                         :ARG2 (s80x3 / 血统
+                                 :mod (s80e / ethnic-group
+                                        :name (s80n / name
+                                                :op1 "犹太人"))))))
+  :aspect state)
+
+# alignment:
+s80a : 0-0
+s80c : 7-7
+s80e : 4-4
+s80h : 0-0
+s80i2 : 0-0
+s80n : -1--1
+s80n2 : -1--1
+s80t : 0-0
+s80x : 13-13
+s80x2 : 12-2
+s80x3 : 5-5
+s80x4 : 10-10
+s80x5 : 10-10
+s80c2 : 9-9
+s80x: 13-13
+s80x2: 12-12
+s80x4: 10-10
+s80x5: 10-10
+s80x3: 5-5
+
+# document level annotation:
+(s80s0 / sentence
+  :temporal ((document-creation-time :before s80i2))
+  :modal ((root :modal author)
+                    (author :full-affirmative s80i2))
+  :coref ((s80e :same-entity s77n)))
+
+
+# :: snt81	 在 中世纪 ， 欧洲 的 犹太人 吃 一种 叫 Nilish 的 薄饼 卷 。
+
+# sentence level graph:
+(s81x / 吃-01
+  :ARG0 (s81e / ethnic-group
+          :name (s81n / name
+                  :op1 "犹太人")
+          :mod (s81c / continent
+                 :name (s81n2 / name
+                         :op1 "欧洲")))
+  :ARG1 (s81x2 / 卷-01
+          :mod (s81x3 / 薄饼)
+          :quant (s81x4 / 一)
+          :unit (s81x5 / 种)
+          :ARG0-of (s81x6 / 叫-01
+                     :ARG1 (s81f / food-dish
+                             :name (s81n3 / name
+                                     :op1 "Nilish"))))
+  :temporal (s81x7 / 中世纪)
+  :aspect performance)
+
+# alignment:
+s81x : 7-7
+s81e : 6-6
+s81n : -1--1
+s81c : 4-4
+s81n2 : -1--1
+s81x2 : 13-13
+s81x3 : 12-12
+s81x4 : 8-8
+s81x5 : 8-8
+s81x6 : 9-9
+s81f : 10-10
+s81n3 : -1--1
+s81x: 7-7
+s81x2: 13-13
+s81x3: 12-12
+s81x6: 9-9
+s81x7: 2-2
+
+# document level annotation:
+(s81s0 / sentence
+  :temporal ((document-creation-time :before s81x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s81x))
+  :coref ((s81e :same-entity s80e)
+                    (s81c :same-entity s56c)))
+
+
+# :: snt82	 各种 犹太人 社群 烘烤 的 面包 也 各不相同 。
+
+# sentence level graph:
+(s82x / 相同-01
+  :ARG0 (s82x2 / 面包
+          :ARG1-of (s82x3 / 烘烤-00
+                     :ARG0 (s82x4 / 社群
+                             :mod (s82e / ethnic-group
+                                    :name (s82n / name
+                                            :op1 "犹太人"))
+                             :mod (s82x5 / 各种))))
+  :polarity -
+  :aspect state)
+
+# alignment:
+s82x : 8-8
+s82x2 : 6-6
+s82x3 : 4-4
+s82x4 : 3-3
+s82e : 2-2
+s82n : -1--1
+s82x2: 6-6
+s82x3: 4-4
+s82x4: 3-3
+s82x5: 1-1
+
+# document level annotation:
+(s82s0 / sentence
+  :temporal ((document-creation-time :before s82x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s82x))
+  :coref ((s82e :same-entity s81e)))
+
+
+# :: snt83	 摩洛哥 的 犹太 社区 烘烤 一种 叫做 奥霍斯 · 德 · 哈曼 普珥 节 面包 ， 也 叫 哈曼 之耳 ， 有时 还会 被 烤成 哈曼 的 头 和 眼睛 的 形状 。
+
+# sentence level graph:
+(s83a / and
+  :op1 (s83x / 烘烤-00
+         :ARG1 (s83x2 / 面包
+                 :mod (s83f / festival
+                        :name (s83n / name
+                                :op1 "普珥"
+                                :op2 "节"))
+                 :ARG1-of (s83x3 / 叫做-01
+                            :ARG2 (s83f2 / food-dish
+                                    :name (s83n2 / name
+                                            :op1 "奥霍斯"
+                                            :op2 "·"
+                                            :op3 "德"
+                                            :op4 "·"
+                                            :op5 "哈曼"))
+                            :aspect performance)
+                 :ARG1-of (s83x6 / 叫-01
+                            :ARG2 (s83f3 / food-dish
+                                    :name (s83n5 / name
+                                            :op1 "哈曼"
+                                            :op2 "之耳"))
+                            :aspect performance))
+         :place (s83x4 / 社区
+                  :mod (s83e / ethnic-group
+                         :name (s83n3 / name
+                                 :op1 "犹太"))
+                  :place (s83c / country
+                           :name (s83n4 / name
+                                   :op1 "摩洛哥")))
+         :aspect performance)
+  :op2 (s83x5 / 烤-01
+         :mod (s83x7 / 有时)
+         :cause-of (s83x8 / 成-01
+                     :ARG1 (s83x9 / 形状
+                             :mod (s83a2 / and
+                                    :op1 (s83x10 / 头)
+                                    :op2 (s83x11 / 眼睛)
+                                    :poss (s83i2 / individual-person
+                                            :name (s83n6 / name
+                                                    :op1 "哈曼")))))
+         :aspect performance))
+
+# alignment:
+s83a : 0-0
+s83a2 : 0-0
+s83c : 1-1
+s83e : 3-3
+s83f : 13-3
+s83f2 : 8-12
+s83f3 : 19-20
+s83n : -1--1
+s83n2 : -1--1
+s83n3 : -1--1
+s83n4 : -1--1
+s83n5 : -1--1
+s83x : 5-5
+s83x10 : 28-28
+s83x11 : 30-30
+s83x2 : 15-5
+s83x3 : 7-7
+s83x4 : 4-4
+s83x5 : 25-25
+s83x6 : 18-18
+s83x7 : 22-22
+s83x8 : 25-25
+s83x9 : 32-32
+s83i2 : 26-26
+s83x: 5-5
+s83x2: 15-15
+s83x3: 7-7
+s83x6: 18-18
+s83x4: 4-4
+s83x7: 22-22
+s83x9: 32-32
+s83x10: 28-28
+s83x11: 30-30
+
+# document level annotation:
+(s83s0 / sentence
+  :temporal ((document-creation-time :before s83a))
+  :modal ((root :modal author)
+                    (author :full-affirmative s83x3)
+                    (author :full-affirmative s83x6)
+                    (author :full-affirmative s83x)
+                    (author :full-affirmative s83x5))
+  :coref ((s83x4 :subset-of s82x4)
+                    (s83x2 :subset-of s82x2)
+                    (s83i2 :same-entity s72i2)))
+
+
+# :: snt84	 这种 面包 由 鸡蛋 做成 ， 通过 拔掉 它 来 暗示着 哈曼 的 毁灭 。
+
+# sentence level graph:
+(s84a / and
+  :op1 (s84x / 做成-01
+         :ARG0 (s84x4 / 鸡蛋)
+         :ARG1 (s84x2 / 面包
+                 :mod (s84x3 / 这种))
+         :aspect performance)
+  :op2 (s84x5 / 暗示-01
+         :ARG1 (s84x6 / 毁灭
+                 :poss (s84i2 / individual-person
+                         :name (s84n / name
+                                 :op1 "哈曼")))
+         :manner (s84x7 / 拔掉-01
+                   :ARG1 (s84t / thing
+                           :refer-person 3rd
+                           :refer-number singular)
+                   :aspect performance)
+         :aspect performance))
+
+# alignment:
+s84a : 0-0
+s84x : 5-5
+s84x2 : 2-2
+s84x3 : 1-1
+s84x4 : 4-4
+s84x5 : 11-11
+s84x6 : 14-14
+s84i2 : 12-12
+s84n : -1--1
+s84x7 : 8-8
+s84x: 5-5
+s84x4: 4-4
+s84x2: 2-2
+s84x3: 1-1
+s84x6: 14-14
+s84x7: 8-8
+
+# document level annotation:
+(s84s0 / sentence
+  :temporal ((document-creation-time :before s84a))
+  :modal ((root :modal author)
+                    (author :full-affirmative s84x)
+                    (author :full-affirmative s84x7)
+                    (author :full-affirmative s84x5))
+  :coref ((s84i2 :same-entity s83i2)
+                    (s84x2 :same-entity s83x2)))
+
+
+# :: snt85	 在 波兰 犹太人 , 有 一种 叫 Koilitch 的 葡萄干 白 面包 。
+
+# sentence level graph:
+(s85h / have-91
+  :ARG0 (s85e / ethnic-group
+          :name (s85n / name
+                  :op1 "犹太人"))
+  :ARG1 (s85x / 面包
+          :mod (s85x2 / 白)
+          :mod (s85x3 / 葡萄干)
+          :ARG0-of (s85x4 / 叫-01
+                     :ARG1 (s85f / food-dish
+                             :name (s85n3 / name
+                                     :op1 "Koilitch")))
+          :unit (s85x5 / 种)
+          :quant (s85x6 / 一))
+  :place (s85c / country
+           :name (s85n2 / name
+                   :op1 "波兰"))
+  :aspect state)
+
+# alignment:
+s85h : 0-0
+s85e : 3-3
+s85n : -1--1
+s85c : 2-2
+s85n2 : -1--1
+s85x : 12-12
+s85x2 : 11-11
+s85x3 : 10-10
+s85x4 : 7-7
+s85f : 8-8
+s85n3 : -1--1
+s85x5 : 6-6
+s85x: 12-12
+s85x2: 11-11
+s85x3: 10-10
+s85x4: 7-7
+
+# document level annotation:
+(s85s0 / sentence
+  :temporal ((document-creation-time :before s85h))
+  :modal ((root :modal author)
+                    (author :full-affirmative s85h))
+  :coref ((s85e :same-entity s81e)
+                    (s85x :subset-of s82x2)))
+
+
+# :: snt86	 它 在 一个 长 的 圈 上 烘烤 而成 ， 上面 点缀着 彩色 糖果 。
+
+# sentence level graph:
+(s86a / and
+  :op1 (s86x / 烘烤-00
+         :ARG1 (s86t / thing
+                 :refer-person 3rd
+                 :refer-number singular)
+         :place (s86x3 / 圈
+                  :mod (s86x4 / 长)
+                  :mod (s86x5 / 一个))
+         :aspect performance)
+  :op2 (s86x2 / 点缀-01
+         :ARG1 (s86x6 / 糖果
+                 :mod (s86x7 / 彩色))
+         :place (s86x8 / 上面
+                  :op1 s86t)
+         :aspect performance))
+
+# alignment:
+s86a : 0-0
+s86t : 0-0
+s86x : 8-8
+s86x2 : 12-12
+s86x3 : 6-6
+s86x4 : 4-4
+s86x5 : 3-3
+s86x6 : 14-14
+s86x7 : 13-13
+s86x: 8-8
+s86x3: 6-6
+s86x4: 4-4
+s86x5: 3-3
+s86x6: 14-14
+s86x7: 13-13
+s86x8: 11-11
+
+# document level annotation:
+(s86s0 / sentence
+  :temporal ((document-creation-time :before s86a))
+  :modal ((root :modal author)
+                    (author :full-affirmative s86x)
+                    (author :full-affirmative s86x2))
+  :coref ((s86t :same-entity s85x)))
+
+
+# :: snt87	 这样 做 原因 是 为了 唤起 节日 欢乐 的 本质 。
+
+# sentence level graph:
+(s87i2 / identity-91
+  :ARG1 (s87x / 原因
+          :cause-of (s87x2 / 做-08
+                      :mod (s87x3 / 这样)
+                      :aspect performance))
+  :ARG2 (s87x4 / 唤起-01
+          :ARG1 (s87x5 / 本质
+                  :mod (s87x6 / 欢乐)
+                  :mod (s87x7 / 节日))
+          :aspect performance))
+
+# alignment:
+s87i2 : 0-0
+s87x : 3-3
+s87x2 : 2-2
+s87x3 : 1-1
+s87x4 : 6-6
+s87x5 : 10-10
+s87x6 : 8-8
+s87x: 3-3
+s87x2: 2-2
+s87x3: 1-1
+s87x4: 6-6
+s87x5: 10-10
+s87x6: 8-8
+s87x7: 7-7
+
+# document level annotation:
+(s87s0 / sentence
+  :temporal ((document-creation-time :before s86a))
+  :modal ((root :modal author)
+                    (author :full-affirmative s87x2)
+                    (author :full-affirmative s87x4))
+  :coref ((s87x7 :same-entity s77f)))
+
+

@@ -1,0 +1,1 @@
+This folder contains roles, abstract concept, named entities types, atrribute types, attribute values, modal types, modal strings that's consistent with list offered by Jens, and consistent with the UMR-Writer menu so far (July 27, 2023)

@@ -1,0 +1,274 @@
+# :: snt1	 1741 年 ， 连接 边陲 地区 与 俄国 欧洲 部分 的 西伯利亚 驿道 建成 后 ， 克拉斯诺亚尔斯克 迎来 了 一个 高速 发展期 。
+
+# sentence level graph:
+(s1c2 / consecutive
+  :op1 (s1x4 / 建成-01
+         :ARG1 (s1r / road
+                 :name (s1n2 / name
+                         :op1 "西伯利亚驿道")
+                 :mod (s1x / 连接-01
+                        :ARG1 (s1a / and
+                                :op1 (s1x2 / 地区
+                                       :mod (s1x3 / 边陲))
+                                :op2 (s1x5 / 部分
+                                       :mod (s1x6 / 欧洲)
+                                       :poss (s1c / country
+                                               :name (s1n / name
+                                                       :op1 "俄国"))))
+                        :aspect state))
+         :aspect performance)
+  :op2 (s1x7 / 迎来-01
+         :ARG0 (s1c3 / city
+                 :name (s1n3 / name
+                         :op1 "克拉斯诺亚尔斯克"))
+         :ARG1 (s1x8 / 发展期
+                 :mod (s1x9 / 高速))
+         :aspect performance)
+  :temporal (s1d / date-entity
+              :year 1741))
+
+# alignment:
+s1a : 0-0
+s1c : 8-8
+s1c2 : 0-0
+s1c3 : 17-17
+s1d : 0-0
+s1n : -1--1
+s1n2 : -1--1
+s1n3 : -1--1
+s1r : 12-13
+s1x : 4-4
+s1x2 : 6-6
+s1x3 : 5-5
+s1x4 : 14-14
+s1x5 : 10-10
+s1x6 : 9-9
+s1x7 : 18-18
+s1x8 : 22-22
+s1x4: 14-14
+s1x: 4-4
+s1x2: 6-6
+s1x3: 5-5
+s1x5: 10-10
+s1x6: 9-9
+s1x7: 18-18
+s1x8: 22-22
+s1x9: 21-21
+
+# document level annotation:
+(s1s0 / sentence
+  :temporal ((s1x4 :before s1x7))
+  :modal ((root :modal author)
+                    (author :full-affirmative s1x)
+                    (author :full-affirmative s1x4)
+                    (author :full-affirmative s1x7)))
+
+
+# :: snt2	 日后 这一 地区 的 发现 的 金矿 和 1895 年 通车 的 西伯利亚 铁路 进一步 促进 了 该 城市 的 发展 。
+
+# sentence level graph:
+(s2x / 促进-01
+  :ARG0 (s2a / and
+          :op1 (s2x3 / 发现-01
+                 :ARG1 (s2x9 / 金矿)
+                 :temporal (s2x6 / 日后)
+                 :place (s2x7 / 地区
+                          :mod (s2x8 / 这))
+                 :aspect performance)
+          :op2 (s2x4 / 通车-01
+                 :ARG0 (s2r / road
+                         :name (s2n / name
+                                 :op1 "西伯利亚铁路"))
+                 :temporal (s2d / date-entity
+                             :year 1895)
+                 :aspect performance))
+  :ARG1 (s2x2 / 发展
+          :poss (s2x10 / 城市
+                  :mod (s2x11 / 该)))
+  :mod (s2x5 / 进一步)
+  :aspect performance)
+
+# alignment:
+s2x : 16-16
+s2x2 : 21-21
+s2a : 0-0
+s2x3 : 5-5
+s2x4 : 11-11
+s2x5 : 15-15
+s2x6 : 1-1
+s2x7 : 3-3
+s2x8 : 2-2
+s2x9 : 7-7
+s2r : 13-14
+s2n : -1--1
+s2d : 0-0
+s2x10 : 19-19
+s2x: 16-16
+s2x3: 5-5
+s2x9: 7-7
+s2x6: 1-1
+s2x7: 3-3
+s2x4: 11-11
+s2x2: 21-21
+s2x10: 19-19
+s2x11: 18-18
+s2x5: 15-15
+
+# document level annotation:
+(s2s0 / sentence
+  :temporal ((s2x :after s2x3)
+                    (s2x :after s2x4)
+                    (s2x :after s1x4)
+                    (s2x :after s1x7))
+  :modal ((root :modal author)
+                    (author :full-affirmative s2x3)
+                    (author :full-affirmative s2x4)
+                    (author :full-affirmative s2x)))
+
+
+# :: snt3	 1749 年 ， 一颗 重达 700 公斤 的 石铁 陨石 坠落在 克拉斯诺亚尔斯克 以南 145 英里 处 。
+
+# sentence level graph:
+(s3x / 坠落
+  :ARG0 (s3x2 / 陨石
+          :mod (s3x3 / 石铁)
+          :mod (s3x4 / 重达
+                 :ARG0-of (s3m / mass-quantity   
+                            :unit (s3x5 / 公斤)
+                            :quant 700))
+          :unit (s3x6 / 颗))
+  :place (s3x7 / 处
+           :op1 (s3c / city
+                  :name (s3n / name
+                          :op1 "克拉斯诺亚尔斯克"))
+           :quant (s3d / distance-quantity
+                    :quant 145
+                    :unit (s3x8 / 英里))
+           :direction (s3x9 / 以南))
+  :year 1749
+  :aspect performance)
+
+# alignment:
+s3c : 12-12
+s3m : 0-0
+s3n : -1--1
+s3x : 1-1
+s3x2 : 10-10
+s3x3 : 9-9
+s3x4 : 5-5
+s3x5 : 7-7
+s3x6 : 4-4
+s3x7 : 16-16
+s3d : 0-0
+s3x8 : 15-15
+s3x2: 10-10
+s3x3: 9-9
+s3x4: 5-5
+s3x5: 7-7
+s3x7: 16-16
+s3x8: 15-15
+s3x9: 13-13
+
+# document level annotation:
+(s3s0 / sentence
+  :modal ((root :modal author)
+                    (author :full-affirmative s3x)))
+
+
+# :: snt4	 德国 博物学家 彼得 · 西蒙 · 帕拉斯 在 1772 年 使 其 出土 。
+
+# sentence level graph:
+(s4x / 出土-01                              
+  :ARG1 (s4x2 / 其)
+  :actor (s4i2 / individual-person
+           :name (s4n / name
+                   :op1 "彼得"
+                   :op2 "·"
+                   :op3 "西蒙"
+                   :op4 "·"
+                   :op5 "帕拉斯")
+           :ARG0-of (s4h / have-role-91         
+                      :ARG2 (s4x3 / 博物学家
+                              :mod (s4c / country
+                                     :name (s4n2 / name
+                                             :op1 "德国")))))
+  :year 1772                                
+  :aspect performance)
+
+# alignment:
+s4x : 13-13
+s4x2 : 12-12
+s4i2 : 3-7
+s4n : -1--1
+s4h : 0-0
+s4x3 : 2-2
+s4c : 1-1
+s4x: 13-13
+s4x2: 12-12
+s4x3: 2-2
+
+# document level annotation:
+(s4s0 / sentence
+  :temporal ((s4x :after s3x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s4x))
+  :coref ((s4x2 :same-entity s3x2)))
+
+
+# :: snt5	 这颗 陨石 在 科学史 上 意义 非凡 ， 因为 这是 人类 第一次 发现 并 研究 橄榄 陨石 。
+
+# sentence level graph:
+(s5x / 非凡-01
+  :ARG0 (s5x2 / 意义
+          :poss (s5x3 / 陨石
+                  :place (s5x4 / 史
+                           :mod (s5x5 / 科学))
+                  :mod (s5x6 / 这)
+                  :unit (s5x7 / 颗)))
+  :cause (s5a / and
+           :op1 (s5x8 / 发现-01
+                  :ARG0 (s5x10 / 人类)
+                  :ARG1 (s5x12 / 陨石
+                          :mod (s5x13 / 橄榄))
+                  :ord (s5o / ordinal-entity
+                         :value (s5x11 / 第一次))
+                  :aspect performance)
+           :op2 (s5x9 / 研究-01
+                  :ARG0 s5x10
+                  :ARG1 s5x12
+                  :ord s5o
+                  :aspect performance))
+  :aspect state)
+
+# alignment:
+s5a : 0-0
+s5x : 7-7
+s5x10 : 0-0
+s5x11 : 11-12
+s5x12 : 0-0
+s5x13 : 16-16
+s5x2 : 6-6
+s5x3 : 2-2
+s5x4 : 4-4
+s5x5 : 4-4
+s5x6 : 1-1
+s5x7 : 1-1
+s5x8 : 13-13
+s5x: 7-7
+s5x2: 6-6
+s5x3: 2-2
+s5x8: 13-13
+s5x10: 11-11
+s5x12: 2-2
+s5x13: 16-16
+s5x11: 12-12
+s5x9: 15-15
+
+# document level annotation:
+(s5s0 / sentence
+  :modal ((root :modal author)
+                    (author :full-affirmative s5x8)
+                    (author :full-affirmative s5x9)
+                    (author :full-affirmative s5x)))
+
+

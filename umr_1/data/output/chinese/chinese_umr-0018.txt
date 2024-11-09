@@ -1,0 +1,346 @@
+# :: snt1	 埃勾斯 回 雅典 之前 将 自己 的 武器 埋 在 了 一块 巨石 之下 ， 他 告诉 埃特拉 ， 当 孩子 长大 之后 ， 让 他 移动 巨石 、 取出 武器 。
+
+# sentence level graph:
+(s1c2 / consecutive
+  :op1 (s1x / 埋-01
+         :ARG0 (s1i2 / individual-person
+                 :name (s1n / name
+                         :op1 "埃勾斯"))
+         :ARG1 (s1x2 / 武器
+                 :poss (s1s / s1i2))
+         :ARG2 (s1x3 / 石
+                 :unit (s1x4 / 块)
+                 :place (s1x5 / 下)
+                 :mod (s1x17 / 巨))
+         :temporal (s1x6 / 之前
+                     :op1 (s1x7 / 回-01
+                            :ARG1 (s1c / country-region
+                                    :name (s1n2 / name
+                                            :op1 "雅典")))))
+  :op2 (s1x8 / 告诉-01
+         :ARG0 s1i2
+         :ARG1 (s1x9 / 让-02
+                 :ARG1 s1x12
+                 :ARG2 (s1a2 / and
+                         :op1 (s1x13 / 移动-01
+                                :ARG1 (s1x15 / 石
+                                        :mod (s1x16 / 巨)))
+                         :op2 (s1x14 / 取出-01
+                                :ARG1 s1x2))
+                 :temporal (s1x10 / 之后
+                             :op1 (s1x11 / 长大-01
+                                    :ARG0 (s1x12 / 孩子))))
+         :ARG2 (s1i3 / individual-person
+                 :name (s1n3 / name
+                         :op1 "埃特拉"))))
+
+# alignment:
+s1a2 : 0-0
+s1c : 3-3
+s1i2 : 1-1
+s1i3 : 18-18
+s1n : -1--1
+s1n2 : -1--1
+s1n3 : -1--1
+s1s : 0-0
+s1s2 : 0-0
+s1x : 9-9
+s1x10 : 23-23
+s1x11 : 22-22
+s1x12 : 0-0
+s1x13 : 27-27
+s1x14 : 30-30
+s1x15 : 28-28
+s1x16 : 28-28
+s1x17 : 13-13
+s1x2 : 0-0
+s1x3 : 13-13
+s1x4 : 12-12
+s1x5 : 14-14
+s1x6 : 4-4
+s1x7 : 2-2
+s1x8 : 17-17
+s1x: 9-9
+s1x2: 8-8
+s1x6: 4-4
+s1x7: 2-2
+s1x8: 17-17
+s1x9: 25-25
+s1x13: 27-27
+s1x14: 30-30
+s1x10: 23-23
+s1x11: 22-22
+s1x12: 21-21
+
+# document level annotation:
+(s1s0 / sentence
+  :temporal ((s1x :before s1x8)
+                    (s1x11 :after s1x13))
+  :coref ((s1i2 :same-entity s1s2)))
+
+
+# :: snt2	 之后 ， 埃勾斯 在 雅典 又 娶 了 刚刚 逃离 科林斯 的 美狄亚 （ 她 杀死 了 自己 与 伊阿宋 所生 的 孩子 ） 。
+
+# sentence level graph:
+(s2x / 娶-01
+  :ARG0 (s2i2 / individual-person
+          :name (s2n / name
+                  :op1 "埃勾斯"))
+  :ARG1 (s2i3 / individual-person
+          :name (s2n2 / name
+                  :op1 "美狄亚")
+          :mod (s2x3 / 逃离-01
+                 :ARG1 (s2c2 / country-region
+                         :name (s2n4 / name
+                                 :op1 "科林斯"))
+                 :mod (s2x4 / 刚刚)
+                 :cause-of (s2x5 / 杀死-01
+                             :ARG0 s2i3
+                             :ARG1 (s2x6 / 孩子
+                                     :poss (s2a / and
+                                             :op1 s2i3
+                                             :op2 (s2i4 / individual-person
+                                                    :name (s2n5 / name
+                                                            :op1 "伊阿宋")))))))
+  :place (s2c / country-region
+           :name (s2n3 / name
+                   :op1 "雅典"))
+  :temporal (s2x2 / 之后))
+
+# alignment:
+s2x : 1-1
+s2i2 : 1-1
+s2n : -1--1
+s2i3 : 0-0
+s2n2 : -1--1
+s2c : 5-5
+s2n3 : -1--1
+s2x2 : 1-1
+s2x3 : 10-10
+s2c2 : 11-11
+s2n4 : -1--1
+s2x4 : 9-9
+s2x5 : 16-16
+s2x6 : 23-23
+s2a : 0-0
+s2i4 : 20-20
+s2x: 7-7
+s2x3: 10-10
+s2x4: 9-9
+s2x5: 16-16
+s2x6: 23-23
+s2x2: 1-1
+
+# document level annotation:
+(s2s0 / sentence
+  :temporal ((s2x :after s1x)
+                    (s2x :after s1x8)
+                    (s2x3 :after s2x5)))
+
+
+# :: snt3	 忒修斯 则 与 母亲 生活 在 一起 ， 他 长大 后 取出 了 父亲 留下 的 武器 ， 母亲 让 他 去 雅典 找 父亲 埃勾斯 。
+
+# sentence level graph:
+(s3a / and
+  :op1 (s3x / 生活-01
+         :ARG0 (s3a2 / and
+                 :op1 (s3i2 / individual-person
+                        :name (s3n / name
+                                :op1 "忒修斯"))
+                 :op2 (s3h / have-rel-role-91
+                        :ARG2 (s3x2 / 母亲)))
+         :mod (s3x13 / 一起))
+  :op2 (s3x3 / 取出-01
+         :ARG0 s3i2
+         :ARG1 (s3x4 / 武器
+                 :mod (s3x7 / 留下-01
+                        :ARG0 (s3h2 / have-rel-role-91
+                                :ARG2 (s3x8 / 父亲))))
+         :temporal (s3x5 / 后
+                     :op1 (s3x6 / 长大-01
+                            :ARG0 s3i2)))
+  :op3 (s3x9 / 让-02
+         :ARG0 s3h
+         :ARG1 s3i2
+         :ARG2 (s3a3 / and
+                 :op1 (s3x11 / 去-01
+                        :ARG1 (s3c / country-region
+                                :name (s3n2 / name
+                                        :op1 "雅典")))
+                 :op2 (s3x10 / 找-01
+                        :ARG1 (s3i3 / individual-person
+                                :name (s3n3 / name
+                                        :op1 "埃勾斯")
+                                :ARG0-of (s3h3 / have-rel-role-91
+                                           :ARG2 (s3x12 / 父亲)))))))
+
+# alignment:
+s3a : 0-0
+s3a2 : 0-0
+s3a3 : 0-0
+s3c : 23-23
+s3h : 0-0
+s3h2 : 0-0
+s3h3 : 0-0
+s3i2 : 0-0
+s3i3 : 26-6
+s3n : -1--1
+s3n2 : -1--1
+s3n3 : -1--1
+s3x : 1-1
+s3x10 : 24-24
+s3x11 : 22-22
+s3x12 : 25-25
+s3x2 : 1-1
+s3x3 : 1-1
+s3x4 : 17-17
+s3x5 : 11-11
+s3x6 : 10-10
+s3x7 : 15-15
+s3x8 : 14-14
+s3x9 : 20-20
+s3x: 5-5
+s3x2: 4-4
+s3x13: 7-7
+s3x3: 12-12
+s3x4: 17-17
+s3x7: 15-15
+s3x8: 14-14
+s3x5: 11-11
+s3x6: 10-10
+s3x9: 20-20
+s3x11: 22-22
+s3x10: 24-24
+s3x12: 14-14
+
+# document level annotation:
+(s3s0 / sentence
+  :temporal ((s3x :before s3x3)
+                    (s3x :before s3x6)
+                    (s3x3 :before s3x11)
+                    (s3x6 :before s3x11))
+  :coref ((s3x2 :same-entity s1i3)
+                    (s1i2 :same-entity s3x8)))
+
+
+# :: snt4	 忒修斯 可以 选择 安全 的 海路 ， 但是 他 选择 了 危险 的 陆路 ， 一路上 打败 了 很多 恶名 昭著 的 强盗 ， 包括 「 舞棍 手 」 佩里弗特斯 、 「 扳树 贼 」 辛尼斯 、 克罗米翁 野猪 费亚 、 斯喀戎 、 刻耳库翁 、 「 铁床 匪 」 普洛克路斯忒斯 。
+
+# sentence level graph:
+(s4a / and
+  :op1 (s4x / 选择-01
+         :ARG0 (s4i2 / individual-person
+                 :name (s4n / name
+                         :op1 "忒修斯"))
+         :ARG1 (s4x2 / 陆路
+                 :mod (s4x3 / 危险))
+         :substitute (s4x4 / 选择-01
+                       :ARG0 s4i2
+                       :ARG1 (s4x5 / 海路
+                               :mod (s4x6 / 安全))
+                       :mod (s4x7 / 可以)))
+  :op2 (s4x8 / 打败-01
+         :ARG1 (s4x10 / 强盗-01
+                 :quant (s4x11 / 很多)
+                 :mod (s4x12 / 恶名昭著)
+                 :example (s4a2 / and
+                            :op1 (s4i3 / individual-person
+                                   :name (s4n2 / name
+                                           :op1 "佩里弗特斯")
+                                   :ARG0-of (s4i8 / identity-91
+                                              :ARG1 (s4x13 / 手
+                                                      :mod (s4x14 / 舞-01
+                                                             :ARG1 (s4x15 / 棍)))))
+                            :op2 (s4i4 / individual-person
+                                   :name (s4n3 / name
+                                           :op1 "辛尼斯")
+                                   :ARG0-of (s4i9 / identity-91
+                                              :ARG2 (s4x16 / 贼
+                                                      :mod (s4x17 / 扳
+                                                             :ARG1 (s4x18 / 树)))))
+                            :op3 (s4x19 / 野猪
+                                   :name (s4x20 / 费亚)
+                                   :place (s4r / region
+                                            :name (s4n4 / name
+                                                    :op1 "克罗米翁")))
+                            :op4 (s4i5 / individual-person
+                                   :name (s4n5 / name
+                                           :op1 "斯喀戎"))
+                            :op5 (s4i6 / individual-person
+                                   :name (s4n6 / name
+                                           :op1 "刻耳库翁"))
+                            :op6 (s4i7 / individual-person
+                                   :name (s4n7 / name
+                                           :op1 "普洛克路斯忒斯")
+                                   :ARG0-of (s4h4 / have-role-91
+                                              :ARG2 (s4x21 / 匪
+                                                      :mod (s4x22 / 床
+                                                             :mod (s4x23 / 铁)))))))
+         :temporal (s4x9 / 一路上)))
+
+# alignment:
+s4a : 0-0
+s4a2 : 0-0
+s4h4 : 0-0
+s4i2 : 0-0
+s4i3 : 30-30
+s4i4 : 36-36
+s4i5 : 42-42
+s4i6 : 44-44
+s4i7 : 50-50
+s4n : -1--1
+s4n2 : -1--1
+s4n3 : -1--1
+s4n4 : -1--1
+s4n5 : -1--1
+s4n6 : -1--1
+s4n7 : -1--1
+s4x : 0-0
+s4x10 : 23-23
+s4x11 : 19-19
+s4x12 : 20-21
+s4x13 : 28-28
+s4x14 : 27-27
+s4x15 : 27-27
+s4x16 : 34-34
+s4x17 : 33-33
+s4x18 : 33-33
+s4x19 : 39-39
+s4x2 : 14-14
+s4x20 : 40-40
+s4x21 : 48-48
+s4x22 : 47-47
+s4x23 : 47-47
+s4x3 : 12-12
+s4x4 : 10-10
+s4x5 : 6-6
+s4x6 : 4-4
+s4x7 : 2-2
+s4x8 : 17-17
+s4x9 : 16-16
+s4x: 3-3
+s4x2: 14-14
+s4x3: 12-12
+s4x4: 3-3
+s4x5: 6-6
+s4x6: 4-4
+s4x7: 2-2
+s4x8: 17-17
+s4x10: 23-23
+s4x11: 19-19
+s4x13: 28-28
+s4x16: 34-34
+s4x19: 39-39
+s4x20: 40-40
+s4x21: 48-48
+s4x9: 16-16
+
+# document level annotation:
+(s4s0 / sentence
+  :coref ((s4i3 :subset-of s4x10)
+                    (s4i4 :subset-of s4x10)
+                    (s4x19 :subset-of s4x10)
+                    (s4i5 :subset-of s4x10)
+                    (s4i6 :subset-of s4x10)
+                    (s4i7 :subset-of s4x10)))
+
+

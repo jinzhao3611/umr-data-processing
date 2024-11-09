@@ -1,0 +1,1826 @@
+# :: snt1
+Words               Haalá                ’áhoodzaa   shą́ą́’                             dohníi  ni’                dííniid  Bilį́į́’ Łizhinii   yę́ę
+Morphemes           Haalá          ’á- h- oo- dzaa  =shą́ą́’                         d- oh- níi  ni’            d- íí- niid  bilį́į́’ łizhinii  =yę́ę
+Morpheme Gloss(en)    how  TH AR 3.YI.PERF do.PERF    =INTRG  TH 2.DU/PL.ZERO.IMPF say.NEU.IMPF  PST  TH 3.YI.PERF say.PERF        Black.Horse  =when
+Morpheme Gloss(es)                                                                                                                                   
+Morpheme Cat          adv     v:PRVB v:AR v:TAMS v       prt                    v:QUAL v:TAMS v  adv        v:QUAL v:TAMS v              nprop    prt
+Word Gloss            how               it is done     INTRG                        you two say  PST                he said        Black Horse   when
+English Sent Gloss: "Come on, you boys. Remember what you said," said Black Horse.
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s1d / dííniid
+  :Aspect Activity
+  :actor (s1p / person)
+  :theme (s1d2 / dohníi
+           :Aspect Activity
+           :actor (s1p2 / person
+                    :refer-person 2nd
+                    :refer-number Dual)
+           :theme (s1x / ’áhoodzaa
+                    :Aspect Performance
+                    :undergoer (s1h / haalá))))
+
+# alignment:
+2nd :-1--1
+Activity :-1--1
+Dual :-1--1
+Performance :-1--1
+s1d :6-6
+s1d2 :4-4
+s1h :1-1
+s1p :-1--1
+s1p2 :-1--1
+s1x :2-2
+# document level annotation:
+
+
+
+
+# :: snt2
+Words               T’áá  ’áko  Na’niłhodí                         wolyéhę́ę  ’alą́ąjį’  ’ákóne’  dah                         yiite’  dóó  Naat’áanii   yę́ę                      yiyaayáahgi               yizhjih
+Morphemes           t’áá  ’áko  Na’niłhodí                   wo- l- yé =hę́ę  ’alą́ąjį’  ’ákóne’  dah                       yii- te’  dóó  Naat’áanii  =yę́ę                  yi- yaayáah =gi           yi- zh- jih
+Morpheme Gloss(en)  just    so      Limper  3.O.IMPF PAS call.NEU.IMPF =PAST      ahead    there   up  3.YI.ZERO.PERF run.TRNSL.PERF  and      leader  =PAST            3.DIR.POSS throat =at  3.DIR SPEC grab.PERF
+Morpheme Gloss(es)                                                                                                                                                                                                 
+Morpheme Cat         adv   adv       nprop                v:TAMS v:VAL v prt        adv      adv  adv                       v:TAMS v  prt           n    prt  Attaches to any category n post        v:OBJ v:OSBJ v
+Word Gloss          just    so      Limper                     he was called      ahead    there   up                         he ran  and      leader   PAST                    at his throat             grab.PERF
+English Sent Gloss: The one called Limper was the first to hop in there, and he grabbed the Agent by the collar. 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s2a / and
+  :op1 (s2y / yiite’
+         :Aspect Endeavor
+         :actor (s2p / person
+                  :Undergoer-of (s2w / wolyéhę́ę
+                                  :Aspect State
+                                  :theme (s2n / na’niłhodí-)))
+         :goal (s2x / ’alą́ąjį’
+                 :mod (s2x2 / ’ákóne’))
+         :mod (s2d / dah))
+  :op2 (s2y2 / yizhjih
+         :Aspect Performance
+         :actor s2p
+         :undergoer (s2y3 / yiyaayáahgi
+                      :part-of (s2p2 / person
+                                 :name (s2n2 / naat’áanii)))))
+
+# alignment:
+s2a :0-0
+s2y :8-8
+Endeavor :-1--1
+s2p :-1--1
+s2w :4-4
+State :-1--1
+s2n :3-undefined
+s2x :5-5
+s2x2 :6-6
+s2d :7-7
+s2y2 :12-13
+Performance :-1--1
+s2y3 :12-12
+s2p2 :-1--1
+s2n2 :10-10
+# document level annotation:
+
+
+
+
+# :: snt3
+Words                 ’Aadóó  t’áá ’át’é         ’áajį’  dah                         diijéé’
+Morphemes             ’aadóó  t’áá ’át’é       ’áa =jį’  dah                     d- ii- jéé’
+Morpheme Gloss(en)  and.then         all   there =up.to  off  INC 3.YI.ZERO.PERF run.PL.PERF
+Morpheme Gloss(es)                                                                          
+Morpheme Cat             prt         adv       adv post  adv                 v:QUAL v:TAMS v
+Word Gloss          And then         all  to that point   up             they started to run
+English Sent Gloss: Then they all rushed in. 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s3d / diijéé’
+  :Aspect Activity
+  :mod (s3d2 / dah)
+  :goal (s3x / ’áajį’)
+  :actor (s3p / person
+           :refer-person 3rd
+           :refer-number Plural
+           :quant (s3t / t’áá-’át’é)))
+
+# alignment:
+s3d :5-5
+Activity :-1--1
+s3d2 :4-4
+s3x :3-3
+s3p :-1--1
+3rd :-1--1
+Plural :-1--1
+s3t :2-2
+# document level annotation:
+
+
+
+
+# :: snt4
+Words               Hastiin  ’Adiits’a’ii     yę́ę   ’éí               wóniidi  tsin                                             dánídíkǫs   yę́ę                         báátis                                          yajiiltáál             níwohjigo
+Morphemes           hastiin  ’adiits’a’ii    =yę́ę   ’éí             wónii =di  tsin                                     dá- ní- d- í- kǫs  =yę́ę                       b- áátis                                  ya- j- ii- l- táál         níwoh =ji =go
+Morpheme Gloss(en)      man   interpreter  =former  this  back.of.the.room =at  wood  block TH TH 3.NI.IMPF move.through.air.SSO.SEMF.IMPF  =PAST                    3.POSS over  TH SPEC 3.YI.ZERO.PERF INTR move.feet.quickly.PERF  farther =away =being
+Morpheme Gloss(es)                                                                                                                                                                                                                                        
+Morpheme Cat              n             n      prt   prt                 n prt     n                         v:PRVB v:PRVB v:QUAL v:TAMS v    prt  Attaches to any category post                        v:PRVB v:OSBJ v:TAMS v:VAL v           adv prt prt
+Word Gloss              man   interpreter   former  this      back.of.the.room  wood                               blocks by swinging once   PAST                        over it                                      he jumped over          farther ???8
+English Sent Gloss: Chee jumped over the gate at the back of the room,
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s4y / yajiiltáál
+  :Aspect Performance
+  :path (s4b / báátis
+          :part-of (s4t / tsin-dánídíkǫs))
+  :goal (s4w / wóniidi)
+  :extent (s4n / níwohjigo)
+  :actor (s4p / person
+           :name (s4h / hastiin-’adiits’a’ii)))
+
+# alignment:
+s4y :9-10
+Performance :-1--1
+s4b :9-9
+s4t :6-7
+s4w :5-5
+s4n :11-11
+s4p :-1--1
+s4h :1-2
+# document level annotation:
+
+
+
+
+# :: snt5
+Words                 ’Aadóó  doo                                                 ’ééhoozin   da
+Morphemes             ’aadóó  doo                                         ’- éé- h- oo- zin   da
+Morpheme Gloss(en)  and.then  not  NSP.SBJ against.around IMPL 3.YI.ZERO.PERF know.NEU.PERF  not
+Morpheme Gloss(es)                                                                              
+Morpheme Cat             prt  prt                               v:OSBJ v:PRVB v:AR v:TAMS v  prt
+Word Gloss          And then  not                                          it was knowledge  not
+English Sent Gloss: and chaos followed.
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s5x / ’ééhoozin
+  :Aspect State
+  :polarity -
+  :experiencer (s5p / person))
+
+# alignment:
+s5x :3-3
+State :-1--1
+- :-1--1
+s5p :-1--1
+# document level annotation:
+
+
+
+
+# :: snt6
+Words                      Tł’óó’góó         tł’óó’góó  t’óó                                             daha’níits’a’
+Morphemes                Tł’óó’ =góó       tł’óó’ =góó  t’óó                                    da- ha- ’- ní i- ts’a’
+Morpheme Gloss(en)  outside =towards  outside =towards  just  DISTR AR NSP.SBJ say.NEU.IMPF 3.ZERO.IMPF hear.CONT.IMPF
+Morpheme Gloss(es)                                                                                                    
+Morpheme Cat                 adv prt           adv prt   adv                           v:DISTR  v:AR v:OSBJ v v:TAMS v
+Word Gloss                   outside           outside  just                                        sayings were heard
+English Sent Gloss: "Outside with him!" voices were saying.
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s6d / daha’níits’a’
+  :Aspect Performance
+  :stimulus (s6h / have-location-91
+              :ARG0 (s6p / person)
+              :ARG1 (s6a / and
+                      :op1 (s6t / tł’óó’góó)
+                      :op2 (s6t2 / tł’óó’góó))
+              :mode imperative
+              :mode expressive)
+  :mod (s6t3 / t’óó-))
+
+# alignment:
+s6d :4-4
+Performance :-1--1
+s6h :0-0
+imperative :-1--1
+s6p :-1--1
+s6a :0-0
+s6t :1-1
+s6t2 :2-2
+expressive :-1--1
+s6t3 :3-undefined
+# document level annotation:
+
+
+
+
+# :: snt7
+Words               Naat’áanii     yę́ę         tł’óó’góó                            yił                 ch’íníjéé’
+Morphemes           naat’áanii    =yę́ę       tł’óó’ =góó                          yi- ł             ch’í- ní- jéé’
+Morpheme Gloss(en)      leader  =former  outside =towards                3.DIR.POSS with  out 3.NI.PERF run.PL.PERF
+Morpheme Gloss(es)                                                                                                 
+Morpheme Cat                 n      prt           adv prt  Attaches to any category post            v:PRVB v:TAMS v
+Word Gloss              leader   former           outside                           with               they ran out
+English Sent Gloss: They started out with him.
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s7c / ch’íníjéé’
+  :Aspect Activity
+  :goal (s7t / tł’óó’góó)
+  :actor (s7p / person
+           :refer-person 3rd
+           :refer-number Plural)
+  :companion (s7p2 / person
+               :name (s7n / naat’áanii)))
+
+# alignment:
+s7c :5-5
+Activity :-1--1
+s7t :3-3
+s7p :-1--1
+3rd :-1--1
+Plural :-1--1
+s7p2 :-1--1
+s7n :1-1
+# document level annotation:
+
+
+
+
+# :: snt8
+Words                      Kǫ́ǫ́                            yił                    yijahgo  t’áá    ’atát’ah                   ch’ínísh’na’
+Morphemes                  kǫ́ǫ́                          yi- ł                yi- jah =go  t’áá  ’a- tát’ah             ch’í- nísh- ’- na’
+Morpheme Gloss(en)  through.here                3.DIR.POSS with  3.PROG run.PL.PROG =being  just    TH among  out 3.NI.PERF INTR crawl.PERF
+Morpheme Gloss(es)                                                                                                                         
+Morpheme Cat                 adv  Attaches to any category post               v:TAMS v prt   adv  v:OBJ post          v:PRVB v:TAMS v:VAL v
+Word Gloss          through here                      with them                   they ran  just       among                  I crawled out
+English Sent Gloss: As they were taking him outside I crawled and squeezed myself out among them. 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s8c / ch’ínísh’na’
+  :Aspect Performance
+  :actor (s8p / person
+           :refer-person 1st
+           :refer-number Singular)
+  :path (s8x / ’atát’ah
+          :part-of (s8p2 / person
+                     :refer-person 3rd
+                     :refer-number Plural))
+  :temporal (s8y / yijahgo
+              :Aspect Activity
+              :actor s8p2
+              :theme (s8p3 / person
+                       :refer-person 3rd
+                       :refer-number Singular)
+              :path (s8k / kǫ́ǫ́)))
+
+# alignment:
+s8c :6-6
+Performance :-1--1
+s8p :-1--1
+1st :-1--1
+Singular :-1--1
+s8x :5-5
+s8p2 :-1--1
+3rd :-1--1
+Plural :-1--1
+s8y :3-3
+Activity :-1--1
+s8p3 :-1--1
+s8k :1-1
+# document level annotation:
+
+
+
+
+# :: snt9
+Words                     T’áá  shį́į́  ’áko    wóne’dę́ę́’                                         dáda’deeskaal
+Morphemes                 t’áá  shį́į́  ’áko  wóne’ =dę́ę́’                               dá- da- ’- d- ees- kaal
+Morpheme Gloss(en)  completely   maybe    so   inside =from  block DISTR NSP.OBJ TH 3.SI.PERF apply.pressure.PERF
+Morpheme Gloss(es)                                                                                               
+Morpheme Cat               adv     adv   adv        adv prt                 v:PRVB v:DISTR  v:OBJ v:QUAL v:TAMS v
+Word Gloss          completely   maybe    so    from inside                                        they locked it
+English Sent Gloss: Just then they locked the door from the inside. 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s9d / dáda’deeskaal
+  :Aspect Performance
+  :actor (s9p / person
+           :refer-person 3rd
+           :refer-number Plural)
+  :place (s9w / wóne’dę́ę́’)
+  :manner (s9x / ’áko
+            :mod (s9t / t’áá)))
+
+# alignment:
+s9d :5-5
+Performance :-1--1
+s9p :-1--1
+3rd :-1--1
+Plural :-1--1
+s9w :4-4
+s9x :3-3
+s9t :1-1
+# document level annotation:
+
+
+
+
+# :: snt10
+Words               ’Ashiiké  naaki      ’ólta’jį’                                nii’nil  ńt’éé’   ’éí                          ’atah   t’áá  ’ákóne’                                           bidá’deelkaal      lá
+Morphemes           ’ashiiké  naaki    ’ólta’ =jį’                            nii- ’- nil  ńt’éé’   ’éí                        ’a- tah   t’áá  ’ákóne’                                 bi- dá- ’d- ee- l- kaal      lá
+Morpheme Gloss(en)      boys    two  school =up.to  1.DU/PL.NI.PERF NSP.SBJ move.PLO.PERF     PST  this                 NSP.POSS among  quite    there  3.POSS block AGT.PAS 3.NI.PERF PAS apply.pressure.PERF       !
+Morpheme Gloss(es)                                                                                                                                                                                                    
+Morpheme Cat               n    adv         n post                        v:TAMS v:OSBJ v     adv   prt  Attaches to any category post    adv      adv   Attaches to any category v:PRVB v:QUAL v:TAMS v:VAL v  interj
+Word Gloss              boys    two      to school                       they are brought    past  this                          among  quite    there                                        they were locked       !
+English Sent Gloss: Two of the boys who were going to go to school were locked in. 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s10b / bidá
+  :Aspect Performance
+  :mode expressive
+  :undergoer s10x
+  :place s10x3)
+
+# alignment:
+s10b :10-10
+Performance :-1--1
+expressive :-1--1
+s10x :1-12
+2 :undefined
+s10n :4-4
+s10x2 :3-3
+s10x3 :7-7
+s10p :-1--1
+3rd :-1--1
+Plural :-1--1
+s10x4 :9-9
+# document level annotation:
+
+
+
+
+# :: snt11
+Words               Toohnii                      wolyéé  ńt’éé’   ’éí  k’ad                     Kiichil                                 wolyé   dishínígíí                       náánáła’                             yił  ndilt’éego         t’áá                                                ’ákóne’é  bidá’deelkaal
+Morphemes           toohnii                  wo- l- yéé  ńt’éé’   ’éí  k’ad                   wo- l- yé                     di- sh- ní =nígíí     náánáła’                          yi- ł              n- di- l- t’ée =go        t’áá   ’ákóne’ =é                                 bi- dá- ’d- ee- l- kaal           None
+Morpheme Gloss(en)  Toohnii  3.O.IMPF PAS call.NEU.IMPF     PST  this   now  3.O.IMPF PAS call.NEU.IMPF  TH 1.SG.ZERO.IMPF say.NEU.IMPF =NMLZ  another one                3.DIR.POSS with  two TH INTR extend.IMPF =being       quite  there =NMLZ  3.POSS block AGT.PAS 3.NI.PERF PAS apply.pressure.PERF           None
+Morpheme Gloss(es)                                                                                                                                                                                                                                                                                                   None
+Morpheme Cat          nprop              v:TAMS v:VAL v     adv   prt   adv              v:TAMS v:VAL v                   v:QUAL v:TAMS v prt          adv  Attaches to any category post       v:PRVB v:QUAL v:VAL v prt         adv      adv prt   Attaches to any category v:PRVB v:QUAL v:TAMS v:VAL v           None
+Word Gloss          Toohnii                he is called    past  this   now                he is called                    referring me to it  another one                       with him                       being two       quite        there                                        they were locked           None
+English Sent Gloss: The one I referred to as River Man, who is now known as Short Hair, and another boy with him. These were the ones who were locked inside. 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s11b / bidá’deelkaal
+  :Aspect Performance
+  :undergoer (s11a / and
+               :op1 (s11p / person
+                      :Undergoer-of (s11d / dishínígíí-
+                                      :Aspect Habitual
+                                      :actor (s11p2 / person
+                                               :refer-person 1st
+                                               :refer-number Singular)
+                                      :theme (s11t / toohnii))
+                      :undergoer (s11w / wolyé
+                                   :Aspect State
+                                   :theme (s11k / kiichil)
+                                   :temporal (s11k2 / k’ad)))
+               :op2 (s11p3 / person
+                      :mod (s11n / náánáła’))
+               :mod (s11n2 / ndilt’éego-))
+  :place (s11x / ’ákóne’é))
+
+# alignment:
+s11b :14-14
+Performance :-1--1
+s11a :0-0
+s11p :-1--1
+s11d :8-undefined
+Habitual :-1--1
+s11p2 :-1--1
+1st :-1--1
+Singular :-1--1
+s11t :1-1
+s11w :7-7
+State :-1--1
+s11k :6-6
+s11k2 :5-5
+s11p3 :-1--1
+s11n :9-9
+s11n2 :11-undefined
+s11x :13-13
+# document level annotation:
+
+
+
+
+# :: snt12
+Words                ’Éí                        bininaa  hastiin  Wéela                      wolyéé  ńt’éé’                           dishnínígíí  Naat’áanii    yich’ijí           silį́į́’
+Morphemes            ’éí                      bi- ninaa  hastiin  Wéela                  wo- l- yéé  ńt’éé’                     di- sh- ní =nígíí  Naat’áanii  yi- ch’ijí         si- lį́į́’
+Morpheme Gloss(en)  this                  3.POSS reason      Mr.  Weela  3.O.IMPF PAS call.NEU.IMPF     PST  TH 1.SG.ZERO.IMPF say.NEU.IMPF =NMLZ      leader  3.DIR side  3.SI.PERF be.PERF
+Morpheme Gloss(es)                                                                                                                                                                          
+Morpheme Cat         prt  Attaches to any category post        n  nprop              v:TAMS v:VAL v     adv                   v:QUAL v:TAMS v prt           n  v:OBJ post           v:TAMS v
+Word Gloss          this                        because      Mr.  Weela               call.NEU.IMPF    past                        the one I call      leader    his side         has become
+English Sent Gloss: On account of this fact the man I spoke of as Weela took the Agent's side - 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s12h / have-role-91
+  :ARG0 (s12h2 / hastiin
+          :Undergoer-of (s12d / dishnínígíí
+                          :Aspect Habitual
+                          :theme (s12w / wéela)))
+  :ARG1 (s12y / yich’ijí
+          :part-of (s12p / person
+                     :name (s12n / naat’áanii)))
+  :Aspect Performance
+  :purpose (s12t / thing))
+
+# alignment:
+s12h :0-0
+Performance :-1--1
+s12h2 :-1--1
+s12d :7-7
+Habitual :-1--1
+s12w :4-4
+s12y :9-9
+s12p :-1--1
+s12n :8-8
+s12t :0-0
+# document level annotation:
+
+
+
+
+# :: snt13
+Words                                    Biye’  naalyéhé                             bá  hooghan   góne’                          ’atah                                                bidá’deelkaalgo                       biniinaa
+Morphemes                              Bi- ye’  naalyéhé                           b- á  hooghan   góne’                        ’a- tah                                    bi- dá- ’d- ee- l- kaal =go                     bi- niinaa
+Morpheme Gloss(en)                  3.POSS son     goods                     3.POSS for     home  inside                 NSP.POSS among  3.POSS block AGT.PAS 3.NI.PERF PAS apply.pressure.PERF =being                  3.POSS reason
+Morpheme Gloss(es)                                                                                                                                                                                                                   
+Morpheme Cat        Attaches to any category n         n  Attaches to any category post        n     adv  Attaches to any category post      Attaches to any category v:PRVB v:QUAL v:TAMS v:VAL v prt  Attaches to any category post
+Word Gloss                             His son     goods                            for     home  inside                          among                                                being locked up                     because of
+English Sent Gloss: it was because one of the boys locked in there was his son. 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s13h / have
+  :reason (s13b / bidá
+            :Aspect State
+            :undergoer (s13p / person
+                         :ARG0-of (s13k / kinship
+                                    :ARG1 (s13p2 / person
+                                            :refer-person 3rd
+                                            :refer-number Singular)
+                                    :ARG2 (s13b2 / biye)))
+            :place s13x)
+  :Aspect Performance)
+
+# alignment:
+s13h :undefined
+s13b :7-7
+State :-1--1
+s13p :-1--1
+s13k :0-0
+s13p2 :-1--1
+3rd :-1--1
+Singular :-1--1
+s13b2 :0-0
+s13x :6-6
+s13p3 :-1--1
+Plural :-1--1
+s13g :5-5
+s13n :2-4
+Performance :-1--1
+# document level annotation:
+
+
+
+
+# :: snt14
+Words               Naat’áanii     yę́ę          nagháíjigo    diné                            hoł                             noodah
+Morphemes           naat’áanii    =yę́ę      nagháí =ji =go    diné                          ha- ł                         n- oo- dah
+Morpheme Gloss(en)      leader  =former  there =away =being  person                 IMPL.POSS with  TH 3.PROG move.independently.PROG
+Morpheme Gloss(es)                                                                                                                   
+Morpheme Cat                 n      prt         adv prt prt       n  Attaches to any category post                    v:QUAL v:TAMS v
+Word Gloss              leader   former                away  people                      with them                           he moved
+English Sent Gloss: The mob was carrying the Agent away. 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s14n / noodah
+  :Aspect Activity
+  :actor (s14p / person
+           :refer-person 3rd
+           :refer-number Plural)
+  :theme (s14p2 / person
+           :name (s14n2 / naat’áanii-))
+  :goal (s14n3 / nagháíjigo))
+
+# alignment:
+s14n :6-6
+Activity :-1--1
+s14p :-1--1
+3rd :-1--1
+Plural :-1--1
+s14p2 :-1--1
+s14n2 :1-undefined
+s14n3 :3-3
+# document level annotation:
+
+
+
+
+# :: snt15
+Words               T’áá ’áyídí  góyaa     bidah             ’áajigo
+Morphemes           T’áá ’áyídí  góyaa     bidah         ’áa =ji =go
+Morpheme Gloss(en)       nearby   down  downward  there =away =being
+Morpheme Gloss(es)                                                  
+Morpheme Cat                adv    adv       adv         adv prt prt
+Word Gloss               nearby   down  downward               there
+English Sent Gloss: Not far from there, there was a drop. 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s15h / have-location-91
+  :ARG0 (s15t / t’áá-’áyídí)
+  :ARG1 (s15g / góyaa-bidah)
+  :mod (s15x / ’áajigo)
+  :Aspect State)
+
+# alignment:
+s15h :0-0
+s15t :1-1
+s15g :2-3
+s15x :4-4
+State :-1--1
+# document level annotation:
+
+
+
+
+# :: snt16
+Words                                       Bighá                      nílį́įgo  ’ałch’ishdę́ę́’  Bis Dootł’izh Deez’á
+Morphemes                                 bi- ghá                  ní- lį́į =go  ’ałch’ishdę́ę́’  Bis Dootł’izh Deez’á
+Morpheme Gloss(en)                 3.POSS highest  3.NI.IMPF be.NEU.IMPF =being   from.two.sides       Blue.Clay.Point
+Morpheme Gloss(es)                                                                                                    
+Morpheme Cat        Attaches to any category post                  v:TAMS v prt              adv                     n
+Word Gloss                                highest                         being   from two sides       Blue.Clay.Point
+English Sent Gloss: There was a wash in the blue clay with a point of land on either side. 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s16e / exist-91
+  :ARG0 (s16x / ’ałch’ishdę́ę́’)
+  :ARG1 (s16b / bis-dootł’izh-deez’á
+          :mod (s16b2 / bighá))
+  :Aspect State)
+
+# alignment:
+s16e :0-0
+State :-1--1
+s16x :2-3
+s16b :4-4
+s16b2 :1-1
+# document level annotation:
+
+
+
+
+# :: snt17
+Words                ’Éí                             bihoolyé
+Morphemes            ’éí                     bi- h- oo- l- yé
+Morpheme Gloss(en)  this  3.INV AR 3.O.IMPF PAS call.NEU.IMPF
+Morpheme Gloss(es)                                           
+Morpheme Cat         prt            v:OBJ v:AR v:TAMS v:VAL v
+Word Gloss          that                        it was called
+English Sent Gloss: That is how the trading post got its name. 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s17b / bihoolyé
+  :undergoer (s17p / place)
+  :theme (s17x / ’éí)
+  :Aspect State)
+
+# alignment:
+s17b :2-2
+s17p :0-0
+s17x :1-1
+State :-1--1
+# document level annotation:
+
+
+
+
+# :: snt18
+Words                T’áá                           nízaad     bidah
+Morphemes            t’áá                       n- í- zaad     bidah
+Morpheme Gloss(en)  quite  TH 3.ZERO.IMPF be.long.NEU.IMPF  downward
+Morpheme Gloss(es)                                                  
+Morpheme Cat          adv                  v:QUAL v:TAMS v       adv
+Word Gloss          quite                       it is long  downward
+English Sent Gloss: It was a long drop. 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s18h / have-mod-91
+  :ARG0 (s18b / bidah)
+  :ARG1 (s18n / nízaad
+          :mod (s18t / t’áá))
+  :Aspect State)
+
+# alignment:
+s18h :-1--1
+State :-1--1
+s18b :3-3
+s18n :2-2
+s18t :1-0
+# document level annotation:
+
+
+
+
+# :: snt19
+Words                  Bidah  góyaa                                    ’ahołhan
+Morphemes              bidah  góyaa                            ’a- h- o- ł- han
+Morpheme Gloss(en)  downward   down  NSP.OBJ TH 2.DU/PL.ZERO.IMPF TR throw.IMPF
+Morpheme Gloss(es)                                                             
+Morpheme Cat             adv    adv                 v:OBJ v:QUAL v:TAMS v:VAL v
+Word Gloss          downward   down                           you two throw him
+English Sent Gloss: "Throw him down there!"
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s19x / ’ahołhan
+  :Aspect Activity
+  :mode imperative
+  :actor (s19p / person
+           :refer-person 2nd
+           :refer-number Dual)
+  :direction (s19g / góyaa
+               :mod (s19b / bidah)))
+
+# alignment:
+s19x :2-3
+Activity :-1--1
+imperative :-1--1
+s19p :-1--1
+2nd :-1--1
+Dual :-1--1
+s19g :2-2
+s19b :1-1
+# document level annotation:
+
+
+
+
+# :: snt20
+Words                  Bidah  góyaa
+Morphemes              bidah  góyaa
+Morpheme Gloss(en)  downward   down
+Morpheme Gloss(es)                 
+Morpheme Cat             adv    adv
+Word Gloss          downward   down
+English Sent Gloss: down there
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s20h / have-direction
+  :ARG1 (s20g / góyaa
+          :mod (s20b / bidah))
+  :Aspect Activity
+  :mode imperative)
+
+# alignment:
+s20h :0-0
+s20g :1-2
+s20b :1-1
+Activity :-1--1
+imperative :-1--1
+# document level annotation:
+
+
+
+
+# :: snt21
+Words                  Bidah  góyaa  t’óó                     daha’níits’a’
+Morphemes              bidah  góyaa  t’óó              da- ha- ’- níi ts’a’
+Morpheme Gloss(en)  downward   down  just  DISTR AR NSP.SBJ  hear.CONT.IMPF
+Morpheme Gloss(es)                                                         
+Morpheme Cat             adv    adv   adv            v:DISTR  v:AR v:OSBJ v
+Word Gloss          downward   down  just            many sounds were heard
+English Sent Gloss: down there" voices were heard saying.
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s21d / daha’níits’a’
+  :Aspect Activity
+  :stimulus (s21g / góyaa
+              :mod (s21b / bidah))
+  :mod (s21t / t’óó))
+
+# alignment:
+s21d :4-4
+Activity :-1--1
+s21g :2-2
+s21b :1-1
+s21t :3-3
+# document level annotation:
+
+
+
+
+# :: snt22
+Words               Nagháí    kin                       biniit’aadóó    diné                    lą’í                        naazį́įgo    ’áádóó                          ’atah                           sézį́
+Morphemes           nagháí    kin                   bi- niit’aa =dóó    diné                  lą’ =í                    naa- zį́į =go    ’áádóó                        ’a- tah                         sé- zį́
+Morpheme Gloss(en)   there  house          3.POSS to.a.barrier =from  person  be.many.NEU.IMPF =NMLZ  around stand.SG.NEU.PERF =being  and.then                 NSP.POSS among  1.SG.SI.PERF stand.SG.NEU.PERF
+Morpheme Gloss(es)                                                                                                                                                                                            
+Morpheme Cat           adv      n  Attaches to any category post prt       n                   v prt                     v:PRVB v prt       prt  Attaches to any category post                        v:TAMS v
+Word Gloss           there  house                       alongside it  people                    many                    were standing  and then                          among                  I was standing
+English Sent Gloss: A lot of people were standing alongside the trading post, and I among them.
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s22a / and
+  :op1 (s22s / sézį́
+         :Aspect State
+         :actor (s22p / person
+                  :refer-person 1st
+                  :refer-number Singular)
+         :place (s22x / ’atah
+                  :part-of s22p2))
+  :op2 (s22n / naazį́įgo
+         :Aspect State
+         :actor (s22p2 / person
+                  :quant (s22l / lą’í))
+         :place (s22b / biniit’aadóó
+                  :part-of (s22k / kin)
+                  :mod (s22n2 / nagháí))))
+
+# alignment:
+s22a :0-0
+s22s :9-9
+State :-1--1
+s22p :-1--1
+1st :-1--1
+Singular :-1--1
+s22n :6-6
+s22p2 :-1--1
+s22l :5-5
+s22b :3-3
+s22k :2-2
+s22n2 :1-1
+s22x :8-7
+# document level annotation:
+
+
+
+
+# :: snt23
+Words                                  Shidá’í     yę́ę   ’éí   t’áá                            shíighahdóó                        sizį́
+Morphemes                            shi- dá’í    =yę́ę   ’éí   t’áá                        sh- íighah =dóó                      si- zį́
+Morpheme Gloss(en)    1.SG.POSS maternal.uncle  =former  this  quite  1.SG.ZERO.IMPF proportionate.to =from  3.SI.PERF stand.SG.NEU.PERF
+Morpheme Gloss(es)                                                                                                                      
+Morpheme Cat        Attaches to any category n      prt   prt    adv                        v:TAMS post prt                     v:TAMS v
+Word Gloss                      maternal uncle   former  this  quite                              beside me              he was standing
+English Sent Gloss: My uncle was standing beside me,
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s23s / sizį́
+  :Aspect State
+  :actor (s23p / person
+           :ARG0-of (s23k / kinship-91
+                      :ARG1 (s23p2 / person
+                              :refer-person 1st
+                              :refer-number Singular)
+                      :ARG2 (s23s2 / shidá’í)))
+  :place (s23s3 / shíighahdóó
+           :part-of s23p2
+           :mod (s23t / t’áá)))
+
+# alignment:
+s23s :6-6
+State :-1--1
+s23p :-1--1
+s23k :0-0
+s23p2 :-1--1
+1st :-1--1
+Singular :-1--1
+s23s2 :1-1
+s23s3 :5-5
+s23t :4-4
+# document level annotation:
+
+
+
+
+# :: snt24
+Words                 ’Áádóó  háí    shį́į́   t’áá     ’éiyá  ’ałdó’  ’ákwii                   naazį́į  ni’   ’éí  doo                                           bénáshniih   da
+Morphemes             ’áádóó  háí    shį́į́   t’áá     ’éiyá  ’ałdó’  ’ákwii                 naa- zį́į  ni’   ’éí  doo                                    b- é ná- sh- niih   da
+Morpheme Gloss(en)  and.then  who  probably  quite  that.one    also   there  around stand.SG.NEU.PERF  PST  this  not  3.POSS against REV 1.SG.ZERO.IMPF remember.DUR.IMPF  not
+Morpheme Gloss(es)                                                                                                                                                              
+Morpheme Cat             prt  prt       adv    adv       adv     adv     adv                  v:PRVB v  adv   prt  prt        Attaches to any category post v:PRVB v:TAMS v  prt
+Word Gloss          And then  who  probably  quite  that one    also   there       was standing around  PST  this  not                                           I remember  not
+English Sent Gloss: and I don't remember who else was standing there. 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s24b / bénáshniih
+  :Aspect State
+  :polarity -
+  :experiencer (s24p / person
+                 :refer-person 1st
+                 :refer-number Singular)
+  :stimulus (s24h / háí
+              :Actor-of (s24n / naazį́į
+                          :Aspect State
+                          :place (s24x / ’ákwii)
+                          :mod (s24x2 / ’ałdó’-))
+              :mod (s24x3 / ’éiyá
+                     :mod (s24t / t’áá))))
+
+# alignment:
+s24b :12-12
+State :-1--1
+- :-1--1
+s24p :-1--1
+1st :-1--1
+Singular :-1--1
+s24h :2-2
+s24n :8-8
+s24x :7-7
+s24x2 :6-undefined
+s24x3 :5-5
+s24t :4-4
+# document level annotation:
+
+
+
+
+# :: snt25
+Words               Nahgóó                            yił                    yijahgo  hááhgóóshį́į́    diné                                ’adadziiłts’in
+Morphemes           nahgóó                          yi- ł                yi- jah =go  hááhgóóshį́į́    diné                      ’a- da- dz- ii- ł- ts’in
+Morpheme Gloss(en)   aside                3.DIR.POSS with  3.PROG run.PL.PROG =being           hard  person  TH DISTR TH SER TR strike.with.the.fist.IMPF
+Morpheme Gloss(es)                                                                                                                                       
+Morpheme Cat           adv  Attaches to any category post               v:TAMS v prt            adv       n          v:OBJ v:DISTR  v:QUAL v:QUAL v:VAL v
+Word Gloss           aside                      with them                    running           hard  person                they beat him with their fists
+English Sent Gloss: As the people carried the Agent along they beat him with their fists. 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s25x / ’adadziiłts’in
+  :Aspect Activity
+  :actor (s25p / person
+           :refer-person 3rd
+           :refer-number Plural
+           :Actor-of (s25y / yijahgo
+                       :Aspect Activity
+                       :manner (s25n / nahgóó-)
+                       :theme (s25p2 / person
+                                :refer-person 3rd
+                                :refer-number Singular)))
+  :undergoer s25p2)
+
+# alignment:
+s25x :6-6
+Activity :-1--1
+s25p :-1--1
+3rd :-1--1
+Plural :-1--1
+s25y :3-3
+s25n :0-0
+s25p2 :-1--1
+Singular :-1--1
+# document level annotation:
+
+
+
+
+# :: snt26
+Words               Naat’áanii   yę́ę                                ńdeiniłts’in
+Morphemes           naat’áanii  =yę́ę                        ń- de- ini- ł- ts’in
+Morpheme Gloss(en)      leader  =PAST  ITER DISTR TH TR strike.with.the.fist.IMPF
+Morpheme Gloss(es)                                                               
+Morpheme Cat                 n    prt              v:ITER v:DISTR  v:PRVB v:VAL v
+Word Gloss              leader   PAST                  they beat him up reeatedly
+English Sent Gloss: They were beating him up. 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s26x / ńdeiniłts’in
+  :Aspect Activity
+  :actor (s26p / person
+           :refer-person 3rd
+           :refer-number Plural)
+  :undergoer (s26p2 / person
+               :name (s26n / naat’áanii)))
+
+# alignment:
+s26x :3-3
+Activity :-1--1
+s26p :-1--1
+3rd :-1--1
+Plural :-1--1
+s26p2 :-1--1
+s26n :1-1
+# document level annotation:
+
+
+
+
+# :: snt27
+Words                           Ńléígóó                            yił                    yijahgo     Yoo’ó ’Adika’í                         wolyéhę́ę      kodóó                             ch’élwod
+Morphemes                     ńléí =góó                          yi- ł                yi- jah =go     yoo’ó ’adika’í                   wo- l- yé =hę́ę      kodóó                       ch’- é- l- wod
+Morpheme Gloss(en)  over.there =towards                3.DIR.POSS with  3.PROG run.PL.PROG =being  Bead.Clan.Gambler  3.O.IMPF PAS call.NEU.IMPF =PAST  from.here  out 3.YI.ZERO.PERF INTR run.SG.PERF
+Morpheme Gloss(es)                                                                                                                                                                                    
+Morpheme Cat                    adv prt  Attaches to any category post               v:TAMS v prt              nprop                v:TAMS v:VAL v prt        adv                v:PRVB v:TAMS v:VAL v
+Word Gloss                 further away                      with them                    running  Bead Clan Gambler                     he was called  from here                           he ran out
+English Sent Gloss: But as they carried him further away the one called Bead Clan Gambler went running from here where we were standing. 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s27c / ch’élwod
+  :Aspect Performance
+  :actor (s27p / person
+           :Undergoer-of (s27w / wolyéhę́ę
+                           :Aspect State
+                           :theme (s27y / yoo’ó-’adika’í)))
+  :start (s27k / kodóó)
+  :temporal (s27y2 / yijahgo
+              :Aspect Activity
+              :actor (s27p2 / person
+                       :refer-person 3rd
+                       :refer-number Plural)
+              :theme (s27p3 / person
+                       :refer-person 3rd
+                       :refer-number Singular)
+              :direction (s27x / ńléígóó)))
+
+# alignment:
+s27c :7-7
+Performance :-1--1
+s27p :-1--1
+s27w :5-5
+State :-1--1
+s27y :4-4
+s27k :6-6
+s27y2 :3-3
+Activity :-1--1
+s27p2 :-1--1
+3rd :-1--1
+Plural :-1--1
+s27p3 :-1--1
+Singular :-1--1
+s27x :1-1
+# document level annotation:
+
+
+
+
+# :: snt28
+Words                          Nahjí  hááhgóóshį́į́    diné  t’óó                naanáájah
+Morphemes                    nah =jí  hááhgóóshį́į́    diné  t’óó            naa- náá- jah
+Morpheme Gloss(en)       aside =away           hard  person  just   around REP run.PL.PROG
+Morpheme Gloss(es)                                                                        
+Morpheme Cat                 adv prt            adv       n   adv          v:PRVB v:PRVB v
+Word Gloss          over to one side           hard  people  just  they are milling around
+English Sent Gloss: Over to one side of Black Horse the people were merely milling around.
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s28n / naanáájah
+  :Aspect Activity
+  :actor (s28p / person
+           :refer-person 3rd
+           :refer-number Plural)
+  :manner (s28h / hááhgóóshį́į́)
+  :place (s28n2 / nahjí))
+
+# alignment:
+s28n :5-5
+Activity :-1--1
+s28p :-1--1
+3rd :-1--1
+Plural :-1--1
+s28h :2-2
+s28n2 :1-1
+# document level annotation:
+
+
+
+
+# :: snt29
+Words                     T’áá    shį́į́  ’ałtso                    bilį́į́’         kǫ́ǫ́                        naazį́įgo
+Morphemes                 t’áá    shį́į́  ’ałtso                  bi- lį́į́’         kǫ́ǫ́                    naa- zį́į =go
+Morpheme Gloss(en)  completely  probably     all                3.POSS horse  through.here  around stand.SG.NEU.PERF =being
+Morpheme Gloss(es)                                                                                                         
+Morpheme Cat               adv       adv     adv  Attaches to any category n           adv                     v:PRVB v prt
+Word Gloss                 all  probably     all                their horses          here                    were standing
+English Sent Gloss: All of them had their horses standing there nearby. 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s29n / naazį́įgo
+  :Aspect State
+  :actor (s29b / bilį́į́’
+           :poss (s29p / person
+                   :refer-person 3rd
+                   :refer-number Plural
+                   :quant (s29x / ’ałtso
+                            :mod (s29t / t’áá))))
+  :place (s29k / kǫ́ǫ́))
+
+# alignment:
+s29n :6-6
+State :-1--1
+s29b :4-4
+s29p :-1--1
+3rd :-1--1
+Plural :-1--1
+s29x :3-3
+s29t :0-0
+s29k :5-5
+# document level annotation:
+
+
+
+
+# :: snt30
+Words               T’óó                               ’idahidiikaii  łą́ą́      lá
+Morphemes           t’óó                     ’i- da- hi- d- ii- kaii  łą́ą́      lá
+Morpheme Gloss(en)  just  TH DISTR SER INC 3.YI.ZERO.PERF go.PL.PERF   many       !
+Morpheme Gloss(es)                                                                 
+Morpheme Cat         adv      v:PRVB v:DISTR  v:QUAL v:QUAL v:TAMS v    adv  interj
+Word Gloss          just                             they all joined   many       !
+English Sent Gloss: Many more joined him,
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s30x / ’idahidiikaii
+  :Aspect Performance
+  :actor (s30p / person
+           :refer-person 3rd
+           :refer-number Plural
+           :quant (s30x2 / łą́ą́))
+  :mod (s30t / t’óó)
+  :mode expressive)
+
+# alignment:
+s30x :2-2
+Performance :-1--1
+s30p :-1--1
+3rd :-1--1
+Plural :-1--1
+s30x2 :3-3
+s30t :1-1
+expressive :-1--1
+# document level annotation:
+
+
+
+
+# :: snt31
+Words               ’Asdzání         da  ła’                                 da’atah
+Morphemes           ’asdzání         da  ła’                             da- ’a- tah
+Morpheme Gloss(en)     woman  including  one                    DISTR NSP.POSS among
+Morpheme Gloss(es)                                                                  
+Morpheme Cat               n        prt  prt  v:DISTR  Attaches to any category post
+Word Gloss             women        not  one                              among them
+English Sent Gloss: and among these were some women. 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s31h / have-location-91
+  :ARG0 (s31d / da’atah)
+  :ARG1 (s31x / ’asdzání-
+          :refer-number Plural
+          :quant (s31d2 / da-ła’))
+  :Aspect State)
+
+# alignment:
+s31h :0-0
+s31d :3-4
+State :-1--1
+s31x :0-0
+Plural :-1--1
+s31d2 :2-3
+# document level annotation:
+
+
+
+
+# :: snt32
+Words                ’Éí    shį́į́  t’áá  ’ákǫ́ǫ́                          ’atah                                 dabiiską́  ’ałdó
+Morphemes            ’éí    shį́į́  t’áá  ’ákǫ́ǫ́                        ’a- tah                         da- b- ii- s- ką́  ’ałdó
+Morpheme Gloss(en)  this  probably  very    there                 NSP.POSS among  DISTR 3.INV TH 3.SI.PERF night.pass.PERF   also
+Morpheme Gloss(es)                                                                                                               
+Morpheme Cat         prt       adv   adv      adv  Attaches to any category post            v:DISTR  v:OBJ v:QUAL v:TAMS v    adv
+Word Gloss          this  probably  very    there                          among                     they passed the night   also
+English Sent Gloss: These women too had spent the night there with them. 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s32d / dabiiską́
+  :mod (s32x / ’ałdó)
+  :Aspect Performance
+  :undergoer (s32p / person
+               :refer-person 3rd
+               :refer-number Plural)
+  :place (s32x2 / ’atah
+           :mod (s32x3 / ’ákǫ́ǫ́-)
+           :part-of (s32p2 / person
+                      :refer-person 3rd
+                      :refer-number Plural)))
+
+# alignment:
+s32d :6-6
+s32x :6-7
+Performance :-1--1
+s32p :-1--1
+3rd :-1--1
+Plural :-1--1
+s32x2 :5-5
+s32x3 :4-undefined
+s32p2 :-1--1
+# document level annotation:
+
+
+
+
+# :: snt33
+Words                ’Éí    shį́į́    diné                      bitsą́                            ’áda’jił’į́                        biniiyé
+Morphemes            ’éí    shį́į́    diné                    bi- tsą́                  ’á- da- ’- ji- ł- ’į́                      bi- niiyé
+Morpheme Gloss(en)  this  probably  person                3.POSS belly   TH DISTR NSP.SBJ SPEC TR do.DUR.IMPF                 3.POSS purpose
+Morpheme Gloss(es)                                                                                                                          
+Morpheme Cat         prt       adv       n  Attaches to any category n  v:PRVB v:DISTR  v:OSBJ v:OSBJ v:VAL v  Attaches to any category post
+Word Gloss          this  probably  people                 their belly                   they prepared a meal                for the purpose
+English Sent Gloss: They had stayed to cook for the men. 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s33h / have-purpose-91
+  :ARG0 (s33e / event)
+  :ARG1 (s33x / ’áda’jił’į́
+          :Aspect Activity
+          :actor (s33p / person
+                   :refer-person 3rd
+                   :refer-number Plural)
+          :recipient (s33b / bitsą́
+                       :part-of (s33p2 / person
+                                  :refer-person 3rd
+                                  :refer-number Plural)))
+  :Aspect State)
+
+# alignment:
+s33h :-1--1
+s33e :0-0
+s33x :5-5
+Activity :-1--1
+s33p :-1--1
+3rd :-1--1
+Plural :-1--1
+s33b :4-4
+s33p2 :-1--1
+State :-1--1
+# document level annotation:
+
+
+
+
+# :: snt34
+Words                                     Bine’dę́ę́’   dó’  ’asdzání  ła’                          ’atah                 níyáá      lá
+Morphemes                             bi- ne’ =dę́ę́’   dó’  ’asdzání  ła’                        ’a- tah               ní- yáá      lá
+Morpheme Gloss(en)                3.POSS behind =from  also     woman  one                 NSP.POSS among  3.NI.PERF go.SG.PERF       !
+Morpheme Gloss(es)                                                                                                                     
+Morpheme Cat        Attaches to any category post prt   prt         n  prt  Attaches to any category post              v:TAMS v  interj
+Word Gloss                             from behind it  also     women  one                          among              she came       !
+English Sent Gloss: One of these women had come from over beyond the mountain.
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s34n / níyáá
+  :Aspect Performance
+  :start (s34b / bine’dę́ę́’)
+  :mod (s34d / dó’-)
+  :actor (s34x / ’asdzání
+           :ARG0-of (s34h / have-location-91
+                      :ARG1 (s34x2 / ’atah))
+           :unit 1))
+
+# alignment:
+s34n :6-6
+Performance :-1--1
+s34b :0-0
+s34d :1-undefined
+s34x :3-3
+s34h :0-0
+s34x2 :5-5
+1 :0-0
+# document level annotation:
+
+
+
+
+# :: snt35
+Words                ’Éí      hááhdóó    shį́į́  t’áá     ’éiyá  ’asdzání       t’áá ’éí  ni’
+Morphemes            ’éí    hááh =dóó    shį́į́  t’áá     ’éiyá  ’asdzání       t’áá ’éí  ni’
+Morpheme Gloss(en)  this  where =from  probably  very  that.one     woman      very this  PST
+Morpheme Gloss(es)                                                                           
+Morpheme Cat         prt      prt prt       adv   adv       adv         n        adv prt  adv
+Word Gloss          this   from where  probably  very  that one     woman  this very one  PST
+English Sent Gloss: I don’t know exactly where she came from. 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s35h / have-start
+  :ARG0 (s35x / ’asdzání)
+  :ARG1 (s35h2 / hááhdóó))
+
+# alignment:
+s35h :0-0
+s35x :6-6
+s35h2 :2-2
+# document level annotation:
+
+
+
+
+# :: snt36
+Words                          Kódzaago  t’áá   ch’ééh                    ’ádaaníigo   t’áá  ’ákwii                            yaa                      ’ádahalyą́                          nahalinii  dooda               daani
+Morphemes                  kó- dzaa =go  t’áá   ch’ééh              ’á- daa- níi =go   t’áá  ’ákwii                          y- aa              ’á- da- ha- l- yą́                    na- ha- lin =ii  dooda             daa- ni
+Morpheme Gloss(en)  thus do.PERF =being  very  in.vain  TH DISTR say.NEU.IMPF =being   very   there                  3.DIR.POSS to  TH DISTR AR INTR be.aware.IMPF  around AR resemble.NEU.IMPF =NMLZ     no  DISTR say.NEU.IMPF
+Morpheme Gloss(es)                                                                                                                                                                                                              
+Morpheme Cat               v:PRVB v prt   adv      adv         v:PRVB v:DISTR  v prt    adv     adv  Attaches to any category post    v:PRVB v:DISTR  v:AR v:VAL v                  v:PRVB v:AR v prt    prt          v:DISTR  v
+Word Gloss              thus took place  very  in.vain                        saying  exact   there                        to them               they take care of                the ones resembling     no            they say
+English Sent Gloss: When this happened Black Horse’s henchmen spoke without effect because there were others who were trying to keep order and who said "No" to the proposal to attack the soldiers. 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s36d / daani
+  :Aspect Activity
+  :actor (s36p / person
+           :refer-person 3rd
+           :refer-number Plural
+           :ARG0-of (s36n / nahalinii
+                      :ARG1 (s36x / ’ádahalyą́
+                              :actor s36p
+                              :place (s36x2 / ’ákwii
+                                       :mod (s36t / t’áá)))))
+  :theme (s36d2 / dooda)
+  :temporal (s36x3 / ’ádaaníigo
+              :Aspect Activity
+              :actor (s36p2 / person
+                       :refer-person 3rd
+                       :refer-number Plural)
+              :mod (s36c / ch’ééh
+                     :mod (s36t2 / t’áá))
+              :temporal (s36k / kódzaago
+                          :Aspect Performance)))
+
+# alignment:
+s36d :11-11
+Activity :-1--1
+s36p :-1--1
+3rd :-1--1
+Plural :-1--1
+s36d2 :10-10
+s36n :9-9
+s36x :8-8
+s36x2 :6-6
+s36t :5-5
+s36x3 :4-4
+s36p2 :-1--1
+s36c :3-3
+s36t2 :2-2
+s36k :1-1
+Performance :-1--1
+# document level annotation:
+
+
+
+
+# :: snt37
+Words                ’Éí    diné                    shijée’gi        kwii                       náánísdzá                          ’atah
+Morphemes            ’éí    diné                shi- jée’ =gi        kwii                 náá- nís- d- zá                        ’a- tah
+Morpheme Gloss(en)  this  people  3.SI.PERF lie.down.PERF =at  here.about  REV 1.SG.NI.PERF TH go.SG.PERF                 NSP.POSS among
+Morpheme Gloss(es)                                                                                                                      
+Morpheme Cat         prt       n                v:TAMS v post         adv           v:PRVB v:TAMS v:VAL v  Attaches to any category post
+Word Gloss          this  people  at where they were situated  here about                      I returned                     among them
+English Sent Gloss: I was one of those who came back (on the next day) to where the people were. 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s37n / náánísdzá
+  :Aspect Performance
+  :actor (s37p / person
+           :refer-person 1st
+           :refer-number Singular
+           :place (s37x / ’atah
+                    :part-of s37d))
+  :goal (s37s / shijée’gi
+          :Aspect State
+          :actor (s37d / diné
+                   :refer-number Plural)
+          :mod (s37k / kwii)))
+
+# alignment:
+s37n :5-5
+Performance :-1--1
+s37p :-1--1
+1st :-1--1
+Singular :-1--1
+s37s :3-3
+State :-1--1
+s37d :2-2
+Plural :-1--1
+s37x :6-6
+s37k :4-4
+# document level annotation:
+
+
+
+
+# :: snt38
+Words               Ńt’éé’   ’éí    diné                        bine’dę́ę́’                                  bíkahazt’i’                    silį́į’ii       tł’éédą́ą́’  hane’                                     bitaast’áanii                      niheeskai      lá
+Morphemes           ńt’éé’   ’éí    diné                    bi- ne’ =dę́ę́’                           b- íka ha- z- t’i’                si- lį́į’ =ii    tł’éé’ =dą́ą́’  hane’                            bi- taa s- t- ’áan =ii                ni- h- ees- kai      lá
+Morpheme Gloss(en)     PST  this  person                3.POSS behind =from        3.POSS after AR 3.SI.PERF extend.PERF  3.SI.PERF become.PERF =NMLZ        night =PST  story  3.POSS among 3.SI.PERF PAS handle.SRO.PERF =NMLZ  TERM SER 3.SI.PERF go.PL.PERF       !
+Morpheme Gloss(es)                                                                                                                                                                                                                                                     
+Morpheme Cat           adv   prt       n  Attaches to any category post prt  Attaches to any category post v:AR v:TAMS v                 v:TAMS v prt             n adv      n  Attaches to any category post v:TAMS v:VAL v prt         v:QUAL v:QUAL v:TAMS v  interj
+Word Gloss            past  this  people                     from behind it                            they spread (???)         the ones that became  The night before   news                                   were sent (???)                    had arrived       !
+English Sent Gloss: And I found that the people from beyond the mountain - those among whom the news had been spread, and who were sent for - had arrived. 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s38n / niheeskai
+  :Aspect Performance
+  :actor (s38p / person
+           :actor (s38d / diné
+                    :refer-number Plural)
+           :Theme-of (s38b / bíkahazt’i’
+                       :Aspect Performance
+                       :start (s38b2 / bine’dę́ę́’))
+           :Recipient-of (s38b3 / bitaast’áanii
+                           :Aspect Performance
+                           :theme (s38h / hane’)
+                           :temporal (s38t / tł’éédą́ą́’-))))
+
+# alignment:
+s38n :10-10
+Performance :-1--1
+s38p :-1--1
+s38d :3-3
+Plural :-1--1
+s38b :5-5
+s38b2 :4-4
+s38b3 :9-9
+s38h :8-8
+s38t :6-undefined
+# document level annotation:
+
+
+
+
+# :: snt39
+Words               Bee’eldǫǫh  ’índa  k’aa’         da                       shódaoozt’e’      lá
+Morphemes           bee’eldǫǫh  ’índa  k’aa’         da               shó- da- oo- z- t’e’      lá
+Morpheme Gloss(en)         gun   then  arrow  including  obtain DISTR TH 3.SI.PERF be.PERF       !
+Morpheme Gloss(es)                                                                                
+Morpheme Cat                 n    adv      n        prt    v:PRVB v:DISTR  v:QUAL v:TAMS v  interj
+Word Gloss                 gun   then  arrow  including                       they aquired       !
+English Sent Gloss: They had guns and bows and arrows. 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s39s / shódaoozt’e’
+  :Aspect Performance
+  :actor (s39p / person
+           :refer-person 3rd
+           :refer-number Plural)
+  :theme (s39a / and
+           :op1 (s39b / bee’eldǫǫh)
+           :op2 (s39k / k’aa’))
+  :mode expressive)
+
+# alignment:
+s39s :4-5
+Performance :-1--1
+s39p :-1--1
+3rd :-1--1
+Plural :-1--1
+s39a :0-0
+s39b :1-1
+s39k :3-3
+expressive :-1--1
+# document level annotation:
+
+
+
+
+# :: snt40
+Words                 Diné        dó’  łą́ą́      lá
+Morphemes             diné        dó’  łą́ą́      lá
+Morpheme Gloss(en)  person       also   many       !
+Morpheme Gloss(es)                                  
+Morpheme Cat             n        prt    adv  interj
+Word Gloss          people  also, too   many       !
+English Sent Gloss: These were many people. 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s40h / have-quant-91
+  :ARG0 (s40d / diné)
+  :ARG1 (s40x / łą́ą́)
+  :Aspect State
+  :mod (s40d2 / dó’)
+  :mode expressive)
+
+# alignment:
+s40h :-1--1
+State :-1--1
+s40d :1-1
+s40x :2-3
+s40d2 :1-2
+expressive :-1--1
+# document level annotation:
+
+
+
+
+# :: snt41
+Words               T’áá        kojí  t’áá                                  dabinááł                           nahalingo                                         ’íikaii        dó’  łą́ą́      lá
+Morphemes           t’áá      ko =jí  t’áá                             da- bi- náá ł                     na- ha- lin =go                                   ’- íi- kai =i        dó’  łą́ą́      lá
+Morpheme Gloss(en)  very  here =away  very                    DISTR 3.POSS eyes with  around AR resemble.NEU.IMPF =being  TH 1.DU/PL.NI.TH.YI.ZERO.IMPF go.PL.PERF =NMLZ       also   many       !
+Morpheme Gloss(es)                                                                                                                                                                                
+Morpheme Cat         adv     adv prt   adv  v:DISTR  Attaches to any category n post                   v:PRVB v:AR v prt                             v:PRVB v:TAMS v prt        prt    adv  interj
+Word Gloss          very        here   all                                 witnesses                          resembling                  we who went out of sight (???)  also, too   many       !
+English Sent Gloss: There were also many of us who had joined in just as spectators. 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s41x / ’íikaii
+  :Aspect Performance
+  :manner (s41n / nahalingo
+            :Aspect State
+            :companion (s41d / dabinááł))
+  :actor (s41p2 / person
+           :refer-person 3rd
+           :refer-number Plural
+           :quant (s41x2 / łą́ą́))
+  :mode expressive
+  :goal (s41k / kojí))
+
+# alignment:
+s41x :5-6
+Performance :-1--1
+s41n :5-5
+State :-1--1
+s41p2 :-1--1
+3rd :-1--1
+Plural :-1--1
+s41d :4-4
+s41x2 :7-8
+expressive :-1--1
+s41k :2-2
+# document level annotation:
+
+
+
+
+# :: snt42
+Words                Díí    diné                                        dahóółchį’ii                             bá  ch’iyáán               ’ál’į́įgi  hastiin  ńt’éé’      Tó Dík’ǫ́zhi  ńt’éé’  Tsézhints’óóz                       wolyéé  ńt’éé’   ’éí    shį́į́                  ha’áłchíní  t’áá  dah                        joo’ishgo  ’asdzání   ’éí    shį́į́                             bá  ch’iyáán                        ’ádajił’į́įgo  yiską́
+Morphemes            díí    diné                              da- h- óó- ł- chį’ =ii                           b- á  ch’iyáán         ’á- l- ’į́į =gi  hastiin  ńt’éé’      Tó Dík’ǫ́zhi  ńt’éé’  Tsézhints’óóz                   wo- l- yéé  ńt’éé’   ’éí    shį́į́                ha- ’áłchíní  t’áá  dah                  j- oo- ’ish =go  ’asdzání   ’éí    shį́į́                           b- á  ch’iyáán              ’á- da- ji- ł- ’į́į =go  yiską́
+Morpheme Gloss(en)  this  person  DISTR IMPL 3.YI.PERF TH become.ugly.NEU.PERF =NMLZ                     3.POSS for      food  TH PAS do.DUR.IMPF =at      man     PST  Salty.Water.Clan     PST   Slender.Lava  3.O.IMPF INTR call.NEU.IMPF     PST  this  probably          IMPL.POSS children  just   up  SPEC 3.PROG lead.DU.PROG =being     woman  this  probably                     3.POSS for      food  TH DISTR SPEC TR do.DUR.IMPF =being   night
+Morpheme Gloss(es)                                                                                                                                                                                                                                                                                                                                                                                                                                          
+Morpheme Cat         prt       n                    v:DISTR  v:AR v:TAMS v:VAL v prt  Attaches to any category post         n     v:PRVB v:VAL v post        n     adv             nprop     adv          nprop               v:TAMS v:VAL v     adv   prt       adv  Attaches to any category n   adv  adv              v:OSBJ v:TAMS v prt         n   prt       adv  Attaches to any category post         n   v:PRVB v:DISTR  v:OSBJ v:VAL v prt       n
+Word Gloss          this  people                        the ones that caused trouble                       for them      food       where it was made      man    past  Salty.Water.Clan    past   Slender.Lava                 he is called    past  this  probably                    children  just   up                    leading (???)     woman  this  probably                       for them      food                          they cooked   night
+English Sent Gloss: A man of the Salty Water Clan whose name was Slender Lava had his family there, and his wife cooked all night for the men who were making the trouble.
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s42y / yiską́
+  :Aspect Performance
+  :undergoer (s42x / ’asdzání-
+               :refer-number Singular
+               :ARG2-of (s42k / kinship-91
+                          :ARG0 (s42p / person
+                                  :refer-person 3rd
+                                  :refer-number Singular)
+                          :ARG1 (s42h / hastiin
+                                  :refer-number Singular
+                                  :ARG0-of (s42b / be-from
+                                             :ARG1 (s42c / clan
+                                                     :name (s42t / tó-dík’ǫ́zhi))
+                                             :Aspect State)
+                                  :Undergoer-of (s42w / wolyéé
+                                                  :Aspect State
+                                                  :theme (s42t2 / tsézhints’óóz))
+                                  :Actor-of (s42j / joo’ishgo
+                                              :Aspect Activity
+                                              :theme (s42p2 / person
+                                                       :ARG0-of (s42k2 / kinship-91
+                                                                  :ARG1 s42h
+                                                                  :ARG2 (s42h2 / ha’áłchíní)
+                                                                  :Aspect State))))))
+  :manner (s42x2 / ’ádajił’į́įgo
+            :Aspect Activity
+            :undergoer (s42c3 / ch’iyáán)
+            :recipient (s42d / diné
+                         :refer-number Plural
+                         :Actor-of (s42d2 / dahóółchį’ii
+                                     :Aspect Activity)))
+  :place (s42c2 / ch’iyáán-’ál’į́įgi))
+
+# alignment:
+s42y :26-26
+Performance :-1--1
+s42x :19-undefined
+s42x2 :25-25
+Activity :-1--1
+Singular :-1--1
+s42k :0-0
+s42h :7-7
+s42p :-1--1
+3rd :-1--1
+s42b :0-0
+s42c :0-0
+s42t :9-9
+s42w :12-12
+State :-1--1
+s42t2 :11-11
+s42j :19-19
+s42p2 :-1--1
+s42k2 :0-0
+s42h2 :16-16
+s42c2 :5-6
+s42c3 :24-24
+s42d :2-2
+Plural :-1--1
+s42d2 :3-3
+# document level annotation:
+
+
+
+
+# :: snt43
+Words                    ’Ahbínígo    shį́į́                      bitsą́                                                  ’ánááda’jiidlaa
+Morphemes              ’ahbíní =go    shį́į́                    bi- tsą́                                    ’á- náá- da- ’- j- ii- d- laa
+Morpheme Gloss(en)  morning =being  probably                3.POSS belly  TH SITR DISTR NSP.SBJ SPEC 3.YI.ZERO.PERF TH make.MOM3.PERF.PAS
+Morpheme Gloss(es)                                                                                                                       
+Morpheme Cat                 n prt       adv  Attaches to any category n             v:PRVB v:PRVB v:DISTR  v:OSBJ v:OSBJ v:TAMS v:QUAL v
+Word Gloss                 morning  probably                 their belly                                       they prepared a meal again
+English Sent Gloss: In the morning the women again prepared food for them. 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s43x / ’ánááda’jiidlaa
+  :Aspect Performance
+  :actor (s43p / person
+           :refer-person 3rd
+           :refer-number Singular)
+  :recipient (s43b / bitsą́
+               :recipient (s43p2 / person
+                            :refer-person 3rd
+                            :refer-number Plural))
+  :temporal (s43x2 / ’ahbínígo))
+
+# alignment:
+s43x :4-4
+Performance :-1--1
+s43p :-1--1
+3rd :-1--1
+Singular :-1--1
+s43b :3-3
+s43p2 :-1--1
+Plural :-1--1
+s43x2 :0-0
+# document level annotation:
+
+
+
+
+# :: snt44
+Words               ’Áko                        ńláhjí  siláago            yinééł
+Morphemes           ’áko                      ńláh =jí  siláago          yi- nééł
+Morpheme Gloss(en)    so  over.there =in.the.manner.of  soldier  3.PROG move.PROG
+Morpheme Gloss(es)                                                               
+Morpheme Cat         adv                       adv adv        n          v:TAMS v
+Word Gloss            so                    over.there  soldier  they were moving
+English Sent Gloss: Then the people noticed that the soldiers were moving along over there.
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s44y / yinééł
+  :Aspect Activity
+  :actor (s44s / siláago)
+  :path (s44x / ńláhjí))
+
+# alignment:
+s44y :4-4
+Activity :-1--1
+s44s :2-3
+s44x :2-2
+# document level annotation:
+
+
+
+
+# :: snt45
+Words               K’ad  hágoshį́į́
+Morphemes           k’ad  hágoshį́į́
+Morpheme Gloss(en)   now  all.right!
+Morpheme Gloss(es)                  
+Morpheme Cat         adv         adv
+Word Gloss           now  all.right!
+English Sent Gloss: All right now! All right!
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s45k / k'ad-hágoshį́į́
+  :mode expressive)
+
+# alignment:
+s45k :2-2
+expressive :-1--1
+# document level annotation:
+
+
+
+
+# :: snt46
+Words                T’áá        ńléí      dzígaigi  dooleeł
+Morphemes            t’áá        ńléí    dzígai =gi  dooleeł
+Morpheme Gloss(en)  right  over.there  flatland =at      FUT
+Morpheme Gloss(es)                                          
+Morpheme Cat          adv         adv        n post      prt
+Word Gloss          right  over there   in the flat   future
+English Sent Gloss: We’ll take them right over there in the flat. 
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s46h / have-goal
+  :ARG0 (s46p / person
+          :refer-person 3rd
+          :refer-number Singular)
+  :ARG1 (s46d / dzígaigi
+          :mod (s46x / ńléí
+                 :mod (s46t / t’áá)))
+  :Aspect Activity)
+
+# alignment:
+s46h :0-0
+Activity :-1--1
+s46d :3-3
+s46x :2-2
+s46t :1-0
+s46p :-1--1
+3rd :-1--1
+Singular :-1--1
+# document level annotation:
+
+
+
+
+# :: snt47
+Words               K’ad    hágoshíí
+Morphemes           k’ad    hágoshíí
+Morpheme Gloss(en)   now  all.right!
+Morpheme Gloss(es)                  
+Morpheme Cat         adv         adv
+Word Gloss           now  all.right!
+English Sent Gloss: All right now!
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s47k / k'ad-hágoshíí
+  :mode expressive)
+
+# alignment:
+s47k :1-2
+expressive :-1--1
+# document level annotation:
+
+
+
+
+# :: snt48
+Words               T’ah doo   yah               ’iinééhdą́ą́’  t’ah doo   yah               ’iinééhdą́ą́’
+Morphemes           T’ah doo   yah         ’- ii- nééh =dą́ą́’  t’ah doo   yah         ’- ii- nééh =dą́ą́’
+Morpheme Gloss(en)    before  into  NSP.SBJ SER move.IMPF =PST    before  into  NSP.SBJ SER move.IMPF =PST
+Morpheme Gloss(es)                                                                                        
+Morpheme Cat             adv   adv         v:OSBJ v:QUAL v adv       adv   adv         v:OSBJ v:QUAL v adv
+Word Gloss            before  into             they move (???)    before  into             they move (???)
+English Sent Gloss: Before they move in! Before they move in!
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s48b / be-temporally-at-91
+  :ARG0 (s48x / ’iinééhdą́ą́’
+          :Aspect Activity
+          :actor (s48p / person
+                   :refer-person 3rd
+                   :refer-number Plural)
+          :mod (s48y / yah))
+  :ARG1 (s48t / t’ah-doo)
+  :mode expressive)
+
+# alignment:
+s48b :-1--1
+s48x :3-3
+Activity :-1--1
+s48p :-1--1
+3rd :-1--1
+Plural :-1--1
+s48t :1-1
+s48y :2-2
+expressive :-1--1
+# document level annotation:
+
+
+
+
+# :: snt49
+Words                 Ha’át’íishą’                            bee                    ’ádoolnííł                níigo  Bilį́į́’ Łizhinii     yę́ę   ch’ééh        kwii                naanáálwoł
+Morphemes           ha’át’íi =shą’                          b- ee            ’á- d- oo- l- nííł              níi =go  bilį́į́’ łizhinii    =yę́ę   ch’ééh        kwii          naa- náá- l- woł
+Morpheme Gloss(en)     what =INTRG                    3.POSS with      TH FUT 3.PROG PAS do.FUT  say.NEU.IMPF =being        Black.Horse  =former  in.vain  here.about  around REP INTR run.PROG
+Morpheme Gloss(es)                                                                                                                                                                             
+Morpheme Cat               adv prt  Attaches to any category post  v:PRVB v:QUAL v:TAMS v:VAL v                v prt              nprop      prt      adv         adv     v:PRVB v:PRVB v:VAL v
+Word Gloss                    what                    by means of               it will be done               saying        Black Horse   former  in.vain  here about       running about again
+English Sent Gloss: Let's get them!" said Black Horse dashing about but without effect.
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s49n / naanáálwoł
+  :actor (s49p / person
+           :name (s49b / bilį́į́’-łizhinii))
+  :manner (s49c / ch’ééh)
+  :place (s49k / kwii)
+  :temporal (s49n2 / níigo
+              :Aspect Activity
+              :actor s49p
+              :theme (s49x / ’ádoolnííł-
+                       :Aspect Activity
+                       :instrument (s49h / ha’át’íishą’)))
+  :Aspect Activity)
+
+# alignment:
+s49n :9-9
+s49p :-1--1
+s49b :4-5
+s49c :7-7
+s49k :8-8
+s49n2 :4-4
+Activity :-1--1
+s49x :3-undefined
+s49h :0-0
+# document level annotation:
+
+
+
+
+# :: snt50
+Words               ’Áko  ’eii                  be’ashiiké          nilíinii  hááhgóóshį́į́                           hááhinoojah
+Morphemes           ’áko  ’eii                be- ’ashiiké      ni- líin =ii  hááhgóóshį́į́                 h- áá- hi- n- oo- jah
+Morpheme Gloss(en)    so  that                 3.POSS boys  TH be.PERF =NMLZ           hard      TH REV SER TH 3.PROG run.PL.PROG
+Morpheme Gloss(es)                                                                                                               
+Morpheme Cat         adv   adv  Attaches to any category n      v:QUAL v prt            adv  v:PRVB v:PRVB v:QUAL v:QUAL v:TAMS v
+Word Gloss            so  that                    his boys             being           hard      they came back one after another
+English Sent Gloss: But his boys were really impatient.
+Spanish Sent Gloss: 
+
+# sentence level graph:
+(s50h / hááhinoojah
+  :Aspect Activity
+  :actor (s50p / person
+           :ARG0-of (s50k / kinship-91
+                      :ARG1 (s50p2 / person
+                              :refer-person 3rd
+                              :refer-number Singular)
+                      :ARG2 (s50b / be’ashiiké)
+                      :Aspect State))
+  :manner (s50h2 / hááhgóóshį́į́-))
+
+# alignment:
+s50h :6-6
+Activity :-1--1
+s50p :-1--1
+s50k :0-0
+s50p2 :-1--1
+3rd :-1--1
+Singular :-1--1
+State :-1--1
+s50b :3-3
+s50h2 :5-undefined
+# document level annotation:
+
+
+
+

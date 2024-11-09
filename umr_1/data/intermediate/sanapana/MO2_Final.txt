@@ -1,0 +1,2358 @@
+# :: snt1	anyentehlehlta ampay'avehla'
+
+# sentence level graph:
+(s1h / have-mod-91
+  :ARG1 (s1t / thing)
+  :ARG2 (s1a / anyentehlehlta)
+  :temporal (s1a2 / ampay'avo-00)
+  :aspect state)
+
+# alignment:
+s1h: 0-0
+s1t: 0-0
+s1a: 1-1
+s1a2: 2-2
+
+# document level annotation:
+(s1s0 / sentence
+  :temporal ((past-reference :depends-on s1a2)
+                    (s1a2 :overlap s1h))
+  :modal ((root :modal author)
+                    (author :full-affirmative s1h)))
+
+
+# :: snt2	kenma'mekama'ha apkehlpasmoma valayona apkenma'mekama
+
+# sentence level graph:
+(s2e / enma'mekama-00
+  :actor (s2p / person
+           :refer-person 3rd
+           :refer-number plural)
+  :manner (s2e2 / empasmoma-00
+            :actor s2p
+            :undergoer (s2p2 / person
+                         :mod (s2n / nationality
+                                :name (s2n2 / name
+                                        :op1 "valayona")
+                                :wiki "Paraguay")
+                         :refer-number plural)
+            :temporal (s2e3 / enma'mekama-00
+                        :actor s2p2
+                        :aspect activity)
+            :aspect activity)
+  :mod (s2x / 'ha)
+  :place (s2p3 / place)
+  :aspect habitual)
+
+# alignment:
+s2e: 1-1
+s2e2: 2-2
+s2e3: 4-4
+s2n: 3-3
+s2n2: -1--1
+s2p: 0-0
+s2p2: 0-0
+s2p3: 0-0
+
+# document level annotation:
+(s2s0 / sentence
+  :temporal ((s1h :overlap s2e)
+                    (s2e :overlap s2e2)
+                    (s2e2 :overlap s2e3))
+  :modal ((root :modal author)
+                    (author :full-affirmative s2e3)
+                    (author :full-affirmative s2e2)
+                    (author :full-affirmative s2e))
+  :coref ((s1t :subset-of s2e)))
+
+
+# :: snt3	fabrica
+
+# sentence level graph:
+(s3f / fabrica)
+
+# alignment:
+s3f: 1-1
+
+# document level annotation:
+(s3s0 / sentence
+  :coref ((s2p3 :same-entity s3f)))
+
+
+# :: snt4	akyentahlnema apkenma'mekama
+
+# sentence level graph:
+(s4h / have-mod-91
+  :ARG1 (s4e / enma'mekama-00
+          :actor (s4p / person
+                   :refer-person 3rd
+                   :refer-number plural)
+          :aspect process)
+  :ARG2 (s4a / akyentahlnema)
+  :aspect state)
+
+# alignment:
+s4h: 0-0
+s4e: 2-2
+s4p: 0-0
+s4a: 1-1
+
+# document level annotation:
+(s4s0 / sentence
+  :temporal ((s4e :overlap s4h))
+  :modal ((root :modal author)
+                    (author :full-affirmative s4e)
+                    (author :full-affirmative s4h))
+  :coref ((s2e :same-event s4e)
+                    (s2p :same-entity s4p)))
+
+
+# :: snt5	metke akyanmoama
+
+# sentence level graph:
+(s5h / have-manner-91
+  :ARG1 (s5e / event)
+  :ARG2 (s5e2 / enyanmoama-00
+          :recipient (s5p / person)
+          :aspect process)
+  :aspect state)
+
+# alignment:
+s5h: 0-0
+s5e: 0-0
+s5e2: 2-2
+s5p: 0-0
+
+# document level annotation:
+(s5s0 / sentence
+  :temporal ((s5e :after s5e2)
+                    (s5e :overlap s5e2))
+  :modal ((root :modal author)
+                    (author :full-negative s5e2)
+                    (author :full-affirmative s5h))
+  :coref ((s4e :same-event s5e)
+                    (s4p :same-entity s5p)))
+
+
+# :: snt6	metko akyanmoama
+
+# sentence level graph:
+(s6e / exist-91
+  :ARG1 (s6t/ thing
+          :theme-of (s6e2 / enyanmoama-00
+                  :recipient (s6p / person)))
+  :aspect state)
+
+# alignment:
+s6e: 0-0
+s6e2: 2-2
+s6p: 0-0
+
+# document level annotation:
+(s6s0 / sentence
+  :temporal ((s5e :overlap s6e))
+  :modal ((root :modal author)
+                    (author :full-negative s6e))
+  :coref ((s5p :same-entity s6p)))
+
+
+# :: snt7	vanhla'ha mahla nema anma'mesekama'ha
+
+# sentence level graph:
+(s7e / enma'mesekama-00
+  :causer (s7p / person
+            :refer-person 3rd
+            :refer-number plural)
+  :actor (s7p2 / person
+           :refer-person 3rd
+           :refer-number plural)
+  :mod (s7v / vanhla'ha)
+  :aspect habitual
+  :mod (s7m / mahla))
+
+# alignment:
+s7e: 4-4
+s7p: 0-0
+s7p2: 0-0
+s7v: 1-1
+
+# document level annotation:
+(s7s0 / sentence
+  :temporal ((s5e :overlap s7e))
+  :modal ((root :modal author)
+                    (author :full-affirmative s7e))
+  :coref ((s6p :same-entity s7p2)
+                    (s2p2 :same-entity s7p)))
+
+
+# :: snt8	ta ko'o asvetay'ahlta
+
+# sentence level graph:
+(s8i / identity-91
+  :ARG0 (s8e / event)
+  :ARG1 (s8t / thing
+                 :stimulus-of (s8e2 / elvetay'a
+                         :experiencer (s8p / person
+                                 :refer-person 1st
+                                 :refer-number singular)
+                         :place (s8p2 / place)
+                         :aspect state))
+  :aspect state)
+
+# alignment:
+s8e: 0-0
+s8e2: 0-0
+s8p: 0-0
+
+# document level annotation:
+(s8s0 / sentence
+  :temporal ((past-reference :overlap s8e2)
+                    (s8e2 :overlap s8i)
+                    (s8e2 :overlap s8e))
+  :modal ((root :modal author)
+                    (s8p :full-affirmative s8e2)
+                    (s8e2 :unspecified s8t)
+                    (author :full-affirmative s8p)
+                    (author :full-affirmative s8i))
+  :coref ((s7e :same-event s8e)))
+
+
+# :: snt9	kam'a elenyemay'akha' ennengko'o
+
+# sentence level graph:
+(s9k / kam'a
+  :source-of (s9e / elenyemay'a-00
+              :actor (s9p / person
+                       :refer-person 1st
+                       :refer-number plural)
+              :aspect performance))
+
+# alignment:
+s9k: 1-1
+s9e: 2-2
+s9p: 0-0
+
+# document level annotation:
+(s9s0 / sentence
+  :temporal ((s8e2 :after s9e))
+  :modal ((root :modal author)
+                    (author :full-affirmative s9e))
+  :coref ((s9p :subset-of s8p)
+                    (s9p :subset-of s7p2)
+                    (s8p2 :same-entity s9k)))
+
+
+# :: snt10	nakhoye' na
+
+# sentence level graph:
+(s10h / have-mod-91
+  :ARG1 (s10e / event)
+  :ARG2 (s10n / nakhoye')
+  :aspect state)
+
+# alignment:
+s10h: 0-0
+s10e: 0-0
+s10n: 1-1
+
+# document level annotation:
+(s10s0 / sentence
+  :temporal ((s10e :overlap s10h))
+  :modal ((root :modal author)
+                    (author :full-affirmative s10h))
+  :coref ((s8e :same-event s10e)))
+
+
+# :: snt11	ampay'avehlahlta ko'o mahla ocho o diez añonehla asyahekama m'a
+
+# sentence level graph:
+(s11e / enyahekama-00
+  :actor (s11p / person
+           :refer-person 1st
+           :refer-number singular)
+  :place (s11m / m'a)
+  :temporal (s11a / ampay'avo-00)
+  :temporal (s11h / have-age-91
+              :ARG1 s11p
+              :ARG2 (s11o / or
+                      :op1 (s11t / temporal-quantity
+                             :unit (s11a2 / añonehla)
+                             :quant 8)
+                      :op2 (s11t2 / temporal-quantity
+                             :unit (s11a3 / añonehla)
+                             :quant 10))
+              :aspect state)
+  :aspect activity)
+
+# alignment:
+s11e: 8-8
+s11m: 9-9
+s11p: 0-0
+s11a: 1-1
+s11h: 0-0
+s11o: 0-0
+s11t: 0-0
+s11a2: 7-7
+s11t2: 0-0
+s11a3: 7-7
+
+# document level annotation:
+(s11s0 / sentence
+  :temporal ((s11a :overlap s11e)
+                    (past-reference :depends-on s11a)
+                    (s11e :overlap s11h))
+  :modal ((root :modal author)
+                    (author :neutral-affirmative s11h)
+                    (author :full-affirmative s11e))
+  :coref ((s1a2 :same-event s11a)
+                    (s8p :same-entity s11p)
+                    (s9k :same-entity s11m)))
+
+
+# :: snt12	askempay'avo na askehlpahlkekama valayo
+
+# sentence level graph:
+(s12e / empahlkay'a-00
+  :actor (s12p / person
+           :refer-person 1st
+           :refer-number singular)
+  :goal (s12p2 / person
+          :mod (s12n / nationality
+                 :name (s12n2 / name
+                         :op1 "valayo")
+                 :wiki "Paraguay")
+          :refer-number plural)
+  :aspect activity)
+
+# alignment:
+s12e: 3-3
+s12p: 0-0
+s12p2: 0-0
+s12n: -1--1
+s12n2: -1--1
+
+# document level annotation:
+(s12s0 / sentence
+  :temporal ((s11e :contained s12e))
+  :modal ((root :modal author)
+                    (author :full-affirmative s12e))
+  :coref ((s11p :same-entity s12p)
+                    (s7p :same-entity s12p2)))
+
+
+# :: snt13	askenmama a'temakhanhan apkeleyvoma valayo
+
+# sentence level graph:
+(s13e / enmama-00
+  :actor (s13p / person
+           :refer-person 1st
+           :refer-number singular)
+  :theme (s13t / thing
+           :manner-of (s13e2 / eleyvoma-00
+                        :actor (s13p2 / person
+                                 :mod (s13n / nationality
+                                        :name (s13n2 / name
+                                                :op1 "valayo")
+                                        :wiki "Paraguay")
+                                 :refer-number plural)
+                        :aspect activity))
+  :aspect activity)
+
+# alignment:
+s13e: 1-1
+s13p: 0-0
+s13t: 0-0
+s13e2: 3-3
+s13p2: 0-0
+s13n: -1--1
+s13n2: -1--1
+
+# document level annotation:
+(s13s0 / sentence
+  :temporal ((s12e :after s13e)
+                    (s13e :overlap s13e2))
+  :modal ((root :modal author)
+                    (author :full-affirmative s13e2)
+                    (author :full-affirmative s13e))
+  :coref ((s12p :same-entity s13p)
+                    (s12p2 :same-entity s13p2)))
+
+
+# :: snt14	na cultura pangkaona valayo
+
+# sentence level graph:
+(s14c / cultura
+  :poss (s14p / person
+          :mod (s14n / nationality
+                 :name (s14n2 / name
+                         :op1 "valayo")
+                 :wiki "Paraguay")
+          :refer-number plural))
+
+# alignment:
+s14c: 2-2
+s14p: 0-0
+s14n: -1--1
+s14n2: -1--1
+
+# document level annotation:
+(s14s0 / sentence
+  :coref ((s13t :same-entity s14c)
+                    (s13p2 :same-entity s14p)))
+
+
+# :: snt15	na mahla askelyepetkekangkanhan
+
+# sentence level graph:
+(s15a / and
+  :op1 (s15e / event)
+  :op2 (s15e2 / enyepetkay'a-00
+         :actor (s15p / person
+                  :refer-person 1st
+                  :refer-number singular)
+         :goal (s15p2 / person
+                 :refer-person 3rd
+                 :refer-number plural)
+         :aspect activity
+         :mod (s15m / mahla)))
+
+# alignment:
+s15a: 0-0
+s15e: 0-0
+s15e2: 3-3
+s15p: 0-0
+s15p2: 0-0
+
+# document level annotation:
+(s15s0 / sentence
+  :temporal ((s15e :overlap s15e2))
+  :modal ((root :modal author)
+                    (author :full-affirmative s15e2))
+  :coref ((s13e :same-event s15e)
+                    (s13p :same-entity s15p)
+                    (s14p :same-entity s15p2)))
+
+
+# :: snt16	tenyo mangkollekeskamohlka akvahlvaona meta'a valayonak elvetay'o ko'o
+
+# sentence level graph:
+(s16e / ellekeskama-00
+  :actor (s16e2 / elvetay'a-00
+           :experiencer (s16p / person
+                          :mod (s16n / nationality
+                                 :name (s16n2 / name
+                                         :op1 "valayo")
+                                 :wiki "Paraguay")
+                          :refer-number plural)
+           :stimulus (s16p2 / person
+                       :refer-person 1st
+                       :refer-number singular)
+           :aspect state)
+  :theme (s16a / akvahlvaona
+           :part s16p)
+  :source s16p
+  :ARG2-of (s16c / contrast-91
+             :ARG1 (s16e3 / event))
+  :aspect habitual)
+
+# alignment:
+s16a: 3-3
+s16c: 0-0
+s16e: 2-2
+s16e2: 6-6
+s16n: -1--1
+s16n2: -1--1
+s16p: 0-0
+s16p2: 0-0
+s16e3: 0-0
+
+# document level annotation:
+(s16s0 / sentence
+  :temporal ((s15e :overlap s16e)
+                    (s16e :overlap s16e2))
+  :modal ((root :modal author)
+                    (author :full-negative s16e)
+                    (author :full-affirmative s16e2))
+  :coref ((s15e2 :same-event s16e3)
+                    (s15p :same-entity s16p2)
+                    (s15p2 :same-entity s16p)))
+
+
+# :: snt17	ehltekangko meta'a nenhlet indio indio
+
+# sentence level graph:
+(s17e / entema-00
+  :actor (s17p / person
+           :refer-person 3rd
+           :refer-number plural)
+  :recipient (s17p2 / person
+               :refer-number singular
+               :refer-person 1st)
+  :theme (s17a / and
+           :op1 (s17n / nenhlet)
+           :op2 (s17i2 / indio))
+  :aspect habitual)
+
+# alignment:
+s17e: 1-1
+s17p: 0-0
+s17p2: 0-0
+s17a: 0-0
+s17n: 3-3
+s17i2: 4-4
+
+# document level annotation:
+(s17s0 / sentence
+  :temporal ((s15e :overlap s17e))
+  :modal ((root :modal author)
+                    (author :full-affirmative s17e))
+  :coref ((s16p :same-entity s17p)
+                    (s16p2 :same-entity s17p2)))
+
+
+# :: snt18	akvaya'moho ehlta'nongkoma ennengko'o ehlta'nongkoma
+
+# sentence level graph:
+(s18e / enta'nongkoma-00
+  :actor (s18p / person
+           :refer-number plural
+           :refer-person 3rd)
+  :recipient (s18p2 / person
+               :refer-number plural
+               :refer-person 1st)
+  :mod (s18a / akvaya'moho)
+  :aspect habitual)
+
+# alignment:
+s18e: 2-2
+s18p: 0-0
+s18p2: 0-0
+s18a: 1-1
+
+# document level annotation:
+(s18s0 / sentence
+  :temporal ((s15e :overlap s18e))
+  :modal ((root :modal author)
+                    (author :full-affirmative s18e))
+  :coref ((s17p :same-entity s18p)
+                    (s9p :subset-of s18p2)))
+
+
+# :: snt19	ta ko'o asvetay'ahlta
+
+# sentence level graph:
+(s19i / identity-91
+  :ARG0 (s19e / event)
+  :ARG1 (s19t / thing
+                 :stimulus-of (s19e2 / elvetay'a-00
+                         :experiencer (s19p / person
+                                 :refer-person 1st
+                                 :refer-number singular)
+                         :aspect state))
+  :aspect state)
+
+# alignment:
+s19e: 0-0
+s19p: 0-0
+s19e2: 0-0
+
+# document level annotation:
+(s19s0 / sentence
+  :temporal ((past-reference :overlap s19e2)
+                    (s19e2 :overlap s19i))
+  :modal ((root :modal author)
+                    (s19p :full-affirmative s19e2)
+                    (s19e2 :unspecified s19t)
+                    (author :full-affirmative s19p)
+                    (author :full-affirmative s19i))
+  :coref ((s18p2 :same-entity s19p)
+                    (s19e :subset-of s16e)
+                    (s19e :subset-of s17e)
+                    (s19e :subset-of s18e)))
+
+
+# :: snt20	mohltay'avo ennengko'o na olyepetkama
+
+# sentence level graph:
+(s20e / entay'avo-00
+  :experiencer (s20p / person
+                 :refer-number plural
+                 :refer-person 1st)
+  :stimulus (s20e2 / enyepetkay'a-00
+              :actor s20p
+              :goal (s20p2 / person
+                      :refer-number plural
+                      :refer-person 3rd)
+              :aspect performance)
+  :aspect state)
+
+# alignment:
+s20e: 0-0
+s20p: 0-0
+s20e2: 4-4
+s20p2: 0-0
+
+# document level annotation:
+(s20s0 / sentence
+  :temporal ((s15e :overlap s20e)
+                    (s20e :after s20e2))
+  :modal ((root :modal author)
+                    (s20p :full-affirmative s20e)
+                    (s20e :unspecified s20e2)
+                    (author :full-negative s20p))
+  :coref ((s18p2 :same-entity s20p)
+                    (s18p :same-entity s20p2)))
+
+
+# :: snt21	tenyo ahlengkeskamkehlta'ha akvayakmoho astahlnemakha' escuela
+
+# sentence level graph:
+(s21e / enhlengkeskama-00
+  :actor (s21p / person
+           :refer-number singular
+           :refer-person 1st)
+  :temporal (s21e2 / elvay'a-00
+              :op1 (s21e3 / entahlnema-00
+                     :actor s21p
+                     :goal (s21e4 / escuela)
+                     :aspect performance))
+  :aspect endeavor)
+
+# alignment:
+s21e: 2-2
+s21e2: 3-3
+s21p: 0-0
+s21e3: 4-4
+s21e4: 5-5
+
+# document level annotation:
+(s21s0 / sentence
+  :temporal ((s15e :overlap s21e)
+                    (s21e :after s21e3))
+  :modal ((root :modal author)
+                    (author :full-affirmative s21e3)
+                    (author :full-affirmative s21e))
+  :coref ((s19p :same-entity s21p)))
+
+
+# :: snt22	asva'mohla' segundo grado escuela
+
+# sentence level graph:
+(s22e / event
+  :temporal (s22e2 / elvay'a-00
+              :actor (s22p / person
+                       :refer-number singular
+                       :refer-person 1st)
+              :goal (s22g / grado
+                      :ord 2
+                      :part (s22e3 / escuela))
+              :aspect performance))
+
+# alignment:
+s22e: 0-0
+s22e2: 1-1
+s22p: 0-0
+s22g: 3-3
+s22e3: 4-4
+
+# document level annotation:
+(s22s0 / sentence
+  :temporal ((s21e3 :after s22e2)
+                    (s22e2 :overlap s22e))
+  :modal ((root :modal author)
+                    (author :full-affirmative s22e2))
+  :coref ((s21p :same-entity s22p)
+                    (s21e4 :same-entity s22e3)))
+
+
+# :: snt23	asyasangke' aktemakha' elyesetmala vakkahak
+
+# sentence level graph:
+(s23e / enyasekamok-00
+  :experiencer (s23p / person
+                 :refer-number singular
+                 :refer-person 1st)
+  :stimulus (s23e2 / elyesetma-00
+              :actor s23p
+              :undergoer (s23v / vakkahak
+                           :refer-number plural)
+              :aspect activity
+              :mod s23e)
+  :aspect state
+  :temporal (s23e3 / event))
+
+# alignment:
+s23e: 0-0
+s23p: 0-0
+s23e2: 3-3
+s23v: 4-4
+s23e3: 0-0
+
+# document level annotation:
+(s23s0 / sentence
+  :temporal ((s23e :overlap s23e2))
+  :modal ((root :modal author)
+                    (s23p :full-affirmative s23e)
+                    (s23e :unspecified s23e2)
+                    (author :full-affirmative s23p))
+  :coref ((s22e :same-event s23e)
+                    (s22p :same-entity s23p)
+                    (s22e2 :same-event s23e3)))
+
+
+# :: snt24	tenyo aktemakhana cultura pangkaok valayona
+
+# sentence level graph:
+(s24a / and
+  :op1 (s24e / event)
+  :op2 (s24t / thing
+         :part-of (s24c / cultura
+                    :poss (s24p / person
+                            :mod (s24n / nationality
+                                   :name (s24n2 / name
+                                           :op1 "valayo")
+                                   :wiki "Paraguay")
+                            :refer-number plural))
+         :refer-number plural))
+
+# alignment:
+s24a: 0-0
+s24e: 0-0
+s24t: 0-0
+s24c: 3-3
+s24p: 0-0
+s24n: -1--1
+s24n2: -1--1
+
+# document level annotation:
+(s24s0 / sentence
+  :coref ((s23e2 :same-event s24e)
+                    (s14c :same-entity s24c)
+                    (s20p2 :same-entity s24p)))
+
+
+# :: snt25	na yetnemana meta'a actividad escolar desfile aktemana ha'e
+
+# sentence level graph:
+(s25e / exist-91
+  :ARG1 (s25a / and
+          :op1 (s25a2 / actividad
+                 :topic (s25e2 / escolar))
+          :op2 (s25d / desfile)
+          :op3 (s25t / thing
+                 :ARG1-of (s25r / resemble-91
+                            :ARG2 (s25o / or
+                                    :op1 s25a2
+                                    :op2 s25d))))
+  :aspect habitual)
+
+# alignment:
+s25e: 0-0
+s25a: 0-0
+s25a2: 0-0
+s25e2: 5-5
+s25d: 0-0
+s25t: 0-0
+s25r: 0-0
+s25o: 0-0
+
+# document level annotation:
+(s25s0 / sentence
+  :temporal ((s23e :overlap s25e))
+  :modal ((root :modal author)
+                    (author :full-affirmative s25e)))
+
+
+# :: snt26	tenyo escuela eyangkaohlkek na kopmehek mahla yepetkekakha' m'a cultura pangkaohlke
+
+# sentence level graph:
+(s26e / enyepetkay'a-00
+  :actor (s26e2 / escuela
+           :poss (s26p / person
+                   :refer-number plural
+                   :refer-person 1st))
+  :goal (s26c / cultura
+          :poss (s26p2 / person
+                 :refer-number plural
+                 :refer-person 3rd)
+          :mod (s26m / m'a))
+  :mod (s26m2 / mahla)
+  :aspect habitual)
+
+# alignment:
+s26a: 0-0
+s26c: 9-9
+s26e: 7-7
+s26e2: 2-2
+s26m: 8-8
+s26p: 0-0
+s26p2: 0-0
+
+# document level annotation:
+(s26s0 / sentence
+  :temporal ((s23e :overlap s26e))
+  :modal ((root :modal author)
+                    (author :full-affirmative s26e))
+  :coref ((s22e3 :same-entity s26e2)
+                    (s26p :subset-of s23p)
+                    (s24c :same-entity s26c)
+                    (s24p :same-entity s26p2)))
+
+
+# :: snt27	tenyo valayohlke ehlteyannoho' meta'a ennengko'o nenhletanak
+
+# sentence level graph:
+(s27e / enteyannay'avo-00
+  :experiencer (s27p / person
+                 :mod (s27n / nationality
+                        :name (s27n2 / name
+                                :op1 "valayo")
+                        :wiki "Paraguay")
+                 :refer-number plural)
+  :stimulus (s27p2 / person
+              :refer-number plural
+              :mod (s27e2 / ethnic-group
+                     :name (s27n3 / name
+                             :op1 "nenhlet")
+                     :wiki "Sanapana")
+              :refer-person 1st)
+  :aspect habitual
+  :degree intensifier)
+
+# alignment:
+s27e: 3-3
+s27p: 0-0
+s27n: -1--1
+s27n2: -1--1
+s27p2: 0-0
+s27e2: -1--1
+s27n3: -1--1
+
+# document level annotation:
+(s27s0 / sentence
+  :temporal ((s23e :overlap s27e))
+  :modal ((root :modal author)
+                    (author :full-affirmative s27e))
+  :coref ((s26p2 :same-entity s27p)
+                    (s26p :same-entity s27p2)))
+
+
+# :: snt28	mangkollekeskama akvahlvaok
+
+# sentence level graph:
+(s28e / ellekeskama-00
+  :actor (s28e2 / event)
+  :theme (s28a / akvahlvaok
+           :part (s28p / person
+                   :refer-number plural
+                   :refer-person 3rd))
+  :source s28p
+  :aspect state)
+
+# alignment:
+s28e: 1-1
+s28t: 0-0
+s28a: 2-2
+s28p: 0-0
+
+# document level annotation:
+(s28s0 / sentence
+  :temporal ((s23e :overlap s28e))
+  :modal ((root :modal author)
+                    (author :full-negative s28e))
+  :coref ((s27e :same-event s28e2)
+                    (s16a :same-entity s28a)
+                    (s27p :same-entity s28p)))
+
+
+# :: snt29	mangkohl mehltay'avo mahla olyepetkama
+
+# sentence level graph:
+(s29e / entay'avo-00
+  :experiencer (s29p / person
+                 :refer-number plural
+                 :refer-person 3rd)
+  :stimulus (s29e2 / enyepetkay'a-00
+              :actor (s29p2 / person
+                       :refer-number plural
+                       :refer-person 1st)
+              :goal s29p
+              :mod (s29m / mahla)
+              :aspect activity)
+  :aspect state)
+
+# alignment:
+s29e: 0-0
+s29p: 0-0
+s29e2: 4-4
+s29p2: 0-0
+
+# document level annotation:
+(s29s0 / sentence
+  :temporal ((s23e :overlap s29e)
+                    (s29e :after s29e2))
+  :modal ((root :modal author)
+                    (s29p :full-affirmative s29e)
+                    (s29e :unspecified s29e2)
+                    (author :full-affirmative s29p))
+  :coref ((s28p :same-entity s29p)
+                    (s27p2 :same-entity s29p2)))
+
+
+# :: snt30	na asvetay'a ko'o
+
+# sentence level graph:
+(s30i2 / identity-91
+  :ARG0 (s30e / event)
+  :ARG2 (s30t / thing
+          :stimulus-of (s30e2 / elvetay'a-00
+                         :experiencer (s30p / person
+                                        :refer-number singular
+                                        :refer-person 1st)
+                         :aspect state))
+  :aspect state)
+
+# alignment:
+s30i2: 0-0
+s30e: 0-0
+s30e2: 0-0
+s30e3: 0-0
+s30p: 0-0
+
+# document level annotation:
+(s30s0 / sentence
+  :temporal ((s23e :overlap s30e2)
+                    (s30e2 :overlap s30i2))
+  :modal ((root :modal author)
+                    (author :full-affirmative s30p)
+                    (s30p :full-affirmative s30e2)
+                    (s30e2 :unspecified s30t))
+  :coref ((s30e :subset-of s27e)
+                    (s30e :subset-of s28e)
+                    (s30e :subset-of s29e)
+                    (s23p :same-entity s30p)))
+
+
+# :: snt31	observacion ahangkok ko'o aktemakha' hlemmea
+
+# sentence level graph:
+(s31i2 / identity-91
+  :ARG0 (s31e / event)
+  :ARG1 (s31t / thing
+          :stimulus-of (s31o / observar
+                  :experiencer (s31p / person
+                         :refer-number singular
+                         :refer-person 1st))
+          :topic (s31h / hlemmea))
+  :aspect state)
+
+# alignment:
+s31i2: 0-0
+s31e: 0-0
+s31o: 0-0
+s31p: 0-0
+s31h: 5-5
+
+# document level annotation:
+(s31s0 / sentence
+  :modal ((root :modal author)
+                    (s31p :full-affirmative s31o)
+                    (s31o :unspecified s31t)
+                    (author :full-affirmative s31p))
+  :coref ((s30i2 :same-event s31i2)
+                    (s30e :same-event s31e)
+                    (s30t :same-entity s31t)
+                    (s30e2 :same-entity s31o)
+                    (s30p :same-entity s31p)))
+
+
+# :: snt32	anyentehlehlta ennengko'o eleyvoma
+
+# sentence level graph:
+(s32h / have-mod-91
+  :ARG1 (s32e / eleyvoma-00
+          :actor (s32p / person
+                   :refer-number plural
+                   :refer-person 1st)
+          :aspect process)
+  :ARG2 (s32a / anyentehlehlta)
+  :aspect state)
+
+# alignment:
+s32h: 0-0
+s32e: 3-3
+s32p: 0-0
+s32a: 1-1
+
+# document level annotation:
+(s32s0 / sentence
+  :temporal ((s23e :overlap s32h)
+                    (s32h :overlap s32e))
+  :modal ((root :modal author)
+                    (author :full-affirmative s32e)
+                    (author :full-affirmative s32h))
+  :coref ((s29p2 :same-entity s32p)))
+
+
+# :: snt33	tenyo na elavakha' ennengko'o pueblo sanapana
+
+# sentence level graph:
+(s33e / elavakha'
+  :poss (s33p / person
+          :refer-number plural
+          :mod (s33e2 / ethnic-group
+                 :name (s33n / name
+                         :op1 "nenhlet")
+                 :wiki "Sanapana")
+          :refer-person 1st))
+
+# alignment:
+s33e: 3-3
+s33p: 0-0
+s33e2: -1--1
+s33n: -1--1
+
+# document level annotation:
+(s33s0 / sentence
+  :coref ((s9p :same-entity s33p)))
+
+
+# :: snt34	alenyay'avo aksavhommahlko elavakha'
+
+# sentence level graph:
+(s34e / ensavhommahlka'-00
+  :undergoer (s34e2 / elavakha'
+               :poss (s34p / person
+                       :refer-number plural
+                       :refer-person 1st))
+  :mod (s34a / alenyay'avo)
+  :aspect performance)
+
+# alignment:
+s34e: 2-2
+s34e2: 3-3
+s34p: 0-0
+s34a: 1-1
+
+# document level annotation:
+(s34s0 / sentence
+  :temporal ((past-reference :contained s34e))
+  :modal ((root :modal author)
+                    (author :full-affirmative s34e))
+  :coref ((s33e :same-entity s34e2)
+                    (s33p :same-entity s34p)))
+
+
+# :: snt35	ansavhommahlkeye' anmammahlka' ennengko'o elavakhahlta
+
+# sentence level graph:
+(s35a / and
+  :op1 (s35e / ensavhommahlka'-00
+         :undergoer (s35e2 / elavakhahlta
+                      :poss (s35p / person
+                              :refer-number plural
+                              :refer-person 1st))
+         :aspect performance)
+  :op2 (s35e3 / enmama-00
+         :theme s35e2
+         :aspect performance))
+
+# alignment:
+s35a: 0-0
+s35e: 1-1
+s35e2: 0-0
+s35p: 0-0
+s35e3: 2-2
+
+# document level annotation:
+(s35s0 / sentence
+  :temporal ((s35e :overlap s35e3))
+  :modal ((root :modal author)
+                    (author :full-affirmative s35e)
+                    (author :full-affirmative s35e3))
+  :coref ((s34e :same-event s35e)
+                    (s34e2 :same-entity s35e2)
+                    (s34p :same-entity s35p)))
+
+
+# :: snt36	pueblo sanapana
+
+# sentence level graph:
+(s36e / ethnic-group
+     :name (s36n / name
+          :op1 "sanapana"
+     :wiki "Sanapaná"))
+
+# alignment:
+s36e: 1-1
+
+# document level annotation:
+(s36s0 / sentence
+  :coref ((s33e2 :same-entity s36e)
+                    (s36e :subset-of s35p)))
+
+
+# :: snt37	ahlta apkeleyvomakha' hengka'e vaykakhavo rio verde entre rio paraguay
+
+# sentence level graph:
+(s37i2 / identity-91
+  :ARG0 (s37t / thing
+          :place-of (s37e / eleyvoma-00
+                      :actor (s37p / person
+                               :refer-number plural
+                               :refer-person 3rd)
+                      :aspect endeavor))
+  :ARG1 (s37p2 / place
+          :start (s37h / hengka'e)
+          :goal (s37a / and
+                  :op1 (s37r / river
+                         :name (s37n / name
+                                 :op1 "rio"
+                                 :op2 "verde")
+                         :wiki "Río_Verde_Paraguay)
+                  :op2 (s37r2 / river
+                         :name (s37n2 / name
+                                 :op1 "rio"
+                                 :op2 "paraguay")
+                         :wiki "Paraguay_River")))
+  :aspect state)
+
+# alignment:
+s37i2: 0-0
+s37t: 0-0
+s37e: 2-2
+s37p: 0-0
+s37p2: 0-0
+s37h: 3-3
+s37a: 0-0
+s37r: 5-6
+s37n: -1--1
+s37r2: 8-9
+s37n2: -1--1
+
+# document level annotation:
+(s37s0 / sentence
+  :temporal ((past-reference :overlap s37e)
+                    (s37e :overlap s37i2))
+  :modal ((root :modal author)
+                    (author :full-affirmative s37e)
+                    (author :full-affirmative s37i2))
+  :coref ((s35e2 :same-entity s37t)
+                    (s36e :same-entity s37p)))
+
+
+# :: snt38	vanhla apkelavakhaok sanapana
+
+# sentence level graph:
+(s38i2 / identity-91
+  :ARG0 (s38t / thing)
+  :ARG1 (s38a / apkelavakhaok
+          :poss (s38p / person
+                  :refer-number plural
+                  :mod (s38e / ethnic-group
+                         :name (s38n / name
+                                 :op1 "nenhlet")
+                         :wiki "Sanapaná"))
+          :mod (s38v / vanhla))
+  :aspect state)
+
+# alignment:
+s38i2: 0-0
+s38t: 0-0
+s38a: 2-2
+s38p: 0-0
+s38e: -1--1
+s38n: -1--1
+s38v: 1-1
+
+# document level annotation:
+(s38s0 / sentence
+  :modal ((root :modal author)
+                    (author :full-affirmative s38i2))
+  :coref ((s37p2 :same-entity s38t)
+                    (s37p :same-entity s38p)
+                    (s37i2 :same-event s38i2)))
+
+
+# :: snt39	tenyo kehlvoyena savhommahlko territorio
+
+# sentence level graph:
+(s39e / ensavhommahlka'-00
+  :undergoer (s39t / territorio)
+  :temporal (s39k / kehlvoyena)
+  :aspect performance)
+
+# alignment:
+s39e: 3-3
+s39t: 4-4
+s39k: 2-2
+
+# document level annotation:
+(s39s0 / sentence
+  :temporal ((present-reference :depends-on s39k)
+                    (s39k :before s39e))
+  :modal ((root :modal author)
+                    (author :full-affirmative s39e))
+  :coref ((s35e :same-event s39e)
+                    (s38a :same-entity s39t)))
+
+
+# :: snt40	ansavhommahlkeye'
+
+# sentence level graph:
+(s40e / ensavhommahlka'-00
+  :undergoer (s40t / thing)
+  :aspect performance)
+
+# alignment:
+s40e: 1-1
+s40t: 0-0
+
+# document level annotation:
+(s40s0 / sentence
+  :modal ((root :modal author)
+                    (author :full-affirmative s40e))
+  :coref ((s39e :same-event s40e)
+                    (s39t :same-entity s40t)))
+
+
+# :: snt41	tenyo enhlevay'o ennengko'o kessoyetkok kehlvoyena mahla akya'yematko'ok
+
+# sentence level graph:
+(s41e / enhlevay'a-00
+  :recipient (s41p / person
+               :refer-number plural
+               :refer-person 1st)
+  :theme (s41t / thing
+           :ARG1-of (s41h / have-mod-91
+                      :ARG2 (s41k / kessoyetkok
+                              :degree intensifier))
+           :ARG1-of (s41r / resemble-91
+                      :ARG2 (s41t2 / thing
+                              :ARG1-of (s41h2 / have-mod-91
+                                         :ARG2 (s41a / akya'yematko'ok))
+                              :mod (s41t3 / tko'ok))))
+  :temporal (s41k2 / kehlvoyena)
+  :aspect performance)
+
+# alignment:
+s41e: 2-2
+s41p: 0-0
+s41t: 0-0
+s41h: 0-0
+s41k: 4-4
+s41r: 0-0
+s41t2: 0-0
+s41h2: 0-0
+s41a: 7-7
+s41t3: 7-7
+s41k2: 5-5
+
+# document level annotation:
+(s41s0 / sentence
+  :temporal ((s40e :after s41e)
+                    (present-reference :depends-on s41k2)
+                    (s41k2 :before s41e))
+  :modal ((root :modal author)
+                    (author :full-affirmative s41e))
+  :coref ((s35p :same-entity s41p)
+                    (s39k :same-entity s41k2)))
+
+
+# :: snt42	nema elenmongkeskay'a akya'yematkok
+
+# sentence level graph:
+(s42e / elenmongkeskama-00
+  :causer (s42p / person
+            :refer-number plural
+            :refer-person 3rd)
+  :actor (s42p2 / person
+           :refer-number plural
+           :refer-person 1st)
+  :place (s42t / thing
+           :ARG1-of (s42h / have-mod-91
+                      :ARG2 (s42a / akya'yematkok))
+           :mod (s42t2 / tkok))
+  :aspect performance)
+
+# alignment:
+s42e: 2-2
+s42p: 0-0
+s42p2: 0-0
+s42t: 0-0
+s42h: 0-0
+s42a: 3-3
+s42t2: 3-3
+
+# document level annotation:
+(s42s0 / sentence
+  :temporal ((s41e :overlap s42e))
+  :modal ((root :modal author)
+                    (author :full-affirmative s42e))
+  :coref ((s29p :same-entity s42p)
+                    (s41p :same-entity s42p2)
+                    (s41t :same-entity s42t)))
+
+
+# :: snt43	tenyo ahlta antemak ko'o asvetay'a
+
+# sentence level graph:
+(s43i2 / identity-91
+  :ARG0 (s43e / event)
+  :ARG1 (s43t / thing
+          :stimulus-of (s43e2 / elvetay'a-00
+                         :experiencer (s43p / person
+                                        :refer-number singular
+                                        :refer-person 1st)
+                         :aspect state))
+  :aspect state)
+
+# alignment:
+s43i2: 0-0
+s43t: 0-0
+s43t2: 0-0
+s43e: 0-0
+s43p: 0-0
+
+# document level annotation:
+(s43s0 / sentence
+  :temporal ((s41e :overlap s43e2)
+                    (s43e2 :overlap s43i2))
+  :modal ((root :modal author)
+                    (author :full-affirmative s43p)
+                    (s43p :full-affirmative s43e2)
+                    (s43e2 :unspecified s43t))
+  :coref ((s43t :subset-of s41e)
+                    (s43t :subset-of s42e)
+                    (s31p :same-entity s43p)))
+
+
+# :: snt44	asvetay'a kehlvoyenanhan
+
+# sentence level graph:
+(s44i2 / identity-91
+  :ARG0 (s44e / event)
+  :ARG1 (s44t / thing
+          :stimulus (s44e2 / elvetay'a-00
+                      :experiencer (s44p / person
+                                     :refer-number singular
+                                     :refer-person 1st)
+                      :aspect state
+                      :temporal (s44k / kehlvoyenanhan)))
+  :aspect state)
+
+# alignment:
+s44i2: 0-0
+s44t: 0-0
+s44t2: 0-0
+s44e: 0-0
+s44p: 0-0
+s44k: 2-2
+
+# document level annotation:
+(s44s0 / sentence
+  :temporal ((s44k :overlap s44e2)
+                    (s44e2 :overlap s44i2)
+                    (present-reference :depends-on s44k))
+  :modal ((root :modal author)
+                    (author :full-affirmative s44p)
+                    (s44p :full-affirmative s44e2)
+                    (s44e2 :unspecified s44t))
+  :coref ((s43e :same-event s44e)
+                    (s41k2 :same-entity s44k)
+                    (s43p :same-entity s44p)))
+
+
+# :: snt45	mehltay'avo ennengko'o nenhletanak apkenmopay'anak
+
+# sentence level graph:
+(s45e / entay'avo-00
+  :experiencer (s45p / person
+                 :ARG1-of (s45h / have-mod-91
+                            :ARG2 (s45a / apkenmopay'anak))
+                 :refer-number plural)
+  :stimulus (s45p2 / person
+              :refer-number plural
+              :mod (s45e2 / ethnic-group
+                     :name (s45n / name
+                             :op1 "nenhlet")
+                     :wiki "Sanapana")
+              :refer-person 1st)
+  :aspect state)
+
+# alignment:
+s45e: 1-1
+s45p: 0-0
+s45h: 0-0
+s45a: 4-4
+s45p2: 0-0
+s45e2: -1--1
+s45n: -1--1
+
+# document level annotation:
+(s45s0 / sentence
+  :temporal ((present-reference :overlap s45e))
+  :modal ((root :modal author)
+                    (author :full-negative s45e))
+  :coref ((s38p :same-entity s45p2)))
+
+
+# :: snt46	mehltay'avo ennengko'o ongveta' na akyavay'a
+
+# sentence level graph:
+(s46e / entay'avo-00
+  :experiencer (s46p / person
+                 :refer-number plural
+                 :refer-person 3rd)
+  :stimulus (s46e2 / elvetay'a-00
+              :experiencer (s46p2 / person
+                             :refer-number plural
+                             :refer-person 1st)
+              :stimulus (s46h / have-mod-91
+                          :ARG1 s46p2
+                          :ARG2 (s46a / akyavay'a)
+                          :aspect state)
+              :aspect state)
+  :aspect state)
+
+# alignment:
+s46a: 5-5
+s46e: 0-0
+s46e2: 0-0
+s46h: 0-0
+s46p: 0-0
+s46p2: 0-0
+
+# document level annotation:
+(s46s0 / sentence
+  :temporal ((s46e :after s46e2)
+                    (s46e2 :overlap s46h)
+                    (present-reference :overlap s46e))
+  :modal ((root :modal author)
+                    (s46p :full-affirmative s46e)
+                    (s46e :unspecified s46p2)
+                    (s46p2 :full-affirmative s46e2)
+                    (s46e2 :unspecified s46h)
+                    (author :full-negative s46p))
+  :coref ((s45p :same-entity s46p)
+                    (s45p2 :same-entity s46p2)))
+
+
+# :: snt47	aya'hay'avo meta'a enhleanma ennengko'o valayona taye a'tema may may'ana ehltenya' hlepop akyavay'a nenhletanak
+
+# sentence level graph:
+(s47e / enhleanma-00
+  :actor (s47p / person
+           :mod (s47n / nationality
+                  :name (s47n2 / name
+                          :op1 "valayo")
+                  :wiki "Paraguay")
+           :refer-number plural)
+  :recipient (s47p2 / person
+               :refer-number plural
+               :refer-person 1st)
+  :mod (s47a / aya'hay'avo)
+  :theme (s47h / have-reason-91
+           :ARG1 (s47m / may'a-00
+                   :experiencer (s47p3 / person
+                                  :refer-number plural
+                                  :mod (s47e2 / ethnic-group
+                                         :name (s47n3 / name
+                                                 :op1 "nenhlet")
+                                         :wiki "Sanapana"))
+                   :stimulus (s47e3 / entenyay'a-00
+                               :actor s47p3
+                               :undergoer (s47h2 / hlepop
+                                            :ARG1-of (s47h3 / have-mod-91
+                                                       :ARG2 (s47a2 / akyavay'a)))
+                               :aspect performance)
+                   :aspect state
+                   :quote s47e)
+           :ARG2 (s47u / umr-unknown)
+           :aspect state
+           :mode interrogative
+           :quote s47e)
+  :aspect habitual)
+
+# alignment:
+s47a: 1-1
+s47a2: 12-12
+s47e: 0-0
+s47e2: -1--1
+s47e3: 10-10
+s47h: 0-0
+s47h2: 11-11
+s47h3: 0-0
+s47m: 0-0
+s47n: -1--1
+s47n2: -1--1
+s47n3: -1--1
+s47p: 0-0
+s47p2: 0-0
+s47p3: 0-0
+s47u: 0-0
+
+# document level annotation:
+(s47s0 / sentence
+  :temporal ((present-reference :overlap s47e)
+                    (s47e :overlap s47h)
+                    (s47e :overlap s47m)
+                    (s47m :after s47e3))
+  :modal ((root :modal author)
+                    (author :full-affirmative s47e)
+                    (author :full-affirmative s47p)
+                    (s47p :full-affirmative s47p3)
+                    (s47p :full-affirmative s47h)
+                    (s47p3 :full-affirmative s47m)
+                    (s47m :unspecified s47e3))
+  :coref ((s42p :same-entity s47p)
+                    (s46p2 :same-entity s47p2)
+                    (s47p2 :same-entity s47p3)))
+
+
+# :: snt48	menma'mekangka
+
+# sentence level graph:
+(s48e / enma'mekama-00
+  :actor (s48p / person
+           :refer-number plural
+           :refer-person 3rd)
+  :aspect activity
+  :quote (s48e2 / event))
+
+# alignment:
+s48e: 1-1
+s48p: 0-0
+s48e2: 0-0
+
+# document level annotation:
+(s48s0 / sentence
+  :temporal ((s48e2 :overlap s48e))
+  :modal ((root :modal author)
+                    (author :full-affirmative s48e2)
+                    (author :full-affirmative s47p)
+                    (s47p :full-negative s48e))
+  :coref ((s47p3 :same-entity s48p)
+                    (s47e :same-entity s48e2)))
+
+
+# :: snt49	have'
+
+# sentence level graph:
+(s49e / event)
+
+# alignment:
+s49e: 0-0
+
+# document level annotation:
+(s49s0 / sentence
+  :modal ((root :modal author)
+                    (author :full-negative s49e))
+  :coref ((s48e :same-event s49e)))
+
+
+# :: snt50	apkelavakha' pangkav'oye'
+
+# sentence level graph:
+(s50i2 / identity-91
+  :ARG0 (s50t / thing)
+  :ARG1 (s50a / apkelavakha'
+          :poss (s50p / person
+                  :refer-number plural
+                  :refer-person 3rd)
+          :mod (s50p2 / pangkav'oye'))
+  :aspect state)
+
+# alignment:
+s50i2: 0-0
+s50t: 0-0
+s50a: 1-1
+s50p: 0-0
+s50p2: 2-2
+
+# document level annotation:
+(s50s0 / sentence
+  :temporal ((present-reference :overlap s50i2))
+  :modal ((root :modal author)
+                    (author :full-affirmative s50i2))
+  :coref ((s47u :same-event s50i2)
+                    (s40t :same-entity s50t)
+                    (s48p :same-entity s50p)))
+
+
+# :: snt51	apkelavakha' pangkav'oye' nenhlet
+
+# sentence level graph:
+(s51i2 / identity-91
+  :ARG0 (s51t / thing)
+  :ARG1 (s51a / apkelavakha'
+          :poss (s51p / person
+                  :refer-number plural
+                  :mod (s51e / ethnic-group
+                         :name (s51n / name
+                                 :op1 "nenhlet")
+                         :wiki "Sanapana"))
+          :mod (s51p2 / pangkav'oye'))
+  :aspect state)
+
+# alignment:
+s51i2: 0-0
+s51t: 0-0
+s51a: 1-1
+s51p: 0-0
+s51e: -1--1
+s51n: -1--1
+s51p2: 2-2
+
+# document level annotation:
+(s51s0 / sentence
+  :modal ((root :modal author)
+                    (author :full-affirmative s51i2))
+  :coref ((s50i2 :same-event s51i2)
+                    (s50t :same-entity s51t)
+                    (s50a :same-entity s51a)
+                    (s50p :same-entity s51p)))
+
+
+# :: snt52	nane anyemay'ona pueblo sanapana
+
+# sentence level graph:
+(s52e / elenyemay'a-00
+  :actor (s52e2 / ethnic-group
+           :name (s52n / name
+                   :op1 "sanapana")
+           :wiki "Sanapaná")
+  :source (s52p / place)
+  :temporal (s52n2 / nane)
+  :aspect performance)
+
+# alignment:
+s52e: 2-2
+s52e2: 4-4
+s52n: -1--1
+s52p: 0-0
+s52n2: 1-1
+
+# document level annotation:
+(s52s0 / sentence
+  :temporal ((past-reference :depends-on s52n2)
+                    (s52n2 :contained s52e))
+  :modal ((root :modal author)
+                    (author :full-affirmative s52e))
+  :coref ((s51p :same-entity s52e2)
+                    (s51t :same-entity s52p)))
+
+
+# :: snt53	akteyapmakhana apkehltomaok
+
+# sentence level graph:
+(s53i2 / identity-91
+  :ARG0 (s53t / thing)
+  :ARG1 (s53p / place
+          :source-of (s53e / elenteyapma-00
+                       :actor (s53t2 / thing
+                                :undergoer-of (s53e2 / entoma-00
+                                                :actor (s53p2 / person
+                                                         :refer-number plural
+                                                         :refer-person 3rd))
+                                :refer-number plural)
+                       :aspect habitual))
+  :aspect state)
+
+# alignment:
+s53e: 1-1
+s53i2: 0-0
+s53p: 0-0
+s53t: 0-0
+s53t2: 0-0
+s53e2: 2-2
+s53p2: 0-0
+
+# document level annotation:
+(s53s0 / sentence
+  :temporal ((s52e :before s53e)
+                    (s53e :overlap s53i2))
+  :modal ((root :modal author)
+                    (author :full-affirmative s53i2)
+                    (author :full-affirmative s53e))
+  :coref ((s52p :same-entity s53t)
+                    (s52e2 :same-entity s53p2)))
+
+
+# :: snt54	nahlmahlke anteyapma meta'a
+
+# sentence level graph:
+(s54e / elenteyapma-00
+  :actor (s54t / thing)
+  :source (s54n / nahlmahlke)
+  :aspect habitual)
+
+# alignment:
+s54e: 2-2
+s54t: 0-0
+s54n: 1-1
+
+# document level annotation:
+(s54s0 / sentence
+  :temporal ((s53e :overlap s54e))
+  :modal ((root :modal author)
+                    (author :full-affirmative s54e))
+  :coref ((s53t2 :same-entity s54t)
+                    (s53t :subset-of s54n)))
+
+
+# :: snt55	akteyapmakhana meta'a anta'a may'a ehlto'ok
+
+# sentence level graph:
+(s55i2 / identity-91
+  :ARG0 (s55t / thing)
+  :ARG1 (s55p / place
+          :source-of (s55e / elenteyapma-00
+                       :actor (s55a / anta'a
+                                :refer-number plural
+                                :undergoer-of (s55e2 / entoma-00
+                                                :actor (s55p2 / person
+                                                         :refer-number plural
+                                                         :refer-person 3rd)
+                                                :stimulus-of (s55m / may'a-00
+                                                               :experiencer s55p2
+                                                               :aspect state)
+                                                :aspect performance))
+                       :aspect habitual))
+  :aspect state)
+
+# alignment:
+s55a: 3-3
+s55e: 1-1
+s55i2: 0-0
+s55p: 0-0
+s55t: 0-0
+s55e2: 5-5
+s55p2: 0-0
+s55m: 0-0
+
+# document level annotation:
+(s55s0 / sentence
+  :temporal ((s53e :overlap s55e)
+                    (s55e :overlap s55i2)
+                    (s55e :overlap s55m)
+                    (s55m :after s55e2))
+  :modal ((root :modal author)
+                    (author :full-affirmative s55e)
+                    (author :full-affirmative s55p2)
+                    (s55p2 :full-affirmative s55m)
+                    (s55m :unspecified s55e2))
+  :coref ((s54e :subset-of s55e)
+                    (s53t :same-entity s55t)
+                    (s54t :subset-of s55a)
+                    (s53p2 :same-entity s55p2)))
+
+
+# :: snt56	nahlma' meta'a angkonyema'
+
+# sentence level graph:
+(s56e / elenyemay'a-00
+  :actor (s56t / thing)
+  :source (s56n / nahlma')
+  :aspect habitual)
+
+# alignment:
+s56e: 3-3
+s56t: 0-0
+s56n: 1-1
+
+# document level annotation:
+(s56s0 / sentence
+  :temporal ((s53e :overlap s56e))
+  :modal ((root :modal author)
+                    (author :full-affirmative s56e))
+  :coref ((s54n :same-entity s56n)
+                    (s55a :same-entity s56t)))
+
+
+# :: snt57	tenyo kehlvoyena ammaskemke' hengka'e
+
+# sentence level graph:
+(s57e / emmaskema-00
+  :temporal (s57k / kehlvoyena)
+  :aspect performance
+  :undergoer (s57e2 / event)
+  :place (s57h / hengka'e))
+
+# alignment:
+s57e: 3-3
+s57h: 4-4
+s57k: 2-2
+s57e2: 0-0
+
+# document level annotation:
+(s57s0 / sentence
+  :temporal ((present-reference :depends-on s57k)
+                    (s57k :before s57e))
+  :modal ((root :modal author)
+                    (author :full-affirmative s57e))
+  :coref ((s44k :same-entity s57k)
+                    (s37h :same-entity s57h)
+                    (s57e2 :subset-of s56e)
+                    (s57e2 :subset-of s55e)
+                    (s57e2 :subset-of s54e)
+                    (s57e2 :subset-of s53e)))
+
+
+# :: snt58	kessoyetkok
+
+# sentence level graph:
+(s58h / have-mod-91
+  :ARG1 (s58t / thing)
+  :ARG2 (s58k / kessoyetkok
+          :degree intensifier)
+  :aspect state)
+
+# alignment:
+s58h: 0-0
+s58t: 0-0
+s58k: 1-1
+
+# document level annotation:
+(s58s0 / sentence
+  :temporal ((present-reference :overlap s58h))
+  :modal ((root :modal author)
+                    (author :full-affirmative s58h))
+  :coref ((s57h :same-entity s58t)))
+
+
+# :: snt59	anyentehlek antahangkoye' eleyvoma kehlvoyena
+
+# sentence level graph:
+(s59h / have-mod-91
+  :ARG1 (s59e / eleyvoma-00
+          :actor (s59p / person
+                   :refer-number plural
+                   :refer-person 1st)
+          :aspect process)
+  :ARG2 (s59a / anyentehlek
+          :degree intensifier)
+  :temporal (s59k / kehlvoyena)
+  :aspect state)
+
+# alignment:
+s59h: 0-0
+s59e: 3-3
+s59p: 0-0
+s59a: 1-1
+s59k: 4-4
+
+# document level annotation:
+(s59s0 / sentence
+  :temporal ((present-reference :depends-on s59k)
+                    (s59k :overlap s59e)
+                    (s59e :overlap s59h))
+  :modal ((root :modal author)
+                    (author :full-affirmative s59e)
+                    (author :full-affirmative s59h))
+  :coref ((s57k :same-entity s59k)
+                    (s42p2 :same-entity s59p)))
+
+
+# :: snt60	ko'o asvetay'a kehlvoyena
+
+# sentence level graph:
+(s60i2 / identity-91
+  :ARG0 (s60e / event)
+  :ARG1 (s60t / thing
+          :stimulus-of (s60e2 / elvetay'a-00
+                         :experiencer (s60p / person
+                                        :refer-number singular
+                                        :refer-person 1st)
+                         :temporal (s60k / kehlvoyena)
+                         :aspect state))
+  :aspect state)
+
+# alignment:
+s60i2: 0-0
+s60t: 0-0
+s60t2: 0-0
+s60e: 0-0
+s60p: 0-0
+s60k: 3-3
+
+# document level annotation:
+(s60s0 / sentence
+  :temporal ((present-reference :depends-on s60k)
+                    (s60k :overlap s60e)
+                    (s60e :overlap s60i2))
+  :modal ((root :modal author)
+                    (author :full-affirmative s60p)
+                    (s60p :full-affirmative s60e2)
+                    (s60e2 :unspecified s60t))
+  :coref ((s59k :same-entity s60k)
+                    (s60e :subset-of s57e)
+                    (s60e :subset-of s58h)
+                    (s60e :subset-of s59h)
+                    (s44p :same-entity s60p)))
+
+
+# :: snt61	enyasangkoye' ennengko'o ma'ala ontahlnengvomola mo'ola piquete tenyo avtepahlkek no
+
+# sentence level graph:
+(s61e / enyasekamok-00
+  :experiencer (s61p / person
+                 :refer-number plural
+                 :refer-person 1st)
+  :stimulus (s61h / have-condition-91
+              :ARG1 (s61e2 / event
+                      :actor (s61a / avtepahlkek
+                               :possession-of (s61p2 / piquete
+                                          :mod (s61m / mo'ola)
+                                          :refer-number singular))
+                      :theme (s61n / no)
+                      :recipient s61p
+                      :aspect performance)
+              :ARG2 (s61m2 / may'a-00
+                      :experiencer s61p
+                      :stimulus (s61e3 / entahlnema-00
+                                  :actor s61p
+                                  :goal s61p2
+                                  :aspect performance)
+                      :aspect state)
+              :aspect state)
+  :aspect state)
+
+# alignment:
+s61a: 8-8
+s61e: 0-0
+s61e2: 0-0
+s61h: 0-0
+s61m: 5-5
+s61m2: 0-0
+s61n: 9-9
+s61p: 0-0
+s61p2: 0-0
+s61e3: 4-4
+
+# document level annotation:
+(s61s0 / sentence
+  :temporal ((present-reference :overlap s61e)
+                    (s61e :overlap s61h)
+                    (s61h :overlap s61m2)
+                    (s61m2 :after s61e3)
+                    (s61e3 :after s61e2))
+  :modal ((root :modal author)
+                    (author :full-affirmative s61p)
+                    (s61p :full-affirmative s61e)
+                    (s61e :unspecified have-condition-91)
+                    (have-condition-91 :unspecified s61e2)
+                    (have-condition-91 :full-affirmative s61p)
+                    (s61p :full-affirmative s61m2)
+                    (s61m2 :unspecified s61e3))
+  :coref ((s59p :same-entity s61p)))
+
+
+# :: snt62	have' apangkok hengka'e
+
+# sentence level graph:
+(s62e / event
+  :actor (s62p / person)
+  :recipient (s62p2 / person
+               :refer-number singular)
+  :theme (s62b / belong-91
+           :ARG0 (s62h / hengka'e)
+           :ARG1 s62p2
+           :aspect state
+           :quote s62e)
+  :condition (s62e2 / event)
+  :aspect state)
+
+# alignment:
+s62e: 0-0
+s62p: 0-0
+s62p2: 0-0
+s62b: 0-0
+s62h: 3-3
+s62e2: 0-0
+
+# document level annotation:
+(s62s0 / sentence
+  :temporal ((s61e2 :after s62e)
+                    (s62e :overlap s62b))
+  :modal ((root :modal author)
+                    (author :neutral-affirmative have-condition-91)
+                    (have-condition-91 :full-affirmative s62e2)
+                    (have-condition-91 :full-affirmative s62e)
+                    (have-condition-91 :full-affirmative s62p)
+                    (s62p :full-negative s62b))
+  :coref ((s61a :same-entity s62p)
+                    (s61p :same-entity s62p2)
+                    (s61p2 :same-entity s62h)
+                    (s61m2 :same-event s62e2)))
+
+
+# :: snt63	etyep
+
+# sentence level graph:
+(s63e / event
+  :actor (s63p / person)
+  :recipient (s63p2 / person
+               :refer-person 3rd
+               :refer-number singular)
+  :theme (s63e2 / elenteyapma-00
+           :actor s63p2
+           :source (s63t / thing)
+           :aspect performance
+           :mode imperative
+           :quote s63e)
+  :condition (s63e3 / event)
+  :aspect performance)
+
+# alignment:
+s63e: 0-0
+s63p: 0-0
+s63p2: 0-0
+s63e2: 1-1
+s63t: 0-0
+s63e3: 0-0
+
+# document level annotation:
+(s63s0 / sentence
+  :temporal ((s62e :after s63e)
+                    (s63e :after s63e2))
+  :modal ((root :modal author)
+                    (author :neutral-affirmative have-condition-91)
+                    (have-condition-91 :full-affirmative s63e3)
+                    (have-condition-91 :full-affirmative s63e)
+                    (have-condition-91 :full-affirmative s63p)
+                    (s63p :partial-affirmative s63e2))
+  :coref ((s62p :same-entity s63p)
+                    (s62p2 :same-entity s63p2)
+                    (s62h :same-entity s63t)
+                    (s62e2 :same-event s63e3)))
+
+
+# :: snt64	metko permiso
+
+# sentence level graph:
+(s64e / exist-91
+  :ARG1 (s64p / permiso
+          :stimulus (s64e2 / event))
+  :aspect state)
+
+# alignment:
+s64e: 0-0
+s64p: 0-0
+s64e2: 0-0
+
+# document level annotation:
+(s64s0 / sentence
+  :temporal ((present-reference :overlap s64e)
+                    (s64e :after s64e2))
+  :modal ((root :modal author)
+                    (author :full-negative s64e)
+                    (author :full-negative null-conceiver)
+                    (null-conceiver :full-affirmative s64p)
+                    (s64p :unspecified s64e2))
+  :coref ((s61e3 :same-event s64e2)))
+
+
+# :: snt65	asvetay'ana kehlvoyena
+
+# sentence level graph:
+(s65i2 / identity-91
+  :ARG0 (s65e / event)
+  :ARG1 (s65t / thing
+          :stimulus-of (s65e2 / elvetay'a-00
+                         :experiencer (s65p / person
+                                        :refer-number singular
+                                        :refer-person 1st)
+                         :aspect state
+                         :temporal (s65k / kehlvoyena)))
+  :aspect state)
+
+# alignment:
+s65i2: 1-1
+s65t: 0-0
+s65t2: 0-0
+s65e: 0-0
+s65p: 0-0
+s65k: 2-2
+
+# document level annotation:
+(s65s0 / sentence
+  :temporal ((present-reference :depends-on s65k)
+                    (s65k :overlap s65e2)
+                    (s65e2 :overlap s65i2))
+  :modal ((root :modal author)
+                    (author :full-affirmative s65p)
+                    (s65p :full-affirmative s65e2)
+                    (s65e2 :unspecified s65t))
+  :coref ((s60k :same-entity s65k)
+                    (s65e :subset-of s61e2)
+                    (s65e :subset-of s62e)
+                    (s65e :subset-of s63e)
+                    (s65e :subset-of s64e)
+                    (s60p :same-entity s65p)))
+
+
+# :: snt66	del pasado kehlvoyenanhan futuro
+
+# sentence level graph:
+(s66b / be-temporally-at-91
+  :ARG1 (s66t / thing)
+  :ARG2 (s66d / date-interval
+          :op1 (s66p / pasado)
+          :op2 (s66k / kehlvoyenanhan)
+          :op3 (s66f / futuro))
+  :aspect state)
+
+# alignment:
+s66b: 0-0
+s66t: 0-0
+s66d: 0-0
+s66p: 2-2
+s66k: 3-3
+s66f: 4-4
+
+# document level annotation:
+(s66s0 / sentence
+  :temporal ((past-reference :depends-on s66p)
+                    (present-reference :depends-on s66k)
+                    (future-reference :depends-on s66f)
+                    (s66d :overlap s66t))
+  :modal ((root :modal author)
+                    (author :full-affirmative s66b))
+  :coref ((s65e :same-event s66t)
+                    (s65k :same-entity s66k)))
+
+
+# :: snt67	nahlka askehltavoye' ontehek ennengko'o mahla empayvomana ennengko'o
+
+# sentence level graph:
+(s67c / contrast-91
+  :ARG1 (s67e / event)
+  :ARG2 (s67e2 / entay'avo-00
+          :experiencer (s67p / person
+                         :refer-number singular
+                         :refer-person 1st)
+          :stimulus (s67e3 / event
+                      :actor (s67p2 / person
+                               :refer-number plural
+                               :refer-person 1st)
+                      :undergoer (s67t / thing
+                                   :medium-of (s67e4 / empayvoma-00
+                                                :actor s67p2))
+                      :aspect activity)
+          :aspect state))
+
+# alignment:
+s67c: 0-0
+s67e: 0-0
+s67e2: 0-0
+s67e3: 0-0
+s67p: 0-0
+s67p2: 0-0
+s67t: 0-0
+s67e4: 6-6
+
+# document level annotation:
+(s67s0 / sentence
+  :temporal ((present-reference :overlap s67e2)
+                    (s67e2 :after s67e3))
+  :modal ((root :modal author)
+                    (s67p :full-affirmative s67e2)
+                    (s67e2 :unspecified s67e3)
+                    (author :full-affirmative s67p))
+  :coref ((s65e :same-event s67e)
+                    (s65p :same-entity s67p)
+                    (s61p :same-entity s67p2)))
+
+
+# :: snt68	onyenna'te'sek ennengko'o empayvomanak
+
+# sentence level graph:
+(s68e / enyenna'teskama-00
+  :actor (s68p / person
+           :refer-number plural
+           :refer-person 1st)
+  :undergoer (s68t / thing
+               :medium-of (s68e2 / empayvoma-00
+                            :actor s68p))
+  :aspect activity)
+
+# alignment:
+s68e: 1-1
+s68p: 0-0
+s68t: 0-0
+s68e2: 3-3
+
+# document level annotation:
+(s68s0 / sentence
+  :temporal ((s68e2 :after s68e))
+  :modal ((root :modal author)
+                    (author :full-affirmative s67p)
+                    (s67p :full-affirmative s68e2)
+                    (s68e2 :unspecified s68e))
+  :coref ((s67e3 :same-event s68e)
+                    (s67p2 :same-entity s68p)
+                    (s67t :same-entity s68t)
+                    (s67e2 :same-event s68e2)))
+
+
+# :: snt69	onhlengkesek ennengko'o empayvomana metkela enyetyapma
+
+# sentence level graph:
+(s69e / event
+  :experiencer (s69p / person)
+  :stimulus (s69e2 / enhlengkeskama-00
+              :causer (s69p2 / person
+                        :refer-number plural
+                        :refer-person 1st)
+              :actor (s69t / thing
+                       :theme-of (s69e3 / empayvoma-00
+                                   :actor s69p2))
+              :manner (s69e4 / enyetyapma-00
+                        :actor s69p2
+                        :undergoer s69t
+                        :aspect performance)
+              :aspect activity
+              :purpose (s69e5 / event)))
+
+# alignment:
+s69e: 0-0
+s69e2: 1-1
+s69e3: 3-3
+s69e4: 5-5
+s69p: 0-0
+s69p2: 0-0
+s69t: 0-0
+s69e5: 0-0
+
+# document level annotation:
+(s69s0 / sentence
+  :temporal ((s69e :after s69e2)
+                    (s69e2 :overlap s69e4))
+  :modal ((root :modal author)
+                    (author :full-affirmative s69p)
+                    (s69p :fullfull-affirmative s69e)
+                    (s69e :unspecified s69e2)
+                    (s69e :unspecified s69e4)
+                    (author :full-affirmative s69p2)
+                    (s69p2 :partial-affirmative have-purpose-91)
+                    (have-purpose-91 :full-affirmative s69e5))
+  :coref ((s68e2 :same-event s69e)
+                    (s67p :same-entity s69p)
+                    (s68p :same-entity s69p2)
+                    (s68t :same-entity s69t)))
+
+
+# :: snt70	metkola may'a onhla na onyetepok ennengko'o empayvomanak
+
+# sentence level graph:
+(s70e / event
+  :purpose (s70e2 / enyetyapma-00
+             :actor (s70p / person
+                      :refer-number plural
+                      :refer-person 1st)
+             :undergoer (s70t / thing
+                          :medium-of (s70e3 / empayvoma-00
+                                       :actor s70p))
+             :aspect performance))
+
+# alignment:
+s70e: 0-0
+s70e2: 5-5
+s70p: 0-0
+s70t: 0-0
+s70e3: 7-7
+
+# document level annotation:
+(s70s0 / sentence
+  :temporal ((s70e :after s70e2))
+  :modal ((root :modal author)
+                    (author :full-affirmative s70p)
+                    (s70p :partial-affirmative have-purpose-91)
+                    (have-purpose-91 :full-negative s70e2))
+  :coref ((s69e2 :same-event s70e)
+                    (s69e5 :same-event s70e2)
+                    (s69p2 :same-entity s70p)
+                    (s69t :same-entity s70t)))
+
+
+# :: snt71	kaymahlke' onhlengkesek cultura
+
+# sentence level graph:
+(s71a / ayaymommahlka'-00
+  :experiencer (s71p / person
+                 :refer-number plural
+                 :refer-person 1st)
+  :stimulus (s71e / enhlengkeskama-00
+              :causer s71p
+              :actor (s71c / cultura
+                       :poss s71p)
+              :aspect activity)
+  :aspect state)
+
+# alignment:
+s71a: 0-0
+s71p: 0-0
+s71e: 2-2
+s71c: 3-3
+
+# document level annotation:
+(s71s0 / sentence
+  :temporal ((present-reference :overlap s71a)
+                    (s71a :after s71e))
+  :modal ((root :modal author)
+                    (s71p :full-affirmative s71a)
+                    (s71a :unspecified s71e)
+                    (author :full-affirmative s71p))
+  :coref ((s70p :same-entity s71p)))
+
+
+# :: snt72	anhleamke' ennengko'o cultura eyangkaok
+
+# sentence level graph:
+(s72e / enhleama-00
+  :actor (s72c / cultura
+           :poss (s72p / person
+                   :refer-number plural
+                   :refer-person 1st))
+  :aspect activity)
+
+# alignment:
+s72e: 1-1
+s72c: 3-3
+s72p: 0-0
+
+# document level annotation:
+(s72s0 / sentence
+  :temporal ((present-reference :overlap s72e))
+  :modal ((root :modal author)
+                    (author :full-affirmative s72e))
+  :coref ((s71c :same-entity s72c)
+                    (s71p :same-entity s72p)))
+
+
+# :: snt73	mohlhlakamo ennengko'o cultura
+
+# sentence level graph:
+(s73e / ehlhlakama-00
+  :actor (s73p / person
+           :refer-number plural
+           :refer-person 1st)
+  :undergoer (s73c / cultura
+               :poss s73p)
+  :aspect performance)
+
+# alignment:
+s73c: 3-3
+s73e: 1-1
+s73p: 0-0
+
+# document level annotation:
+(s73s0 / sentence
+  :temporal ((past-reference :contained s73e))
+  :modal ((root :modal author)
+                    (author :full-negative s73e))
+  :coref ((s72p :same-entity s73p)
+                    (s72c :same-entity s73c)))
+
+

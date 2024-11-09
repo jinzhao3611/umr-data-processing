@@ -1,0 +1,666 @@
+# :: snt1   中考 系 中国 大陆 学生 群体 从 初中 升入 高中 的 升学 考试 ， 但 在 诸多 考试 的 背后 ， 隐藏 着 许多 不为人知 且 极为 重大 的 问题 。
+# sentence level graph
+(s1b / but-91
+  :ARG1 (s1x / 系-01
+          :ARG1 (s1x2 / 考试
+                  :mod (s1x3 / 升学)
+                  :ARG1-of (s1x4 / 升入-01
+                             :ARG0 (s1x5 / 群体
+                                     :mod (s1x6 / 学生
+                                           :mod (s1x7 / 国家
+                                                 :name (s1n / name
+                                                         :op1 "中国"
+                                                         :op2 "大陆"))))
+                             :ARG1 (s1x8 / 学校
+                                     :mod (s1x9 / 高中))
+                             :ARG2 (s1x10 / 学校
+                                     :mod (s1x11 / 初中)))
+                  :name (s1n2 / name
+                          :op1 "中考"))
+          :aspect habitual
+          :modstr FullAff)
+  :ARG2 (s1x12 / 隐藏-01
+          :ARG1 (s1x13 / 问题
+                  :mod (s1x14 / 许多)
+                  :mod (s1x15 / 重大)
+                  :mod (s1x16 / 不为人知)
+                  :mod (s1x17 / 极为))
+          :location (s1x18 / 背后
+                      :part-of (s1x19 / 考试
+                                 :mod (s1x20 / 诸多)))
+          :aspect habitual
+          :modstr FullAff))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt2   这期 新闻 专题 《 维基 新闻 》 记者 前往 一所 初中 调查 真相 ， 探索 在 中国 大陆 教育 中 隐藏 的 问题 。
+# sentence level graph
+(s2x / 前往-01
+  :ARG0 (s2x2 / 记者
+          :ARG0-of (s2x3 / 专题-01
+                     :ARG1 (s2x4 / 新闻
+                             :mod (s2x5 / 这期))
+                     :ARG2 (s2x6 / 新闻
+                             :name (s2n / name
+                                     :op1 "维基"
+                                     :op2 "新闻"))))
+  :ARG1 (s2x7 / 初中
+          :quant 一所)
+  :purpose (s2x8 / 调查-01
+             :ARG1 (s2x9 / 真相))
+  :conjunction (s2x10 / 探索-01
+                 :ARG1 (s2x11 / 问题
+                         :mod (s2x12 / 隐藏
+                                :location (s2x13 / 中
+                                            :op1 (s2x14 / 教育
+                                                    :location (s2l / 地方
+                                                                :name (s2n2 / name
+                                                                        :op1 "中国"
+                                                                        :op2 "大陆")))))))
+  :aspect process
+  :modstr FullAff)
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt3   中国 大陆 的 学校 长期 以来 一直 实行 应试 教育 ， 这 也 导致 间接 或 直接 地 扼杀 了 许多 人才 。
+# sentence level graph
+(s3x / 实行-01
+  :ARG0 (s3x2 / 学校
+          :mod (s3x3 / 大陆
+                 :mod (s3x4 / 中国)))
+  :ARG1 (s3x5 / 教育
+          :mod (s3x6 / 应试))
+  :temporal (s3x7 / 长期
+              :mod (s3x8 / 以来))
+  :mod (s3x9 / 一直)
+  :aspect habitual
+  :modstr FullAff
+  :cause-of (s3x10 / 扼杀-01
+              :ARG1 (s3x11 / 人才
+                      :quant 许多)
+              :manner (s3a / or
+                        :op1 (s3x12 / 间接)
+                        :op2 (s3x13 / 直接))
+              :aspect performance
+              :modstr FullAff))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt4   大部分 中学 会 在 每年 3 月 末 为 初三 学生 举行 “ 百日誓师 ” 活动 ， 这个 活动 意味着 距离 中考 仅 剩下 最后 100 天 ， 学生们 会 在 百日誓师 时 前往 当地 有名 的 庙宇 进行 祈福 ， 希望 神明 可以 护佑 自己 在 考试 中 取得 好 成绩 。
+# sentence level graph
+(s4x / 举行-01
+  :ARG0 (s4x2 / 中学
+          :mod (s4x3 / 大部分))
+  :ARG1 (s4x4 / 活动
+          :name (s4n / name
+                  :op1 "百日誓师")
+          :purpose (s4x5 / 祈福-01
+                     :ARG0 (s4x6 / 学生
+                             :mod (s4x7 / 初三)
+                             :quant (s4x8 / 复数))
+                     :location (s4x9 / 庙宇
+                                 :mod (s4x10 / 当地)
+                                 :mod (s4x11 / 有名))
+                     :aspect habitual
+                     :modstr FullAff)
+          :topic (s4x12 / 考试
+                   :mod (s4x13 / 中考)
+                   :time (s4x14 / 天
+                           :quant 100
+                           :mod (s4x15 / 最后))
+                   :mod (s4x16 / 仅))
+          :mod (s4x17 / 这个)
+          :modstr FullAff)
+  :time (s4t / time
+          :time (s4m / month
+                  :quant 3)
+          :mod (s4y / year
+                :mod (s4e / 每))
+          :mod (s4e2 / 末))
+  :aspect habitual
+  :modstr FullAff
+  :ARG1-of (s4x18 / 希望-01
+             :ARG0 s4x6
+             :ARG1 (s4x19 / 护佑-01
+                     :ARG0 (s4x20 / 神明)
+                     :ARG1 s4x6
+                     :ARG2 (s4x21 / 成绩
+                             :mod (s4x22 / 好)
+                             :ARG1-of (s4x23 / 取得-01
+                                        :ARG0 s4x6
+                                        :aspect habitual
+                                        :modstr FullAff)
+                             :aspect state
+                             :modstr FullAff)
+                     :aspect habitual
+                     :modstr FullAff)
+             :aspect habitual
+             :modstr FullAff))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt5   但 随着 时间 逐渐 逼近 ， 压力 亦 会 日益 增加 。
+# sentence level graph
+(s5c / but-91
+  :ARG2 (s5x / 增加-01
+          :ARG1 (s5x2 / 压力)
+          :manner (s5x3 / 日益)
+          :temporal (s5x4 / 逼近-01
+                      :ARG1 (s5x5 / 时间)
+                      :manner (s5x6 / 逐渐))
+          :mod (s5x7 / 亦)
+          :modality (s5x8 / 会)
+          :aspect process
+          :modstr FullAff))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt6   有的 学生 在 考场 上 看见 了 题目 ， 崩溃 大哭 ， 最终 被 监考 人员 架出 考场 。
+# sentence level graph
+(s6a / and-91
+  :op1 (s6x / 看见-01
+         :ARG0 (s6x2 / 学生
+                 :mod (s6x3 / 有的))
+         :ARG1 (s6x4 / 题目)
+         :location (s6x5 / 考场)
+         :aspect Performance
+         :modstr FullAff)
+  :op2 (s6x6 / 崩溃-01
+         :ARG0 s6x2
+         :manner (s6x7 / 大哭)
+         :aspect Performance
+         :modstr FullAff)
+  :op3 (s6x8 / 架出-01
+         :ARG0 (s6x9 / 人员
+                 :mod (s6x10 / 监考))
+         :ARG1 s6x2
+         :location s6x5
+         :temporal (s6x11 / 最终)
+         :aspect Performance
+         :modstr FullAff))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt7   也 有 的 学生 会 因为 压力 过大 ， 选择 从 高楼 一 跃而下 ， 结束 自己 的 生命 。
+# sentence level graph
+(s7x / 选择-01
+  :ARG0 (s7s / 学生
+          :mod (s7y / 也)
+          :mod (s7y2 / 有的))
+  :ARG1 (s7j / 跃而下-01
+          :manner (s7j2 / 一)
+          :source (s7l / 楼
+                    :mod (s7h / 高)))
+  :cause (s7p / 压力
+            :degree (s7d / 大
+                      :degree (s7d2 / 过)))
+  :purpose (s7e / 结束-01
+              :ARG1 (s7l2 / 生命
+                      :possessor (s7p2 / person
+                                   :reflexive-of s7s)))
+  :aspect Performance
+  :modstr FullAff)
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt8   《 维基 新闻 》 记者 来到 了 广西 南宁 一所 初中 走访 调查 ， 这所 初中 位于 首府 市 中心 城区 ， 可以 享受 到 更 优质 的 教育 资源 。
+# sentence level graph
+(s8a / and
+  :op1 (s8x / 调查-01
+          :ARG0 (s8x2 / 记者
+                  :ARG0-of (s8x3 / 来到-01
+                             :ARG1 (s8x4 / 初中
+                                     :mod (s8x5 / 一所)
+                                     :location (s8l / location
+                                                 :name (s8n / name
+                                                         :op1 "广西"
+                                                         :op2 "南宁")))
+                             :aspect performance
+                             :modstr FullAff)
+                  :mod (s8n2 / newspaper
+                        :name (s8n3 / name
+                                :op1 "《"
+                                :op2 "维基"
+                                :op3 "新闻"
+                                :op4 "》")))
+          :mod (s8x6 / 走访)
+          :aspect performance
+          :modstr FullAff)
+  :op2 (s8x7 / 享受-01
+          :ARG0 s8x4
+          :ARG1 (s8x8 / 资源
+                  :mod (s8x9 / 教育)
+                  :mod (s8x10 / 优质)
+                  :mod (s8x11 / 更))
+          :location (s8l2 / location
+                      :part-of (s8c / city
+                                  :name (s8n4 / name
+                                          :op1 "首府")
+                                  :part (s8d / district
+                                          :name (s8n5 / name
+                                                  :op1 "中心"
+                                                  :op2 "城区"))))
+          :aspect habitual
+          :modstr FullAff))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt9   记者 采访 了 多位 初三 学生 ， 其中 一位 初三 同学 小农 （ 化名 ） 告诉 我们 ， 他 将 于 今年 6 月 参加 中考 。
+# sentence level graph
+(s9x / 采访-01
+  :ARG0 (s9x2 / 记者)
+  :ARG1 (s9x3 / 学生
+          :mod (s9x4 / 初三)
+          :quant (s9x5 / 多位))
+  :aspect Performance
+  :modstr FullAff
+  :ARG1 (s9x6 / 告诉-01
+          :ARG0 (s9x7 / 学生
+                  :mod (s9x8 / 初三)
+                  :name (s9n / name
+                          :op1 "小农")
+                  :alias (s9a / 化名)
+                  :quant (s9q / 一位))
+          :ARG1 (s9x9 / 我们)
+          :ARG2 (s9x10 / 参加-01
+                  :ARG1 (s9x11 / 中考)
+                  :time (s9t / 今年
+                          :time (s9m / 6月))
+                  :mod (s9x12 / 将))
+          :aspect Performance
+          :modstr FullAff))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt10   “ 我们 的 时间表 是 从 7 点 25 分 就 开始 早读 ， 中午 12 点 10 分 放学 ， 有 的 班级 还 被 体育 老师 要求 留下 ， 参加 体育 锻炼 ， 最快 也 要 12 点 30 分 才 能 放学 。
+# sentence level graph
+(s10a / and-91
+  :op1 (s10s / 开始-01
+          :ARG1 (s10r / 读-02
+                  :mod (s10e / 早))
+          :time (s10t / time
+                  :quant (s10h / h7m25))
+          :ARG0 (s10p / person
+                  :poss (s10o / 我们))
+          :aspect Performance
+          :modstr FullAff)
+  :op2 (s10l / 放学-01
+          :time (s10t2 / time
+                  :quant (s10h2 / h12m10))
+          :ARG0 s10p
+          :aspect Performance
+          :modstr FullAff)
+  :op3 (s10r2 / 要求-01
+          :ARG0 (s10t3 / 老师
+                  :mod (s10s2 / 体育))
+          :ARG1 (s10s3 / 留下-01
+                  :ARG0 (s10c / 班级
+                          :mod (s10s4 / 有的))
+                  :ARG1 (s10e2 / 锻炼-01
+                          :ARG0 s10p
+                          :ARG1 (s10s5 / 体育)
+                          :aspect Performance
+                          :modstr FullAff)
+                  :aspect Performance
+                  :modstr FullAff)
+          :aspect Performance
+          :modstr FullAff)
+  :op4 (s10l2 / 放学-01
+          :time (s10t3 / time
+                  :quant (s10h3 / h12m30)
+                  :mod (s10f / 快
+                        :degree (s10m / 最)))
+          :ARG0 s10p
+          :aspect Performance
+          :modstr FullAff))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt11   下午 6 点 30 分 放学 ， 7 点 15 分 开始 晚自习 ， 期间 通常 就是 进行 考试 。 这 几个 月 来 我 的 感受 就是 累 。 压力 真的 好 大 ， 试卷 和 作业 真的 好 多 ， 我 快 撑不住 了 。
+# sentence level graph
+(s11a / and
+  :op1 (s11x / 放学-01
+         :time (s11t / time
+                  :quant "6点30分"
+                  :mod (s11d / daypart
+                         :value "下午")))
+  :op2 (s11x2 / 开始-01
+         :ARG1 (s11x3 / 晚自习
+                 :time (s11t2 / time
+                         :quant "7点15分"))
+         :aspect performance
+         :modstr FullAff)
+  :op3 (s11x4 / 进行-01
+         :ARG1 (s11x5 / 考试)
+         :time (s11t3 / 期间)
+         :mod (s11x6 / 通常)
+         :aspect habitual
+         :modstr FullAff)
+  :op4 (s11x7 / 是-01
+         :ARG1 (s11x8 / 感受
+                 :poss (s11p / person
+                         :ref-person 1st
+                         :quant "我")
+                 :mod (s11x9 / 累)
+                 :time (s11t4 / time
+                         :quant "这几个月"
+                         :mod (s11x10 / 来)))
+         :aspect state
+         :modstr FullAff)
+  :op5 (s11x11 / 好-01
+         :ARG1 (s11x12 / 压力)
+         :ARG2 (s11x13 / 大)
+         :mod (s11x14 / 真的))
+  :op6 (s11x15 / 有-01
+         :ARG1 (s11a2 / and
+                 :op1 (s11x16 / 试卷)
+                 :op2 (s11x17 / 作业))
+         :ARG2 (s11x18 / 多)
+         :mod (s11x19 / 真的)
+         :aspect state
+         :modstr FullAff)
+  :op7 (s11x20 / 撑不住-01
+         :ARG0 s11p
+         :mod (s11x21 / 快)
+         :aspect performance
+         :modstr PrtNeg))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt12   在 学生 群体 中 ， 他们 身上 的 压力 来自 很多 方面 ， 而 不是 单一 的 压力 。
+# sentence level graph
+(s12x / 来自-01
+  :ARG0 (s12x2 / 压力
+          :location (s12x3 / 群体
+                      :mod (s12x4 / 学生)
+                      :mod (s12x5 / 中))
+          :poss (s12x6 / person
+                  :ref-person 3rd
+                  :ref-number plural))
+  :ARG1 (s12x7 / 方面
+          :quant (s12x8 / 很多))
+  :contrast-with (s12x9 / 压力
+                   :mod (s12x10 / 单一))
+  :aspect state
+  :modstr FullAff)
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt13   小农 告诉 我们 ， 压力 主要 来自 学业 ， 例如 来自 升学 压力 和 竞争 压力 。
+# sentence level graph
+(s13x / 告诉-01
+  :ARG0 (s13x2 / person
+          :name (s13n / name
+                  :op1 "小农"))
+  :ARG1 (s13x3 / person
+          :quant plural
+          :ref-person 1st)
+  :ARG2 (s13x4 / 来自-01
+          :ARG1 (s13x5 / 压力
+                  :mod (s13x6 / 主要))
+          :ARG2 (s13x7 / 学业
+                  :example (s13a / and
+                             :op1 (s13x8 / 压力
+                                    :mod (s13x9 / 升学))
+                             :op2 (s13x10 / 压力
+                                    :mod (s13x11 / 竞争)))))
+  :aspect habitual
+  :modstr FullAff)
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt14   在 中国 大陆 ， 并 不是 所有 的 学生 都 可以 幸运 升入 高中 。
+# sentence level graph
+(s14x / 升入-01
+  :location (s14l / 大陆
+              :mod (s14c / 国
+                    :mod (s14c2 / 中国)))
+  :ARG1 (s14s / 学生
+          :quant (s14a / all
+                   :polarity -))
+  :ARG2 (s14s2 / 高中)
+  :mod (s14x2 / 幸运)
+  :modstr FullAff
+  :aspect Performance)
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt15   在 中考 前 ， 部分 学校 会 私下 找到 学生 家长 ， 要求 他们 填写 自愿 放弃 中考 的 承诺书 ， 填写 后 ， 学生 会 被 带离 原先 所在 的 班级 ， 避免 干扰 其他 学生 进行 中考 复习 。
+# sentence level graph
+(s15c / 要求-01
+  :time (s15t / 前
+          :op1 (s15e / 中考))
+  :ARG0 (s15s / 学校
+          :mod (s15p / 部分))
+  :ARG1 (s15f / 填写-01
+          :ARG0 (s15p2 / 家长
+                  :poss (s15s2 / 学生))
+          :ARG1 (s15d / 承诺书
+                  :mod (s15v / 放弃-01
+                         :ARG1 s15e
+                         :mod (s15v2 / 自愿)))
+          :mod (s15p3 / 私下))
+  :ARG2 (s15s2)
+  :modstr FullAff
+  :aspect Performance
+  :condition (s15m / 带离-01
+                :ARG0 s15s2
+                :ARG1 (s15c2 / 班级
+                        :mod (s15o / 原先)
+                        :location-of s15s2)
+                :purpose (s15a / 避免-01
+                           :ARG1 (s15g / 干扰-01
+                                   :ARG0 s15s2
+                                   :ARG1 (s15s3 / 学生
+                                           :mod (s15o2 / 其他))
+                                   :ARG2 (s15r / 进行-01
+                                           :ARG1 (s15e2 / 复习
+                                                   :topic s15e)))
+                           :aspect Performance
+                           :modstr FullAff)
+                :time (s15t2 / 后
+                        :op1 s15f)
+                :aspect Performance
+                :modstr FullAff))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt16   这些 孩子 就 如同 被 抛弃 了 一般 ， 随意 被 剥夺 了 受教育 权 。
+# sentence level graph
+(s16x / 如同-01
+  :ARG1 (s16x2 / 孩子
+          :quant (s16x3 / 这些))
+  :ARG2 (s16x4 / 抛弃-01
+          :ARG0 (s16x5 / implicit-argument)
+          :ARG1 s16x2
+          :aspect performance
+          :modstr FullAff)
+  :manner (s16x6 / 剥夺-01
+            :ARG0 s16x5
+            :ARG1 (s16x7 / 权
+                    :mod (s16x8 / 受教育))
+            :manner (s16x9 / 随意)
+            :aspect performance
+            :modstr FullAff)
+  :aspect state
+  :modstr FullAff)
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt17   根据 现行 的 《 中华 人民 共和国 宪法 》， 这种 行为 实际上 是 严重 的 违宪 行为 ， 但 在 2023 年 的 今天 ， 在 中国 大陆 的 土地 上 ， 这 种 行为 仍然 普遍 存在 。
+# sentence level graph
+(s17b / but-91
+  :ARG1 (s17x / 是-01
+          :ARG1 (s17x2 / 行为
+                  :mod (s17x3 / 这种))
+          :ARG2 (s17x4 / 行为
+                  :mod (s17x5 / 违宪)
+                  :mod (s17x6 / 严重))
+          :mod (s17x7 / 实际上)
+          :modstr FullAff
+          :aspect state
+          :domain (s17x8 / 宪法
+                    :mod (s17x9 / 中华人民共和国)
+                    :mod (s17x10 / 现行)))
+  :ARG2 (s17x11 / 存在-01
+          :ARG1 s17x2
+          :mod (s17x12 / 仍然)
+          :mod (s17x13 / 普遍)
+          :location (s17x14 / 土地
+                      :mod (s17x15 / 中国大陆))
+          :temporal (s17x16 / 今天
+                      :mod (s17x17 / 年
+                            :time 2023))
+          :aspect habitual
+          :modstr FullAff))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt18   中考 后 ， 由于 每年 都 增加 了 大量 的 考生 ， 且 因为 班级 内部 存在 内卷 现象 ， 分数线 一年 比 一年 高 ， 得以 升入 高中 的 考生 通常 只有 三分之一 左右 ， 能 进入 示范性 高中 的 考生 更是 少之又少 。
+# sentence level graph
+(s18c / 因为-01
+  :ARG1 (s18a / and
+          :op1 (s18i / 增加-01
+                 :ARG1 (s18x / 考生
+                         :quant (s18q / 大量))
+                 :temporal (s18t / 每年)
+                 :aspect habitual
+                 :modstr FullAff)
+          :op2 (s18e / 存在-01
+                 :ARG1 (s18p / 现象
+                         :mod (s18i2 / 内卷))
+                 :location (s18l / 内部
+                             :part-of (s18c2 / 班级))
+                 :aspect state
+                 :modstr FullAff))
+  :ARG2 (s18h / 高-02
+          :ARG1 (s18l2 / 分数线)
+          :ARG2 (s18y / 一年)
+          :compared-to (s18y2 / 一年)
+          :degree (s18d / 多
+                    :quant (s18m / 每)
+                    :degree (s18m2 / 更))
+          :aspect habitual
+          :modstr FullAff)
+  :result (s18a2 / and
+            :op1 (s18e2 / 升入-01
+                   :ARG1 (s18x2 / 考生
+                           :quant (s18q2 / 三分之一)
+                           :mod (s18m3 / 通常))
+                   :ARG2 (s18s / 学校
+                           :mod (s18h2 / 高中))
+                   :aspect habitual
+                   :modstr PrtAff)
+            :op2 (s18e3 / 进入-01
+                   :ARG1 (s18x3 / 考生
+                           :mod (s18m4 / 更是)
+                           :mod (s18q3 / 少之又少))
+                   :ARG2 (s18s2 / 学校
+                           :mod (s18h3 / 高中)
+                           :mod (s18d2 / 示范性))
+                   :aspect habitual
+                   :modstr PrtAff)))
+
+# alignment:
+
+# document level annotation:
+
+
+# :: snt19   剩下 的 考生 ， 要么 进入 职业 高中 和 技术 学校 ， 成为 “ 被 抛弃 的 孩子 ” ， 要么 家长 花 钱 送入 高中 ， 最坏 的 结局 则 是 直接 进入 社会 ， 最终 消失 在 街头 巷尾 。
+# sentence level graph
+(s19c / 或-91
+  :op1 (s19b / 成为-01
+        :ARG1 (s19s / 孩子
+                :mod (s19a / 抛弃-01
+                      :passive Yes
+                      :ARG0 (s19p / person
+                             :quant (s19q / 剩下
+                                     :ARG1 (s19e / 考生))))
+                :mod (s19d / 被))
+        :ARG2 (s19a2 / and
+                :op1 (s19s2 / 学校
+                      :mod (s19t / 技术))
+                :op2 (s19h / 高中
+                      :mod (s19v / 职业)))
+        :aspect state
+        :modstr FullAff)
+  :op2 (s19c2 / 或-91
+        :op1 (s19e2 / 进入-01
+              :ARG1 (s19s3 / 社会)
+              :manner (s19w / 坏
+                       :degree (s19m / 最))
+              :aspect performance
+              :modstr FullAff)
+        :op2 (s19d2 / 消失-01
+              :ARG1 (s19p2 / person
+                     :quant (s19q2 / 剩下
+                             :ARG1 (s19e3 / 考生)))
+              :location (s19l / 街头
+                          :part (s19a3 / 巷尾))
+              :temporal (s19f / 最终)
+              :aspect performance
+              :modstr FullAff))
+  :condition (s19s4 / 学校
+              :mod (s19h2 / 高中)
+              :ARG1-of (s19s5 / 送入-01
+                        :ARG0 (s19p3 / 家长)
+                        :instrument (s19m2 / 钱)))
+  :aspect habitual
+  :modstr FullAff)
+
+# alignment:
+
+# document level annotation:
+
+

@@ -1,0 +1,340 @@
+# :: snt1	残奥 闭幕 ， 巴黎 在 狂欢 中 不说 再见 说 你好
+
+# sentence level graph
+(s1a / and
+  :op1 (s1x3 / 闭幕-01
+         :ARG0 (s1s2 / sports-event-organization
+                 :name (s1n2 / name
+                         :op1 "残奥"))
+         :aspect performance)
+  :op2 (s1x5 / 狂欢-01
+         :ARG0 (s1c / city
+                 :name (s1n / name
+                         :op1 "巴黎"))
+         :aspect performance
+         :mod s2x6)
+  :op3 (s1x / 说-01
+         :ARG0 s1c
+         :ARG1 (s1n3 / name
+                 :op1 "再见")
+         :aspect state
+         :polarity -)
+  :op4 (s1x2 / 说-01
+         :ARG0 s1c
+         :ARG1 (s1n4 / name
+                 :op1 "你好")
+         :aspect state))
+
+
+# :: snt2	闭幕礼 在 法兰西 体育场 举行 ， 巴黎 奥组委 主席 埃斯坦盖 致辞 时 说 ， 残 奥 闭幕 意味着 整个 巴黎 2024 年 奥运 及 残奥 的 结束 ， 但 奥运 的 讯息 仍然 相随 ： “ 让 我们 继续 尝试 ， 让 我们 继续 跌倒 ， 让 我们 继续 爬起 ， 让 我们 继续 行动 ， 让 我们 继续 相信 ”
+
+# sentence level graph
+(s2x / 举行-01
+  :ARG0 (s2x2 / 礼
+          :mod (s2x3 / 闭幕-01
+                 :aspect performance))
+  :ARG1 (s2s / sports-facility
+          :name (s2n / name
+                  :op1 "法兰西"
+                  :op2 "体育场"))
+  :temporal (s2x4 / 致辞-01
+              :ARG0 (s2i2 / individual-person
+                      :name (s2n2 / name
+                              :op1 "埃斯坦盖")
+                      :ARG1-of (s2h2 / have-org-role-91
+                                 :ARG2 (s2o4 / organization
+                                         :name (s2n5 / name
+                                                 :op1 "巴黎"
+                                                 :op2 "奥组委")
+                                         :ARG3 (s2x6 / 主席))))
+              :aspect performance)
+  :ARG1-of (s2i3 / identity-91
+             :ARG2 (s2x5 / 闻-01
+                     :ARG0 s2i2
+                     :ARG1 (s2h3 / have-reason-91
+                             :ARG3 (s2x7 / 继续
+                                     :ARG1 (s2a3 / and
+                                             :op1 (s2x8 / 尝试-01
+                                                    :ARG0 (s2p / person
+                                                            :refer-person 1st
+                                                            :refer-number plural)
+                                                    :aspect process)
+                                             :op2 (s2x9 / 跌倒-01
+                                                    :ARG0 s2p
+                                                    :aspect process)
+                                             :op3 (s2x10 / 爬起-01
+                                                    :ARG0 s2p
+                                                    :aspect process)
+                                             :op4 (s2x11 / 行动-01
+                                                    :ARG0 s2p
+                                                    :aspect process)
+                                             :op5 (s2x12 / 相信-01
+                                                    :ARG0 s2p
+                                                    :aspect process))
+                                     :aspect activity)
+                             :ARG2 (s2x13 / 意味-01
+                                     :ARG0 (s2x26 / 闭幕-01
+                                             :mod (s2x27 / 残奥)
+                                             :aspect performance)
+                                     :ARG1 (s2x14 / 结束-01
+                                             :ARG0 (s2x16 / 奥运
+                                                     :mod (s2t / temporal-quantity
+                                                            :quant 2024
+                                                            :unit (s2x15 / 年)))
+                                             :aspect performance)
+                                     :aspect state)
+                             :aspect state)
+                     :aspect state)
+             :aspect state))
+
+
+# :: snt3	最 重要 的 ， 让 我们 继续 勇敢
+
+# sentence level graph
+(s3x / 继续-01
+  :ARG0 (s3p / person-of-speech
+          :refer-person 1st
+          :refer-number plural)
+  :ARG1 (s3x2 / 勇敢-01
+          :ARG0 s3p
+          :aspect state)
+  :mod (s3x3 / 重要-01
+         :mod (s3x4 / 最)
+         :aspect state)
+  :aspect state)
+
+
+# :: snt4	不如 说 这 只 是 一种 文化 不同 。
+
+# sentence level graph
+(s4x / 不如-01
+  :ARG1 (s4x2 / 说-01
+          :ARG1 (s4x3 / 不同-01
+                  :ARG0 (s4x4 / 文化
+                          :mod (s4x5 / 种)
+                          :quant 1)
+                  :aspect state)
+          :aspect state)
+  :aspect state)
+
+
+# :: snt5	和 巴黎 奥运 开幕 时 一样 ， 残奥 闭幕 礼 同样 在 雨中 举行 ， 下届 残奥 举办 城市 洛杉矶 市长 巴斯 接过 国际 残奥 委员会 会旗 ， 洛杉矶 呈献 六分钟 的 交接 表演
+
+# sentence level graph
+(s5i2 / identity-91
+  :ARG1 (s5x / 举行-01
+          :ARG0 (s5x2 / 礼
+                  :mod (s5x3 / 闭幕-01
+                         :aspect performance
+                         :place (s5x4 / 残奥)))
+          :mod (s5x5 / 同样)
+          :temporal (s5x6 / 雨中)
+          :aspect performance)
+  :ARG2 (s5a / and
+          :op1 (s5x7 / 接过-01
+                 :ARG0 (s5i3 / individual-person
+                         :name (s5n3 / name
+                                 :op1 "巴斯")
+                         :ARG1-of (s5h3 / have-org-role-91
+                                    :ARG2 (s5c / city
+                                            :name (s5n4 / name
+                                                    :op1 "洛杉矶"))
+                                    :ARG3 (s5x15 / 市长)))
+                 :ARG1 (s5x8 / 会旗
+                         :poss (s5o / organization
+                                 :name (s5n5 / name
+                                         :op1 "国际"
+                                         :op2 "残奥"
+                                         :op3 "委员会")))
+                 :ARG2 (s5x9 / 下届
+                         :mod (s5x10 / 残奥))
+                 :aspect performance)
+          :op2 (s5x11 / 呈献-01
+                 :ARG0 s5c
+                 :ARG1 (s5x12 / 表演-01
+                         :ARG0 (s5x13 / 交接-01
+                                 :aspect process)
+                         :duration (s5t / temporal-quantity
+                                     :quant 6
+                                     :unit (s5x14 / 分钟))
+                         :aspect performance)
+                 :aspect performance)))
+
+
+# :: snt6	六名 法国 残奥 运动员 在 体育场 内 吹熄 火种 灯 后 ， 在 杜乐丽 花园 的 主 火炬 随即 熄灭
+
+# sentence level graph
+(s6x / 熄灭-01
+  :ARG1 (s6x2 / 火炬
+          :mod (s6x3 / 主)
+          :place (s6p / park
+                   :name (s6n / name
+                           :op1 "杜乐丽"
+                           :op2 "花园")))
+  :manner (s6x4 / 随即)
+  :temporal (s6x5 / 后
+              :op1 (s6x6 / 吹熄-01
+                     :ARG0 (s6x10 / 运动员
+                             :quant 6
+                             :unit (s6x11 / 名)
+                             :place (s6c / country
+                                      :name (s6n2 / name
+                                              :op1 "法国"))
+                             :topic (s6x12 / 残奥))
+                     :ARG1 (s6x7 / 灯
+                             :ARG2-of (s6i2 / identity-91
+                                        :ARG1 (s6x8 / 火种)))
+                     :aspect habitual))
+  :aspect performance)
+
+
+# :: snt7	闭幕 礼 进入 一小时 的 派对 表演 ， 24 名 电子 音乐 制作人 参与 ， 由 76 岁 的 殿堂级 艺术家 Jean-Michel André 打头阵 ， Kavinsky 、 Kungs 等 DJ 悉数登场
+
+# sentence level graph
+(s7a / and
+  :op1 (s7x / 进入-01
+         :ARG0 (s7x2 / 礼
+                 :mod (s7x3 / 闭幕-01
+                        :aspect performance))
+         :ARG1 (s7x4 / 表演-01
+                 :duration (s7t / temporal-quantity
+                             :quant 1
+                             :unit (s7x6 / 小时))
+                 :temporal (s7x5 / 派对))
+         :aspect state)
+  :op2 (s7x7 / 参与-01
+         :ARG0 (s7x8 / 制作人
+                 :mod (s7x9 / 音乐
+                        :mod (s7x10 / 电子))
+                 :quant 24
+                 :unit (s7x11 / 名))
+         :aspect performance)
+  :op3 (s7x12 / 打头阵-01
+         :ARG0 (s7x13 / 艺术家
+                 :mod (s7x14 / 殿堂级)
+                 :ARG1-of (s7i2 / identity-91
+                            :ARG2 (s7e / ethnic-group
+                                    :name (s7n / name
+                                            :op1 "Jean-Michel"
+                                            :op2 "André"))
+                            :aspect state)
+                 :age (s7x15 / 岁)
+                 :ARG1-of (s7i3 / individual-person))
+         :aspect performance)
+  :op4 (s7x16 / 登场-01
+         :ARG0 (s7x17 / dj
+                 :ARG0-of (s7x18 / 悉数-01
+                            :aspect state)
+                 :temporal (s7x20 / 等
+                             :op1 (s7a2 / and
+                                    :op1 (s7i4 / individual-person
+                                           :name (s7n2 / name
+                                                   :op1 "Kavinsky"))
+                                    :op2 (s7i5 / individual-person
+                                           :name (s7n3 / name
+                                                   :op1 "Kungs")))))
+         :aspect performance))
+
+
+# :: snt8	最后 上台 表演 的 Martin Solveig 以 《 Hello 》 和 Daft Punk 的 金曲 《 One More Time 》 收尾 ， 13 日 的 巴黎 残奥 和 长达 一个 半月 的 巴黎 盛会 正式 落幕
+
+# sentence level graph
+(s8a / and
+  :op1 (s8x / 上台-01
+         :ARG0 (s8i4 / individual-person
+                 :name (s8n / name
+                         :op1 "Martin"
+                         :op2 "Solveig"))
+         :place (s8x2 / 表演-01)
+         :ord (s8o / ordinal-entity
+                :unit (s8x5 / 最后))
+         :aspect state)
+  :op2 (s8x3 / 收尾-01
+         :ARG0 s8i4
+         :quote t
+         :ARG1 (s8a2 / and
+                 :op1 (s8s2 / song
+                        :name (s8n2 / name
+                                :op1 "Hello"))
+                 :op2 (s8s / song
+                        :name (s8n3 / name
+                                :op1 "One"
+                                :op2 "More"
+                                :op3 "Time")
+                        :ARG1-of (s8i3 / identity-91
+                                   :ARG2 (s8x4 / 金曲
+                                           :poss (s8b / band
+                                                   :name (s8n4 / name
+                                                           :op1 "Daft"
+                                                           :op2 "Punk"))))))
+         :aspect performance)
+  :op2 (s8x6 / 落幕-01
+         :ARG1 (s8a3 / and
+                 :op1 (s8x7 / 残奥
+                        :place (s8c / city
+                                 :name (s8n5 / name
+                                         :op1 "巴黎"))
+                        :temporal (s8d / date-entity
+                                    :day 13))
+                 :op2 (s8x8 / 盛会
+                        :place s8c
+                        :ARG1-of (s8h / have-duration-91
+                                   :ARG2 (s8x9 / 半月)
+                                   :aspect state
+                                   :magnitude 1.5)))
+         :manner (s8x10 / 正式)
+         :aspect performance))
+
+
+# :: snt9	经过 12 日 的 比赛 ， 中国 以 94 金 、 76 银 、 50 铜 ， 一共 220 面 奖牌 ， 连续 六届 位居 奖牌榜 榜首
+
+# sentence level graph
+(s9c / consecutive
+  :op1 (s9x / 经过-01
+         :ARG1 (s9x2 / 比赛-01
+                 :duration 12
+                 :aspect performance)
+         :aspect performance)
+  :op2 (s9x3 / 位居-01
+         :ARG0 (s9c2 / country
+                 :name (s9n / name
+                         :op1 "中国"))
+         :ARG1 (s9x4 / 榜首
+                 :part (s9x5 / 奖牌榜))
+         :temporal (s9x6 / 连续
+                     :quant 6
+                     :unit (s9x7 / 届))
+         :aspect state))
+
+
+
+
+# :: snt10	49 金 、 44 银 、 31 铜 ， 合共 124 面 奖牌 的 英国 排 第二
+
+# sentence level graph
+(s10x / 排-00
+  :ARG0 (s10c / country
+          :name (s10n / name
+                  :op1 "英国")
+          :ARG1-of (s10h / have-91
+                     :ARG2 (s10x3 / 奖牌
+                             :quant 124
+                             :ARG1-of (s10x5 / 合共-00
+                                        :aspect state)
+                             :unit (s10x6 / 面)
+                             :ARG0-of (s10i3 / identity-91
+                                        :ARG2 (s10a3 / and
+                                                :op1 (s10x12 / 金
+                                                       :quant 49
+                                                       :unit (s10x13 / 面))
+                                                :op2 (s10x9 / 银
+                                                       :quant 44
+                                                       :unit (s10x10 / 面))
+                                                :op3 (s10x7 / 铜
+                                                       :quant 31
+                                                       :unit (s10x8 / 面)))
+                                        :aspect state)))
+  :ARG1 (s10x2 / 第二)
+  :aspect state))
+
+

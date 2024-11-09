@@ -1,0 +1,277 @@
+# workset tutorial (generated on Wed Nov 8, 2023 at 10:00:27 for user consensus)
+
+# ::id isi_0001.1 ::date 2012-05-14T21:45:29
+# ::snt The boy wants the girl to believe him.
+# ::save-date Tue May 15, 2012 ::user consensus ::file isi_0001_1.txt
+(w / want-01
+      :ARG0 (b / boy)
+      :ARG1 (b2 / believe-01
+            :ARG0 (g / girl)
+            :ARG1 b))
+
+# ::id isi_0001.2 ::date 2012-05-01T12:56:42
+# ::snt The boy has a desire to be believed by the girl.
+# ::save-date Mon Jun 11, 2012 ::user consensus ::file isi_0001_2.txt
+(d / desire-01
+      :ARG0 (b / boy)
+      :ARG1 (b2 / believe-01
+            :ARG0 (g / girl)
+            :ARG1 b))
+
+# ::id isi_0001.3 ::date 2012-05-01T12:56:47
+# ::snt The girl adjusted the machine.
+# ::save-date Thu Jun 1, 2017 ::user consensus ::file isi_0001_3.txt
+(a / adjust-01
+      :ARG0 (g / girl)
+      :ARG1 (m / machine))
+
+# ::id isi_0001.4 ::date 2012-05-01T16:00:42
+# ::snt The killing took place yesterday.
+# ::save-date Tue May 1, 2012 ::user ulf ::file isi_0001_4.txt
+(k / kill-01
+      :time (y / yesterday))
+
+# ::id isi_0001.5 ::date 2012-05-01T16:01:08
+# ::snt The boy must not go.
+# ::save-date Sat Apr 20, 2013 ::user consensus ::file isi_0001_5.txt
+(o / obligate-01
+      :ARG2 (g / go-02 :polarity -
+            :ARG0 (b / boy)))
+
+# ::id isi_0001.6 ::date 2012-05-01T16:08:03
+# ::snt There is no possibility that the boy will go.
+# ::save-date Sat Apr 20, 2013 ::user consensus ::file isi_0001_6.txt
+# ::note auto-repair-amr 2015-06-11T20:07:58 map-concept:possible->possible-01:domain->ARG1
+(p / possible-01 :polarity -
+      :ARG1 (g / go-02
+            :ARG0 (b / boy)))
+
+# ::id isi_0001.7 ::date 2012-05-01T16:08:53
+# ::snt The girl is sad.
+# ::save-date Sun Jul 26, 2015 ::user consensus ::file isi_0001_7.txt
+(s / sad-02
+      :ARG1 (g / girl))
+
+# ::id isi_0001.8 ::date 2012-05-01T16:09:58
+# ::snt the sadness of the girl
+# ::save-date Mon Jul 27, 2015 ::user consensus ::file isi_0001_8.txt
+(s / sad-02
+      :ARG1 (g / girl))
+
+# ::id isi_0001.9 ::date 2012-05-01T16:10:25
+# ::snt The boy saw the girl who wanted him.
+# ::save-date Tue May 1, 2012 ::user ulf ::file isi_0001_9.txt
+(s / see-01
+      :ARG0 (b / boy)
+      :ARG1 (g / girl
+            :ARG0-of (w / want-01
+                  :ARG1 b)))
+
+# ::id isi_0001.10 ::date 2012-05-01T16:11:28
+# ::snt The boy is likely to go.
+# ::save-date Sat Apr 20, 2013 ::user consensus ::file isi_0001_10.txt
+# ::note auto-repair-amr 2015-06-11T20:07:58 map-concept:likely->likely-01:domain->ARG1
+(l / likely-01
+      :ARG1 (g / go-02
+            :ARG0 (b / boy)))
+
+# ::id isi_0001.5 ::date 2012-05-01T16:01:08
+# ::snt The boy must not go.
+# ::save-date Sat Apr 20, 2013 ::user consensus ::file isi_0001_5.txt
+(o / obligate-01
+      :ARG2 (g / go-02 :polarity -
+            :ARG0 (b / boy)))
+
+# ::id isi_0001.12 ::date 2012-05-02T22:55:24
+# ::snt The boy does n't think the Yankees will win.
+# ::save-date Fri Feb 21, 2014 ::user consensus ::file isi_0001_12.txt
+# ::note auto-repair-amr 2014-03-13T18:37:09 wikify:New_York_Yankees
+(t / think-01
+      :ARG0 (b / boy)
+      :ARG1 (w / win-01 :polarity -
+            :ARG0 (t2 / team :wiki "New_York_Yankees"
+                  :name (n / name :op1 "Yankees"))))
+
+# ::id isi_0001.13 ::date 2012-05-02T22:55:27
+# ::snt the comment is inappropriate
+# ::save-date Sat Jul 25, 2015 ::user consensus ::file isi_0001_13.txt
+(a / appropriate-02 :polarity -
+      :ARG1 (t / thing
+            :ARG1-of (c / comment-01)))
+
+# ::id isi_0001.14 ::date 2012-05-02T22:55:30
+# ::snt What did the girl find?
+# ::save-date Thu Apr 4, 2013 ::user consensus ::file isi_0001_14.txt
+(f / find-01
+      :ARG0 (g / girl)
+      :ARG1 (a / amr-unknown))
+
+# ::id isi_0001.15 ::date 2012-05-02T22:55:32
+# ::snt The boy 's destruction of the room
+# ::save-date Thu May 3, 2012 ::user ulf ::file isi_0001_15.txt
+(d / destroy-01
+      :ARG0 (b / boy)
+      :ARG1 (r / room))
+
+# ::id isi_0001.16 ::date 2012-05-03T00:36:18
+# ::snt British investor
+# ::save-date Tue Feb 25, 2014 ::user consensus ::file isi_0001_16.txt
+(p / person
+      :ARG0-of (i / invest-01)
+      :mod (c / country :wiki "United_Kingdom" :name (n / name :op1 "Britain")))
+
+# ::id isi_0001.17 ::date 2012-05-03T18:19:43
+# ::snt chip maker
+# ::save-date Thu Jan 15, 2015 ::user consensus ::file isi_0001_17.txt
+(c / company
+      :ARG0-of (m / make-01
+            :ARG1 (c2 / chip)))
+
+# ::id isi_0001.18 ::date 2012-05-02T23:17:03
+# ::snt The soldier was aware of the battle.
+# ::save-date Sat Jun 2, 2012 ::user consensus ::file isi_0001_18.txt
+(r / realize-01
+      :ARG0 (s / soldier)
+      :ARG1 (b / battle))
+
+# ::id isi_0001.19 ::date 2012-05-03T00:31:44
+# ::snt The boy took a bath.
+# ::save-date Fri May 4, 2012 ::user ulf ::file isi_0001_19.txt
+(b / bathe-01
+  :ARG0 (b2 / boy))
+
+# ::id isi_0001.20 ::date 2012-05-03T20:42:43
+# ::snt The nation defaulted after the war.
+# ::save-date Fri Apr 19, 2013 ::user consensus ::file isi_0001_20.txt
+(d / default-01
+      :ARG1 (n / nation)
+      :time (a / after
+            :op1 (w / war)))
+
+# ::id isi_0001.21 ::date 2012-05-04T11:02:29
+# ::snt The man died between the house and the river.
+# ::save-date Tue May 14, 2013 ::user consensus ::file isi_0001_21.txt
+(d / die-01
+      :ARG1 (m / man)
+      :location (b / between
+            :op1 (h / house)
+            :op2 (r / river)))
+
+# ::id isi_0001.22 ::date 2012-05-04T11:02:32
+# ::snt He was a participant in the scheme.
+# ::save-date Fri May 4, 2012 ::user ulf ::file isi_0001_22.txt
+(p / participate-01
+  :ARG0 (h / he)
+  :ARG1 (s / scheme))
+
+# ::id isi_0001.23 ::date 2012-05-04T11:38:38
+# ::snt According to government sources, the killing happened yesterday.
+# ::save-date Tue Mar 12, 2013 ::user consensus ::file isi_0001_23.txt
+(s / say-01
+      :ARG0 (s2 / source
+            :mod (g / government-organization
+                  :ARG0-of (g2 / govern-01)))
+      :ARG1 (k / kill-01
+            :time (y / yesterday)))
+
+# ::id isi_0001.24 ::date 2012-05-04T11:39:00
+# ::snt The boy came and left.
+# ::save-date Sat Jul 25, 2015 ::user consensus ::file isi_0001_24.txt
+(a / and
+      :op1 (c / come-01
+            :ARG1 (b / boy))
+      :op2 (l / leave-11
+            :ARG0 b))
+
+# ::id isi_0001.25 ::date 2012-05-14T21:59:17
+# ::snt The boy is a hard worker.
+# ::save-date Fri Oct 2, 2015 ::user consensus ::file isi_0001_25.txt
+(w / work-01
+      :ARG0 (b / boy)
+      :manner (h / hard-02))
+
+# ::id isi_0001.26 ::date 2012-05-14T22:03:24
+# ::snt the earlier plan
+# ::save-date Wed Sep 13, 2017 ::user consensus ::file isi_0001_26.txt
+(p / plan
+      :time (b / before))
+
+# ::id isi_0001.27 ::date 2012-05-14T22:03:53
+# ::snt the girl is taller than the boy
+# ::save-date Mon Aug 28, 2017 ::user consensus ::file isi_0001_27.txt
+(h / have-degree-91
+      :ARG1 (g / girl)
+      :ARG2 (t / tall)
+      :ARG3 (m / more)
+      :ARG4 (b / boy))
+
+# ::id isi_0001.28 ::date 2012-05-14T22:04:44
+# ::snt naval officials
+# ::save-date Mon Sep 9, 2013 ::user consensus ::file isi_0001_28.txt
+(p / person
+      :ARG0-of (h / have-org-role-91
+            :ARG1 (n / navy)
+            :ARG2 (o / official)))
+
+# ::id isi_0001.29 ::date 2012-05-14T22:05:12
+# ::snt Mollie Brown
+# ::save-date Mon May 14, 2012 ::user consensus ::file isi_0001_29.txt
+# ::note auto-repair-amr 2014-02-21 wikify:Margaret_Brown
+(p / person :wiki "Margaret_Brown"
+      :name (n / name :op1 "Mollie" :op2 "Brown"))
+
+# ::id isi_0001.30 ::date 2012-05-14T22:05:28
+# ::snt 40,000 boys
+# ::save-date Mon May 14, 2012 ::user consensus ::file isi_0001_30.txt
+(b / boy :quant 40000)
+
+# ::id isi_0001.31 ::date 2012-05-14T22:05:40
+# ::snt a billion and half atoms
+# ::save-date Mon May 14, 2012 ::user consensus ::file isi_0001_31.txt
+(a / atom :quant 1500000000)
+
+# ::id isi_0001.32 ::date 2012-05-14T22:06:14
+# ::snt several hundred boys
+# ::save-date Mon May 14, 2012 ::user consensus ::file isi_0001_32.txt
+(b / boy
+      :quant (s / several :op1 100))
+
+# ::id isi_0001.33 ::date 2012-05-14T22:06:54
+# ::snt between four and five thousand boys
+# ::save-date Mon May 14, 2012 ::user consensus ::file isi_0001_33.txt
+(b / boy
+      :quant (b2 / between :op1 4000 :op2 5000))
+
+# ::id isi_0001.34 ::date 2012-05-01T16:14:53
+# ::snt ten miles
+# ::save-date Tue May 1, 2012 ::user ulf ::file isi_0001_34.txt
+(d / distance-quantity :quant 10
+      :unit (m / mile))
+
+# ::id isi_0001.35 ::date 2012-05-01T16:15:25
+# ::snt about 10 miles
+# ::save-date Tue May 1, 2012 ::user ulf ::file isi_0001_35.txt
+(a / about
+      :op1 (d / distance-quantity :quant 10
+            :unit (m / mile)))
+
+# ::id isi_0001.36 ::date 2012-05-01T16:15:59
+# ::snt February 29, 2012
+# ::save-date Tue May 1, 2012 ::user ulf ::file isi_0001_36.txt
+(d / date-entity :year 2012 :month 2 :day 29)
+
+# ::id isi_0001.37 ::date 2012-05-01T16:16:25
+# ::snt April
+# ::save-date Tue May 1, 2012 ::user ulf ::file isi_0001_37.txt
+(d / date-entity :month 4)
+
+# ::id isi_0001.38 ::date 2012-05-01T16:16:43
+# ::snt Summer 2011
+# ::save-date Tue May 1, 2012 ::user ulf ::file isi_0001_38.txt
+(d / date-entity :year 2011
+      :season (s / summer))
+
+# ::id isi_0001.39 ::date 2012-05-01T16:17:11
+# ::snt 25%
+# ::save-date Tue May 1, 2012 ::user ulf ::file isi_0001_39.txt
+(p / percentage-entity :value 25)

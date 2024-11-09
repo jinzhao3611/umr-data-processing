@@ -1,0 +1,403 @@
+# :: snt1	 九十年代 后期 ， 该地 最大 的 一桩 经济 丑闻 爆发 ， 商人 安 纳托利 · 拜 科夫 由于 涉嫌 谋杀 经济 伙伴 韦 洛尔 · 斯图路 加诺夫 ， 当地政府 剥夺 了 他 对 克拉斯诺亚尔斯克 铝厂 的 所有权 。
+
+# sentence level graph:
+(s1c / consecutive
+  :op1 (s1x / 爆发-01
+         :ARG1 (s1x5 / 丑闻
+                 :mod (s1x8 / 经济)
+                 :unit (s1x9 / 桩)
+                 :ARG1-of (s1h / have-degree-91
+                            :ARG2 (s1x10 / 大)
+                            :ARG5 (s1x11 / 最))
+                 :ARG1-of (s1x12 / 谋杀-01
+                            :ARG0 (s1i2 / individual-person
+                                    :name (s1n / name
+                                            :op1 "安纳托利"
+                                            :op2 "·"
+                                            :op3 "拜科夫")
+                                    :ARG0-of (s1h2 / have-role-91
+                                               :ARG2 (s1x14 / 商人)))
+                            :ARG1 (s1i3 / individual-person
+                                    :name (s1n2 / name
+                                            :op1 "韦洛尔"
+                                            :op2 "·"
+                                            :op3 "斯图路加诺夫"))
+                            :ARG1-of (s1x13 / 涉嫌)
+                            :aspect performance))
+         :place (s1x6 / 地
+                  :mod (s1x7 / 该))
+         :aspect performance)
+  :op2 (s1x2 / 剥夺-01
+         :ARG0 (s1x17 / 政府
+                 :mod (s1x18 / 当地))
+         :ARG1 (s1x15 / 所有权
+                 :mod (s1x16 / 铝厂
+                        :place (s1c2 / city
+                                 :name (s1n3 / name
+                                         :op1 "克拉斯诺亚尔斯克"))))
+         :ARG2 s1i2
+         :aspect performance)
+  :temporal (s1x3 / 后期
+              :decade (s1x4 / 九十)))
+
+# alignment:
+s1c : 0-0
+s1c2 : 34-34
+s1h : 0-0
+s1h2 : 0-0
+s1i2 : 0-0
+s1i3 : 23-27
+s1n : -1--1
+s1n2 : -1--1
+s1n3 : -1--1
+s1x : 10-10
+s1x10 : 5-5
+s1x11 : 5-5
+s1x12 : 20-20
+s1x13 : 19-19
+s1x14 : 12-12
+s1x15 : 37-37
+s1x16 : 35-35
+s1x17 : 29-29
+s1x18 : 29-29
+s1x2 : 30-30
+s1x3 : 2-2
+s1x4 : 1-1
+s1x5 : 9-9
+s1x6 : 4-4
+s1x7 : 4-4
+s1x8 : 8-8
+s1x: 10-10
+s1x5: 9-9
+s1x8: 8-8
+s1x12: 20-20
+s1x14: 12-12
+s1x13: 19-19
+s1x2: 30-30
+s1x15: 37-37
+s1x16: 35-35
+s1x3: 2-2
+
+# document level annotation:
+(s1s0 / sentence
+  :modal ((root :modal author)
+                    (author :full-affirmative s1x12)
+                    (author :full-affirmative s1x)
+                    (author :full-affirmative s1x2)))
+
+
+# :: snt2	 但 不久 后 这个 事件 被 曝光 是 竞争对手 对 拜 科夫 蓄谋已久 的 陷害 。
+
+# sentence level graph:
+(s2x / 曝光-01
+  :ARG1 (s2x2 / 事件
+          :mod (s2x3 / 这个)
+          :ARG1-of (s2x4 / 陷害-01)
+          :ARG0-of (s2h / have-role-91
+                     :ARG2 (s2x7 / 陷害-01
+                             :ARG0 (s2x8 / 对手
+                                     :mod (s2x9 / 竞争))
+                             :ARG1 (s2i2 / individual-person
+                                     :name (s2n / name
+                                             :op1 "拜科夫"))
+                             :mod (s2x10 / 蓄谋已久)
+                             :aspect performance)))
+  :temporal (s2x5 / 后
+              :mod (s2x6 / 不久))
+  :aspect performance)
+
+# alignment:
+s2h : 0-0
+s2i2 : 11-12
+s2n : -1--1
+s2x : 7-7
+s2x10 : 13-13
+s2x2 : 5-5
+s2x3 : 4-4
+s2x4 : 15-15
+s2x5 : 3-3
+s2x6 : 2-2
+s2x7 : 15-15
+s2x8 : 9-9
+s2x: 7-7
+s2x2: 5-5
+s2x3: 4-4
+s2x4: 15-15
+s2x7: 15-15
+s2x10: 13-13
+s2x5: 3-3
+s2x6: 2-2
+
+# document level annotation:
+(s2s0 / sentence
+  :temporal ((s2x :after s1c))
+  :modal ((root :modal author)
+                    (author :full-affirmative s2x7)
+                    (author :full-affirmative s2x))
+  :coref ((s2x2 :same-event s1x5)))
+
+
+# :: snt3	 克拉斯诺亚尔斯克 当地 的 工厂 所有权 争议 一直 持续 到 今天 ， 究其原因 ， 是因为 几乎 所有 原 国有 大厂 都 被 垄断集团 或 金融寡头 所 控制 。
+
+# sentence level graph:
+(s3x12 / 持续-02
+  :ARG0 (s3x14 / 争议-01
+          :ARG1 (s3x15 / 所有权
+                  :mod (s3x16 / 工厂
+                         :mod (s3x17 / 当地
+                                :mod (s3c / city
+                                       :name (s3n / name
+                                               :op1 "克拉斯诺亚尔斯克")))))
+          :aspect performance)
+  :ARG1 (s3x13 / 今天)
+  :mod (s3x18 / 一直)
+  :cause (s3x19 / 控制-01
+           :ARG0 (s3o2 / or
+                   :op1 (s3x20 / 集团
+                          :mod (s3x3 / 垄断))
+                   :op2 (s3x21 / 寡头
+                          :mod (s3x23 / 金融)))
+           :ARG1 (s3x24 / 厂
+                   :mod (s3x / 大)
+                   :mod (s3x26 / 国有)
+                   :mod (s3x27 / 原)
+                   :mod (s3x2 / 所有
+                          :mod (s3x29 / 几乎)))
+           :aspect performance)
+  :aspect performance)
+
+# alignment:
+s3c : 1-1
+s3n : -1--1
+s3o2 : 0-0
+s3x : 26-26
+s3x12 : 8-8
+s3x13 : 10-10
+s3x14 : 6-6
+s3x15 : 5-5
+s3x16 : 4-4
+s3x17 : 2-2
+s3x18 : 7-7
+s3x19 : 26-26
+s3x2 : 22-22
+s3x20 : 22-22
+s3x21 : 24-24
+s3x23 : 24-24
+s3x24 : 19-19
+s3x26 : 18-18
+s3x27 : 17-17
+s3x12: 8-8
+s3x14: 6-6
+s3x15: 5-5
+s3x16: 4-4
+s3x17: 2-2
+s3x13: 10-10
+s3x18: 7-7
+s3x19: 26-26
+s3x26: 18-18
+s3x27: 17-17
+s3x2: 16-16
+s3x29: 15-15
+
+# document level annotation:
+(s3s0 / sentence
+  :modal ((root :modal author)
+                    (author :full-affirmative s3x14)
+                    (author :full-affirmative s3x19)
+                    (author :full-affirmative s3x12)))
+
+
+# :: snt4	 自从 1996 年 市长 皮马 什科夫 执政 以来 ， 市容 市貌 开始 逐渐 改善 ： 旧 的 有 历史 意义 的 建筑 被 保护 下来 ， 呆板 的 沥青 人行道 被 改作 具有 当地 特色 的 铺路 小石 ， 曾经 被 涸泽而渔 式 开发 、 多如 繁星 的 温泉 疗养院 被 保护 起来 或 停业整顿 。
+
+# sentence level graph:
+(s4x / 改善-01
+  :ARG1 (s4a / and
+          :op1 (s4x2 / 市容)
+          :op2 (s4x3 / 市貌))
+  :mod (s4x4 / 逐渐)
+  :temporal (s4d / date-interval
+              :op1 (s4x5 / 执政-01
+                     :ARG0 (s4i2 / individual-person
+                             :name (s4n / name
+                                     :op1 "皮马什科夫")
+                             :ARG0-of (s4h / have-role-91
+                                        :ARG2 (s4x6 / 市长)))
+                     :year 1996
+                     :aspect performance))
+  :ARG1-of (s4a2 / and
+             :op1 (s4x7 / 保护-01
+                    :ARG1 (s4x8 / 建筑
+                            :mod (s4a3 / and
+                                   :op1 (s4x9 / 旧)
+                                   :op2 (s4x10 / 有-01
+                                          :ARG1 (s4x11 / 意义
+                                                  :mod (s4x12 / 历史))
+                                          :aspect state)))
+                    :aspect performance)
+             :op2 (s4x13 / 改-01
+                    :ARG1 (s4x14 / 人行道
+                            :mod (s4x15 / 沥青)
+                            :mod (s4x16 / 呆板))
+                    :ARG2 (s4x17 / 小石
+                            :mod (s4x18 / 铺路)
+                            :mod (s4x19 / 具有-01
+                                   :ARG1 (s4x20 / 特色
+                                           :mod (s4x21 / 当地))
+                                   :aspect performance))
+                    :aspect performance)
+             :op3 (s4o / or
+                    :op1 (s4x22 / 保护-01
+                           :ARG1 (s4x25 / 疗养院
+                                   :mod (s4x26 / 温泉)
+                                   :ARG1-of (s4x27 / 开发-01
+                                              :mod (s4x28 / 涸泽而渔)
+                                              :aspect performance)
+                                   :mod (s4x29 / 如-01
+                                          :ARG1 (s4x30 / 繁星)
+                                          :mod (s4x31 / 多)
+                                          :aspect state))
+                           :aspect performance)
+                    :op2 (s4a4 / and
+                           :op1 (s4x23 / 停业-01
+                                  :ARG0 s4x25
+                                  :aspect performance)
+                           :op2 (s4x24 / 整顿-01
+                                  :ARG1 s4x25
+                                  :aspect performance))))
+  :aspect performance)
+
+# alignment:
+s4a : 0-0
+s4a2 : 0-0
+s4a3 : 0-0
+s4a4 : 0-0
+s4d : 0-0
+s4h : 0-0
+s4i2 : 5-6
+s4n : -1--1
+s4o : 0-0
+s4x : 14-14
+s4x10 : 18-18
+s4x11 : 20-20
+s4x12 : 19-19
+s4x13 : 32-32
+s4x14 : 30-30
+s4x15 : 29-29
+s4x16 : 27-27
+s4x17 : 38-38
+s4x18 : 37-37
+s4x19 : 33-33
+s4x2 : 10-10
+s4x20 : 35-35
+s4x21 : 34-34
+s4x22 : 52-52
+s4x23 : 55-55
+s4x24 : 55-55
+s4x25 : 0-0
+s4x26 : 49-49
+s4x27 : 44-44
+s4x28 : 42-42
+s4x29 : 46-46
+s4x3 : 11-11
+s4x30 : 47-47
+s4x31 : 46-46
+s4x4 : 13-13
+s4x5 : 7-7
+s4x6 : 4-4
+s4x7 : 24-24
+s4x8 : 22-22
+s4x: 14-14
+s4x2: 10-10
+s4x3: 11-11
+s4x4: 13-13
+s4x5: 7-7
+s4x6: 4-4
+s4x7: 24-24
+s4x8: 22-22
+s4x9: 16-16
+s4x10: 18-18
+s4x11: 20-20
+s4x12: 19-19
+s4x14: 30-30
+s4x15: 29-29
+s4x16: 27-27
+s4x17: 38-38
+s4x18: 37-37
+s4x19: 33-33
+s4x20: 35-35
+s4x21: 34-34
+s4x22: 24-24
+s4x25: 50-50
+s4x26: 49-49
+s4x27: 44-44
+s4x28: 42-42
+s4x30: 47-47
+
+# document level annotation:
+(s4s0 / sentence
+  :temporal ((s4x :after s1x3))
+  :modal ((root :modal author)
+                    (author :full-affirmative s4x5)
+                    (author :full-affirmative s4x10)
+                    (author :full-affirmative s4x7)
+                    (author :full-affirmative s4x19)
+                    (author :full-affirmative s4x13)
+                    (author :full-affirmative s4x27)
+                    (author :full-affirmative s4x29)
+                    (author :full-affirmative s4x22)
+                    (author :full-affirmative s4x23)
+                    (author :full-affirmative s4x24)
+                    (author :full-affirmative s4x)))
+
+
+# :: snt5	 如今 这座 欣欣向荣 的 城市 中 ， 已 几乎 看不到 苏联 时代 的 破落 与 单调 。
+
+# sentence level graph:
+(s5x / 看-02
+  :ARG1 (s5a / and
+          :op1 (s5x2 / 破落)
+          :op2 (s5x3 / 单调)
+          :temporal (s5x4 / 时代
+                      :mod (s5c / country
+                             :name (s5n / name
+                                     :op1 "苏联"))))
+  :mod (s5x5 / 几乎)
+  :polarity -
+  :place (s5x6 / 中
+           :mod (s5x7 / 城市
+                  :mod (s5x8 / 欣欣向荣)
+                  :unit (s5x9 / 座)
+                  :mod (s5x10 / 这)))
+  :temporal (s5x11 / 如今)
+  :aspect performance)
+
+# alignment:
+s5a : 0-0
+s5c : 11-11
+s5n : -1--1
+s5x : 10-10
+s5x10 : 2-2
+s5x11 : 1-1
+s5x2 : 14-14
+s5x3 : 16-16
+s5x4 : 12-12
+s5x5 : 9-9
+s5x6 : 6-6
+s5x7 : 5-5
+s5x8 : 3-3
+s5x2: 14-14
+s5x3: 16-16
+s5x4: 12-12
+s5x5: 9-9
+s5x6: 6-6
+s5x7: 5-5
+s5x8: 3-3
+s5x11: 1-1
+
+# document level annotation:
+(s5s0 / sentence
+  :modal ((root :modal author)
+                    (author :full-negative s5x))
+  :coref ((s5x7 :same-entity s3x17)))
+
+

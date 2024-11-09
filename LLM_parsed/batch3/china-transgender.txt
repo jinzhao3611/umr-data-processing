@@ -1,0 +1,685 @@
+# :: snt1	去年 11 月 5 日晚 ， 跨性别者 阿程 和 阿聪 在 广东 中山 一 酒店 服毒自杀 ， 但 事件 并未 在 第二天 两人 的 遗体 被 发现 后 结束
+
+# sentence level graph
+(s1b / but-91
+  :ARG1 (s1x / 自杀-01
+          :ARG0 (s1a / and
+                  :op1 (s1i2 / individual-person
+                         :name (s1n / name
+                                 :op1 "阿程")
+                         :ARG1-of (s1i4 / identity-91
+                                    :ARG2 (s1x5 / 者
+                                            :ARG-of (s1h / have-org-role-91
+                                                      :ARG3 (s1x6 / 跨性别))))
+                         :ARG0-of (s1x7 / 服毒-00
+                                    :aspect performance))
+                  :op2 (s1i3 / individual-person
+                         :name (s1n2 / name
+                                 :op1 "阿聪")
+                         :ARG1-of s1i4
+                         :ARG0-of s1x7))
+          :place (s1x8 / 酒店
+                   :quant 1
+                   :mod (s1c / city
+                          :name (s1n3 / name
+                                  :op1 "中山")
+                          :place (s1p / province
+                                   :name (s1n4 / name
+                                           :op1 "广东"))))
+          :mod (s1x9 / 晚)
+          :temporal (s1d / date-entity
+                      :year 2022
+                      :month 11
+                      :day 5)
+          :aspect performance)
+  :ARG2 (s1x2 / 结束-01
+          :ARG0 (s1x3 / 事件)
+          :ARG1 (s1x4 / 发现-01
+                  :ARG0 (s1x10 / 遗体
+                          :part (s1a2 / and
+                                  :op1 s1i2
+                                  :op2 s1i3))
+                  :temporal (s1d2 / date-entity
+                              :year 2022
+                              :month 11
+                              :day 6)
+                  :aspect performance)
+          :aspect performance
+          :polarity -))
+
+
+# :: snt2	随着 向 二人 出售 胶囊 的 药物 中介 被 警方 逮捕 ， 在 该 中介处 获取 药物 的 数名 跨性别者 接连 自杀 ， 在 跨性别 圈 中 引起 不小 震撼
+
+# sentence level graph
+(s2a / and
+  :op1 (s2x / 逮捕-01
+         :ARG1 (s2i3 / individual-person
+                 :name (s2n4 / name
+                         :op1 "警方"))
+         :ARG2 (s2i4 / implicit-argument)
+         :temporal (s2x16 / 随着)
+         :aspect performance)
+  :op2 (s2x2 / 自杀-01
+         :ARG0 (s2x3 / 者
+                 :ARG0-of (s2x4 / 获取-01
+                            :ARG1 (s2x5 / 药物)
+                            :place (s2i5 / individual-person
+                                     :ARG0-of (s2x6 / 出售-00
+                                                :ARG1 (s2x7 / 胶囊)
+                                                :ARG2 (s2x8 / 中介
+                                                        :ARG1-of (s2x12 / 处-01
+                                                                   :ARG2 (s2i6 / implicit-argument)
+                                                                   :aspect state))
+                                                :mod (s2x25 / 数)
+                                                :aspect performance)
+                                     :quant 2)))
+         :mod (s2x15 / 接连)
+         :temporal s2x16
+         :aspect performance
+         :quote s2a)
+  :op3 (s2x9 / 引起-01
+         :ARG1 (s2x10 / 震撼-01
+                 :mod (s2x11 / 不小)
+                 :aspect state)
+         :PLACE (s2x13 / 圈
+                  :mod (s2x14 / 跨性别))
+         :aspect performance
+         :quote s2a))
+
+
+# :: snt3	在此 一年 前 当局 禁止 电商 对 激素类 药物 的 销售 ， 导致 中国 跨 性别圈 的 自杀 现象 不断 加重
+
+# sentence level graph
+(s3c / consecutive
+  :op1 (s3x / 禁止-01
+         :ARG0 (s3x2 / 当局)
+         :ARG1 (s3x3 / 销售-01
+                 :ARG0 (s3x4 / 电商)
+                 :ARG1 (s3x5 / 药物
+                         :mod (s3x6 / 类
+                                :ARG0-of (s3x7 / 激素-01
+                                           :aspect process)))
+                 :aspect endeavor)
+         :temporal (s3x8 / 前
+                     :op1 (s3t / temporal-quantity
+                            :quant 1
+                            :unit (s3x9 / 年)))
+         :aspect performance)
+  :op2 (s3x10 / 加重-01
+         :ARG0 (s3x11 / 现象
+                 :example (s3x12 / 自杀-01
+                            :ARG0 (s3x13 / 跨性别圈
+                                    :place (s3c2 / country-region
+                                             :name (s3n / name
+                                                     :op1 "中国")))
+                            :aspect performance))
+         :mod (s3x14 / 不断)
+         :why (s3a / and
+                :op1 (s3t2 / temporal-quantity
+                       :quant 1
+                       :unit (s3x15 / 年)))
+         :aspect state))
+
+
+# :: snt4	二人 自杀 一个 个月 后 的 12 月 6 日 ， 中山 警方 搜查 并 拘捕 了 在 大湾区 跨性别 圈 中 小有 名气 的 王姓 药物 中介 ， 其 友人 阿酷 和 阿禄 在 Twitter 上 透露 ， 警方 搜查 王姓 中介 的 原因 是 阿程 和 阿聪 服毒 时 所用 的 胶囊 是 从 该 中介处 购得 的 ， 同时 表示 胶囊 中 的 化学品 是 二人 自行 上网 买 的 ， 王姓 中介 本人 对此 事 不知情 ， 事发 时 正 和 阿酷 在 从 东莞 回 广州 的 火车 上
+
+# sentence level graph
+(s4a / and
+  :op1 (s4x / 搜查-01
+         :ARG0 (s4x7 / 警方
+                 :place (s4c2 / city-district
+                          :name (s4n3 / name
+                                  :op1 "中山")))
+         :aspect performance)
+  :op2 (s4x2 / 拘捕-01
+         :ARG0 s4x7
+         :ARG1 (s4x3 / 中介
+                 :ARG0-of (s4x4 / 名气
+                            :mod (s4x5 / 小)
+                            :mod (s4x6 / 跨性别圈
+                                   :place (s4r / region
+                                            :name (s4n / name
+                                                    :op1 "大湾区"))))
+                 :mod (s4x8 / 药物)
+                 :mod (s4e / ethnic-group
+                        :name (s4n2 / name
+                                :op1 "王姓"))
+                 :ARG1-of (s4x9 / 透露-01
+                            :ARG0 (s4a4 / and
+                                    :op1 (s4i2 / individual-person
+                                           :name (s4n4 / name
+                                                   :op1 "阿酷"))
+                                    :op2 (s4i3 / individual-person
+                                           :name (s4n5 / name
+                                                   :op1 "阿禄"))
+                                    :ARG0-of (s4x10 / 上-01
+                                               :ARG1 (s4s3 / social-media-platform
+                                                       :name (s4n6 / name
+                                                               :op1 "Twitter"))
+                                               :aspect state))
+                            :aspect state)
+                 :ARG1-of (s4x11 / 表示-01
+                            :ARG0 s4i3
+                            :aspect performance))
+         :aspect performance
+         :aspect performance)
+  :op3 (s4x12 / 表示-01
+         :ARG0 s4i3
+         :ARG1 (s4i7 / implicit-predicate
+                 :ARG1-of (s4i6 / identity-91
+                            :ARG2 (s4x15 / 胶囊
+                                    :mod (s4x16 / 所用-01
+                                           :ARG0 (s4a5 / and
+                                                   :op1 (s4i9 / individual-person
+                                                          :name (s4n8 / name
+                                                                  :op1 "阿程"))
+                                                   :op2 (s4i4 / individual-person
+                                                          :name (s4n7 / name
+                                                                  :op1 "阿聪")))
+                                           :ARG3 (s4x17 / 服毒-00
+                                                   :aspect performance)
+                                           :aspect performance)
+                                    :ARG1-of (s4x18 / 购得-01
+                                               :ARG0 (s4x19 / 人
+                                                       :quant 2
+                                                       :unit Person)
+                                               :ARG1 s4x3
+                                               :aspect performance)
+                                    :poss s4x19)
+                            :aspect state)
+                 :temporal (s4x13 / 事发-01
+                             :aspect performance))
+         :aspect state)
+  :op4 (s4x14 / 不知情-01
+         :ARG0 s4x3
+         :ARG1 (s4t / thing
+                 :refer-number singular
+                 :refer-person 3rd)
+         :temporal (s4x20 / 正
+                     :ARG0-of (s4x21 / 和-04
+                                :ARG1 (s4i8 / individual-person
+                                        :name (s4n9 / name
+                                                :op1 "阿酷"))
+                                :ARG2 (s4x22 / 回-01
+                                        :ARG0 (s4p / person
+                                                :quant 2)
+                                        :ARG1 (s4c / city
+                                                :name (s4n10 / name
+                                                        :op1 "广州"))
+                                        :ARG2 (s4c3 / city
+                                                :name (s4n11 / name
+                                                        :op1 "东莞"))
+                                        :medium (s4x23 / 火车
+                                                  :mod (s4x30 / 从)))
+                                :aspect state))
+         :aspect state))
+
+
+# :: snt5	搜查 王姓 中介 的 同时 ， 警方 也 搜查 了 其 友人 阿鱼 的 租住处 ， 在 两处 查扣 了 电子 设备 和 大量 的 药品 ， 包括 阿鱼 以 合法 方式 从 医院 获得 的 精神科 药物
+
+# sentence level graph
+(s5c / consecutive
+  :op1 (s5x / 搜查-01
+         :ARG0 (s5x6 / 警方)
+         :ARG1 (s5x2 / 租住处
+                 :poss (s5i3 / individual-person
+                         :name (s5n / name
+                                 :op1 "阿鱼")
+                         :ARG0-of (s5x3 / 友人
+                                    :ARG1-of (s5h / have-relation-91
+                                               :ARG2 (s5a / and
+                                                       :op1 (s5a2 / and
+                                                               :op1 (s5x4 / 王姓)
+                                                               :op2 (s5x5 / 中介))
+                                                       :op2 (s5x7 / 也))))
+                         :ARG1-of (s5x8 / 搜查-01
+                                    :aspect activity)))
+         :temporal (s5x9 / 同时
+                     :op1 (s5e / ethnic-group
+                            :name (s5n2 / name
+                                    :op1 "王"))))
+  :op2 (s5x10 / 查扣-01
+         :ARG3 (s5a3 / and
+                 :op1 (s5x11 / 设备
+                        :mod (s5x14 / 电子))
+                 :op2 (s5x12 / 药品
+                        :quant (s5x13 / 大量)
+                        :ARG0-of (s5x17 / 包括-01
+                                   :ARG1 (s5x18 / 药物
+                                           :mod (s5x19 / 精神科)
+                                           :ARG1-of (s5x20 / 获得-01
+                                                      :ARG0 s5i3
+                                                      :ARG1 (s5h2 / have-org-role-91
+                                                              :ARG1 (s5h3 / hospital))
+                                                      :aspect performance
+                                                      :manner (s5x21 / 合法))))
+                                   :aspect state))
+         :place (s5x15 / 处
+                  :quant 2)
+         :aspect performance))
+
+
+# :: snt6	被 警方 带走 的 阿鱼 试图 自残 后 获释 ， 但 王姓 中介 则 被 警方 拘留 ， 并 很快 被 以 妨碍 药品 管理 罪 正式 逮捕
+
+# sentence level graph
+(s6a / and
+  :op1 (s6x / 试图-00
+         :ARG0 (s6a2 / individual-person
+                 :name (s6n / name
+                         :op1 "阿鱼"))
+         :ARG1 (s6x2 / 自残-00
+                 :aspect endeavor)
+         :mod (s6x5 / 后)
+         :aspect endeavor
+         :purpose (s6x3 / 获释-01
+                    :ARG1 s6a2
+                    :aspect performance))
+  :op2 (s6x4 / 拘留-01
+         :ARG0 (s6x6 / 警方)
+         :ARG1 (s6x7 / 中介
+                 :mod (s6x8 / 王姓))
+         :aspect performance)
+  :op3 (s6b / but-91
+         :ARG1 (s6c / consecutive
+                 :op1 (s6x9 / 逮捕-01
+                        :ARG1 s6x7
+                        :aspect performance
+                        :reason (s6x10 / 以-01
+                                  :ARG1 (s6x11 / 罪
+                                          :mod (s6x12 / 管理-01
+                                                 :ARG1 (s6x13 / 药品)
+                                                 :aspect process)
+                                          :mod (s6x14 / 妨碍-01
+                                                 :ARG1 s6x11
+                                                 :aspect process))
+                                  :aspect performance))
+                 :op2 (s6x15 / 拘留-01
+                        :ARG1 s6x7
+                        :mod (s6x16 / 则)
+                        :aspect performance))))
+
+
+# :: snt7	阿酷 在 Twitter 上 表示 警方 并没有 就 此事 通知 其 家属 ， 联系 上 后 其 早已 不 来往 的 父母 也 非常 冷淡
+
+# sentence level graph
+(s7x / 表示-01
+  :ARG0 (s7i2 / individual-person
+          :name (s7n / name
+                  :op1 "阿酷"))
+  :ARG1 (s7a / and
+          :op1 (s7x2 / 通知-01
+                 :ARG1 (s7x4 / 家属
+                         :poss s7i2)
+                 :ARG2 (s7x8 / 此事)
+                 :polarity -
+                 :aspect performance
+                 :place (s7c / city
+                          :name (s7n3 / name
+                                  :op1 "Twitter")))
+          :op2 (s7x13 / 来往-01
+                 :ARG0 (s7x15 / 父母
+                         :ARG0-of (s7x16 / 不-01
+                                    :ARG1 (s7x17 / 来往-01
+                                            :ARG0 s7x15
+                                            :aspect state
+                                            :polarity +
+                                            :mod (s7x18 / 早)
+                                            :aspect activities
+                                            :place (s7x19 / 联系-01
+                                                     :ARG2 s7i2
+                                                     :aspect performance)))
+                 :mod (s7x14 / 也)
+                 :aspect state
+                 :manner (s7x9 / 冷淡))
+          :aspect state)
+  :aspect performance))
+
+
+# :: snt8	王姓 中介 曾经 确诊 双相 情感 障碍 ， 但 由于 其 父亲 以 工作 忙 为由 拖到 检察院 七天 审核期 的 第八天 才 提交 病历 ， 中山 检方 仍然 决定 重新 做 精神 鉴定
+
+# sentence level graph
+(s8b / but-91
+  :ARG1 (s8x / 确诊-01
+          :ARG0 (s8i2 / individual-person
+                  :name (s8n / name
+                          :op1 "王姓"
+                          :op2 "中介"))
+          :ARG1 (s8x2 / 障碍
+                  :mod (s8x3 / 情感
+                         :mod (s8x4 / 双相)))
+          :place-of-activity (s8x5 / 曾经)
+          :aspect performance)
+  :ARG2 (s8x6 / 决定-01
+          :ARG0 (s8x15 / 检方
+                  :place (s8c3 / city-district
+                           :name (s8n4 / name
+                                   :op1 "中山")))
+          :ARG1 (s8x7 / 鉴定-00
+                  :purpose-of (s8x8 / 做-01
+                                :mod (s8x9 / 重新-01)
+                                :aspect activity)
+                  :mod (s8x10 / 精神))
+          :reason (s8x11 / 拖到-01
+                    :ARG0 (s8x14 / 父亲
+                            :poss s8i2)
+                    :ARG1 (s8x12 / 提交-01
+                            :ARG0 s8x14
+                            :ARG1 (s8x13 / 病历)
+                            :condition (s8t / temporal-quantity
+                                         :quant 7
+                                         :unit (s8x16 / 天)
+                                         :mod (s8x17 / 审核期
+                                                :mod (s8x18 / 检察院)))
+                            :aspect performance
+                            :temporal (s8d / date-entity
+                                        :month 1
+                                        :day 8))
+                    :reason (s8x19 / 忙-01
+                              :ARG1 (s8x20 / 工作-01
+                                      :aspect activity)
+                              :aspect state)
+                    :aspect performance)
+          :aspect state))
+
+
+# :: snt9	今年 1 月 8 日 ， 无法 再 联系上 王姓 中介 的 家属 的 阿禄 服下 了 过量 的 药品 ， 并于 四天 后 抢救 无效 去世
+
+# sentence level graph
+(s9c / consecutive
+  :op1 (s9x / 服下-01
+         :ARG0 (s9i3 / individual-person
+                 :name (s9n / name
+                         :op1 "阿禄")
+                 :ARG1-of (s9x6 / 联系-01
+                            :ARG2 (s9x8 / 家属
+                                    :part-of (s9a / aref5
+                                               :ARG0-of (s9x9 / 中介-01
+                                                          :aspect habitual
+                                                          :mod (s9x10 / 王姓))))
+                            :mod (s9x7 / 无法)
+                            :aspect state
+                            :mod (s9x11 / 再)))
+         :ARG1 (s9x5 / 药品
+                 :quant (s9x12 / 过量))
+         :temporal (s9d / date-entity
+                     :year 2023
+                     :month 1
+                     :day 8)
+         :aspect performance)
+  :op2 (s9x2 / 去世-01
+         :ARG0 s9i3
+         :cause-of (s9x3 / 抢救-01
+                     :ARG1 s9i3
+                     :aspect performance)
+         :aspect performance))
+
+
+# :: snt10	2 月 19 日 ， 几 个 月 来 多次 试图 自杀 的 阿鱼 坠楼 ， 2 月 28 日 ， 处理 完 阿鱼 遗物 的 阿酷 同样 选择 了 自杀
+
+# sentence level graph
+(s10c / consecutive
+ :op1 (s10x / 坠楼-00
+        :ARG0 (s10i2 / individual-person
+                :name (s10n / name
+                        :op1 "阿鱼")
+                :ARG0-of (s10x3 / 试图-02
+                           :ARG1 (s10x4 / 自杀-01)
+                           :frequency (s10x5 / 多次)
+                           :duration (s10x6 / 几个-月)
+                           :aspect state)
+                :ARG1-of (s10h / have-org-role-91
+                           :ARG2 (s10x7 / 人)))
+        :aspect performance
+        :temporal (s10d / date-entity
+                    :day 19
+                    :month 2))
+ :op2 (s10x2 / 选择-01
+        :ARG0 (s10i3 / individual-person
+                :name (s10n2 / name
+                        :op1 "阿酷")
+                :ARG1-of (s10x8 / 处理-01
+                           :ARG1 (s10x9 / 遗物
+                                   :poss s10i2)
+                           :aspect performance)
+                :ARG1-of (s10h2 / have-org-role-91
+                           :ARG3 (s10x10 / 人)))
+        :ARG1 (s10x11 / 自杀-01)
+        :manner (s10x12 / 同样)
+        :temporal (s10d2 / date-entity
+                    :day 28
+                    :month 2)
+        :aspect performance))
+
+
+# :: snt11	中国 跨性别 群体 常常 面临 来自 家庭 和 当局 的 双重 压力 ， 2022 年 12 月 ， 中国 药监局 公布 禁止 网上 销售 的 药物 名单 ， 包括 数种 跨女 常用 的 激素 类 药物
+
+# sentence level graph
+(s11c / consecutive
+  :op1 (s11x / 面临-01
+         :ARG0 (s11x2 / 群体
+                 :mod (s11x3 / 跨性别)
+                 :place (s11c2 / country
+                          :name (s11n3 / name
+                                  :op1 "中国")))
+         :ARG1 (s11x4 / 压力
+                 :ARG0-of (s11x5 / 来自-01
+                            :ARG1 (s11a / and
+                                    :op1 (s11x6 / 家庭)
+                                    :op2 (s11x7 / 当局))
+                            :aspect performance)
+                 :mod (s11x8 / 双重))
+         :aspect state
+         :frequency (s11x9 / 常常))
+  :op2 (s11x10 / 公布-01
+         :ARG0 (s11g / government-organization
+                 :name (s11n / name
+                         :op1 "中国"
+                         :op2 "药监局"))
+         :ARG1 (s11x11 / 名单
+                 :topic (s11x13 / 药物
+                          :ARG0-of (s11x14 / 包括-01
+                                     :ARG1 (s11c3 / consecutive
+                                             :op1 (s11x15 / 药物
+                                                    :mod (s11x16 / 类)
+                                                    :mod (s11x17 / 激素)
+                                                    :ARG0-of (s11x18 / 常用-01
+                                                               :ARG1 (s11x19 / 跨女)
+                                                               :aspect habitual))
+                                             :op2 (s11x20 / 数种)))
+                                     :aspect state))
+                 :ARG1-of (s11x12 / 禁止-01
+                            :ARG2 (s11x21 / 销售-02
+                                    :place (s11x22 / 网上)
+                                    :aspect process)
+                            :aspect enactment))
+         :temporal (s11d / date-entity
+                     :month 12
+                     :year 2022)
+         :aspect performance))
+
+
+# :: snt12	由于 相关 医疗 资源 不足 导致 难以 凭医师 的 诊断 和 处方 获得 ， 这些 药物 很多 情况 下 只能 从 网上 购买
+
+# sentence level graph
+(s12x / 只能
+  :ARG0 (s12x2 / 购买-01
+          :ARG1 (s12x3 / 药物
+                  :place (s12x4 / 这些))
+          :mod (s12x7 / 很多)
+          :place (s12x5 / 网上)
+          :aspect performance)
+  :reason (s12x6 / 难以-01
+            :ARG0 (s12a / and
+                    :op1 (s12x8 / 凭-01
+                           :ARG0 (s12x11 / 人
+                                   :ARG1-of (s12i2 / identity-91
+                                              :ARG2 (s12x12 / 医师)))
+                           :ARG1 (s12x10 / 诊断-01
+                                   :aspect performance
+                                   :quote s12i4)
+                           :aspect performance
+                           :quote s12i3)
+                    :op2 (s12x9 / 凭-01
+                           :ARG1 (s12x15 / 处方-01
+                                   :aspect performance
+                                   :quote s12i4)
+                           :aspect performance
+                           :quote s12i3))
+            :ARG2 (s12x13 / 获得-01
+                    :ARG0 s12x11
+                    :aspect performance)
+            :aspect state
+            :cause-of (s12x14 / 导致-01
+                        :ARG1 (s12x16 / 不足-01
+                                :ARG1 (s12x17 / 资源
+                                        :ARG1-of (s12h / have-rel-role-91
+                                                   :ARG2 (s12x18 / 医疗
+                                                           :mod (s12x19 / 相关))))
+                                :aspect state)
+                        :aspect performance)))
+
+
+# :: snt13	禁令 引发 了 跨 女群体 的 恐慌 ， 有 活动 人士 在受 媒体 访问 时 表示 禁令 出台 后 的 几个月 自杀者 “ 明显 比 往年 同样 的 时间段 多 ”
+
+# sentence level graph
+(s13c / consecutive
+  :op1 (s13x / 引发-01
+         :ARG0 (s13x2 / 禁令)
+         :ARG1 (s13x3 / 恐慌
+                 :mod (s13x4 / 跨
+                        :ARG1 (s13x5 / 女群体)))
+         :aspect performance)
+  :op2 (s13x6 / 表示-01
+         :ARG0 (s13x7 / 人士
+                 :ARG0-of (s13i3 / implicit-predicate
+                            :ARG1 (s13x11 / 活动-01
+                                    :aspect performance)))
+         :ARG1 (s13e / evidential
+                 :subj (s13x8 / 多-01
+                         :ARG0 (s13x9 / 自杀者)
+                         :ARG1 (s13x10 / 时间段
+                                 :mod (s13x12 / 同样)
+                                 :temporal-of (s13x13 / 比-01
+                                                :ARG1 (s13x15 / 时间段
+                                                        :temporal-of (s13x16 / 往年)
+                                                        :mod (s13x17 / 几)
+                                                        :temporal-of (s13m / month
+                                                                       :mod (s13x18 / 后
+                                                                              :op1 (s13x19 / 出台-01
+                                                                                     :ARG0 s13x2
+                                                                                     :aspect performance)))))
+                         :ARG2-of (s13i2 / implicit-predicate
+                                    :op1 (s13x14 / 明显))
+                         :aspect state)
+                 :aspect state)
+         :temporal-of (s13x20 / 访问-01
+                        :ARG1 (s13x21 / 媒体))
+         :aspect performance)))
+
+
+# :: snt14	在 此 背景 下 ， 大部分 继续 服药 者 不得不 从 非法 渠道 获得 药物 ， 包括 早已 被 禁止 的 海外 代购 ， 有 的 还 使用 动物 用药 甚至 自制 药物
+
+# sentence level graph
+(s14a / and
+  :op1 (s14x / 不得-01
+         :ARG1 (s14x2 / 渠道
+                 :mod (s14x3 / 非法))
+         :ARG2 (s14x4 / 获得-01
+                 :ARG1 (s14x5 / 药物)
+                 :aspect performance
+                 :quote s14x)
+         :aspect state
+         :quote s14x)
+  :op2 (s14x6 / 包括-01
+         :ARG1 (s14x7 / 代购
+                 :mod (s14x8 / 海外)
+                 :ARG0-of (s14x9 / 禁止-01
+                            :ARG1 (s14x10 / 早)
+                            :aspect state
+                            :quote s14x)
+                 :aspect performance)
+         :aspect state
+         :quote s14x)
+  :op3 (s14x11 / 使用-01
+         :ARG1 (s14x12 / 药物
+                 :mod (s14x16 / 自制-01
+                        :ARG1 s14x12
+                        :quote s14x
+                        :aspect performance))
+         :mod (s14x13 / 有)
+         :topic (s14x14 / 者
+                  :ARG0-of (s14x15 / 继续-01
+                             :ARG1 (s14x18 / 服药-01
+                                     :aspect habitual)))
+         :aspect performance
+         :quote s14x)
+  :op4 (s14x17 / 甚至-01
+         :ARG1 (s14a2 / and
+                 :op1 (s14x21 / 使用-01
+                        :ARG1 (s14x22 / 药物
+                                :mod (s14x23 / 动物用))
+                        :aspect performance
+                        :quote s14x)
+                 :op2 s14x16)
+         :aspect state
+         :quote s14x))
+
+
+# :: snt15	王姓 药物 中介 不仅 进行 海外 药物 代购 ， 其 购买 胶囊 的 原因 也 是 为了 自行 配制 相关 药物 ， 二者 均 是 其 被捕 的 原因 ， 但 阿程 和 阿聪 等人 自杀 所 使用 的 化学品 却 仍然 能够 轻松 在 网上 买到
+
+# sentence level graph
+(s15b / but-91
+  :ARG1 (s15x / 代购-01
+          :ARG0 (s15i3 / individual-person
+                  :name (s15n / name
+                          :op1 "王姓"
+                          :op2 "药物"
+                          :op3 "中介"))
+          :ARG1 (s15x4 / 药物
+                  :place (s15x5 / 海外))
+          :mod (s15x6 / 不仅)
+          :aspect habitual)
+  :ARG2 (s15i2 / implicit-argument
+          :ARG1-of (s15h / have-reason-91
+                     :ARG2 (s15x2 / 配制-01
+                             :ARG1 (s15x3 / 药物
+                                     :mod (s15x7 / 相关))
+                             :reason-of (s15x8 / 自行-01
+                                          :ARG0 s15i3
+                                          :aspect process)
+                             :aspect process)
+                     :aspect state))
+  :ARG3 (s15e2 / exist-91
+          :ARG0 (s15x9 / 化学品
+                  :ARG1-of (s15x10 / 使用-01
+                             :ARG0 (s15a / and
+                                     :op1 (s15i4 / individual-person
+                                            :name (s15n2 / name
+                                                    :op1 "阿程"))
+                                     :op2 (s15i5 / individual-person
+                                            :name (s15n3 / name
+                                                    :op1 "阿聪"))
+                                     :op3 (s15x11 / 等人))
+                             :aspect performance))
+          :ARG1 (s15x12 / 买到-01
+                  :ARG0 (s15e3 / implicit-argument)
+                  :ARG1 s15x9
+                  :mod (s15x14 / 轻松)
+                  :mod (s15x13 / 仍然)
+                  :place (s15x15 / 网上)
+                  :aspect state)
+          :aspect state)
+  :ARG2-of (s15i6 / identity-91
+             :ARG1 (s15x16 / 原因
+                     :ARG3-of (s15h2 / have-reason-91
+                                :ARG2 (s15x17 / 被捕-01
+                                        :ARG0 s15i3
+                                        :aspect performance)
+                                :aspect state))
+             :ARG2 (s15x18 / 原因
+                     :ARG0-of (s15i7 / identity-91
+                                :ARG1 s15i2
+                                :aspect state))
+             :aspect state))
+
+

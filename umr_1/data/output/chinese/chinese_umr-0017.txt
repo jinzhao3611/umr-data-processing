@@ -1,0 +1,351 @@
+# :: snt1	 克拉斯诺亚尔斯克 第一个 市徽 在 1804 年 3 月 12 日 设定 。
+
+# sentence level graph:
+(s1x / 设定-01
+  :ARG1 (s1x2 / 市徽
+          :ord (s1x3 / 第一)
+          :poss (s1c / city
+                  :name (s1n / name
+                          :op1 "克拉斯诺亚尔斯克")))
+  :temporal (s1d / date-entity
+              :year 1804
+              :month 3
+              :day 12)
+  :aspect performance)
+
+# alignment:
+s1c : 1-1
+s1d : 0-0
+s1n : -1--1
+s1x : 11-11
+s1x2 : 3-3
+s1x: 11-11
+s1x2: 3-3
+
+# document level annotation:
+(s1s0 / sentence
+  :modal ((root :modal author)
+                    (author :full-affirmative s1x)))
+
+
+# :: snt2	 分为 上下 两个 部分 ， 上半 部分 绿色 底 ， 刻着 一匹 银白色 的 奔马 Tomsk Guberniya ， 下 半 部分 银色 底 ， 画 着 К р а с н ы й Я р 悬崖 。
+
+# sentence level graph:
+(s2a / and
+  :op1 (s2x / 分为-01
+         :ARG2 (s2i2 / identity-91
+                 :ARG1 (s2x2 / 部分
+                         :quant (s2x3 / 两)
+                         :unit (s2x4 / 个))
+                 :ARG2 (s2a2 / and
+                         :op1 (s2x5 / 上)
+                         :op2 (s2x6 / 下)))
+         :aspect state)
+  :op2 (s2x7 / 刻-01
+         :ARG1 (s2x8 / 奔马
+                 :name (s2t / tomsk-guberniya-)
+                 :mod (s2x9 / 银白色)
+                 :unit (s2x10 / 匹))
+         :ARG2 (s2x11 / 部分
+                 :mod (s2x12 / 上半)
+                 :mod (s2x13 / 底
+                        :mod (s2x14 / 绿色-01)))
+         :aspect state)
+  :op3 (s2x15 / 画-01
+         :ARG1 (s2x16 / 悬崖
+                 :name (s2x17 / Красный-Яр))
+         :place (s2x18 / 部分
+                  :mod (s2x19 / 下半)
+                  :mod (s2x20 / 底
+                         :mod (s2x21 / 银色)))
+         :aspect state))
+
+# alignment:
+s2a : 0-0
+s2a2 : 0-0
+s2i2 : 0-0
+s2t : 16-6
+s2x : 1-1
+s2x10 : 12-12
+s2x11 : 7-7
+s2x12 : 6-6
+s2x13 : 9-9
+s2x14 : 8-8
+s2x15 : 25-25
+s2x16 : 36-36
+s2x17 : 27-35
+s2x18 : 21-21
+s2x19 : 19-20
+s2x2 : 4-4
+s2x20 : 23-3
+s2x21 : 22-22
+s2x3 : 3-3
+s2x4 : 3-3
+s2x5 : 2-2
+s2x6 : 2-2
+s2x7 : 11-11
+s2x8 : 15-15
+s2x: 1-1
+s2x2: 4-4
+s2x6: 19-19
+s2x8: 15-15
+s2x9: 13-13
+s2x11: 4-4
+s2x12: 6-6
+s2x13: 9-9
+s2x14: 8-8
+s2x15: 25-25
+s2x16: 36-36
+s2x18: 4-4
+s2x20: 9-9
+s2x21: 22-22
+
+# document level annotation:
+(s2s0 / sentence
+  :modal ((root :modal author)
+                    (author :full-affirmative s2x)
+                    (author :full-affirmative s2x7)
+                    (author :full-affirmative s2x15)))
+
+
+# :: snt3	 1851 年 11 月 23 日 市徽 改为 红盾 金狮 ， 狮 一手 拿着 锹 ， 另一手 拿 镰刀 。
+
+# sentence level graph:
+(s3a / and
+  :op1 (s3x / 改为-01
+         :ARG1 (s3x2 / 市徽)
+         :ARG2 (s3x3 / 金狮
+                 :mod (s3x4 / 红盾))
+         :temporal (s3d / date-entity
+                     :year 1851
+                     :month 11
+                     :day 23)
+         :aspect performance)
+  :op2 (s3x5 / 拿-01
+         :ARG0 (s3x6 / 一手
+                 :poss (s3x7 / 狮))
+         :ARG1 (s3x8 / 锹)
+         :aspect performance)
+  :op3 (s3x9 / 拿-01
+         :ARG0 (s3x10 / 一手
+                 :mod (s3x11 / 另-01))
+         :ARG1 (s3x12 / 镰刀)
+         :aspect performance))
+
+# alignment:
+s3a : 0-0
+s3d : 0-0
+s3x : 8-8
+s3x10 : 17-17
+s3x11 : 17-17
+s3x12 : 19-19
+s3x2 : 7-7
+s3x3 : 10-10
+s3x4 : 9-9
+s3x5 : 14-14
+s3x6 : 13-13
+s3x7 : 12-12
+s3x8 : 15-15
+s3x: 8-8
+s3x2: 7-7
+s3x3: 10-10
+s3x4: 9-9
+s3x5: 18-18
+s3x6: 13-13
+s3x7: 12-12
+s3x8: 15-15
+s3x9: 18-18
+s3x10: 13-13
+s3x12: 19-19
+
+# document level annotation:
+(s3s0 / sentence
+  :temporal ((s3a :after s1x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s3x)
+                    (author :full-affirmative s3x5)
+                    (author :full-affirmative s3x9)))
+
+
+# :: snt4	 盾 顶上 有 象征 着 俄罗斯 帝国 的 金色 王冠 。
+
+# sentence level graph:
+(s4x / 有-01
+  :ARG0 (s4x2 / 顶上
+          :mod (s4x3 / 盾))
+  :ARG1 (s4x4 / 王冠
+          :mod (s4x5 / 金色)
+          :ARG1-of (s4x6 / 象征-01
+                     :ARG1 (s4x7 / 帝国
+                             :mod (s4c / country
+                                    :name (s4n / name
+                                            :op1 "俄罗斯")))
+                     :aspect performance))
+  :aspect state)
+
+# alignment:
+s4c : 6-6
+s4n : -1--1
+s4x : 3-3
+s4x2 : 2-2
+s4x3 : 1-1
+s4x4 : 10-10
+s4x5 : 9-9
+s4x6 : 4-4
+s4x: 3-3
+s4x2: 2-2
+s4x3: 1-1
+s4x4: 10-10
+s4x5: 9-9
+s4x6: 4-4
+s4x7: 7-7
+
+# document level annotation:
+(s4s0 / sentence
+  :modal ((root :modal author)
+                    (author :full-affirmative s4x6)
+                    (author :full-affirmative s4x))
+  :coref ((s4x3 :same-entity s3x4)))
+
+
+# :: snt5	 现在 使用 的 市徽 在 2004 年 11 月 28 日 发布 ， 相比 1851 年版 只 对 金色 王冠 做 了 一点 修改 ， 加入 了 联邦 大楼 的 图像 。
+
+# sentence level graph:
+(s5a / and
+  :op1 (s5x / 发布-01
+         :ARG1 (s5x2 / 市徽
+                 :ARG1-of (s5x3 / 使用-01
+                            :temporal (s5x4 / 现在)))
+         :temporal (s5d / date-entity
+                     :year 2004
+                     :month 11
+                     :day 28)
+         :aspect performance)
+  :op2 (s5x5 / 修改-01
+         :ARG1 (s5x6 / 王冠
+                 :mod (s5x7 / 金色))
+         :mod (s5x8 / 一点)
+         :mod (s5x9 / 相比-01
+                :ARG0 (s5a2 / and
+                        :op1 (s5x10 / 版
+                               :year (s5x11 / 1851))
+                        :op2 s5x2))
+         :ARG1-of (s5x12 / 加入-02
+                    :ARG1 (s5x13 / 图像
+                            :mod (s5x14 / 大楼
+                                   :mod (s5x15 / 联邦)))
+                    :aspect performance)
+         :aspect performance))
+
+# alignment:
+s5a : 0-0
+s5a2 : 0-0
+s5d : 0-0
+s5x : 12-12
+s5x10 : 16-16
+s5x11 : 15-5
+s5x12 : 26-26
+s5x13 : 31-31
+s5x14 : 29-29
+s5x15 : 28-28
+s5x2 : 0-0
+s5x3 : 2-2
+s5x4 : 1-1
+s5x5 : 24-24
+s5x6 : 20-20
+s5x7 : 19-19
+s5x8 : 23-23
+s5x: 12-12
+s5x2: 4-4
+s5x3: 2-2
+s5x4: 1-1
+s5x5: 24-24
+s5x6: 20-20
+s5x7: 19-19
+s5x8: 23-23
+s5x9: 14-14
+s5x11: 15-15
+s5x12: 26-26
+s5x13: 31-31
+s5x14: 29-29
+s5x15: 28-28
+
+# document level annotation:
+(s5s0 / sentence
+  :modal ((root :modal author)
+                    (author :full-affirmative s5x)
+                    (author :full-affirmative s5x12)
+                    (author :full-affirmative s5x5)))
+
+
+# :: snt6	 翌年 ， 新 市徽 的 铜像 在 该市 的 火车站 广场 上 揭幕 ， 铜像 被 安置 在 一根 约 16 米 （ 52 英尺 ） 高 的 铜柱 的 顶端 。
+
+# sentence level graph:
+(s6a / and
+  :op1 (s6x2 / 揭幕-01
+         :ARG1 (s6x3 / 铜像
+                 :mod (s6x4 / 市徽
+                        :mod (s6x5 / 新)))
+         :place (s6x6 / 广场
+                  :mod (s6x7 / 火车站)
+                  :place (s6x8 / 该市))
+         :aspect performance)
+  :op2 (s6x9 / 安置-01
+         :ARG1 (s6x10 / 铜像)
+         :place (s6x11 / 顶端
+                  :poss (s6x12 / 柱
+                          :mod (s6x13 / 铜)
+                          :mod (s6i2 / identity-91
+                                 :ARG1 (s6d / distance-quantity
+                                         :unit (s6x14 / 米)
+                                         :quant (s6x15 / 16))
+                                 :ARG2 (s6d2 / distance-quantity
+                                         :unit (s6x16 / 英尺)
+                                         :quant 52))))
+         :aspect performance)
+  :temporal (s6x / 翌年))
+
+# alignment:
+s6a : 0-0
+s6d : 0-0
+s6d2 : 0-0
+s6i2 : 0-0
+s6x : 1-1
+s6x10 : 15-15
+s6x11 : 31-1
+s6x12 : 29-29
+s6x13 : 29-29
+s6x14 : 22-22
+s6x15 : 21-1
+s6x16 : 25-25
+s6x2 : 13-13
+s6x3 : 6-6
+s6x4 : 4-4
+s6x5 : 3-3
+s6x6 : 11-11
+s6x7 : 10-10
+s6x8 : 8-8
+s6x2: 13-13
+s6x3: 6-6
+s6x4: 4-4
+s6x5: 3-3
+s6x6: 11-11
+s6x7: 10-10
+s6x8: 8-8
+s6x9: 17-17
+s6x10: 6-6
+s6x11: 31-31
+s6x14: 22-22
+s6x15: 21-21
+s6x16: 25-25
+s6x: 1-1
+
+# document level annotation:
+(s6s0 / sentence
+  :temporal ((s6a :after s5x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s6x2)
+                    (author :full-affirmative s6x9))
+  :coref ((s6x4 :same-entity s5x2)))
+
+

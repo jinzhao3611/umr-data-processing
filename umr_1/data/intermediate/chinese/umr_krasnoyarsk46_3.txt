@@ -1,0 +1,444 @@
+# :: snt1	 二十世纪 七十年代 后期 ， 苏联 开始 在 该城 旁边 修建 一个 相位 阵列 雷达站 。
+
+# sentence level graph:
+(s1x / 修建-01
+  :ARG0 (s1c / country
+          :name (s1n / name
+                  :op1 "苏联"))
+  :ARG1 (s1x2 / 雷达站
+          :mod (s1x3 / 阵列
+                 :ARG0-of (s1x4 / 相位))
+          :quant (s1x11 / 一)
+          :unit (s1x12 / 个))
+  :place (s1x5 / 旁边
+           :ARG0-of (s1x6 / 城
+                      :mod (s1x7 / 该)))
+  :temporal (s1t / temporal-quantity
+              :century (s1x8 / 二十)
+              :decade (s1x9 / 七十)
+              :mod (s1x10 / 后期))
+  :aspect performance)
+
+# alignment:
+s1c : 1-1
+s1n : -1--1
+s1t : 0-0
+s1x : 1-1
+s1x10 : 3-3
+s1x11 : 11-11
+s1x12 : 11-11
+s1x2 : 14-14
+s1x3 : 13-13
+s1x4 : 12-12
+s1x5 : 9-9
+s1x6 : 8-8
+s1x7 : 8-8
+s1x8 : 1-1
+s1x: 10-10
+s1x2: 14-14
+s1x3: 13-13
+s1x4: 12-12
+s1x5: 9-9
+s1x10: 3-3
+
+# document level annotation:
+(s1s0 / sentence
+  :modal ((root :modal author)
+                    (author :full-affirmative s1x)))
+
+
+# :: snt2	 北约 指责 此举 违反 了 1972 年 美苏 签订 的 《 反 弹道导弹 条约 》 ， 从 1983 年 开始 ， 美国 持续 要求 苏联 撤销 该 雷达站 ， 一直 到 苏联政府 在 1989 年 承认 该 设施 违反 条约 ， 当局 才 开始 缓慢 撤出 设备 ， 直到 1992 年 对外 宣布 拆除 完成 ， 但 这些 设备 很 可能 在 接近 共青城 的 某个 地点 被 重新 组装 起来 。
+
+# sentence level graph:
+(s2a / and
+  :op1 (s2x / 指责-01
+         :ARG0 (s2o / organization
+                 :name (s2n / name
+                         :op1 "北约"))
+         :ARG1 (s2x2 / 违反-01
+                 :ARG0 (s2x3 / 举
+                         :mod (s2x4 / 此))
+                 :ARG1 (s2t / treaty
+                         :name (s2n2 / name
+                                 :op1 "反"
+                                 :op2 "弹道导弹"
+                                 :op3 "条约")
+                         :mod (s2x5 / 签订-01
+                                :ARG0 (s2a2 / and
+                                        :op1 (s2c / country
+                                               :name (s2n3 / name
+                                                       :op1 "美"))
+                                        :op2 (s2c2 / country
+                                               :name (s2n4 / name
+                                                       :op1 "苏")))
+                                :year 1972
+                                :aspect performance))
+                 :aspect performance)
+         :aspect performance)
+  :op2 (s2c3 / consecutive
+         :op1 (s2x6 / 要求-01
+                :ARG0 (s2c4 / country
+                        :name (s2n5 / name
+                                :op1 "美国"))
+                :ARG1 (s2c5 / country
+                        :name (s2n6 / name
+                                :op1 "苏联"))
+                :ARG2 (s2x8 / 撤销-01
+                        :aspect performance)
+                :mod (s2x7 / 持续
+                       :ARG1 (s2f / facility
+                               :name (s2n7 / name
+                                       :op1 "雷达站")
+                               :mod (s2x9 / 该)))
+                :aspect performance)
+         :op2 (s2x10 / 撤出-01
+                :ARG0 (s2x11 / 当局)
+                :ARG1 (s2x12 / 设备)
+                :mod (s2x13 / 缓慢)
+                :cause (s2x14 / 承认-01
+                         :ARG0 (s2x15 / 政府
+                                 :mod (s2s / s2c5))
+                         :ARG1 (s2x16 / 违反-01
+                                 :ARG0 (s2x17 / 设施
+                                         :mod (s2x19 / 该))
+                                 :ARG1 (s2x18 / 条约))
+                         :year (s2x20 / 1989)
+                         :aspect performance)
+                :aspect performance)
+         :op3 (s2x21 / 宣布-01
+                :ARG1 (s2x22 / 完成
+                        :ARG1 (s2x23 / 拆除-01
+                                :aspect performance))
+                :ARG2 (s2x24 / 对外)
+                :year 1992
+                :concession (s2x25 / 重新
+                              :ARG0 (s2x26 / 组装-01
+                                      :ARG1 (s2x27 / 设备
+                                              :mod (s2x28 / 这些))
+                                      :aspect performance)
+                              :mod (s2x29 / 可能
+                                     :ARG0-of (s2h / have-degree-91
+                                                :ARG3 (s2x30 / 很)))
+                              :place (s2x31 / 地点
+                                       :mod (s2x32 / 某个)
+                                       :ARG0-of (s2h2 / have-role-91
+                                                  :ARG2 (s2x33 / 接近-02
+                                                          :ARG0 (s2c6 / city
+                                                                  :name (s2n8 / name
+                                                                          :op1 "共青城"))
+                                                          :aspect state))))
+                :aspect performance)))
+
+# alignment:
+s2a : 0-0
+s2a2 : 0-0
+s2c : 0-0
+s2c2 : 8-8
+s2c3 : 0-0
+s2c4 : 22-22
+s2c5 : 25-25
+s2c6 : 64-64
+s2f : 28-28
+s2h : 0-0
+s2h2 : 0-0
+s2n : -1--1
+s2n2 : -1--1
+s2n3 : -1--1
+s2n4 : -1--1
+s2n5 : -1--1
+s2n6 : -1--1
+s2n7 : -1--1
+s2n8 : -1--1
+s2o : 1-1
+s2s : 0-0
+s2t : 12-14
+s2x : 2-2
+s2x10 : 46-46
+s2x11 : 42-42
+s2x12 : 47-47
+s2x13 : 45-45
+s2x14 : 36-36
+s2x15 : 32-32
+s2x16 : 39-39
+s2x17 : 38-38
+s2x18 : 40-40
+s2x19 : 37-37
+s2x2 : 4-4
+s2x20 : 34-4
+s2x21 : 53-53
+s2x22 : 55-55
+s2x23 : 54-54
+s2x24 : 52-52
+s2x25 : 69-69
+s2x26 : 70-70
+s2x27 : 59-59
+s2x28 : 58-58
+s2x29 : 61-61
+s2x3 : 3-3
+s2x30 : 60-60
+s2x31 : 67-67
+s2x32 : 66-66
+s2x33 : 63-63
+s2x4 : 3-3
+s2x5 : 9-9
+s2x6 : 24-24
+s2x7 : 23-23
+s2x8 : 26-26
+s2x: 2-2
+s2x2: 4-4
+s2x5: 9-9
+s2x6: 24-24
+s2x8: 26-26
+s2x7: 23-23
+s2x9: 27-27
+s2x10: 46-46
+s2x11: 42-42
+s2x12: 47-47
+s2x13: 45-45
+s2x14: 36-36
+s2x16: 4-4
+s2x17: 38-38
+s2x19: 27-27
+s2x18: 14-14
+s2x20: 34-34
+s2x21: 53-53
+s2x22: 55-55
+s2x23: 54-54
+s2x24: 52-52
+s2x25: 69-69
+s2x26: 70-70
+s2x27: 47-47
+s2x28: 58-58
+s2x29: 61-61
+s2x30: 60-60
+s2x31: 67-67
+s2x32: 66-66
+s2x33: 63-63
+
+# document level annotation:
+(s2s0 / sentence
+  :modal ((root :modal author)
+                    (author :full-affirmative s2x5)
+                    (author :full-affirmative s2x2)
+                    (author :full-affirmative s2x)
+                    (author :full-affirmative s2x8)
+                    (author :full-affirmative s2x6)
+                    (author :full-affirmative s2x14)
+                    (author :full-affirmative s2x10)
+                    (author :full-affirmative s2x23)
+                    (author :full-affirmative s2x26)
+                    (author :full-affirmative s2x33)
+                    (author :full-affirmative s2x21)))
+
+
+# :: snt3	 冷战 时期 ， 克拉斯诺亚尔斯克 也 是 克城 东北 空军 的 一个 基地 ， 但 这个 基地 在 苏联 解体 后 变成 了 一个 住宅区 。
+
+# sentence level graph:
+(s3b / but-91
+  :ARG1 (s3h / have-role-91
+          :ARG0 (s3c / city
+                  :name (s3n / name
+                          :op1 "克拉斯诺亚尔斯克"))
+          :ARG1 (s3x3 / 空军
+                  :mod (s3x4 / 东北)
+                  :poss (s3c2 / city
+                          :name (s3n3 / name
+                                  :op1 "克城")))
+          :ARG2 (s3x2 / 基地)
+          :temporal (s3x / 时期
+                      :mod (s3w / war
+                             :name (s3n2 / name
+                                     :op1 "冷战")))
+          :aspect state)
+  :ARG2 (s3x5 / 变成-01
+          :ARG1 (s3x6 / 基地
+                  :mod (s3x7 / 这个))
+          :ARG2 (s3x8 / 住宅区)
+          :temporal (s3x9 / 后
+                      :mod (s3x10 / 解体
+                             :ARG0 (s3c3 / country
+                                     :name (s3n4 / name
+                                             :op1 "苏联"))))
+          :aspect performance))
+
+# alignment:
+s3b : 0-0
+s3c : 4-4
+s3c2 : 7-7
+s3c3 : 18-18
+s3h : 0-0
+s3n : -1--1
+s3n2 : -1--1
+s3n3 : -1--1
+s3n4 : -1--1
+s3w : 1-1
+s3x : 2-2
+s3x10 : 19-19
+s3x2 : 12-12
+s3x3 : 9-9
+s3x4 : 8-8
+s3x5 : 21-21
+s3x6 : 16-16
+s3x7 : 14-15
+s3x8 : 24-24
+s3x3: 9-9
+s3x4: 8-8
+s3x2: 12-12
+s3x: 2-2
+s3x5: 21-21
+s3x6: 12-12
+s3x7: 15-15
+s3x8: 24-24
+s3x9: 20-20
+s3x10: 19-19
+
+# document level annotation:
+(s3s0 / sentence
+  :modal ((root :modal author)
+                    (author :full-affirmative s3h)
+                    (author :full-affirmative s3x5)))
+
+
+# :: snt4	 苏联 解体 之后 ， 当地 很多 大 工厂 开始 私营化 。
+
+# sentence level graph:
+(s4x / 开始-01
+  :ARG0 (s4x3 / 工厂
+          :mod (s4x4 / 当地)
+          :mod (s4x5 / 很多)
+          :mod (s4x6 / 大))
+  :ARG1 (s4x2 / 私营化)
+  :temporal (s4x7 / 之后
+              :op1 (s4x8 / 解体
+                     :ARG0 (s4c / country
+                             :name (s4n / name
+                                     :op1 "苏联"))))
+  :aspect process)
+
+# alignment:
+s4c : 1-1
+s4n : -1--1
+s4x : 9-9
+s4x2 : 10-10
+s4x3 : 8-8
+s4x4 : 5-5
+s4x5 : 6-6
+s4x6 : 7-7
+s4x7 : 3-3
+s4x: 9-9
+s4x3: 8-8
+s4x4: 5-5
+s4x5: 6-6
+s4x6: 7-7
+s4x2: 10-10
+s4x7: 3-3
+s4x8: 2-2
+
+# document level annotation:
+(s4s0 / sentence
+  :modal ((root :modal author)
+                    (author :full-affirmative s4x)))
+
+
+# :: snt5	 相当 一部分 企业 宣布 破产 ， 而 继续 营业 的 厂家 被 个别 富商 或 黑社会 头目 控制 。
+
+# sentence level graph:
+(s5a / and
+  :op1 (s5x / 宣布-01
+         :ARG0 (s5x3 / 企业
+                 :mod (s5x4 / 一部分
+                        :mod (s5x5 / 相当)))
+         :ARG1 (s5x2 / 破产-01)
+         :aspect performance)
+  :op2 (s5x6 / 控制-01
+         :ARG0 (s5a2 / and
+                 :op1 (s5x7 / 富商
+                        :mod (s5x8 / 个别))
+                 :op2 (s5x9 / 头目
+                        :mod (s5x10 / 黑社会)))
+         :ARG1 (s5x11 / 厂家
+                 :mod (s5x12 / 继续
+                        :ARG1 (s5x13 / 营业)))
+         :aspect performance))
+
+# alignment:
+s5a : 0-0
+s5a2 : 14-14
+s5x : 4-4
+s5x10 : 16-16
+s5x11 : 11-11
+s5x12 : 8-8
+s5x13 : 9-9
+s5x2 : 5-5
+s5x3 : 3-3
+s5x4 : 2-2
+s5x5 : 1-1
+s5x6 : 18-18
+s5x7 : 14-14
+s5x8 : 13-13
+s5x: 4-4
+s5x3: 3-3
+s5x4: 2-2
+s5x5: 1-1
+s5x2: 5-5
+s5x6: 18-18
+s5x7: 14-14
+s5x8: 13-13
+s5x9: 17-17
+s5x10: 16-16
+s5x11: 11-11
+s5x12: 8-8
+s5x13: 9-9
+
+# document level annotation:
+(s5s0 / sentence
+  :temporal ((s5a :overlap s4x))
+  :modal ((root :modal author)
+                    (author :full-affirmative s5x)
+                    (author :full-affirmative s5x6)))
+
+
+# :: snt6	 工人 失业率 勐增 ， 在 业者 也 时常 罢工抗议 。
+
+# sentence level graph:
+(s6a / and
+  :op1 (s6x / 猛增-01
+         :ARG0 (s6x2 / 失业率
+                 :poss (s6x3 / 工人))
+         :aspect performance)
+  :op2 (s6a2 / and
+         :op1 (s6x4 / 罢工-01
+                :ARG0 (s6x6 / 者
+                        :mod (s6x7 / 在-01
+                               :ARG1 (s6x8 / 业)))
+                :aspect performance)
+         :op2 (s6x5 / 抗议-01
+                :ARG0 (s6s / s6x6)
+                :aspect performance)
+         :mod (s6x9 / 时常)))
+
+# alignment:
+s6a : 0-0
+s6a2 : 9-9
+s6s : 0-0
+s6x : 3-3
+s6x2 : 2-2
+s6x3 : 1-1
+s6x4 : 9-9
+s6x5 : 9-9
+s6x6 : 6-6
+s6x7 : 5-5
+s6x8 : 6-6
+s6x2: 2-2
+s6x3: 1-1
+s6x7: 5-5
+s6x9: 8-8
+
+# document level annotation:
+(s6s0 / sentence
+  :modal ((root :modal author)
+                    (author :full-affirmative s6x)
+                    (author :full-affirmative s6x4)
+                    (author :full-affirmative s6x5)))
+
+
